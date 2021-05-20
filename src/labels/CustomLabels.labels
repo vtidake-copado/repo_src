@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ACCOUNT_SUMMARY</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ACCOUNT SUMMARY</shortDescription>
+        <value>Account Summary</value>
+    </labels>
+    <labels>
+        <fullName>ACTION_COLUMN_HEADER</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ACTION COLUMN HEADER</shortDescription>
+        <value>Action</value>
+    </labels>
+    <labels>
+        <fullName>ACTIVATE_USERS</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ACTIVATE USERS</shortDescription>
+        <value>Activate users</value>
+    </labels>
+    <labels>
+        <fullName>ADD</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD</shortDescription>
+        <value>Add</value>
+    </labels>
+    <labels>
+        <fullName>ADD_AUTHENTICATION</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD_AUTHENTICATION</shortDescription>
+        <value>Add Authentication</value>
+    </labels>
+    <labels>
+        <fullName>ADD_DESTINATION_ORG</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD DESTINATION ORG</shortDescription>
+        <value>Add Destination Org</value>
+    </labels>
+    <labels>
+        <fullName>ADD_HEADER</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD HEADER</shortDescription>
+        <value>Add Header</value>
+    </labels>
+    <labels>
+        <fullName>ADD_UPDATE_USER</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ADD/UPDATE USER</shortDescription>
+        <value>Add/Update User</value>
+    </labels>
+    <labels>
+        <fullName>ATTENTION_REQUIRED</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ATTENTION REQUIRED</shortDescription>
+        <value>ATTENTION REQUIRED!</value>
+    </labels>
+    <labels>
+        <fullName>AUTO_RESOLVED_CONFLICTS</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AUTO RESOLVED CONFLICTS</shortDescription>
+        <value>Auto Resolved Conflicts</value>
+    </labels>
+    <labels>
+        <fullName>Add_Filter_Logic</fullName>
+        <categories>ComplianceRuleCriteria</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Filter Logic</shortDescription>
+        <value>Add Filter Logic</value>
+    </labels>
+    <labels>
+        <fullName>BLOG_DESCRIPTION_SHORT</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BLOG DESCRIPTION SHORT</shortDescription>
+        <value>Find the latest news and best practices tips for Salesforce release management.</value>
+    </labels>
+    <labels>
+        <fullName>BODY</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BODY</shortDescription>
+        <value>Body</value>
+    </labels>
+    <labels>
+        <fullName>BRANCH</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRANCH</shortDescription>
+        <value>Branch</value>
+    </labels>
+    <labels>
+        <fullName>BRANCH_MGMT_LICENSE_EXCEEDED</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BRANCH MGMT LICENSE EXCEEDED</shortDescription>
+        <value>The maximum number of active connections has already been reached. Please deactivate some Deployment Flows or contact Sales@copa.do to increase your limit.</value>
+    </labels>
+    <labels>
+        <fullName>BROWSER</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BROWSER</shortDescription>
+        <value>Browser</value>
+    </labels>
+    <labels>
+        <fullName>COMMITS_AHEAD</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>COMMITS AHEAD</shortDescription>
+        <value>Commits Ahead</value>
+    </labels>
+    <labels>
+        <fullName>CREATE_DEPLOYMENT</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CREATE DEPLOYMENT</shortDescription>
+        <value>Create Deployment</value>
+    </labels>
+    <labels>
+        <fullName>DEPLOYMENT_NEW</fullName>
+        <categories>Copado</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DEPLOYMENT NEW</shortDescription>
+        <value>New Deployment</value>
+    </labels>
+</CustomLabels>

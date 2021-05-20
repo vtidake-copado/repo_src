@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Permission Set Group test</label>
+    <permissionSets>Test_PS_Bug</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

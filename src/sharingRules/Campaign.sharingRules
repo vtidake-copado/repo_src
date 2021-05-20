@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Campaign_Sharing_1</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Campaign Sharing 1</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>IsActive</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Sharing_Campaign_2</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sharing  Campaign 2</label>
+        <sharedTo>
+            <role>Developer</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>equals</operation>
+            <value>Super</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AccountLookup --></label>
+        <name>AccountLookup__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accoutn Field 1 --></label>
+        <name>Accoutn_Field_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Big --></label>
+        <name>Big__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Priority --></label>
+        <name>CustomerPriority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nested Test RT --></label>
+        <name>Nested_Test_RT__c</name>
+        <picklistValues>
+            <masterLabel>Destructive1</masterLabel>
+            <translation><!-- Destructive1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Destructive2</masterLabel>
+            <translation><!-- Destructive2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- PA Test Field --></label>
+        <name>PA_Test_Field__c</name>
+        <picklistValues>
+            <masterLabel>PA Fix</masterLabel>
+            <translation><!-- PA Fix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLUS 1500 (0597)</masterLabel>
+            <translation><!-- PLUS 1500 (0597) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test PA</masterLabel>
+            <translation><!-- Test PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value 1</masterLabel>
+            <translation><!-- Value 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value 2</masterLabel>
+            <translation><!-- Value 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value 4</masterLabel>
+            <translation><!-- Value 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value3</masterLabel>
+            <translation><!-- Value3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value5</masterLabel>
+            <translation><!-- Value5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>new</masterLabel>
+            <translation><!-- new --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SLA Expiration Date --></label>
+        <name>SLAExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Serial Number --></label>
+        <name>SLASerialNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA --></label>
+        <name>SLA__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iron</masterLabel>
+            <translation><!-- Iron --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SubTrade Channel --></label>
+        <name>SubTrade_Channel__c</name>
+        <picklistValues>
+            <masterLabel>001 - Bakery</masterLabel>
+            <translation>001 - EBakery</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>020</masterLabel>
+            <translation>020 - EBlank</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>021 - Hotell</masterLabel>
+            <translation>021 - EHotell</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Upsell Opportunity --></label>
+        <name>UpsellOpportunity__c</name>
+        <picklistValues>
+            <masterLabel>Maybe</masterLabel>
+            <translation><!-- Maybe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- xyz Account Number --></label>
+        <name>xyz_Account_Number__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Business Account --></label>
+        <name>Business_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DeleteRTacc --></label>
+        <name>DeleteRTacc</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RT Nested Test --></label>
+        <name>RT_Nested_Test</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Record Type1 --></label>
+        <name>Record_Type1</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Record Type2 --></label>
+        <name>Record_Type2</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- This error will be never displayed. --></errorMessage>
+        <name>New_Validation_Acc</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is always false --></errorMessage>
+        <name>Prevent_Edit_to_Relationship_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter a name for the XXXXXXXXXXX account --></errorMessage>
+        <name>Validation</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Billing --></label>
+        <name>Billing</name>
+    </webLinks>
+</CustomObjectTranslation>

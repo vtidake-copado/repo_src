@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Dinner</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Dinners</value>
+    </caseValues>
+    <fields>
+        <label><!-- Automatic Renewal Clause --></label>
+        <name>Automatic_Renewal_Clause__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dinner Type --></label>
+        <name>Dinner_Type__c</name>
+        <picklistValues>
+            <masterLabel>Full</masterLabel>
+            <translation><!-- Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial</masterLabel>
+            <translation><!-- Partial --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External Auto --></label>
+        <name>External_Auto__c</name>
+    </fields>
+    <fields>
+        <label><!-- LateDinner --></label>
+        <name>LateDinner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Picklist Dinner Table --></label>
+        <name>Picklist_Dinner_Table__c</name>
+        <picklistValues>
+            <masterLabel>Dinner Table1</masterLabel>
+            <translation><!-- Dinner Table1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dinner Table2</masterLabel>
+            <translation><!-- Dinner Table2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Picklist Dinner --></label>
+        <name>Picklist_Dinner__c</name>
+        <picklistValues>
+            <masterLabel>Dinner1</masterLabel>
+            <translation><!-- Dinner1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dinner2</masterLabel>
+            <translation><!-- Dinner2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Point of contact --></label>
+        <name>Point_of_contact__c</name>
+        <relationshipLabel><!-- Dinners --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TEST US --></label>
+        <name>TEST_US__c</name>
+    </fields>
+    <fields>
+        <label><!-- Table --></label>
+        <name>Table__c</name>
+    </fields>
+    <fields>
+        <label><!-- historyRetentionPolicy --></label>
+        <name>historyRetentionPolicy__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <recordTypes>
+        <label><!-- Dinner RT --></label>
+        <name>Dinner_RT</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dinner RT 2 --></label>
+        <name>Dinner_RT_2</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Nested Dinner RT --></label>
+        <name>Nested_Dinner_RT</name>
+    </recordTypes>
+</CustomObjectTranslation>

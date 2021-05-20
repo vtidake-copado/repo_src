@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Now</fullName>
+        <default>false</default>
+        <label>Now</label>
+    </customValue>
+    <customValue>
+        <fullName>Later</fullName>
+        <default>false</default>
+        <label>Later</label>
+    </customValue>
+    <customValue>
+        <fullName>Tomorrow</fullName>
+        <default>false</default>
+        <label>Tomorrow</label>
+    </customValue>
+    <customValue>
+        <fullName>Yesterday</fullName>
+        <default>false</default>
+        <label>Yesterday</label>
+    </customValue>
+    <masterLabel>Time</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Electrical</fullName>
+        <default>false</default>
+        <label>Electrical</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Electronic</fullName>
+        <default>false</default>
+        <label>Electronic</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other5</fullName>
+        <default>false</default>
+        <label>Other5</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Content Feedback</fullName>
+        <default>false</default>
+        <label>Customer Content Feedback</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3rd Party</fullName>
+        <default>false</default>
+        <label>3rd Party</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3rd Party - Brand Change/Review</fullName>
+        <default>false</default>
+        <label>3rd Party - Brand Change/Review</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3rd Party - GDS</fullName>
+        <default>false</default>
+        <label>3rd Party - GDS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3rd Party - General Questions</fullName>
+        <default>false</default>
+        <label>3rd Party - General Questions</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3rd Party - Property Update</fullName>
+        <default>false</default>
+        <label>3rd Party - Property Update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>3rd Party - Vendor</fullName>
+        <default>false</default>
+        <label>3rd Party - Vendor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Administration</fullName>
+        <default>false</default>
+        <label>Account Administration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Documentation</fullName>
+        <default>false</default>
+        <label>Account Documentation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Management</fullName>
+        <default>false</default>
+        <label>Account Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Project</fullName>
+        <default>false</default>
+        <label>Account Project</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Promotions</fullName>
+        <default>false</default>
+        <label>Account Promotions</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Settings</fullName>
+        <default>false</default>
+        <label>Account Settings</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ad Hoc Supplier Training</fullName>
+        <default>false</default>
+        <label>Ad Hoc Supplier Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Backfill</fullName>
+        <default>false</default>
+        <label>Backfill</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bookability</fullName>
+        <default>false</default>
+        <label>Bookability</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Booking Fraud</fullName>
+        <default>false</default>
+        <label>Booking Fraud</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Booking Information</fullName>
+        <default>false</default>
+        <label>Booking Information</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Brand</fullName>
+        <default>false</default>
+        <label>Brand</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Breakage Removal</fullName>
+        <default>false</default>
+        <label>Breakage Removal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Breakage Reset</fullName>
+        <default>false</default>
+        <label>Breakage Reset</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bug / Bug Fix</fullName>
+        <default>false</default>
+        <label>Bug / Bug Fix</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bug Triage</fullName>
+        <default>false</default>
+        <label>Bug Triage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bulk PRI Request</fullName>
+        <default>false</default>
+        <label>Bulk PRI Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bulk PRI Request Advanced</fullName>
+        <default>false</default>
+        <label>Bulk PRI Request Advanced</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bulk Promotion Content Request</fullName>
+        <default>false</default>
+        <label>Bulk Promotion Content Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bulk Review Removal</fullName>
+        <default>false</default>
+        <label>Bulk Review Removal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Assignment</fullName>
+        <default>false</default>
+        <label>Call Assignment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Case Escalation</fullName>
+        <default>false</default>
+        <label>Case Escalation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CGS Issue</fullName>
+        <default>false</default>
+        <label>CGS Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chain/Brand Change</fullName>
+        <default>false</default>
+        <label>Chain/Brand Change</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chain/Brand Content Review</fullName>
+        <default>false</default>
+        <label>Chain/Brand Content Review</label>
+    </standardValue>
+    <standardValue>
+        <fullName>C Hotel Support</fullName>
+        <default>false</default>
+        <label>C Hotel Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Collections</fullName>
+        <default>false</default>
+        <label>Collections</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Compliance &amp; Recovery</fullName>
+        <default>false</default>
+        <label>Compliance &amp; Recovery</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ConfigurationMaster</fullName>
+        <default>false</default>
+        <label>ConfigurationMaster</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Connectivity Change</fullName>
+        <default>false</default>
+        <label>Connectivity Change</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Connectivity Management</fullName>
+        <default>false</default>
+        <label>Connectivity Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Connectivity Partner Outage</fullName>
+        <default>false</default>
+        <label>Connectivity Partner Outage</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Connectivity Questions</fullName>
+        <default>false</default>
+        <label>Connectivity Questions</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consolidators</fullName>
+        <default>false</default>
+        <label>Consolidators</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact Customer</fullName>
+        <default>false</default>
+        <label>Contact Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contact Update</fullName>
+        <default>false</default>
+        <label>Contact Update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Content Data</fullName>
+        <default>false</default>
+        <label>Content Data</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Content Improvement</fullName>
+        <default>false</default>
+        <label>Content Improvement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Content Review</fullName>
+        <default>false</default>
+        <label>Content Review</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Content Update</fullName>
+        <default>false</default>
+        <label>Content Update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Changes</fullName>
+        <default>false</default>
+        <label>Contract Changes</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Loading</fullName>
+        <default>false</default>
+        <label>Contract Loading</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Questions</fullName>
+        <default>false</default>
+        <label>Contract Questions</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Corporate AP</fullName>
+        <default>false</default>
+        <label>Corporate AP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Card</fullName>
+        <default>false</default>
+        <label>Credit Card</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Care Issue</fullName>
+        <default>false</default>
+        <label>Customer Care Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>DD Program HOLD</fullName>
+        <default>false</default>
+        <label>DD Program HOLD</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Defect Resolution</fullName>
+        <default>false</default>
+        <label>Defect Resolution</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Disbursements</fullName>
+        <default>false</default>
+        <label>Disbursements</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Duplicate</fullName>
+        <default>false</default>
+        <label>Duplicate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EAN Specifc</fullName>
+        <default>false</default>
+        <label>EAN Specifc</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EEM</fullName>
+        <default>false</default>
+        <label>EEM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Egencia</fullName>
+        <default>false</default>
+        <label>Egencia</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Egencia Promotion Review</fullName>
+        <default>false</default>
+        <label>Egencia Promotion Review</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EID/VID</fullName>
+        <default>false</default>
+        <label>EID/VID</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EID only</fullName>
+        <default>false</default>
+        <label>EID only</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Employee Expenses</fullName>
+        <default>false</default>
+        <label>Employee Expenses</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EPC &amp; Administration</fullName>
+        <default>false</default>
+        <label>EPC &amp; Administration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EPC Access</fullName>
+        <default>false</default>
+        <label>EPC Access</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EPCO/Onboarding Issue</fullName>
+        <default>false</default>
+        <label>EPCO/Onboarding Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EQC Management</fullName>
+        <default>false</default>
+        <label>EQC Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ETP Conversion</fullName>
+        <default>false</default>
+        <label>ETP Conversion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EVC</fullName>
+        <default>false</default>
+        <label>EVC</label>
+    </standardValue>
+    <standardValue>
+        <fullName>EVC-Relo</fullName>
+        <default>false</default>
+        <label>EVC-Relo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Relocation Case</fullName>
+        <default>false</default>
+        <label>Existing Relocation Case</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Expedia Logo</fullName>
+        <default>false</default>
+        <label>Expedia Logo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ExpediaPay</fullName>
+        <default>false</default>
+        <label>ExpediaPay</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ExpediaPay Access</fullName>
+        <default>false</default>
+        <label>ExpediaPay Access</label>
+    </standardValue>
+    <standardValue>
+        <fullName>FinOps UAT</fullName>
+        <default>false</default>
+        <label>FinOps UAT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fraudulent Hotel</fullName>
+        <default>false</default>
+        <label>Fraudulent Hotel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Gas</fullName>
+        <default>false</default>
+        <label>Gas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Questions</fullName>
+        <default>false</default>
+        <label>General Questions</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Gold Content Update</fullName>
+        <default>false</default>
+        <label>Gold Content Update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Gold Conversion Request</fullName>
+        <default>false</default>
+        <label>Gold Conversion Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Group Booking Request</fullName>
+        <default>false</default>
+        <label>Group Booking Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>GSO Issue</fullName>
+        <default>false</default>
+        <label>GSO Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Guest Contact Request</fullName>
+        <default>false</default>
+        <label>Guest Contact Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Guest Loyalty</fullName>
+        <default>false</default>
+        <label>Guest Loyalty</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Guest Reviews</fullName>
+        <default>false</default>
+        <label>Guest Reviews</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Health &amp; Safety Audit</fullName>
+        <default>false</default>
+        <label>Health &amp; Safety Audit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Health &amp; Safety Escalation</fullName>
+        <default>false</default>
+        <label>Health &amp; Safety Escalation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Health &amp; Safety Gas Safety</fullName>
+        <default>false</default>
+        <label>Health &amp; Safety Gas Safety</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Health &amp; Safety Investigation Level 1</fullName>
+        <default>false</default>
+        <label>Health &amp; Safety Investigation Level 1</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Health &amp; Safety Investigation Level 2</fullName>
+        <default>false</default>
+        <label>Health &amp; Safety Investigation Level 2</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Health &amp; Safety Investigation Level 3</fullName>
+        <default>false</default>
+        <label>Health &amp; Safety Investigation Level 3</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Health &amp; Safety Priority Issue</fullName>
+        <default>false</default>
+        <label>Health &amp; Safety Priority Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hotel Collect</fullName>
+        <default>false</default>
+        <label>Hotel Collect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hotel Collect Issue</fullName>
+        <default>false</default>
+        <label>Hotel Collect Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hotel Data Management</fullName>
+        <default>false</default>
+        <label>Hotel Data Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hotel Name</fullName>
+        <default>false</default>
+        <label>Hotel Name</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Incorrect Infosite</fullName>
+        <default>false</default>
+        <label>Incorrect Infosite</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Fraud</fullName>
+        <default>false</default>
+        <label>Internal Fraud</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Systems</fullName>
+        <default>false</default>
+        <label>Internal Systems</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inventory Closeout</fullName>
+        <default>false</default>
+        <label>Inventory Closeout</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Investigation</fullName>
+        <default>false</default>
+        <label>Investigation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Invoice</fullName>
+        <default>false</default>
+        <label>Invoice</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Known Tool Outage Issue</fullName>
+        <default>false</default>
+        <label>Known Tool Outage Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Location (highlights or attributes)</fullName>
+        <default>false</default>
+        <label>Location (highlights or attributes)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Management Response</fullName>
+        <default>false</default>
+        <label>Management Response</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Merchant Payment Solutions</fullName>
+        <default>false</default>
+        <label>Merchant Payment Solutions</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Meso Billing</fullName>
+        <default>false</default>
+        <label>Meso Billing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Name</fullName>
+        <default>false</default>
+        <label>Name</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Name Changes</fullName>
+        <default>false</default>
+        <label>Name Changes</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New 3PI Property</fullName>
+        <default>false</default>
+        <label>New 3PI Property</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New API Property</fullName>
+        <default>false</default>
+        <label>New API Property</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Hotel Rollout</fullName>
+        <default>false</default>
+        <label>New Hotel Rollout</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New ID</fullName>
+        <default>false</default>
+        <label>New ID</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Independent Property</fullName>
+        <default>false</default>
+        <label>New Independent Property</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Property</fullName>
+        <default>false</default>
+        <label>New Property</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Property Bulk Content</fullName>
+        <default>false</default>
+        <label>New Property Bulk Content</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Property Data</fullName>
+        <default>false</default>
+        <label>New Property Data</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Tool Outage Issue</fullName>
+        <default>false</default>
+        <label>New Tool Outage Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No Action</fullName>
+        <default>false</default>
+        <label>No Action</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Notification Delivery Failure Escalation</fullName>
+        <default>false</default>
+        <label>Notification Delivery Failure Escalation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Not Team Related</fullName>
+        <default>false</default>
+        <label>Not Team Related</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Offering Change</fullName>
+        <default>false</default>
+        <label>Offering Change</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Onboarding</fullName>
+        <default>false</default>
+        <label>Onboarding</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Oracle ID</fullName>
+        <default>false</default>
+        <label>Oracle ID</label>
+    </standardValue>
+    <standardValue>
+        <fullName>OTC - Hotel Collect Corporate Accounts</fullName>
+        <default>false</default>
+        <label>OTC - Hotel Collect Corporate Accounts</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Package Refunds</fullName>
+        <default>false</default>
+        <label>Package Refunds</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Paper Contract</fullName>
+        <default>false</default>
+        <label>Paper Contract</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Paper EPCO</fullName>
+        <default>false</default>
+        <label>Paper EPCO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner Loyalty</fullName>
+        <default>false</default>
+        <label>Partner Loyalty</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Payouts Research</fullName>
+        <default>false</default>
+        <label>Payouts Research</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Personal injury</fullName>
+        <default>false</default>
+        <label>Personal injury</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone/Fax</fullName>
+        <default>false</default>
+        <label>Phone/Fax</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Physical Audit</fullName>
+        <default>false</default>
+        <label>Physical Audit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>POI/Landmarks</fullName>
+        <default>false</default>
+        <label>POI/Landmarks</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Policy / KBYG / Special Check-In</fullName>
+        <default>false</default>
+        <label>Policy / KBYG / Special Check-In</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pre-Onboarding</fullName>
+        <default>false</default>
+        <label>Pre-Onboarding</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Price Tier</fullName>
+        <default>false</default>
+        <label>Price Tier</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Priority Update</fullName>
+        <default>false</default>
+        <label>Priority Update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Maintenance</fullName>
+        <default>false</default>
+        <label>Product Maintenance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Projects</fullName>
+        <default>false</default>
+        <label>Projects</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Promotion</fullName>
+        <default>false</default>
+        <label>Promotion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Promotion / Rate Plan</fullName>
+        <default>false</default>
+        <label>Promotion / Rate Plan</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Promotion Content Request</fullName>
+        <default>false</default>
+        <label>Promotion Content Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Property</fullName>
+        <default>false</default>
+        <label>Property</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Property Description</fullName>
+        <default>false</default>
+        <label>Property Description</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Property Details</fullName>
+        <default>false</default>
+        <label>Property Details</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Property Photos</fullName>
+        <default>false</default>
+        <label>Property Photos</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Property Settings</fullName>
+        <default>false</default>
+        <label>Property Settings</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Property Update</fullName>
+        <default>false</default>
+        <label>Property Update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rate, Inventory, &amp; Availability Issues</fullName>
+        <default>false</default>
+        <label>Rate, Inventory, &amp; Availability Issues</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rates &amp; Inventory Changes</fullName>
+        <default>false</default>
+        <label>Rates &amp; Inventory Changes</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Rates &amp; Inventory Loading</fullName>
+        <default>false</default>
+        <label>Rates &amp; Inventory Loading</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Refund Request</fullName>
+        <default>false</default>
+        <label>Refund Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Regions</fullName>
+        <default>false</default>
+        <label>Regions</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Relocation</fullName>
+        <default>false</default>
+        <label>Relocation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Relocation Management</fullName>
+        <default>false</default>
+        <label>Relocation Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Relo Escalation</fullName>
+        <default>false</default>
+        <label>Relo Escalation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Renewal</fullName>
+        <default>false</default>
+        <label>Renewal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Research</fullName>
+        <default>false</default>
+        <label>Research</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Research &amp; Investigation</fullName>
+        <default>false</default>
+        <label>Research &amp; Investigation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Resort Request</fullName>
+        <default>false</default>
+        <label>Resort Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Returning Property</fullName>
+        <default>false</default>
+        <label>Returning Property</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Roll-Out</fullName>
+        <default>false</default>
+        <label>Roll-Out</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Room &amp; Rate</fullName>
+        <default>false</default>
+        <label>Room &amp; Rate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Room Type/Rate Plan</fullName>
+        <default>false</default>
+        <label>Room Type/Rate Plan</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Self Assessment</fullName>
+        <default>false</default>
+        <label>Self Assessment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ShortPay</fullName>
+        <default>false</default>
+        <label>ShortPay</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Single Review Removal</fullName>
+        <default>false</default>
+        <label>Single Review Removal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Spam</fullName>
+        <default>false</default>
+        <label>Spam</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Special Check-In Instructions</fullName>
+        <default>false</default>
+        <label>Special Check-In Instructions</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Specialty Functions</fullName>
+        <default>false</default>
+        <label>Specialty Functions</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Standard Update</fullName>
+        <default>false</default>
+        <label>Standard Update</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Star Rating</fullName>
+        <default>false</default>
+        <label>Star Rating</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Stop Pay</fullName>
+        <default>false</default>
+        <label>Stop Pay</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Structure Type</fullName>
+        <default>false</default>
+        <label>Structure Type</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Submarket/Market</fullName>
+        <default>false</default>
+        <label>Submarket/Market</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Supplier Account Services</fullName>
+        <default>false</default>
+        <label>Supplier Account Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Supplier Relations</fullName>
+        <default>false</default>
+        <label>Supplier Relations</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Supplier Training</fullName>
+        <default>false</default>
+        <label>Supplier Training</label>
+    </standardValue>
+    <standardValue>
+        <fullName>T&amp;E</fullName>
+        <default>false</default>
+        <label>T&amp;E</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tax Update Request</fullName>
+        <default>false</default>
+        <label>Tax Update Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Data Request</fullName>
+        <default>false</default>
+        <label>Technical Data Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Theme</fullName>
+        <default>false</default>
+        <label>Theme</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Tier Escalation</fullName>
+        <default>false</default>
+        <label>Tier Escalation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>TPID</fullName>
+        <default>false</default>
+        <label>TPID</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UI Onsite Marketing</fullName>
+        <default>false</default>
+        <label>UI Onsite Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UPS</fullName>
+        <default>false</default>
+        <label>UPS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Urgent Contract</fullName>
+        <default>false</default>
+        <label>Urgent Contract</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Urgent Promotion</fullName>
+        <default>false</default>
+        <label>Urgent Promotion</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Urgent Room Type/Rate Plan</fullName>
+        <default>false</default>
+        <label>Urgent Room Type/Rate Plan</label>
+    </standardValue>
+    <standardValue>
+        <fullName>User Access Request</fullName>
+        <default>false</default>
+        <label>User Access Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>User Interface</fullName>
+        <default>false</default>
+        <label>User Interface</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vendor Banking</fullName>
+        <default>false</default>
+        <label>Vendor Banking</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vendor Services</fullName>
+        <default>false</default>
+        <label>Vendor Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>VID only</fullName>
+        <default>false</default>
+        <label>VID only</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Welcome Email</fullName>
+        <default>false</default>
+        <label>Welcome Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>WEX Recon</fullName>
+        <default>false</default>
+        <label>WEX Recon</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Worldserver Support</fullName>
+        <default>false</default>
+        <label>Worldserver Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Zero Inventory</fullName>
+        <default>false</default>
+        <label>Zero Inventory</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>
