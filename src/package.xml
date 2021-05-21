@@ -4,9 +4,5 @@
         <members>Public_Reports/LEX_Dinners_Report_7wq</members>
         <name>Report</name>
     </types>
-    <types>
-        <members>Dinners</members>
-        <name>ReportType</name>
-    </types>
     <version>51.0</version>
 </Package>
