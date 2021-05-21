@@ -1,0 +1,39 @@
+<div class="slds-size_1-of-1 slds-clearfix vloc-filter-results" ng-class="{'slds-grid slds-m-top_xx-small slds-m-bottom_x-small': !importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(46.5) && importedScope.vlocProdSelectItem.compareFilterVisibility.showFilter}">
+    <div class="slds-float_left vloc-filters-filtering-by" ng-show="importedScope.vlocProdSelectItem.compareFilterVisibility.showFilter" ng-class="{'slds-size_12-of-12 slds-p-around_x-small': !importedScope.vlocProdSelectItem.compareFilterVisibility.showCompare, 'slds-size_10-of-12 slds-p-around_x-small': importedScope.vlocProdSelectItem.compareFilterVisibility.showCompare, 'vloc-filters-execute': importedScope.vlocProdSelectItem.enableFilterBtn}">
+        <div class="slds-float_right vloc-filters-filtering-by-inner-container">
+            <span ng-repeat="(key, values) in importedScope.vlocProdSelectItem.attributeFilters.values" class="slds-m-right_x-small vloc-filters-filtering-by-filter-group">
+                <span class="slds-m-right_xx-small vloc-filters-filtering-by-filter-label">{{$root.vlocInsProdSelectItem.filterAttrValues[key].displayAttributeName}}:</span>
+                <span ng-repeat="value in values track by $index">
+                    <span ng-if="$root.vlocInsProdSelectItem.filterAttrValues[key].valueDataType.toLowerCase() !== 'currency' && $root.vlocInsProdSelectItem.filterAttrValues[key].valueDataType.toLowerCase() !== 'percent'">
+                        {{value}}
+                    </span>
+                    <span ng-if="$root.vlocInsProdSelectItem.filterAttrValues[key].valueDataType.toLowerCase() === 'currency'">
+                        {{value | currency}}
+                    </span>
+                    <span ng-if="$root.vlocInsProdSelectItem.filterAttrValues[key].valueDataType.toLowerCase() === 'percent'">
+                        {{value}}%
+                    </span>
+                    <button class="slds-button slds-button_icon vloc-filters-filtering-by-btn-close" title="Close" ng-click="importedScope.vlocProdSelectItem.removeFilter(key, $index)">
+                        <slds-button-svg-icon size="'medium'" sprite="'utility'" icon="'close'"></slds-button-svg-icon>
+                        <span class="slds-assistive-text">Clear Filter</span>
+                    </button>
+                </span>
+            </span>
+            <span class="slds-m-right_x-small vloc-filters-filtering-by-filter-group" ng-if="importedScope.vlocProdSelectItem.searchedProducts">
+                <span><strong class="vloc-filters-filtering-by-filter-label">Search:</strong> '{{importedScope.vlocProdSelectItem.searchInput}}'</span>
+                <button class="slds-button slds-button_icon vloc-filters-filtering-by-btn-close" title="Close" ng-click="importedScope.vlocProdSelectItem.searchProducts(true)">
+                    <slds-button-svg-icon size="'medium'" sprite="'utility'" icon="'close'"></slds-button-svg-icon>
+                    <span class="slds-assistive-text">Clear Filter</span>
+                </button>
+            </span>
+            <button class="slds-button slds-button_neutral slds-m-left_small vloc-filters-filtering-clear-all-btn" ng-click="importedScope.vlocProdSelectItem.clearAllFilters()" ng-hide="($root.isObjectEmpty(importedScope.vlocProdSelectItem.attributeFilters.values) && !importedScope.vlocProdSelectItem.searchedProducts) || importedScope.vlocProdSelectItem.enableFilterBtn">Clear Filters</button>
+            <button class="slds-button slds-button_brand slds-float_right slds-m-left_small vloc-filters-filtering-execute-btn" ng-click="importedScope.vlocProdSelectItem.filterPlans(importedScope.vlocProdSelectItem.responsiveService.mobileTabletDevice())" ng-show="importedScope.vlocProdSelectItem.enableFilterBtn">
+                <span class="vloc-filters-btn-text">Execute Filters</span>
+            </button>
+        </div>
+    </div>
+    <button class="slds-button slds-button_brand slds-float_right slds-m-vertical_x-small slds-m-left_large slds-size_2-of-12 vloc-compare-plans-modal-btn" ng-click="importedScope.vlocProdSelectItem.InsProductSelectionCompareService.launchCompareModal(importedScope)" ng-show="$root.vlocInsProdSelectItem.comparisonData.count > 1" ng-if="!importedScope.vlocProdSelectItem.responsiveService.mobileTabletDevice()">
+        <span ng-hide="importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(64)">Compare Selections</span>
+        <span ng-show="importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(64)">Compare</span>
+    </button>
+</div>

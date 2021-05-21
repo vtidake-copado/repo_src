@@ -1,0 +1,42 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+   <s:Header>
+      <ActivityId CorrelationId="1a8f1b6c-4d03-414c-897d-87398c42c369" xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">00000000-0000-0000-0000-000000000000</ActivityId>
+   </s:Header>
+   <s:Body>
+      <GetVehicleValuesByVehicleConfigurationResponse xmlns="http://www.kbb.com/2011/01/25/VehicleInformationService">
+         <GetVehicleValuesByVehicleConfigurationResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <IsInsufficientMarketData>false</IsInsufficientMarketData>
+            <IsLimitedProduction>false</IsLimitedProduction>
+            <MileageAdjustment>49</MileageAdjustment>
+            <MileageZeroPoint>109052</MileageZeroPoint>
+            <ValuationPrices>
+               <Valuation>
+                  <Id>0</Id>
+                  <IsMaxDeductApplied>false</IsMaxDeductApplied>
+                  <PriceType>BaseRetail</PriceType>
+                  <Value>1747</Value>
+               </Valuation>
+               <Valuation>
+                  <Id>0</Id>
+                  <IsMaxDeductApplied>false</IsMaxDeductApplied>
+                  <PriceType>Retail</PriceType>
+                  <Value>1796</Value>
+               </Valuation>
+               <Valuation>
+                  <Id>0</Id>
+                  <IsMaxDeductApplied>false</IsMaxDeductApplied>
+                  <PriceType>TradeInExcellent</PriceType>
+                  <Value>551</Value>
+               </Valuation>
+               <Valuation>
+                  <Id>0</Id>
+                  <IsMaxDeductApplied>false</IsMaxDeductApplied>
+                  <PriceType>UsedCarFairPurchasePrice</PriceType>
+                  <Value>1557</Value>
+               </Valuation>
+            </ValuationPrices>
+            <ValuationZipCode>75094</ValuationZipCode>
+         </GetVehicleValuesByVehicleConfigurationResult>
+      </GetVehicleValuesByVehicleConfigurationResponse>
+   </s:Body>
+</s:Envelope>

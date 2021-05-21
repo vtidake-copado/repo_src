@@ -1,0 +1,16 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "discountAutos:discountAuto:discountAutoInstanceKey",
+        "%vlocity_namespace%__GlobalKey__c": "26a8a4ee-950e-40bb-1dfc-bd4ce938b2ec",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "autos:auto:autoInstanceKey",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "autoDiscount-transformCustom1367",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "autoDiscount-transform",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

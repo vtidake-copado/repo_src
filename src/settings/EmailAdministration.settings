@@ -16,7 +16,7 @@
     <enableSendViaExchangePref>false</enableSendViaExchangePref>
     <enableSendViaGmailPref>false</enableSendViaGmailPref>
     <enableUseOrgFootersForExtTrans>false</enableUseOrgFootersForExtTrans>
-    <sendEmailsEvenWhenAutomationUpdatesSameRecord>true</sendEmailsEvenWhenAutomationUpdatesSameRecord>
+    <sendEmailsEvenWhenAutomationUpdatesSameRecord>false</sendEmailsEvenWhenAutomationUpdatesSameRecord>
     <sendMassEmailNotification>true</sendMassEmailNotification>
     <sendTextOnlySystemEmails>false</sendTextOnlySystemEmails>
 </EmailAdministrationSettings>

@@ -1,0 +1,206 @@
+<div class="vloc-small-group-plan-selection" ng-if="control.vlcSI[control.itemsKey]">
+    <div ng-if="baseCtrl.shouldReinitTemplate(control)" ng-init="baseCtrl.reinitTemplate(control)"></div>
+    <div class="vloc-small-group-plan-selection-container" ng-controller="insOsSmallGroupPlanSelectionCtrl" ng-init="insSelectionInit(baseCtrl, control)">
+        <div class="nds-box nds-m-bottom_x-large" bs-collapse>
+            <div class="nds-grid">
+                <button class="nds-button nds-button_neutral nds-max-small-size_1-of-3 nds-size_1-of-8 vloc-cart-plans-button" ng-disabled="insSgpsNode.prevDisabled" ng-click="paginateItems('prev')" title="Previous Products">
+                    <slds-button-svg-icon size="'small'" sprite="'utility'" icon="'back'"></slds-button-svg-icon>
+                </button>
+                <div class="nds-size_6-of-8 nds-text-align_center">
+                    <h2 class="nds-text-heading_medium">Selected Plans</h2>
+                    <p class="nds-m-top_x-small"><b>{{selectedPlansCount()}}</b> products selected</p>
+                </div>
+                <button class="nds-button nds-button_neutral nds-max-small-size_1-of-3 nds-size_1-of-8 vloc-cart-plans-button" ng-disabled="insSgpsNode.nextDisabled" ng-click="paginateItems('next')" title="Next Products">
+                    <slds-button-svg-icon size="'small'" sprite="'utility'" icon="'forward'"></slds-button-svg-icon>
+                </button>
+            </div>
+            <div class="nds-grid nds-grid_pull-padded-medium nds-m-top_medium vloc-cart-plans-collapse" bs-collapse-target>
+                <article ng-repeat="plan in insSgpsNode.displayedCartPlans track by plan.Id" class="nds-col nds-size_1-of-3">
+                    <div class="nds-box nds-m-around_small vloc-plan-box vloc-cart-plan-box" ng-class="{'vloc-selected-plan': plan.selected}">
+                        <header class="vloc-plan-box-header">
+                            <div ng-class="{'vloc-renewal-flag-hidden': !plan.renewal}">
+                                <div class="nds-text-align_center nds-p-horizontal_x-small vloc-renewal-header">
+                                    <div ng-if="plan.originalPlan">
+                                        <p class="nds-truncate">Replaces {{plan.originalPlan.records[0].Name}}</p>
+                                        <button class="nds-button vloc-link" ng-click="openCompareModal(plan, control)">View Changes</button>
+                                    </div>
+                                </div>
+                                <svg class="vloc-renewal-header-svg" viewBox="0 0 320 20" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                    <g><polygon points="0,0 160,20 320,0" /></g>
+                                </svg>
+                            </div>
+                            <div class="vloc-ins-selectable-item-similar-plan-container" ng-if="plan.similarToLastYear">
+                                <div class="vloc-ins-selectable-item-similar-plan">
+                                    <span class="vloc-ins-selectable-item-similar-plan-label">Similar to last year's plan</span>
+                                    <div class="vloc-ins-selectable-item-similar-plan-triangle-pointing-down"></div>
+                                </div>
+                            </div>
+                            <div ng-if="!plan.renewal && !plan.similarToLastYear" class="vloc-ins-selectable-item-icon">
+                                <img ng-src="{{instanceHost + plan.ImageId}}" ng-if="plan.ImageId" class="vloc-plan-image" />
+                                <span class="nds-icon_container vloc-plan-icon" ng-if="!plan.ImageId" ng-class="plan.tierClass">
+                                    <slds-svg-icon sprite="'custom'" size="'large'" icon="'custom91'"></slds-svg-icon>
+                                    <span class="nds-assistive-text">Default Icon</span>
+                                </span>
+                            </div>
+                            <div class="nds-p-vertical_small nds-p-horizontal_medium vloc-plan-header-text">
+                                <button class="nds-button nds-text-heading_small vloc-link" ng-click="openDetailModal(plan, control)"><b>{{plan.productName || plan.Name}}</b></button>
+                                <p class="nds-p-top_small"><span class="nds-text-heading_large"><b>{{plan.Price | currency: currencyCode: 0}}</b></span><b>/mo</b></p>
+                            </div>
+                        </header>
+                        <div class="vloc-plan-box-body">
+                            <table class="vloc-plan-table">
+                                <tbody>
+                                    <tr ng-repeat="attribute in plan.attributeCategories.records[0].productAttributes.records | limitTo: 5">
+                                        <td class="nds-p-right_small nds-truncate">{{attribute.label}}</td>
+                                        <td class="nds-text-align_right nds-truncate">
+                                            <b>
+                                                <span ng-if="!attribute.formattedValues">
+                                                    <span ng-if="attribute.dataType !== 'currency'">{{attribute.userValues}}</span>
+                                                    <span ng-if="attribute.dataType === 'currency'">{{attribute.userValues | currency: currencyCode: 0}}</span>
+                                                </span>
+                                                <span>
+                                                    <span ng-repeat="val in attribute.formattedValues">{{val}}<span ng-if="$index !== attribute.formattedValues.length - 1">, </span>
+                                                    </span>
+                                                </span>
+                                            </b>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="vloc-plan-footer">
+                                <button class="nds-button nds-button_neutral nds-m-top_x-small vloc-plan-select-button" ng-class="{'nds-button_brand': plan.selected}" ng-click="toggleCartPlan(plan, control)">
+                                    <span>{{plan.selected ? 'Selected' : 'Select Plan'}}</span>
+                                </button>
+                                <div class="nds-form-element nds-m-top_x-small">
+                                    <div class="nds-form-element__control">
+                                        <div class="nds-checkbox">
+                                            <input ng-checked="plan.vlcCompSelected" ng-click="toggleCartCompareSelect(plan)" type="checkbox" name="options" id="vloc-checkbox-plan-{{plan.Id}}" />
+                                            <label class="nds-checkbox__label" for="vloc-checkbox-plan-{{plan.Id}}">
+                                                <span class="nds-checkbox_faux"></span>
+                                                <span class="nds-form-element__label">Compare</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="vloc-cart-plans-collapse-toggle">
+                <button ng-click="insSgpsNode.collapsedCart = !insSgpsNode.collapsedCart" ng-class="{'vloc-toggle-closed': insSgpsNode.collapsedCart}" class="nds-button vloc-link" bs-collapse-toggle>
+                    <span>{{insSgpsNode.collapsedCart ? 'Show' : 'Hide'}} Selected Plans</span>
+                    <slds-svg-icon sprite="'utility'" icon="'chevronup'" size="'xx-small'" extra-classes="'nds-m-left--xx-small nds-m-right--xx-small'"></slds-svg-icon>
+                </button>
+            </div>
+        </div>
+        <div class="nds-box">
+            <div class="nds-text-align_center">
+                <h2 class="nds-text-heading_medium">Available Plans</h2>
+            </div>
+            <div ng-if="control[control.name].filtersAvailable" class="nds-grid nds-m-vertical_large">
+                <div class="nds-size_1-of-2">
+                    <div class="nds-form-element">
+                        <div class="nds-form-element__control">
+                            <div class="nds-combobox_container nds-dropdown-trigger nds-dropdown-trigger--click" ins-os-dropdown-handler ins-os-dropdown-toggle="toggleFiltersDropdown()" ng-class="{'nds-is-open': openFilterDropdown}">
+                                <div class="nds-combobox__form-element nds-input-has-icon nds-input-has-icon_right" role="none">
+                                    <input value="{{selectedFiltersCount(control) ? selectedFiltersCount(control) + ' Filters Selected' : 'Filter by'}}" type="text" class="nds-input nds-combobox__input" id="combobox-id-1" aria-controls="listbox-id-1"
+                                    autoComplete="off" role="textbox" readonly="" />
+                                    <span class="nds-icon_container nds-icon-utility-down nds-input__icon nds-input__icon_right">
+                                        <slds-button-svg-icon sprite="'utility'" icon="'down'"></slds-button-svg-icon>
+                                    </span>
+                                </div>
+                                <div class="nds-dropdown nds-dropdown_fluid nds-dropdown--left">
+                                    <ul class="nds-listbox nds-listbox_vertical" role="menu" ng-repeat="(filterKey, filter) in control[control.name].filterAttrValues">
+                                        <li class="nds-listbox__item" role="presentation">
+                                            <div class="nds-media nds-listbox__option nds-listbox__option_plain nds-media_small" role="presentation">
+                                                <h3 class="nds-text-title_caps" role="presentation">{{filter.attributeName}}</h3>
+                                            </div>
+                                        </li>
+                                        <li class="nds-listbox__item" role="presentation" ng-repeat="value in filter.listOfValues" ng-click="toggleFilter(filterKey, value, control)">
+                                            <div class="nds-media nds-listbox__option nds-listbox__option_plain nds-media_small" role="option" ng-class="{'nds-is-selected': isFilterSelected(filterKey, value, control)}">
+                                                <span class="nds-media__figure nds-listbox__option-icon">
+                                                    <slds-svg-icon sprite="'utility'" icon="'check'" size="'x-small'" extra-classes="'nds-listbox__icon-selected'"></slds-svg-icon>
+                                                </span>
+                                                <span class="nds-media__body">
+                                                    <span class="nds-truncate" title="{{value.displayText}}">{{value.displayText}}</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nds-grid">
+                <div class="nds-size_1-of-2">
+                    <p><b>{{control[control.name].unselectedNewPlans.length || 0}}</b> products available</p>
+                </div>
+                <div class="nds-size_1-of-2 nds-text-align_right">
+                    <button ng-click="openCompareModal(null, control)" class="nds-button nds-button_brand">Compare</button>
+                </div>
+            </div>
+            <div class="nds-grid nds-grid_pull-padded-medium nds-wrap">
+                <article ng-repeat="(planIndex, plan) in control[control.name].unselectedNewPlans track by plan.Id" class="nds-col nds-size_1-of-3">
+                    <div class="nds-box nds-m-around_small vloc-plan-box" ng-class="{'vloc-selected-plan': plan.selected}">
+                        <header class="vloc-plan-box-header">
+                            <div class="nds-m-top_medium">
+                                <img ng-src="{{instanceHost + plan.ImageId}}" ng-if="plan.ImageId" class="vloc-plan-image" />
+                                <span class="nds-icon_container vloc-plan-icon" ng-if="!plan.ImageId" ng-class="plan.tierClass">
+                                    <slds-svg-icon sprite="'custom'" size="'large'" icon="'custom91'"></slds-svg-icon>
+                                    <span class="nds-assistive-text">Default Icon</span>
+                                </span>
+                            </div>
+                            <div class="nds-p-bottom_small nds-p-horizontal_medium vloc-plan-header-text">
+                                <button class="nds-button nds-text-heading_small vloc-link" ng-click="openDetailModal(plan, control)"><b>{{plan.Name}}</b></button>
+                                <p class="nds-p-top_small"><span class="nds-text-heading_large"><b>{{plan.Price | currency: currencyCode: 0}}</b></span><b>/mo</b></p>
+                            </div>
+                        </header>
+                        <div class="vloc-plan-box-body">
+                            <table class="vloc-plan-table">
+                                <tbody>
+                                    <tr ng-repeat="attribute in plan.attributeCategories.records[0].productAttributes.records | limitTo: 5">
+                                        <td class="nds-p-right_small nds-truncate">{{attribute.label}}</td>
+                                            <td class="nds-text-align_right nds-truncate">
+                                            <b>
+                                                <span ng-if="!attribute.formattedValues">
+                                                    <span ng-if="attribute.dataType !== 'currency'">{{attribute.userValues}}</span>
+                                                    <span ng-if="attribute.dataType === 'currency'">{{attribute.userValues | currency: currencyCode: 0}}</span>
+                                                </span>
+                                                <span>
+                                                    <span ng-repeat="val in attribute.formattedValues">{{val}}<span ng-if="$index !== attribute.formattedValues.length - 1">, </span>
+                                                    </span>
+                                                </span>
+                                            </b>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="vloc-plan-footer">
+                                <button class="nds-button nds-button_neutral nds-m-top_x-small vloc-plan-select-button" ng-class="{'nds-button_brand': plan.selected}" ng-click="addNewPlan(plan, planIndex, control)">
+                                    <span>{{plan.selected ? 'Selected' : 'Select Plan'}}</span>
+                                </button>
+                                <div class="nds-form-element nds-m-top_x-small">
+                                    <div class="nds-form-element__control">
+                                        <div class="nds-checkbox">
+                                            <input ng-checked="plan.vlcCompSelected" ng-click="toggleNewCompareSelect(plan, control)" type="checkbox" name="options" id="vloc-checkbox-plan-{{plan.Id}}" />
+                                            <label class="nds-checkbox__label" for="vloc-checkbox-plan-{{plan.Id}}">
+                                                <span class="nds-checkbox_faux"></span>
+                                                <span class="nds-form-element__label">Compare</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="nds-text-align_center">
+                <button ng-hide="control[control.name].lastResultReached" ng-click="getMorePlans(control)" class="nds-button vloc-link">Load more plans</button>
+            </div>
+        </div>
+    </div>
+</div>

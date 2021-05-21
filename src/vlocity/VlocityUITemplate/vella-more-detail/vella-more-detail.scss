@@ -1,0 +1,29 @@
+@import 'vella-mixins-variables';
+
+.vella-more-detail-coverage {
+    background-color: $vella-light-gray-bg;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+
+    .vella-more-detail-coverage-name {
+        text-transform: uppercase;
+        font-size: 0.8125rem;
+        color: $vella-dark-gray;
+        line-height: 1.25rem;
+    }
+
+    .vella-more-detail-coverage-description {
+        font-weight: 300;
+        line-height: 1.4;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 250ms ease,
+                    padding 250ms ease;
+
+        &.in {
+            max-height: 10rem;
+            padding: 0.25rem 0;
+        }
+    }
+}

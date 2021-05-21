@@ -1,0 +1,34 @@
+{
+    "Cards": [
+        "ins-insured-items"
+    ],
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "01t6A000000NtX5QAK"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "body": "",
+            "inputMap": {
+                "productId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceProductAdminHandler"
+            },
+            "remoteClass": "InsuranceProductAdminHandler",
+            "remoteMethod": "getAssociatedInsuredItems",
+            "remoteNSPrefix": "%vlocity_namespace%"
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-insured-items-container-v2"
+        }
+    },
+    "workspace": [
+        "ins-insured-items/Vlocity/1510783334316"
+    ]
+}

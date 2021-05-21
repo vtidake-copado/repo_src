@@ -305,6 +305,11 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>QuoteId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>ShipToContactId</fullName>
         <trackHistory>true</trackHistory>
         <type>Lookup</type>
@@ -326,6 +331,414 @@
         <fullName>Type</fullName>
         <trackHistory>true</trackHistory>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__AccountId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Formula: Value of the AccountId field.</description>
+        <externalId>false</externalId>
+        <formula>AccountId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DueDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__FrameContractId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Frame contract linked to this order</description>
+        <externalId>false</externalId>
+        <label>Frame Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Orders</relationshipLabel>
+        <relationshipName>Orders1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__FulfilmentStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The summary fulfilment status of this order. Populated and updated by order management processes for submitted orders.</description>
+        <externalId>false</externalId>
+        <label>Fulfilment Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>false</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Activated</fullName>
+                    <default>false</default>
+                    <label>Activated</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Superseded</fullName>
+                    <default>false</default>
+                    <label>Superseded</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsChangesAccepted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Changes Accepted</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsChangesAllowed__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Changes Allowed</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsContractRequired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Denotes if order requires a contract</description>
+        <externalId>false</externalId>
+        <label>Require Contract</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__JeopardySafetyIntervalUnit__c</fullName>
+        <defaultValue>&quot;Seconds&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Jeopardy Safety Interval Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Seconds</fullName>
+                    <default>true</default>
+                    <label>Seconds</label>
+                </value>
+                <value>
+                    <fullName>Business Hours</fullName>
+                    <default>false</default>
+                    <label>Business Hours</label>
+                </value>
+                <value>
+                    <fullName>Business Days</fullName>
+                    <default>false</default>
+                    <label>Business Days</label>
+                </value>
+                <value>
+                    <fullName>Calendar Hours</fullName>
+                    <default>false</default>
+                    <label>Calendar Hours</label>
+                </value>
+                <value>
+                    <fullName>Calendar Days</fullName>
+                    <default>false</default>
+                    <label>Calendar Days</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__JeopardySafetyInterval__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Jeopardy Safety Interval</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__JeopardyStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF((ISBLANK(vlocity_ins__RequestedCompletionDate__c) || ISNULL(vlocity_ins__RequestedCompletionDate__c)) || (ISBLANK(vlocity_ins__DueDate__c) || ISNULL(vlocity_ins__DueDate__c)), &apos;Green&apos;,
+            IF(vlocity_ins__DueDate__c &gt;= vlocity_ins__RequestedCompletionDate__c, &apos;Red&apos;,
+            CASE(vlocity_ins__JeopardySafetyIntervalUnit__c,
+            &apos;Seconds&apos;, IF(vlocity_ins__DueDate__c + vlocity_ins__JeopardySafetyInterval__c/(24*60*60) &lt;= vlocity_ins__RequestedCompletionDate__c, &apos;Green&apos;, &apos;Yellow&apos;),
+            &apos;Calendar Hours&apos;, IF(vlocity_ins__DueDate__c + vlocity_ins__JeopardySafetyInterval__c/24 &lt;= vlocity_ins__RequestedCompletionDate__c, &apos;Green&apos;, &apos;Yellow&apos;),
+            &apos;Calendar Days&apos;, IF(vlocity_ins__DueDate__c + vlocity_ins__JeopardySafetyInterval__c &lt;= vlocity_ins__RequestedCompletionDate__c, &apos;Green&apos;, &apos;Yellow&apos;),
+            /* TODO: Gap - business intervals doesn&apos;t support business calendar */
+            &apos;Business Hours&apos;, IF(vlocity_ins__DueDate__c + vlocity_ins__JeopardySafetyInterval__c/24 &lt;= vlocity_ins__RequestedCompletionDate__c, &apos;Green&apos;, &apos;Yellow&apos;),
+            &apos;Business Days&apos;, IF(vlocity_ins__DueDate__c + vlocity_ins__JeopardySafetyInterval__c &lt;= vlocity_ins__RequestedCompletionDate__c, &apos;Green&apos;, &apos;Yellow&apos;),
+            &apos;Green&apos;)
+            ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Jeopardy Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__MaxCatalogueDeltaObjectIndex__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maximum Sync Delta Object Index / Name. Populated by order management during order submit in case if catalogue is out of sync with OMplus.</description>
+        <externalId>false</externalId>
+        <label>Maximum Catalogue Delta Object Index</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__OrchestrationPlanReferenceId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Orchestration Plan Reference Id</label>
+        <length>19</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__OrderStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Order Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ready To Submit</fullName>
+                    <default>false</default>
+                    <label>Ready To Submit</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Activated</fullName>
+                    <default>false</default>
+                    <label>Activated</label>
+                </value>
+                <value>
+                    <fullName>Cancel Requested</fullName>
+                    <default>false</default>
+                    <label>Cancel Requested</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__OriginatingContractId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Points to the contract from which this order was created</description>
+        <externalId>false</externalId>
+        <label>Originating Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Orders</relationshipLabel>
+        <relationshipName>Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PriceListId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Price List</label>
+        <referenceTo>vlocity_ins__PriceList__c</referenceTo>
+        <relationshipLabel>Orders Using This Price List</relationshipLabel>
+        <relationshipName>Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ProcessingLog__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Order processing log. Populated by order management during order submit.</description>
+        <externalId>false</externalId>
+        <label>Processing Log</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>20</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RequestedCompletionDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Requested Completion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SubmittedToOmDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date of Submission to Order Management</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of Submission to Order Management</inlineHelpText>
+        <label>Submitted to OM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SupersededOrderId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Superseded Order</description>
+        <externalId>false</externalId>
+        <label>Superseded Order</label>
+        <referenceTo>Order</referenceTo>
+        <relationshipLabel>SupersededOrder</relationshipLabel>
+        <relationshipName>SupersededOrder</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ThorJeopardyStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Jeopardy Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>Yellow</fullName>
+                    <default>false</default>
+                    <label>Yellow</label>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                    <label>Red</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ValidationDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date of last validation run</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date of last validation run</inlineHelpText>
+        <label>Validation Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ValidationStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Status of last validation run</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Status of last validation run</inlineHelpText>
+        <label>Validation Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not yet run</fullName>
+                    <default>false</default>
+                    <label>Not yet run</label>
+                </value>
+                <value>
+                    <fullName>Passed</fullName>
+                    <default>false</default>
+                    <label>Passed</label>
+                </value>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                    <label>Failed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__orchestrationPlanId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Orchestration Plan</label>
+        <referenceTo>vlocity_ins__OrchestrationPlan__c</referenceTo>
+        <relationshipLabel>Orders</relationshipLabel>
+        <relationshipName>Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <listViews>
         <fullName>AllActivatedOrders</fullName>
@@ -369,4 +782,977 @@
         <searchResultsAdditionalFields>CONTRACT.CONTRACT_NUMBER</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>vlocity_ins__CreateContract</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Contract</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+var namespace_prefix = &apos;&apos;; 
+
+var result = sforce.connection.describeGlobal();
+var TOKEN_OBJ = &quot;Party__c&quot;;
+var sobjects = result.getArray(&quot;sobjects&quot;);
+
+for(var i=0; i&lt;sobjects.length; i++) {
+var sobjName = sobjects[i].name;
+var str = sobjName.split(&quot;__&quot;);
+//if there are 3 values there is a namespace
+if (str.length == 3){
+//Is it one of ours?
+var sobj = str[1].valueOf() +&apos;__c&apos;;
+if(sobj == TOKEN_OBJ) {
+namespace_prefix = str[0].valueOf();
+}
+} 
+}
+if(namespace_prefix != &quot;&quot;){
+namespace_prefix+= &apos;.&apos;;
+} 
+
+var result = sforce.apex.execute(namespace_prefix+&quot;ContractServiceResource&quot;,&quot;createContractWithTemplate&quot;, {contextId: &apos;{!Order.Id}&apos;});
+
+window.location.href = &apos;/&apos; + result + &apos;/e?retURL=%2F&apos; + result;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__CreatingContractAloha</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Create Contract</masterLabel>
+        <openType>sidebar</openType>
+        <page>vlocity_ins__CreateContractFromOrder</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__DecomposeOrder</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Decompose Order</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+
+var namespace_prefix = &apos;&apos;;
+var result = sforce.connection.describeGlobal();
+var TOKEN_OBJ = &quot;Party__c&quot;;
+var sobjects = result.getArray(&quot;sobjects&quot;);
+
+for(var i=0; i&lt;sobjects.length; i++) {
+    var sobjName = sobjects[i].name;
+    var str = sobjName.split(&quot;__&quot;);
+
+    //if there are 3 values there is a namespace
+    if (str.length == 3) {
+        //Is it one of ours?
+        var sobj = str[1].valueOf() +&apos;__c&apos;;
+        if(sobj == TOKEN_OBJ) {
+            namespace_prefix = str[0].valueOf();
+            break;
+        }
+    }
+}
+
+var simpleDecompControllerNamespace = &apos;&apos;;
+var simpleDecompPageNamespace = &apos;&apos;;
+if(namespace_prefix != &quot;&quot;) {
+    simpleDecompControllerNamespace = namespace_prefix + &apos;.&apos;;
+    simpleDecompPageNamespace = namespace_prefix + &apos;__&apos;;
+}
+
+var result = sforce.apex.execute(simpleDecompControllerNamespace+&quot;SimpleDecompositionController&quot;,&quot;decompose&quot;, {orderId: &apos;{!Order.Id}&apos;}, false);
+if(result == &apos;OK&apos;) {
+    // trim ID because we&apos;re sending Order IDs to thor in 15-length
+    window.location.href = &apos;/apex/&apos; + simpleDecompPageNamespace + &apos;XOMViewOrderDecomposition?id={!LEFT(Order.Id, 15)}&apos;;
+} else {
+    console.error(result);
+    alert(result);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__GenerateDocumentPDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Generate Document PDF</masterLabel>
+        <openType>newWindow</openType>
+        <page>vlocity_ins__OrderDocumentPdf</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__PickFrameContract</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Pick Frame Contract</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+
+var namespace_prefix = &apos;&apos;; 
+
+
+
+var result = sforce.connection.describeGlobal();
+
+var TOKEN_OBJ = &quot;Party__c&quot;;
+
+var sobjects = result.getArray(&quot;sobjects&quot;);
+
+
+
+for(var i=0; i&lt;sobjects.length; i++) {
+
+var sobjName = sobjects[i].name;
+
+var str = sobjName.split(&quot;__&quot;);
+
+//if there are 3 values there is a namespace
+
+if (str.length == 3){
+
+//Is it one of ours?
+
+var sobj = str[1].valueOf() +&apos;__c&apos;;
+
+if(sobj == TOKEN_OBJ) {
+
+namespace_prefix = str[0].valueOf();
+
+}
+
+} 
+
+}
+
+
+
+if(namespace_prefix == &quot;&quot;){ 
+
+
+
+var acctId = &apos;{!Order.vlocity_ins__AccountId__c}&apos;; 
+
+if(acctId!=&apos;&apos;) 
+
+window.location = &apos;apex/FrameContractPage?accountValue=&apos; + &apos;{!Order.vlocity_ins__AccountId__c}&apos;+&apos;&amp;Id=&apos; +&apos;{!Order.Id}&apos;; 
+
+} 
+
+else { 
+
+var acctId = &apos;{!Order.vlocity_ins__AccountId__c}&apos;; 
+
+if(acctId!=&apos;&apos;) 
+
+window.location = &apos;apex/&apos;+namespace_prefix+&apos;__FrameContractPage?accountValue=&apos; + &apos;{!Order.vlocity_ins__AccountId__c}&apos;+&apos;&amp;Id=&apos; +&apos;{!Order.Id}&apos;; 
+
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__ProductSelection</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Product Selection</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+var namespace_prefix = &apos;&apos;; 
+var gettingnamespace = sforce.connection.query(&quot;SELECT NamespacePrefix FROM ApexClass where Name = &apos;ApplicationUtilities&apos; LIMIT 1&quot;); 
+var getname = gettingnamespace.getArray(&quot;records&quot;); 
+if(getname.length &gt; 0) 
+{ 
+namespace_prefix = getname[0].NamespacePrefix; 
+}
+if (namespace_prefix==null || namespace_prefix==&apos;&apos;)
+window.location = &apos;apex/InsuranceSelectionUI?accountId=&apos; + &apos;{!Order.vlocity_ins__AccountId__c}&apos;+&apos;&amp;targetObjectId=&apos; +&apos;{!Order.Id}&apos;;
+else
+window.location = &apos;apex/&apos;+namespace_prefix+&apos;__InsuranceSelectionUI?accountId=&apos; + &apos;{!Order.vlocity_ins__AccountId__c}&apos;+&apos;&amp;targetObjectId=&apos; +&apos;{!Order.Id}&apos;;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__RevokeSignature</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Revoke eSignature</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+
+
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+
+
+
+
+
+
+
+var namespace_prefix = &apos;&apos;; 
+
+
+
+var result = sforce.connection.describeGlobal(); 
+
+
+
+var TOKEN_OBJ = &quot;Party__c&quot;; 
+
+
+
+var sobjects = result.getArray(&quot;sobjects&quot;); 
+
+
+
+
+
+
+
+for(var i=0; i&lt;sobjects.length; i++) 
+
+
+
+{ 
+
+
+
+var sobjName = sobjects[i].name; 
+
+
+
+var str = sobjName.split(&quot;__&quot;); 
+
+
+
+
+
+
+
+//if there are 3 values there is a namespace 
+
+
+
+if (str.length == 3) 
+
+
+
+{ 
+
+
+
+//Is it one of ours? 
+
+
+
+var sobj = str[1].valueOf() +&apos;__c&apos;; 
+
+
+
+if(sobj == TOKEN_OBJ) 
+
+
+
+{ 
+
+
+
+namespace_prefix = str[0].valueOf(); 
+
+
+
+break; 
+
+
+
+} 
+
+
+
+} 
+
+
+
+} 
+
+
+
+
+
+
+
+if(namespace_prefix != &quot;&quot;) 
+
+
+
+{ 
+
+
+
+namespace_prefix += &apos;.&apos;; 
+
+
+
+} 
+
+
+
+
+
+
+
+if(&apos;{!$User.vlocity_ins__DocuSignEmail__c}&apos; == null || &apos;{!$User.vlocity_ins__DocuSignEmail__c}&apos; == &quot;&quot;) 
+
+
+
+{ 
+
+
+
+alert(&apos;Login user does not have valid DocuSign account.&apos;); 
+
+
+
+} 
+
+
+
+else { 
+
+
+
+var result = sforce.apex.execute(namespace_prefix+&quot;ContractDocuSignResource&quot;,&quot;voidEnvelopes&quot;, {objectId: &apos;{!Order.Id}&apos;, senderEmail:&apos;{!$User.vlocity_ins__DocuSignEmail__c }&apos;}); 
+
+
+
+if(result == &apos;OK&apos;)
+
+
+
+{
+
+
+
+window.location.reload();
+
+
+
+}
+
+
+
+else
+
+
+
+{
+
+
+
+alert(result);
+
+
+
+} 
+
+
+
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__SendForSignature</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send for eSignature</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+
+var namespace_prefix = &apos;&apos;; 
+
+
+
+var result = sforce.connection.describeGlobal(); 
+
+var TOKEN_OBJ = &quot;Party__c&quot;; 
+
+var sobjects = result.getArray(&quot;sobjects&quot;); 
+
+
+
+for(var i=0; i&lt;sobjects.length; i++) { 
+
+var sobjName = sobjects[i].name; 
+
+var str = sobjName.split(&quot;__&quot;); 
+
+//if there are 3 values there is a namespace 
+
+if (str.length == 3){ 
+
+//Is it one of ours? 
+
+var sobj = str[1].valueOf() +&apos;__c&apos;; 
+
+if(sobj == TOKEN_OBJ) { 
+
+namespace_prefix = str[0].valueOf(); 
+
+} 
+
+} 
+
+} 
+
+if(namespace_prefix != &quot;&quot;){ 
+
+namespace_prefix+= &apos;__&apos;; 
+
+} 
+
+
+
+
+
+if(&apos;{!$User.vlocity_ins__DocuSignEmail__c}&apos; == null || &apos;{!$User.vlocity_ins__DocuSignEmail__c}&apos; == &quot;&quot;) 
+
+{ 
+
+alert(&apos;Login user does not have valid DocuSign account.&apos;); 
+
+} 
+
+else { 
+
+window.location = &apos;apex/&apos;+namespace_prefix+&apos;OrderDocuSignEnvelope?Id=&apos; +&apos;{!Order.Id}&apos;+&apos;&amp;senderDocuSignEmail=&apos; +&apos;{!$User.vlocity_ins__DocuSignEmail__c}&apos;; 
+
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__UpdateContract</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Update Contract</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+
+var namespace_prefix = &apos;&apos;; 
+
+
+
+var result = sforce.connection.describeGlobal(); 
+
+var TOKEN_OBJ = &quot;Party__c&quot;; 
+
+var sobjects = result.getArray(&quot;sobjects&quot;); 
+
+
+
+for(var i=0; i&lt;sobjects.length; i++) { 
+
+var sobjName = sobjects[i].name; 
+
+var str = sobjName.split(&quot;__&quot;); 
+
+//if there are 3 values there is a namespace 
+
+if (str.length == 3){ 
+
+//Is it one of ours? 
+
+var sobj = str[1].valueOf() +&apos;__c&apos;; 
+
+if(sobj == TOKEN_OBJ) { 
+
+namespace_prefix = str[0].valueOf(); 
+
+} 
+
+} 
+
+} 
+
+if(namespace_prefix != &quot;&quot;){ 
+
+namespace_prefix+= &apos;.&apos;; 
+
+} 
+
+var result = sforce.apex.execute(namespace_prefix+&quot;ContractServiceResource&quot;,&quot;updateContract&quot;, {contextId: &apos;{!Order.Id}&apos;}); 
+alert(result);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__UpdateEnvelopeStatus</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Update Envelope Status</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+
+
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+
+
+
+
+
+
+
+var namespace_prefix = &apos;&apos;; 
+
+
+
+var result = sforce.connection.describeGlobal(); 
+
+
+
+var TOKEN_OBJ = &quot;Party__c&quot;; 
+
+
+
+var sobjects = result.getArray(&quot;sobjects&quot;); 
+
+
+
+
+
+
+
+
+
+
+
+for(var i=0; i&lt;sobjects.length; i++) 
+
+
+
+{ 
+
+
+
+ var sobjName = sobjects[i].name; 
+
+
+
+ var str = sobjName.split(&quot;__&quot;); 
+
+
+
+
+
+
+
+ //if there are 3 values there is a namespace 
+
+
+
+ if (str.length == 3)
+
+
+
+ { 
+
+
+
+  //Is it one of ours? 
+
+
+
+  var sobj = str[1].valueOf() +&apos;__c&apos;; 
+
+
+
+  if(sobj == TOKEN_OBJ) 
+
+
+
+  { 
+
+
+
+    namespace_prefix = str[0].valueOf();
+
+
+
+    break;
+
+
+
+  } 
+
+
+
+ } 
+
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+if(namespace_prefix != &quot;&quot;)
+
+
+
+{ 
+
+
+
+  namespace_prefix += &apos;.&apos;;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  var result = sforce.apex.execute(namespace_prefix+&quot;ContractDocuSignResource&quot;,&quot;updateEnvelopeStatus&quot;, {objectId: &apos;{!Order.Id}&apos;});
+
+if(result == &apos;OK&apos;) 
+
+{ 
+
+window.location.reload(); 
+
+} 
+
+else 
+
+{ 
+
+alert(result); 
+
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__ViewDecomposedOrder</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View Decomposition</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+
+var namespace_prefix = &apos;&apos;;
+var result = sforce.connection.describeGlobal();
+var TOKEN_OBJ = &quot;Party__c&quot;;
+var sobjects = result.getArray(&quot;sobjects&quot;);
+
+for(var i=0; i&lt;sobjects.length; i++) {
+    var sobjName = sobjects[i].name;
+    var str = sobjName.split(&quot;__&quot;);
+
+    //if there are 3 values there is a namespace
+    if (str.length == 3) {
+        //Is it one of ours?
+        var sobj = str[1].valueOf() +&apos;__c&apos;;
+        if(sobj == TOKEN_OBJ) {
+            namespace_prefix = str[0].valueOf();
+            break;
+        }
+    }
+}
+
+var simpleDecompControllerNamespace = &apos;&apos;;
+var simpleDecompPageNamespace = &apos;&apos;;
+if(namespace_prefix != &quot;&quot;) {
+    simpleDecompControllerNamespace = namespace_prefix + &apos;.&apos;;
+    simpleDecompPageNamespace = namespace_prefix + &apos;__&apos;;
+}
+
+var result = sforce.apex.execute(simpleDecompControllerNamespace+&quot;SimpleDecompositionController&quot;,&quot;viewDecomposition&quot;, {orderId: &apos;{!Order.Id}&apos;});
+if(result == &apos;OK&apos;) {
+    // trim ID because we&apos;re sending Order IDs to thor in 15-length
+    window.location.href = &apos;/apex/&apos; + simpleDecompPageNamespace + &apos;XOMViewOrderDecomposition?id={!LEFT(Order.Id, 15)}&apos;;
+} else {
+    alert(result);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__ViewOrchestrationPlan</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>View Orchestration Plan</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/connection.js&quot;)}
+            {!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+
+            var namespace_prefix = &apos;&apos;;
+            var result = sforce.connection.describeGlobal();
+            var TOKEN_OBJ = &quot;Party__c&quot;;
+            var sobjects = result.getArray(&quot;sobjects&quot;);
+
+            for(var i=0; i&lt;sobjects.length; i++) {
+                var sobjName = sobjects[i].name;
+                var str = sobjName.split(&quot;__&quot;);
+
+                //if there are 3 values there is a namespace
+                if (str.length == 3) {
+                    //Is it one of ours?
+                    var sobj = str[1].valueOf() +&apos;__c&apos;;
+                    if (sobj == TOKEN_OBJ) {
+                        namespace_prefix = str[0].valueOf();
+                        break;
+                    }
+                }
+            }
+
+            var simpleDecompControllerNamespace = &apos;&apos;;
+            var simpleDecompPageNamespace = &apos;&apos;;
+            if(namespace_prefix != &quot;&quot;) {
+                simpleDecompControllerNamespace = namespace_prefix + &apos;.&apos;;
+                simpleDecompPageNamespace = namespace_prefix + &apos;__&apos;;
+            }
+
+var orderId = &apos;{!Order.Id }&apos;;
+var planId = &apos;{!Order.vlocity_ins__orchestrationPlanIdId__c}&apos;;
+var thorPlanId = &apos;{!Order.vlocity_ins__OrchestrationPlanReferenceId__c}&apos;;
+var fulfilmentStatus = &apos;{!Order.vlocity_ins__FulfilmentStatus__c}&apos;;
+if(planId !== null &amp;&amp; planId !== &apos;&apos;)
+{
+    parent.location.href = parent.location.origin+&apos;/&apos;+planId;
+} else if (thorPlanId !== null &amp;&amp; thorPlanId !== &apos;&apos;)
+{
+   parent.location.href =  &apos;/apex/&apos; + simpleDecompPageNamespace +&apos;OrchestrationPlanViewCommon?id=&apos; + thorPlanId;
+} else if(fulfilmentStatus ==&apos;Draft&apos;)
+{
+    alert(&apos;Order is not associated with any Orchestration Plan!&apos;);
+} else
+{
+    parent.location.href =  &apos;/apex/&apos; + simpleDecompPageNamespace +&apos;OrchestrationPlanViewCommon?id=&apos; + orderId;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__XOMOnSubmitOrder</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Submit Order</masterLabel>
+        <openType>sidebar</openType>
+        <page>vlocity_ins__XOMSubmitOrder</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__XOMSubmitOrder</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Submit Order</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+
+function showDialog(title, message, width, largerText) {
+    //set up the vars
+    var dialogTitle = title,
+        dialogHTML = message,
+        dialogWidth,
+        modalBlocker = document.createElement(&quot;div&quot;),
+        modalBox = document.createElement(&quot;div&quot;),
+        modalBoxInner = document.createElement(&quot;div&quot;),
+        modalBoxTitle = document.createElement(&quot;h3&quot;),
+        modalBoxClose = document.createElement(&quot;span&quot;);
+ 
+    if (width) {
+        dialogWidth = width;
+    }
+    else {
+        dialogWidth = &apos;800&apos;;
+    }
+ 
+    //debug info
+    console.log(&apos;title&apos;, title);
+    console.log(&apos;message&apos;, message);
+    console.log(&apos;width&apos;, width);
+    console.log(&apos;largerText&apos;, largerText);
+ 
+    
+ 
+    //Get the document size
+    var w = 0; var h = 0;
+    if (!window.innerWidth) {
+        if (!(document.documentElement.clientWidth == 0)) {
+            w = document.documentElement.clientWidth;
+            h = document.documentElement.clientHeight;
+        } else {
+            w = document.body.clientWidth;
+            h = document.body.clientHeight;
+        }
+    } else {
+        w = window.innerWidth;
+        h = window.innerHeight;
+    }
+ 
+    //Set up the modal blocker
+    modalBlocker.setAttribute(&apos;Id&apos;, &apos;__modalBlocker&apos;);
+    modalBlocker.style.width = w + &apos;px&apos;;
+    modalBlocker.style.height = document.body.scrollHeight + &apos;px&apos;;
+    modalBlocker.style.position = &apos;absolute&apos;;
+    modalBlocker.style.zIndex = &apos;20000&apos;;
+    modalBlocker.style.opacity = &apos;.5&apos;;
+    modalBlocker.style.filter = &apos;alpha(opacity=50)&apos;;
+    modalBlocker.style.backgroundColor = &apos;#000&apos;;
+    modalBlocker.style.top = 0;
+    modalBlocker.style.left = 0;
+ 
+    //set up the modal box...
+    modalBox.setAttribute(&apos;id&apos;, &apos;__modalBox&apos;);
+    modalBox.style.backgroundColor = &apos;#fff&apos;;
+    modalBox.style.width = dialogWidth + &apos;px&apos;;
+    modalBox.style.zIndex = &apos;20001&apos;;
+    modalBox.style.position = &apos;fixed&apos;;
+    modalBox.style.top = &apos;200px&apos;;
+    modalBox.style.left = ((w / 2) - (dialogWidth / 2)) + &apos;px&apos;;
+    modalBox.style.borderRadius = &apos;4px&apos;;
+    modalBox.style.boxShadow = &apos;1px 1px 10px #000&apos;;
+ 
+    //...and the inner div
+    modalBoxInner.style.position = &apos;relative&apos;;
+    modalBoxInner.style.padding = &apos;20px&apos;;
+    if (largerText) modalBoxInner.style.fontSize = &apos;1.6em&apos;;
+    modalBoxInner.innerHTML = dialogHTML;
+ 
+ 
+    //set up the close button
+    modalBoxClose.innerHTML = &apos;X&apos;;
+    modalBoxClose.title = &apos;Close&apos;;
+    modalBoxClose.style.fontSize = &apos;12px&apos;;
+    modalBoxClose.style.backgroundColor = &apos;rgb(224, 7, 7)&apos;;
+    modalBoxClose.style.color = &apos;#fff&apos;;
+    modalBoxClose.style.position = &apos;absolute&apos;;
+    modalBoxClose.style.top = &apos;0&apos;;
+    modalBoxClose.style.right = &apos;10px&apos;;
+    modalBoxClose.style.display = &apos;block&apos;;
+    modalBoxClose.style.width = &apos;26px&apos;;
+    modalBoxClose.style.padding = &apos;5px&apos;;
+    modalBoxClose.style.textAlign = &apos;center&apos;;
+    modalBoxClose.style.cursor = &apos;pointer&apos;;
+    modalBoxClose.style.borderBottomLeftRadius = &apos;4px&apos;;
+    modalBoxClose.style.borderBottomRightRadius = &apos;4px&apos;;
+    modalBoxClose.setAttribute(&apos;onclick&apos;, &apos;document.body.removeChild(document.getElementById(\&apos;__modalBlocker\&apos;));document.body.removeChild(document.getElementById(\&apos;__modalBox\&apos;));&apos;);
+ 
+    //set up the dialog box title
+    modalBoxTitle.innerHTML = dialogTitle;
+    modalBoxTitle.style.display = &apos;block&apos;;
+    modalBoxTitle.style.fontSize = &apos;1.6em&apos;;
+    modalBoxTitle.style.color = &apos;#1797c0&apos;;
+    modalBoxTitle.style.margin = &apos;8px 0 0 8px&apos;;
+ 
+    //Add the close button and the title to the modal box
+    modalBox.appendChild(modalBoxClose);
+    modalBox.appendChild(modalBoxTitle);
+    modalBox.appendChild(modalBoxInner);
+ 
+    //finally, add the modal box and the modal blocker to the page
+    document.body.appendChild(modalBlocker);
+    document.body.appendChild(modalBox);
+}
+
+var namespace_prefix = &apos;&apos;;
+var result = sforce.connection.describeGlobal();
+var TOKEN_OBJ = &quot;Party__c&quot;;
+var sobjects = result.getArray(&quot;sobjects&quot;);
+
+for(var i=0; i&lt;sobjects.length; i++) {
+    var sobjName = sobjects[i].name;
+    var str = sobjName.split(&quot;__&quot;);
+
+    //if there are 3 values there is a namespace
+    if (str.length == 3) {
+        //Is it one of ours?
+        var sobj = str[1].valueOf() +&apos;__c&apos;;
+        if(sobj == TOKEN_OBJ) {
+            namespace_prefix = str[0].valueOf();
+            break;
+        }
+    }
+}
+
+function processResponse(result) {
+  console.log(&apos;processing order submit result:&apos;, result);
+  var deserializedResult = JSON.parse(result);
+  if (!deserializedResult.planId){
+    deserializedResult.planId = &apos;{!Order.Id}&apos;
+  }
+  if (deserializedResult.isOk === true &amp;&amp; deserializedResult.isOff === true) {
+    parent.location.href = &apos;/apex/&apos; + simpleDecompPageNamespace + &apos;OrchestrationPlanViewCommon?id=&apos; + deserializedResult.planId;
+  } else if (deserializedResult.isOk === true &amp;&amp; deserializedResult.isOff !== true) {
+    parent.location.href = parent.location.origin + &apos;/&apos; + deserializedResult.planId;
+  } else {
+    console.error(&apos;error is occurred on order submit:&apos;, deserializedResult.errorMsg);
+    showDialog(&apos;Error&apos;, deserializedResult.errorMsg);
+  }
+}
+
+function errorHandler(error) {
+  console.error(error);
+  alert(error);
+}
+
+var simpleDecompControllerNamespace = &apos;&apos;;
+var simpleDecompPageNamespace = &apos;&apos;;
+if(namespace_prefix != &quot;&quot;) {
+    simpleDecompControllerNamespace = namespace_prefix + &apos;.&apos;;
+    simpleDecompPageNamespace = namespace_prefix + &apos;__&apos;;
+}
+
+var result = sforce.apex.execute(simpleDecompControllerNamespace + &quot;SimpleDecompositionController&quot;, &quot;decomposeAndCreatePlanEx&quot;, {
+  orderId: &apos;{!Order.Id}&apos;
+}, {
+  onSuccess: processResponse,
+  onFailure: errorHandler,
+  timeout: 120000
+});</url>
+    </webLinks>
 </CustomObject>

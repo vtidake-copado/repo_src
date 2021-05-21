@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Assessment Date Format --></label>
+        <name>vlocity_ins__AssessmentDateFormat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment --></label>
+        <name>vlocity_ins__AssessmentId__c</name>
+        <relationshipLabel><!-- Assessment Questions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Free-text Type --></label>
+        <name>vlocity_ins__FreetextType__c</name>
+        <picklistValues>
+            <masterLabel>Long Text</masterLabel>
+            <translation><!-- Long Text --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Short Text</masterLabel>
+            <translation><!-- Short Text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Template Question --></label>
+        <name>vlocity_ins__IsTemplateQuestion__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParentAssessmentId --></label>
+        <name>vlocity_ins__ParentAssessmentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Question --></label>
+        <name>vlocity_ins__ParentQuestion__c</name>
+        <relationshipLabel><!-- Assessment Questions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Question Type --></label>
+        <name>vlocity_ins__QuestionType__c</name>
+        <picklistValues>
+            <masterLabel>Checkbox</masterLabel>
+            <translation><!-- Checkbox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Free-text</masterLabel>
+            <translation><!-- Free-text --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instruction</masterLabel>
+            <translation><!-- Instruction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-select</masterLabel>
+            <translation><!-- Multi-select --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select</masterLabel>
+            <translation><!-- Select --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Question --></label>
+        <name>vlocity_ins__Question__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response --></label>
+        <name>vlocity_ins__Response__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether this Question in the Assessment will receive a score. --></help>
+        <label><!-- Scorable --></label>
+        <name>vlocity_ins__Scorable__c</name>
+    </fields>
+    <fields>
+        <help><!-- When completing an Assessment, stores the value resulting from the Answer to this specific Question. --></help>
+        <label><!-- Score --></label>
+        <name>vlocity_ins__Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Select Type --></label>
+        <name>vlocity_ins__SelectType__c</name>
+        <picklistValues>
+            <masterLabel>Dropdown</masterLabel>
+            <translation><!-- Dropdown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio Button</masterLabel>
+            <translation><!-- Radio Button --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether a Question is weighted more (i.e. 1.5) or less (i.e. 0.75) when scoring the Assessment. --></help>
+        <label><!-- Weight --></label>
+        <name>vlocity_ins__Weight__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Checkbox --></label>
+        <name>vlocity_ins__Checkbox</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Date --></label>
+        <name>vlocity_ins__Date</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Free Text --></label>
+        <name>vlocity_ins__FreeText</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Instruction --></label>
+        <name>vlocity_ins__Instruction</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Multi Select --></label>
+        <name>vlocity_ins__MultiSelect</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Number --></label>
+        <name>vlocity_ins__Number</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Question Table Multi Select --></label>
+        <name>vlocity_ins__QuestionTableMultiSelect</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Question Table Single Select --></label>
+        <name>vlocity_ins__QuestionTableSingleSelect</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Single Select --></label>
+        <name>vlocity_ins__SingleSelect</name>
+    </recordTypes>
+</CustomObjectTranslation>

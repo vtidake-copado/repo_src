@@ -1,0 +1,34 @@
+{
+    "Cards": [
+        "ins-product-model-insured-items"
+    ],
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "a3T6A000000GuwgUAC"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "inputMap": {
+                "claimId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsurancePCRuntimeHandler"
+            },
+            "remoteClass": "InsuranceClaimService",
+            "remoteMethod": "getClaimInvolvedInjuries",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": "records"
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-claims-involved-injuries"
+        }
+    },
+    "workspace": [
+        "ins-product-model-insured-items/Vlocity/1501184964124"
+    ]
+}

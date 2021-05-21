@@ -1,0 +1,49 @@
+<div class="ins-os-confirmation-wrapper" ng-if="control.vlcSI[control.itemsKey]">
+    <div class="ins-os-confirmation-container" ng-repeat="p in control.vlcSI[control.itemsKey]">
+        <p>Congratulations!  Your payment has been approved, and your policy is now in force.  Please find your policy number and a link to print your evidence of insurance.</p>
+        <div class="slds-grid slds-wrap ins-os-confirmation-card ins-os-confirmation-items">
+            <div class="slds-col">
+                <div class="slds-size--2-of-2 slds-m-bottom--x-small ins-os-confirmation-m-bottom--x-small">
+                    <span class="ins-os-confirmation-label">Policy Number</span>
+                    <span class="ins-os-confirmation-value">{{p.confirmPolicyNumber}}</span>
+                </div>
+                <div class="slds-max-small-size--1-of-1 slds-size--1-of-2 slds-m-bottom--x-small ins-os-confirmation-m-bottom--x-small">
+                    <h3>{{p.confirmProductName}}</h3>
+                </div>
+
+                <div class="slds-max-small-size--1-of-1 slds-size--3-of-4 slds-m-bottom--x-small ins-os-confirmation-m-bottom--x-small">
+                    <span class="ins-os-confirmation-label">Effective</span>
+                    <span class="ins-os-confirmation-value">{{baseCtrl.insConfirmationformatDate(p.confirmEffectiveDate)}}</span>
+                    <span class="ins-os-confirmation-label">through</span>
+                    <span class="ins-os-confirmation-value ins-os-confirmation-exp-date">{{baseCtrl.insConfirmationformatDate(p.confirmExpirationDate)}}</span>
+                </div>
+                <div class="slds-size--2-of-2">
+                    <span class="ins-os-confirmation-label">Payable</span>
+                    <span class="ins-os-confirmation-value">{{p.confirmBillFrequency}}</span>
+                    <span class="ins-os-confirmation-label">via</span>
+                    <span class="ins-os-confirmation-value">{{p.confirmPaymentName}}</span>
+                    <div class="break-on-mobile ins-os-confirmation-m-top--x-small slds-m-top--x-small" ng-if="p.confirmAutoPay">Your Policy will <strong>Auto Renew</strong></div>
+                </div>
+            </div>
+            <div class="slds-col ins-os-amount-container">
+                <div class="slds-max-small-size--1-of-1 slds-m-bottom--x-small slds-text-align--right ins-os-confirmation-m-bottom--x-small ins-os-confirmation-annual-premium">
+                    <span class="ins-os-confirmation-label">Total Annual</span>
+                    <span class="ins-os-confirmation-value">{{p.totalAmount}} </span>
+                </div>
+                <div ng-if="p.confirmAnnualPremium" class="slds-max-small-size--1-of-1 slds-m-bottom--x-small slds-text-align--right ins-os-confirmation-m-bottom--x-small ins-os-confirmation-annual-premium">
+                    <span class="ins-os-confirmation-label">Annual Premium</span>
+                    <span class="ins-os-confirmation-value">{{p.confirmAnnualPremium}}</span>
+                </div>
+                <div ng-if="p.totalTaxForTerm" class="slds-max-small-size--1-of-1 slds-m-bottom--x-small slds-text-align--right ins-os-confirmation-m-bottom--x-small ins-os-confirmation-annual-premium">
+                    <span class="ins-os-confirmation-label">Taxes</span>
+                    <span class="ins-os-confirmation-value">{{p.totalTaxForTerm}}</span>
+                </div>
+                <div ng-if="p.totalFeeForTerm" class="slds-max-small-size--1-of-1 slds-m-bottom--x-small slds-text-align--right ins-os-confirmation-m-bottom--x-small ins-os-confirmation-annual-premium">
+                    <span class="ins-os-confirmation-label">Fees</span>
+                    <span class="ins-os-confirmation-value">{{p.totalFeeForTerm}}</span>
+                </div>
+            </div>
+        </div>
+        <p>We look forward to serving you as your insurance needs evolve.  Please contact us at <a href="https://www.vlocity.com/" target="_blank"><strong>www.vlocity.com</strong></a>, via email at <a href="mailto:customerservice@vlocity.com"><strong>customerservice@vlocity.com</strong></a> or or via phone at <a href="tel:18448562489"><strong>888.Vlocity</strong></a> if we can be of assistance.</p>
+    </div>
+</div>

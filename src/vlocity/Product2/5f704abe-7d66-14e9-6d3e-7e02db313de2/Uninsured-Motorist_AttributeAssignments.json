@@ -1,0 +1,171 @@
+[
+    {
+        "%vlocity_namespace%__AcordElement__c": "",
+        "%vlocity_namespace%__AddDate__c": "",
+        "%vlocity_namespace%__AttributeAdjustmentComments__c": "",
+        "%vlocity_namespace%__AttributeAdjustmentUnits__c": "",
+        "%vlocity_namespace%__AttributeCategoryCode__c": "",
+        "%vlocity_namespace%__AttributeCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "autoTerms",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/autoTerms",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__AttributeCategorySubType__c": "Product Attribute",
+        "%vlocity_namespace%__AttributeCategory__c": "",
+        "%vlocity_namespace%__AttributeCode__c": "",
+        "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Limit",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "0",
+        "%vlocity_namespace%__AttributeId__c": {
+            "%vlocity_namespace%__Code__c": "atLimitUM",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Attribute__c/atLimitUM",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Attribute__c"
+        },
+        "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "atLimitUM",
+        "%vlocity_namespace%__ConfigurationDetail__c": "",
+        "%vlocity_namespace%__ConfigurationStages__c": "",
+        "%vlocity_namespace%__CustomConfigUiTemplate__c": "",
+        "%vlocity_namespace%__Data__c": "",
+        "%vlocity_namespace%__DefaultPicklistValueId__c": "",
+        "%vlocity_namespace%__DisplaySequence__c": "",
+        "%vlocity_namespace%__EndStory__c": "",
+        "%vlocity_namespace%__ExcludedPicklistValues__c": "",
+        "%vlocity_namespace%__FormatMask__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "b0246add-376f-7fab-aa14-e30cb41b0dac",
+        "%vlocity_namespace%__HasRule__c": false,
+        "%vlocity_namespace%__HelpText__c": "",
+        "%vlocity_namespace%__IsActiveAssignment__c": true,
+        "%vlocity_namespace%__IsConfigurable__c": true,
+        "%vlocity_namespace%__IsDynamic__c": false,
+        "%vlocity_namespace%__IsEligibilityAttribute__c": false,
+        "%vlocity_namespace%__IsEncrypted__c": false,
+        "%vlocity_namespace%__IsHidden__c": false,
+        "%vlocity_namespace%__IsNotAssetizable__c": false,
+        "%vlocity_namespace%__IsNotTranslatable__c": false,
+        "%vlocity_namespace%__IsOverride__c": false,
+        "%vlocity_namespace%__IsQueryDriven__c": false,
+        "%vlocity_namespace%__IsRatingAttribute__c": true,
+        "%vlocity_namespace%__IsReadOnly__c": false,
+        "%vlocity_namespace%__IsRequired__c": false,
+        "%vlocity_namespace%__IsTaxAndFeeRatingAttribute__c": false,
+        "%vlocity_namespace%__LookupFilter__c": "",
+        "%vlocity_namespace%__LookupObjectId__c": "",
+        "%vlocity_namespace%__LookupObjectTypeId__c": "",
+        "%vlocity_namespace%__ObjectId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "5f704abe-7d66-14e9-6d3e-7e02db313de2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/5f704abe-7d66-14e9-6d3e-7e02db313de2",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__ObjectType__c": "",
+        "%vlocity_namespace%__PicklistId__c": "",
+        "%vlocity_namespace%__QueryCode__c": "",
+        "%vlocity_namespace%__QueryLabel__c": "",
+        "%vlocity_namespace%__RateBandTier__c": "",
+        "%vlocity_namespace%__RatingInput__c": "limitUM",
+        "%vlocity_namespace%__RatingOutput__c": "",
+        "%vlocity_namespace%__RatingType__c": "Input",
+        "%vlocity_namespace%__RemoveDate__c": "",
+        "%vlocity_namespace%__RemovedFlag__c": false,
+        "%vlocity_namespace%__RuleData__c": "",
+        "%vlocity_namespace%__RuleMessage__c": "",
+        "%vlocity_namespace%__StartStory__c": "",
+        "%vlocity_namespace%__TaxAndFeeRatingInput__c": "",
+        "%vlocity_namespace%__TaxAndFeeRatingOutput__c": "",
+        "%vlocity_namespace%__TaxAndFeeRatingType__c": "",
+        "%vlocity_namespace%__UIDisplayType__c": "Dropdown",
+        "%vlocity_namespace%__UIWidgetId__c": "",
+        "%vlocity_namespace%__ValidValuesData__c": [
+            {
+                "displayText": "$15,000 / $30,000",
+                "id": 0,
+                "isAvailable": true,
+                "isDefault": false,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "15/30"
+            },
+            {
+                "displayText": "$25,000 / $50,000",
+                "id": 1,
+                "isAvailable": true,
+                "isDefault": false,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "25/50"
+            },
+            {
+                "displayText": "$30,000 / $60,000",
+                "id": 2,
+                "isAvailable": true,
+                "isDefault": false,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "30/60"
+            },
+            {
+                "displayText": "$50,000 / $100,000",
+                "id": 3,
+                "isAvailable": true,
+                "isDefault": true,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "50/100"
+            },
+            {
+                "displayText": "$100,000 / $300,000",
+                "id": 4,
+                "isAvailable": true,
+                "isDefault": false,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "100/300"
+            },
+            {
+                "displayText": "$250,000 / $500,000",
+                "id": 5,
+                "isAvailable": true,
+                "isDefault": false,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "250/500"
+            },
+            {
+                "displayText": "$500,000 / $500,000",
+                "id": 6,
+                "isAvailable": true,
+                "isDefault": false,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "500/500"
+            },
+            {
+                "displayText": "$500,000 / $1,000,000",
+                "id": 7,
+                "isAvailable": true,
+                "isDefault": false,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "500/1000"
+            }
+        ],
+        "%vlocity_namespace%__ValidValues__c": "",
+        "%vlocity_namespace%__ValueDataType__c": "Picklist",
+        "%vlocity_namespace%__ValueDecoder__c": "",
+        "%vlocity_namespace%__ValueDescription__c": "",
+        "%vlocity_namespace%__Value__c": "50/100",
+        "Name": "Limit",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/b0246add-376f-7fab-aa14-e30cb41b0dac"
+    }
+]

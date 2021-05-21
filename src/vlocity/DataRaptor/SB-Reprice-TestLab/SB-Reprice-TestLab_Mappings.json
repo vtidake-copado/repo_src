@@ -1,0 +1,54 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "selectedProduct:records",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "configure:configureProduct",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "SB-Reprice-TestLabCustoma0J3s000005tFauEAEItem2",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "SB-Reprice-TestLab",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "userInputs:busBusinessProfile.busLegalForm",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "BusinessInfo:busLegalForm",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "SB-Reprice-TestLabCustom9441",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "SB-Reprice-TestLab",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "userInputs:busBusinessProfile.busRevAnnual",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "BusinessInfo:busRevAnnual",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "SB-Reprice-TestLabCustoma0J3s000005tFauEAEItem0",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "SB-Reprice-TestLab",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "userInputs:busBusinessProfile.busType",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "BusinessInfo:busType",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "SB-Reprice-TestLabCustoma0J3s000005tFauEAEItem1",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "SB-Reprice-TestLab",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

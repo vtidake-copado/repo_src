@@ -1,0 +1,247 @@
+@import "ins-product-attributes-variables";
+
+.via-slds{
+
+ .dropzone {
+    ul[dnd-list] {
+        &.dragging{
+          margin: 0rem;
+          min-height: 4rem;
+          padding-left: 0rem;
+        }
+    }
+    .vloc-list-items {
+      display: block;
+      padding: 0px;
+      opacity: 1;
+      &.isChild{
+          margin-left: 1rem; 
+          margin-right: 1rem;
+          background: transparent; 
+      } 
+      &.isParent{
+        background: white;
+      }
+      transition: opacity 500ms ease-in, background 500ms ease-in 500ms;
+    }
+
+    .dndDraggingSource {
+        background: red;
+        position: absolute;
+        left: -999px;
+        .vloc-card-header{
+            border-color: $primary-light; 
+            background: $primary-light;
+        }
+
+    }
+
+   .vloc-card-header {
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+        &.vloc-card-refreshed {
+            background-color: #e6eef4;
+            color: #1589ee;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            .slds-text-heading_label{
+                color: #1589ee;
+            }
+            .slds-icon{
+              background-color: #1589ee;
+            }
+        }
+        &:hover{
+              background-color: #e6eef4;
+              color: #1589ee;
+              border-top-left-radius: .25rem;
+              border-top-right-radius: .25rem;
+              .slds-text-heading_label{
+                  color: #1589ee;
+              }
+              .slds-icon{
+                background-color: #1589ee;
+              }
+         }
+        .dragging{
+            &:hover{
+                background-color: white;
+            }
+        }
+    }
+
+    .vloc-border-radius{
+        border-bottom-left-radius: .25rem;
+        border-bottom-right-radius: .25rem;
+    }
+
+    .vloc-hide-duplicate-column {
+        display: none;
+    }
+
+    .vloc-center-element {
+        text-align: center;
+    }
+
+    .vloc-card-body{
+        height: auto;
+        &.dragging{
+            display: none;
+        }
+    }
+    .dndPlaceholder {
+      background-color: #ddd;
+      display: block;
+      min-height: 4rem;
+      border-radius: 0;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+      height: 4rem;
+    }
+    .selected {
+      .vloc-card-header {
+          background-color: #e6eef4;
+          color: #1589ee;
+          border-top-left-radius: .25rem;
+          border-top-right-radius: .25rem;
+      }
+      .slds-text-heading_label{
+          color: #1589ee;
+      }
+      .slds-icon{
+        background-color: #1589ee;
+      }
+    }
+    .vloc-box{
+        padding: 0;
+    }
+  }
+
+    .vloc-italic{
+        font-style: italic;
+    }
+    
+    .vloc-attr-add-new{
+        &:active{
+            box-shadow: none;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+
+    .vloc-card-header{
+        &:hover{
+            cursor: move
+        }
+    }
+
+    .vloc-rules-icon{
+        &:hover{
+            cursor: pointer;
+        }
+        &.has-rules{
+            color: $primary-light;
+            fill: $primary-light;
+        }
+        
+    }
+
+    .vloc-attr-grid{
+        border-bottom-left-radius: .25rem;
+        border-bottom-right-radius: .25rem;
+    }
+ .vloc-attr-table {
+        background: white;
+        min-height: 45rem;
+        -webkit-transition: all 0.3s ease;                  
+        -moz-transition: all 0.3s ease;                 
+        -o-transition: all 0.3s ease;   
+        -ms-transition: all 0.3s ease;          
+        transition: all 0.3s ease;
+
+        &.newAttr{
+            width: 50%;
+        }
+        
+        .vloc-attr-table-header{
+            border-bottom: 1px solid  $cards-border-gray;
+            .vloc-attr-title-cell {
+                &:hover{
+                    cursor:pointer;
+                }
+             }
+        }
+    }
+    .vloc-attr-row {
+        position: relative;
+
+        .vloc-attr-category-heading{
+            border-bottom: 1px solid $cards-border-gray;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        &.selected{
+            .vloc-attr-data-cell{
+                background: $cards-gray;
+            }
+        }
+
+        .vloc-attr-fly-out{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .vloc-attribute-actions{
+            color: #1589ee;
+            cursor: pointer;
+            display: inline;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .vloc-actions-divider{
+            padding-left: 4px;
+            padding-right: 4px;
+            color: #706e6b;
+        }
+    }
+
+    .vloc-tooltip-container {
+        overflow: visible;
+        &.vloc-attribute-overriden {
+            padding-left: 0;
+            margin-left: 0;
+        }
+    }
+
+    .vloc-field-label {
+        white-space: normal;
+    }
+
+    .vloc-overriden-tooltip {
+        position: absolute;
+        white-space: initial;
+        min-width: 17rem;
+        visibility: hidden;
+        left: -21px;
+    }
+
+    .vloc-tooltip-insured-items {
+        color: #0070d2;
+        font-size: 1rem;
+        position: relative;
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover .vloc-overriden-tooltip {
+            display: inline;
+            visibility: initial;
+        }
+    }
+
+}

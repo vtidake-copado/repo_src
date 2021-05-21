@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- CAT Code Source --></label>
+        <name>vlocity_ins__CatCodeSource__c</name>
+        <picklistValues>
+            <masterLabel>Carrier</masterLabel>
+            <translation><!-- Carrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEMA</masterLabel>
+            <translation><!-- FEMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FICO</masterLabel>
+            <translation><!-- FICO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CAT Code --></label>
+        <name>vlocity_ins__CatCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>vlocity_ins__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lloyd&apos;s CAT Code --></label>
+        <name>vlocity_ins__LloydsCatCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Llyods CAT Code --></label>
+        <name>vlocity_ins__LlyodsCatCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occurrence ID --></label>
+        <name>vlocity_ins__OccurrenceNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>vlocity_ins__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Incurred --></label>
+        <name>vlocity_ins__TotalIncurred__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Outstanding --></label>
+        <name>vlocity_ins__TotalOutstanding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Paid --></label>
+        <name>vlocity_ins__TotalPaid__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -158,14 +158,6 @@
             <location>full</location>
         </listPlacement>
         <listRefreshMethod>none</listRefreshMethod>
-        <pushNotifications>
-            <fieldNames>Phone</fieldNames>
-            <objectName>Account</objectName>
-        </pushNotifications>
-        <pushNotifications>
-            <fieldNames>BusinessHours</fieldNames>
-            <objectName>Case</objectName>
-        </pushNotifications>
     </consoleConfig>
     <defaultLandingTab>standard-home</defaultLandingTab>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
@@ -187,6 +179,8 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>
+    <tabs>standard-Knowledge</tabs>
+    <tabs>vlocity_ins__GroupCensus__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>standard-Account</tab>
@@ -200,11 +194,17 @@
             <tab>standard-Contact</tab>
         </mappings>
         <mappings>
+            <tab>standard-Knowledge</tab>
+        </mappings>
+        <mappings>
             <tab>standard-Lead</tab>
         </mappings>
         <mappings>
             <fieldName>AccountId</fieldName>
             <tab>standard-Opportunity</tab>
+        </mappings>
+        <mappings>
+            <tab>vlocity_ins__GroupCensus__c</tab>
         </mappings>
     </workspaceConfig>
 </CustomApplication>

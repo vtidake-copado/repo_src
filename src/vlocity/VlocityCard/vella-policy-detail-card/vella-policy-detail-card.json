@@ -1,0 +1,117 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "02i6A0000009Wa7QAE"
+            }
+        ],
+        "type": "Query",
+        "value": {
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceAssetHandler"
+            },
+            "query": "SELECT %vlocity_namespace%__Image__c,\n%vlocity_namespace%__Product2Id__r.Description, \n%vlocity_namespace%__PolicyAssetId__r.Name, %vlocity_namespace%__PolicyAssetId__r.%vlocity_namespace%__Type__c, \n%vlocity_namespace%__PolicyAssetId__r.%vlocity_namespace%__EffectiveDate__c,\n%vlocity_namespace%__PolicyAssetId__r.%vlocity_namespace%__ExpirationDate__c,\n%vlocity_namespace%__PolicyAssetId__r.%vlocity_namespace%__AnnualPremium__c, %vlocity_namespace%__AttributeSelectedValues__c, %vlocity_namespace%__PolicyAssetId__r.AssetAutoNumber__c, %vlocity_namespace%__PolicyAssetId__r.%vlocity_namespace%__PrimaryProducerId__r.LastName, %vlocity_namespace%__PolicyAssetId__r.%vlocity_namespace%__PrimaryProducerId__r.FirstName, %vlocity_namespace%__PolicyAssetId__r.%vlocity_namespace%__PrimaryProducerId__r.Phone, %vlocity_namespace%__PolicyAssetId__r.%vlocity_namespace%__PrimaryProducerId__r.email FROM %vlocity_namespace%__AssetInsuredItem__c WHERE Name != 'Personal Dwelling' AND %vlocity_namespace%__PolicyAssetId__c = '{{params.id}}'",
+            "remoteClass": "",
+            "remoteMethod": "",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": ""
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "actionCtxId": "",
+            "blankStateCheck": false,
+            "collapse": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "displayName": "Change Coverage",
+                        "extraParams": {
+                        },
+                        "hasExtraParams": false,
+                        "id": "change_coverage",
+                        "isCustomAction": true,
+                        "openUrlIn": "_self",
+                        "type": "Custom",
+                        "url": "/apex/%vlocity_namespace%__OmniScriptUniversalPage?id={0}#/OmniScriptType/Policy/OmniScriptSubType/ModifyCoverage/OmniScriptLang/English/ContextId/{0}/PrefillDataRaptorBundle//true"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "File A Claim",
+                        "hasExtraParams": false,
+                        "id": "file_a_claim",
+                        "isCustomAction": true,
+                        "openUrlIn": "_self",
+                        "type": "Custom",
+                        "url": "/app/chatbot/Your Agent/?botName=Vella_FNOL&AccountId={{accountId}}&AssetId={{assetId}}"
+                    }
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['%vlocity_namespace%__PolicyAssetId__r']['%vlocity_namespace%__ExpirationDate__c']",
+                    "editing": false,
+                    "group": "Custom Properties",
+                    "label": "Expires",
+                    "name": "['%vlocity_namespace%__PolicyAssetId__r']['%vlocity_namespace%__ExpirationDate__c']",
+                    "type": "date"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['%vlocity_namespace%__PolicyAssetId__r']['AssetAutoNumber__c']",
+                    "editing": false,
+                    "group": "Custom Properties",
+                    "label": "Policy Number",
+                    "name": "['%vlocity_namespace%__PolicyAssetId__r']['AssetAutoNumber__c']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['%vlocity_namespace%__PolicyAssetId__r']['%vlocity_namespace%__AnnualPremium__c']",
+                    "editing": false,
+                    "group": "Custom Properties",
+                    "label": "Per Month",
+                    "name": "['%vlocity_namespace%__PolicyAssetId__r']['%vlocity_namespace%__AnnualPremium__c']",
+                    "type": "string"
+                }
+            ],
+            "name": "vella-policy-detail",
+            "placeholderExpand": true,
+            "placeholders": [
+                {
+                    "collapse": true,
+                    "editing": false,
+                    "label": "Per Month",
+                    "name": "PolicyPremium",
+                    "type": "string",
+                    "value": "['%vlocity_namespace%__PolicyAssetId__r']['%vlocity_namespace%__AnnualPremium__c']"
+                },
+                {
+                    "collapse": true,
+                    "editing": false,
+                    "label": "",
+                    "name": "PolicyName",
+                    "type": "string",
+                    "value": "['%vlocity_namespace%__PolicyAssetId__r']['Name']"
+                }
+            ],
+            "templateUrl": "vella-policy-detail"
+        }
+    ],
+    "title": "Vella Policy Detail Card"
+}

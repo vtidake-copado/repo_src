@@ -1,0 +1,125 @@
+[
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "SB - DeductibleFactors",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/SB - DeductibleFactors",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "2d2ee0",
+            "dataType": "Number",
+            "displayOrder": 1,
+            "headerType": "Input",
+            "label": null,
+            "listValues": null,
+            "name": "Deductible"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "SB - DeductibleFactors",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/SB - DeductibleFactors",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "6c7994",
+            "dataType": "Number",
+            "displayOrder": 2,
+            "headerType": "Output",
+            "label": null,
+            "listValues": null,
+            "name": "deductLiability"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "SB - DeductibleFactors",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/SB - DeductibleFactors",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "78da5d",
+            "dataType": "Number",
+            "displayOrder": 3,
+            "headerType": "Output",
+            "label": null,
+            "listValues": null,
+            "name": "deductProperty"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "SB - DeductibleFactors",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/SB - DeductibleFactors",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "Deductible": "10"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "deductLiability": 1,
+            "deductProperty": 1
+        },
+        "%vlocity_namespace%__StartDateTime__c": "2019-04-11T21:40:00.000Z",
+        "Name": "8f28a61fc20a3029d3a6e585ecdd8ea8",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "SB - DeductibleFactors",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/SB - DeductibleFactors",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "Deductible": "20"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "deductLiability": 0.95,
+            "deductProperty": 0.92
+        },
+        "%vlocity_namespace%__StartDateTime__c": "2019-04-11T21:40:00.000Z",
+        "Name": "0e926c721b987f66770f6f6e9e4155ed",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "SB - DeductibleFactors",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/SB - DeductibleFactors",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "Deductible": "5"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "deductLiability": 1.1,
+            "deductProperty": 1.12
+        },
+        "%vlocity_namespace%__StartDateTime__c": "2019-04-11T21:40:00.000Z",
+        "Name": "5531ef32bbb13cbf5b61e592783c471a",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    }
+]

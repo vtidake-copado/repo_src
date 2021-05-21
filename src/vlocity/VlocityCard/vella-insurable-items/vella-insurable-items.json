@@ -1,0 +1,35 @@
+{
+    "dataSource": {
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "getInsurableItems",
+            "ctxId": "",
+            "inputMap": {
+                "Id": "$root.vlocity.userId"
+            }
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "name": "vella-insurable-item",
+            "templateUrl": "vella-home-circle"
+        }
+    ],
+    "title": "Vella Insurable Items"
+}

@@ -1,0 +1,966 @@
+[
+    {
+        "%vlocity_namespace%__AttributeDefaultValues__c": {
+            "SG_ambula_INN": "$150 Copay",
+            "SG_ambula_OON": "$150 Copay",
+            "SG_emergRoom_INN": "$125 Copay",
+            "SG_emergRoom_OON": "$500 Copay",
+            "SG_urgentCareFacility_INN": "$50 Copay",
+            "SG_urgentCareFacility_OON": "Not Covered"
+        },
+        "%vlocity_namespace%__AttributeMetadataChanges__c": "",
+        "%vlocity_namespace%__AttributeMetadata__c": {
+            "records": [
+                {
+                    "Code__c": "SG_Medical",
+                    "Name": "SG Medical",
+                    "displaySequence": 2000,
+                    "id": "a0B6A0000089LUpUAM",
+                    "productAttributes": {
+                        "records": [
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqz0UAA",
+                                "cloneable": true,
+                                "code": "SG_ambula_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 1,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Ambulance",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "2",
+                                        "label": "$150 Copay",
+                                        "readonly": false,
+                                        "value": "$150 Copay"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqz1UAA",
+                                "cloneable": true,
+                                "code": "SG_ambula_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 2,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Ambulance",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "2",
+                                        "label": "$150 Copay",
+                                        "readonly": false,
+                                        "value": "$150 Copay"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqz2UAA",
+                                "cloneable": true,
+                                "code": "SG_emergRoom_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 3,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Emergency Room",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "4",
+                                        "label": "$125 Copay",
+                                        "readonly": false,
+                                        "value": "$125 Copay"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqz3UAA",
+                                "cloneable": true,
+                                "code": "SG_emergRoom_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 4,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Emergency Room",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "$500 Copay",
+                                        "readonly": false,
+                                        "value": "$500 Copay"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqz4UAA",
+                                "cloneable": true,
+                                "code": "SG_urgentCareFacility_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 5,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Urgent Care Facility",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "3",
+                                        "label": "$50 Copay",
+                                        "readonly": false,
+                                        "value": "$50 Copay"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqz5UAA",
+                                "cloneable": true,
+                                "code": "SG_urgentCareFacility_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 6,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Urgent Care Facility",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "Not Covered",
+                                        "readonly": false,
+                                        "value": "Not Covered"
+                                    }
+                                ]
+                            }
+                        ],
+                        "totalSize": 6
+                    }
+                }
+            ],
+            "totalSize": 1
+        },
+        "%vlocity_namespace%__AttributeRules__c": "",
+        "%vlocity_namespace%__JSONAttribute__c": "",
+        "%vlocity_namespace%__ProductChildItemId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "3e96630b-e892-696f-3dcd-f9ba6e1d522b",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ProductChildItem__c/3e96630b-e892-696f-3dcd-f9ba6e1d522b",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__ProductChildItem__c"
+        },
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "29f35e3c-231c-0318-2b74-ba40a00e81b4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/29f35e3c-231c-0318-2b74-ba40a00e81b4",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-1909421969"
+    },
+    {
+        "%vlocity_namespace%__AttributeDefaultValues__c": {
+            "SG_annualDed_INN": "$500 Indiv | $1,000 Fam",
+            "SG_annualDed_OON": "Not Covered",
+            "SG_annualOOP_INN": "$1,500 Indiv | $3,000 Fam",
+            "SG_annualOOP_OON": "Not Covered",
+            "SG_coinsurance_INN": "20% After Ded",
+            "SG_coinsurance_OON": "Not Covered",
+            "SG_lifetimeMax_INN": "Unlimited",
+            "SG_lifetimeMax_OON": "Unlimited",
+            "SG_preventative_INN": "$0 Copay",
+            "SG_preventative_OON": "$0 Copay"
+        },
+        "%vlocity_namespace%__AttributeMetadataChanges__c": "",
+        "%vlocity_namespace%__AttributeMetadata__c": {
+            "records": [
+                {
+                    "Code__c": "SG_Medical",
+                    "Name": "SG Medical",
+                    "displaySequence": 2000,
+                    "id": "a0B6A0000089LUpUAM",
+                    "productAttributes": {
+                        "records": [
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqzMUAQ",
+                                "cloneable": true,
+                                "code": "SG_annualDed_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 23,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Annual Deductible",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "$500 Indiv | $1,000 Fam",
+                                        "readonly": false,
+                                        "value": "$500 Indiv | $1,000 Fam"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqzNUAQ",
+                                "cloneable": true,
+                                "code": "SG_annualDed_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 24,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Annual Deductible",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "Not Covered",
+                                        "readonly": false,
+                                        "value": "Not Covered"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqzOUAQ",
+                                "cloneable": true,
+                                "code": "SG_annualOOP_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 25,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Annual OOP Limit",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "$1,500 Indiv | $3,000 Fam",
+                                        "readonly": false,
+                                        "value": "$1,500 Indiv | $3,000 Fam"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqzPUAQ",
+                                "cloneable": true,
+                                "code": "SG_annualOOP_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 26,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Annual OOP Limit",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "Not Covered",
+                                        "readonly": false,
+                                        "value": "Not Covered"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqzQUAQ",
+                                "cloneable": true,
+                                "code": "SG_coinsurance_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 27,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Coinsurance",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "20% After Ded",
+                                        "readonly": false,
+                                        "value": "20% After Ded"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqzRUAQ",
+                                "cloneable": true,
+                                "code": "SG_coinsurance_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 28,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Coinsurance",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "Not Covered",
+                                        "readonly": false,
+                                        "value": "Not Covered"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqzSUAQ",
+                                "cloneable": true,
+                                "code": "SG_lifetimeMax_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 29,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Lifetime Maximum",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "Unlimited",
+                                        "readonly": false,
+                                        "value": "Unlimited"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqzTUAQ",
+                                "cloneable": true,
+                                "code": "SG_lifetimeMax_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 30,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Lifetime Maximum",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "Unlimited",
+                                        "readonly": false,
+                                        "value": "Unlimited"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqzUUAQ",
+                                "cloneable": true,
+                                "code": "SG_preventative_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 31,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Preventive Services",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "$0 Copay",
+                                        "readonly": false,
+                                        "value": "$0 Copay"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqzVUAQ",
+                                "cloneable": true,
+                                "code": "SG_preventative_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 32,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Preventive Services",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "$0 Copay",
+                                        "readonly": false,
+                                        "value": "$0 Copay"
+                                    }
+                                ]
+                            }
+                        ],
+                        "totalSize": 10
+                    }
+                }
+            ],
+            "totalSize": 1
+        },
+        "%vlocity_namespace%__AttributeRules__c": "",
+        "%vlocity_namespace%__JSONAttribute__c": "",
+        "%vlocity_namespace%__ProductChildItemId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "28eadec6-083a-7fd7-4dc8-c1439646976c",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ProductChildItem__c/28eadec6-083a-7fd7-4dc8-c1439646976c",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__ProductChildItem__c"
+        },
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "29f35e3c-231c-0318-2b74-ba40a00e81b4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/29f35e3c-231c-0318-2b74-ba40a00e81b4",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-1196378293"
+    },
+    {
+        "%vlocity_namespace%__AttributeDefaultValues__c": {
+            "SG_outpatientMental_INN": "20% Coins After Ded",
+            "SG_outpatientMental_OON": "Not Covered",
+            "SG_outpatientRehab_INN": "20% Coins After Ded",
+            "SG_outpatientRehab_OON": "Not Covered",
+            "SG_outpatientSurg_INN": "$75 Copay",
+            "SG_outpatientSurg_OON": "Not Covered",
+            "SG_outpatientXray_INN": "$35 Copay",
+            "SG_outpatientXray_OON": "Not Covered",
+            "SG_skilledNursing_INN": "20% Coins After Ded",
+            "SG_skilledNursing_OON": "Not Covered"
+        },
+        "%vlocity_namespace%__AttributeMetadataChanges__c": "",
+        "%vlocity_namespace%__AttributeMetadata__c": {
+            "records": [
+                {
+                    "Code__c": "SG_Medical",
+                    "Name": "SG Medical",
+                    "displaySequence": 2000,
+                    "id": "a0B6A0000089LUpUAM",
+                    "productAttributes": {
+                        "records": [
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqzCUAQ",
+                                "cloneable": true,
+                                "code": "SG_outpatientXray_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 13,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Outpatient Lab/X-Ray",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "1",
+                                        "label": "$35 Copay",
+                                        "readonly": false,
+                                        "value": "$35 Copay"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqzDUAQ",
+                                "cloneable": true,
+                                "code": "SG_outpatientXray_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 14,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Outpatient Lab/X-Ray",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "Not Covered",
+                                        "readonly": false,
+                                        "value": "Not Covered"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqzEUAQ",
+                                "cloneable": true,
+                                "code": "SG_outpatientMental_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 15,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Outpatient Mental Health",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "20% Coins After Ded",
+                                        "readonly": false,
+                                        "value": "20% Coins After Ded"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqzFUAQ",
+                                "cloneable": true,
+                                "code": "SG_outpatientMental_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 16,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Outpatient Mental Health",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "3",
+                                        "label": "Not Covered",
+                                        "readonly": false,
+                                        "value": "Not Covered"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqzGUAQ",
+                                "cloneable": true,
+                                "code": "SG_outpatientRehab_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 17,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Outpatient Rehab Services",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "20% Coins After Ded",
+                                        "readonly": false,
+                                        "value": "20% Coins After Ded"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqzHUAQ",
+                                "cloneable": true,
+                                "code": "SG_outpatientRehab_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 18,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Outpatient Rehab Services",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "Not Covered",
+                                        "readonly": false,
+                                        "value": "Not Covered"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqzIUAQ",
+                                "cloneable": true,
+                                "code": "SG_outpatientSurg_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 19,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Outpatient Surgery",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "$75 Copay",
+                                        "readonly": false,
+                                        "value": "$75 Copay"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqzJUAQ",
+                                "cloneable": true,
+                                "code": "SG_outpatientSurg_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 20,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Outpatient Surgery",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "Not Covered",
+                                        "readonly": false,
+                                        "value": "Not Covered"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqzKUAQ",
+                                "cloneable": true,
+                                "code": "SG_skilledNursing_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 21,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Skilled Nursing Facility Care",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "20% Coins After Ded",
+                                        "readonly": false,
+                                        "value": "20% Coins After Ded"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqzLUAQ",
+                                "cloneable": true,
+                                "code": "SG_skilledNursing_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 22,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Skilled Nursing Facility Care",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "Not Covered",
+                                        "readonly": false,
+                                        "value": "Not Covered"
+                                    }
+                                ]
+                            }
+                        ],
+                        "totalSize": 10
+                    }
+                }
+            ],
+            "totalSize": 1
+        },
+        "%vlocity_namespace%__AttributeRules__c": "",
+        "%vlocity_namespace%__JSONAttribute__c": "",
+        "%vlocity_namespace%__ProductChildItemId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "d4783ff7-3539-9f7e-ccc9-c15b92cddbc8",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ProductChildItem__c/d4783ff7-3539-9f7e-ccc9-c15b92cddbc8",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__ProductChildItem__c"
+        },
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "29f35e3c-231c-0318-2b74-ba40a00e81b4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/29f35e3c-231c-0318-2b74-ba40a00e81b4",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-647012192"
+    },
+    {
+        "%vlocity_namespace%__AttributeDefaultValues__c": {
+            "SG_primaryCare_INN": "$25 Copay",
+            "SG_primaryCare_OON": "Not Covered"
+        },
+        "%vlocity_namespace%__AttributeMetadataChanges__c": "",
+        "%vlocity_namespace%__AttributeMetadata__c": {
+            "records": [
+                {
+                    "Code__c": "SG_Medical",
+                    "Name": "SG Medical",
+                    "displaySequence": 2000,
+                    "id": "a0B6A0000089LUpUAM",
+                    "productAttributes": {
+                        "records": [
+                            {
+                                "attributeGroupType": "In-Network",
+                                "attributeId": "a0C6A000006lqzsUAA",
+                                "cloneable": true,
+                                "code": "SG_primaryCare_INN",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 55,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Primary Care Visit",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "$25 Copay",
+                                        "readonly": false,
+                                        "value": "$25 Copay"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeGroupType": "Out-Of-Network",
+                                "attributeId": "a0C6A000006lqztUAA",
+                                "cloneable": true,
+                                "code": "SG_primaryCare_OON",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 56,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Primary Care Visit",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "Not Covered",
+                                        "readonly": false,
+                                        "value": "Not Covered"
+                                    }
+                                ]
+                            }
+                        ],
+                        "totalSize": 2
+                    }
+                }
+            ],
+            "totalSize": 1
+        },
+        "%vlocity_namespace%__AttributeRules__c": "",
+        "%vlocity_namespace%__JSONAttribute__c": "",
+        "%vlocity_namespace%__ProductChildItemId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "d2aa7f22-174f-b979-d4ca-9a2384548a11",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ProductChildItem__c/d2aa7f22-174f-b979-d4ca-9a2384548a11",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__ProductChildItem__c"
+        },
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "29f35e3c-231c-0318-2b74-ba40a00e81b4",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/29f35e3c-231c-0318-2b74-ba40a00e81b4",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated51953716"
+    }
+]

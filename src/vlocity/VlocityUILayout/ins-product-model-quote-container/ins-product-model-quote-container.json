@@ -1,0 +1,32 @@
+{
+    "Cards": [
+        "ins-product-model-insured-items"
+    ],
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0Q06A000000cTs5SAE"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "inputMap": {
+                "itemRecordType": "InsuredItemSpec",
+                "quoteId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsurancePCRuntimeHandler"
+            },
+            "remoteClass": "InsurancePCRuntimeHandler",
+            "remoteMethod": "getChildLines",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": "records"
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-product-model-container"
+        }
+    }
+}

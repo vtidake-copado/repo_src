@@ -1,0 +1,73 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Multi Auto Quote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Investigate/MultiAuto/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "Multi Auto Quote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Investigate/MultiAuto/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "autos",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Investigate/MultiAuto/English/autos",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "autos",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "quickfill",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "autos": {
+                "auto": [
+                    {
+                        "autoCondition": "Very Good",
+                        "autoMake": "Lexus",
+                        "autoMileage": 15000,
+                        "autoModel": "LX250",
+                        "autoTrim": "Sedan/Saloon",
+                        "autoVIN": "JTHBF1D25F5074100",
+                        "autoValue": 25000,
+                        "autoVehicleType": "PASSENGER CAR",
+                        "autoYear": 2015
+                    },
+                    {
+                        "autoCondition": "Good",
+                        "autoMake": "Honda",
+                        "autoMileage": 43000,
+                        "autoModel": "Odyssey",
+                        "autoTrim": "Minivan",
+                        "autoVIN": "5FNRL38706B069959",
+                        "autoValue": 15000,
+                        "autoVehicleType": "MULTIPURPOSE PASSENGER VEHICLE (MPV)",
+                        "autoYear": 2006
+                    }
+                ]
+            }
+        },
+        "label": "Auto Fill Cars",
+        "message": {
+        },
+        "show": null,
+        "showPersistentComponent": [
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "AutoFillCars",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Investigate/MultiAuto/English/AutoFillCars"
+}

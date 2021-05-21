@@ -1,0 +1,104 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Reusable Vehicle Input Sample",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/vpaSample/autoWC_ReusableVehicleInput/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "Reusable Vehicle Input Sample",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/vpaSample/autoWC_ReusableVehicleInput/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "vehicles",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/vpaSample/autoWC_ReusableVehicleInput/English/vehicles",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "vehicles",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "quickfill",
+        "controlWidth": 2,
+        "dataJSON": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "autoVehicle": {
+                "avColor": "Silver",
+                "avCondition-Block": {
+                    "avCondition": "Trade-In Value Very Good",
+                    "id": 109,
+                    "priceType": "Trade-In Value Very Good",
+                    "typicalMileage": 69705,
+                    "value": 19997
+                },
+                "avEstimatedValue": [
+                    "19997"
+                ],
+                "avGaragePostalCode": "94040",
+                "avInstanceKey": "2015 Lexus IS",
+                "avMake-Block": {
+                    "avMake": "Lexus",
+                    "id": 27
+                },
+                "avMakeName": [
+                    "Lexus"
+                ],
+                "avMileage": 15000,
+                "avModel-Block": {
+                    "avModel": "IS",
+                    "id": 27821
+                },
+                "avModelName": [
+                    "IS"
+                ],
+                "avTrim-Block": {
+                    "avTrim": "IS 250 Sedan 4D",
+                    "manufacturerCode": "Lexus",
+                    "marketName": "IS 250 Sedan 4D",
+                    "name": "IS 250 Sedan 4D",
+                    "trimId": 319600
+                },
+                "avTrimName": [
+                    "IS 250 Sedan 4D"
+                ],
+                "avVIN": "JTHBF1D25F5074100",
+                "avVehicleType": "PASSENGER CAR",
+                "avYear-Block": {
+                    "avYear": "2015",
+                    "name": "2015"
+                },
+                "avYearName": [
+                    "2015"
+                ],
+                "discountAuto": {
+                    "avAltFuel": false,
+                    "avAntiTheft": false,
+                    "avBrakes": true,
+                    "avStabilization": false,
+                    "typeAutoDiscount": "AntiLock"
+                }
+            }
+        },
+        "label": "AutoFill",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "SetAutoFillValues",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/vpaSample/autoWC_ReusableVehicleInput/English/SetAutoFillValues"
+}

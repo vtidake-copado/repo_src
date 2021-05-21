@@ -1,0 +1,127 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "01t6A000000NlGxQAK"
+            }
+        ],
+        "type": null,
+        "value": {
+            "inputMap": {
+                "categoryCode": "{{attrs.categoryCode}}",
+                "productId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceProductAdminHandler"
+            },
+            "query": "",
+            "remoteClass": "InsuranceProductAdminHandler",
+            "remoteMethod": "getCategoryAttributes",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": ""
+        }
+    },
+    "filter": {
+    },
+    "sessionVars": [
+        {
+            "name": "productRecordType",
+            "val": "Product"
+        }
+    ],
+    "states": [
+        {
+            "collapse": false,
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['%vlocity_namespace%__AttributeName__c']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Name",
+                    "name": "['%vlocity_namespace%__AttributeName__c']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['%vlocity_namespace%__CategoryName__c']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Category",
+                    "name": "['%vlocity_namespace%__CategoryName__c']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Name']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Label",
+                    "name": "['Name']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['%vlocity_namespace%__ValueDataType__c']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Control",
+                    "name": "['%vlocity_namespace%__ValueDataType__c']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['%vlocity_namespace%__Value__c']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Value",
+                    "name": "['%vlocity_namespace%__Value__c']",
+                    "type": "%vlocity_namespace%__ValueDataType__c"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Rating",
+                    "name": "['%vlocity_namespace%__IsRatingAttribute__c']",
+                    "type": "BOOLEAN"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Group Type",
+                    "name": "['%vlocity_namespace%__AttributeGroupType__c']",
+                    "type": "string"
+                }
+            ],
+            "filter": "$scope.data.status === 'active'",
+            "flyout": {
+                "data": "",
+                "layout": null
+            },
+            "name": "Attribute -- Product",
+            "templateUrl": "ins-product-attributes-row"
+        }
+    ],
+    "title": "Attributes"
+}

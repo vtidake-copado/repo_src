@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Application Type --></label>
+        <name>vlocity_ins__ApplicationType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Name --></label>
+        <name>vlocity_ins__FieldName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Type --></label>
+        <name>vlocity_ins__FieldType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow Step --></label>
+        <name>vlocity_ins__FlowStep__c</name>
+    </fields>
+    <fields>
+        <label><!-- In/Out --></label>
+        <name>vlocity_ins__InOut__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSON Field Name --></label>
+        <name>vlocity_ins__JSONFieldName__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSON Object Name --></label>
+        <name>vlocity_ins__JSONObjectName__c</name>
+    </fields>
+</CustomObjectTranslation>

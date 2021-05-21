@@ -1,0 +1,768 @@
+[
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "4b43fe",
+            "dataType": "Number",
+            "displayOrder": 2,
+            "headerType": "Output",
+            "label": null,
+            "listValues": null,
+            "name": "carSymbolBIPD"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "d6db05",
+            "dataType": "Number",
+            "displayOrder": 3,
+            "headerType": "Output",
+            "label": null,
+            "listValues": null,
+            "name": "carSymbolMED"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "dcf99e",
+            "dataType": "Text",
+            "displayOrder": 1,
+            "headerType": "Input",
+            "label": null,
+            "listValues": null,
+            "name": "carSymbol"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "0"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1,
+            "carSymbolMED": 1
+        },
+        "Name": "6f9f7cb65526a8182178c7b11837208a",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "1"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 0.94,
+            "carSymbolMED": 0.81
+        },
+        "Name": "5ba7d7399960b8410bc0bf529f21437f",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "10"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 0.98,
+            "carSymbolMED": 0.87
+        },
+        "Name": "4624b5aa197f27448f3de9f83ca170ab",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "11"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 0.99,
+            "carSymbolMED": 0.87
+        },
+        "Name": "95d52a69a58a67f400fa30713c141404",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "12"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 0.99,
+            "carSymbolMED": 0.88
+        },
+        "Name": "fcd9eeb2a174d446d8b5a0b43b846581",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "13"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1,
+            "carSymbolMED": 0.89
+        },
+        "Name": "fc386d5a74ffe0dcab25e9c380f8c332",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "14"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.01,
+            "carSymbolMED": 0.9
+        },
+        "Name": "4b24d8d1678033c53d734f2dd3510681",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "15"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.01,
+            "carSymbolMED": 0.9
+        },
+        "Name": "0e02d5ad27957b0566de3719bd081976",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "16"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.02,
+            "carSymbolMED": 0.91
+        },
+        "Name": "812d68b895ae6fc91d2040ca1fbcf26c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "17"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.02,
+            "carSymbolMED": 0.92
+        },
+        "Name": "710ed21f4f859df24c901c332f52e2c0",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "18"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.03,
+            "carSymbolMED": 0.93
+        },
+        "Name": "f4c3774aca8850923d8737db5ae26d31",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "19"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.03,
+            "carSymbolMED": 0.94
+        },
+        "Name": "e3c8b7ce1d0620c1af276482497165bc",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "2"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 0.95,
+            "carSymbolMED": 0.82
+        },
+        "Name": "24dd14b43a2ca3f5d876d9186a2cf9b5",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "20"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.04,
+            "carSymbolMED": 0.95
+        },
+        "Name": "22f2dc169e3bd786f82cb267433aa9a3",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "21"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.05,
+            "carSymbolMED": 0.95
+        },
+        "Name": "fca19351f79a3e3fa2f6e84c17a0c873",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "22"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.05,
+            "carSymbolMED": 0.96
+        },
+        "Name": "519b7b53280fa9f489734c4cb4a7ff65",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "23"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.06,
+            "carSymbolMED": 0.97
+        },
+        "Name": "9f2fea935812d4ca017f9f1b8ad71d99",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "24"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.07,
+            "carSymbolMED": 0.98
+        },
+        "Name": "787eecb3e91795fbf3d30c9e0c4ed89d",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "25"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.07,
+            "carSymbolMED": 0.99
+        },
+        "Name": "9e7e9eefc31b7158af92e3e87e0e246c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "26"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.08,
+            "carSymbolMED": 1
+        },
+        "Name": "8ce31b46a7072d1b3a46c9e5ad680d6b",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "27"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.09,
+            "carSymbolMED": 1.01
+        },
+        "Name": "36ae3f3a53be9d86573127da90b52597",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "28"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.09,
+            "carSymbolMED": 1.02
+        },
+        "Name": "8fd4fea517dc2f11f664e8463085d2a5",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "29"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.1,
+            "carSymbolMED": 1.04
+        },
+        "Name": "4061ff5a8bd7a98fd6b9104a0cfba74d",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "3"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 0.95,
+            "carSymbolMED": 0.83
+        },
+        "Name": "faff871f156b006540cb16ade8b7e865",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "30"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.11,
+            "carSymbolMED": 1.05
+        },
+        "Name": "6de33bb7dda88d72554a4e99c47c8ce1",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "31"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.11,
+            "carSymbolMED": 1.06
+        },
+        "Name": "60a091d5b394f607be8afe184ff5a114",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "32"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.12,
+            "carSymbolMED": 1.07
+        },
+        "Name": "7f1960209dbf792408cec9fe5a362812",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "33"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.13,
+            "carSymbolMED": 1.08
+        },
+        "Name": "36b289c851202285f995c845a0e9326a",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "34"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.14,
+            "carSymbolMED": 1.1
+        },
+        "Name": "7cc389ac97b848294706216f9ef8f87a",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "35"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.14,
+            "carSymbolMED": 1.11
+        },
+        "Name": "0b694f41fcd03c2de9af4921b59a27b3",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "36"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 1.15,
+            "carSymbolMED": 1.12
+        },
+        "Name": "943796b8dc49e6f4d28cec0bb611e4fc",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "4"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 0.96,
+            "carSymbolMED": 0.83
+        },
+        "Name": "961633a3e9e638d89c4c9e587d14ba91",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "5"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 0.96,
+            "carSymbolMED": 0.84
+        },
+        "Name": "76b89718f1c305a30e3e01478446f732",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "6"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 0.96,
+            "carSymbolMED": 0.84
+        },
+        "Name": "083a72a29e0e7e7dba3b6bf5e0a9b353",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "7"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 0.97,
+            "carSymbolMED": 0.85
+        },
+        "Name": "571551df2bdd1c1433eef917d2e60adc",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "8"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 0.97,
+            "carSymbolMED": 0.85
+        },
+        "Name": "53bc93725aaaee8f8659bcbd00909a4d",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoCarSymbol",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/2/%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "carSymbol": "9"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "carSymbolBIPD": 0.98,
+            "carSymbolMED": 0.86
+        },
+        "Name": "24f2fc7a97c1aae9452a3b02e08a0830",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    }
+]

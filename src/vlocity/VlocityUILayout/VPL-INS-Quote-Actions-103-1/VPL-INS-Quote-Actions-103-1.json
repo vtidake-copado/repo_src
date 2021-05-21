@@ -1,0 +1,26 @@
+{
+    "Cards": [
+        "Quote_Actions"
+    ],
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0Q06A0000001IG2SAM"
+            }
+        ],
+        "type": "Query",
+        "value": {
+            "jsonMap": "{\"params.id || params.Id\":\"{{params.id || params.Id}}\"}"
+        }
+    },
+    "previewType": "runTime",
+    "templates": {
+        "0": {
+            "templateUrl": "card-canvas-1x-simple-slds"
+        }
+    },
+    "workspace": [
+        "Quote_Actions/VlocityIBO/1/1518222684752"
+    ]
+}

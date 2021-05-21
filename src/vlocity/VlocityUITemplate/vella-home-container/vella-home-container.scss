@@ -1,0 +1,139 @@
+@import 'vella-mixins-variables';
+
+@include configureUI;
+
+.via-slds {
+    .slds-spinner_container {
+        z-index: -1;
+
+        &.vlocity-start-loading {
+            height: calc(100vh + 44px);
+        }
+    }
+    .vella-spinner {
+        z-index: calc(9000 + 2);
+        background-color: rgba($vella-royal, 0.85);
+        position: fixed;
+        @include transitionVisibility('vella-spinner', 1, false, true);
+
+        .slds-spinner {
+            top: 44%;
+        }
+    }
+
+    .vella-notification {
+        @include transitionVisibility('vella-notification');
+    }
+
+    &.vella-insurable, &.vella-more-detail {
+        .vella-spinner {
+            background-color: rgba($vella-sky, 0.85);
+        }
+    }
+}
+
+.vella-page-wrapper {
+    &.vella-spinner-active {
+        overflow: hidden;
+        height: calc(100vh - 44px);
+    }
+}
+
+.vella-main-wrapper {
+    height: auto;
+    background-color: $vella-royal;
+    color: $vella-dark-gray;
+    position: relative;
+
+    .vella-name {
+        color: $vella-sky;
+        font-size: 2.25rem;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        line-height: 1.4;
+        padding-top: 0.75rem;
+    }
+
+    .vella-intelligence-help-form {
+        position: relative;
+        margin: 0.75rem auto 0.5rem;
+        width: 80%;
+
+        .vella-intelligence-help-input {
+            background-color: rgba($vella-sky, 0.6);
+            width: 100%;
+            height: 2.75rem;
+            margin: 0;
+            padding: 0 2rem;
+            border-radius: 2rem;
+            display: block;
+            border: none;
+            text-align: center;
+            color: white;
+            font-size: 1rem;
+            line-height: 2.85rem;
+            transition: background-color 100ms ease-in;
+
+            &::placeholder {
+                font-weight: 300;
+                font-size: 0.875rem;
+                color: white;
+                font-style: italic;
+                transition: color 100ms ease-in;
+            }
+
+            &:placeholder-shown {
+                background-color: rgba($vella-sky, 0.2);
+                color: white;
+                font-size: 0.875rem;
+            }
+
+            &:focus {
+                background-color: rgba($vella-sky, 0.4);
+                &::placeholder {
+                    color: transparent;
+                }
+            }
+        }
+
+        .vella-intelligence-help-clear {
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 1rem;
+            @include transitionVisibility('vella-intelligence-help-clear', 0.5);
+
+            .slds-button__icon {
+                fill: white;
+                width: 1.15rem;
+                height: 1.15rem;
+            }
+
+            &:focus, &:active {
+                opacity: 0.75rem;
+            }
+        }
+    }
+
+    .vella-welcome {
+        color: white;
+        text-align: center;
+        width: 100%;
+        font-size: 0.875rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .vella-whats-not-covered {
+        color: $vella-sky-text;
+        text-align: center;
+        width: 100%;
+        font-size: 0.875rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .vella-inner-block-container {
+        padding: 1.25rem 0 0;
+    }
+}

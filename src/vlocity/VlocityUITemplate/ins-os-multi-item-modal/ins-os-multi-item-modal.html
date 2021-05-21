@@ -1,0 +1,59 @@
+<div role="dialog" tabindex="-1" aria-labelledby="ins-os-multi-item-modal" class="nds-modal nds-fade-in-open nds-modal nds-fade-in-open vloc-ins-multi-item-modal" ng-controller="insMultiItemModalCtrl">
+    <div class="nds-modal__container nds-modal__container vloc-ins-multi-item-modal-container" ng-init="initMultiItemModal(content)" ng-class="{'single-product': formattedContent.topRow.length === 1}">
+        <div class="nds-modal__header vloc-ins-multi-item-modal-header">
+            <button class="nds-button nds-button vloc-ins-multi-item-modal-close-btn" title="Close" ng-click="cancel()">
+                <slds-button-svg-icon sprite="'utility'" icon="'close'" size="'large'"></slds-button-svg-icon>
+                <span class="nds-assistive-text nds-assistive-text">Close</span>
+            </button>
+            <h2 id="ins-os-multi-item-modal" class="nds-text-heading--medium nds-text-heading--medium">Select Drivers</h2>
+        </div>
+        <div class="nds-modal__content vloc-ins-multi-item-modal-content-container">
+            <fieldset class="nds-form-element vloc-ins-multi-item-modal-fieldset">
+                <div class="slds-form-element__control">
+                    <ul class="vloc-ins-multi-item-modal-drivers-container">
+                        <li class="vloc-ins-multi-item-modal-driver-header">
+                            <div class="nds-grid">
+                                <div class="nds-size--1-of-8"></div>
+                                <div class="nds-size--3-of-8"></div>
+                                <div class="nds-size--2-of-8 nds-text-align--center">Primary</div>
+                                <div class="nds-size--2-of-8 nds-text-align--center">Driver</div>
+                            </div>
+                        </li>
+                        <li class="vloc-ins-multi-item-modal-driver" ng-repeat="driver in drivers track by $index">
+                            <div class="nds-grid">
+                                <div class="nds-size--1-of-8">
+                                    <img class="vloc-ins-multi-item-modal-driver-icon" ng-src="../resource/{{baseCtrl.$scope.nsPrefix}}InsMultiItemImages/your-templates-icon.svg" alt="Driver Icon" />
+                                </div>
+                                <div class="nds-size--3-of-8">{{driver.instanceKey}}</div>
+                                <div class="nds-size--2-of-8 nds-text-align--center">
+                                    <span class="nds-radio">
+                                        <input type="radio" name="options" id="primary-radio-{{$index}}" ng-model="driverData[childProduct.instanceKey].primaryParty" ng-change="toggleRegularDriver(driver)" ng-value="driver" />
+                                        <label class="nds-radio__label" for="primary-radio-{{$index}}">
+                                            <span class="nds-radio--faux nds-m-right--none"></span>
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="nds-size--2-of-8 nds-text-align--center">
+                                    <div class="nds-form-element">
+                                        <div class="nds-form-element__control">
+                                            <span class="nds-checkbox">
+                                                <input type="checkbox" name="options" id="driver-checkbox-{{$index}}" ng-click="toggleRegularDriver(driver)" ng-checked="isDriverSelected(driver)" ng-disabled="driverData[childProduct.instanceKey].primaryParty.instanceKey === driver.instanceKey" />
+                                                <label class="nds-checkbox__label" for="driver-checkbox-{{$index}}">
+                                                    <span class="nds-checkbox--faux"></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+        </div>
+        <div class="nds-modal__footer vloc-ins-multi-item-modal-footer">
+            <button class="nds-button nds-button--neutral" ng-click="cancel()">Cancel</button>
+            <button class="nds-button nds-button--brand" ng-click="saveDataToMainJson()" ng-disabled="!driverData[childProduct.instanceKey].primaryParty.instanceKey">Save</button>
+        </div>
+    </div>
+</div>

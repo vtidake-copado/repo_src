@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Group --></label>
+        <name>vlocity_ins__AccountId__c</name>
+        <relationshipLabel><!-- Enrollment Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Actual Attendance --></label>
+        <name>vlocity_ins__AttendanceActual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Capacity --></label>
+        <name>vlocity_ins__AttendanceCapacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Attendance --></label>
+        <name>vlocity_ins__AttendanceTarget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>vlocity_ins__CampaignId__c</name>
+        <relationshipLabel><!-- Marketing Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Registered --></label>
+        <name>vlocity_ins__CountOfRegistered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event End Date --></label>
+        <name>vlocity_ins__EventEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event End Time --></label>
+        <name>vlocity_ins__EventEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Manager --></label>
+        <name>vlocity_ins__EventManagerId__c</name>
+        <relationshipLabel><!-- Marketing Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Event Start Date --></label>
+        <name>vlocity_ins__EventStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Start Time --></label>
+        <name>vlocity_ins__EventStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Status --></label>
+        <name>vlocity_ins__EventStatus__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation><!-- Requested --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Type --></label>
+        <name>vlocity_ins__EventType__c</name>
+        <picklistValues>
+            <masterLabel>Educational</masterLabel>
+            <translation><!-- Educational --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment</masterLabel>
+            <translation><!-- Enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Website --></label>
+        <name>vlocity_ins__EventWebsite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Searchable --></label>
+        <name>vlocity_ins__IsSearchable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line of Business --></label>
+        <name>vlocity_ins__LineOfBusiness__c</name>
+        <picklistValues>
+            <masterLabel>Group Dental</masterLabel>
+            <translation><!-- Group Dental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Medical</masterLabel>
+            <translation><!-- Group Medical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Vision</masterLabel>
+            <translation><!-- Group Vision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Dental</masterLabel>
+            <translation><!-- Individual Dental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Medical</masterLabel>
+            <translation><!-- Individual Medical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Vision</masterLabel>
+            <translation><!-- Individual Vision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare</masterLabel>
+            <translation><!-- Medicare --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Broker --></label>
+        <name>vlocity_ins__PartnerId__c</name>
+        <relationshipLabel><!-- Broker Marketing Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Percent of Capacity --></label>
+        <name>vlocity_ins__PercentOfCapacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>vlocity_ins__PrimaryContactId__c</name>
+        <relationshipLabel><!-- Marketing Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request Status --></label>
+        <name>vlocity_ins__RequestStatus__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requested</masterLabel>
+            <translation><!-- Requested --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Venue --></label>
+        <name>vlocity_ins__VenueId__c</name>
+        <relationshipLabel><!-- Marketing Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Venue Status --></label>
+        <name>vlocity_ins__VenueStatus__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confirmed</masterLabel>
+            <translation><!-- Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Publishable</masterLabel>
+            <translation><!-- Publishable --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

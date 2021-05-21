@@ -1,0 +1,154 @@
+[
+    {
+        "%vlocity_namespace%__CurrentStatus__c": "Active",
+        "%vlocity_namespace%__EndDateTime__c": "",
+        "%vlocity_namespace%__Priority__c": 1,
+        "%vlocity_namespace%__StartDateTime__c": "2019-01-02T04:12:00.000Z",
+        "%vlocity_namespace%__StateModelId__c": {
+            "%vlocity_namespace%__FieldAPIName__c": "Status",
+            "%vlocity_namespace%__ObjectAPIName__c": "Asset",
+            "%vlocity_namespace%__TypeFieldName__c": null,
+            "%vlocity_namespace%__TypeFieldValue__c": null,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__VlocityStateModel__c/Generated2050425699",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityStateModel__c"
+        },
+        "%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__FieldAPIName__c": "Status",
+        "%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__ObjectAPIName__c": "Asset",
+        "%vlocity_namespace%__VersionNumber__c": 1,
+        "%vlocity_namespace%__VlocityStateTransition__c": [
+            {
+                "%vlocity_namespace%__Description__c": "",
+                "%vlocity_namespace%__From__c": {
+                    "%vlocity_namespace%__DTPStateModelName__c": "Insurance Renewals",
+                    "Name": "Underwriting",
+                    "VlocityDataPackType": "VlocityMatchingKeyObject",
+                    "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__VlocityState__c/Underwriting/Insurance Renewals",
+                    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityState__c"
+                },
+                "%vlocity_namespace%__From__r.%vlocity_namespace%__DTPStateModelName__c": "Insurance Renewals",
+                "%vlocity_namespace%__From__r.Name": "Underwriting",
+                "%vlocity_namespace%__StateModelVersionId__c": {
+                    "%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__FieldAPIName__c": "Status",
+                    "%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__ObjectAPIName__c": "Asset",
+                    "%vlocity_namespace%__VersionNumber__c": 1,
+                    "VlocityDataPackType": "VlocityMatchingKeyObject",
+                    "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__VlocityStateModelVersion__c/%vlocity_namespace%__VlocityStateModel__c/Generated2050425699/1",
+                    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityStateModelVersion__c"
+                },
+                "%vlocity_namespace%__StateModelVersionId__r.%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__FieldAPIName__c": "Status",
+                "%vlocity_namespace%__StateModelVersionId__r.%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__ObjectAPIName__c": "Asset",
+                "%vlocity_namespace%__StateModelVersionId__r.%vlocity_namespace%__VersionNumber__c": 1,
+                "%vlocity_namespace%__To__c": "",
+                "Name": "Underwriting>Approved",
+                "VlocityDataPackType": "SObject",
+                "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityStateTransition__c",
+                "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityStateTransition__c/Generated1046909984"
+            },
+            {
+                "%vlocity_namespace%__Description__c": "",
+                "%vlocity_namespace%__From__c": {
+                    "%vlocity_namespace%__DTPStateModelName__c": "Insurance Renewals",
+                    "Name": "Underwriting",
+                    "VlocityDataPackType": "VlocityMatchingKeyObject",
+                    "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__VlocityState__c/Underwriting/Insurance Renewals",
+                    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityState__c"
+                },
+                "%vlocity_namespace%__From__r.%vlocity_namespace%__DTPStateModelName__c": "Insurance Renewals",
+                "%vlocity_namespace%__From__r.Name": "Underwriting",
+                "%vlocity_namespace%__StateModelVersionId__c": {
+                    "%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__FieldAPIName__c": "Status",
+                    "%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__ObjectAPIName__c": "Asset",
+                    "%vlocity_namespace%__VersionNumber__c": 1,
+                    "VlocityDataPackType": "VlocityMatchingKeyObject",
+                    "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__VlocityStateModelVersion__c/%vlocity_namespace%__VlocityStateModel__c/Generated2050425699/1",
+                    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityStateModelVersion__c"
+                },
+                "%vlocity_namespace%__StateModelVersionId__r.%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__FieldAPIName__c": "Status",
+                "%vlocity_namespace%__StateModelVersionId__r.%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__ObjectAPIName__c": "Asset",
+                "%vlocity_namespace%__StateModelVersionId__r.%vlocity_namespace%__VersionNumber__c": 1,
+                "%vlocity_namespace%__To__c": {
+                    "%vlocity_namespace%__DTPStateModelName__c": "Insurance Renewals",
+                    "Name": "Declined",
+                    "VlocityDataPackType": "VlocityMatchingKeyObject",
+                    "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__VlocityState__c/Declined/Insurance Renewals",
+                    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityState__c"
+                },
+                "%vlocity_namespace%__To__r.%vlocity_namespace%__DTPStateModelName__c": "Insurance Renewals",
+                "%vlocity_namespace%__To__r.Name": "Declined",
+                "Name": "Underwriting>Declined",
+                "VlocityDataPackType": "SObject",
+                "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityStateTransition__c",
+                "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityStateTransition__c/Generated1930331739"
+            },
+            {
+                "%vlocity_namespace%__Description__c": "Evaluate If Ready to Issue",
+                "%vlocity_namespace%__From__c": "",
+                "%vlocity_namespace%__StateModelVersionId__c": {
+                    "%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__FieldAPIName__c": "Status",
+                    "%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__ObjectAPIName__c": "Asset",
+                    "%vlocity_namespace%__VersionNumber__c": 1,
+                    "VlocityDataPackType": "VlocityMatchingKeyObject",
+                    "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__VlocityStateModelVersion__c/%vlocity_namespace%__VlocityStateModel__c/Generated2050425699/1",
+                    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityStateModelVersion__c"
+                },
+                "%vlocity_namespace%__StateModelVersionId__r.%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__FieldAPIName__c": "Status",
+                "%vlocity_namespace%__StateModelVersionId__r.%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__ObjectAPIName__c": "Asset",
+                "%vlocity_namespace%__StateModelVersionId__r.%vlocity_namespace%__VersionNumber__c": 1,
+                "%vlocity_namespace%__To__c": {
+                    "%vlocity_namespace%__DTPStateModelName__c": "Insurance Renewals",
+                    "Name": "InForce",
+                    "VlocityDataPackType": "VlocityMatchingKeyObject",
+                    "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__VlocityState__c/InForce/Insurance Renewals",
+                    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityState__c"
+                },
+                "%vlocity_namespace%__To__r.%vlocity_namespace%__DTPStateModelName__c": "Insurance Renewals",
+                "%vlocity_namespace%__To__r.Name": "InForce",
+                "Name": "Approved>InForce",
+                "VlocityDataPackType": "SObject",
+                "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityStateTransition__c",
+                "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityStateTransition__c/Generated-56244755"
+            },
+            {
+                "%vlocity_namespace%__Description__c": "Evaluate Refer to Underwriting",
+                "%vlocity_namespace%__From__c": {
+                    "%vlocity_namespace%__DTPStateModelName__c": "Insurance Renewals",
+                    "Name": "Pending",
+                    "VlocityDataPackType": "VlocityMatchingKeyObject",
+                    "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__VlocityState__c/Pending/Insurance Renewals",
+                    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityState__c"
+                },
+                "%vlocity_namespace%__From__r.%vlocity_namespace%__DTPStateModelName__c": "Insurance Renewals",
+                "%vlocity_namespace%__From__r.Name": "Pending",
+                "%vlocity_namespace%__StateModelVersionId__c": {
+                    "%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__FieldAPIName__c": "Status",
+                    "%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__ObjectAPIName__c": "Asset",
+                    "%vlocity_namespace%__VersionNumber__c": 1,
+                    "VlocityDataPackType": "VlocityMatchingKeyObject",
+                    "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__VlocityStateModelVersion__c/%vlocity_namespace%__VlocityStateModel__c/Generated2050425699/1",
+                    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityStateModelVersion__c"
+                },
+                "%vlocity_namespace%__StateModelVersionId__r.%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__FieldAPIName__c": "Status",
+                "%vlocity_namespace%__StateModelVersionId__r.%vlocity_namespace%__StateModelId__r.%vlocity_namespace%__ObjectAPIName__c": "Asset",
+                "%vlocity_namespace%__StateModelVersionId__r.%vlocity_namespace%__VersionNumber__c": 1,
+                "%vlocity_namespace%__To__c": {
+                    "%vlocity_namespace%__DTPStateModelName__c": "Insurance Renewals",
+                    "Name": "Underwriting",
+                    "VlocityDataPackType": "VlocityMatchingKeyObject",
+                    "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__VlocityState__c/Underwriting/Insurance Renewals",
+                    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityState__c"
+                },
+                "%vlocity_namespace%__To__r.%vlocity_namespace%__DTPStateModelName__c": "Insurance Renewals",
+                "%vlocity_namespace%__To__r.Name": "Underwriting",
+                "Name": "Pending>Underwriting",
+                "VlocityDataPackType": "SObject",
+                "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityStateTransition__c",
+                "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityStateTransition__c/Generated-1337026188"
+            }
+        ],
+        "Name": "Insurance Renewals V1",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityStateModelVersion__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityStateModelVersion__c/%vlocity_namespace%__VlocityStateModel__c/Generated2050425699/1"
+    }
+]

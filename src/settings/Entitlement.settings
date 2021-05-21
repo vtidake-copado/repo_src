@@ -5,7 +5,7 @@
     <assetLookupLimitedToSameAccount>false</assetLookupLimitedToSameAccount>
     <assetLookupLimitedToSameContact>false</assetLookupLimitedToSameContact>
     <enableEntitlementVersioning>false</enableEntitlementVersioning>
-    <enableEntitlements>true</enableEntitlements>
+    <enableEntitlements>false</enableEntitlements>
     <enableMilestoneFeedItem>false</enableMilestoneFeedItem>
     <enableMilestoneStoppedTime>false</enableMilestoneStoppedTime>
     <entitlementLookupLimitedToActiveStatus>false</entitlementLookupLimitedToActiveStatus>

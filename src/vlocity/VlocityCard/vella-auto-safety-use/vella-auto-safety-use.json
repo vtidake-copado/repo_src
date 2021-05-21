@@ -1,0 +1,43 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "02i6A0000009Wa7QAE"
+            }
+        ],
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "getAutoTransactions",
+            "inputMap": {
+                "Id": "{{params.id}}"
+            },
+            "query": ""
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankCardState": false,
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "filter": "$scope.data.status === 'active'",
+            "name": "Vella Auto Safety & Use",
+            "templateUrl": "vella-policy-auto-safety"
+        }
+    ],
+    "title": "Vella Auto Safety & Use"
+}

@@ -1,0 +1,368 @@
+{
+    "dataSource": {
+        "type": null,
+        "value": {
+            "query": "SELECT LastModifiedDate,Name, %vlocity_namespace%__MarketSegment__c ,QuoteNumber,Status,TotalPrice FROM Quote",
+            "resultVar": ""
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankStateCheck": false,
+            "collapse": true,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    },
+                    {
+                        "field": "['Status']",
+                        "logicalOperator": "&&",
+                        "operator": "==",
+                        "type": "custom",
+                        "value": "Accepted"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "displayName": "Tab Icon",
+                        "extraParams": {
+                            "icon": "note",
+                            "sprite": "standard"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Tab Icon",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/",
+                        "vlocityIcon": ""
+                    }
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "",
+                    "name": "QuoteNumber",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Type",
+                    "name": "%vlocity_namespace%__MarketSegment__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Total",
+                    "name": "TotalPrice",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Id']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Id",
+                    "name": "['Id']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Status']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Extra Field Status",
+                    "name": "['Status']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Id']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Extra Field Id",
+                    "name": "['Id']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['TotalPrice']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Extra Field Total Price",
+                    "name": "['TotalPrice']",
+                    "type": "string"
+                }
+            ],
+            "filter": "$scope.data.status === 'active' && $scope.obj['Status'] == 'Accepted'",
+            "flyout": {
+                "layout": null
+            },
+            "name": "In-process",
+            "sObjectType": null,
+            "templateUrl": "ins-broker-quote-card"
+        },
+        {
+            "blankStateCheck": false,
+            "collapse": true,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    },
+                    {
+                        "field": "['%vlocity_namespace%__RenewalSourceContractId__c']",
+                        "logicalOperator": "&&",
+                        "operator": "!=",
+                        "type": "custom",
+                        "value": null
+                    },
+                    {
+                        "field": "['Status']",
+                        "logicalOperator": "&&",
+                        "operator": "!=",
+                        "type": "custom",
+                        "value": "Accepted"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "displayName": "Tab Icon",
+                        "extraParams": {
+                            "icon": "event",
+                            "sprite": "standard"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Tab Icon",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/"
+                    }
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "",
+                    "name": "QuoteNumber",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Type",
+                    "name": "%vlocity_namespace%__MarketSegment__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Total",
+                    "name": "TotalPrice",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Id']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Id",
+                    "name": "['Id']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Status']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Extra Field Status",
+                    "name": "['Status']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Id']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Extra Field Id",
+                    "name": "['Id']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['TotalPrice']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Extra Field Total Price",
+                    "name": "['TotalPrice']",
+                    "type": "string"
+                }
+            ],
+            "filter": "$scope.data.status === 'active' && $scope.obj['%vlocity_namespace%__RenewalSourceContractId__c'] != null && $scope.obj['Status'] != 'Accepted'",
+            "flyout": {
+                "layout": null
+            },
+            "name": "Renewals",
+            "sObjectType": null,
+            "templateUrl": "ins-broker-quote-card"
+        },
+        {
+            "blankStateCheck": false,
+            "collapse": true,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    },
+                    {
+                        "field": "['%vlocity_namespace%__RenewalSourceContractId__c']",
+                        "logicalOperator": "&&",
+                        "operator": "==",
+                        "type": "custom",
+                        "value": null
+                    },
+                    {
+                        "field": "['Status']",
+                        "logicalOperator": "&&",
+                        "operator": "!=",
+                        "type": "custom",
+                        "value": "Accepted"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "displayName": "Custom Action",
+                        "extraParams": {
+                            "icon": "quotes",
+                            "sprite": "standard"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Custom Action",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/"
+                    }
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "",
+                    "name": "QuoteNumber",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Type",
+                    "name": "%vlocity_namespace%__MarketSegment__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Total",
+                    "name": "TotalPrice",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Id']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Id",
+                    "name": "['Id']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Status']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Extra Field Status",
+                    "name": "['Status']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Id']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Extra Field Id",
+                    "name": "['Id']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['TotalPrice']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Extra Field Total Price",
+                    "name": "['TotalPrice']",
+                    "type": "string"
+                }
+            ],
+            "filter": "$scope.data.status === 'active' && $scope.obj['%vlocity_namespace%__RenewalSourceContractId__c'] == null && $scope.obj['Status'] != 'Accepted'",
+            "flyout": {
+                "layout": null
+            },
+            "name": "Quoted",
+            "sObjectType": null,
+            "templateUrl": "ins-broker-quote-card"
+        }
+    ],
+    "title": "Quote"
+}

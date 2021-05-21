@@ -1,0 +1,168 @@
+[
+    {
+        "%vlocity_namespace%__AcordElement__c": "",
+        "%vlocity_namespace%__AddDate__c": "",
+        "%vlocity_namespace%__AttributeAdjustmentComments__c": "",
+        "%vlocity_namespace%__AttributeAdjustmentUnits__c": "",
+        "%vlocity_namespace%__AttributeCategoryCode__c": "",
+        "%vlocity_namespace%__AttributeCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "terms",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/terms",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__AttributeCategorySubType__c": "Product Attribute",
+        "%vlocity_namespace%__AttributeCategory__c": "",
+        "%vlocity_namespace%__AttributeCode__c": "",
+        "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Deductible",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "0",
+        "%vlocity_namespace%__AttributeId__c": {
+            "%vlocity_namespace%__Code__c": "covDeductible",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Attribute__c/covDeductible",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Attribute__c"
+        },
+        "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "covDeductible",
+        "%vlocity_namespace%__ConfigurationDetail__c": "",
+        "%vlocity_namespace%__ConfigurationStages__c": "",
+        "%vlocity_namespace%__CustomConfigUiTemplate__c": "",
+        "%vlocity_namespace%__Data__c": "",
+        "%vlocity_namespace%__DefaultPicklistValueId__c": "",
+        "%vlocity_namespace%__DisplaySequence__c": "",
+        "%vlocity_namespace%__EndStory__c": "",
+        "%vlocity_namespace%__ExcludedPicklistValues__c": "",
+        "%vlocity_namespace%__FormatMask__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "2f705eb5-3759-dbb2-bd39-e9e1deeb92e4",
+        "%vlocity_namespace%__HasRule__c": false,
+        "%vlocity_namespace%__HelpText__c": "",
+        "%vlocity_namespace%__IsActiveAssignment__c": true,
+        "%vlocity_namespace%__IsConfigurable__c": true,
+        "%vlocity_namespace%__IsDynamic__c": false,
+        "%vlocity_namespace%__IsEligibilityAttribute__c": false,
+        "%vlocity_namespace%__IsEncrypted__c": false,
+        "%vlocity_namespace%__IsHidden__c": false,
+        "%vlocity_namespace%__IsNotAssetizable__c": false,
+        "%vlocity_namespace%__IsNotTranslatable__c": false,
+        "%vlocity_namespace%__IsOverride__c": false,
+        "%vlocity_namespace%__IsQueryDriven__c": false,
+        "%vlocity_namespace%__IsRatingAttribute__c": true,
+        "%vlocity_namespace%__IsReadOnly__c": false,
+        "%vlocity_namespace%__IsRequired__c": false,
+        "%vlocity_namespace%__IsTaxAndFeeRatingAttribute__c": false,
+        "%vlocity_namespace%__LookupFilter__c": "",
+        "%vlocity_namespace%__LookupObjectId__c": "",
+        "%vlocity_namespace%__LookupObjectTypeId__c": "",
+        "%vlocity_namespace%__ObjectId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "91448ab6-521f-1a8e-f007-4b07fe56393c",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/91448ab6-521f-1a8e-f007-4b07fe56393c",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__ObjectType__c": "",
+        "%vlocity_namespace%__PicklistId__c": "",
+        "%vlocity_namespace%__QueryCode__c": "",
+        "%vlocity_namespace%__QueryLabel__c": "",
+        "%vlocity_namespace%__RateBandTier__c": "",
+        "%vlocity_namespace%__RatingInput__c": "dedCOLL",
+        "%vlocity_namespace%__RatingOutput__c": "",
+        "%vlocity_namespace%__RatingType__c": "Input",
+        "%vlocity_namespace%__RemoveDate__c": "",
+        "%vlocity_namespace%__RemovedFlag__c": false,
+        "%vlocity_namespace%__RuleData__c": "",
+        "%vlocity_namespace%__RuleMessage__c": "",
+        "%vlocity_namespace%__StartStory__c": "",
+        "%vlocity_namespace%__TaxAndFeeRatingInput__c": "",
+        "%vlocity_namespace%__TaxAndFeeRatingOutput__c": "",
+        "%vlocity_namespace%__TaxAndFeeRatingType__c": "",
+        "%vlocity_namespace%__UIDisplayType__c": "Dropdown",
+        "%vlocity_namespace%__UIWidgetId__c": "",
+        "%vlocity_namespace%__ValidValuesData__c": [
+            {
+                "$$hashKey": "object:135",
+                "displayText": "$250",
+                "id": 0,
+                "isAvaliable": true,
+                "isDefault": false,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "250"
+            },
+            {
+                "$$hashKey": "object:139",
+                "displayText": "$500",
+                "id": 1,
+                "isAvaliable": true,
+                "isDefault": true,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "500"
+            },
+            {
+                "$$hashKey": "object:143",
+                "displayText": "$750",
+                "id": 2,
+                "isAvaliable": true,
+                "isDefault": false,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "750"
+            },
+            {
+                "$$hashKey": "object:147",
+                "displayText": "$1,000",
+                "id": 3,
+                "isAvaliable": true,
+                "isDefault": false,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "1000"
+            },
+            {
+                "$$hashKey": "object:151",
+                "displayText": "$1,500",
+                "id": 4,
+                "isAvaliable": true,
+                "isDefault": false,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "1500"
+            },
+            {
+                "$$hashKey": "object:155",
+                "displayText": "$2,500",
+                "id": 5,
+                "isAvaliable": true,
+                "isDefault": false,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "2500"
+            },
+            {
+                "$$hashKey": "object:159",
+                "displayText": "$5,000",
+                "id": 6,
+                "isAvaliable": true,
+                "isDefault": false,
+                "rules": [
+                ],
+                "showRules": false,
+                "value": "5000"
+            }
+        ],
+        "%vlocity_namespace%__ValidValues__c": "",
+        "%vlocity_namespace%__ValueDataType__c": "Picklist",
+        "%vlocity_namespace%__ValueDecoder__c": "",
+        "%vlocity_namespace%__ValueDescription__c": "",
+        "%vlocity_namespace%__Value__c": "500",
+        "Name": "Deductible",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/2f705eb5-3759-dbb2-bd39-e9e1deeb92e4"
+    }
+]

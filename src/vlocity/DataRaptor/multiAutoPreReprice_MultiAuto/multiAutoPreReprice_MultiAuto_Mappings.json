@@ -1,0 +1,17 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "selectedProduct:records",
+        "%vlocity_namespace%__DomainObjectFieldType__c": "List<Map>",
+        "%vlocity_namespace%__GlobalKey__c": "fded51a3-4f14-57a4-4a7a-9ac857147b1d",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "configure:configureProduct",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "multiAutoPreReprice_MultiAutoCustoma196A000000rC6nQAEItem0",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "multiAutoPreReprice_MultiAuto",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

@@ -1,0 +1,43 @@
+<!-- Markup for lists inside the dropzone. It's inside a seperate template
+   because it will be used recursively. The dnd-list directive enables
+   to drop elements into the referenced array. The dnd-draggable directive
+   makes an element draggable and will transfer the object that was
+   assigned to it.-->
+<script type="text/ng-template" id="list.html">
+   <ul ng-class="{'dragging' : $root.dragging}" dnd-list="list" dnd-dragover="importedScope.startDragging(event)">
+       <li class="vloc-list-items"
+           ng-repeat="item in list"
+           dnd-draggable="item"
+           dnd-effect-allowed="move"
+           dnd-moved="importedScope.reorderSequencesItem($index, list, 'insuredItems')" 
+           dnd-selected="importedScope.models.selected = item"
+           ng-class="{'selected': importedScope.models.selected === item, 'isParent' : item.columns.length, 'isChild' : !item.columns}"
+           ng-include="'container.html'"
+           add-hover-class="true">
+       </li>
+   </ul>
+</script>
+<!-- This template is responsible for rendering a container element. It uses
+   the above list template to render each container column -->
+<script type="text/ng-template" id="container.html">
+   <div ng-if="item.Id">
+       <div ng-include="'ins-insured-item-body.tpl.html'"></div>
+       <div class="clearfix"></div>
+   </div>
+</script>
+<!-- Main area with dropzones and source code -->
+<div class="vloc-insured-items-container" ng-init="importedScope.insFn.setItems(obj['insuredItems'])">
+   <div class="row">
+      <div ng-repeat="(zone, list) in importedScope.models.dropzones">
+         <!-- The dropzone also uses the list template -->
+         <div class="dropzone" ng-include="'list.html'"></div>
+      </div>
+   </div>
+   <div view-source="nested"></div>
+   <div class="vloc-add slds-p-around_small slds-text-align_center" ng-if="importedScope.insVar.items.length < 1">
+      {{ ::importedScope.customLabels.InsProductNoInsuredItems }}
+   </div>
+   <button class="vloc-attr-add-new slds-button slds-button_link slds-p-left_small" ng-class="{'slds-size_1-of-1 slds-text-align_center' : importedScope.insVar.items.length < 1}" ng-click="importedScope.insFn.launchModal()">
+     {{ ::importedScope.customLabels.AddNew }}
+   </button>
+</div>

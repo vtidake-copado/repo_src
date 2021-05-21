@@ -1,0 +1,69 @@
+{
+    "dataSource": {
+        "type": null,
+        "value": {
+            "resultVar": "records"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    },
+                    {
+                        "field": "$scope.params.lightningExperience",
+                        "logicalOperator": "&&",
+                        "operator": "==",
+                        "type": "custom",
+                        "value": "'true'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "filter": "$scope.data.status === 'active' && $scope.params.lightningExperience == 'true'",
+            "name": "Insurance Required Documents Category State",
+            "templateUrl": "ins-required-documents-category"
+        },
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    },
+                    {
+                        "field": "$scope.params.lightningExperience",
+                        "logicalOperator": "&&",
+                        "operator": "==",
+                        "type": "custom",
+                        "value": "'false'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "filter": "$scope.data.status === 'active' && $scope.params.lightningExperience == 'false'",
+            "name": "Insurance Required Documents Communities Category State",
+            "templateUrl": "ins-required-documents-community-category"
+        }
+    ],
+    "title": "Insurance Required Documents Category"
+}

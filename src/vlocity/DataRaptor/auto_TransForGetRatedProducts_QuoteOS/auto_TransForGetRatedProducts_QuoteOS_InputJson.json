@@ -1,0 +1,54 @@
+{
+    "insuredItems": {
+        "autoDriver": [
+            {
+                "isPrimary": false
+            }
+        ],
+        "autoVehicle": [
+            {
+                "avCondition-Block": {
+                    "avCondition": "Trade-In Value Fair",
+                    "value": 13951
+                },
+                "avEstimatedValue": [
+                    "13951"
+                ],
+                "avGaragePostalCode": "94043",
+                "avInstanceKey": "1995 BMW,BMW 3 Series,3 Series",
+                "avMake-Block": {
+                    "avMake": "BMW"
+                },
+                "avMakeName": [
+                    "BMW"
+                ],
+                "avMileage": 12500,
+                "avModel-Block": {
+                    "avModel": "3 Series"
+                },
+                "avModelName": [
+                    "3 Series"
+                ],
+                "avTrim-Block": {
+                    "avTrim": "3 Series 320i Sedan 4D"
+                },
+                "avTrimName": [
+                    "3 Series 320i Sedan 4D"
+                ],
+                "avYear-Block": {
+                    "avYear": "1995"
+                },
+                "avYearName": [
+                    "1995"
+                ],
+                "discAltFuel": false,
+                "discAntiLock": true,
+                "discAntiTheft": false,
+                "discStab": true,
+                "discountAutoInstanceKey": "1995 BMW,BMW 3 Series,3 Series",
+                "isPrimary": true,
+                "typeAutoDiscount": "AntiLock;Stab"
+            }
+        ]
+    }
+}

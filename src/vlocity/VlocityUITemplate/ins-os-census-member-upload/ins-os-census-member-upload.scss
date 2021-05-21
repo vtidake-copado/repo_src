@@ -1,0 +1,244 @@
+.vloc-ins-xlsx-import {
+    border: none;
+    color: #fff;
+    background-color: #1663bf;
+    border-radius: 0.1875rem;
+    font-size: 0.875rem;
+    padding: 0.4375rem 0;
+    font-weight: 200;
+    margin: 0 0.75rem 0 1.5625rem;
+    width: 9rem;
+}
+
+@media screen and (max-width: 60rem) {
+    vloc-ins-xlsx-import {
+        margin: 0.625rem 0 0.625rem 0;
+    }
+}
+
+.vloc-ins-xlsx-import-label {
+    padding: 0.625rem 1.0625rem;
+    cursor: pointer;
+}
+
+.vloc-ins-xlsx-import-label:hover {
+    color: #fff;
+}
+
+.vloc-ins-xlsx-import-label:hover {
+    box-shadow: none;
+}
+
+.nds-form-element__control-help {
+    margin-bottom: 6.25rem;
+}
+
+.nds-header__desktop.hideCommonNav{
+    display: none;
+}
+
+.nds-size_1-of-1.nds-header__desktop.census-navigation {
+    display: block;
+    margin-bottom: -11.25rem;
+    margin-top: 9.375rem;
+    color: #556a8c;
+    font-size: .75rem;
+    font-weight: 300;
+}
+
+.vloc-ins-census-container {
+    width: 100%;
+}
+
+
+tr.vloc-ins-no-border td.vloc-ins-col-data, tr.vloc-ins-no-border td.vloc-ins-col-action{
+    border-top: none;
+}
+
+.vloc-ins-census-table {
+    
+    &-fields, &-actions, &-names{
+        th {
+            height: 2.5rem;
+        }
+        td {
+            height: 3.125rem;
+        }
+    }
+}
+
+.vloc-ins-col-action  {
+    min-width: 5rem;
+}
+
+.vloc-ins-census-table-container select.nds-select, .vloc-ins-census-table-container input[type="number"].nds-input  {
+    min-width: 6.25rem;
+}
+
+.vloc-ins-header-summary {
+    text-align: center;
+}
+
+.vloc-ins-header-summary .vloc-ins-header-summary-count {
+    color: #00396b;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 60rem) {
+    .vloc-ins-add-dependent button.vloc-ins-btn-add {
+        margin-bottom: 0.625rem;
+    }
+}
+
+.vloc-ins-hide-element {
+    display:none;
+}
+
+.vloc-ins-control-bar {
+    margin: 1.5rem 0;
+}
+
+.vloc-ins-control-bar .nds-grid_align-end .nds-col {
+    margin: 0.3125rem;
+}
+
+.nds-size_1-of-1.nds-header__mobile-only.vloc-ins-census-navigation {
+    display: block;
+}
+
+.nds-size_1-of-1.nds-header__desktop.vloc-ins-census-navigation {
+    display: block;
+    margin-bottom: -11.25rem;
+    margin-top: 9.375rem;
+    color: #556a8c;
+    font-size: .75rem;
+    font-weight: 300;
+}
+
+.vloc-ins-omni {
+    .vloc-modal-input-upload{
+        position: relative;
+        right: -2rem; 
+        padding-bottom: 1rem;
+    }
+
+    .vloc-ins-nds-underline--gradient {
+        border-bottom: none;
+    }
+    .vloc-ins-nds-underline--gradient {
+        border-bottom: .05rem solid #cfd7e6;
+        min-height: 2.2rem;
+        background: linear-gradient(141deg, #05a6df, #1fc8db 51%, #50e3c2 75%);
+        font-size: 1.5rem;
+    }
+    .vloc-ins-nds-page_header {
+        font-size: 1.5rem;
+        min-height: 2rem;
+        height: 2rem;
+        padding: 0;
+        background: #fff;
+        color: #00396b;
+        border-radius: 0;
+        font-weight: 300;
+        border: none;
+        box-shadow: none;
+        text-align: left;
+        left: 0;
+        max-width: 100%;
+        line-height: 1;
+    }
+
+    div.vloc-control-wrapper {
+        position: relative;
+    }
+    .vloc-ins-nds__border.vlc-slds__border--primary {
+        border-color: #cfd7e6;
+    }
+    .vloc-control-wrapper {
+        min-height: 3rem;
+        font-size: 1rem;
+        color: #00396b;
+    }
+    .vloc-control-wrapper {
+        min-height: 3rem;
+        height: 3rem;
+    }
+    .vloc-ins-nds__border {
+        border-radius: 0.1875rem;
+        border: 0.0625rem solid #d8dde6;
+    }
+    .vloc-ins-nds-inline-control__label {
+        position: relative;
+        font-size: .9rem;
+        font-weight: 500;
+        color: #00396b;
+        padding-left: 0.475rem;
+    }
+}
+
+.vloc-ins-file-header-mapping-modal {
+    height: 40rem;
+}
+
+.vloc-ins-pagination{
+    display: flex;
+
+    li {
+        margin-left: .25rem;
+    }
+
+    .active{
+        text-decoration: underline;
+    }
+
+    .vloc-ins-nav {
+        width: 1rem;
+    }
+
+    .vloc-ins-active {
+        text-decoration: underline;
+        font-weight: 500;
+    }
+
+    .nds-button[disabled] {
+        color: #1663bf;
+    }
+}
+
+.nds-line-height_reset th {
+    text-transform: uppercase;
+}
+
+.via-nds .nds-datepicker {
+    position: fixed;
+    min-width: 21.125rem;
+}
+
+.vloc-ins-census-container .vloc-ins-notify-container{
+    .vloc-ins-toast-action {
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+.vloc-ins-field {
+    &-date {
+        min-width: 5.75rem;
+    }
+
+    &-text {
+        min-width: 7.5rem;
+    }
+    
+}
+
+.vloc-ins-col-data div.vloc-ins-err-tooltip {
+    position: absolute;
+    bottom: 3.825rem; 
+    left: 0; 
+    
+    div.vloc-ins-err-details.nds-popover__body {
+        white-space: normal;
+        width: 20rem;
+    }
+}

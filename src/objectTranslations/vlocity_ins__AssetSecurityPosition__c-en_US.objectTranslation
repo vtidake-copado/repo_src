@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Financial Account --></label>
+        <name>vlocity_ins__FinancialAccountAssetId__c</name>
+        <relationshipLabel><!-- Security Positions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Share --></label>
+        <name>vlocity_ins__NumberOfShares__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security --></label>
+        <name>vlocity_ins__SecurityId__c</name>
+        <relationshipLabel><!-- Financial Account Positions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>vlocity_ins__SecurityName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Last Updated --></label>
+        <name>vlocity_ins__SecurityPriceAsOfDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>vlocity_ins__SecurityPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Symbol --></label>
+        <name>vlocity_ins__TickerSymbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>vlocity_ins__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

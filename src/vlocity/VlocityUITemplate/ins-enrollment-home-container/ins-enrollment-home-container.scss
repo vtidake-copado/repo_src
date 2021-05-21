@@ -1,0 +1,120 @@
+@import "ins-product-attributes-variables";
+
+.via-slds{
+
+    .cfp-hotkeys-container {
+        display: none !important;
+    }
+
+    .vloc-enrollment-tabs{
+        top: -2rem;
+        position: relative;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        .vloc-selected-tabs{
+            border: 1px solid $primary-orange;; 
+            border-radius: 1rem;
+            -webkit-text-fill-color:  $primary-orange;
+            color:  $primary-orange;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .current-tab{
+            &.vloc-selected-tabs{
+                margin-right: 1rem;
+            }
+        }
+    }
+    .vloc-broker-app-col-container{
+        .vloc-title {
+            font-size: 1.55rem;
+        }
+
+
+        .vloc-broker-app-policy{
+        height: auto;
+        width: 100%;
+          /*  Simple transition */
+          -webkit-transition: top 0.75s ease-in-out;
+          -moz-transition: top 0.75s ease-in-out;
+          transition: top 0.75s ease-in-out;
+
+
+        }
+        .vloc-section-header {
+            &.vloc-title-border-container {
+                width:3rem; 
+
+                .vloc-title-border {
+                    fill: $primary-orange;
+                    border-top: 2px solid $primary-orange; 
+                    margin: 0;
+                }
+            }
+        }
+
+        .vloc-broker-tabs{
+            background: $highlight-blue;
+            min-width: 13%;
+            position: relative;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            .vloc-broker-tabs-label{
+                position: relative;
+                left: -.5rem;
+            }
+
+            .vloc-broker-tabs-no{
+                position: relative;
+                width: 13px;
+                height: 13px;
+                border-radius: 9px;
+                background: $primary-orange;
+                display: inline-block;
+                left: -13px;
+                top: -10px;
+                font-size: 7px;
+                color: white;
+                text-align: center;
+                padding-top: 2px;
+
+                &.wide{
+                    width:19px; 
+                }
+
+                &.x-wide{
+                    width: 25px;
+                }
+            }
+
+            &:last-child{
+                border-right: 1px solid $cards-border-gray;
+            }
+
+            .vloc-broker-tabs-icon{
+                fill: $primary-light;
+                width: 2rem;
+                height: 2rem;
+            }
+
+            &.active-tab{
+                background: $primary-light;
+                color: white;
+
+                .vloc-broker-tabs-icon{
+                    fill: white;
+                }
+            }
+        }
+        .warning-text{
+            color: white;
+        }
+    }
+}

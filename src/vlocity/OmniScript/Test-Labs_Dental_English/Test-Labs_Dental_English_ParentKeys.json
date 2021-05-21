@@ -1,0 +1,13 @@
+[
+    "DataRaptor/GetCensusRateType",
+    "DataRaptor/SGCreateGroupAndCensus",
+    "DataRaptor/SGGetRecordTypes",
+    "DataRaptor/SGQuoteGetBrokerInfo",
+    "DataRaptor/SGTransformForQuote",
+    "DataRaptor/SICTypeAhead",
+    "DataRaptor/getRatingFactSpec",
+    "VlocityUITemplate/ins-os-census-member-upload",
+    "VlocityUITemplate/ins-os-plan-compare-modal",
+    "VlocityUITemplate/ins-os-small-group-plan-renewal",
+    "VlocityUITemplate/ins-os-small-group-plan-selection"
+]

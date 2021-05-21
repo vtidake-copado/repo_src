@@ -1,0 +1,18 @@
+{
+    "%vlocity_namespace%__Author__c": "Vlocity",
+    "%vlocity_namespace%__CustomJavascript__c": "vella-home-container.js",
+    "%vlocity_namespace%__Definition__c": "{\"zones\":[{\"name\":\"top\",\"label\":\"Top\",\"$$hashKey\":\"object:1422\"},{\"name\":\"middle\",\"label\":\"Middle\",\"$$hashKey\":\"object:2185\"},{\"name\":\"bottom\",\"label\":\"Bottom\",\"$$hashKey\":\"object:2947\"}]}",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__DisplayOn__c": "",
+    "%vlocity_namespace%__ExternalID__c": "vella-home-container/1/Vlocity/1503945857107",
+    "%vlocity_namespace%__HTML__c": "vella-home-container.html",
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleJson__c": "",
+    "%vlocity_namespace%__Sass__c": "vella-home-container.scss",
+    "%vlocity_namespace%__Type__c": "Containers",
+    "%vlocity_namespace%__Version__c": 1,
+    "Name": "vella-home-container",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUITemplate__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUITemplate__c/vella-home-container"
+}

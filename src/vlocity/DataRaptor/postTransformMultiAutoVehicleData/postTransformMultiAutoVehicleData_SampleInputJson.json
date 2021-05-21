@@ -1,0 +1,43 @@
+{
+    "ContextId": "",
+    "Step1": {
+        "Cars": [
+            {
+                "Make": "Mazda",
+                "Model": "CX-5",
+                "VIN": "JM3KE2CY7E0366835",
+                "Year": 2014
+            },
+            {
+                "Make": "Honda",
+                "Model": "Civic",
+                "VIN": "2HGFA16887H510453",
+                "Year": 2007
+            }
+        ],
+        "Drivers": [
+            {
+                "Age": 32,
+                "FirstName": "Robert",
+                "Gender": "Male",
+                "LastName": "Henderson"
+            },
+            {
+                "Age": 31,
+                "FirstName": "Justin",
+                "Gender": "Male",
+                "LastName": "Dowis"
+            }
+        ]
+    },
+    "id": "a1i6A000000k0YNQAY",
+    "layout": "lightning",
+    "timeStamp": "2018-06-12T19:07:30.333Z",
+    "userCurrencyCode": "USD",
+    "userId": "0056A0000014kRyQAI",
+    "userName": "%vlocity_namespace%urance@vlocity.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": -420,
+    "vlcPersistentComponent": {
+    }
+}

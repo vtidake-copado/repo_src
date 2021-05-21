@@ -1,0 +1,417 @@
+<!--LOADER: -->
+<div class="slds-spinner_container" ng-show="!$root.isLoaded">
+    <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+        <div class="slds-spinner__dot-a"></div>
+        <div class="slds-spinner__dot-b"></div>
+    </div>
+</div>
+<div class="slds-notify_container" ng-if="importedScope.notification.show">
+    <div class="slds-notify slds-notify_toast slds-theme_success" role="alert">
+        <button class="slds-button slds-notify__close slds-button_icon-inverse" title="Close">
+            <slds-button-svg-icon sprite="'utility'" icon="'close'" no-hint="true"
+                ng-click="importedScope.notification.show = false"></slds-button-svg-icon>
+        </button>
+        <div class="slds-notify__content slds-grid">
+            <div class="slds-col slds-align-middle">
+                <h2 class="slds-text-heading_small ">{{importedScope.notification.message}}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="slds-grid slds-wrap slds-size_1-of-1">
+    <div class="vloc-rating-map-container slds-grid slds-wrap slds-m-bottom_medium slds-m-right_x-large  slds-size_3-of-4 slds-border_right"
+        ng-init="importedScope.setRecords(records)">
+        <div class="slds-p-around_medium slds-size_1-of-1 slds-p-vertical_small slds-theme_shade">
+            <span class="slds-float_right slds-grid slds-grid_wrap">
+                <button class="slds-button slds-button_brand"
+                    ng-click="importedScope.simulate()">{{::importedScope.customLabels.InsProductSimulate}}</button>
+            </span>
+            <div class="slds-grid slds-wrap">
+                <span class="slds-text-heading_medium slds-size_1-of-1">
+                    {{::importedScope.customLabels.InsProductVlocityProductSimulator}}
+            </div>
+        </div>
+        <!-- Input -->
+        <div class="slds-grid slds-wrap slds-size_1-of-1">
+            <div class="vloc-pointer slds-size_1-of-1 slds-grid slds-wrap slds-border_bottom slds-p-bottom_small slds-theme_shade"
+                ng-init="showRatingInputs = true" ng-click="showRatingInputs = !showRatingInputs">
+                <div class="slds-p-left_small slds-size_1-of-3">
+                    <slds-button-svg-icon ng-if="showRatingInputs" sprite="'utility'" icon="'chevrondown'"
+                        no-hint="true"></slds-button-svg-icon>
+                    <slds-button-svg-icon ng-if="!showRatingInputs" sprite="'utility'" icon="'chevronright'"
+                        no-hint="true"></slds-button-svg-icon>
+                    <span
+                        class="slds-text-heading_small slds-p-left_small">{{::importedScope.customLabels.InsProductRatingInputs}}</span>
+                </div>
+                <div class="slds-size_1-of-3">{{::importedScope.customLabels.InsProductInputMapping}}</div>
+                <div class="slds-size_1-of-3">{{::importedScope.customLabels.InsProductSimulateValues}}</div>
+            </div>
+            <div class="slds-size_1-of-1 slds-grid slds-wrap"
+                ng-repeat="(key, value) in importedScope.records.ratingMappings.productRatingInfo.productRatingInputs"
+                ng-init="showInputs[$index] = true;" ng-show="showRatingInputs">
+                <div class="vloc-pointer slds-p-left_small slds-size_1-of-1 slds-p-vertical_small slds-border_bottom"
+                    ng-click="showInputs[$index] = !showInputs[$index]">
+                    <slds-button-svg-icon ng-if="showInputs[$index]" sprite="'utility'" icon="'chevrondown'"
+                        no-hint="true"></slds-button-svg-icon>
+                    <slds-button-svg-icon ng-if="!showInputs[$index]" sprite="'utility'" icon="'chevronright'"
+                        no-hint="true"></slds-button-svg-icon>
+                    <span class="slds-p-left_small">{{value.productName}} <span
+                            ng-if="value.isOptional">({{::importedScope.customLabels.InsProductOptional}})</span></span>
+                </div>
+                <div class="slds-size_1-of-1 slds-grid slds-wrap" ng-if="showInputs[$index]"> 
+                    <!-- Instance Key Rating Attribute: -->
+                    <div class="slds-grid slds-size_1-of-1 slds-border_bottom slds-p-vertical_x-small"
+                    ng-if="importedScope.simulateMap.input[value.productCode + '.instanceKey']">
+                        <div class="slds-size_1-of-3 slds-p-left_small slds-m-top_xx-small">1</div>
+                        <div class="slds-size_1-of-3 slds-p-right_small">
+                            <input ng-model="importedScope.simulateMap.input[value.productCode + '.instanceKey'].ratingInput" class="slds-input" disabled="true"/>
+                        </div>
+                        <div class="slds-size_1-of-3 slds-p-right_small">
+                            <input class="slds-input" type="text" ng-model="value.instanceKey"
+                                ng-change="importedScope.simulateMap.input[value.productCode + '.instanceKey'].value = value.instanceKey">
+                        </div>
+                    </div>
+                    <div ng-repeat="(id, attr) in value"
+                        class="slds-grid slds-size_1-of-1 slds-border_bottom slds-p-vertical_x-small"
+                        ng-if="id !== 'productName' && id !== 'productRecordType' && id !== 'isOptional' && id !== 'isRoot' && attr.attributeLabel">
+                        <div class="slds-p-left_small slds-size_1-of-3 slds-m-top_xx-small"
+                            ng-if="attr.attributeDataType !== 'Multivalue Picklist'">
+                            {{attr.count}} <span class="slds-p-left_small">{{attr.attributeLabel}}</span>
+                        </div>
+                        <div class="slds-size_1-of-3 slds-p-right_small"
+                            ng-if="attr.attributeDataType !== 'Multivalue Picklist'">
+                            <div class="slds-form-element__control slds-grid slds-wrap slds-size_1-of-1">
+                                <div class="slds-select_container slds-m-right_small slds-size_1-of-1"
+                                    ng-if="importedScope.records.ratingMappings.pricingInterface[key].procedureInfo.procedureType === 'Calculation Procedure'">
+                                    <select class="slds-select slds-m-right_xx-small" id="select-01"
+                                        ng-model="attr.ratingInput"
+                                        ng-options="ratingInput for ratingInput in importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariables"
+                                        ng-change="importedScope.saveIO()">
+                                    </select>
+                                </div>
+                                <input class="slds-input"
+                                    ng-if="importedScope.records.ratingMappings.pricingInterface[key].procedureInfo.procedureType !== 'Calculation Procedure'"
+                                    ng-model="attr.ratingInput" ng-cange="importedScope.saveIO()" />
+                            </div>
+                        </div>
+                        <div class="slds-size_1-of-3 slds-p-right_small"
+                            ng-if="attr.attributeDataType !== 'Multivalue Picklist'">
+                            <span
+                                ng-if="importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] === 'Currency' || importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] === 'Number' ||
+                                importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] === 'Percent'">
+                                <input class="slds-input" type="text" ng-model="attr.attributeDefaultValue"
+                                    ng-change="importedScope.simulateMap.input[id].value = attr.attributeDefaultValue">
+                            </span>
+                            <span
+                                ng-if="importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] === 'Text'">
+                                <input class="slds-input" type="text" ng-model="attr.attributeDefaultValue"
+                                    ng-change="importedScope.simulateMap.input[id].value = attr.attributeDefaultValue">
+                            </span>
+                            <span
+                                ng-if="importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] === 'Date'">
+                                <input class="slds-input" type="text" ng-model="attr.attributeDefaultValue"
+                                    ng-change="importedScope.simulateMap.input[id].value = attr.attributeDefaultValue">
+                            </span>
+                            <span
+                                ng-if="importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] === 'Datetime'">
+                                <input class="slds-input" type="text" ng-model="attr.attributeDefaultValue"
+                                    ng-change="importedScope.simulateMap.input[id].value = attr.attributeDefaultValue">
+                            </span>
+                            <span
+                                ng-if="importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] === 'Boolean'"
+                                class="slds-text-align_center">
+                                <span class="slds-checkbox">
+                                    <input type="checkbox" name="attrs-{{$index}}" id="attrs-{{$index}}"
+                                        ng-model="attr.attributeDefaultValue"
+                                        ng-change="importedScope.simulateMap.input[id].value = attr.attributeDefaultValue" />
+                                    <label class="slds-checkbox__label slds-m-around_none" for="attrs-{{$index}}">
+                                        <span class="slds-checkbox_faux vloc-check"></span>
+                                    </label>
+                                </span>
+                            </span>
+                            <span
+                                ng-if="importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] !== 'Date' &&
+                                importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] !== 'Currency' &&importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] !== 'Number' &&
+                                importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] !== 'Percent' &&
+                                importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] !== 'Text' &&
+                                importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] !== 'Datetime'
+                                && importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariablesDataType[attr.ratingInput] !== 'Boolean'">
+                                <input class="slds-input" type="text" ng-model="attr.attributeDefaultValue"
+                                    ng-change="importedScope.simulateMap.input[id].value = attr.attributeDefaultValue">
+                            </span>
+                        </div>
+                        <div class="slds-size_1-of-1" ng-if="attr.attributeDataType === 'Multivalue Picklist'">
+                            <div class="slds-p-left_small slds-size_1-of-1 slds-m-top_xx-small">
+                                {{attr.count}} <span class="slds-p-left_small">{{attr.attributeLabel}}</span>
+                            </div>
+                            <div class="slds-size_1-of-1 slds-grid slds-grid_wrap slds-p-top_xx-small"
+                                ng-repeat="splitKey in attr.splitDecoderArr">
+                                <div class="slds-size_1-of-3 slds-p-right_small slds-p-left_large">
+                                    <span class="slds-p-horizontal_small">{{$index + 1}}</span>{{splitKey}}
+                                </div>
+                                <div class="slds-size_1-of-3 slds-p-right_small">
+                                    <div class="slds-form-element__control slds-size_1-of-1">
+                                        <div class="slds-select_container slds-m-right_small slds-size_1-of-1"
+                                            ng-if="importedScope.records.ratingMappings.pricingInterface[key].procedureInfo.procedureType === 'Calculation Procedure'">
+                                            <select class="slds-select slds-m-right_xx-small" id="select-01"
+                                                ng-model="attr.breakdownRatingInput[splitKey]"
+                                                ng-options="ratingInput for ratingInput in importedScope.records.ratingMappings.pricingInterface[key].pricingInputVariables"
+                                                ng-change="importedScope.saveIO()">
+                                            </select>
+                                        </div>
+                                        <input class="slds-input"
+                                            ng-if="importedScope.records.ratingMappings.pricingInterface[key].procedureInfo.procedureType !== 'Calculation Procedure'"
+                                            ng-model="attr.breakdownRatingInput[splitKey]"
+                                            ng-cange="importedScope.saveIO()" />
+                                    </div>
+                                </div>
+                                <div class="slds-size_1-of-3 slds-p-right_small">
+                                    <input class="slds-input" ng-model="attr.breakdownAttrValue[splitKey]"
+                                        ng-change="importedScope.simulateMap.input[id][attr.breakdownRatingInput[splitKey]] = attr.breakdownAttrValue[splitKey]" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Output-->
+        <div class="slds-grid slds-wrap slds-size_1-of-1">
+            <div class="vloc-pointer slds-size_1-of-1 slds-grid slds-wrap slds-border_bottom slds-p-vertical_small slds-theme_shade"
+                ng-init="showRatingOutputs = true" ng-click="showRatingOutputs = !showRatingOutputs">
+                <div class="slds-p-left_small slds-size_1-of-3">
+                    <slds-button-svg-icon ng-if="showRatingOutputs" sprite="'utility'" icon="'chevrondown'"
+                        no-hint="true"></slds-button-svg-icon>
+                    <slds-button-svg-icon ng-if="!showRatingOutputs" sprite="'utility'" icon="'chevronright'"
+                        no-hint="true"></slds-button-svg-icon>
+                    <span
+                        class="slds-text-heading_small  slds-p-left_small">{{::importedScope.customLabels.InsProductRatingOutputs}}</span>
+                </div>
+                <div class="slds-size_1-of-3">{{::importedScope.customLabels.InsProductOutputMapping}}</div>
+                <div class="slds-size_1-of-3">{{::importedScope.customLabels.InsProductSimulateValues}}</div>
+            </div>
+            <div class="slds-size_1-of-1 slds-grid slds-wrap slds-border_bottom"
+                ng-repeat="value in importedScope.outputArray | orderBy : 'isRoot'" ng-if="showRatingOutputs"
+                ng-init="importedScope.getValueLength(value, $index); showOutputs[$index] = true">
+                <div class="slds-size_1-of-1 slds-p-vertical_x-small slds-grid" ng-init="key = value.key">
+                    <!--Col 1: -->
+                    <div class="slds-size_1-of-3 slds-grid slds-p-left_small">
+                        <span ng-if="value.hasChildren">
+                            <span class="vloc-pointer slds-m-top_xx-small slds-size_1-of-1"
+                                ng-click="showOutputs[$index] = !showOutputs[$index]"
+                                ng-if="importedScope.showOutputCarrot[$index]">
+                                <span class="slds-p-right_x-small">{{$index + 1}}</span>
+                            </span>
+                            {{value.productName}}
+                        </span>
+                        <span ng-if="!value.hasChildren" class="slds-m-top_xx-small"> {{$index + 1}} <span
+                                class="slds-p-left_small">{{value.productName}}</span></span>
+                    </div>
+                    <!-- Col 2: -->
+                    <div class="slds-size_1-of-3" ng-class="{'slds-p-right_small' : !value.isRoot}">
+                        <!-- Pricing Formula -->
+                        <div ng-if="value.isRoot || (value.formula === null || value.formula)"
+                            ng-init="importedScope.parseStr(value.formula, key)">
+                            <label class="slds-form-element__label slds-m-bottom_none"
+                                for="text-input-id-pricing">{{::importedScope.customLabels.InsProductTotalPricingFormula}}</label>
+                            <span
+                                ng-if="importedScope.records.ratingMappings.pricingInterface[key].procedureInfo.procedureType === 'Calculation Procedure'">
+                                <div class="vloc-ins-product-rules-container-cards"
+                                    ng-controller="vlocInsRulesContainerCtrl">
+                                    <div class="slds-p-bottom_small slds-m-bottom_small slds-p-right_small vloc-ins-product-rules-eligibility-container"
+                                        ng-controller="vlocInsRulesEligibilityCtrl"
+                                        ng-init="initEligibilityTypeAheads(importedScope.records.ratingMappings.pricingInterface[key].tags)">
+                                        <div class="slds-size_1-of-1 vloc-ins-product-rules-eligibility-expression">
+                                            <div class="slds-form-element">
+                                                <div class="slds-form-element__control slds-is-relative">
+                                                    <monaco-editor id="eligibility-rule-expression"
+                                                        class="slds-textarea" language="vlocity-formula"
+                                                        ng-model="value.formula"
+                                                        ng-class="{'rule-saved': eligibility.saveStatus === 'saved', 'rule-unsaved': eligibility.saveStatus === 'unsaved', 'rule-save-error': eligibility.saveStatus === 'error'}"
+                                                        ng-change="saveIO()" ng-if="$root.insTypeAheads"
+                                                        ng-keydown="vlocInsProductRulesService.switchTypeAheadData(eligibility)"
+                                                        ng-keyup="markExpressionUnsaved($event)"></monaco-editor>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                            <div ng-if="importedScope.records.ratingMappings.pricingInterface[key].procedureInfo.procedureType !== 'Calculation Procedure'"
+                                class="slds-p-right_small">
+                                <input class="slds-input" ng-model="value.formula"
+                                    placeholder="{{::importedScope.customLabels.InsProductSetFormulaProduct}}" />
+                            </div>
+                            <div class="slds-form-element__control slds-grid slds-wrap slds-size_1-of-1"
+                                ng-if="value.formula === null || value.formula === '' ">
+                                <div class="slds-form-element__control slds-grid slds-wrap slds-size_1-of-1 slds-p-right_small"
+                                    ng-if="importedScope.records.ratingMappings.pricingInterface[key].procedureInfo.procedureType === 'Calculation Procedure'">
+                                    <div class="slds-select_container slds-m-right_small slds-size_1-of-1">
+                                        <select
+                                            ng-options="ratingOutput for ratingOutput in importedScope.records.ratingMappings.pricingInterface[key].pricingOutputVariables"
+                                            class="slds-select slds-m-right_xx-small slds-truncate"
+                                            id="select-output-01" ng-change="importedScope.saveIO()"
+                                            ng-model="value.pricingSource">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div
+                                    ng-if="importedScope.records.ratingMappings.pricingInterface[key].procedureType === 'Integration Procedure'">
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element_control">
+                                            <input type="text" class="slds-input" ng-model="value.pricingSource" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- TotalInsuredFormula -->
+                        <div ng-if="value.isRoot || (value.forumla === null || value.formula)"
+                            class="slds-p-top_xx-small"
+                            ng-init="importedScope.parseStr(value.totalInsuredFormula, key)">
+                            <label class="slds-form-element__label slds-m-bottom_none"
+                                for="text-input-id-1">{{::importedScope.customLabels.InsProductTotalInsuredFormula}}</label>
+                            <div class="slds-p-right_small">
+                                <input class="slds-input" ng-model="value.totalInsuredFormula"
+                                    placeholder="{{::importedScope.customLabels.InsProductSetTotalInsuredFormula}}" />
+                            </div>
+                        </div>
+                        <!-- Not Root -->
+                        <div ng-if="!value.isRoot && (value.formula === undefined)">
+                            <div class="slds-form-element__control slds-grid slds-wrap slds-size_1-of-1"
+                                ng-if="importedScope.records.ratingMappings.pricingInterface[key].procedureInfo.procedureType === 'Calculation Procedure'">
+                                <div class="slds-select_container slds-m-right_small slds-size_1-of-1">
+                                    <select
+                                        ng-options="ratingOutput for ratingOutput in importedScope.records.ratingMappings.pricingInterface[key].pricingOutputVariables"
+                                        class="slds-select slds-m-right_xx-small slds-truncate" id="select-output-01"
+                                        ng-change="importedScope.saveIO()" ng-model="value.pricingSource">
+                                    </select>
+                                </div>
+                            </div>
+                            <div
+                                ng-if="importedScope.records.ratingMappings.pricingInterface[key].procedureType === 'Integration Procedure'">
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element_control">
+                                        <input type="text" class="slds-input" ng-model="value.pricingSource" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Col 3: -->
+                    <div class="vloc-simulate-root-output slds-size_1-of-3 slds-p-right_small slds-truncate">
+                        <div class="vloc-min-height slds-size_1-of-1 slds-p-top_xx-small"
+                            ng-class="{'slds-p-top_large slds-p-bottom_small' : value.isRoot}">
+                            <label class="slds-form-element__label slds-m-bottom_none"
+                                for="text-input-id-pricing-forumula-result"
+                                ng-if="value.simulatedValue">{{::importedScope.customLabels.InsProductTotalPricingFormula}}</label>
+                            <div>{{value.simulatedValue}}</div>
+                        </div>
+                        <div class="slds-size_1-of-1 slds-p-top_large" ng-if="value.simulatedInsuredValue">
+                            <label class="slds-form-element__label slds-m-bottom_none"
+                                for="text-input-id-insured-formula-result">{{::importedScope.customLabels.InsProductTotalInsuredFormula}}</label>
+                            <div>{{value.simulatedInsuredValue}}</div>
+                        </div>
+                    </div>
+                </div>
+                <span class="slds-size_1-of-1" ng-show="showOutputs[$index]">
+                    <div ng-repeat="(k, attr) in value"
+                        class="slds-grid slds-size_1-of-1 slds-border_top slds-p-vertical_x-small"
+                        ng-if="attr.attributeLabel">
+                        <div class="slds-p-left_x-large slds-size_1-of-3 slds-m-top_xx-small">
+                            {{$index + 1}} <span class="slds-p-left_small">{{attr.attributeLabel}}</span>
+                        </div>
+                        <div class="slds-size_1-of-3 slds-p-right_small">
+                            <div class="slds-form-element__control slds-grid slds-wrap slds-size_1-of-1"
+                                ng-if="importedScope.records.ratingMappings.pricingInterface[key].pricingOutputVariables">
+                                <div class="slds-select_container slds-m-right_small slds-size_1-of-1">
+                                    <select ng-change="importedScope.saveIO()"
+                                        ng-options="ratingInput for ratingInput in importedScope.records.ratingMappings.pricingInterface[key].pricingOutputVariables"
+                                        class="slds-select slds-m-right_xx-small" id="select-01"
+                                        ng-model="attr.ratingOutput">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="slds-form-element"
+                                ng-if="!importedScope.records.ratingMappings.pricingInterface[key].pricingOutputVariables">
+                                <div class="slds-form-element_control">
+                                    <input type="text" class="slds-input" ng-model="attr.ratingOutput"
+                                        ng-change="importedScope.saveIO()" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-size_1-of-3 slds-p-right_small">
+                            {{importedScope.simulateMap.output[attr.ratingOutput]}}
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div
+        class="vloc-simulation-column slds-grid slds-wrap slds-m-left_small slds-border_left slds-border_top slds-m-top_medium slds-border_right slds-border_bottom">
+        <div class="vloc-feed">
+            <slds-button-svg-icon icon-size="large" size="large" sprite="'utility'" icon="'feed'" no-hint="true">
+            </slds-button-svg-icon>
+        </div>
+        <div class="vloc-pointer slds-size_1-of-1 slds-p-around_small slds-grid slds-grid_wrap"
+            ng-init="showSimOption = true" ng-class="{'slds-border_bottom' : showSimOption}">
+            <span class="slds-size_1-of-2" ng-click="showSimOption= !showSimOption">
+                <slds-button-svg-icon ng-if="showSimOption" sprite="'utility'" icon="'chevrondown'" no-hint="true">
+                </slds-button-svg-icon>
+                <slds-button-svg-icon ng-if="!showSimOption" sprite="'utility'" icon="'chevronright'" no-hint="true">
+                </slds-button-svg-icon>
+                <span class="slds-p-left_small">{{::importedScope.customLabels.InsProductParameters}}</span>
+            </span>
+            <span class="slds-size_1-of-2 slds-text-align_right">
+                <slds-button-svg-icon sprite="'utility'" icon="'copy'" no-hint="true"
+                    ng-click="importedScope.copyToClipboard('#p2')"></slds-button-svg-icon>
+            </span>
+        </div>
+        <div class="slds-size_1-of-1 slds-p-around_small" ng-if="showSimOption">
+            <div class="slds-form-element vloc-options-map-container">
+                <div class="slds-form-element__control slds-is-relative">
+                    <monaco-editor id="p2" class="slds-textarea"
+                        ng-model="importedScope.records.ratingMappings.productRatingInfo.ratingOptions"
+                        data-keybinding-context="1" data-mode-id="json"></monaco-editor>
+                </div>
+            </div>
+        </div>
+        <div class="vloc-pointer slds-size_1-of-1 slds-p-around_small slds-grid slds-wrap" ng-init="showSimInput = true"
+            ng-class="{'slds-border_bottom' : showSimInput}">
+            <span class="slds-size_1-of-2" ng-click="showSimInput = !showSimInput">
+                <slds-button-svg-icon ng-if="showSimInput" sprite="'utility'" icon="'chevrondown'" no-hint="true">
+                </slds-button-svg-icon>
+                <slds-button-svg-icon ng-if="!showSimInput" sprite="'utility'" icon="'chevronright'" no-hint="true">
+                </slds-button-svg-icon>
+                <span class="slds-p-left_small">{{::importedScope.customLabels.Input}}</span>
+            </span>
+            <span class="slds-size_1-of-2 slds-text-align_right">
+                <slds-button-svg-icon sprite="'utility'" icon="'copy'" no-hint="true"
+                    ng-click="importedScope.copyToClipboard('#p1')"></slds-button-svg-icon>
+            </span>
+        </div>
+        <div class="slds-size_1-of-1 slds-p-around_small" ng-if="showSimInput">
+            <pre id="p1">{{importedScope.simulateMap.show | json}}</pre>
+        </div>
+        <div class="vloc-pointer slds-size_1-of-1 slds-border_top slds-p-around_small slds-grid slds-wrap"
+            ng-class="{'slds-border_bottom' : showSimOutput}" ng-init="showSimOutput = true">
+            <span ng-click="showSimOutput = !showSimOutput" class="slds-size_1-of-2">
+                <slds-button-svg-icon ng-if="showSimOutput" sprite="'utility'" icon="'chevrondown'" no-hint="true">
+                </slds-button-svg-icon>
+                <slds-button-svg-icon ng-if="!showSimOutput" sprite="'utility'" icon="'chevronright'" no-hint="true">
+                </slds-button-svg-icon>
+                <span class="slds-p-left_small">{{::importedScope.customLabels.Output}}</span>
+            </span>
+            <span class="slds-size_1-of-2 slds-text-align_right">
+                <slds-button-svg-icon sprite="'utility'" icon="'copy'" no-hint="true"
+                    ng-click="importedScope.copyToClipboard('#p3')"></slds-button-svg-icon>
+            </span>
+        </div>
+        <div class="slds-size_1-of-1 slds-p-around_small" ng-if="showSimOutput">
+            <div class="slds-text-align_center" ng-if="!importedScope.simulateMap.output">
+                {{::importedScope.customLabels.InsProductNoOutput}}</div>
+            <pre id="p3">{{importedScope.simulateMap.output | json}}</pre>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+{
+    "%vlocity_namespace%__Author__c": "Vlocity",
+    "%vlocity_namespace%__CustomJavascript__c": "",
+    "%vlocity_namespace%__Definition__c": "",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__DisplayOn__c": "",
+    "%vlocity_namespace%__ExternalID__c": "ins-product-attributes-json-modal/2/Vlocity/1553196164551",
+    "%vlocity_namespace%__HTML__c": "ins-product-attributes-json-modal.html",
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleJson__c": "",
+    "%vlocity_namespace%__Sass__c": "ins-product-attributes-json-modal.scss",
+    "%vlocity_namespace%__Type__c": "Cards",
+    "%vlocity_namespace%__Version__c": 2,
+    "Name": "ins-product-attributes-json-modal",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUITemplate__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUITemplate__c/ins-product-attributes-json-modal"
+}

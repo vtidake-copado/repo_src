@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- GetPolicyDetailsFields --></label>
+        <name>vlocity_ins__GetPolicyDetailsFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Product Structure --></label>
+        <name>vlocity_ins__ProductStructure</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Allow Independent Life Cycle --></label>
+        <name>vlocity_ins__AllowIndependentLifeCycle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sequence --></label>
+        <name>vlocity_ins__ChildLineNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Child Product --></label>
+        <name>vlocity_ins__ChildProductId__c</name>
+        <relationshipLabel><!-- Product Child Items (Child) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Child Record Type --></label>
+        <name>vlocity_ins__ChildRecordType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collapse Hierarchy --></label>
+        <name>vlocity_ins__CollapseHierarchy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coverage Calculation Formula --></label>
+        <name>vlocity_ins__CoverageCalculationFormula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Selected Criteria Comments --></label>
+        <name>vlocity_ins__DefaultSelectedCriteriaComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Selected Criteria --></label>
+        <name>vlocity_ins__DefaultSelectedCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligibility Criteria Comments --></label>
+        <name>vlocity_ins__EligibilityCriteriaComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- EligibilityCriteria --></label>
+        <name>vlocity_ins__EligibilityCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Key --></label>
+        <name>vlocity_ins__GlobalKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Optional --></label>
+        <name>vlocity_ins__IsOptional__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Override --></label>
+        <name>vlocity_ins__IsOverride__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Root Product Child Item --></label>
+        <name>vlocity_ins__IsRootProductChildItem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Virtual Item --></label>
+        <name>vlocity_ins__IsVirtualItem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Quantity --></label>
+        <name>vlocity_ins__MaxQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Children Quantity --></label>
+        <name>vlocity_ins__MaximumChildItemQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min, Max, Default --></label>
+        <name>vlocity_ins__MinMaxDefaultQty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Quantity --></label>
+        <name>vlocity_ins__MinQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Children Quantity --></label>
+        <name>vlocity_ins__MinimumChildItemQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Product --></label>
+        <name>vlocity_ins__ParentProductId__c</name>
+        <relationshipLabel><!-- Product Child Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pricing Formula --></label>
+        <name>vlocity_ins__PricingFormula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Source --></label>
+        <name>vlocity_ins__PricingSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Quantity --></label>
+        <name>vlocity_ins__Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- RelationshipType --></label>
+        <name>vlocity_ins__RelationshipType__c</name>
+        <picklistValues>
+            <masterLabel>Child</masterLabel>
+            <translation><!-- Child --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Realization</masterLabel>
+            <translation><!-- Realization --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Required Criteria Comments --></label>
+        <name>vlocity_ins__RequiredCriteriaComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required Criteria --></label>
+        <name>vlocity_ins__RequiredCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Select Validation Criteria --></label>
+        <name>vlocity_ins__SelectValidationCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Select Validation Message --></label>
+        <name>vlocity_ins__SelectValidationMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selection Method Implementation --></label>
+        <name>vlocity_ins__SelectionMethodImplementation__c</name>
+    </fields>
+    <fields>
+        <label><!-- SeqNumber --></label>
+        <name>vlocity_ins__SeqNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Parent Product --></label>
+        <name>vlocity_ins__SubParentSpecId__c</name>
+        <relationshipLabel><!-- Product Child Items (Sub Parent Product) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Coverage Calculation Formula --></label>
+        <name>vlocity_ins__TotalCoverageCalculationFormula__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Cannot add Assetizable Child Product to a Non Assetizable Parent Product --></errorMessage>
+        <name>vlocity_ins__ChildProductNonAssetizeRule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Default Quantity should be greater than or equal to 0 --></errorMessage>
+        <name>vlocity_ins__Default_greater_than_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Default Quantity must be greater than or equal to Min Quantity --></errorMessage>
+        <name>vlocity_ins__Default_greater_than_Min</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Default Quantity must be less than or equal to Max Quantity --></errorMessage>
+        <name>vlocity_ins__Default_less_than_Max</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Max Quantity should be greater than or equal to 0 --></errorMessage>
+        <name>vlocity_ins__Max_greater_than_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Max Quantity must be greater than or equal to Min Quantity --></errorMessage>
+        <name>vlocity_ins__Max_less_than_Min</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Min Children Quantity must be less than or equal to Max Children Quantity --></errorMessage>
+        <name>vlocity_ins__Min_child_greater_than_Max_child_item</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Min Quantity should be greater than or equal to 0 --></errorMessage>
+        <name>vlocity_ins__Min_greater_than_0</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Min Quantity must be less than or equal to Max Quantity --></errorMessage>
+        <name>vlocity_ins__Min_greater_than_Max</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Parent Product cannot be added as Child Product --></errorMessage>
+        <name>vlocity_ins__ParentProduct_cannot_be_ChildProduct</name>
+    </validationRules>
+</CustomObjectTranslation>

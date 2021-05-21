@@ -1,0 +1,47 @@
+{
+    "ContextId": null,
+    "accountId": "001f4000002GSUuAAO",
+    "censusId": "a1df40000005pqoAAA",
+    "censusPage": {
+        "Census": null
+    },
+    "dentalPage": {
+        "DentalPlans": null
+    },
+    "medicalPage": {
+        "MedicalPlans": null
+    },
+    "plansPage": {
+        "CoverageEffectiveDate": null,
+        "EffectiveDate": null,
+        "PlanEffectiveDate": null,
+        "isDentalSelected": null,
+        "isMedicalSelected": null,
+        "isVisionSelected": null,
+        "plansSelection": null
+    },
+    "quoteSummary": {
+        "quotePreview": null
+    },
+    "targetSource": "Quoting",
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "visionPage": {
+        "VisionPlans": null
+    },
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "SetValues2": null,
+        "TransformToCreateQuote": null,
+        "censusPage": null,
+        "dentalPage": null,
+        "medicalPage": null,
+        "plansPage": null,
+        "quoteSummary": null,
+        "visionPage": null
+    }
+}

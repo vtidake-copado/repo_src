@@ -1,0 +1,310 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Service-Frequency_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "SG_cont_lens": "Annual",
+        "SG_eye_exam_freq": "Annual",
+        "SG_frame_freq": "Annual",
+        "SG_lens_freq": "Annual"
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "records": [
+            {
+                "Code__c": "SG_Vision",
+                "Name": "SG Vision",
+                "displaySequence": 2030,
+                "id": "a0B6A0000089LUuUAM",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0C6A000006lqzyUAA",
+                            "cloneable": true,
+                            "code": "SG_cont_lens",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Contact Lens Benefit",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Annual",
+                                    "readonly": false,
+                                    "value": "Annual"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "Bi-annual",
+                                    "readonly": false,
+                                    "value": "Bi-annual"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C6A000006lr04UAA",
+                            "cloneable": true,
+                            "code": "SG_eye_exam_freq",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 6,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "radio",
+                            "isNotTranslatable": false,
+                            "label": "Eye Exam Frequency",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Annual",
+                                    "readonly": false,
+                                    "value": "Annual"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "Bi-annual",
+                                    "readonly": false,
+                                    "value": "Bi-annual"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C6A000006lr05UAA",
+                            "cloneable": true,
+                            "code": "SG_frame_freq",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 7,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "radio",
+                            "isNotTranslatable": false,
+                            "label": "Frame Frequency",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Annual",
+                                    "readonly": false,
+                                    "value": "Annual"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "Bi-annual",
+                                    "readonly": false,
+                                    "value": "Bi-annual"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C6A000006lr03UAA",
+                            "cloneable": true,
+                            "code": "SG_lens_freq",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 8,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Lens Frequency",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Annual",
+                                    "readonly": false,
+                                    "value": "Annual"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "Bi-annual",
+                                    "readonly": false,
+                                    "value": "Bi-annual"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 4
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__Availability__c": "",
+    "%vlocity_namespace%__CarrierId__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2019-01-01",
+    "%vlocity_namespace%__EligibilityCriteriaComments__c": "",
+    "%vlocity_namespace%__EligibilityCriteria__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__EnrollmentStatus__c": "",
+    "%vlocity_namespace%__FormularyId__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2019-01-01T08:00:00.000Z",
+    "%vlocity_namespace%__GlobalKey__c": "379d13e4-1143-ab1e-542d-210b002fcc6d",
+    "%vlocity_namespace%__HasCustomAttributesProcess__c": false,
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__InstanceKeyFormula__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__IsRecommended__c": false,
+    "%vlocity_namespace%__LastPublishDate__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "",
+    "%vlocity_namespace%__LineOfBusiness__c": "Group Vision",
+    "%vlocity_namespace%__MarketSegment__c": "Small Group",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PricingFormula__c": "",
+    "%vlocity_namespace%__PricingSource__c": "",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__ProviderNetworkId__c": "",
+    "%vlocity_namespace%__RateBandId__c": "",
+    "%vlocity_namespace%__RatingCalcProcedureName__c": "",
+    "%vlocity_namespace%__RatingProcedureType__c": "",
+    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+    "%vlocity_namespace%__ReplacementProductId__c": "",
+    "%vlocity_namespace%__ReserveProcessingMode__c": "",
+    "%vlocity_namespace%__Scope__c": "",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2019-01-01T08:00:00.000Z",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__Term__c": "",
+    "%vlocity_namespace%__Tier__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TotalCoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__TotalInsuredFormula__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "",
+    "CanUseQuantitySchedule": true,
+    "CanUseRevenueSchedule": true,
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "Image__c": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Service Frequency",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "Service-Frequency_PricebookEntries.json",
+    "ProductCode": "SG_vision_serv_freq",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "CoverageSpec",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/CoverageSpec",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": "",
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Service Frequency",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "379d13e4-1143-ab1e-542d-210b002fcc6d",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "379d13e4-1143-ab1e-542d-210b002fcc6d",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/379d13e4-1143-ab1e-542d-210b002fcc6d",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "SG_vision_serv_freq",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/379d13e4-1143-ab1e-542d-210b002fcc6d"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/379d13e4-1143-ab1e-542d-210b002fcc6d"
+}

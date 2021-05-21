@@ -1,0 +1,817 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Vehicle_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "avAltFuel": false,
+        "avAntiTheft": false,
+        "avBodyType": null,
+        "avBrakes": false,
+        "avClaimFreq": null,
+        "avClaimSev": "",
+        "avColor": null,
+        "avGaragePostalCode": null,
+        "avHistoric": false,
+        "avLicNum": null,
+        "avLicState": null,
+        "avMake": null,
+        "avMileage": "",
+        "avModel": null,
+        "avRatedDriver-BIPD": "",
+        "avRatedDriver-COLL": "",
+        "avRatedDriver-COMP": "",
+        "avRatedDriver-MED": "",
+        "avRatedDriver-UM": "",
+        "avRatedDriverName": null,
+        "avRestraints": false,
+        "avStabilization": false,
+        "avStyle": null,
+        "avSymbol": null,
+        "avVIN": null,
+        "avValue": null,
+        "avYear": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "records": [
+            {
+                "Code__c": "autoVehicle",
+                "Name": "Auto Vehicle",
+                "displaySequence": 210,
+                "id": "a0B3s00000CcZpEEAV",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0C3s000009eqPAEAY",
+                            "cloneable": true,
+                            "code": "avValue",
+                            "dataType": "currency",
+                            "disabled": true,
+                            "displaySequence": 0,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Value",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOlEAI",
+                            "cloneable": true,
+                            "code": "avAltFuel",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "Alternative Fuel",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOmEAI",
+                            "cloneable": true,
+                            "code": "avAntiTheft",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 2,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "Anti Theft",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOoEAI",
+                            "cloneable": true,
+                            "code": "avBrakes",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 3,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "Brakes",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOpEAI",
+                            "cloneable": true,
+                            "code": "avClaimFreq",
+                            "dataType": "number",
+                            "disabled": true,
+                            "displaySequence": 4,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Claim Frequency",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOqEAI",
+                            "cloneable": true,
+                            "code": "avClaimSev",
+                            "dataType": "number",
+                            "disabled": true,
+                            "displaySequence": 5,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Claim Severity",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOuEAI",
+                            "cloneable": true,
+                            "code": "avLicNum",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 6,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "License Number",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOvEAI",
+                            "cloneable": true,
+                            "code": "avLicState",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 7,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "License State",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOwEAI",
+                            "cloneable": true,
+                            "code": "avMake",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 8,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Make",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOyEAI",
+                            "cloneable": true,
+                            "code": "avModel",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 9,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Model",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOzEAI",
+                            "cloneable": true,
+                            "code": "avRatedDriver-BIPD",
+                            "dataType": "number",
+                            "disabled": true,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Rated Driver - BIPD",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqP1EAI",
+                            "cloneable": true,
+                            "code": "avRatedDriver-COMP",
+                            "dataType": "number",
+                            "disabled": true,
+                            "displaySequence": 11,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Rated Driver - Comprehensive",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqP2EAI",
+                            "cloneable": true,
+                            "code": "avRatedDriver-MED",
+                            "dataType": "number",
+                            "disabled": true,
+                            "displaySequence": 12,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Rated Driver - Medical Payments",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqP3EAI",
+                            "cloneable": true,
+                            "code": "avRatedDriver-UM",
+                            "dataType": "number",
+                            "disabled": true,
+                            "displaySequence": 13,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Rated Driver - Uninsured Motorist",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqP4EAI",
+                            "cloneable": true,
+                            "code": "avRatedDriverName",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 14,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Rated Driver Name",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqP5EAI",
+                            "cloneable": true,
+                            "code": "avRestraints",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 15,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "Restraints",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqP6EAI",
+                            "cloneable": true,
+                            "code": "avStabilization",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 16,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "Stablization",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOtEAI",
+                            "cloneable": true,
+                            "code": "avHistoric",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 17,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "Historic",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqP7EAI",
+                            "cloneable": true,
+                            "code": "avStyle",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 18,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Style",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqP8EAI",
+                            "cloneable": true,
+                            "code": "avSymbol",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 19,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Symbol",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOrEAI",
+                            "cloneable": true,
+                            "code": "avColor",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Color",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqP9EAI",
+                            "cloneable": true,
+                            "code": "avVIN",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 21,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "VIN",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqPBEAY",
+                            "cloneable": true,
+                            "code": "avYear",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 22,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Year",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOxEAI",
+                            "cloneable": true,
+                            "code": "avMileage",
+                            "dataType": "number",
+                            "disabled": true,
+                            "displaySequence": 23,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Annual Mileage",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOnEAI",
+                            "cloneable": true,
+                            "code": "avBodyType",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 24,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Body Type",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOsEAI",
+                            "cloneable": true,
+                            "code": "avGaragePostalCode",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 25,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Garage Location (Postal Code)",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqP0EAI",
+                            "cloneable": true,
+                            "code": "avRatedDriver-COLL",
+                            "dataType": "number",
+                            "disabled": true,
+                            "displaySequence": 26,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Rated Driver - Collision",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 27
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__Availability__c": "",
+    "%vlocity_namespace%__CarrierId__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "",
+    "%vlocity_namespace%__EligibilityCriteriaComments__c": "",
+    "%vlocity_namespace%__EligibilityCriteria__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__EnrollmentStatus__c": "",
+    "%vlocity_namespace%__FormularyId__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "69a8672a-b4c7-c604-5d60-6e8b69eb9a7a",
+    "%vlocity_namespace%__HasCustomAttributesProcess__c": true,
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__InstanceKeyFormula__c": "autoVehicle.avYear + \" \" + autoVehicle.avMake + \" \" + autoVehicle.avModel",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__IsRecommended__c": false,
+    "%vlocity_namespace%__LastPublishDate__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "",
+    "%vlocity_namespace%__LineOfBusiness__c": "Property & Casualty",
+    "%vlocity_namespace%__MarketSegment__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PricingFormula__c": "premiumBIPD + premiumCOLL + premiumCCD + premiumMED + premiumUM+premiumRental",
+    "%vlocity_namespace%__PricingSource__c": "",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__ProviderNetworkId__c": "",
+    "%vlocity_namespace%__RateBandId__c": "",
+    "%vlocity_namespace%__RatingCalcProcedureName__c": "",
+    "%vlocity_namespace%__RatingProcedureType__c": "",
+    "%vlocity_namespace%__RecordTypeName__c": "InsuredItemSpec",
+    "%vlocity_namespace%__ReplacementProductId__c": "",
+    "%vlocity_namespace%__ReserveProcessingMode__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "",
+    "%vlocity_namespace%__SubType__c": "Multi Auto",
+    "%vlocity_namespace%__Term__c": "Annual",
+    "%vlocity_namespace%__Tier__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TotalCoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__TotalInsuredFormula__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "Auto",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Personal Lines",
+    "Image__c": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Vehicle",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "Vehicle_PricebookEntries.json",
+    "ProductCode": "autoVehicle",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "InsuredItemSpec",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/InsuredItemSpec",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": "",
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Vehicle",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "69a8672a-b4c7-c604-5d60-6e8b69eb9a7a",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "69a8672a-b4c7-c604-5d60-6e8b69eb9a7a",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/69a8672a-b4c7-c604-5d60-6e8b69eb9a7a",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "autoVehicle",
+            "UnitPrice": 1,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/69a8672a-b4c7-c604-5d60-6e8b69eb9a7a"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/69a8672a-b4c7-c604-5d60-6e8b69eb9a7a"
+}

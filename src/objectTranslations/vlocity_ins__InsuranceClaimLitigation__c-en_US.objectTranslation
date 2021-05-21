@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Case # --></label>
+        <name>vlocity_ins__CaseNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim --></label>
+        <name>vlocity_ins__ClaimId__c</name>
+        <relationshipLabel><!-- Claim Litigation --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Disposition --></label>
+        <name>vlocity_ins__Disposition__c</name>
+        <picklistValues>
+            <masterLabel>Dismissed</masterLabel>
+            <translation><!-- Dismissed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Settle During Trial</masterLabel>
+            <translation><!-- Settle During Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Settle Prior Trial</masterLabel>
+            <translation><!-- Settle Prior Trial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verdict for Defendant</masterLabel>
+            <translation><!-- Verdict for Defendant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verdict for Plaintiff</masterLabel>
+            <translation><!-- Verdict for Plaintiff --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legal Team Assigned --></label>
+        <name>vlocity_ins__IsLegalTeamAssigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Date --></label>
+        <name>vlocity_ins__StatusAsOfDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation><!-- Information --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Trial Date --></label>
+        <name>vlocity_ins__TrialDate__c</name>
+    </fields>
+</CustomObjectTranslation>

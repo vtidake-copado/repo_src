@@ -1,0 +1,63 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Asset",
+        "%vlocity_namespace%__FilterGroup__c": 0,
+        "%vlocity_namespace%__FilterOperator__c": "=",
+        "%vlocity_namespace%__FilterValue__c": "policyId",
+        "%vlocity_namespace%__GlobalKey__c": "5848c53f-771c-6ec9-8c9e-2065aa7a1b10",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Id",
+        "%vlocity_namespace%__InterfaceObjectLookupOrder__c": 1,
+        "%vlocity_namespace%__InterfaceObjectName__c": "Asset",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "Ins_ReadNewPolicyVersion_EndorsementBillingIP4331347132310921",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "Ins_ReadNewPolicyVersion_EndorsementBillingIP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "NewAnnualPremium",
+        "%vlocity_namespace%__GlobalKey__c": "7c6da8f4-7521-eeb8-1f0b-1bd52345712b",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Asset:%vlocity_namespace%__TotalAmount__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "Ins_ReadNewPolicyVersion_EndorsementBillingIP27295212143303105",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "Ins_ReadNewPolicyVersion_EndorsementBillingIP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "NewVersionID",
+        "%vlocity_namespace%__GlobalKey__c": "5d0cfd21-b4d1-f749-9d78-f646c82b2ec8",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Asset:Id",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "Ins_ReadNewPolicyVersion_EndorsementBillingIP5238915632642622",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "Ins_ReadNewPolicyVersion_EndorsementBillingIP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "NewpolicyEffectiveDate",
+        "%vlocity_namespace%__GlobalKey__c": "5768c384-dca4-2f47-afb9-4742b5f35f1b",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Asset:%vlocity_namespace%__EffectiveDate__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "Ins_ReadNewPolicyVersion_EndorsementBillingIP21598730942344901",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "Ins_ReadNewPolicyVersion_EndorsementBillingIP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

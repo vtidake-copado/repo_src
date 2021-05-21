@@ -1,0 +1,135 @@
+{
+    "ContextId": null,
+    "ISOClass": 3,
+    "configureCoverages": {
+        "configureProduct": null,
+        "opportunityName": null
+    },
+    "confirmQuote": {
+        "quoteConfirm": null,
+        "underwritingRules": null
+    },
+    "crafts": {
+        "craft": {
+            "mvAge": null,
+            "mvDinghyValue": null,
+            "mvEngineFuel": null,
+            "mvHorsepower": null,
+            "mvHullMaterial": null,
+            "mvHullType": null,
+            "mvInstanceKey": null,
+            "mvLength": null,
+            "mvMake": null,
+            "mvMaxSpeed": null,
+            "mvModel": null,
+            "mvName": null,
+            "mvNavDistance": null,
+            "mvNumberEngines": null,
+            "mvOMValue": null,
+            "mvPropulsion": null,
+            "mvTrailerValue": null,
+            "mvValue": null,
+            "mvYear": null
+        },
+        "opptyName": null,
+        "quoteEffectiveDate": null,
+        "quoteExpirationDate": null,
+        "vesselCount": null
+    },
+    "decline": {
+        "declineReasons": null
+    },
+    "intro": {
+    },
+    "operator": {
+        "mopAccidents": null,
+        "mopAddress-Block": {
+            "City": null,
+            "Country": null,
+            "State": null,
+            "Street": null,
+            "mopAddress": null,
+            "postalCode": null
+        },
+        "mopAge": null,
+        "mopBirthdate": null,
+        "mopCGEducation": null,
+        "mopCGUsage": null,
+        "mopConvictions": null,
+        "mopEmail": null,
+        "mopExpYears": null,
+        "mopFirstName": null,
+        "mopHomeowner": null,
+        "mopLastName": null,
+        "mopMVRPoints": null,
+        "mopMaritalStatus": null,
+        "mopMiddleName": null,
+        "mopName": null,
+        "mopNumOwners": null,
+        "mopPhone": null,
+        "mopPrefix": null,
+        "prefilledAccount": {
+            "opAddress": {
+                "opCity": null,
+                "opCountry": null,
+                "opPostalCode": null,
+                "opState": null,
+                "opStreet": null
+            },
+            "opAge": null,
+            "opBirthdate": null,
+            "opEmail": null,
+            "opFirstName": null,
+            "opHomeowner": null,
+            "opLastName": null,
+            "opMaritalStatus": null,
+            "opMiddleName": null,
+            "opPrefix": null
+        },
+        "previousAccidents": {
+            "mopAccidentDate": null,
+            "mopAccidentDesc": null,
+            "mopAccidentLoss": null,
+            "mopAccidentType": null,
+            "mopPointType-A": null
+        },
+        "previousConvictions": {
+            "mopCitationDate": null,
+            "mopCitationDesc": null,
+            "mopCitationType": null,
+            "mopPointType-C": null
+        }
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "SetValues": null,
+        "configureCoverages": null,
+        "confirmQuote": null,
+        "crafts": null,
+        "createAcctOpptyContact": null,
+        "createOppty": null,
+        "createQuote": null,
+        "createUpdateQuote": null,
+        "decline": null,
+        "doneToAccount": null,
+        "doneToQuote": null,
+        "getWatercraft": null,
+        "intro": null,
+        "operator": null,
+        "readAccount": null,
+        "readProducer": null,
+        "readQuoteConfirmation": null,
+        "rulesDecline": null,
+        "setDefaults": null,
+        "transformDecline": null,
+        "transformReferral": null,
+        "transformtoQuote": null,
+        "updateQuote": null
+    }
+}

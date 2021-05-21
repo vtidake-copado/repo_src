@@ -1,0 +1,26 @@
+{
+    "BusinessInfo": {
+        "busLegalForm": null,
+        "busName": null,
+        "busRevAnnual": 459899,
+        "businessType": "teaching",
+        "effectiveDate": null,
+        "quoteEffectiveDate": null
+    },
+    "ContextId": null,
+    "configure": {
+        "configureProduct": null
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "BusinessInfo": null,
+        "configure": null,
+        "getRatedProducts": null
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "userInputs": {
+        "AUTO.autoAntiTheft": "Boolean",
+        "AUTO.autoFreq": "Number",
+        "AUTO.autoLicNum": "Text",
+        "AUTO.autoModel": "Text",
+        "AUTO.autoYear": "Number",
+        "AUTO.instanceKey": "Text",
+        "DRIVER.AGE": "Date",
+        "DRIVER.FN": "Text",
+        "DRIVER.GENDER": "Text",
+        "DRIVER.LN": "Text",
+        "DRIVER.instanceKey": "Text",
+        "DriverAge": "Number Range",
+        "Gender": "Text"
+    }
+}

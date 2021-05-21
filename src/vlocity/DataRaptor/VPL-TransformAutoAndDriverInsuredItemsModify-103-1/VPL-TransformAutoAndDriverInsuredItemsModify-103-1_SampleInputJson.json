@@ -1,0 +1,111 @@
+{
+    "error": "OK",
+    "insuredItems": {
+        "AUTO": [
+            {
+                "Id": "a0F0b00000Xx6bWEAR",
+                "autoAltFuel": true,
+                "autoAntiTheft": true,
+                "autoBrakes": false,
+                "autoMake": "Lexus",
+                "autoMileage": 15000,
+                "autoModel": "LX250",
+                "autoStabilization": false,
+                "autoValue": 45000,
+                "instanceKey": "Lexus LX250"
+            },
+            {
+                "Id": "a0F0b00000Xx6bXEAR",
+                "autoAltFuel": true,
+                "autoAntiTheft": true,
+                "autoBrakes": false,
+                "autoMake": "Honda",
+                "autoMileage": 13000,
+                "autoModel": "Odyssey",
+                "autoStabilization": true,
+                "autoValue": 15000,
+                "instanceKey": "Honda Odyssey"
+            }
+        ],
+        "DRIVER": [
+            {
+                "Id": "a0G0b00000bXp3fEAC",
+                "discountDriverInstanceKey": "Jeeny Pearson",
+                "driverAge": 31,
+                "driverAgeLicensed": 21,
+                "driverBirthdate": "1987-09-05T18:30:00.000Z",
+                "driverFirstName": "Jeeny",
+                "driverGPA": null,
+                "driverGender": "F",
+                "driverInstanceKey": "Jeeny Pearson",
+                "driverLastName": "Pearson",
+                "driverMaritalStatus": "M",
+                "driverMiddleName": "M",
+                "driverMilitaryID": null,
+                "driverMiltaryBranch": null,
+                "instanceKey": "Jeeny Pearson",
+                "isPrimary": false,
+                "typeDriverDiscount": "student;military"
+            },
+            {
+                "Id": "a0G0b00000bXp3gEAC",
+                "discountDriverInstanceKey": "Sammy Pearson",
+                "driverAge": 27,
+                "driverAgeLicensed": null,
+                "driverBirthdate": "1990-09-29T18:30:00.000Z",
+                "driverFirstName": "Sammy",
+                "driverGPA": null,
+                "driverGender": "M",
+                "driverInstanceKey": "Sammy Pearson",
+                "driverLastName": "Pearson",
+                "driverMaritalStatus": "S",
+                "driverMiddleName": null,
+                "driverMilitaryID": null,
+                "driverMiltaryBranch": null,
+                "instanceKey": "Sammy Pearson",
+                "isPrimary": false,
+                "typeDriverDiscount": "student;military"
+            }
+        ],
+        "null": [
+            {
+                "Id": "a0F0b00000XxbQVEAZ",
+                "autoAltFuel": true,
+                "autoAntiTheft": true,
+                "autoBodyType": null,
+                "autoBrakes": false,
+                "autoColor": null,
+                "autoFreq": null,
+                "autoGaragePostalCode": null,
+                "autoLicNum": null,
+                "autoLicState": null,
+                "autoMake": "Honda",
+                "autoMileage": 13000,
+                "autoModel": "Odyssey",
+                "autoRatedDriver": null,
+                "autoRestraints": null,
+                "autoSev": null,
+                "autoStabilization": true,
+                "autoStyle": null,
+                "autoSymbol": null,
+                "autoVIN": null,
+                "autoValue": 15000,
+                "autoYear": null,
+                "instanceKey": "Honda Odyssey",
+                "ratedDriver-BIPD": null,
+                "ratedDriver-COLLISION": null,
+                "ratedDriver-Comp": null,
+                "ratedDriver-MED": null,
+                "ratedDriver-UM": null
+            },
+            {
+                "Id": "a0G0b00000bXp3eEAC",
+                "instanceKey": "Policyholder"
+            },
+            {
+                "Id": "a0G0b00000bXp3jEAC",
+                "instanceKey": "Producer"
+            }
+        ]
+    }
+}

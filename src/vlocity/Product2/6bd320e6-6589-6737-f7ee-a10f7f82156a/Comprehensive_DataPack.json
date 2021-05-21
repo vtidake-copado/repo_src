@@ -1,0 +1,212 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Comprehensive_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "atDeductibleComp": 100
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "records": [
+            {
+                "Code__c": "autoTerms",
+                "Name": "Auto Terms",
+                "displaySequence": 230,
+                "id": "a0B6A0000062WreUAE",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0C3s000009eqOeEAI",
+                            "cloneable": true,
+                            "code": "atDeductibleComp",
+                            "dataType": "currency",
+                            "disabled": false,
+                            "displaySequence": 0,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Deductible",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$100",
+                                    "readonly": false,
+                                    "value": 100
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$250",
+                                    "readonly": false,
+                                    "value": 250
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "$500",
+                                    "readonly": false,
+                                    "value": 500
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "$750",
+                                    "readonly": false,
+                                    "value": 750
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "4",
+                                    "label": "$1000",
+                                    "readonly": false,
+                                    "value": 1000
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "5",
+                                    "label": "$1500",
+                                    "readonly": false,
+                                    "value": 1500
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "6",
+                                    "label": "$2500",
+                                    "readonly": false,
+                                    "value": 2500
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 1
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__Availability__c": "",
+    "%vlocity_namespace%__CarrierId__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CoverageCalculationFormula__c": "MAX(ClaimLineItem.ClaimAmount, 0)",
+    "%vlocity_namespace%__EffectiveDate__c": "",
+    "%vlocity_namespace%__EligibilityCriteriaComments__c": "",
+    "%vlocity_namespace%__EligibilityCriteria__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__EnrollmentStatus__c": "",
+    "%vlocity_namespace%__FormularyId__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "6bd320e6-6589-6737-f7ee-a10f7f82156a",
+    "%vlocity_namespace%__HasCustomAttributesProcess__c": false,
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__InstanceKeyFormula__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__IsRecommended__c": false,
+    "%vlocity_namespace%__LastPublishDate__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "",
+    "%vlocity_namespace%__LineOfBusiness__c": "Property & Casualty",
+    "%vlocity_namespace%__MarketSegment__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PricingFormula__c": "",
+    "%vlocity_namespace%__PricingSource__c": "premiumCCD",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__ProviderNetworkId__c": "",
+    "%vlocity_namespace%__RateBandId__c": "",
+    "%vlocity_namespace%__RatingCalcProcedureName__c": "",
+    "%vlocity_namespace%__RatingProcedureType__c": "",
+    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+    "%vlocity_namespace%__ReplacementProductId__c": "",
+    "%vlocity_namespace%__ReserveProcessingMode__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "",
+    "%vlocity_namespace%__SubType__c": "Multi Auto",
+    "%vlocity_namespace%__Term__c": "Annual",
+    "%vlocity_namespace%__Tier__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TotalCoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__TotalInsuredFormula__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "Auto",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Personal Lines",
+    "Image__c": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Comprehensive",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "Comprehensive_PricebookEntries.json",
+    "ProductCode": "autoComp",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "CoverageSpec",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/CoverageSpec",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": "",
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Comprehensive",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "6bd320e6-6589-6737-f7ee-a10f7f82156a",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "6bd320e6-6589-6737-f7ee-a10f7f82156a",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/6bd320e6-6589-6737-f7ee-a10f7f82156a",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "autoComp",
+            "UnitPrice": 1,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/6bd320e6-6589-6737-f7ee-a10f7f82156a"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/6bd320e6-6589-6737-f7ee-a10f7f82156a"
+}

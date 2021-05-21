@@ -1,0 +1,68 @@
+<div class="vloc-quote-details-modal slds-m-horizontal_large">
+    <span class="vloc-plan-detail-container">
+        <p class="slds-text-heading_medium vloc-plan-detail-name"> {{records['Product2.Name'].value}}</p>
+        <p class="slds-size_1-of-1 slds-text-heading_small slds-m-bottom_xx-small vloc-plan-detail-price">
+            {{records['Total Cost'] | currency }}
+        </p>
+        <p class="slds-size_1-of-1 slds-m-bottom_small slds-truncate vloc-plan-detail-subtitle" data-animation="am-fade-and-scale">
+            {{records['Product2.%vlocity_namespace%__SubType__c'].value}}
+        </p>
+    </span>
+    <div class="slds-m-top_small slds-border_top">
+        <div ng-repeat="value in records.attributeCategories.records" class="slds-float_left slds-size_1-of-1 slds-border_bottom">
+            <div class="slds-text-title_caps slds-size_1-of-1 slds-p-vertical_small slds-theme_shade slds-p-left_small slds-border_left slds-border_right vloc-plan-detail-bold">
+                {{value.Name}}
+            </div>
+
+            <div class="slds-grid vloc-plan-detail-row slds-border_top slds-border_right slds-border_left slds-p-vertical_small" ng-repeat="attr in value.productAttributes.records" ng-if="attr.label || !attr.hiddenByRule" ng-hide="attr.ishidden || attr.hiddenByRule" ins-rules-evaluate="attr" ins-rules-product="records">
+                <div class="slds-size_1-of-2 slds-m-right_xx-small">{{attr.label}}</div>
+                <div class="vloc-plan-detail-bold" ng-class="{'slds-size_1-of-4' : attr.description, 'slds-size_1-of-2' : !attr.description}">
+                    <div ng-if="attr.dataType === 'checkbox'">
+                        <label class="slds-checkbox">
+                            <input type="checkbox" name="options" id="checkbox-01" ng-model="attr.value.values" />
+                            <span class="slds-checkbox_faux"></span>
+                            <span class="slds-form-element__label">{{attr.value.values}} 
+                            </span>
+                        </label>
+                    </div>
+                    <div ng-if="attr.dataType === 'dropdown'">
+                        <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open" aria-expanded="true">
+                            <button class="slds-button via-status-select-button slds-button_neutral slds-truncate" ng-click="typeOpen ? typeOpen = false : typeOpen = true">
+                                <slds-button-svg-icon size="type === 'button-group' ? null : 'small'" sprite="'utility'" icon="'down'" extra-classes="'slds-button__icon_left'"></slds-button-svg-icon>
+                                <span>{{attr.values[0].name}}</span>
+                            </button>
+                        </div>
+                        <div class="slds-dropdown slds-dropdown_right" ng-if="typeOpen">
+                            <ul class="dropdown__list" role="menu">
+                                <li class="slds-dropdown__item" ng-repeat="dropdown in attr.values">
+                                    <a role="menuitem">
+                                        <p class="slds-truncate">{{dropdown.name}}</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span ng-if="attr.dataType === 'datetime'">
+                        {{attr.userValues | date:'MM/dd/yyyy @ h:mma'}}
+                    </span>
+                     <span ng-if="attr.dataType === 'percentage'">
+                        {{attr.userValues}}%
+                    </span>
+                    <span ng-if="attr.dataType === 'date'">
+                        {{attr.userValues | date:'MM/dd/yyyy'}}
+                    </span>
+                    <span ng-if="attr.dataType === 'currency'">
+                        {{attr.userValues | currency}}
+                    </span>
+                    <span ng-if="attr.dataType !== 'dropdown' && attr.dataType !== 'checkbox' 
+                    && attr.dataType !== 'datetime' && attr.dataType !== 'currency' && attr.dataType !== 'date' && attr.dataType !== 'percentage'">
+                        {{attr.userValues}}
+                    </span>
+                </div>
+                <div class="slds-size_1-of-4" ng-if="attr.description">
+                    {{attr.description}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

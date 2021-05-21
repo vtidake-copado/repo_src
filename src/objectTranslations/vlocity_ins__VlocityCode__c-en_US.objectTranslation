@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Category --></label>
+        <name>vlocity_ins__Category__c</name>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation><!-- Auto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dental</masterLabel>
+            <translation><!-- Dental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health</masterLabel>
+            <translation><!-- Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life</masterLabel>
+            <translation><!-- Life --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Code Source --></label>
+        <name>vlocity_ins__CodeSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code Sub Type --></label>
+        <name>vlocity_ins__CodeSubType__c</name>
+        <picklistValues>
+            <masterLabel>CM</masterLabel>
+            <translation><!-- CM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMS+PCS</masterLabel>
+            <translation><!-- CMS+PCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICD-10</masterLabel>
+            <translation><!-- ICD-10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICD-9</masterLabel>
+            <translation><!-- ICD-9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCS</masterLabel>
+            <translation><!-- PCS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Code System Type --></label>
+        <name>vlocity_ins__CodeSystemType__c</name>
+        <picklistValues>
+            <masterLabel>APC</masterLabel>
+            <translation><!-- APC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CARC</masterLabel>
+            <translation><!-- CARC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDT</masterLabel>
+            <translation><!-- CDT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPT</masterLabel>
+            <translation><!-- CPT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DRG</masterLabel>
+            <translation><!-- DRG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCPC</masterLabel>
+            <translation><!-- HCPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICD</masterLabel>
+            <translation><!-- ICD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS-DRG</masterLabel>
+            <translation><!-- MS-DRG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RARC</masterLabel>
+            <translation><!-- RARC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUG</masterLabel>
+            <translation><!-- RUG --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Display Name --></label>
+        <name>vlocity_ins__DisplayName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective End Date --></label>
+        <name>vlocity_ins__EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Start Date --></label>
+        <name>vlocity_ins__EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Custom --></label>
+        <name>vlocity_ins__IsCustom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long Description --></label>
+        <name>vlocity_ins__LongDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Short Description --></label>
+        <name>vlocity_ins__ShortDescription__c</name>
+    </fields>
+</CustomObjectTranslation>

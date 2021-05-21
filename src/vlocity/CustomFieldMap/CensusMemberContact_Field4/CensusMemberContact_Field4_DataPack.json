@@ -1,0 +1,12 @@
+{
+    "%vlocity_namespace%__DestinationFieldName__c": "Birthdate",
+    "%vlocity_namespace%__DestinationSObjectType__c": "Contact",
+    "%vlocity_namespace%__SourceFieldName__c": "%vlocity_namespace%__Birthdate__c",
+    "%vlocity_namespace%__SourceFieldSObjectType__c": "",
+    "%vlocity_namespace%__SourceFieldType__c": "date",
+    "%vlocity_namespace%__SourceSObjectType__c": "%vlocity_namespace%__GroupCensusMember__c",
+    "Name": "CensusMemberContact_Field4",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CustomFieldMap__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CustomFieldMap__c/CensusMemberContact_Field4"
+}

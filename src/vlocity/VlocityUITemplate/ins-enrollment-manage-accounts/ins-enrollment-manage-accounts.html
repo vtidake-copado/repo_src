@@ -1,0 +1,5 @@
+<div class="vloc-action-container slds-grid slds-wrap" ng-if="data.actions.length > 0">
+    <div class="action-item slds-size_1-of-1 slds-p-top_small" ng-repeat="action in data.actions | limitTo: (data.limitActionLinksTo?data.limitActionLinksTo:5)" ng-click="performAction(action)">   
+         <a>{{action.displayName}}</a>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+{
+    "%vlocity_namespace%__Author__c": "Vlocity",
+    "%vlocity_namespace%__Datasource__c": "",
+    "%vlocity_namespace%__Definition__c": "ins-product-attributes-json-modal.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "ins-product-attributes-json-modal/2/Vlocity/1553204386409",
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__RequiredPermission__c": "",
+    "%vlocity_namespace%__Type__c": "Layout",
+    "%vlocity_namespace%__Version__c": 2,
+    "Name": "ins-product-attributes-json-modal",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUILayout__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUILayout__c/ins-product-attributes-json-modal"
+}

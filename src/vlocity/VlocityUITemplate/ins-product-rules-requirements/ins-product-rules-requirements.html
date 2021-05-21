@@ -1,0 +1,192 @@
+<div class="vloc-ins-product-rules-requirements-container" ng-controller="vlocInsRulesRequirementsCtrl"
+    ng-init="initRequirements(obj)">
+    <h3 class="slds-text-heading_medium vloc-ins-product-rules-heading">{{customLabels.InsProductUnderwriting}}</h3>
+    <div class="slds-is-relative slds-p-right_medium vloc-ins-product-rules-requirement"
+        ng-repeat="requirement in productRequirements">
+        <div class="slds-p-top_small slds-p-bottom_small vloc-ins-product-rules-requirement-inner-wrapper"
+            style="z-index: {{productRequirements.length + 10 - $index}}"
+            ng-class="{'delete-warning-active': requirement.inDelete, 'delete-processing': requirement.isDeleted, 'adding-new-rule': requirement.newRequirement, 'slds-border_bottom': !$last}">
+            <div class="vloc-ins-product-rules-requirement-number"
+                ng-class="{'rule-saved': requirement.saveStatus === 'saved', 'rule-unsaved': requirement.saveStatus === 'unsaved', 'rule-save-error': requirement.saveStatus === 'error'}">
+                {{$index + 1}}</div>
+            <div class="slds-grid slds-wrap" ng-mouseleave="popoverOpen[$index] = false">
+                <div class="slds-size_4-of-12 slds-p-horizontal_x-small vloc-ins-product-rules-requirement-element vloc-ins-product-rules-requirement-element-name"
+                    ng-class="{'slds-has-error': !requirement.nameUnique}">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="vloc-rule-requirement-name-{{$index + 1}}">
+                            <abbr class="slds-required" title="required">*</abbr>
+                            {{customLabels.Name}}
+                        </label>
+                        <div class="slds-form-element__control">
+                            <input type="text" id="vloc-rule-requirement-name-{{$index + 1}}" required=""
+                                class="slds-input" placeholder="Name" ng-model="requirement.name"
+                                ng-model-options="{debounce: 250}" ng-change="isNameUnique(requirement, $index)" />
+                        </div>
+                        <div class="slds-form-element__help" id="vloc-rule-requirement-name-error-{{$index + 1}}">
+                            {{customLabels.InsProductUniqueNameMessage}}</div>
+                    </div>
+                </div>
+                <div class="slds-size_2-of-12 slds-p-horizontal_x-small vloc-ins-product-rules-requirement-element vloc-ins-product-rules-requirement-element-applicable-type"
+                    ng-class="{'slds-has-error': !checkStates(requirement)}">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label"
+                            for="vloc-rule-requirement-applicable-type-{{$index + 1}}">
+                            <abbr class="slds-required" title="required">*</abbr>
+                            {{customLabels.InsProductApplicableType}}
+                        </label>
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="vloc-rule-requirement-applicable-type-{{$index + 1}}"
+                                    required=""
+                                    ng-options="applicableType.value as applicableType.label for applicableType in applicableTypeOptions"
+                                    ng-model="requirement.objectType" ng-change="getObjectStates(requirement)"
+                                    ng-disabled="!requirement.name.length"></select>
+                            </div>
+                        </div>
+                        <div class="slds-form-element__help"
+                            id="vloc-rule-requirement-applicable-type-error-{{$index + 1}}">
+                            {{customLabels.InsProductNoStatesReturnedFor}} {{requirement.objectType}}.</div>
+                    </div>
+                </div>
+                <div class="slds-size_2-of-12 slds-p-horizontal_x-small vloc-ins-product-rules-requirement-element vloc-ins-product-rules-requirement-element-state"
+                    ng-class="{'slds-has-error': requirement.name && requirement.objectType && !requirement.state.stateId}">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="vloc-rule-requirement-state-{{$index + 1}}">
+                            <abbr class="slds-required" title="required">*</abbr>
+                            {{customLabels.InsProductTransitionName}}
+                        </label>
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="vloc-rule-requirement-state-{{$index + 1}}" required=""
+                                    ng-options="stateOption as stateOption.stateName for stateOption in requirement.stateOptions"
+                                    ng-model="requirement.state" ng-change="getStateActions(requirement)"
+                                    ng-disabled="!requirement.stateOptions.length"></select>
+                            </div>
+                        </div>
+                        <div class="slds-form-element__help" id="vloc-rule-requirement-state-error-{{$index + 1}}">
+                            {{customLabels.InsProductTransitionNameRequired}}.</div>
+                    </div>
+                </div>
+                <div
+                    class="slds-size_2-of-12 slds-p-horizontal_x-small vloc-ins-product-rules-requirement-element vloc-ins-product-rules-requirement-element-action">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="vloc-rule-requirement-action-{{$index + 1}}">
+                            {{customLabels.Action}}
+                        </label>
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="vloc-rule-requirement-action-{{$index + 1}}"
+                                    ng-options="actionOption.actionId as actionOption.actionDisplayLabel for actionOption in requirement.actionOptions"
+                                    ng-model="requirement.actionId" ng-change="saveProductRequirement(requirement)"
+                                    ng-disabled="!requirement.state.stateName"></select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="slds-size_1-of-12 slds-p-horizontal_x-small slds-is-relative vloc-ins-product-rules-requirement-element vloc-ins-product-rules-requirement-element-active">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control">
+                            <span class="slds-checkbox">
+                                <input type="checkbox" name="options" id="vloc-rule-requirement-active-{{$index + 1}}"
+                                    ng-model="requirement.isActive" ng-change="saveProductRequirement(requirement)" />
+                                <label class="slds-checkbox__label" for="vloc-rule-requirement-active-{{$index + 1}}">
+                                    <span class="slds-checkbox_faux"></span>
+                                    <span class="slds-form-element__label">{{customLabels.Active}}</span>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-size_1-of-12 slds-grid">
+                    <div class="vloc-ins-rules-comments slds-size_1-of-2  slds-p-horizontal_x-small"
+                        ng-class="{'vloc-ins-comments': requirement.comments.length > 0, 'vloc-ins-no-comments': !requirement.comments || requirement.comments.length < 1}">
+                        <slds-button-svg-icon extra-classes="'vloc-ins-icon'"
+                            ng-mouseover="popoverOpen[$index] = true" size="'large'" sprite="'utility'"
+                            icon="'comments'" no-hint="true"></slds-button-svg-icon>
+                        <div ng-if="popoverOpen[$index]"
+                            class="slds-m-top_xx-small slds-m-bottom_x-small slds-m-horizontal_xx-small slds-is-relative">
+                            <div class="vloc-ins-rule-message-tooltip slds-popover slds-nubbin_top-right slds-is-absolute"
+                                role="tooltip" id="help">
+                                <div class="slds-popover__body">
+                                    <div class="slds-form-element">
+                                        <label class="slds-form-element__label"
+                                            for="textarea-id-01">{{customLabels.InsUnderwritingRuleComment}}</label>
+                                        <div class="slds-form-element__control">
+                                            <textarea ng-change="saveProductRequirement(requirement, $index);"
+                                                ng-model-options="{debounce: 250}"
+                                                ng-model="requirement.comments" id="textarea-id-{{key}}"
+                                                class="vloc-comment-text-area slds-textarea"
+                                                placeholder="{{customLabels.InsRuleCommentsPlaceholder}}"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-size_1-of-2 slds-p-horizontal_x-small slds-is-relative vloc-ins-product-rules-requirement-element vloc-ins-product-rules-requirement-element-delete">
+                        <button class="slds-button slds-button_icon"
+                            title="{{customLabels.InsProductDeleteRequirement}}" ng-click="deletePrompt(requirement)">
+                            <slds-button-svg-icon sprite="'utility'" icon="'delete'" size="'medium'"
+                                ng-if="!requirement.inDelete"></slds-button-svg-icon>
+                            <slds-button-svg-icon sprite="'utility'" icon="'close'" size="'medium'"
+                                ng-if="requirement.inDelete"></slds-button-svg-icon>
+                            <span class="slds-assistive-text">{{customLabels.InsProductDeleteRequirement}}</span>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="slds-size_6-of-12 slds-p-horizontal_x-small vloc-ins-product-rules-requirement-element vloc-ins-product-rules-requirement-element-condition">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label"
+                            for="vloc-rule-requirement-condition-{{$index + 1}}">{{customLabels.InsProductExpression}}</label>
+                        <div class="slds-form-element__control slds-is-relative">
+                            <monaco-editor id="vloc-rule-requirement-condition-{{$index + 1}}" class="slds-textarea"
+                                language="vlocity-formula" ng-model="requirement.condition"
+                                ng-change="saveProductRequirement(requirement)"
+                                ng-keydown="vlocInsProductRulesService.switchTypeAheadData(requirement, $index)"
+                                ng-keyup="markExpressionUnsaved($event, requirement)" ng-if="$root.insTypeAheads">
+                            </monaco-editor>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="slds-size_6-of-12 slds-p-horizontal_x-small vloc-ins-product-rules-requirement-element vloc-ins-product-rules-requirement-element-message">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label"
+                            for="vloc-rule-requirement-message-{{$index + 1}}">{{customLabels.InsProductMessage}}</label>
+                        <div class="slds-form-element__control">
+                            <div contenteditable="true" strip-br id="vloc-rule-requirement-message-{{$index + 1}}"
+                                class="slds-textarea" ng-change="requirement.saveStatus = 'unsaved'"
+                                ng-blur="saveProductRequirement(requirement)" ng-model="requirement.message"
+                                style="height: 3.5rem;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vloc-ins-product-rules-requirement-delete-warning-wrapper"
+            ng-class="{'delete-warning-active': requirement.inDelete, 'delete-processing': requirement.isDeleted, 'adding-new-rule': requirement.newRequirement}">
+            <div
+                class="slds-p-vertical_x-small slds-p-horizontal_medium slds-text-align_right slds-notify slds-theme_alert-texture vloc-ins-product-rules-requirement-delete-warning-header">
+                <h2 class="slds-text-heading_medium"
+                    id="vloc-ins-product-rules-requirement-delete-warning-{{$index + 1}}">
+                    {{customLabels.InsProductDeleteRequirement}}</h2>
+            </div>
+            <div
+                class="slds-p-around_medium slds-text-align_right vloc-ins-product-rules-requirement-delete-warning-content">
+                <p>{{ customLabels.InsProductDeleteRequirementConfirmation }}</p>
+            </div>
+            <div
+                class="slds-p-around_medium slds-text-align_right vloc-ins-product-rules-requirement-delete-warning-footer">
+                <button class="slds-button slds-button_neutral"
+                    ng-click="requirement.inDelete = !requirement.inDelete">{{ customLabels.InsButtonCancel }}</button>
+                <button class="slds-button slds-button_destructive"
+                    ng-click="deleteRequirement(requirement, $index)">{{ customLabels.InsProductConfirmDelete }}</button>
+            </div>
+        </div>
+    </div>
+    <div class="slds-p-vertical_small slds-p-horizontal_x-small vloc-ins-product-rules-requirements-add">
+        <a href="javascript:void(0)" ng-click="addRequirement()">{{ customLabels.InsProductUnderwritingRule}}</a>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0Q06A000000U8Rr"
+            }
+        ],
+        "type": "Query",
+        "value": {
+            "inputMap": {
+                "quoteId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "GetClassDetail"
+            },
+            "query": "SELECT AccountId, Account.Name, Account.%vlocity_namespace%__PrimaryContactId__r.Name, Account.%vlocity_namespace%__MarketSegment__c, CreatedDate,Description,ExpirationDate,Id,Name,QuoteNumber, Status, TotalPrice, %vlocity_namespace%__EffectiveDate__c, %vlocity_namespace%__RenewalSourceContractId__c FROM Quote WHERE Id = '{{params.id}}' OR Id = '{{attrs.paramsId}}'",
+            "remoteClass": "GetClassDetail",
+            "remoteMethod": "getQuoteDetail",
+            "remoteNSPrefix": null,
+            "resultVar": ""
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "actionCtxId": "",
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['Status']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Quote Status",
+                    "name": "['Status']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Discount']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Discount",
+                    "name": "['Discount']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['TotalPrice']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Total Price",
+                    "name": "['TotalPrice']",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Account']['Name']",
+                    "editing": false,
+                    "group": "Custom Properties",
+                    "label": "Account",
+                    "name": "['Account']['Name']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['%vlocity_namespace%__EffectiveDate__c']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Effective Date",
+                    "name": "['%vlocity_namespace%__EffectiveDate__c']",
+                    "type": "date"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['ExpirationDate']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Expiration Date",
+                    "name": "['ExpirationDate']",
+                    "type": "date"
+                }
+            ],
+            "name": "Quote",
+            "sObjectType": null,
+            "templateUrl": "ins-quote-headerfield"
+        }
+    ],
+    "title": "Detail"
+}

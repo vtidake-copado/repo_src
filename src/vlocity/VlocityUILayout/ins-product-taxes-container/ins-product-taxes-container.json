@@ -1,0 +1,36 @@
+{
+    "Cards": [
+        "ins-product-taxes-card"
+    ],
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "01t1I000002RMoRQAW"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "inputMap": {
+                "productId": "{{params.id}}"
+            },
+            "interval": null,
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceProductAdminHandler"
+            },
+            "remoteClass": "InsuranceProductAdminHandler",
+            "remoteMethod": "getProductTaxesAndFees",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "vlocityAsync": true
+        }
+    },
+    "previewType": "runTime",
+    "templates": {
+        "0": {
+            "templateUrl": "ins-product-taxes-container"
+        }
+    },
+    "workspace": [
+        "ins-product-taxes-card/Vlocity/1/1553624429235"
+    ]
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Console Admin Search --></label>
+        <name>vlocity_ins__ConsoleAdminSearch</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- New Picklist --></label>
+        <name>vlocity_ins__NewPicklist</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Code --></label>
+        <name>vlocity_ins__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Type --></label>
+        <name>vlocity_ins__DataType__c</name>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation><!-- Text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective From --></label>
+        <name>vlocity_ins__EffectiveFromDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Until --></label>
+        <name>vlocity_ins__EffectiveUntilDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Key --></label>
+        <name>vlocity_ins__GlobalKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shared --></label>
+        <name>vlocity_ins__IsShared__c</name>
+    </fields>
+    <fields>
+        <label><!-- Picklist Type --></label>
+        <name>vlocity_ins__Type__c</name>
+        <picklistValues>
+            <masterLabel>Enumerated</masterLabel>
+            <translation><!-- Enumerated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unit Of Measure Name --></label>
+        <name>vlocity_ins__UnitOfMeasureName__c</name>
+    </fields>
+</CustomObjectTranslation>

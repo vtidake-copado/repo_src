@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Address --></label>
+        <name>vlocity_ins__Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>vlocity_ins__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Id --></label>
+        <name>vlocity_ins__ContactId__c</name>
+        <relationshipLabel><!-- Contact Employments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Country Code --></label>
+        <name>vlocity_ins__CountryCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer --></label>
+        <name>vlocity_ins__EmployerId__c</name>
+        <relationshipLabel><!-- Contact Employments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Employer Phone --></label>
+        <name>vlocity_ins__EmployerPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Type --></label>
+        <name>vlocity_ins__EmploymentType__c</name>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FullTime</masterLabel>
+            <translation><!-- FullTime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PartTime</masterLabel>
+            <translation><!-- PartTime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-Employed</masterLabel>
+            <translation><!-- Self-Employed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporary</masterLabel>
+            <translation><!-- Temporary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>vlocity_ins__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Per Week --></label>
+        <name>vlocity_ins__HoursPerWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Employment --></label>
+        <name>vlocity_ins__IsCurrentEmployment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Past Employment --></label>
+        <name>vlocity_ins__IsPastEmployment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation --></label>
+        <name>vlocity_ins__Occupation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>vlocity_ins__PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>vlocity_ins__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- States/Provinces --></label>
+        <name>vlocity_ins__StatesProvinces__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__Status__c</name>
+        <picklistValues>
+            <masterLabel>Confirmed</masterLabel>
+            <translation><!-- Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verified</masterLabel>
+            <translation><!-- Verified --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>vlocity_ins__Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Date --></label>
+        <name>vlocity_ins__VerificationDate__c</name>
+    </fields>
+</CustomObjectTranslation>

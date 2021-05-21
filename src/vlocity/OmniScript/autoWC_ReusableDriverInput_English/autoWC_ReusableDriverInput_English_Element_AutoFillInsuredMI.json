@@ -1,0 +1,60 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Reusable Driver Input",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/autoWC/ReusableDriverInput/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "Reusable Driver Input",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/autoWC/ReusableDriverInput/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "policyHolder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/autoWC/ReusableDriverInput/English/policyHolder",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "policyHolder",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "quickfill",
+        "controlWidth": 2,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "insuredAgeLicensed": 16,
+            "insuredBirthdate": "02-14-1986",
+            "insuredCity": "Grand Rapids",
+            "insuredEmail": "rmoore@mi6.uk",
+            "insuredFirstName": "Roger",
+            "insuredGender": "M",
+            "insuredLastName": "Moore",
+            "insuredMaritalStatus": "M",
+            "insuredMiddleName": "M",
+            "insuredPhone": "5555555555",
+            "insuredPostalCode": "49503",
+            "insuredState": "MI",
+            "insuredStreet": "500 Maple Dr"
+        },
+        "label": "AutoFill",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "AutoFillInsuredMI",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/autoWC/ReusableDriverInput/English/AutoFillInsuredMI"
+}

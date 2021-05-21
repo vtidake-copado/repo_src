@@ -1,0 +1,118 @@
+{
+    "ContextId": null,
+    "Step2": {
+        "SelectableItems1": null
+    },
+    "Step3": {
+    },
+    "Step5": {
+        "quoteRules": null
+    },
+    "Step6": {
+        "policyRules": null
+    },
+    "accountId": "0016A00000W6JmWQAV",
+    "autos": {
+        "auto": {
+            "autoCondition": null,
+            "autoGaragePostalCode": null,
+            "autoInstanceKey": null,
+            "autoMake": null,
+            "autoMileage": null,
+            "autoModel": null,
+            "autoTrim": null,
+            "autoYear": null
+        }
+    },
+    "discountAuto": {
+        "discountAutos": {
+            "discountAutoInstanceKey": null,
+            "typeAutoDiscount": null
+        }
+    },
+    "discountDriver": {
+        "driverDiscounts": {
+            "discountDriverInstanceKey": null,
+            "discountMilitary": {
+                "driverMilitaryID": null,
+                "driverMiltaryBranch": null
+            },
+            "discountStudents": {
+                "driverGPA": null
+            },
+            "typeDriverDiscount": null
+        }
+    },
+    "driverIncidents": {
+        "driverIncident": {
+            "CitationBlock": {
+                "Citation": null
+            },
+            "CollisionDetails": {
+                "Fault": null,
+                "Injuries": null,
+                "ReportedDamage": null
+            },
+            "incidentDate": null,
+            "incidentDriver": null,
+            "incidentType": null
+        }
+    },
+    "drivers": {
+        "driver": {
+            "driverAge": null,
+            "driverAgeLicensed": null,
+            "driverBirthdate": null,
+            "driverFirstName": null,
+            "driverGender": null,
+            "driverInstanceKey": null,
+            "driverLastName": null,
+            "driverMaritalStatus": null,
+            "driverMiddleName": null
+        }
+    },
+    "insured": {
+        "effectiveDate": null,
+        "insuredAge": null,
+        "insuredAgeLicensed": null,
+        "insuredBirthdate": null,
+        "insuredCity": null,
+        "insuredFirstName": null,
+        "insuredFullName": null,
+        "insuredLastName": null,
+        "insuredMiddleName": null,
+        "insuredPostalCode": null,
+        "insuredState": null,
+        "insuredStreet": null
+    },
+    "intro": {
+    },
+    "opportunityId": "0066A000007jw4eQAA",
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "DataRaptorTransformAction1": null,
+        "DataRaptorTransformAction3": null,
+        "DataRaptorTransformAction4": null,
+        "Done": null,
+        "SetValues6": null,
+        "Step2": null,
+        "Step3": null,
+        "Step5": null,
+        "Step6": null,
+        "autos": null,
+        "discountAuto": null,
+        "discountDriver": null,
+        "driverIncidents": null,
+        "drivers": null,
+        "getRatedProducts": null,
+        "insured": null,
+        "intro": null,
+        "setDriversToDiscount": null
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "AddToCart": "Add to Cart",
+    "OmniMonthly": "Monthly Cost",
+    "OmniOneTime": "One Time Cost",
+    "control": {
+        "itemsKey": "results",
+        "propSetMap": {
+            "label": "Property Label"
+        },
+        "vlcSI": {
+            "results": [
+                {
+                    "allFalse": false,
+                    "canTransitState": true,
+                    "error": "OK",
+                    "falseRules": {
+                        "2006 Honda Odyssey_Robert Henderson": [
+                            {
+                                "ruleDetails": {
+                                    "action class": null,
+                                    "action method": null,
+                                    "conditions": "AUTO.autoYear == 2018",
+                                    "message": "Have a new car (model year 2018)",
+                                    "objectId": "02i1I000001iwwdQAA",
+                                    "productId": "01t1I000002fuBoQAI",
+                                    "requirement name": "New car (asset)",
+                                    "transitionName": "Active to Expired"
+                                }
+                            }
+                        ],
+                        "2015 Lexus LX250_Joan Smith": [
+                            {
+                                "ruleDetails": {
+                                    "action class": null,
+                                    "action method": null,
+                                    "conditions": "AUTO.autoYear == 2018",
+                                    "message": "Have a new car (model year 2018)",
+                                    "objectId": "02i1I000001iwwdQAA",
+                                    "productId": "01t1I000002fuBoQAI",
+                                    "requirement name": "New car (asset)",
+                                    "transitionName": "Active to Expired"
+                                }
+                            }
+                        ],
+                        "2015 Lexus LX250_John Smith": [
+                            {
+                                "ruleDetails": {
+                                    "action class": null,
+                                    "action method": null,
+                                    "conditions": "AUTO.autoYear == 2018",
+                                    "message": "Have a new car (model year 2018)",
+                                    "objectId": "02i1I000001iwwdQAA",
+                                    "productId": "01t1I000002fuBoQAI",
+                                    "requirement name": "New car (asset)",
+                                    "transitionName": "Active to Expired"
+                                }
+                            }
+                        ],
+                        "2016 Camry Toyota_Kinsey Schell": [
+                            {
+                                "ruleDetails": {
+                                    "action class": null,
+                                    "action method": null,
+                                    "conditions": "AUTO.autoYear == 2018",
+                                    "message": "Have a new car (model year 2018)",
+                                    "objectId": "02i1I000001iwwdQAA",
+                                    "productId": "01t1I000002fuBoQAI",
+                                    "requirement name": "New car (asset)",
+                                    "transitionName": "Active to Expired"
+                                }
+                            }
+                        ]
+                    },
+                    "stateTransit": " updated Status from null to Expired",
+                    "trueRules": {
+                        "2017 530 BMW_Robert Henderson": [
+                            {
+                                "ruleDetails": {
+                                    "action class": null,
+                                    "action method": null,
+                                    "conditions": "AUTO.autoYear == 2018",
+                                    "message": "Have a new car (model year 2018)",
+                                    "objectId": "02i1I000001iwwdQAA",
+                                    "productId": "01t1I000002fuBoQAI",
+                                    "requirement name": "New car (asset)",
+                                    "transitionName": "Active to Expired"
+                                }
+                            }
+                        ],
+                        "2018 530 BMW_Robert Henderson": [
+                            {
+                                "ruleDetails": {
+                                    "action class": null,
+                                    "action method": null,
+                                    "conditions": "AUTO.autoYear == 2018",
+                                    "message": "Have a new car (model year 2018)",
+                                    "objectId": "02i1I000001iwwdQAA",
+                                    "productId": "01t1I000002fuBoQAI",
+                                    "requirement name": "New car (asset)",
+                                    "transitionName": "Active to Expired"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -43,7 +43,7 @@
     <columns>
         <field>FlowInterviewLog$CreatedBy</field>
     </columns>
-    <description>¿Qué flujos se ejecutan, cuál es el estado de cada entrevista y cuánto tardan los usuarios en completar las pantallas?</description>
+    <description>Which flows run, what’s the status of each interview, and how long do users take to complete the screens?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
@@ -55,7 +55,7 @@
         <field>FlowInterviewLog$InterviewStatus</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de flujo de muestra: Flujos de p</name>
+    <name>Sample Flow Report: Screen Flows</name>
     <params>
         <name>co</name>
         <value>1</value>

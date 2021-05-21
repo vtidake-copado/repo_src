@@ -1,0 +1,94 @@
+@import "ins-product-attributes-variables";
+.via-slds {
+    .vloc-taxes-rows {
+        display: block;
+    }
+    .vloc-attr-actions-container {
+        position: absolute;
+        right: 1.1rem;
+        top: .5rem;
+        .vloc-attr-delete {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .vloc-attr-rules {
+            background: #0070D2;
+            color: white;
+            border-radius: 1.5rem;
+            padding: 0rem .1rem;
+            position: relative;
+            font-size: 1rem;
+            top: .1rem;
+            &:hover {
+                cursor: pointer;
+            }
+            &.vloc-theme_error {
+                background: #c23934;
+            }
+            .number {
+                font-size: .75rem;
+                padding-left: .21rem;
+                position: relative;
+                top: -.1rem;
+                left: .15rem;
+            }
+            .slds-button__icon {
+                position: relative;
+                top: -.1rem;
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
+    }
+    .vloc-product-atttributes-container {
+        background: $cards-gray;
+        .vloc-attr-cell {
+            background: white;
+        }
+        .vloc-sorted-column {
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgb(0, 112, 210) 0 0 0 1px inset, rgb(0, 112, 210) -0.25rem 0 0 inset;
+            color: currentColor;
+            cursor: pointer;
+        }
+        .vloc-not-sorted-column {
+            &:hover {
+                box-shadow: rgb(216, 221, 230) -0.25rem 0 0 inset;
+                background-color: rgb(255, 255, 255);
+                color: currentColor;
+                cursor: pointer;
+            }
+        }
+        .slds-tabs_default__nav {
+            background: white;
+        }
+        .vloc-attr-table {
+            .vloc-attr-table-header {
+                border-bottom: 1px solid $cards-border-gray;
+                background: white;
+                .vloc-attr-title-cell {
+                    background: white;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .vloc-attr-config-container {
+            position: relative;
+            background: $cards-gray;
+
+            .vloc-attr-actions-container {
+                position: absolute;
+                right: .1rem;
+                top: .5rem;
+                .vloc-attr-delete {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+<div class="vloc-attr-container_modal" ng-init="$root.isLoaded = true; orderMap(records.records)" ng-controller="insProductTaxesModalController">
+    <div id="modal-heading-01" class="slds-hyphenate slds-size_1-of-1 slds-m-top_small slds-grid slds-wrap">
+        <div class=" slds-size_1-of-2 slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+            <slds-svg-icon sprite="'utility'" icon="'search'" extra-classes="'slds-icon_small slds-input__icon'">
+            </slds-svg-icon>
+            <input ng-model="searchTerm" class="slds-input" type="text" placeholder="{{records.customLabels.InsProductSearch}}" />
+        </div>
+        <button class="vloc-attr-container_select vloc-attr-add slds-button slds-button_link" ng-click="navigateTo()">{{records.customLabels.New}}</button>
+        <button class="vloc-attr-container_select slds-button slds-button_brand" ng-click="associateTaxesToProduct(records.taxesAndFees, params.id)">{{records.customLabels.Select}}</button>
+    </div>
+    <div class="slds-grid slds-wrap slds-p-top_small">
+        <div ng-if="!records.taxesAndFees" class="slds-text-heading_x-small vloc-text-align-center slds-size_1-of-1">
+            {{records.customLabels.InsProductNoItemsAssociated}}</div>
+        <div class="slds-grid slds-grid_wrap slds-size_1-of-1 slds-border_top slds-border_bottom slds-border_right slds-border_left slds-text-heading_x-small"
+            ng-init="orderAsc = false">
+            <div ng-repeat="field in data.Deck[0].states[0].fields" ng-click="records.orderTerm = field.name"
+                class="slds-size_1-of-{{data.Deck[0].states[0].fields.length}} slds-p-around_x-small slds-text-title_caps slds-p-top_x-small slds-p-bottom_x-small"
+                ng-class="{'vloc-sorted-column' : records.orderTerm === field.name, 'vloc-not-sorted-column': records.orderTerm !==  field.name}">
+                <span ng-if="records.fieldsMap[field.name] && records.fieldsMap[field.name].label">{{records.fieldsMap[field.name].label}}</span>
+                <span ng-if="!records.fieldsMap[field.name] || !records.fieldsMap[field.name].label">{{field.label}}</span>
+            </div>
+        </div>
+        <div ng-repeat="row in records.taxesAndFees | orderBy : records.orderTerm | filter: searchTerm"
+            class="slds-size_1-of-1 slds-grid slds-grid_wrap slds-border_bottom  slds-border_right slds-border_left"
+            ng-class="{'slds-theme_shade' : row.isSelected}" ng-init="row[$root.nsPrefix + 'PriceListId__c'] = row.Id">
+            <div ng-repeat="field in data.Deck[0].states[0].fields"
+                class="slds-size_1-of-{{data.Deck[0].states[0].fields.length}} slds-p-around_x-small slds-truncate">
+                <div class="slds-p-horitzonal_x-small slds-truncate slds-m-right_small" ng-if="$index === 0"
+                    ng-init="records.orderTerm = field.name">
+                    <span class="slds-checkbox">
+                        <input type="checkbox" name="attrs-{{$index}}-{{row.Id}}" id="attrs-{{$index}}-{{row.Id}}"
+                            ng-model="row.isSelected" />
+                        <label class="slds-checkbox__label slds-m-around_none" for="attrs-{{$index}}-{{row.Id}}">
+                            <span class="slds-checkbox_faux vloc-check"></span>
+                        </label>
+                    </span>
+                    <span class="slds-p-left_x-small">{{row[field.name]}}</span>
+                </div>
+                <div ng-if="$index !== 0">
+                    <span ng-if="records.fieldsMap[field.name].dataType !== 'DATE' && 
+                   records.fieldsMap[field.name].dataType !== 'DATETIME' && 
+                   records.fieldsMap[field.name].dataType !== 'PERCENT' && records.fieldsMap[field.name].dataType !== 'CURRENCY'">
+                        {{row | getter: field | picker: records.fieldsMap[field.name].dataType}}
+                    </span>
+                    <span ng-if="records.fieldsMap[field.name].dataType === 'CURRENCY'">{{row | getter: field | picker: 'currency'}}
+                    </span>
+                    <span ng-if="records.fieldsMap[field.name].dataType === 'DATE'">
+                        {{row[field.name] | date : 'MM/dd/yyyy'}}
+                    </span>
+                    <span ng-if="records.fieldsMap[field.name].dataType  === 'DATETIME'">
+                        {{row[field.name]| date : 'MM/dd/yyyy h:mma'}}
+                    </span>
+                    <span ng-if="records.fieldsMap[field.name].dataType === 'PERCENT'">{{row[field.name]}}<span ng-if="row[field.name]">%</span></span>
+                    <div class="slds-form-element__control slds-text-align_left slds-text-align_center"
+                        ng-if="records.fieldsMap[field.name].dataType === 'BOOLEAN'">
+                        <span class="slds-checkbox">
+                            <input type="checkbox" name="attrs-{{$index}}" id="attrs-{{$index}}"
+                                ng-model="row[$root.nsPrefix + 'IsRatingAttribute__c']" ng-disabled="true" />
+                            <label class="slds-checkbox__label slds-m-around_none" for="attrs-{{$index}}">
+                                <span class="slds-checkbox_faux vloc-check"></span>
+                            </label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

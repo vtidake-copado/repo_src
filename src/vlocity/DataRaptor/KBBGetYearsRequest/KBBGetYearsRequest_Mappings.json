@@ -1,0 +1,72 @@
+[
+    {
+        "%vlocity_namespace%__DefaultValue__c": "http://schemas.xmlsoap.org/soap/envelope/",
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "soapenv#Envelope:#ns#soapenv",
+        "%vlocity_namespace%__GlobalKey__c": "08f197f3-efd8-86aa-c515-c83f72c79de6",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBB-SOAP-GETYEARS-REQUESTCustom7913",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetYearsRequest",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DefaultValue__c": "http://www.kbb.com/2011/01/25/VehicleInformationService",
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "soapenv#Envelope:#ns#veh",
+        "%vlocity_namespace%__GlobalKey__c": "d45dd74a-0d90-9a68-de18-01f22bb9c9fe",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBB-SOAP-GETYEARS-REQUESTCustom7325",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetYearsRequest",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "soapenv#Envelope:soapenv#Body:veh#GetYears:veh#AuthenticationKey:#text",
+        "%vlocity_namespace%__GlobalKey__c": "571ec681-4642-1847-ffe4-85f46744f09d",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "AuthenticationKey",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBB-SOAP-GETYEARS-REQUESTCustom4154",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetYearsRequest",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DefaultValue__c": "UsedCar",
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "soapenv#Envelope:soapenv#Body:veh#GetYears:veh#VehicleClass:#text",
+        "%vlocity_namespace%__GlobalKey__c": "d6170119-c977-2950-f691-9d68eda1bbee",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBB-SOAP-GETYEARS-REQUESTCustom5319",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetYearsRequest",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DefaultValue__c": "2018-01-01",
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "soapenv#Envelope:soapenv#Body:veh#GetYears:veh#VersionDate:#text",
+        "%vlocity_namespace%__GlobalKey__c": "2cf8865b-5769-a6c6-558c-46318eed6b9d",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBB-SOAP-GETYEARS-REQUESTCustom2843",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetYearsRequest",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

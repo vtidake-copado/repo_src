@@ -1,0 +1,32 @@
+@import "ins-product-selection-variables";
+.via-slds{
+
+    .vloc-broker-left-col-container{
+        .vloc-title {
+            font-size: 1.55rem;
+        }
+
+        .vloc-section-header {
+            &.vloc-title-border-container {
+                width:3rem; 
+
+                .vloc-title-border {
+                    fill: $primary-orange;
+                    border-top: 2px solid $primary-orange; 
+                    margin: 0;
+                }
+            }
+        }
+
+        &.plan-selection-view{
+            padding: 0;
+            
+            .vloc-broker-left-col-planSelect-header{
+               display: none;
+            }
+             .vloc-broker-left-col-box {
+                display: none;
+             }
+        }
+    }
+}

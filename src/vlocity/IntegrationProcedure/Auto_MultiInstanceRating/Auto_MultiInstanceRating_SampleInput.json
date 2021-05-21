@@ -1,0 +1,29 @@
+{
+    "input_1": [
+        {
+            "autoDriver.instanceKey": "John Smith",
+            "autoVehicle.instanceKey": "2018 BMW 5 series",
+            "carAltFuel": "false",
+            "carBrake": "true",
+            "carStability": "false",
+            "carTheft": "true",
+            "carValue": "30214",
+            "carYear": "2000",
+            "dedCCD": "500",
+            "dedCOLL": "1000",
+            "driverAccidentPoints": "1",
+            "driverAgeLicensed": "16",
+            "driverBirthdate": "1986-02-14",
+            "driverGPA": "4",
+            "driverGender": "M",
+            "driverMVRPoints": "0",
+            "driverMaritalStatus": "M",
+            "limitBI": "1000/1000/100",
+            "limitMED": "1000",
+            "limitPD": "25000",
+            "limitUM": "50/100",
+            "parentProdKey": "01t6A000002qvMWQAY",
+            "productKey": "01t6A000002qvMWQAY"
+        }
+    ]
+}

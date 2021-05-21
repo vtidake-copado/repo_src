@@ -1,0 +1,16 @@
+{
+    "Cards": [
+    ],
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{\"records\" : 1}"
+        }
+    },
+    "previewType": "runTime",
+    "templates": {
+        "0": {
+            "templateUrl": "ins-large-group-csv-upload-modal"
+        }
+    }
+}

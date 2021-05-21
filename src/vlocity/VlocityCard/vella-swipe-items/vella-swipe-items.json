@@ -1,0 +1,57 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "$root.ItemIds",
+                "val": "a4e6A000000L3Po,a4e6A000000L3Pt,a4e6A000000L3Py"
+            },
+            {
+                "name": "$root.rootProductCode",
+                "val": "autoComm"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "body": "{}",
+            "inputMap": {
+            },
+            "optionsMap": {
+                "ItemIds": "{{$root.ItemIds}}",
+                "ProductCode": "{{$root.rootProductCode}}",
+                "vlcClass": "%vlocity_namespace%.UnboundInsuredItemHandler"
+            },
+            "remoteClass": "UnboundInsuredItemHandler",
+            "remoteMethod": "getUnboundInsuredItemsDetail",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": "records"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankCardState": false,
+            "blankStateCheck": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "filter": "$scope.data.status === 'active'",
+            "name": "vella-swipe-item",
+            "templateUrl": "vella-swipe"
+        }
+    ],
+    "title": "Vella Swipe Items"
+}

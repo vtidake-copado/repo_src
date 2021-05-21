@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- VlocityAdmin --></label>
+        <name>vlocity_ins__VlocityAdmin</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>vlocity_ins__BatchSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Field Level Security --></label>
+        <name>vlocity_ins__CheckFieldLevelSecurity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Input Class --></label>
+        <name>vlocity_ins__CustomInputClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Output Class --></label>
+        <name>vlocity_ins__CustomOutputClass__c</name>
+    </fields>
+    <fields>
+        <label><!-- DataRaptor Map Name --></label>
+        <name>vlocity_ins__DRMapName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete On Success --></label>
+        <name>vlocity_ins__DeleteOnSuccess__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Key --></label>
+        <name>vlocity_ins__GlobalKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ignore Errors --></label>
+        <name>vlocity_ins__IgnoreErrors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Input Custom --></label>
+        <name>vlocity_ins__InputCustom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Input JSON --></label>
+        <name>vlocity_ins__InputJson__c</name>
+    </fields>
+    <fields>
+        <label><!-- Input Type --></label>
+        <name>vlocity_ins__InputType__c</name>
+    </fields>
+    <fields>
+        <label><!-- InputXml --></label>
+        <name>vlocity_ins__InputXml__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interface Object --></label>
+        <name>vlocity_ins__InterfaceObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Default For Interface --></label>
+        <name>vlocity_ins__IsDefaultForInterface__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process Super Bulk --></label>
+        <name>vlocity_ins__IsProcessSuperBulk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oubound Staging Object Data Field --></label>
+        <name>vlocity_ins__OuboundStagingObjectDataField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outbound Configuration Field --></label>
+        <name>vlocity_ins__OutboundConfigurationField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outbound Configuration Name --></label>
+        <name>vlocity_ins__OutboundConfigurationName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outbound Staging Object Name --></label>
+        <name>vlocity_ins__OutboundStagingObjectName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Output Type --></label>
+        <name>vlocity_ins__OutputType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overwrite Target For All Null Inputs --></label>
+        <name>vlocity_ins__OverwriteAllNullValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preprocessor Class Name --></label>
+        <name>vlocity_ins__PreprocessorClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process Now Threshold --></label>
+        <name>vlocity_ins__ProcessNowThreshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required Permission (Optional) --></label>
+        <name>vlocity_ins__RequiredPermission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rollback On Error --></label>
+        <name>vlocity_ins__RollbackOnError__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Input Custom --></label>
+        <name>vlocity_ins__SampleInputCustom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Input JSON --></label>
+        <name>vlocity_ins__SampleInputJSON__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Input Rows --></label>
+        <name>vlocity_ins__SampleInputRows__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sample Input XML --></label>
+        <name>vlocity_ins__SampleInputXML__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Custom Output --></label>
+        <name>vlocity_ins__TargetOutCustom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Output DocuSign Template Name --></label>
+        <name>vlocity_ins__TargetOutDocuSignTemplateId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Output JSON --></label>
+        <name>vlocity_ins__TargetOutJson__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Output PDF --></label>
+        <name>vlocity_ins__TargetOutPdfDocName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected XML Output --></label>
+        <name>vlocity_ins__TargetOutXml__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interface Type --></label>
+        <name>vlocity_ins__Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Assignment Rules --></label>
+        <name>vlocity_ins__UseAssignmentRules__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Translations --></label>
+        <name>vlocity_ins__UseTranslations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xml Output Sequence --></label>
+        <name>vlocity_ins__XmlOutputSequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Xml Remove Declaration --></label>
+        <name>vlocity_ins__XmlRemoveDeclaration__c</name>
+    </fields>
+</CustomObjectTranslation>

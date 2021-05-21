@@ -1,0 +1,28 @@
+<!--LOADER: -->
+<div class="slds-spinner_container" ng-show="!$root.isLoaded">
+    <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+        <div class="slds-spinner__dot-a"></div>
+        <div class="slds-spinner__dot-b"></div>
+    </div>
+</div>
+<div class="via-slds">
+    <div class="slds-notify_container" ng-if="$root.notification.active">
+      <div class="slds-notify slds-notify_toast" role="alert" ng-class="{'slds-theme_success' : $root.notification.type === 'success', 'slds-theme_error' : $root.notification.type === 'error'}">
+        <span class="slds-assistive-text">Info</span>
+        <button class="slds-button slds-notify__close" title="Close" ng-click="$root.notification.active = false">
+           <slds-svg-icon sprite="'utility'" icon="'close'" extra-classes="'slds-button__icon_left'"></slds-svg-icon>
+        </button>
+        <div class="slds-notify__content">
+          <h2 class="slds-text-heading_small">{{$root.notification.message}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="slds-grid slds-wrap cards-container">
+        <div vloc-card
+            ng-repeat="card in [cards[0]] | orderBy:order" ctrl="InsCoverageModelRuntimeController"
+            ng-model="card" data="card" records="records.policyDetail.records[0]" index="{{$index}}" session-id="{{sessionId}}"
+            ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}"
+            class="slds-size_1-of-1" use-existing-element-type>
+        </div>
+    </div>
+</div>

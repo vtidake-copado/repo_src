@@ -1,0 +1,15 @@
+{
+    "Cards": [
+        "vella-swipe-items",
+        "vella-policy-add-insured-item"
+    ],
+    "bypassSave": true,
+    "dataSource": {
+        "type": "Inherit"
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "vella-container"
+        }
+    }
+}

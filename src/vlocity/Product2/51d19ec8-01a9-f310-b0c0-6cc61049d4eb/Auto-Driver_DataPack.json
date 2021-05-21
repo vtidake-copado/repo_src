@@ -1,0 +1,687 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Auto-Driver_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "adAccidentPoints": "",
+        "adAge": "",
+        "adAgeLicensed": "",
+        "adBirthdate": null,
+        "adFirstName": null,
+        "adGPA": "",
+        "adGender": "M",
+        "adGoodStudent": null,
+        "adLastName": null,
+        "adLicenseNum": null,
+        "adLicenseState": null,
+        "adMVRPoints": "",
+        "adMaritalStatus": "M",
+        "adMiddle": null,
+        "adMileage": "",
+        "adName": null,
+        "adSafeDriver": null,
+        "adSuffix": null,
+        "adTotalPoints": "",
+        "adUse": null,
+        "adYrsExp": ""
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "records": [
+            {
+                "Code__c": "autoDriver",
+                "Name": "Auto Driver",
+                "displaySequence": 220,
+                "id": "a0B3s00000CcZpDEAV",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0C3s000009eqOYEAY",
+                            "cloneable": true,
+                            "code": "adSuffix",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 0,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Suffix",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOLEAY",
+                            "cloneable": true,
+                            "code": "adFirstName",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "First Name",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOUEAY",
+                            "cloneable": true,
+                            "code": "adMiddle",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 2,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Middle Name",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOPEAY",
+                            "cloneable": true,
+                            "code": "adLastName",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 3,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Last Name",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOKEAY",
+                            "cloneable": true,
+                            "code": "adBirthdate",
+                            "dataType": "date",
+                            "disabled": false,
+                            "displaySequence": 4,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "date",
+                            "isNotTranslatable": false,
+                            "label": "Birthdate",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOJEAY",
+                            "cloneable": true,
+                            "code": "adAgeLicensed",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 5,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Age First Licensed",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqONEAY",
+                            "cloneable": true,
+                            "code": "adGender",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 6,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Gender",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "Male",
+                                    "readonly": false,
+                                    "value": "M"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "Female",
+                                    "readonly": false,
+                                    "value": "F"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOTEAY",
+                            "cloneable": true,
+                            "code": "adMaritalStatus",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 7,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Marital Status",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "Married",
+                                    "readonly": false,
+                                    "value": "M"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Single",
+                                    "readonly": false,
+                                    "value": "S"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOHEAY",
+                            "cloneable": true,
+                            "code": "adAccidentPoints",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 8,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Driver Accident Points",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOSEAY",
+                            "cloneable": true,
+                            "code": "adMVRPoints",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 9,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Driver MVR Points",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOVEAY",
+                            "cloneable": true,
+                            "code": "adMileage",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Driver Annual Mileage",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOOEAY",
+                            "cloneable": true,
+                            "code": "adGoodStudent",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 11,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Good Student",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOMEAY",
+                            "cloneable": true,
+                            "code": "adGPA",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 12,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "GPA",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOQEAY",
+                            "cloneable": true,
+                            "code": "adLicenseNum",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 13,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "License Number",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOWEAY",
+                            "cloneable": true,
+                            "code": "adName",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 14,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Name",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOaEAI",
+                            "cloneable": true,
+                            "code": "adUse",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 15,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Primary Use",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOXEAY",
+                            "cloneable": true,
+                            "code": "adSafeDriver",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 16,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Safe Driver",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOREAY",
+                            "cloneable": true,
+                            "code": "adLicenseState",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 17,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "State Licensed",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOZEAY",
+                            "cloneable": true,
+                            "code": "adTotalPoints",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 18,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Total Points",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqObEAI",
+                            "cloneable": true,
+                            "code": "adYrsExp",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 19,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Years Experience",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s000009eqOIEAY",
+                            "cloneable": true,
+                            "code": "adAge",
+                            "dataType": "number",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "number",
+                            "isNotTranslatable": false,
+                            "label": "Age",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 21
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__Availability__c": "",
+    "%vlocity_namespace%__CarrierId__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "",
+    "%vlocity_namespace%__EligibilityCriteriaComments__c": "",
+    "%vlocity_namespace%__EligibilityCriteria__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__EnrollmentStatus__c": "",
+    "%vlocity_namespace%__FormularyId__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "51d19ec8-01a9-f310-b0c0-6cc61049d4eb",
+    "%vlocity_namespace%__HasCustomAttributesProcess__c": false,
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__InstanceKeyFormula__c": "autoDriver.adFirstName + \" \" + autoDriver.adLastName",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__IsRecommended__c": false,
+    "%vlocity_namespace%__LastPublishDate__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "",
+    "%vlocity_namespace%__LineOfBusiness__c": "Property & Casualty",
+    "%vlocity_namespace%__MarketSegment__c": "Individual",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PricingFormula__c": "",
+    "%vlocity_namespace%__PricingSource__c": "",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__ProviderNetworkId__c": "",
+    "%vlocity_namespace%__RateBandId__c": "",
+    "%vlocity_namespace%__RatingCalcProcedureName__c": "",
+    "%vlocity_namespace%__RatingProcedureType__c": "",
+    "%vlocity_namespace%__RecordTypeName__c": "InsuredPartySpec",
+    "%vlocity_namespace%__ReplacementProductId__c": "",
+    "%vlocity_namespace%__ReserveProcessingMode__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "",
+    "%vlocity_namespace%__SubType__c": "Multi Auto",
+    "%vlocity_namespace%__Term__c": "Annual",
+    "%vlocity_namespace%__Tier__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TotalCoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__TotalInsuredFormula__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "Auto",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Personal Lines",
+    "Image__c": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Auto Driver",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "Auto-Driver_PricebookEntries.json",
+    "ProductCode": "autoDriver",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "InsuredPartySpec",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/InsuredPartySpec",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": "",
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Auto Driver",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "51d19ec8-01a9-f310-b0c0-6cc61049d4eb",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "51d19ec8-01a9-f310-b0c0-6cc61049d4eb",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/51d19ec8-01a9-f310-b0c0-6cc61049d4eb",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "autoDriver",
+            "UnitPrice": 1,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/51d19ec8-01a9-f310-b0c0-6cc61049d4eb"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/51d19ec8-01a9-f310-b0c0-6cc61049d4eb"
+}

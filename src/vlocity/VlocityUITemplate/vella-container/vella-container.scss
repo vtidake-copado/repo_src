@@ -1,0 +1,67 @@
+@import 'vella-mixins-variables';
+
+.vella-container-page-wrapper {
+    background-color: $vella-sky;
+    padding: 0.75rem;
+    color: $vella-dark-gray;
+    min-height: 32.5rem;
+
+    &.vella-spinner-active {
+        overflow: hidden;
+        height: calc(100vh - 44px);
+    }
+
+    .vella-container-page-main-wrapper {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 0.75rem;
+        padding: 1.5rem 0 0.5rem 0;
+        background-color: white;
+
+        .vella-more-detail-top {
+            padding: 0 1.5rem;
+
+            .vella-more-detail-circle {
+                @include policyCircle(0 auto 1rem auto, $vella-light-gray-bg, '.vella-more-detail-img');
+            }
+
+            .vella-more-detail-name {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                font-size: 0.8125rem;
+                line-height: 1.2;
+                color: $vella-dark-gray;
+                text-transform: uppercase;
+                margin-bottom: 0.75rem;
+            }
+
+            .vella-more-detail-description {
+                text-align: center;
+                margin-bottom: 0.75rem;
+                font-weight: 300;
+                line-height: 1.4;
+            }
+
+            .vella-more-detail-learn-more-btn {
+                display: block;
+                margin: 0.5rem auto;
+                color: $vella-sky-text;
+            }
+        }
+
+        .vella-more-detail-bottom {
+            .vella-more-detail-bottom-title {
+                border-top: 1px solid $vella-gray-border;
+                width: 92%;
+                margin: 1rem auto;
+                padding: 1.25rem 0 0;
+                display: block;
+                text-align: center;
+                font-size: 0.8125rem;
+                line-height: 1.2;
+                color: $vella-dark-gray;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

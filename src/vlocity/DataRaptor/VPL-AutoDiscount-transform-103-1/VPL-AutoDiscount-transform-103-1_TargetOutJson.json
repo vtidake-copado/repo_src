@@ -1,0 +1,45 @@
+{
+    "ContextId": "",
+    "accountId": "0016A00000W6JmWQAV",
+    "autos": {
+        "auto": [
+            {
+                "autoCondition": "VeryGood",
+                "autoGaragePostalCode": "94549",
+                "autoInstanceKey": "2013 Lexus hs2250H ",
+                "autoMake": "Lexus",
+                "autoMileage": 10000,
+                "autoModel": "hs2250H",
+                "autoTrim": null,
+                "autoYear": 2013
+            },
+            {
+                "autoCondition": "Good",
+                "autoGaragePostalCode": "94548",
+                "autoInstanceKey": "1995 Acura SLX Premier",
+                "autoMake": "Acura",
+                "autoMileage": 7500,
+                "autoModel": "SLX",
+                "autoTrim": "Premier",
+                "autoYear": 1995
+            }
+        ]
+    },
+    "discountAutos": {
+        "discountAuto": {
+            "discountAutoInstanceKey": null,
+            "typeAutoDiscount": "AltFuel;AntiLock;Stab;AntiTheft"
+        }
+    },
+    "id": "a2C6A000000FmWhUAK",
+    "layout": "newport",
+    "opportunityId": "0066A000007jw4eQAA",
+    "timeStamp": "2018-07-27T02:15:22.884Z",
+    "userCurrencyCode": "USD",
+    "userId": "0056A000000INnpQAG",
+    "userName": "rajaibomaster@demo.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": -420,
+    "vlcPersistentComponent": {
+    }
+}

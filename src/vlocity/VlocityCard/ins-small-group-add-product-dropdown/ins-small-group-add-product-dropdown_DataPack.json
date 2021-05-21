@@ -1,0 +1,27 @@
+{
+    "%vlocity_namespace%__Author__c": "Vlocity",
+    "%vlocity_namespace%__Datasource__c": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0Q06A000000U87K"
+            }
+        ],
+        "type": "Query",
+        "value": {
+            "body": "{\"totalRecords\" : \"1\",\n\"records\": \"1\"\n}",
+            "optionsMap": {
+            },
+            "query": "SELECT AccountId, %vlocity_namespace%__GroupCensusId__c, Account.Name, TotalPrice, Pricebook2Id FROM Quote WHERE Id = '{{params.id}}' OR Id = '{{attrs.paramsId}}'"
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "ins-small-group-add-product-dropdown.json",
+    "%vlocity_namespace%__GlobalKey__c": "ins-small-group-add-product-dropdown/Vlocity/1/1556036250691",
+    "%vlocity_namespace%__ParentID__c": "ins-add-product-dropdown/Vlocity/1/1543536415910",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": 1,
+    "Name": "ins-small-group-add-product-dropdown",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/ins-small-group-add-product-dropdown"
+}

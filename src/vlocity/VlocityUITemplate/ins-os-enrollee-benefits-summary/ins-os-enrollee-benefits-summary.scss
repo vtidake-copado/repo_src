@@ -1,0 +1,273 @@
+// Color Variables
+$enrollment-text: #16325C;
+$enrollment-type: #4F6A92;
+$enrollment-cards-border: #d7dde6;
+$enrollment-cards-bg: #f8fbfe;
+
+.via-slds {
+    .vloc-ins-enr-sum-mobile-show {
+        display: none;
+    }
+    .vloc-ins-enr-sum-outer-container {
+        width: 100%;
+        color: $enrollment-text;
+    }
+
+    .vloc-ins-enr-sum-container {
+        .vloc-ins-enr-sum-product-container {
+            background-color: $enrollment-cards-bg;
+            border: 1px solid $enrollment-cards-border;
+            border-radius: 0.25rem;
+            width: 90%;
+            padding: 1.5rem 1.5rem 1.5rem 1rem;
+            margin: 0 auto 1rem auto;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &.more-than-three-attributes {
+                padding-bottom: 0;
+                max-height: 20rem;
+                overflow: hidden;
+            }
+
+            &.vloc-ins-enr-sum-product-data-expanded {
+                padding-bottom: 1.5rem;
+                max-height: none;
+            }
+
+            .vloc-ins-enr-sum-product-left {
+                width: 4rem;
+                min-width: 4rem;
+                max-width: 4rem;
+                float: left;
+            }
+            .vloc-ins-enr-sum-product-right {
+                width: calc(100% - 5rem);
+                float: right;
+                position: relative;
+            }
+        }
+
+        .vloc-ins-enr-sum-product-image {
+            min-height: 2.5rem;
+            margin-top: 0.25rem;
+
+            &.is-custom-image {
+                min-height: 3.25rem;
+                padding-top: 0.25rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .vloc-ins-enr-sum-product-custom-image {
+                max-width: 3.125rem;
+                max-height: 2.375rem;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .vloc-ins-enr-sum-product-image-fallback {
+                background: transparent;
+
+                .slds-icon {
+                    fill: #f06e2f;
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+        }
+
+        .vloc-ins-enr-sum-product-top {
+            .vloc-ins-enr-sum-product-type {
+                text-transform: uppercase;
+                color: $enrollment-type;
+                letter-spacing: 1px;
+                font-size: 0.875rem;
+                font-weight: 400;
+            }
+            .vloc-ins-enr-sum-product-name {
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+            .vloc-ins-enr-sum-product-description {
+                font-size: 0.8125rem;
+            }
+            .vloc-ins-enr-sum-product-show-more-details {
+                font-size: 0.875rem;
+                display: inline-block;
+                margin-top: 0.75rem;
+            }
+        }
+
+        .vloc-ins-enr-sum-product-data-container {
+            width: 100%;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            max-height: 9rem;
+            overflow: hidden;
+
+            &.vloc-ins-enr-sum-product-bottom {
+                margin-top: 0;
+                max-height: none;
+                overflow: visible;
+            }
+
+            .vloc-ins-enr-sum-product-attr-value {
+                font-weight: 400;
+                padding-right: 6rem;
+                display: inline-block;
+            }
+
+            .vloc-ins-enr-sum-product-data {
+                margin-bottom: 0.5rem;
+
+                &:nth-child(5) {
+                    margin-bottom: 2rem;
+                }
+
+                &.vloc-ins-enr-sum-product-data-whos-covered {
+                    .vloc-ins-enr-sum-product-attr-value {
+                        padding-right: 0;
+                    }
+                }
+            }
+
+            &.vloc-ins-enr-sum-product-data-expanded {
+                overflow: visible;
+                max-height: none !important; // overriding an inline style added by directive
+
+                .vloc-ins-enr-sum-product-data {
+                    &:nth-child(5) {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+
+            .vloc-ins-enr-sum-view-change-link {
+                position: absolute;
+                right: 0;
+                bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .via-slds {
+        .vloc-ins-enr-sum-container {
+            .vloc-ins-enr-sum-product-container {
+                &.more-than-three-attributes {
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .via-slds {
+        .vloc-ins-enr-sum-container {
+            .vloc-ins-enr-sum-product-container {
+                width: 100%;
+            }
+            .vloc-ins-enr-sum-product-data-container {
+                width: 100%;
+
+                .vloc-ins-enr-sum-view-change-link {
+                    position: static;
+                    margin-top: 0.5rem;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .via-slds {
+        .vloc-ins-enr-sum-mobile-show {
+            display: block;
+        }
+        .vloc-ins-enr-sum-mobile-hide {
+            display: none;
+        }
+        .vloc-ins-enr-sum-container {
+            .vloc-ins-enr-sum-product-image {
+                margin-top: 0;
+                float: left;
+
+                &.is-custom-image {
+                    margin: 0 0.75rem 0.75rem 0;
+                    padding: 0;
+                    min-height: 2.75rem;
+                    max-height: 2.75rem;
+
+                    .vloc-ins-enr-sum-product-custom-image {
+                        height: 2.75rem;
+                    }
+                }
+
+                .vloc-ins-enr-sum-product-image-fallback {
+                    margin-top: -0.5rem;
+                    margin-left: -0.75rem;
+                }
+            }
+
+            .vloc-ins-enr-sum-product-type {
+                float: left;
+                line-height: 2.75rem;
+                text-transform: uppercase;
+                color: $enrollment-type;
+                letter-spacing: 1px;
+                font-size: 0.875rem;
+                font-weight: 400;
+                margin-left: 1rem;
+            }
+            .vloc-ins-enr-sum-product-container {
+                padding: 1rem 1.5rem 1.5rem 1.5rem;
+
+                .vloc-ins-enr-sum-product-left {
+                    float: none;
+                    width: 100%;
+                    min-width: auto;
+                    max-width: none;
+                }
+                .vloc-ins-enr-sum-product-right {
+                    width: 100%;
+                }
+            }
+            .vloc-ins-enr-sum-product-data-container {
+                .vloc-ins-enr-sum-product-data {
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .via-slds {
+        .vloc-ins-enr-sum-container {
+            .vloc-ins-enr-sum-product-container {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .via-slds {
+        .vloc-ins-enr-sum-container {
+            .vloc-ins-enr-sum-product-data-container {
+                .vloc-ins-enr-sum-product-attr-label {
+                    padding: 0;
+                }
+                .vloc-ins-enr-sum-product-attr-value {
+                    padding-left: 1.5rem;
+                }
+            }
+        }
+    }
+}

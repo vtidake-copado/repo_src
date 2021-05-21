@@ -1,0 +1,17 @@
+{
+    "%vlocity_namespace%__CatalogCode__c": "123",
+    "%vlocity_namespace%__DefaultPriceListId__c": "",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__EndDateTime__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "0b78c3c2-9a6b-67e3-8303-b37f26168279",
+    "%vlocity_namespace%__IsActive__c": true,
+    "%vlocity_namespace%__IsCatalogRoot__c": true,
+    "%vlocity_namespace%__IsDefault__c": false,
+    "%vlocity_namespace%__SourceType__c": "Internal - Original Source",
+    "%vlocity_namespace%__StartDateTime__c": "",
+    "%vlocity_namespace%__VendorAccount__c": "",
+    "Name": "AR Catalog",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Catalog__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Catalog__c/0b78c3c2-9a6b-67e3-8303-b37f26168279"
+}

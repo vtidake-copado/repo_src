@@ -1,0 +1,18 @@
+<div class="vella-policy-home-protection-container" ng-controller="vellaHomeProtectionController">
+    <div class="vella-policy-home-protection-top" ng-if="attrs.index === '0'">
+        <h2 class="vella-policy-home-protection-name">Home Protection</h2>
+        <p class="vella-policy-home-protection-description">You save money by protecting your home and property with real-time monitoring sensors.</p>
+    </div>
+    <div class="vella-policy-home-protection-sensors">
+        <div class="slds-grid vella-policy-home-protection-sensor">
+            <div class="slds-size--1-of-8">
+                <div class="vella-policy-home-protection-indicator vella-policy-home-protection-indicator-{{placeholder.DeviceState.value.toLowerCase()}}" style="animation-delay: {{animationDelay[placeholder.DeviceState.value.toLowerCase()]}}s"></div>
+            </div>
+            <div class="slds-size--5-of-8 vella-policy-home-protection-label">
+                <span class="device-name">{{placeholder.DeviceName.value}}</span>
+                <span class="device-message">{{placeholder.DeviceMessage.value}}</span>
+            </div>
+            <div class="slds-size--2-of-8 vella-policy-home-protection-type">{{placeholder.DeviceState.value}}</div>
+        </div>
+    </div>
+</div>

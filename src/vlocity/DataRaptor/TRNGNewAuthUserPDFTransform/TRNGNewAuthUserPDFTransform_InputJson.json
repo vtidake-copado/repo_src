@@ -1,0 +1,17 @@
+{
+    "OwnerName": "Edward Stamos",
+    "StepCallerSnapshot": {
+        "BlockCallerContactInfo": {
+            "CallerEmail": "ltomlin@acme.com",
+            "CallerMobilePhoneText": "(212) 477-6632",
+            "CallerPhoneText": "(212) 589-8972"
+        },
+        "BlockCallerVerificationInfo": {
+            "AccountName": "Acme",
+            "CallerBirthDate": "1957-01-09T08:00:00.000Z",
+            "CallerName": "Leanne Tomlin",
+            "CallerSSN": "123456792",
+            "CallerZipCode": "31352"
+        }
+    }
+}

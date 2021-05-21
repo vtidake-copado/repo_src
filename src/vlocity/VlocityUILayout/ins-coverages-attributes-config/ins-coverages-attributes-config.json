@@ -1,0 +1,18 @@
+{
+    "Cards": [
+        "ins-coverages-attributes-config"
+    ],
+    "dataSource": {
+        "type": "Inherit",
+        "value": {
+            "body": "",
+            "query": "",
+            "resultVar": ""
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-coverages-attributes-config-container"
+        }
+    }
+}

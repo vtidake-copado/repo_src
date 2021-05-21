@@ -1,0 +1,22 @@
+{
+    "Cards": [
+        "ins-product-taxes-config"
+    ],
+    "dataSource": {
+        "type": "Inherit",
+        "value": {
+            "body": "",
+            "query": "",
+            "resultVar": ""
+        }
+    },
+    "previewType": "runTime",
+    "templates": {
+        "0": {
+            "templateUrl": "ins-product-taxes-config-container"
+        }
+    },
+    "workspace": [
+        "ins-product-taxes-config/Vlocity/1/1553720221839"
+    ]
+}

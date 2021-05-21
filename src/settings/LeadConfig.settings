@@ -4,8 +4,8 @@
     <doesHideOpportunityInConvertLeadWindow>false</doesHideOpportunityInConvertLeadWindow>
     <doesPreserveLeadStatus>true</doesPreserveLeadStatus>
     <doesSelectNoOpportunityOnConvertLead>false</doesSelectNoOpportunityOnConvertLead>
-    <doesTrackHistory>true</doesTrackHistory>
-    <enableConversionsOnMobile>false</enableConversionsOnMobile>
+    <doesTrackHistory>false</doesTrackHistory>
+    <enableConversionsOnMobile>true</enableConversionsOnMobile>
     <enableOrgWideMergeAndDelete>true</enableOrgWideMergeAndDelete>
     <shouldLeadConvertRequireValidation>true</shouldLeadConvertRequireValidation>
 </LeadConfigSettings>

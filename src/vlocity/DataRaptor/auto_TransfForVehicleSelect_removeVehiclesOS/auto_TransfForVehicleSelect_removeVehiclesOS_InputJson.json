@@ -1,0 +1,79 @@
+{
+    "error": "OK",
+    "insuredItems": {
+        "AUTO": [
+            {
+                "BodyClass": "Sedan/Saloon",
+                "VehicleType": "PASSENGER CAR",
+                "autoAltFuel": false,
+                "autoAntiTheft": true,
+                "autoBrakes": true,
+                "autoCondition": "Excellent",
+                "autoGaragePostalCode": null,
+                "autoInstanceKey": "1997 BMW 8 Series",
+                "autoMake": "BMW_5",
+                "autoMakeName": [
+                    "BMW"
+                ],
+                "autoMileage": 12000,
+                "autoModel": "8 Series_485",
+                "autoModelName": [
+                    "8 Series"
+                ],
+                "autoStabilization": true,
+                "autoTrim": "Sedan/Saloon",
+                "autoTrimName": [
+                    "Sedan/Saloon"
+                ],
+                "autoValue": 35000,
+                "autoVehicleType": "PASSENGER CAR",
+                "autoYear": "1997",
+                "autoYearName": "1997",
+                "discAltFuel": false,
+                "discAntiLock": true,
+                "discAntiTheft": true,
+                "discStab": true,
+                "discountAutoInstanceKey": "1997 BMW 8 Series",
+                "instanceKey": "1997 BMW 8 Series",
+                "isPrimary": true,
+                "typeAutoDiscount": "AntiLock;Stab;AntiTheft"
+            },
+            {
+                "BodyClass": "Sedan/Saloon",
+                "VehicleType": "PASSENGER CAR",
+                "autoAltFuel": false,
+                "autoAntiTheft": false,
+                "autoBrakes": true,
+                "autoCondition": "Excellent",
+                "autoGaragePostalCode": null,
+                "autoInstanceKey": "2014 Aston Martin Vantage",
+                "autoMake": "Aston Martin_54",
+                "autoMakeName": [
+                    "Aston Martin"
+                ],
+                "autoMileage": 25000,
+                "autoModel": "Vantage_910",
+                "autoModelName": [
+                    "Vantage"
+                ],
+                "autoStabilization": true,
+                "autoTrim": "Sedan/Saloon",
+                "autoTrimName": [
+                    "Sedan/Saloon"
+                ],
+                "autoValue": 35000,
+                "autoVehicleType": "PASSENGER CAR",
+                "autoYear": "2014",
+                "autoYearName": "2014",
+                "discAltFuel": false,
+                "discAntiLock": true,
+                "discAntiTheft": false,
+                "discStab": true,
+                "discountAutoInstanceKey": "2014 Aston Martin Vantage",
+                "instanceKey": "2014 Aston Martin Vantage",
+                "isPrimary": true,
+                "typeAutoDiscount": "AntiLock;Stab"
+            }
+        ]
+    }
+}

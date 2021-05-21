@@ -1,0 +1,149 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0Q01I000000dMR9SAM"
+            }
+        ],
+        "type": "Query",
+        "value": {
+            "body": "{\"totalRecords\" : \"1\",\n\"records\": \"1\"\n}",
+            "jsonMap": "{\"params.id\":\"{{params.id}}\",\"attrs.paramsId\":\"{{attrs.paramsId}}\"}",
+            "optionsMap": {
+            }
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankStateCheck": false,
+            "collapse": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "conditions": {
+                            "group": [
+                            ]
+                        },
+                        "displayName": "Medical - Individual",
+                        "extraParams": {
+                            "Filter": "%vlocity_namespace%__LineOfBusiness__c: Individual Medical",
+                            "slds-icon": "moneybag",
+                            "slds-sprite": "utility"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Individual Medical",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Medical - Medicare",
+                        "extraParams": {
+                            "Filter": "%vlocity_namespace%__LineOfBusiness__c: Medicare Health",
+                            "slds-icon": "moneybag",
+                            "slds-sprite": "utility"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Medicare Medical",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Medical - Small Group",
+                        "extraParams": {
+                            "Filter": "%vlocity_namespace%__LineOfBusiness__c: Group Health",
+                            "slds-icon": "moneybag",
+                            "slds-sprite": "utility"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Small Group Medical",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/",
+                        "vlocityIcon": ""
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Dental",
+                        "extraParams": {
+                            "Filter": "%vlocity_namespace%__Type__c: Dental",
+                            "slds-icon": "user",
+                            "slds-sprite": "utility"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Dental",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Vision",
+                        "extraParams": {
+                            "Filter": "%vlocity_namespace%__Type__c: Vision",
+                            "slds-icon": "preview",
+                            "slds-sprite": "utility"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Vision",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Speciality",
+                        "extraParams": {
+                            "Filter": "%vlocity_namespace%__Type__c: Specialty",
+                            "slds-icon": "preview",
+                            "slds-sprite": "utility"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Speciality",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/",
+                        "vlocityIcon": ""
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Life",
+                        "extraParams": {
+                            "Filter": "%vlocity_namespace%__Type__c: Life",
+                            "slds-icon": "preview",
+                            "slds-sprint": "utility"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Life",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/"
+                    }
+                ]
+            },
+            "fields": [
+            ],
+            "name": "Add Product Dropdown",
+            "sObjectType": "QuoteLineItem",
+            "templateUrl": "ins-small-group-quote-line-card-select-action"
+        }
+    ],
+    "title": "Product Dropdown"
+}

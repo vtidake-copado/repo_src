@@ -1,0 +1,18 @@
+{
+    "%vlocity_namespace%__Author__c": "Vlocity",
+    "%vlocity_namespace%__CustomJavascript__c": "vella-home-protection.js",
+    "%vlocity_namespace%__Definition__c": "{\"placeholders\":[{\"name\":\"DeviceName\",\"label\":\"\",\"$$hashKey\":\"object:2704\"},{\"name\":\"DeviceState\",\"label\":\"\",\"$$hashKey\":\"object:5066\"},{\"name\":\"DeviceMessage\",\"label\":\"\",\"$$hashKey\":\"object:1760\"}]}",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__DisplayOn__c": "",
+    "%vlocity_namespace%__ExternalID__c": "vella-home-protection/1/Vlocity/1506560878693",
+    "%vlocity_namespace%__HTML__c": "vella-home-protection.html",
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleJson__c": "vella-home-protection_Sample.json",
+    "%vlocity_namespace%__Sass__c": "vella-home-protection.scss",
+    "%vlocity_namespace%__Type__c": "Cards",
+    "%vlocity_namespace%__Version__c": 1,
+    "Name": "vella-home-protection",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUITemplate__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUITemplate__c/vella-home-protection"
+}

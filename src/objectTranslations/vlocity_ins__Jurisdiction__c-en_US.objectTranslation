@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- City --></label>
+        <name>vlocity_ins__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country Code --></label>
+        <name>vlocity_ins__CountryCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- County Code --></label>
+        <name>vlocity_ins__CountyCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>vlocity_ins__County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Jurisdiction --></label>
+        <name>vlocity_ins__ParentJurisdictionId__c</name>
+        <relationshipLabel><!-- Jurisdictions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>vlocity_ins__PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating Area --></label>
+        <name>vlocity_ins__RatingArea__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Code --></label>
+        <name>vlocity_ins__StateCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- States/Provinces --></label>
+        <name>vlocity_ins__StatesProvinces__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__Type__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producer</masterLabel>
+            <translation><!-- Producer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provider</masterLabel>
+            <translation><!-- Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rating Area</masterLabel>
+            <translation><!-- Rating Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service</masterLabel>
+            <translation><!-- Service --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

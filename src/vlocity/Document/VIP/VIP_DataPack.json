@@ -1,0 +1,17 @@
+{
+    "Body": "File_VIP.png",
+    "BodyLength": 37995,
+    "ContentType": "image/png",
+    "Description": "",
+    "DeveloperName": "VIP",
+    "IsBodySearchable": false,
+    "IsInternalUseOnly": false,
+    "IsPublic": true,
+    "Keywords": "",
+    "Name": "VIP",
+    "Type": "png",
+    "Url": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Document",
+    "VlocityRecordSourceKey": "Document/VIP"
+}

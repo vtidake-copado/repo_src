@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Payee Account --></label>
+        <name>vlocity_ins__AccountId__c</name>
+        <relationshipLabel><!-- Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>vlocity_ins__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payee Contact --></label>
+        <name>vlocity_ins__ContactId__c</name>
+        <relationshipLabel><!-- Claim Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Claim --></label>
+        <name>vlocity_ins__InsuranceClaimId__c</name>
+        <relationshipLabel><!-- ClaimPayments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payee Party --></label>
+        <name>vlocity_ins__PartyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Date --></label>
+        <name>vlocity_ins__PaymentDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

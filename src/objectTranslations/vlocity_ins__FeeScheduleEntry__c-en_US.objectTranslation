@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Code Short Description --></label>
+        <name>vlocity_ins__CodeShortDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Amount --></label>
+        <name>vlocity_ins__FeeAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Schedule --></label>
+        <name>vlocity_ins__FeeScheduleId__c</name>
+        <relationshipLabel><!-- Fee Schedule Entries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Jurisdiction --></label>
+        <name>vlocity_ins__JurisdictionId__c</name>
+        <relationshipLabel><!-- Fee Schedule Entries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Locality --></label>
+        <name>vlocity_ins__Locality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Code --></label>
+        <name>vlocity_ins__VlocityCodeId__c</name>
+        <relationshipLabel><!-- Fee Schedule Entries --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

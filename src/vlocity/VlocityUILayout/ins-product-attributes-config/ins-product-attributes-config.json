@@ -1,0 +1,33 @@
+{
+    "Cards": [
+        "ins-product-attributes-config",
+        "ins-product-attributes-Coverages",
+        "ins-product-attributes-Default",
+        "ins-product-attributes-Insured-Items",
+        "ins-product-config-Claims",
+        "ins-product-config-ClaimInjurySpec",
+        "ins-product-config-ClaimPropertiesSpec"
+    ],
+    "dataSource": {
+        "type": "Inherit",
+        "value": {
+            "body": "",
+            "query": "",
+            "resultVar": ""
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-product-attributes-config-container"
+        }
+    },
+    "workspace": [
+        "ins-product-attributes-config/Vlocity/1496943381632",
+        "ins-product-attributes-Coverages/Vlocity/1510783334317",
+        "ins-product-attributes-Default/Vlocity/1510783334317",
+        "ins-product-attributes-Insured-Items/Vlocity/1510783334317",
+        "ins-product-config-Claims/Vlocity/1/1517418686063",
+        "ins-product-config-ClaimInjurySpec/Vlocity/1/1517418754547",
+        "ins-product-config-ClaimPropertiesSpec/Vlocity/1/1517418786809"
+    ]
+}

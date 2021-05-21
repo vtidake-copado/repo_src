@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Base Rate Factor --></label>
+        <name>vlocity_ins__BaseRateFactor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective End Date --></label>
+        <name>vlocity_ins__EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Start Date --></label>
+        <name>vlocity_ins__EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Schedule Code --></label>
+        <name>vlocity_ins__FeeScheduleCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Fee Schedule --></label>
+        <name>vlocity_ins__FeeScheduleId__c</name>
+        <relationshipLabel><!-- Provider Fee Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Account --></label>
+        <name>vlocity_ins__ProviderAccountId__c</name>
+        <relationshipLabel><!-- Provider Fee Schedule --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

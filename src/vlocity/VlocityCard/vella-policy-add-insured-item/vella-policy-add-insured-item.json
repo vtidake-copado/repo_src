@@ -1,0 +1,76 @@
+{
+    "dataSource": {
+        "type": "Inherit",
+        "value": {
+        }
+    },
+    "filter": {
+        "id": "123"
+    },
+    "states": [
+        {
+            "blankCardState": true,
+            "blankStateCheck": true,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'non-existent'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "displayName": "Add Item",
+                        "hasExtraParams": false,
+                        "id": "add_valuable_item_from_policy",
+                        "isCustomAction": true,
+                        "openUrlIn": "New Tab / Window",
+                        "type": "Custom",
+                        "url": "/apex/%vlocity_namespace%__OmniScriptUniversalPage?id={0}#/OmniScriptType/Vella-Valuables/OmniScriptSubType/AddInsuredItem/OmniScriptLang/English/ContextId/{0}/PrefillDataRaptorBundle//true"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Add Item",
+                        "hasExtraParams": false,
+                        "id": "add_pet_item_from_policy",
+                        "isCustomAction": true,
+                        "openUrlIn": "New Tab / Window",
+                        "type": "Custom",
+                        "url": "/apex/"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Add Item",
+                        "hasExtraParams": false,
+                        "id": "add_valuable_item_from_insurable",
+                        "isCustomAction": true,
+                        "openUrlIn": "New Tab / Window",
+                        "type": "Custom",
+                        "url": "/apex/%vlocity_namespace%__OmniScriptUniversalPage?id={0}#/OmniScriptType/Vella_Valuables/OmniScriptSubType/CreateInsurableItem/OmniScriptLang/English/ContextId/{0}/PrefillDataRaptorBundle//true"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Add Item",
+                        "hasExtraParams": false,
+                        "id": "add_pet_item_from_insurable",
+                        "isCustomAction": true,
+                        "openUrlIn": "New Tab / Window",
+                        "type": "Custom",
+                        "url": "/apex/%vlocity_namespace%__OmniScriptUniversalPage?id={0}#/OmniScriptType/Vella_Pet/OmniScriptSubType/CreateInsurableItem/OmniScriptLang/English/ContextId/{0}/PrefillDataRaptorBundle//true"
+                    }
+                ]
+            },
+            "fields": [
+            ],
+            "filter": "$scope.data.status === 'non-existent'",
+            "name": "Vella Policy Add Insured Item",
+            "templateUrl": "vella-swipe"
+        }
+    ],
+    "title": "Vella Policy Add Insured Item"
+}

@@ -1,0 +1,80 @@
+@import "ins-product-selection-variables";
+
+.via-slds{
+    .vloc-quote-container {
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        width: 100%;
+    }
+
+    .vloc-icon{
+        font-size: 3rem;
+        color: $primary-light
+    }
+    .vloc-plans-container {
+        &.slds-box{
+            border-radius: 0;
+        }
+        .slds-box{
+            border-radius: 0;
+        }
+
+        .vloc-add-plans-box {
+            height: 10rem;
+            position: relative;
+
+            .vloc-plan-icon-labels{
+               // padding-top: 1rem;
+            }
+
+            &:hover{
+                cursor: pointer;
+                background: $neutral-lightest;
+            }
+
+            .data {
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                width: 50%;
+                margin: -15% 0 0 -25%;
+            }
+        } 
+
+        .vloc-plan-icon {
+           fill: $primary-light
+        }
+
+    }
+}
+
+@media screen and (max-width: $bp-medium) {
+    .vloc-plan-icon-label{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: $bp-small) {
+    .via-slds {
+        .vloc-plans-container {
+            margin-top: 0;
+            left: 0;
+
+            .vloc-quote-tab-header{
+                padding-top: 2.5rem;
+            }
+            .vloc-add-plans-box {
+                height: 4rem;
+
+                .data {
+                    margin: -30%;
+                }
+
+                .vloc-plan-icon-label{
+                    display: none; 
+                }
+            } 
+        }
+    }
+}

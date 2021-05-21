@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>vlocity_ins__AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>vlocity_ins__AccountType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Available for Withdrawal --></label>
+        <name>vlocity_ins__AmountAvailableForWithdrawal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan --></label>
+        <name>vlocity_ins__BenefitPlanId__c</name>
+        <relationshipLabel><!-- Financial Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Account Holder --></label>
+        <name>vlocity_ins__ClientAccountId__c</name>
+        <relationshipLabel><!-- Financial Account --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Line of Business --></label>
+        <name>vlocity_ins__LineOfBusiness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy --></label>
+        <name>vlocity_ins__PolicyId__c</name>
+        <relationshipLabel><!-- Financial Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Financial Product Code --></label>
+        <name>vlocity_ins__ProductCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Product --></label>
+        <name>vlocity_ins__ProductId__c</name>
+        <relationshipLabel><!-- Financial Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Value --></label>
+        <name>vlocity_ins__TotalValue__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Record type for Investment account type category --></description>
+        <label><!-- Investment --></label>
+        <name>vlocity_ins__Investment</name>
+    </recordTypes>
+</CustomObjectTranslation>

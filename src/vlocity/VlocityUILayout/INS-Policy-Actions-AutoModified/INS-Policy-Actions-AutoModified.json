@@ -1,0 +1,26 @@
+{
+    "Cards": [
+        "Policy_Actions"
+    ],
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "02i6A0000009THNQA2"
+            }
+        ],
+        "type": "Query",
+        "value": {
+            "jsonMap": "{\"params.id\":\"{{params.id}}\"}"
+        }
+    },
+    "previewType": "runTime",
+    "templates": {
+        "0": {
+            "templateUrl": "card-canvas-1x-simple-slds"
+        }
+    },
+    "workspace": [
+        "Policy_Actions/vlocity-demo-TS/1/1518222597335"
+    ]
+}

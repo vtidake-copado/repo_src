@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Class Code --></label>
+        <name>vlocity_ins__ClassCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Employer Contribution Amount --></label>
+        <name>vlocity_ins__DependentEmployerContributionAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dependent Employer Contribution  % --></label>
+        <name>vlocity_ins__DependentEmployerContributionPercent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective End Date --></label>
+        <name>vlocity_ins__EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Start Date --></label>
+        <name>vlocity_ins__EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Contribution Amount --></label>
+        <name>vlocity_ins__EmployerContributionAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employer Contribution % --></label>
+        <name>vlocity_ins__EmployerContributionPercent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>vlocity_ins__GroupId__c</name>
+        <relationshipLabel><!-- Group Classes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Group Class --></label>
+        <name>vlocity_ins__ParentGroupClassId__c</name>
+        <relationshipLabel><!-- Group Classes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__Type__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dental</masterLabel>
+            <translation><!-- Dental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical</masterLabel>
+            <translation><!-- Medical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vision</masterLabel>
+            <translation><!-- Vision --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

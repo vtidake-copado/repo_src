@@ -1,0 +1,8 @@
+{
+    "valuations": {
+        "id": "Text",
+        "isMaxDeductApplied": "Text",
+        "priceType": "Text",
+        "value": "Text"
+    }
+}

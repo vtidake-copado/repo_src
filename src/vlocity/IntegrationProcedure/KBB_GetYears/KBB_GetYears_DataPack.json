@@ -1,0 +1,24 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "Pass in an AuthenticationKey previously retrieved with the KBBLogin integration procedure to retrieve a list of years",
+    "%vlocity_namespace%__CustomJavaScript__c": "{}",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "KBB_GetYears_Element_CreateGetYearsRequest.json",
+        "KBB_GetYears_Element_KBBGetYears.json",
+        "KBB_GetYears_Element_GetListOfYearsFromResponse.json",
+        "KBB_GetYears_Element_ReturnListOfYears.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "KBB_GetYears",
+    "%vlocity_namespace%__PropertySet__c": "KBB_GetYears_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "GetYears",
+    "%vlocity_namespace%__Type__c": "KBB",
+    "Name": "KBBGetYears",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/KBB/GetYears/Procedure"
+}

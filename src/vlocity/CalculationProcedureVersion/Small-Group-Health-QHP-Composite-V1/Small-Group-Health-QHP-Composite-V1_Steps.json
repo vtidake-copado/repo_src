@@ -1,0 +1,613 @@
+[
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "smallGroupSlopeFactors",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/smallGroupSlopeFactors",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "Small Group Health QHP Composite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "Small Group Health QHP Composite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "d141c5",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "ProductSubtype"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "48b96c",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "Slope1"
+            },
+            {
+                "columnKey": "559c3",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "Slope2"
+            },
+            {
+                "columnKey": "f9dca2",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "Slope3"
+            },
+            {
+                "columnKey": "953338",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "Slope4"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"Slope1\":\"smallGroupSlopeFactors__Slope1\",\"Slope2\":\"smallGroupSlopeFactors__Slope2\",\"Slope3\":\"smallGroupSlopeFactors__Slope3\",\"Slope4\":\"smallGroupSlopeFactors__Slope4\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "empOnlyCount * smallGroupSlopeFactors__Slope1 + empSpouseCount * smallGroupSlopeFactors__Slope2 + empChildCount * smallGroupSlopeFactors__Slope3 + empFamilyCount * smallGroupSlopeFactors__Slope4",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "empOnlyCount",
+                "dataType": "Number",
+                "text": "empOnlyCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "smallGroupSlopeFactors__Slope1",
+                "dataType": "Number",
+                "text": "Slope1 ( smallGroupSlopeFactors )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "empSpouseCount",
+                "dataType": "Number",
+                "text": "empSpouseCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "smallGroupSlopeFactors__Slope2",
+                "dataType": "Number",
+                "text": "Slope2 ( smallGroupSlopeFactors )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "empChildCount",
+                "dataType": "Number",
+                "text": "empChildCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "smallGroupSlopeFactors__Slope3",
+                "dataType": "Number",
+                "text": "Slope3 ( smallGroupSlopeFactors )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "empFamilyCount",
+                "dataType": "Number",
+                "text": "empFamilyCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "smallGroupSlopeFactors__Slope4",
+                "dataType": "Number",
+                "text": "Slope4 ( smallGroupSlopeFactors )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "Small Group Health QHP Composite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "Small Group Health QHP Composite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "empOnlyCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "empSpouseCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "empChildCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "empFamilyCount"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "memberEquiv",
+            "dataType": "Number",
+            "name": "memberEquiv"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"memberEquiv\":\"memberEquiv\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "groupPremiumAgeRated / memberEquiv",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "groupPremiumAgeRated",
+                "dataType": "Currency",
+                "text": "groupPremiumAgeRated",
+                "userDefined": true
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "memberEquiv",
+                "dataType": "Number",
+                "text": "memberEquiv",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "Small Group Health QHP Composite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "Small Group Health QHP Composite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "groupPremiumAgeRated"
+            },
+            {
+                "dataType": "Number",
+                "name": "memberEquiv"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "employeePremium",
+            "dataType": "Currency",
+            "name": "employeePremium"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"employeePremium\":\"employeePremium\"}",
+        "%vlocity_namespace%__Sequence__c": 3,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "employeePremium * smallGroupSlopeFactors__Slope1",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "employeePremium",
+                "dataType": "Currency",
+                "text": "employeePremium",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "smallGroupSlopeFactors__Slope1",
+                "dataType": "Number",
+                "text": "Slope1 ( smallGroupSlopeFactors )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "Small Group Health QHP Composite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "Small Group Health QHP Composite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "employeePremium"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "Rate1",
+            "dataType": "Number",
+            "name": "Rate1"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"Rate1\":\"Rate1\"}",
+        "%vlocity_namespace%__Sequence__c": 4,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "employeePremium * smallGroupSlopeFactors__Slope2",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "employeePremium",
+                "dataType": "Currency",
+                "text": "employeePremium",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "smallGroupSlopeFactors__Slope2",
+                "dataType": "Number",
+                "text": "Slope2 ( smallGroupSlopeFactors )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "Small Group Health QHP Composite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "Small Group Health QHP Composite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "employeePremium"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "Rate2",
+            "dataType": "Number",
+            "name": "Rate2"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"Rate2\":\"Rate2\"}",
+        "%vlocity_namespace%__Sequence__c": 5,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "employeePremium * smallGroupSlopeFactors__Slope3",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "employeePremium",
+                "dataType": "Currency",
+                "text": "employeePremium",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "smallGroupSlopeFactors__Slope3",
+                "dataType": "Number",
+                "text": "Slope3 ( smallGroupSlopeFactors )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "Small Group Health QHP Composite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "Small Group Health QHP Composite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "employeePremium"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "Rate3",
+            "dataType": "Number",
+            "name": "Rate3"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"Rate3\":\"Rate3\"}",
+        "%vlocity_namespace%__Sequence__c": 6,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "employeePremium * smallGroupSlopeFactors__Slope4",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "employeePremium",
+                "dataType": "Currency",
+                "text": "employeePremium",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "smallGroupSlopeFactors__Slope4",
+                "dataType": "Number",
+                "text": "Slope4 ( smallGroupSlopeFactors )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "Small Group Health QHP Composite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "Small Group Health QHP Composite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "employeePremium"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "Rate4",
+            "dataType": "Number",
+            "name": "Rate4"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"Rate4\":\"Rate4\"}",
+        "%vlocity_namespace%__Sequence__c": 7,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "empOnlyCount * Rate1 + empSpouseCount * Rate2 + empChildCount * Rate3 + empFamilyCount * Rate4",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "empOnlyCount",
+                "dataType": "Number",
+                "text": "empOnlyCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "Rate1",
+                "dataType": "Number",
+                "text": "Rate1",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "empSpouseCount",
+                "dataType": "Number",
+                "text": "empSpouseCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "Rate2",
+                "dataType": "Number",
+                "text": "Rate2",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "empChildCount",
+                "dataType": "Number",
+                "text": "empChildCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "Rate3",
+                "dataType": "Number",
+                "text": "Rate3",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "empFamilyCount",
+                "dataType": "Number",
+                "text": "empFamilyCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "Rate4",
+                "dataType": "Number",
+                "text": "Rate4",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "Small Group Health QHP Composite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "Small Group Health QHP Composite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/Small Group Health QHP Composite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "empOnlyCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "Rate1"
+            },
+            {
+                "dataType": "Number",
+                "name": "empSpouseCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "Rate2"
+            },
+            {
+                "dataType": "Number",
+                "name": "empChildCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "Rate3"
+            },
+            {
+                "dataType": "Number",
+                "name": "empFamilyCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "Rate4"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "GroupPremium",
+            "dataType": "Currency",
+            "name": "GroupPremium"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"GroupPremium\":\"GroupPremium\"}",
+        "%vlocity_namespace%__Sequence__c": 8,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

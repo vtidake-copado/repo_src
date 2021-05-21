@@ -1,0 +1,267 @@
+<div ng-if="!records.isAttributeOverriden" class="slds-grid slds-wrap vloc-comparison-attributes-container slds-gutters_x-large" ng-init="$root.isLoaded = true;">
+    <div class="slds-col">
+        <div class="vloc-comparison-original-attribute">
+            <pre>{{ records.productLevelAttrs | json }}</pre>
+        </div>
+    </div>
+</div>
+<div ng-if="records.isAttributeOverriden" class="slds-grid slds-wrap vloc-comparison-attributes-container" ng-init="$root.isLoaded = true;">
+    <!-- Child spec attributes / Original attributes -->
+    <div class="slds-col vloc-attr-comparison-column">
+        <div class="slds-text-title slds-text-align_center slds-text-heading_large slds-p-top_large">{{records.originalSpec}}</div>
+        <div class="vloc-comparison-json-container">
+            {
+                <div ng-repeat="(attr, attrValue) in records.specLevelAttrs">
+                <!-- attributes -->
+                <div ng-if="attr === 'attributes'">
+                    &nbsp;&nbsp;"{{ attr }}": {
+                        <div ng-if="records.specLevelAttrs[attr].type" ng-class="{'attribute-diff-indicator': !records.equals(records.specLevelAttrs[attr].type, records.productLevelAttrs[attr].type)}">
+                            &nbsp;&nbsp;&nbsp;&nbsp;"type": {{ records.specLevelAttrs[attr].type }},
+                        </div>
+                        <div ng-if="records.specLevelAttrs[attr].url" ng-class="{'attribute-diff-indicator': !records.equals(records.specLevelAttrs[attr].url, records.productLevelAttrs[attr].url)}">
+                            &nbsp;&nbsp;&nbsp;&nbsp;"url":  {{ records.specLevelAttrs[attr].url }}
+                        </div>
+                    &nbsp;&nbsp;},
+                </div>
+                <!-- ValidValuesData__c -->
+                <div ng-if="attr === $root.nsPrefix + 'ValidValuesData__c' && records.specLevelAttrs[$root.nsPrefix + 'ValidValuesData__c']">
+                    &nbsp;&nbsp;"{{ attr }}": [
+                        <div ng-repeat="validValuesObj in records.specLevelAttrs[$root.nsPrefix + 'ValidValuesData__c']" ng-init="validValuesIndex = $index">
+                          &nbsp;&nbsp;&nbsp;&nbsp;{
+                              <div ng-repeat="(objKey, objValue) in validValuesObj">
+                                  <div ng-if="objKey !== 'rules'">
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <span ng-class="{'attribute-diff-indicator': !records.equals(objValue, records.productLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex][objKey])}">
+                                          {{ objKey }}: {{ objValue }},
+                                      </span>
+                                  </div>
+                                  <div ng-if="objKey === 'rules'">
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"rules": [
+                                      <div ng-repeat="rule in validValuesObj.rules" ng-init="rulesIndex = $index">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+                                            <div ng-repeat="(key, value) in rule">
+                                                <div ng-if="key !== 'validation'">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <span ng-class="{'attribute-diff-indicator': !records.equals(value, records.productLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex].rules[rulesIndex][key])}">
+                                                        "{{ key }}": {{ value }},
+                                                    </span>
+                                                </div>
+                                                <div ng-if="key === 'validation'">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <span ng-class="{'attribute-diff-indicator': !records.equals(rule.validation, records.productLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex].rules[rulesIndex]['validation'])}">
+                                                        "validation":{
+                                                    </span>
+                                                    <div ng-repeat="(validationKey, validationValue) in rule.validation">
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <span ng-class="{'attribute-diff-indicator': !records.equals(validationValue, records.productLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex].rules[rulesIndex]['validation'][validationKey])}">
+                                                            "{{ validationKey }}": {{ validationValue }},
+                                                        </span>
+
+                                                    </div>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <span ng-class="{'attribute-diff-indicator': !records.equals(rule.validation, records.productLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex].rules[rulesIndex]['validation'])}">
+                                                        }
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+                                      </div>
+                                      <span ng-if="validValuesObj.rules.length > 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                      ],
+                                  </div>
+                              </div>
+                          &nbsp;&nbsp;&nbsp;&nbsp;},
+                        </div>
+                    &nbsp;&nbsp;],
+                </div>
+                <!-- RuleData__c -->
+                <div ng-if="attr === $root.nsPrefix + 'RuleData__c' && records.specLevelAttrs[$root.nsPrefix + 'RuleData__c']">
+                    &nbsp;&nbsp;"{{ attr }}": [
+                    <div ng-repeat="ruleObj in records.specLevelAttrs[$root.nsPrefix + 'RuleData__c'] track by $index" ng-init="ruleIndex = $index">
+                        &nbsp;&nbsp;&nbsp;&nbsp;{
+                            <div ng-repeat="(ruleKey, ruleValue) in ruleObj">
+                                  <div ng-if="ruleKey !== 'validation' && ruleKey !== 'inDelete' && ruleKey !== 'typeAheadKeywords'">
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <span ng-class="{'attribute-diff-indicator': !records.equals(ruleValue, records.productLevelAttrs[$root.nsPrefix + 'RuleData__c'][ruleIndex][ruleKey])}">
+                                          {{ ruleKey }}:
+                                          <span ng-if="ruleValue && records.typeOf(ruleValue) === 'string'">"{{ ruleValue }}",</span>
+                                          <span ng-if="ruleValue && records.typeOf(ruleValue) !== 'string'">{{ ruleValue }},</span>
+                                      </span>
+                                  </div>
+                                  <div ng-if="ruleKey === 'validation'">
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <span ng-class="{'attribute-diff-indicator': !records.equals(ruleObj.validation, records.productLevelAttrs[$root.nsPrefix + 'RuleData__c'][ruleIndex]['validation'])}">
+                                          "validation": {
+                                      </span>
+
+                                      <div ng-repeat="(validationKey, validationValue) in ruleObj.validation">
+                                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                          <span ng-class="{'attribute-diff-indicator': !records.equals(validationValue,records.productLevelAttrs[$root.nsPrefix + 'RuleData__c'][ruleIndex]['validation'][validationKey])}">
+                                              "{{ validationKey }}": {{ validationValue }},
+                                          </span>
+                                      </div>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <span ng-class="{'attribute-diff-indicator': !records.equals(ruleObj.validation, records.productLevelAttrs[$root.nsPrefix + 'RuleData__c'][ruleIndex]['validation'])}">
+                                          }
+                                      </span>
+                                  </div>
+                            </div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;},
+                    </div>
+                    &nbsp;&nbsp;],
+                </div>
+                <div ng-if="attr !== 'attributes' && attr !== $root.nsPrefix + 'ValidValuesData__c' && attr !== $root.nsPrefix + 'RuleData__c'" ng-class="{'attribute-diff-indicator': !records.equals(records.specLevelAttrs[attr], records.productLevelAttrs[attr])}">
+                    <div ng-if="records.typeOf(attrValue) === 'string'">
+                        &nbsp;&nbsp;"{{ attr }}": "{{ attrValue }}",
+                    </div>
+                    <div ng-if="records.typeOf(attrValue) !== 'string'">
+                        &nbsp;&nbsp;"{{ attr }}": {{ attrValue }},
+                    </div>
+                </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- Product Child Item / Overriden attributes -->
+    <div class="slds-col  vloc-attr-comparison-column vloc-comparison-attributes-border">
+        <div class="slds-text-title slds-text-align_center slds-text-heading_large slds-p-top_large">{{records.productSpec}}</div>
+        <div class="vloc-comparison-json-container">
+            {
+                <div ng-repeat="(attr, attrValue) in records.productLevelAttrs">
+                    <!-- attributes -->
+                    <div ng-if="attr === 'attributes'">
+                        &nbsp;&nbsp;"{{ attr }}": {
+                            <div ng-if="records.productLevelAttrs[attr].type" ng-class="{'attribute-diff-indicator': !records.equals(records.specLevelAttrs[attr].type, records.productLevelAttrs[attr].type)}">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": {{ records.productLevelAttrs[attr].type }},
+                            </div>
+                            <div ng-if="records.productLevelAttrs[attr].url" ng-class="{'attribute-diff-indicator': !records.equals(records.specLevelAttrs[attr].url, records.productLevelAttrs[attr].url)}">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"url":  {{ records.productLevelAttrs[attr].url }}
+                            </div>
+                        &nbsp;&nbsp;}
+                    </div>
+
+                    <!-- ValidValuesData__c -->
+                    <div ng-if="attr === $root.nsPrefix + 'ValidValuesData__c' && records.productLevelAttrs[$root.nsPrefix + 'ValidValuesData__c']">
+                        &nbsp;&nbsp;"{{ attr }}": [
+                        <div ng-repeat="validValuesObj in records.productLevelAttrs[$root.nsPrefix + 'ValidValuesData__c']" ng-init="validValuesIndex = $index">
+                            &nbsp;&nbsp;&nbsp;&nbsp{
+                                <div ng-repeat="(objKey, objValue) in validValuesObj" class="">
+                                    <div ng-if="objKey !== 'rules' && objKey !== 'inDelete'">
+                                        &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;
+                                        <span ng-class="{'attribute-diff-indicator': !records.equals(objValue, records.specLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex][objKey])}">
+                                            {{ objKey }}: {{ objValue }},
+                                        </span>
+                                    </div>
+                                    <div ng-if="objKey === 'rules'">
+                                      &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;
+                                      <span ng-class="{'attribute-diff-indicator': !records.equals(validValuesObj.rules, records.specLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex].rules)}">
+                                          "rules": [
+                                      </span>
+
+                                      <div ng-repeat="rule in validValuesObj.rules" ng-init="rulesIndex = $index">
+                                          &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;
+                                          <span ng-class="{'attribute-diff-indicator': !records.equals(rule, records.specLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex].rules[rulesIndex])}">
+                                              {
+                                          </span>
+                                              <div ng-repeat="(key, value) in rule">
+                                                  <div ng-if="key !== 'validation' && key !== 'inDelete'">
+                                                      &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                      <span ng-class="{'attribute-diff-indicator': !records.equals(value, records.specLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex].rules[rulesIndex][key])}">
+                                                          "{{ key }}": {{ value}},
+                                                      </span>
+                                                  </div>
+                                                  <div ng-if="key === 'validation'">
+                                                      &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                      <span ng-class="{'attribute-diff-indicator': !records.equals(rule.validation, records.specLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex].rules[rulesIndex]['validation'])}">
+                                                          "validation": {
+                                                      </span>
+                                                      <div ng-repeat="(validationKey, validationValue) in rule.validation">
+                                                          &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                          <span ng-class="{'attribute-diff-indicator': !records.equals(validationValue, records.specLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex].rules[rulesIndex]['validation'][validationKey])}">
+                                                              "{{ validationKey }}": {{ validationValue }},
+                                                          </span>
+                                                      </div>
+                                                      &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                      <span ng-class="{'attribute-diff-indicator': !records.equals(rule.validation, records.specLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex].rules[rulesIndex]['validation'])}">
+                                                          }
+                                                      </span>
+                                                  </div>
+                                              </div>
+                                          &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;
+                                          <span ng-class="{'attribute-diff-indicator': !records.equals(rule, records.specLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex].rules[rulesIndex])}">
+                                            },
+                                          </span>
+                                      </div>
+                                      <span ng-if="validValuesObj.rules.length > 0">&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;</span>
+                                      <span ng-class="{'attribute-diff-indicator': !records.equals(validValuesObj.rules, records.specLevelAttrs[$root.nsPrefix + 'ValidValuesData__c'][validValuesIndex].rules)}">
+                                          ],
+                                      </span>
+                                    </div>
+                                </div>
+                            &nbsp;&nbsp;&nbsp;&nbsp},
+                        </div>
+                        &nbsp;&nbsp;]
+                    </div>
+
+                    <!-- RuleData__c -->
+                    <div ng-if="attr === $root.nsPrefix + 'RuleData__c' && records.productLevelAttrs[$root.nsPrefix + 'RuleData__c']">
+                        &nbsp;&nbsp;
+                        <span ng-class="{'attribute-diff-indicator': !records.equals(records.productLevelAttrs[$root.nsPrefix + 'RuleData__c'], records.specLevelAttrs[$root.nsPrefix + 'RuleData__c'])}">
+                            "{{ attr }}": [
+                        </span>
+                        <div ng-repeat="ruleObj in records.productLevelAttrs[$root.nsPrefix + 'RuleData__c'] track by $index" ng-init="ruleIndex = $index">
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span ng-class="{'attribute-diff-indicator': !records.equals(ruleObj, records.specLevelAttrs[$root.nsPrefix + 'RuleData__c'][ruleIndex])}">
+                                {
+                            </span>
+                              <div ng-repeat="(ruleKey, ruleValue) in ruleObj">
+                                  <div ng-if="ruleKey !== 'validation' && ruleKey !== 'inDelete' && ruleKey !== 'typeAheadKeywords'">
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <span ng-class="{'attribute-diff-indicator': !records.equals(ruleValue, records.specLevelAttrs[$root.nsPrefix + 'RuleData__c'][ruleIndex][ruleKey])}">
+                                          {{ ruleKey }}:
+                                          <span ng-if="ruleValue && records.typeOf(ruleValue) === 'string'">"{{ ruleValue }}",</span>
+                                          <span ng-if="ruleValue && records.typeOf(ruleValue) !== 'string'">{{ ruleValue }},</span>
+                                      </span>
+                                  </div>
+
+                                  <div ng-if="ruleKey === 'validation'">
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <span ng-class="{'attribute-diff-indicator': !records.equals(ruleObj.validation, records.specLevelAttrs[$root.nsPrefix + 'RuleData__c'][ruleIndex]['validation'])}">
+                                          "validation": {
+                                      </span>
+                                      <div ng-repeat="(validationKey, validationValue) in ruleObj.validation">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <span ng-class="{'attribute-diff-indicator': !records.equals(validationValue, records.specLevelAttrs[$root.nsPrefix + 'RuleData__c'][ruleIndex]['validation'][validationKey])}">
+                                                "{{ validationKey }}": {{ validationValue }},
+                                            </span>
+                                      </div>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      <span ng-class="{'attribute-diff-indicator': !records.equals(ruleObj.validation, records.specLevelAttrs[$root.nsPrefix + 'RuleData__c'][ruleIndex]['validation'])}">
+                                          }
+                                      </span>
+                                  </div>
+                              </div>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span ng-class="{'attribute-diff-indicator': !records.equals(ruleObj, records.specLevelAttrs[$root.nsPrefix + 'RuleData__c'][ruleIndex])}">
+                                },
+                            </span>
+                        </div>
+                        &nbsp;&nbsp;
+                        <span ng-class="{'attribute-diff-indicator': !records.equals(records.productLevelAttrs[$root.nsPrefix + 'RuleData__c'], records.specLevelAttrs[$root.nsPrefix + 'RuleData__c'])}">
+                            ],
+                        </span>
+                    </div>
+                    <div ng-if="attr !== 'attributes' && attr !== 'childProductId' && attr !== 'coverageId' && attr !== $root.nsPrefix + 'ValidValuesData__c' && attr !== 'rules' && attr !== $root.nsPrefix + 'RuleData__c'" ng-class="{'attribute-diff-indicator': records.specLevelAttrs[attr] !== records.productLevelAttrs[attr]}">
+                        <div ng-if="records.typeOf(attrValue) === 'string'">
+                            &nbsp;&nbsp;"{{ attr }}": "{{ attrValue }}",
+                        </div>
+                        <div ng-if="records.typeOf(attrValue) !== 'string'">
+                            &nbsp;&nbsp;"{{ attr }}": {{ attrValue }},
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

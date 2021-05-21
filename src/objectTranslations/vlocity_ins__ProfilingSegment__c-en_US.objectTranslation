@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__ActiveFlg__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Code --></label>
+        <name>vlocity_ins__AutoCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>vlocity_ins__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Configurable --></label>
+        <name>vlocity_ins__Configurable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filterable --></label>
+        <name>vlocity_ins__Filterable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profiling Segment Category --></label>
+        <name>vlocity_ins__ProfSegCategory__c</name>
+        <relationshipLabel><!-- Deprecated Profiling Segments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Segment Category Name --></label>
+        <name>vlocity_ins__SegmentCategoryName__c</name>
+    </fields>
+    <fields>
+        <label><!-- UniqueNameField --></label>
+        <name>vlocity_ins__UniqueNameField__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Export --></label>
+        <name>vlocity_ins__Export</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge --></label>
+        <name>vlocity_ins__Merge</name>
+    </webLinks>
+</CustomObjectTranslation>

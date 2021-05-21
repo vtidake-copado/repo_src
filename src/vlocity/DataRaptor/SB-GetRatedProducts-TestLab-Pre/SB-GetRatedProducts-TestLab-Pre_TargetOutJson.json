@@ -1,0 +1,9 @@
+{
+    "userInputs": {
+        "busBusinessProfile.busLegalForm": "Text",
+        "busBusinessProfile.busRevAnnual": "Currency",
+        "busBusinessProfile.busType": "Text",
+        "busBusinessProfile.instanceKey": "Text",
+        "busBusinessProfile.isPrimary": "Boolean"
+    }
+}

@@ -1,0 +1,8 @@
+[
+    "DataRaptor/VPL-TransformAutoAndDriverInsuredItemsModify-103-1",
+    "DataRaptor/autoLWC_transCreatePolicyVersion_EndorsementOS",
+    "DataRaptor/auto_ReadPolicyDetails_modifyCoveragesOS",
+    "IntegrationProcedure/Auto_EndorsementBilling",
+    "VlocityUITemplate/ins-os-attribute-component",
+    "VlocityUITemplate/ins-os-coverage-component"
+]

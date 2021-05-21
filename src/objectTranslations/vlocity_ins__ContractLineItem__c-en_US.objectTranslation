@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- GetContractDetailFields --></label>
+        <name>vlocity_ins__GetContractDetailFields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Get Plans --></label>
+        <name>vlocity_ins__GetPlans</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- QuoteDetail --></label>
+        <name>vlocity_ins__QuoteDetail</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Account --></label>
+        <name>vlocity_ins__AccountId__c</name>
+        <relationshipLabel><!-- Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attribute Selected Values --></label>
+        <name>vlocity_ins__AttributeSelectedValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attributes Data --></label>
+        <name>vlocity_ins__AttributesData__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attributes --></label>
+        <name>vlocity_ins__Attributes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability --></label>
+        <name>vlocity_ins__Availability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Codes --></label>
+        <name>vlocity_ins__ClassCodes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>vlocity_ins__ContractId__c</name>
+        <relationshipLabel><!-- Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Market Segment --></label>
+        <name>vlocity_ins__ContractMarketSegment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective End Date --></label>
+        <name>vlocity_ins__EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Start Date --></label>
+        <name>vlocity_ins__EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligibility Criteria --></label>
+        <name>vlocity_ins__EligibilityCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrollment End Date --></label>
+        <name>vlocity_ins__EnrollmentEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Rating Type --></label>
+        <name>vlocity_ins__EnrollmentRatingType__c</name>
+        <picklistValues>
+            <masterLabel>Age</masterLabel>
+            <translation><!-- Age --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Composite</masterLabel>
+            <translation><!-- Composite --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Start Date --></label>
+        <name>vlocity_ins__EnrollmentStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Waiting Period --></label>
+        <name>vlocity_ins__EnrollmentWaitingPeriod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Class --></label>
+        <name>vlocity_ins__GroupClassId__c</name>
+        <relationshipLabel><!-- Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Group Number --></label>
+        <name>vlocity_ins__GroupNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>vlocity_ins__ItemName__c</name>
+    </fields>
+    <fields>
+        <label><!-- JSONAttribute - Deprecated --></label>
+        <name>vlocity_ins__JSONAttribute__c</name>
+    </fields>
+    <fields>
+        <label><!-- LineNumber --></label>
+        <name>vlocity_ins__LineNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__LineStatus__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Original Line Item Id --></label>
+        <name>vlocity_ins__OriginalLineItemId__c</name>
+        <relationshipLabel><!-- Replacement Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Item Id --></label>
+        <name>vlocity_ins__ParentItemId__c</name>
+        <relationshipLabel><!-- Contract Line Items (Parent Item Id) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Price book Entry Id --></label>
+        <name>vlocity_ins__PricebookEntryId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Log Data --></label>
+        <name>vlocity_ins__PricingLogData__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>vlocity_ins__Product2Id__c</name>
+        <relationshipLabel><!-- Contracted Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Carrier --></label>
+        <name>vlocity_ins__ProductCarrierName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Child Item --></label>
+        <name>vlocity_ins__ProductChildItemId__c</name>
+        <relationshipLabel><!-- Product Child Item --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>vlocity_ins__ProductCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Description --></label>
+        <name>vlocity_ins__ProductDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>vlocity_ins__ProductId__c</name>
+        <relationshipLabel><!-- Benefit Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Item Name --></label>
+        <name>vlocity_ins__ProductName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Number --></label>
+        <name>vlocity_ins__ProductNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__ProductStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Type --></label>
+        <name>vlocity_ins__ProductSubType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__ProductType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>vlocity_ins__Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Line Item Id --></label>
+        <name>vlocity_ins__QuoteLineItemId__c</name>
+        <relationshipLabel><!-- Quote Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate Band --></label>
+        <name>vlocity_ins__RateBandId__c</name>
+        <relationshipLabel><!-- Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Subscription --></label>
+        <name>vlocity_ins__SubscriptionId__c</name>
+        <relationshipLabel><!-- Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Price --></label>
+        <name>vlocity_ins__TotalPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Price --></label>
+        <name>vlocity_ins__UnitPrice__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Contract Line Item Effective End Date has to be earlier than Contract End Date --></errorMessage>
+        <name>vlocity_ins__ValidateEndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Line Item Effective Start Date has to be later than Contract Start Date --></errorMessage>
+        <name>vlocity_ins__ValidateStartDate</name>
+    </validationRules>
+</CustomObjectTranslation>

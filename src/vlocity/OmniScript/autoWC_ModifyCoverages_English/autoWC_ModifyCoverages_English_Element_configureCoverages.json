@@ -1,0 +1,57 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Modify Coverages",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/autoWC/ModifyCoverages/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "Modify Coverages",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/autoWC/ModifyCoverages/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "configure",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/autoWC/ModifyCoverages/English/configure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "configure",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "init-json",
+                "source": "%getProducts%"
+            }
+        ],
+        "disOnTplt": false,
+        "hide": false,
+        "label": "Auto LWC",
+        "lwcName": "%vlocity_namespace%__insOsMultiInstanceGrandchildren",
+        "rePriceAction": {
+            "className": "InsProductService",
+            "methodName": "rePriceProduct",
+            "optionsMap": {
+                "aggByKey": "autoVehicle.instanceKey",
+                "calculateTaxesandFees": true,
+                "evalOptionalCoverageRelationship": true,
+                "includeInputKeys": "autoVehicle.instanceKey,autoDriver.instanceKey",
+                "includeRawCalculationResult": true,
+                "instanceKey": "autoVehicle.instanceKey"
+            }
+        },
+        "show": null
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Custom Lightning Web Component",
+    "Name": "configureCoverages",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/autoWC/ModifyCoverages/English/configureCoverages"
+}

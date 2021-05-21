@@ -1,0 +1,164 @@
+{
+    "dataSource": {
+        "type": "Inherit",
+        "value": {
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "displayName": "Add Medical",
+                        "extraParams": {
+                            "Filter": "%vlocity_namespace%__Type__c : Medical"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Med",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "",
+                        "vlocityIcon": "icon-v-avatar-person"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Add Life",
+                        "extraParams": {
+                            "Filter": "%vlocity_namespace%__Type__c: Life"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Life",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "",
+                        "vlocityIcon": "icon-v-heart"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Add Auto",
+                        "extraParams": {
+                            "Filter": "%vlocity_namespace%__Type__c: Auto"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Auto",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "",
+                        "vlocityIcon": "icon-v-generate"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Add Small Group Plan",
+                        "extraParams": {
+                            "Condition": "Account.%vlocity_namespace%__MarketSegment__c !== Large Group",
+                            "Filter": "%vlocity_namespace%__MarketSegment__c:Small Group"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Small Group Plan",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "",
+                        "vlocityIcon": "icon-v-client"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Add Large Group Plan",
+                        "extraParams": {
+                            "Condition": "Account.%vlocity_namespace%__MarketSegment__c === Large Group",
+                            "Filter": "%vlocity_namespace%__MarketSegment__c:Large Group"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Large Group Plan",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "",
+                        "vlocityIcon": "icon-v-avatar-business"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Other",
+                        "extraParams": {
+                            "Filter": "%vlocity_namespace%__Type__c:!Auto, %vlocity_namespace%__Type__c:!Medical, %vlocity_namespace%__Type__c: !Life"
+                        },
+                        "hasExtraParams": true,
+                        "id": "Other",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "",
+                        "vlocityIcon": "icon-v-create-version"
+                    }
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Employees",
+                    "name": "Employees",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Dependents",
+                    "name": "Dependents",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Contribution Amount",
+                    "name": "%vlocity_namespace%__EmployerContributionAmount__c",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Average Female Age",
+                    "name": "Average Age Female",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Contribution Percent",
+                    "name": "%vlocity_namespace%__EmployerContributionPercent__c",
+                    "type": "percentage"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Average Male Age",
+                    "name": "Average Age Male",
+                    "type": "string"
+                }
+            ],
+            "name": "Ins-Quote-Census",
+            "templateUrl": "ins-quote-census"
+        }
+    ],
+    "title": "Ins-Quote-Census"
+}

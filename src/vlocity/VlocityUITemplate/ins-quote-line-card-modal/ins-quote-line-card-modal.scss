@@ -1,0 +1,20 @@
+.via-slds{
+    .vloc-card-modal-row{
+        &:hover{
+            background-color: #fafaf9;
+            cursor: pointer;
+        }
+        .vloc-card-checkbox-container{
+            line-height: 1.3rem;
+        }
+        .vloc-checkbox{
+            padding-left: 4rem;
+            position: relative;
+            top: -.3rem;
+        }
+        
+        .vloc-class-name{
+            line-height: 1.8rem;
+        }
+    }
+}

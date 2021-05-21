@@ -1,0 +1,114 @@
+<div class="vloc-ins-multi-item-container vloc-ins-coverages-container-wrapper" ng-if="control.vlcSI[control.itemsKey]">
+    <div ng-if="baseCtrl.vlocOSInsConfigProductSet && baseCtrl.vlocOSInsConfigProductSet.timestamp !== control.vlcSI[control.itemsKey][0].timestamp" ng-init="baseCtrl.setSelectedProducts(control)"></div>
+    <div class="vloc-ins-multi-item-product-container" ng-controller="insMultiItemCtrl" ng-init="createData(control.vlcSI[control.itemsKey], baseCtrl.$scope.bpTree.response)">
+        <div class="vloc-ins-multi-item-product" ng-repeat="product in productsList track by $index" ng-if="$index === 0" ng-init="setSelectedOption(control, product, option, this)" ins-rules-evaluate ins-rules-product="product">
+            <div class="vloc-ins-multi-item-child" ng-repeat="(childProductIndex, childProduct) in product.childProducts.records" ng-show="childProduct.instanceKey" ins-rules-evaluate ins-rules-product="childProduct">
+                <section class="nds-grid vloc-ins-multi-item-child-top">
+                    <div class="nds-size--2-of-5 nds-p-horizontal--small nds-text-align--center vloc-ins-multi-item-child-top-left">
+                        <img ng-src="../resource/{{baseCtrl.$scope.nsPrefix}}InsMultiItemImages/{{vehicleTypes[insuredItemsFormatted[childProduct.instanceKey].VehicleType].fileName}}" ins-on-error="../resource/{{baseCtrl.$scope.nsPrefix}}InsMultiItemImages/default.svg" class="nds-m-bottom--small"/>
+                        <h2 class="nds-text-heading--large nds-truncate vloc-ins-multi-item-child-name">{{childProduct.instanceKey}}</h2>
+                    </div>
+                    <div class="nds-size--3-of-5 vloc-ins-multi-item-child-top-right">
+                        <div class="vloc-ins-multi-item-child-category-container vloc-ins-child-level-first-attribute-container vloc-ins-multi-item-child-edit-drivers">
+                            <div class="vloc-ins-multi-item-child-attribute-container">
+                                <div class="slds-grid nds-grid vloc-ins-attribute-component-container">
+                                    <div class="slds-size--8-of-12 slds-max-small-size--7-of-12 slds-p-right--xx-small slds-truncate nds-size--8-of-12 nds-max-small-size--7-of-12 nds-p-right--xx-small nds-truncate vloc-ins-attribute-component">
+                                        <label class="slds-text-heading--x-small nds-text-heading--x-small vloc-ins-attribute-component-name" for="attribute-{{coverage.ProductCode}}-{{attribute.code}}">Primary Driver</label>
+                                    </div>
+                                    <div class="slds-size--4-of-12 slds-max-small-size--5-of-12 slds-is-relative nds-size--4-of-12 nds-max-small-size--5-of-12 nds-is-relative vloc-ins-attribute-component-limit">
+                                        <a href="javascript:void(0)" class="nds-button vloc-ins-multi-item-edit-drivers-btn" ng-click="editDrivers(this, control, childProduct)">Edit Drivers</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vloc-ins-multi-item-child-category-container vloc-ins-child-level-first-attribute-container" ng-repeat="category in childProduct.attributeCategories.records | orderBy: 'displaySequence' | limitTo: 1">
+                            <div class="vloc-ins-multi-item-child-attribute-container" ng-repeat="attribute in category.productAttributes.records | orderBy: 'displaySequence' | limitTo: 1" ng-if="!attribute.hiddenByRule && attribute.inputType !== 'equalizer'" ng-hide="attribute.hidden">
+                                <div ins-os-include-template="{{customTemplates.AttributesDisplayTemplate}}"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="vloc-ins-multi-item-child-bottom">
+                    <div class="nds-grid vloc-ins-multi-item-child-toggle-area">
+                        <div class="nds-size--3-of-5 nds-clearfix nds-is-relative">
+                            <div class="nds-float--left vloc-ins-multi-item-child-selected-coverage-icon">
+                                <img ng-src="{{childProduct.customizeIcon || '../resource/' + baseCtrl.$scope.nsPrefix + 'InsMultiItemImages/orange-customize-icon.svg'}}" alt="Selected Coverage Icon" />
+                            </div>
+                            <div class="nds-float--left vloc-ins-multi-item-child-coverage-selector-container">
+                                <div class="vloc-ins-multi-item-child-coverage-selector" ins-os-dropdown-handler="childProduct.showCoverageSelector = !childProduct.showCoverageSelector" restrict-element="vloc-ins-multi-item-child-coverage-menu-item">
+                                    <span class="nds-m-right--x-small">{{childProduct.currentCoverageConfiguration || 'Custom Coverage'}}</span>
+                                    <span class="nds-icon_container">
+                                        <slds-svg-icon sprite="'utility'" icon="'switch'" size="'x-small'" extra-classes="'nds-icon nds-icon--x-small vloc-ins-multi-item-child-switch-icon'"></slds-svg-icon>
+                                        <span class="nds-assistive-text">Change Coverage Type</span>
+                                    </span>
+                                </div>
+                                <div class="nds-dropdown-trigger nds-dropdown-trigger--click vloc-ins-multi-item-child-coverage-selector-menu" ng-class="{'nds-is-open': childProduct.showCoverageSelector}">
+                                    <div class="nds-dropdown vloc-ins-multi-item-child-coverage-selector-dropdown">
+                                        <ul class="nds-dropdown__list" role="menu">
+                                            <li class="nds-dropdown__item nds-is-relative vloc-ins-multi-item-child-coverage-menu-item" role="presentation">
+                                                <a href="javascript:void(0);" role="menuitem" tabindex="-1" class="vloc-ins-multi-item-child-coverage-menu-item-anchor" ins-os-dropdown-handler="childProduct.showSameAsMenu = !childProduct.showSameAsMenu">
+                                                    <img ng-src="../resource/{{baseCtrl.$scope.nsPrefix}}InsMultiItemImages/same-as-icon.svg" alt="Same as another Insured Item" />
+                                                    <span class="nds-truncate">Same as...</span>
+                                                    <slds-svg-icon sprite="'utility'" icon="'right'" size="'x-small'" extra-classes="'nds-icon nds-icon--x-small vloc-ins-multi-item-child-coverage-menu-item-right-icon'"></slds-svg-icon>
+                                                </a>
+                                                <div class="nds-dropdown-trigger nds-dropdown-trigger--click vloc-ins-multi-item-child-coverage-selector-menu vloc-ins-multi-item-child-coverage-selector-templates-menu" ng-class="{'nds-is-open': childProduct.showSameAsMenu}">
+                                                    <div class="nds-dropdown vloc-ins-multi-item-child-coverage-selector-dropdown">
+                                                        <ul class="nds-dropdown__list" role="menu">
+                                                            <li class="nds-dropdown__item vloc-ins-multi-item-child-coverage-sub-menu-item" role="presentation" ng-repeat="(key, siblingProduct) in consolidatedData.childInsuredItems" ng-hide="siblingProduct.name === childProduct.instanceKey">
+                                                                <a href="javascript:void(0);" role="menuitem" tabindex="0" class="vloc-ins-multi-item-child-coverage-sub-menu-item-anchor" ng-click="copyCoverageValues(childProduct, siblingProduct, bpTree.response, control, scpReference)">
+                                                                    <span class="nds-truncate">{{siblingProduct.name}}</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nds-dropdown__item nds-is-relative vloc-ins-multi-item-child-coverage-menu-item ng-hide" role="presentation">
+                                                <a href="javascript:void(0);" role="menuitem" tabindex="-1" class="vloc-ins-multi-item-child-coverage-menu-item-anchor" ins-os-dropdown-handler="childProduct.showTemplatesMenu = !childProduct.showTemplatesMenu" restrict-element="vloc-ins-multi-item-child-coverage-menu-item-submenu">
+                                                    <img src="https://placekitten.com/32/32"/>
+                                                    <span class="nds-truncate">Your Templates</span>
+                                                    <slds-svg-icon sprite="'utility'" icon="'right'" size="'x-small'" extra-classes="'nds-icon nds-icon--x-small vloc-ins-multi-item-child-coverage-menu-item-right-icon'"></slds-svg-icon>
+                                                </a>
+                                                <div class="nds-dropdown-trigger nds-dropdown-trigger--click vloc-ins-multi-item-child-coverage-selector-menu vloc-ins-multi-item-child-coverage-selector-templates-menu" ng-class="{'nds-is-open': childProduct.showTemplatesMenu}">
+                                                    <div class="nds-dropdown vloc-ins-multi-item-child-coverage-selector-dropdown">
+                                                        <ul class="nds-dropdown__list" role="menu">
+                                                            <li class="nds-dropdown__item vloc-ins-multi-item-child-coverage-menu-item-submenu" role="presentation">
+                                                                <a href="javascript:void(0);" role="menuitem" tabindex="0" class="vloc-ins-multi-item-child-coverage-menu-item-submenu-anchor">
+                                                                    <span class="nds-truncate">High-value weekender</span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nds-has-divider--bottom" role="separator"></li>
+                                                            <li class="nds-dropdown__item vloc-ins-multi-item-child-coverage-menu-item-submenu" role="presentation">
+                                                                <a href="javascript:void(0);" role="menuitem" tabindex="-1" class="vloc-ins-multi-item-child-coverage-menu-item-submenu-anchor">
+                                                                    <span class="nds-truncate vloc-ins-multi-item-child-manage-templates">Manage your templates</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nds-size--2-of-5 nds-text-align--right vloc-ins-multi-item-child-price-container" ng-show="childProduct.Price">
+                            <div class="vloc-ins-multi-item-child-price-inner-container">
+                                <span class="vloc-ins-multi-item-child-price-you-pay">You pay:</span>
+                                <span class="vloc-ins-multi-item-child-price-price">{{childProduct.Price | currency: currencyCode: 0}}</span>
+                                <span class="vloc-ins-multi-item-child-price-term"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nds-m-top--large vloc-ins-multi-item-child-customize-container vloc-ins-coverages-container-inner-wrapper" ng-model="childProduct.customizeSectionsOpen" bs-collapse>
+                        <a href="javascript:void(0)" bs-collapse-toggle class="nds-button vloc-ins-multi-item-toggle-plan-details" ng-class="{'menu-open': childProduct.showCoverageSelector}"><span ng-show="(!childProduct.customizeSectionsOpen && childProduct.customizeSectionsOpen !== 0)  || childProduct.customizeSectionsOpen === -1">Customize</span><span ng-show="childProduct.customizeSectionsOpen === 0">Hide</span> plan details</a>
+                        <div class="vloc-ins-multi-item-child-customize vloc-ins-coverages-container" ins-os-calc-height bs-collapse-target>
+                            <div ins-os-include-template="{{customTemplates.CoveragesDisplayTemplate}}"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <p class="vloc-ins-multi-item-policy-total" ng-show="product.Price || product.Price === 0">Policy Total: <span class="vloc-ins-multi-item-price">{{product.Price | currency: currencyCode: 2}}</span><span class="vloc-ins-multi-item-price-term"></span></p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="slds-select_container slds-m-right_small slds-size_1-of-1 vloc-add-product-select" ng-init="$root.addProductType = data.definedActions.actions[0]; $root.quoteData = records[0]; importedScope.getActiveClasses($root.quoteData.AccountId); importedScope.getEligibleProducts($root.addProductType); importedScope.parseActions(data.definedActions.actions); importedScope.translateDropdownActions(data.definedActions.actions)">
+    <select ng-if="importedScope.largeGroupQuoteLabels" ng-options="importedScope.dropdownActionsConstants[opts.id].label for opts in data.definedActions.actions" class="slds-select slds-m-right_xx-small slds-truncate" id="select-output-01" ng-model="$root.addProductType" ng-change="importedScope.getEligibleProducts($root.addProductType)">
+    </select>
+    <select ng-if="!importedScope.largeGroupQuoteLabels" ng-options="opts.displayName for opts in data.definedActions.actions" class="slds-select slds-m-right_xx-small slds-truncate" id="select-output-01" ng-model="$root.addProductType" ng-change="importedScope.getEligibleProducts($root.addProductType)">
+    </select> 
+</div>

@@ -1,0 +1,135 @@
+@import "ins-product-attributes-variables";
+
+.via-slds{
+
+    .vloc-attr-config-grid{
+        background: white;
+        .slds-input[disabled]{
+            background: white;
+        }
+    }
+
+    .vloc-attrs-value-general{
+        input:focus {
+            border-bottom: 1px solid #1589ee;
+            box-shadow: none;
+        }
+    }
+
+    .vloc-attrs-input{
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        line-height: 2.7rem;
+        box-shadow: none;
+        &.disabled{
+            background: white;
+            color: $neutral-dark;
+        }
+        &.ng-invalid-max{
+            color: red; 
+        }
+        &.ng-invalid-min{
+            color: red; 
+        }
+        &.vloc-attrs-picklist-input{
+            line-height: 1.875rem;
+        }
+    }
+
+    monaco-editor {
+        border-radius: 0.25rem;
+        width: 100%;
+        height: 3.5rem;
+        max-height: 3.5rem;
+        padding: 0;
+        position: absolute;
+
+        > .monaco-editor {
+            border-radius: 0.25rem;
+            top: -.5rem;
+            right: 0.75rem;
+
+            > .overflow-guard {
+                border-radius: 0.25rem;
+                padding: 0.25rem 0;
+
+                > .monaco-scrollable-element {
+                    > .monaco-editor-background {
+                        height: 500% !important;
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .vloc-attr-config-row {
+        border-bottom: 1px solid $cards-border-gray;
+        position: relative;
+        min-height: 5rem;
+    }
+
+    .vloc-attrs-slider{
+        .vloc-attrs-slider-label{
+            margin-right: 0;
+            margin-top: 0;
+        }
+    }
+
+    .vloc-attr-title-cell{
+        margin-bottom: 0;
+
+    }
+
+    .vloc-ins-product-rules-eligibility-container {
+        .vloc-ins-product-rules-eligibility-expression {
+            min-height: 5rem;
+            padding-left: 1.3rem;
+            position: relative;
+
+            .slds-textarea{
+                transition: border-color 150ms ease-in;
+
+                &.rule-saved {
+                    border-color: rgba(#04844b, 0.7);
+                }
+
+                &.rule-unsaved {
+                    border-color: rgba(#ffb75d, 0.7);
+                }
+
+                &.rule-save-error {
+                    border-color: rgba(#c23934, 0.7);
+                }
+            }
+
+            .vloc-ins-product-rules-eligibility-number {
+                position: absolute;
+                left: 1rem;
+                font-size: 1rem;
+                width: 1.5rem;
+                height: 1.5rem;
+                line-height: 1.5rem;
+                border-radius: 50%;
+                background-color: lighten(#54698d, 30%);
+                text-align: center;
+                color: white;
+                top: 1.75rem;
+                transition: background-color 150ms ease-in;
+
+                &.rule-saved {
+                    background-color: rgba(#04844b, 0.7);
+                }
+
+                &.rule-unsaved {
+                    background-color: rgba(#ffb75d, 0.7);
+                }
+
+                &.rule-save-error {
+                    background-color: rgba(#c23934, 0.7);
+                }
+            }
+        }
+    }
+}

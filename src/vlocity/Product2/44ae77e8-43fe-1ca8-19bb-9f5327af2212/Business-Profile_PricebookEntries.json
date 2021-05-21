@@ -1,0 +1,32 @@
+[
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": "",
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "Business Profile",
+        "Pricebook2.Name": "Standard Price Book",
+        "Pricebook2Id": {
+            "Name": "Standard Price Book",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "44ae77e8-43fe-1ca8-19bb-9f5327af2212",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "44ae77e8-43fe-1ca8-19bb-9f5327af2212",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/44ae77e8-43fe-1ca8-19bb-9f5327af2212",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "busBusinessProfile",
+        "UnitPrice": 1,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/44ae77e8-43fe-1ca8-19bb-9f5327af2212"
+    }
+]

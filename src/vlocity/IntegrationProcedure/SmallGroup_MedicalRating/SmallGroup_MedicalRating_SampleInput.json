@@ -1,0 +1,110 @@
+{
+    "calcInputs": {
+        "mergedList": [
+            {
+                "Age": "49",
+                "Gender": "Male",
+                "ProductCode": "SG-HMO-25",
+                "ProductSubtype": "QHP",
+                "Smoker": "true",
+                "empChildCount": 3,
+                "empFamilyCount": 4,
+                "empOnlyCount": 1,
+                "empSpouseCount": 2,
+                "parentProdKey": "01t6A000002qvMWQAY",
+                "productKey": "01t6A000002qvMWQAY"
+            },
+            {
+                "Age": "20",
+                "Gender": "Female",
+                "ProductCode": "SG-HMO-25",
+                "ProductSubtype": "QHP",
+                "Smoker": "false",
+                "empChildCount": 3,
+                "empFamilyCount": 4,
+                "empOnlyCount": 1,
+                "empSpouseCount": 2,
+                "parentProdKey": "01t6A000002qvMWQAY",
+                "productKey": "01t6A000002qvMWQAY"
+            },
+            {
+                "Age": "35",
+                "Gender": "Male",
+                "ProductCode": "SG-HMO-25",
+                "ProductSubtype": "QHP",
+                "Smoker": "false",
+                "empChildCount": 3,
+                "empFamilyCount": 4,
+                "empOnlyCount": 1,
+                "empSpouseCount": 2,
+                "parentProdKey": "01t6A000002qvMWQAY",
+                "productKey": "01t6A000002qvMWQAY"
+            },
+            {
+                "Age": "55",
+                "Gender": "Female",
+                "ProductCode": "SG-HMO-25",
+                "ProductSubtype": "QHP",
+                "Smoker": "false",
+                "empChildCount": 3,
+                "empFamilyCount": 4,
+                "empOnlyCount": 1,
+                "empSpouseCount": 2,
+                "parentProdKey": "01t6A000002qvMWQAY",
+                "productKey": "01t6A000002qvMWQAY"
+            },
+            {
+                "Age": "49",
+                "Gender": "Male",
+                "ProductCode": "SG-PPO-35",
+                "ProductSubtype": "QHP",
+                "Smoker": "true",
+                "empChildCount": 3,
+                "empFamilyCount": 4,
+                "empOnlyCount": 1,
+                "empSpouseCount": 2,
+                "parentProdKey": "01t6A000002qvMWQAY",
+                "productKey": "01t6A000002qvMWQAY"
+            },
+            {
+                "Age": "20",
+                "Gender": "Female",
+                "ProductCode": "SG-PPO-35",
+                "ProductSubtype": "QHP",
+                "Smoker": "false",
+                "empChildCount": 3,
+                "empFamilyCount": 4,
+                "empOnlyCount": 1,
+                "empSpouseCount": 2,
+                "parentProdKey": "01t6A000002qvMWQAY",
+                "productKey": "01t6A000002qvMWQAY"
+            },
+            {
+                "Age": "35",
+                "Gender": "Male",
+                "ProductCode": "SG-PPO-35",
+                "ProductSubtype": "QHP",
+                "Smoker": "false",
+                "empChildCount": 3,
+                "empFamilyCount": 4,
+                "empOnlyCount": 1,
+                "empSpouseCount": 2,
+                "parentProdKey": "01t6A000002qvMWQAY",
+                "productKey": "01t6A000002qvMWQAY"
+            },
+            {
+                "Age": "55",
+                "Gender": "Female",
+                "ProductCode": "SG-PPO-35",
+                "ProductSubtype": "QHP",
+                "Smoker": "false",
+                "empChildCount": 3,
+                "empFamilyCount": 4,
+                "empOnlyCount": 1,
+                "empSpouseCount": 2,
+                "parentProdKey": "01t6A000002qvMWQAY",
+                "productKey": "01t6A000002qvMWQAY"
+            }
+        ]
+    }
+}

@@ -1,0 +1,338 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Product-Template-Vision_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "IN-annu_ceel": "$10/$0",
+        "IN-annu_cfcl": "$130/$130",
+        "IN-annu_fctl": "Once per calendar year",
+        "IN-annu_feye": "Once per calendar year",
+        "IN-annu_ffrm": "Once per calendar year",
+        "V0234": null,
+        "V0235": null,
+        "V0484": null,
+        "V0485": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "records": [
+            {
+                "Code__c": "INMEDICALBENEFITS",
+                "Name": "Medical In Network Benefits",
+                "displaySequence": 901,
+                "id": "a0B6A0000089Lh6UAE",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0C6A000006lrByUAI",
+                            "cloneable": true,
+                            "code": "IN-annu_ceel",
+                            "dataType": "text",
+                            "description": "Amounts reflect in-network copays and allowances.",
+                            "disabled": true,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Copay - Eye Exam/ Eyeglass Lenses",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C6A000006lrBwUAI",
+                            "cloneable": true,
+                            "code": "IN-annu_cfcl",
+                            "dataType": "text",
+                            "description": "Benefits include coverage for member’s choice of eyeglass lenses or contact lenses, but not both. Nonelective contacts covered in full.",
+                            "disabled": true,
+                            "displaySequence": 2,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Copay - Frames/Contact Lenses Allowance",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C6A000006lrC0UAI",
+                            "cloneable": true,
+                            "code": "IN-annu_feye",
+                            "dataType": "text",
+                            "description": "Members have access to our industry-leading network that includes premier retail locations. We also offer exam only, materials only and full-service, stand-alone vision plans.",
+                            "disabled": true,
+                            "displaySequence": 3,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Frequency - Eye Exam",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C6A000006lrC4UAI",
+                            "cloneable": true,
+                            "code": "IN-annu_ffrm",
+                            "dataType": "text",
+                            "description": "Members have access to our industry-leading network that includes premier retail locations. We also offer exam only, materials only and full-service, stand-alone vision plans.",
+                            "disabled": true,
+                            "displaySequence": 5,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Frequency - Frames",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C6A000006lrC5UAI",
+                            "cloneable": true,
+                            "code": "IN-annu_fctl",
+                            "dataType": "text",
+                            "description": "Members have access to our industry-leading network that includes premier retail locations. We also offer exam only, materials only and full-service, stand-alone vision plans.",
+                            "disabled": true,
+                            "displaySequence": 6,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Frequency - Contact Lenses",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 5
+                }
+            },
+            {
+                "Code__c": "SCHDVISIONBENEFITS",
+                "Name": "Vision Schedule of Benefits",
+                "displaySequence": 905,
+                "id": "a0B6A0000089OSvUAM",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0C6A000006lrIZUAY",
+                            "cloneable": false,
+                            "code": "V0234",
+                            "disabled": true,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "isNotTranslatable": false,
+                            "label": "Exam Deductible - Optometrist",
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C6A000006lrIUUAY",
+                            "cloneable": false,
+                            "code": "V0235",
+                            "disabled": true,
+                            "displaySequence": 2,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "isNotTranslatable": false,
+                            "label": "Exam Deductible - Ophthalmologist",
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C6A000006lrIVUAY",
+                            "cloneable": false,
+                            "code": "V0485",
+                            "disabled": true,
+                            "displaySequence": 3,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "isNotTranslatable": false,
+                            "label": "Cosmetic Contact Lens Allowance (included exam)",
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C6A000006lrIWUAY",
+                            "cloneable": false,
+                            "code": "V0484",
+                            "disabled": true,
+                            "displaySequence": 4,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "isNotTranslatable": false,
+                            "label": "Disposable Contact Lens Allowance (included exam)",
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 4
+                }
+            }
+        ],
+        "totalSize": 2
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__Availability__c": "",
+    "%vlocity_namespace%__CarrierId__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "",
+    "%vlocity_namespace%__EligibilityCriteriaComments__c": "",
+    "%vlocity_namespace%__EligibilityCriteria__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__EnrollmentStatus__c": "",
+    "%vlocity_namespace%__FormularyId__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "96e3bea7-5340-fa67-55b2-9fbaabc380b6",
+    "%vlocity_namespace%__HasCustomAttributesProcess__c": false,
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__InstanceKeyFormula__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__IsRecommended__c": false,
+    "%vlocity_namespace%__LastPublishDate__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "",
+    "%vlocity_namespace%__LineOfBusiness__c": "",
+    "%vlocity_namespace%__MarketSegment__c": "ASO (Admin Services Only);Individual;Large Group;Medicare;Small Group;Medicaid",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PricingFormula__c": "",
+    "%vlocity_namespace%__PricingSource__c": "",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__ProviderNetworkId__c": "",
+    "%vlocity_namespace%__RateBandId__c": "",
+    "%vlocity_namespace%__RatingCalcProcedureName__c": "",
+    "%vlocity_namespace%__RatingProcedureType__c": "",
+    "%vlocity_namespace%__RecordTypeName__c": "ProductTemplate",
+    "%vlocity_namespace%__ReplacementProductId__c": "",
+    "%vlocity_namespace%__ReserveProcessingMode__c": "",
+    "%vlocity_namespace%__Scope__c": "",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__Term__c": "",
+    "%vlocity_namespace%__Tier__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TotalCoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__TotalInsuredFormula__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "Vision",
+    "CanUseQuantitySchedule": true,
+    "CanUseRevenueSchedule": true,
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "Image__c": "",
+    "IsActive": false,
+    "IsArchived": false,
+    "Name": "Product Template (Vision)",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "ProductCode": "TMP-VIS",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "ProductTemplate",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/ProductTemplate",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/96e3bea7-5340-fa67-55b2-9fbaabc380b6"
+}

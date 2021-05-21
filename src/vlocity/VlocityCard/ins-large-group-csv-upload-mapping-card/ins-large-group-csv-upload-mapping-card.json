@@ -1,0 +1,121 @@
+{
+    "dataSource": {
+        "type": "ApexRemote",
+        "value": {
+            "body": "{\"records\" : 1}",
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.CensusMemberServiceHandler"
+            },
+            "remoteClass": "CensusMemberServiceHandler",
+            "remoteMethod": "getFields",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": ""
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "First Name",
+                    "name": "%vlocity_namespace%__FirstName__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Last Name",
+                    "name": "%vlocity_namespace%__LastName__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Date of Birth",
+                    "name": "%vlocity_namespace%__Birthdate__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Gender",
+                    "name": "%vlocity_namespace%__Gender__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Email",
+                    "name": "%vlocity_namespace%__Email__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Postal Code",
+                    "name": "%vlocity_namespace%__PostalCode__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Date of Hire",
+                    "name": "%vlocity_namespace%__HireDate__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Unique Employee Identifier",
+                    "name": "%vlocity_namespace%__SocialSecurityNumber__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Employee ID",
+                    "name": "%vlocity_namespace%__MemberIdentifier__c",
+                    "type": "string"
+                }
+            ],
+            "name": "Table Map",
+            "templateUrl": "ins-large-group-upload-csv-table"
+        }
+    ],
+    "title": "CSV Table Map"
+}

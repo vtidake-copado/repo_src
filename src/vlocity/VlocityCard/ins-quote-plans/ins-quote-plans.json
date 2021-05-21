@@ -1,0 +1,98 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0Q041000000MM2W"
+            }
+        ],
+        "type": "Inherit",
+        "value": {
+            "body": "",
+            "inputMap": {
+                "quoteId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "ProductAttribJSONReader"
+            },
+            "remoteClass": "ProductAttribJSONReader",
+            "remoteMethod": "getQuoteLineInformation",
+            "remoteNSPrefix": null,
+            "resultVar": "records"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "actionCtxId": "<<Custom Field>>",
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Deductible: In Network Individual",
+                    "name": "Deductible / In Network Individual",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "In Network Family",
+                    "name": "In Network Family",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Out-of-Pocket Maximum",
+                    "name": "Out-of-Pocket Maximum",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Coverage",
+                    "name": "Coverage",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Out of Network",
+                    "name": "Out of Network",
+                    "type": "string"
+                }
+            ],
+            "flyout": {
+                "data": "",
+                "layout": null
+            },
+            "name": "Plan",
+            "sObjectType": null,
+            "templateUrl": "ins-quote-line-item"
+        }
+    ],
+    "title": "Plan"
+}

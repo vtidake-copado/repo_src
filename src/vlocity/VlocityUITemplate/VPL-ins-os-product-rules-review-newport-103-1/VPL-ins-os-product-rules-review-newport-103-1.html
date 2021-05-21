@@ -1,0 +1,18 @@
+<div class="ins-os-product-rules-review-wrapper nds-p-around--small" ng-controller="insOsProductRulesReviewCtrl" ng-if="control.vlcSI[control.itemsKey]" ng-init="initProductRulesReview(control)">
+    <div class="ins-os-product-rules-review-container">
+        <p>Thank You!  Your application has been submitted to our underwriting department for review.  The underwriting will be evaluating the following areas.</p>
+        <div class="ins-os-product-rules-review-card">
+            <div class="nds-size--1-of-1 nds-m-bottom--medium">
+                <h3><strong>Underwriting Evaluation</strong></h3>
+            </div>
+            <div class="nds-grid nds-m-bottom--medium ins-os-product-rules-review-rule" ng-repeat="(key,value) in control.vlcSI[control.itemsKey][0]">
+                <div class="nds-max-small-size--1-of-6 nds-size--1-of-12 nds-m-top--x-small ins-os-product-rules-review-rule-number"><span>{{$index + 1}}</span></div>
+                <div class="nds-max-small-size--5-of-6 nds-size--11-of-12 ins-os-product-rules-review-rule-details">
+                    <h4 class="nds-m-bottom--xx-small">{{value[0].ruleDetails['requirement name']}}</h4>
+                    <p class="nds-m-bottom--none">{{value[0].ruleDetails['message']}}</p>
+                </div>
+            </div>
+        </div>
+        <p>We look forward to serving you as your insurance needs evolve. Please contact us at <a href="https://www.vlocity.com/" target="_blank"><strong>www.vlocity.com</strong></a>, via email at <a href="mailto:customerservice@vlocity.com"><strong>customerservice@vlocity.com</strong></a> or or via phone at <a href="tel:18448562489"><strong>888.Vlocity</strong></a> if we can be of assistance.</p>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0Q06A000000PfAKSA0"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "inputMap": {
+                "productId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceProductAdminHandler"
+            },
+            "remoteClass": "InsuranceProductAdminHandler",
+            "remoteMethod": "getProductRequirements",
+            "remoteNSPrefix": "%vlocity_namespace%"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "name": "Insurance Product Rules Requirements Card State",
+            "templateUrl": "ins-product-rules-requirements"
+        }
+    ],
+    "title": "Insurance Product Rules Requirements Card"
+}

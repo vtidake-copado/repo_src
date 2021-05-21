@@ -1,0 +1,111 @@
+{
+    "AccountId": "0016A000006eGQqQAM",
+    "ContextId": null,
+    "autos": {
+        "auto": {
+            "autoCondition": null,
+            "autoGaragePostalCode": null,
+            "autoInstanceKey": null,
+            "autoMake": null,
+            "autoMakeName": null,
+            "autoMileage": null,
+            "autoModel": null,
+            "autoModelName": null,
+            "autoTrim": null,
+            "autoTrimName": null,
+            "autoValue": null,
+            "autoValueNumber": null,
+            "autoVehicleType": null,
+            "autoYear": null,
+            "autoYearName": null
+        }
+    },
+    "configure": {
+        "configureProduct": null
+    },
+    "confirmQuote": {
+        "quoteConfirm": null,
+        "underwritingRules": null
+    },
+    "discountAutos": {
+        "discountAuto": {
+            "discAltFuel": null,
+            "discAntiLock": null,
+            "discAntiTheft": null,
+            "discStab": null,
+            "discountAutoInstanceKey": null,
+            "typeAutoDiscount": null
+        }
+    },
+    "discountDriver": {
+        "driverDiscounts": {
+            "discountDriverInstanceKey": null,
+            "driverGPA": null,
+            "driverMilitaryID": null,
+            "driverMiltaryBranch": null,
+            "typeDriverDiscount": null
+        }
+    },
+    "drivers": {
+        "driver": {
+            "driverAge": null,
+            "driverAgeLicensed": null,
+            "driverBirthdate": null,
+            "driverFirstName": null,
+            "driverGender": null,
+            "driverInstanceKey": null,
+            "driverLastName": null,
+            "driverMaritalStatus": null,
+            "driverMiddleName": null
+        }
+    },
+    "insured": {
+        "effectiveDate": null,
+        "insuredAge": null,
+        "insuredAgeLicensed": null,
+        "insuredBirthdate": null,
+        "insuredCity": null,
+        "insuredFirstName": null,
+        "insuredFullName": null,
+        "insuredGender": null,
+        "insuredLastName": null,
+        "insuredMaritalStatus": null,
+        "insuredMiddleName": null,
+        "insuredPostalCode": null,
+        "insuredState": null,
+        "insuredStreet": null
+    },
+    "intro": {
+    },
+    "opportunityId": "0066A000007S21PQAS",
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "CreateQuote": null,
+        "Done": null,
+        "MergeAutoInsuredItems": null,
+        "RALogin": null,
+        "TransformToCreate": null,
+        "autos": null,
+        "configure": null,
+        "confirmQuote": null,
+        "createAccountOppty-PersonalLines": null,
+        "discountAutos": null,
+        "discountDriver": null,
+        "drivers": null,
+        "getRatedProducts": null,
+        "insured": null,
+        "intro": null,
+        "readQuoteConfirmationAuto": null,
+        "referToUnderwriting": null,
+        "setAutosToDiscount": null,
+        "setDriversToDiscount": null,
+        "setPrimaryDriver": null,
+        "transformReferral": null
+    }
+}

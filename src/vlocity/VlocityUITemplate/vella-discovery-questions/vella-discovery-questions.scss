@@ -1,0 +1,38 @@
+@import 'vella-mixins-variables';
+
+.vella-discovery-questions-main-wrapper {
+    background-color: white;
+    padding: 2.25rem 1.5rem 0.5rem 1.5rem;
+
+    .vella-discovery-questions-card {
+        .vella-discovery-questions-actions {
+            .vella-discovery-questions-action {
+                border: none;
+                background-color: transparent;
+                margin: 0 0 2rem 0;
+                padding: 0;
+
+                &:nth-of-type(odd) {
+                    padding-right: 0.5rem;
+                }
+
+                &:nth-of-type(even) {
+                    padding-left: 0.5rem;
+                }
+
+                .vella-discovery-questions-action-display-name {
+                    color: $vella-light-gray;
+                    display: block;
+                    margin-bottom: 0.35rem;
+                }
+
+                .vella-discovery-questions-action-description {
+                    display: block;
+                    line-height: 1.2;
+                    font-weight: 300;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

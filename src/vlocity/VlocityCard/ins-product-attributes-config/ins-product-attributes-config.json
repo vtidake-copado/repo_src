@@ -1,0 +1,145 @@
+{
+    "dataSource": {
+        "type": null,
+        "value": {
+            "resultVar": ""
+        }
+    },
+    "filter": {
+    },
+    "sessionVars": [
+        {
+            "name": "recordType",
+            "val": "Product"
+        }
+    ],
+    "states": [
+        {
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Attribute Name",
+                    "name": "%vlocity_namespace%__AttributeName__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Attribute Code (Unique-Value)",
+                    "name": "%vlocity_namespace%__AttributeUniqueCode__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Label",
+                    "name": "Name",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Category",
+                    "name": "%vlocity_namespace%__CategoryName__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Control",
+                    "name": "%vlocity_namespace%__ValueDataType__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Value",
+                    "name": "%vlocity_namespace%__Value__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Description",
+                    "name": "%vlocity_namespace%__ValueDescription__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Customizable",
+                    "name": "%vlocity_namespace%__IsConfigurable__c",
+                    "type": "boolean"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Hidden",
+                    "name": "%vlocity_namespace%__IsHidden__c",
+                    "type": "boolean"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Group Type",
+                    "name": "%vlocity_namespace%__AttributeGroupType__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Rating",
+                    "name": "%vlocity_namespace%__IsRatingAttribute__c",
+                    "type": "boolean"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Tax and Fee Rating",
+                    "name": "%vlocity_namespace%__IsTaxAndFeeRatingAttribute__c",
+                    "type": "boolean"
+                }
+            ],
+            "name": "Product-Attributes-Config",
+            "templateUrl": "ins-product-attributes-config"
+        }
+    ],
+    "title": "Product Attributes Configuration"
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Answer --></label>
+        <name>vlocity_ins__Answer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment Question --></label>
+        <name>vlocity_ins__AssessmentQuestionId__c</name>
+        <relationshipLabel><!-- Assessment Answers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Template Answer --></label>
+        <name>vlocity_ins__IsTemplateAnswer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question Type --></label>
+        <name>vlocity_ins__QuestionType__c</name>
+    </fields>
+    <fields>
+        <help><!-- The score assigned to this specific response if selected during the Assessment. --></help>
+        <label><!-- Score --></label>
+        <name>vlocity_ins__Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected --></label>
+        <name>vlocity_ins__Selected__c</name>
+    </fields>
+</CustomObjectTranslation>

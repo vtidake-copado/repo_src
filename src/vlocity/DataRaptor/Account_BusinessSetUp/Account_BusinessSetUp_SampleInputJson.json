@@ -1,0 +1,2175 @@
+{
+    "bundleName": "Account_BusinessSetUp",
+    "filesMap": {
+    },
+    "objectList": {
+        "AccountId": "0016A000006eGQqQAM",
+        "AgencyNo": "2131",
+        "BrokerId": "0036A000002E1WFQA0",
+        "BusInfo": {
+            "SICCategory": "Dry Cleaners",
+            "SICCode": "5251",
+            "effectiveDate": "2018-01-18T05:00:00.000Z",
+            "expirationDate": "2019-01-17T05:00:00.000Z"
+        },
+        "Configure": {
+            "ConfigureProduct": [
+                {
+                    "CalculatedPriceData": {
+                        "ID": "1",
+                        "basePremium": 818,
+                        "premAR": 6.9,
+                        "premElectronicMedia": 42.25,
+                        "premEmpFraud": 491.13,
+                        "premEmployeeAuto__premEmployeeAuto": 51,
+                        "premGenLiab__premGenlLiab": "356",
+                        "premRentalCar__premRentalCar": 52,
+                        "premSignage": 30.65,
+                        "premTenantLiability__premTenantLiab": 98
+                    },
+                    "Family": "Commercial Lines",
+                    "Id": "01t6A000000FshIQAS",
+                    "IsConfigurable__c": true,
+                    "IsRecommended__c": false,
+                    "LineOfBusiness__c": "Property & Casualty",
+                    "Name": "Economy Business",
+                    "Price": 1314.25,
+                    "PricingFormula__c": "basePremium + premGenLiab__premGenlLiab + premTenantLiability__premTenantLiab + premSignage + premAR + premValuePapers + premEmpFraud + premRentalCar__premRentalCar + premElectronicMedia + premEmployeeAuto__premEmployeeAuto",
+                    "ProductCode": "bop-ECON",
+                    "RecordTypeName__c": "Product",
+                    "Type__c": "BusinessOwners",
+                    "attributeCategories": {
+                        "records": [
+                            {
+                                "Code__c": "terms",
+                                "Name": "Policy Terms",
+                                "displaySequence": 265,
+                                "id": "a0O6A000000F2dyUAC",
+                                "productAttributes": {
+                                    "records": [
+                                        {
+                                            "attributeId": "a0P6A000000XZ9OUAW",
+                                            "code": "covDeductible",
+                                            "dataType": "currency",
+                                            "disabled": false,
+                                            "displaySequence": -1,
+                                            "filterable": true,
+                                            "hasRules": false,
+                                            "inputType": "dropdown",
+                                            "label": "Deductible",
+                                            "readonly": false,
+                                            "required": false,
+                                            "userValues": 1000,
+                                            "values": [
+                                                {
+                                                    "disabled": false,
+                                                    "id": "0",
+                                                    "label": "$250",
+                                                    "readonly": false,
+                                                    "value": 250
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "1",
+                                                    "label": "$500",
+                                                    "readonly": false,
+                                                    "value": 500
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "2",
+                                                    "label": "$1,000",
+                                                    "readonly": false,
+                                                    "value": 1000
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "3",
+                                                    "label": "$2,500",
+                                                    "readonly": false,
+                                                    "value": 2500
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "4",
+                                                    "label": "$5,000",
+                                                    "readonly": false,
+                                                    "value": 5000
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "5",
+                                                    "label": "$10,000",
+                                                    "readonly": false,
+                                                    "value": 10000
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "6",
+                                                    "label": "$20,000",
+                                                    "readonly": false,
+                                                    "value": 20000
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "attributeId": "a0P6A000000XZ9UUAW",
+                                            "code": "covType",
+                                            "dataType": "text",
+                                            "disabled": false,
+                                            "displaySequence": -1,
+                                            "filterable": true,
+                                            "hasRules": false,
+                                            "inputType": "text",
+                                            "label": "Type",
+                                            "readonly": true,
+                                            "required": false,
+                                            "userValues": "Economy",
+                                            "values": [
+                                                {
+                                                    "disabled": true,
+                                                    "readonly": true
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "totalSize": 2
+                                }
+                            }
+                        ],
+                        "totalSize": 1
+                    },
+                    "childProducts": {
+                        "records": [
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000Fsh3QAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Valuable Papers",
+                                "PricingSource__c": "premValuePapers",
+                                "ProductCode": "bop-VP",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$1,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 1000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$1,000",
+                                                                "readonly": false,
+                                                                "value": 1000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$5,000",
+                                                                "readonly": false,
+                                                                "value": 5000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$10,000",
+                                                                "readonly": false,
+                                                                "value": 10000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$25,000",
+                                                                "readonly": false,
+                                                                "value": 25000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 3,
+                                "isOptional": true,
+                                "isSelected": false,
+                                "pciId": "a2p6A000000YDf2QAG",
+                                "productId": "01t6A000000Fsh3QAC"
+                            },
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000FsgeQAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Tenants Liability",
+                                "Price": 98,
+                                "PricingSource__c": "premTenantLiability__premTenantLiab",
+                                "ProductCode": "bop-TL",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 265,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$100,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 100000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$100,000",
+                                                                "readonly": false,
+                                                                "value": 100000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$250,000",
+                                                                "readonly": false,
+                                                                "value": 250000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": 500000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$1,000,000",
+                                                                "readonly": false,
+                                                                "value": 1000000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 2,
+                                "isOptional": false,
+                                "isSelected": true,
+                                "pciId": "a2p6A000000YDf1QAG",
+                                "productId": "01t6A000000FsgeQAC"
+                            },
+                            {
+                                "Description": "Protect your business's signage from damage and vandalism.",
+                                "Family": "None",
+                                "Id": "01t6A000000FsgoQAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Signage",
+                                "Price": 30.65,
+                                "PricingSource__c": "premSignage",
+                                "ProductCode": "bop-Signage",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$1,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 1000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$1,000",
+                                                                "readonly": false,
+                                                                "value": 1000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$2,500",
+                                                                "readonly": false,
+                                                                "value": 2500
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$5,000",
+                                                                "readonly": false,
+                                                                "value": 5000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$10,000",
+                                                                "readonly": false,
+                                                                "value": 10000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "4",
+                                                                "label": "$25,000",
+                                                                "readonly": false,
+                                                                "value": 25000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 1,
+                                "isOptional": true,
+                                "isSelected": false,
+                                "pciId": "a2p6A000000YDfAQAW",
+                                "productId": "01t6A000000FsgoQAC"
+                            },
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000FsgfQAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Rental Cars",
+                                "Price": 52,
+                                "PricingSource__c": "premRentalCar__premRentalCar",
+                                "ProductCode": "bop-RentCar",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$500,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 500000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": 500000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$1,000,000",
+                                                                "readonly": false,
+                                                                "value": 1000000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$2,000,000",
+                                                                "readonly": false,
+                                                                "value": 2000000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 1,
+                                "isOptional": true,
+                                "isSelected": false,
+                                "pciId": "a2p6A000000YDf0QAG",
+                                "productId": "01t6A000000FsgfQAC"
+                            },
+                            {
+                                "Description": "Protect your business against lawsuits.",
+                                "Id": "01t6A000000FsgZQAS",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "General Liability",
+                                "PricingSource__c": "premiumLiability",
+                                "ProductCode": "bop-GL",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$250,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 250000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$250,000",
+                                                                "readonly": false,
+                                                                "value": 250000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": 500000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$1,000,000",
+                                                                "readonly": false,
+                                                                "value": 1000000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$2,000,000",
+                                                                "readonly": false,
+                                                                "value": 2000000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "4",
+                                                                "label": "$5,000,000",
+                                                                "readonly": false,
+                                                                "value": 5000000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "5",
+                                                                "label": "$100,000",
+                                                                "readonly": false,
+                                                                "value": 100000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 7,
+                                "isOptional": false,
+                                "isSelected": true,
+                                "pciId": "a2p6A000000YDf6QAG",
+                                "productId": "01t6A000000FsgZQAS"
+                            },
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000FsgjQAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "Name": "Employee Fraud",
+                                "Price": 491.13,
+                                "PricingSource__c": "premEmpFraud",
+                                "ProductCode": "bop-EF",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$10,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 10000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$10,000",
+                                                                "readonly": false,
+                                                                "value": 10000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$25,000",
+                                                                "readonly": false,
+                                                                "value": 25000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$50,000",
+                                                                "readonly": false,
+                                                                "value": 50000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$100,000",
+                                                                "readonly": false,
+                                                                "value": 100000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "4",
+                                                                "label": "$250,000",
+                                                                "readonly": false,
+                                                                "value": 250000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "5",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": 500000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "6",
+                                                                "label": "$750,000",
+                                                                "readonly": false,
+                                                                "value": 750000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "7",
+                                                                "label": "$1,000,000",
+                                                                "readonly": false,
+                                                                "value": 1000000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 4,
+                                "isOptional": true,
+                                "isSelected": false,
+                                "pciId": "a2p6A000000YDf3QAG",
+                                "productId": "01t6A000000FsgjQAC"
+                            },
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000FsgtQAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Employee Auto Liability",
+                                "Price": 51,
+                                "PricingSource__c": "premEmployeeAuto__premEmployeeAuto",
+                                "ProductCode": "bop-EmpAuto",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$500,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 500000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": 500000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$1,000,000",
+                                                                "readonly": false,
+                                                                "value": 1000000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$2,000,000",
+                                                                "readonly": false,
+                                                                "value": 2000000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 9,
+                                "isOptional": true,
+                                "isSelected": false,
+                                "pciId": "a2p6A000000YDf8QAG",
+                                "productId": "01t6A000000FsgtQAC"
+                            },
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000Fsh8QAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Electronic Media",
+                                "Price": 42.25,
+                                "PricingSource__c": "premElectronicMedia",
+                                "ProductCode": "bop-EM",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 265,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$5,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 5000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$5,000",
+                                                                "readonly": false,
+                                                                "value": 5000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$10,000",
+                                                                "readonly": false,
+                                                                "value": 10000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$25,000",
+                                                                "readonly": false,
+                                                                "value": 25000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 5,
+                                "isOptional": false,
+                                "isSelected": true,
+                                "pciId": "a2p6A000000YDf4QAG",
+                                "productId": "01t6A000000Fsh8QAC"
+                            },
+                            {
+                                "Description": "Protect the property owned by your business.",
+                                "Id": "01t6A000000FsgUQAS",
+                                "ImageId": "/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=0686A000000lnkHQAQ",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Business Property",
+                                "Price": 818,
+                                "PricingSource__c": "basePremium",
+                                "ProductCode": "bop-BP",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 265,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$10,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 10000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$10,000",
+                                                                "readonly": false,
+                                                                "value": 10000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$25,000",
+                                                                "readonly": false,
+                                                                "value": 25000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$50,000",
+                                                                "readonly": false,
+                                                                "value": 50000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$100,000",
+                                                                "readonly": false,
+                                                                "value": 100000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "4",
+                                                                "label": "$250,000",
+                                                                "readonly": false,
+                                                                "value": 250000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "5",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": 500000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 10,
+                                "isOptional": false,
+                                "isSelected": true,
+                                "pciId": "a2p6A000000YDf9QAG",
+                                "productId": "01t6A000000FsgUQAS"
+                            },
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000FsgyQAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Accounts Receivable",
+                                "Price": 6.9,
+                                "PricingSource__c": "premAR",
+                                "ProductCode": "bop-AR",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$1,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 1000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$1,000",
+                                                                "readonly": false,
+                                                                "value": 1000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$5,000",
+                                                                "readonly": false,
+                                                                "value": 5000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$25,000",
+                                                                "readonly": false,
+                                                                "value": 25000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$50,000",
+                                                                "readonly": false,
+                                                                "value": 50000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "4",
+                                                                "label": "$100,000",
+                                                                "readonly": false,
+                                                                "value": 100000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 6,
+                                "isOptional": true,
+                                "isSelected": false,
+                                "pciId": "a2p6A000000YDf5QAG",
+                                "productId": "01t6A000000FsgyQAC"
+                            }
+                        ],
+                        "totalSize": 10
+                    },
+                    "displaySequence": -1,
+                    "originalIndex": 0,
+                    "productId": "01t6A000000FshIQAS",
+                    "vlcSelected": true
+                }
+            ],
+            "QuoteOrIssue": "policy"
+        },
+        "Context": "Account",
+        "ContextId": "0016A000006eGQq",
+        "ISOClass": 3,
+        "Policyholder": {
+            "Birthdate": "1981-07-18",
+            "City": "San Francisco",
+            "Country": "US",
+            "Email": "dlq@vlocity.com",
+            "FirstName": "Sophia",
+            "FullName": "Sophia Fournier",
+            "Gender": "Female",
+            "LastName": "Fournier",
+            "Phone": "(603) 801-2666",
+            "PostalCode": "94105",
+            "Salutation": "Ms.",
+            "State": "CA",
+            "Street": "50 Fremont St"
+        },
+        "Producer": {
+            "producerEmail": "dlq@vlocity.com",
+            "producerName": "Larry Sullivan",
+            "producerNumber": "98762",
+            "producerPhone": "(415) 789-8474"
+        },
+        "PropertyInfo": {
+            "OwnType": "sole",
+            "ageBuilding": 18,
+            "ageBusiness": 16,
+            "agePlumbing": 18,
+            "ageRoof": 15,
+            "ageWiring": 18,
+            "bldgAlarm": "none",
+            "bldgConstruction": "frame",
+            "bldgSprinklered": "Y",
+            "busEmployees": 245,
+            "busHours": 8,
+            "locationBuilding": "standalone",
+            "respParkingLot": "no",
+            "yearBuliding": 2000,
+            "yearFounded": 2002,
+            "yearPlumbing": 2000,
+            "yearRoof": 2003,
+            "yearWiring": 2000
+        },
+        "SelectProduct": {
+            "ProductSelection": [
+                {
+                    "CalculatedPriceData": {
+                        "ID": "1",
+                        "basePremium": 818,
+                        "premAR": 6.9,
+                        "premElectronicMedia": 42.25,
+                        "premEmpFraud": 491.13,
+                        "premEmployeeAuto__premEmployeeAuto": 51,
+                        "premGenLiab__premGenlLiab": "356",
+                        "premRentalCar__premRentalCar": 52,
+                        "premSignage": 30.65,
+                        "premTenantLiability__premTenantLiab": 98
+                    },
+                    "Family": "Commercial Lines",
+                    "Id": "01t6A000000FshIQAS",
+                    "IsConfigurable__c": true,
+                    "IsRecommended__c": false,
+                    "LineOfBusiness__c": "Property & Casualty",
+                    "Name": "Economy Business",
+                    "Price": 1314.25,
+                    "PricingFormula__c": "basePremium + premGenLiab__premGenlLiab + premTenantLiability__premTenantLiab + premSignage + premAR + premValuePapers + premEmpFraud + premRentalCar__premRentalCar + premElectronicMedia + premEmployeeAuto__premEmployeeAuto",
+                    "ProductCode": "bop-ECON",
+                    "RecordTypeName__c": "Product",
+                    "Type__c": "BusinessOwners",
+                    "attributeCategories": {
+                        "records": [
+                            {
+                                "Code__c": "terms",
+                                "Name": "Policy Terms",
+                                "displaySequence": 265,
+                                "id": "a0O6A000000F2dyUAC",
+                                "productAttributes": {
+                                    "records": [
+                                        {
+                                            "attributeId": "a0P6A000000XZ9OUAW",
+                                            "code": "covDeductible",
+                                            "dataType": "currency",
+                                            "disabled": false,
+                                            "displaySequence": -1,
+                                            "filterable": true,
+                                            "hasRules": false,
+                                            "inputType": "dropdown",
+                                            "label": "Deductible",
+                                            "readonly": false,
+                                            "required": false,
+                                            "userValues": 1000,
+                                            "values": [
+                                                {
+                                                    "disabled": false,
+                                                    "id": "0",
+                                                    "label": "$250",
+                                                    "readonly": false,
+                                                    "value": 250
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "1",
+                                                    "label": "$500",
+                                                    "readonly": false,
+                                                    "value": 500
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "2",
+                                                    "label": "$1,000",
+                                                    "readonly": false,
+                                                    "value": 1000
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "3",
+                                                    "label": "$2,500",
+                                                    "readonly": false,
+                                                    "value": 2500
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "4",
+                                                    "label": "$5,000",
+                                                    "readonly": false,
+                                                    "value": 5000
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "5",
+                                                    "label": "$10,000",
+                                                    "readonly": false,
+                                                    "value": 10000
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "6",
+                                                    "label": "$20,000",
+                                                    "readonly": false,
+                                                    "value": 20000
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "attributeId": "a0P6A000000XZ9UUAW",
+                                            "code": "covType",
+                                            "dataType": "text",
+                                            "disabled": false,
+                                            "displaySequence": -1,
+                                            "filterable": true,
+                                            "hasRules": false,
+                                            "inputType": "text",
+                                            "label": "Type",
+                                            "readonly": true,
+                                            "required": false,
+                                            "userValues": "Economy",
+                                            "values": [
+                                                {
+                                                    "disabled": true,
+                                                    "readonly": true
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "totalSize": 2
+                                }
+                            }
+                        ],
+                        "totalSize": 1
+                    },
+                    "childProducts": {
+                        "records": [
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000Fsh3QAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Valuable Papers",
+                                "PricingSource__c": "premValuePapers",
+                                "ProductCode": "bop-VP",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$1,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 1000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$1,000",
+                                                                "readonly": false,
+                                                                "value": 1000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$5,000",
+                                                                "readonly": false,
+                                                                "value": 5000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$10,000",
+                                                                "readonly": false,
+                                                                "value": 10000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$25,000",
+                                                                "readonly": false,
+                                                                "value": 25000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 3,
+                                "isOptional": true,
+                                "isSelected": false,
+                                "pciId": "a2p6A000000YDf2QAG",
+                                "productId": "01t6A000000Fsh3QAC"
+                            },
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000FsgeQAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Tenants Liability",
+                                "Price": 98,
+                                "PricingSource__c": "premTenantLiability__premTenantLiab",
+                                "ProductCode": "bop-TL",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 265,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$100,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 100000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$100,000",
+                                                                "readonly": false,
+                                                                "value": 100000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$250,000",
+                                                                "readonly": false,
+                                                                "value": 250000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": 500000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$1,000,000",
+                                                                "readonly": false,
+                                                                "value": 1000000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 2,
+                                "isOptional": false,
+                                "isSelected": true,
+                                "pciId": "a2p6A000000YDf1QAG",
+                                "productId": "01t6A000000FsgeQAC"
+                            },
+                            {
+                                "Description": "Protect your business's signage from damage and vandalism.",
+                                "Family": "None",
+                                "Id": "01t6A000000FsgoQAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Signage",
+                                "Price": 30.65,
+                                "PricingSource__c": "premSignage",
+                                "ProductCode": "bop-Signage",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$1,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 1000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$1,000",
+                                                                "readonly": false,
+                                                                "value": 1000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$2,500",
+                                                                "readonly": false,
+                                                                "value": 2500
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$5,000",
+                                                                "readonly": false,
+                                                                "value": 5000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$10,000",
+                                                                "readonly": false,
+                                                                "value": 10000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "4",
+                                                                "label": "$25,000",
+                                                                "readonly": false,
+                                                                "value": 25000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 1,
+                                "isOptional": true,
+                                "isSelected": false,
+                                "pciId": "a2p6A000000YDfAQAW",
+                                "productId": "01t6A000000FsgoQAC"
+                            },
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000FsgfQAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Rental Cars",
+                                "Price": 52,
+                                "PricingSource__c": "premRentalCar__premRentalCar",
+                                "ProductCode": "bop-RentCar",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$500,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 500000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": 500000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$1,000,000",
+                                                                "readonly": false,
+                                                                "value": 1000000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$2,000,000",
+                                                                "readonly": false,
+                                                                "value": 2000000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 1,
+                                "isOptional": true,
+                                "isSelected": false,
+                                "pciId": "a2p6A000000YDf0QAG",
+                                "productId": "01t6A000000FsgfQAC"
+                            },
+                            {
+                                "Description": "Protect your business against lawsuits.",
+                                "Id": "01t6A000000FsgZQAS",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "General Liability",
+                                "PricingSource__c": "premiumLiability",
+                                "ProductCode": "bop-GL",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$250,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 250000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$250,000",
+                                                                "readonly": false,
+                                                                "value": 250000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": 500000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$1,000,000",
+                                                                "readonly": false,
+                                                                "value": 1000000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$2,000,000",
+                                                                "readonly": false,
+                                                                "value": 2000000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "4",
+                                                                "label": "$5,000,000",
+                                                                "readonly": false,
+                                                                "value": 5000000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "5",
+                                                                "label": "$100,000",
+                                                                "readonly": false,
+                                                                "value": 100000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 7,
+                                "isOptional": false,
+                                "isSelected": true,
+                                "pciId": "a2p6A000000YDf6QAG",
+                                "productId": "01t6A000000FsgZQAS"
+                            },
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000FsgjQAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "Name": "Employee Fraud",
+                                "Price": 491.13,
+                                "PricingSource__c": "premEmpFraud",
+                                "ProductCode": "bop-EF",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$10,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 10000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$10,000",
+                                                                "readonly": false,
+                                                                "value": 10000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$25,000",
+                                                                "readonly": false,
+                                                                "value": 25000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$50,000",
+                                                                "readonly": false,
+                                                                "value": 50000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$100,000",
+                                                                "readonly": false,
+                                                                "value": 100000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "4",
+                                                                "label": "$250,000",
+                                                                "readonly": false,
+                                                                "value": 250000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "5",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": 500000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "6",
+                                                                "label": "$750,000",
+                                                                "readonly": false,
+                                                                "value": 750000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "7",
+                                                                "label": "$1,000,000",
+                                                                "readonly": false,
+                                                                "value": 1000000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 4,
+                                "isOptional": true,
+                                "isSelected": false,
+                                "pciId": "a2p6A000000YDf3QAG",
+                                "productId": "01t6A000000FsgjQAC"
+                            },
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000FsgtQAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Employee Auto Liability",
+                                "Price": 51,
+                                "PricingSource__c": "premEmployeeAuto__premEmployeeAuto",
+                                "ProductCode": "bop-EmpAuto",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$500,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 500000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": 500000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$1,000,000",
+                                                                "readonly": false,
+                                                                "value": 1000000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$2,000,000",
+                                                                "readonly": false,
+                                                                "value": 2000000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 9,
+                                "isOptional": true,
+                                "isSelected": false,
+                                "pciId": "a2p6A000000YDf8QAG",
+                                "productId": "01t6A000000FsgtQAC"
+                            },
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000Fsh8QAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Electronic Media",
+                                "Price": 42.25,
+                                "PricingSource__c": "premElectronicMedia",
+                                "ProductCode": "bop-EM",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 265,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$5,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 5000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$5,000",
+                                                                "readonly": false,
+                                                                "value": 5000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$10,000",
+                                                                "readonly": false,
+                                                                "value": 10000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$25,000",
+                                                                "readonly": false,
+                                                                "value": 25000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 5,
+                                "isOptional": false,
+                                "isSelected": true,
+                                "pciId": "a2p6A000000YDf4QAG",
+                                "productId": "01t6A000000Fsh8QAC"
+                            },
+                            {
+                                "Description": "Protect the property owned by your business.",
+                                "Id": "01t6A000000FsgUQAS",
+                                "ImageId": "/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=0686A000000lnkHQAQ",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Business Property",
+                                "Price": 818,
+                                "PricingSource__c": "basePremium",
+                                "ProductCode": "bop-BP",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 265,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$10,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 10000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$10,000",
+                                                                "readonly": false,
+                                                                "value": 10000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$25,000",
+                                                                "readonly": false,
+                                                                "value": 25000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$50,000",
+                                                                "readonly": false,
+                                                                "value": 50000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$100,000",
+                                                                "readonly": false,
+                                                                "value": 100000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "4",
+                                                                "label": "$250,000",
+                                                                "readonly": false,
+                                                                "value": 250000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "5",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": 500000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 10,
+                                "isOptional": false,
+                                "isSelected": true,
+                                "pciId": "a2p6A000000YDf9QAG",
+                                "productId": "01t6A000000FsgUQAS"
+                            },
+                            {
+                                "Family": "None",
+                                "Id": "01t6A000000FsgyQAC",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "Accounts Receivable",
+                                "Price": 6.9,
+                                "PricingSource__c": "premAR",
+                                "ProductCode": "bop-AR",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Type__c": "BusinessOwners",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0O6A000000F2dyUAC",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0P6A000000XZ9RUAW",
+                                                        "code": "LIMIT2",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": -1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "label": "Limit",
+                                                        "labelAndValue": {
+                                                            "label": "Limit",
+                                                            "valueLabel": "$1,000"
+                                                        },
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 1000,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$1,000",
+                                                                "readonly": false,
+                                                                "value": 1000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$5,000",
+                                                                "readonly": false,
+                                                                "value": 5000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "$25,000",
+                                                                "readonly": false,
+                                                                "value": 25000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "$50,000",
+                                                                "readonly": false,
+                                                                "value": 50000
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "4",
+                                                                "label": "$100,000",
+                                                                "readonly": false,
+                                                                "value": 100000
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "displaySequence": 6,
+                                "isOptional": true,
+                                "isSelected": false,
+                                "pciId": "a2p6A000000YDf5QAG",
+                                "productId": "01t6A000000FsgyQAC"
+                            }
+                        ],
+                        "totalSize": 10
+                    },
+                    "displaySequence": -1,
+                    "originalIndex": 0,
+                    "productId": "01t6A000000FshIQAS",
+                    "vlcSelected": true
+                }
+            ]
+        },
+        "contextId": "0016A000006eGQq",
+        "id": "a2C6A0000009tcbUAA",
+        "layout": "lightning",
+        "newAccount": {
+            "BankAccountNumber": null,
+            "BankAccountRoutingNumber": null,
+            "BankAccountType": null,
+            "CardCCV": null,
+            "CardExpirationMonth": null,
+            "CardExpirationYear": null,
+            "CardNumber": null,
+            "CardType": null,
+            "DifferentFromBilling": false,
+            "MethodHolderName": "Brian Owen",
+            "MethodName": "OwensAcct",
+            "MethodType": null,
+            "authorizedContact": {
+                "authEmail": "dlq@vlocity.com",
+                "authFirstName": "Brian",
+                "authLastName": "Owen",
+                "authMobilePhone": "(603) 801-2640",
+                "authOfficePhone": "(603) 801-2640",
+                "authSalutation": "Mr.",
+                "authTitle": "Director"
+            },
+            "billDelivery": "Email",
+            "billMethod": "Direct Bill",
+            "billingContact": {
+                "billingEmail": null,
+                "billingFirstName": "Brian",
+                "billingLastName": "Owens",
+                "billingMobile": null,
+                "billingPhone": null,
+                "billingSalutation": "Mr.",
+                "billingTitle": null
+            },
+            "newAccountName": "ABC Company",
+            "newAccountSite": "ABC Site",
+            "newBillingAddress-Block": {
+                "newBillingAddress": null,
+                "newBillingCity": null,
+                "newBillingCountry": null,
+                "newBillingPostalCode": null,
+                "newBillingState": null,
+                "newBillingStreet": null
+            },
+            "newMainFax": null,
+            "newMainPhone": "(603) 801-2640",
+            "newShippingAddress-Block": null,
+            "newTaxId": "11-9999999",
+            "newWebSite": "https://www.abc.com",
+            "statementFrequency": "Monthly"
+        },
+        "newAccount2": {
+            "authEmail2": null,
+            "authFirstName2": null,
+            "authLastName2": null,
+            "authMobilePhone2": null,
+            "authOfficePhone2": null,
+            "authSalutation2": null,
+            "authTitle2": null,
+            "newAccountName2": null,
+            "newAddress2-Block": {
+                "newAddress2": null,
+                "newCity2": null,
+                "newCountry2": null,
+                "newPostalCode2": null,
+                "newState2": null,
+                "newStreet2": null
+            },
+            "newWebSite2": null
+        },
+        "newShippingCity": "",
+        "newShippingCountry": "",
+        "newShippingPostalCode": "",
+        "newShippingState": "",
+        "newShippingStreet": "",
+        "testContextId": "0016A000006eGQq",
+        "timeStamp": "2018-01-18T22:26:34.299Z",
+        "userCurrencyCode": "USD",
+        "userId": "0056A000000IFFmQAO",
+        "userName": "dlq@ins.ibo",
+        "userProfile": "System Administrator",
+        "userTimeZone": -480,
+        "vlcPersistentComponent": {
+        }
+    }
+}

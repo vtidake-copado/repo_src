@@ -1,0 +1,10 @@
+Dear {!Contact.Name}, 
+
+Road Runner Industries recently received a call from an employee requesting authorization to make changes to your account. If this was not one of your employees, please contact our fraud department as soon as possible. 
+
+In order to add an authorized user to your account, please complete the attached form and remit it to our Customer Service department at your earliest convenience. 
+
+Account security is a top concern and we appreciate your patience. 
+
+Regards, 
+{!User.FirstName}

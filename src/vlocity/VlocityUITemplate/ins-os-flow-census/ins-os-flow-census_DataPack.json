@@ -1,0 +1,18 @@
+{
+    "%vlocity_namespace%__Author__c": "Vlocity_Flow",
+    "%vlocity_namespace%__CustomJavascript__c": "ins-os-flow-census.js",
+    "%vlocity_namespace%__Definition__c": "",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__DisplayOn__c": "",
+    "%vlocity_namespace%__ExternalID__c": "ins-os-flow-census/5/Vlocity_Flow/1528775060622",
+    "%vlocity_namespace%__HTML__c": "ins-os-flow-census.html",
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleJson__c": "",
+    "%vlocity_namespace%__Sass__c": "ins-os-flow-census.scss",
+    "%vlocity_namespace%__Type__c": "component",
+    "%vlocity_namespace%__Version__c": 5,
+    "Name": "ins-os-flow-census",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUITemplate__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUITemplate__c/ins-os-flow-census"
+}

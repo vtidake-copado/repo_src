@@ -1,0 +1,1149 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Prescription-Drugs_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "SG_RetailDrugsT1_INN": "$15 Copay",
+        "SG_RetailDrugsT1_OON": "Not Covered",
+        "SG_RetailDrugsT2_INN": "$35 Copay",
+        "SG_RetailDrugsT2_OON": "Not Covered",
+        "SG_RetailDrugsT3_INN": "$50 Copay",
+        "SG_RetailDrugsT3_OON": "Not Covered",
+        "SG_RetailDrugsT4_INN": "$75 Copay After Ded",
+        "SG_RetailDrugsT4_OON": "Not Covered",
+        "SG_RetailDrugsT5_INN": "Not Covered",
+        "SG_RetailDrugsT5_OON": "Not Covered",
+        "SG_mailOrderDrugsT1_INN": "$37.50 Copay",
+        "SG_mailOrderDrugsT1_OON": "Not Covered",
+        "SG_mailOrderDrugsT2_INN": "$87.50 Copay",
+        "SG_mailOrderDrugsT2_OON": "Not Covered",
+        "SG_mailOrderDrugsT3_INN": "$125 Copay",
+        "SG_mailOrderDrugsT3_OON": "Not Covered",
+        "SG_mailOrderDrugsT4_INN": "$187.50 Copay",
+        "SG_mailOrderDrugsT4_OON": "Not Covered",
+        "SG_mailOrderDrugsT5_INN": "$1,250 Copay",
+        "SG_mailOrderDrugsT5_OON": "Not Covered"
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "records": [
+            {
+                "Code__c": "SG_Medical",
+                "Name": "SG Medical",
+                "displaySequence": 2000,
+                "id": "a0B6A0000089LUpUAM",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzYUAQ",
+                            "cloneable": true,
+                            "code": "SG_mailOrderDrugsT1_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 35,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Mail Order Drugs–Tier 1 (90-Day Supply)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$37.50 Copay",
+                                    "readonly": false,
+                                    "value": "$37.50 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$62.50 Copay",
+                                    "readonly": false,
+                                    "value": "$62.50 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzZUAQ",
+                            "cloneable": true,
+                            "code": "SG_mailOrderDrugsT1_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 36,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Mail Order Drugs–Tier 1 (90-Day Supply)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzaUAA",
+                            "cloneable": true,
+                            "code": "SG_mailOrderDrugsT2_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 37,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Mail Order Drugs–Tier 2 (90-Day Supply)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$87.50 Copay",
+                                    "readonly": false,
+                                    "value": "$87.50 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$125 Copay",
+                                    "readonly": false,
+                                    "value": "$125 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzbUAA",
+                            "cloneable": true,
+                            "code": "SG_mailOrderDrugsT2_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 38,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Mail Order Drugs–Tier 2 (90-Day Supply)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzcUAA",
+                            "cloneable": true,
+                            "code": "SG_mailOrderDrugsT3_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 39,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Mail Order Drugs–Tier 3 (90-Day Supply)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$125 Copay",
+                                    "readonly": false,
+                                    "value": "$125 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$187.50 Copay",
+                                    "readonly": false,
+                                    "value": "$187.50 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzdUAA",
+                            "cloneable": true,
+                            "code": "SG_mailOrderDrugsT3_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 40,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Mail Order Drugs–Tier 3 (90-Day Supply)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzeUAA",
+                            "cloneable": true,
+                            "code": "SG_mailOrderDrugsT4_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 41,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Mail Order Drugs–Tier 4 (90-Day Supply)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$187.50 Copay",
+                                    "readonly": false,
+                                    "value": "$187.50 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$375.00 Copay",
+                                    "readonly": false,
+                                    "value": "$375.00 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzfUAA",
+                            "cloneable": true,
+                            "code": "SG_mailOrderDrugsT4_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 42,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Mail Order Drugs–Tier 4 (90-Day Supply)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzgUAA",
+                            "cloneable": true,
+                            "code": "SG_mailOrderDrugsT5_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 43,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Mail Order Drugs–Tier 5 (90-Day Supply)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$1,250 Copay",
+                                    "readonly": false,
+                                    "value": "$1,250 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$1,875 Copay",
+                                    "readonly": false,
+                                    "value": "$1,875 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzhUAA",
+                            "cloneable": true,
+                            "code": "SG_mailOrderDrugsT5_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 44,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Mail Order Drugs–Tier 5 (90-Day Supply)",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqziUAA",
+                            "cloneable": true,
+                            "code": "SG_RetailDrugsT1_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 45,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Retail Drugs–Tier 1",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$15 Copay",
+                                    "readonly": false,
+                                    "value": "$15 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$25 Copay",
+                                    "readonly": false,
+                                    "value": "$25 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzjUAA",
+                            "cloneable": true,
+                            "code": "SG_RetailDrugsT1_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 46,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Retail Drugs–Tier 1",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "$55 Copay",
+                                    "readonly": false,
+                                    "value": "$55 Copay"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzkUAA",
+                            "cloneable": true,
+                            "code": "SG_RetailDrugsT2_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 47,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Retail Drugs–Tier 2",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$35 Copay",
+                                    "readonly": false,
+                                    "value": "$35 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$50 Copay",
+                                    "readonly": false,
+                                    "value": "$50 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzlUAA",
+                            "cloneable": true,
+                            "code": "SG_RetailDrugsT2_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 48,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Retail Drugs–Tier 2",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "$75 Copay",
+                                    "readonly": false,
+                                    "value": "$75 Copay"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzmUAA",
+                            "cloneable": true,
+                            "code": "SG_RetailDrugsT3_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 49,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Retail Drugs–Tier 3",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$50 Copay",
+                                    "readonly": false,
+                                    "value": "$50 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "$75 Copay",
+                                    "readonly": false,
+                                    "value": "$75 Copay"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqznUAA",
+                            "cloneable": true,
+                            "code": "SG_RetailDrugsT3_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 50,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Retail Drugs–Tier 3",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "$95 Copay",
+                                    "readonly": false,
+                                    "value": "$95 Copay"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzoUAA",
+                            "cloneable": true,
+                            "code": "SG_RetailDrugsT4_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 51,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Retail Drugs–Tier 4",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$75 Copay After Ded",
+                                    "readonly": false,
+                                    "value": "$75 Copay After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$150 Copay After Ded",
+                                    "readonly": false,
+                                    "value": "$150 Copay After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzpUAA",
+                            "cloneable": true,
+                            "code": "SG_RetailDrugsT4_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 52,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Retail Drugs–Tier 4",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$175 Copay After Ded",
+                                    "readonly": false,
+                                    "value": "$175 Copay After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzqUAA",
+                            "cloneable": true,
+                            "code": "SG_RetailDrugsT5_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 53,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Retail Drugs–Tier 5",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$500 Copay After Ded",
+                                    "readonly": false,
+                                    "value": "$500 Copay After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "$750 Copay After Ded",
+                                    "readonly": false,
+                                    "value": "$750 Copay After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "4",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzrUAA",
+                            "cloneable": true,
+                            "code": "SG_RetailDrugsT5_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 54,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Retail Drugs–Tier 5",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "4",
+                                    "label": "$525 Copay After Ded",
+                                    "readonly": false,
+                                    "value": "$525 Copay After Ded"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 20
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__Availability__c": "",
+    "%vlocity_namespace%__CarrierId__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2019-01-01",
+    "%vlocity_namespace%__EligibilityCriteriaComments__c": "",
+    "%vlocity_namespace%__EligibilityCriteria__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__EnrollmentStatus__c": "",
+    "%vlocity_namespace%__FormularyId__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2019-01-01T08:00:00.000Z",
+    "%vlocity_namespace%__GlobalKey__c": "fa239ee1-52c1-0a4b-baaa-a62ac2260671",
+    "%vlocity_namespace%__HasCustomAttributesProcess__c": false,
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__InstanceKeyFormula__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__IsRecommended__c": false,
+    "%vlocity_namespace%__LastPublishDate__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "",
+    "%vlocity_namespace%__LineOfBusiness__c": "",
+    "%vlocity_namespace%__MarketSegment__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PricingFormula__c": "",
+    "%vlocity_namespace%__PricingSource__c": "",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__ProviderNetworkId__c": "",
+    "%vlocity_namespace%__RateBandId__c": "",
+    "%vlocity_namespace%__RatingCalcProcedureName__c": "",
+    "%vlocity_namespace%__RatingProcedureType__c": "",
+    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+    "%vlocity_namespace%__ReplacementProductId__c": "",
+    "%vlocity_namespace%__ReserveProcessingMode__c": "",
+    "%vlocity_namespace%__Scope__c": "",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2019-01-01T08:00:00.000Z",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__Term__c": "",
+    "%vlocity_namespace%__Tier__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TotalCoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__TotalInsuredFormula__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "",
+    "CanUseQuantitySchedule": true,
+    "CanUseRevenueSchedule": true,
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "Image__c": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Prescription Drugs",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "Prescription-Drugs_PricebookEntries.json",
+    "ProductCode": "SG_Prescript_drugs",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "CoverageSpec",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/CoverageSpec",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": "",
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Prescription Drugs",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "fa239ee1-52c1-0a4b-baaa-a62ac2260671",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "fa239ee1-52c1-0a4b-baaa-a62ac2260671",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/fa239ee1-52c1-0a4b-baaa-a62ac2260671",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "SG_Prescript_drugs",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/fa239ee1-52c1-0a4b-baaa-a62ac2260671"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/fa239ee1-52c1-0a4b-baaa-a62ac2260671"
+}

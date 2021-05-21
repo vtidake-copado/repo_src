@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Asset Class --></label>
+        <name>vlocity_ins__AssetClass__c</name>
+        <picklistValues>
+            <masterLabel>Bond</masterLabel>
+            <translation><!-- Bond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Money Market</masterLabel>
+            <translation><!-- Money Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stock</masterLabel>
+            <translation><!-- Stock --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Asset Sub Class --></label>
+        <name>vlocity_ins__AssetSubClass__c</name>
+        <picklistValues>
+            <masterLabel>Domestic</masterLabel>
+            <translation><!-- Domestic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large</masterLabel>
+            <translation><!-- Large --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small</masterLabel>
+            <translation><!-- Small --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved --></label>
+        <name>vlocity_ins__IsApproved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exchange --></label>
+        <name>vlocity_ins__MarketIdentifierCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- As of Date --></label>
+        <name>vlocity_ins__PriceAsOfDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>vlocity_ins__Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating --></label>
+        <name>vlocity_ins__Rating__c</name>
+        <picklistValues>
+            <masterLabel>Buy</masterLabel>
+            <translation><!-- Buy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hold</masterLabel>
+            <translation><!-- Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sell</masterLabel>
+            <translation><!-- Sell --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Security Identifier Type --></label>
+        <name>vlocity_ins__SecurityIdentifierType__c</name>
+        <picklistValues>
+            <masterLabel>CUSIP</masterLabel>
+            <translation><!-- CUSIP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISIN</masterLabel>
+            <translation><!-- ISIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIC</masterLabel>
+            <translation><!-- RIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SEDOL</masterLabel>
+            <translation><!-- SEDOL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Security Identifier --></label>
+        <name>vlocity_ins__SecurityIdentifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security Type --></label>
+        <name>vlocity_ins__SecurityType__c</name>
+        <picklistValues>
+            <masterLabel>Debt</masterLabel>
+            <translation><!-- Debt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mutual Fund</masterLabel>
+            <translation><!-- Mutual Fund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Option</masterLabel>
+            <translation><!-- Option --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stock</masterLabel>
+            <translation><!-- Stock --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Symbol --></label>
+        <name>vlocity_ins__TickerSymbol__c</name>
+    </fields>
+</CustomObjectTranslation>

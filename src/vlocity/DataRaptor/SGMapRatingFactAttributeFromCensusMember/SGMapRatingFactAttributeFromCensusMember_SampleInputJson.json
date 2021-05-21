@@ -1,0 +1,208 @@
+{
+    "census": {
+        "%vlocity_namespace%__CensusStatus__c": "Active",
+        "%vlocity_namespace%__CensusType__c": "Quote",
+        "%vlocity_namespace%__CountOfCobra__c": 0,
+        "%vlocity_namespace%__CountOfDeclined__c": 0,
+        "%vlocity_namespace%__CountOfEmployeeOnly__c": 12,
+        "%vlocity_namespace%__CountOfEmployeePlusChild__c": 0,
+        "%vlocity_namespace%__CountOfEmployeePlusFamily__c": 0,
+        "%vlocity_namespace%__CountOfEmployeePlusSpouse__c": 0,
+        "%vlocity_namespace%__CountOfEmployeesPlusDependents__c": 12,
+        "%vlocity_namespace%__CountOfEmployees__c": 12,
+        "%vlocity_namespace%__CountOfFullTime__c": 0,
+        "%vlocity_namespace%__CountOfPartTime__c": 0,
+        "%vlocity_namespace%__DisplayAlert__c": false,
+        "%vlocity_namespace%__EffectiveStartDate__c": "2019-10-29",
+        "%vlocity_namespace%__GroupId__c": "0013k00002dJXkZAAW",
+        "%vlocity_namespace%__SumOfFte__c": 0,
+        "%vlocity_namespace%__TotalEmployeesPlusDependents__c": 12,
+        "CreatedById": "0053k00000AeDCyAAN",
+        "CreatedDate": "2019-10-29T22:20:35.000+0000",
+        "Id": "a1q3k0000012X9WAAU",
+        "IsDeleted": false,
+        "LastModifiedById": "0053k00000AeDCyAAN",
+        "LastModifiedDate": "2019-10-29T22:20:49.000+0000",
+        "LastReferencedDate": "2019-10-29T22:41:56.000+0000",
+        "LastViewedDate": "2019-10-29T22:41:56.000+0000",
+        "Name": "ABC Corp - GGG - 2019-10-29",
+        "RecordTypeId": "0123k000001bO7XAAU",
+        "SystemModstamp": "2019-10-29T22:20:49.000+0000",
+        "attributes": {
+            "type": "%vlocity_namespace%__GroupCensus__c",
+            "url": "/services/data/v47.0/sobjects/%vlocity_namespace%__GroupCensus__c/a1q3k0000012X9WAAU"
+        }
+    },
+    "censusMembers": [
+        {
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SG_empOnlyCount\":\"\",\"SG_empSpouseCount\":\"\",\"SG_empChildCount\":\"\",\"SG_empFamilyCount\":\"\",\"SG_CM_MemberClass\":null,\"SG_CM_IsSpouse\":false,\"SG_CM_Age\":\"\",\"SG_CM_State\":null,\"SG_CM_Gender\":null,\"SG_CM_Smoker\":false,\"SG_CM_IsPrimary\":true}",
+            "%vlocity_namespace%__Birthdate__c": "1951-11-11",
+            "%vlocity_namespace%__CensusId__c": "a1q3k0000012X9WAAU",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "%vlocity_namespace%__SpecProduct2Id__c": "01t3k000005vv4XAAQ",
+            "Id": "a1p3k0000039ETJAA2",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v47.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a1p3k0000039ETJAA2"
+            }
+        },
+        {
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SG_empOnlyCount\":\"\",\"SG_empSpouseCount\":\"\",\"SG_empChildCount\":\"\",\"SG_empFamilyCount\":\"\",\"SG_CM_MemberClass\":null,\"SG_CM_IsSpouse\":false,\"SG_CM_Age\":\"\",\"SG_CM_State\":null,\"SG_CM_Gender\":null,\"SG_CM_Smoker\":false,\"SG_CM_IsPrimary\":true}",
+            "%vlocity_namespace%__Birthdate__c": "1967-12-19",
+            "%vlocity_namespace%__CensusId__c": "a1q3k0000012X9WAAU",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "%vlocity_namespace%__SpecProduct2Id__c": "01t3k000005vv4XAAQ",
+            "Id": "a1p3k0000039ETKAA2",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v47.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a1p3k0000039ETKAA2"
+            }
+        },
+        {
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SG_empOnlyCount\":\"\",\"SG_empSpouseCount\":\"\",\"SG_empChildCount\":\"\",\"SG_empFamilyCount\":\"\",\"SG_CM_MemberClass\":null,\"SG_CM_IsSpouse\":false,\"SG_CM_Age\":\"\",\"SG_CM_State\":null,\"SG_CM_Gender\":null,\"SG_CM_Smoker\":false,\"SG_CM_IsPrimary\":true}",
+            "%vlocity_namespace%__Birthdate__c": "1971-04-21",
+            "%vlocity_namespace%__CensusId__c": "a1q3k0000012X9WAAU",
+            "%vlocity_namespace%__Gender__c": "Female",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": true,
+            "%vlocity_namespace%__SpecProduct2Id__c": "01t3k000005vv4XAAQ",
+            "Id": "a1p3k0000039ETLAA2",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v47.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a1p3k0000039ETLAA2"
+            }
+        },
+        {
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SG_empOnlyCount\":\"\",\"SG_empSpouseCount\":\"\",\"SG_empChildCount\":\"\",\"SG_empFamilyCount\":\"\",\"SG_CM_MemberClass\":null,\"SG_CM_IsSpouse\":false,\"SG_CM_Age\":\"\",\"SG_CM_State\":null,\"SG_CM_Gender\":null,\"SG_CM_Smoker\":false,\"SG_CM_IsPrimary\":true}",
+            "%vlocity_namespace%__Birthdate__c": "1958-03-11",
+            "%vlocity_namespace%__CensusId__c": "a1q3k0000012X9WAAU",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "%vlocity_namespace%__SpecProduct2Id__c": "01t3k000005vv4XAAQ",
+            "Id": "a1p3k0000039ETMAA2",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v47.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a1p3k0000039ETMAA2"
+            }
+        },
+        {
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SG_empOnlyCount\":\"\",\"SG_empSpouseCount\":\"\",\"SG_empChildCount\":\"\",\"SG_empFamilyCount\":\"\",\"SG_CM_MemberClass\":null,\"SG_CM_IsSpouse\":false,\"SG_CM_Age\":\"\",\"SG_CM_State\":null,\"SG_CM_Gender\":null,\"SG_CM_Smoker\":false,\"SG_CM_IsPrimary\":true}",
+            "%vlocity_namespace%__Birthdate__c": "2008-02-21",
+            "%vlocity_namespace%__CensusId__c": "a1q3k0000012X9WAAU",
+            "%vlocity_namespace%__Gender__c": "Female",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "%vlocity_namespace%__SpecProduct2Id__c": "01t3k000005vv4XAAQ",
+            "Id": "a1p3k0000039ETNAA2",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v47.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a1p3k0000039ETNAA2"
+            }
+        },
+        {
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SG_empOnlyCount\":\"\",\"SG_empSpouseCount\":\"\",\"SG_empChildCount\":\"\",\"SG_empFamilyCount\":\"\",\"SG_CM_MemberClass\":null,\"SG_CM_IsSpouse\":false,\"SG_CM_Age\":\"\",\"SG_CM_State\":null,\"SG_CM_Gender\":null,\"SG_CM_Smoker\":false,\"SG_CM_IsPrimary\":true}",
+            "%vlocity_namespace%__Birthdate__c": "1961-11-11",
+            "%vlocity_namespace%__CensusId__c": "a1q3k0000012X9WAAU",
+            "%vlocity_namespace%__Gender__c": "Female",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": true,
+            "%vlocity_namespace%__SpecProduct2Id__c": "01t3k000005vv4XAAQ",
+            "Id": "a1p3k0000039ETOAA2",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v47.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a1p3k0000039ETOAA2"
+            }
+        },
+        {
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SG_empOnlyCount\":\"\",\"SG_empSpouseCount\":\"\",\"SG_empChildCount\":\"\",\"SG_empFamilyCount\":\"\",\"SG_CM_MemberClass\":null,\"SG_CM_IsSpouse\":false,\"SG_CM_Age\":\"\",\"SG_CM_State\":null,\"SG_CM_Gender\":null,\"SG_CM_Smoker\":false,\"SG_CM_IsPrimary\":true}",
+            "%vlocity_namespace%__Birthdate__c": "1966-11-11",
+            "%vlocity_namespace%__CensusId__c": "a1q3k0000012X9WAAU",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "%vlocity_namespace%__SpecProduct2Id__c": "01t3k000005vv4XAAQ",
+            "Id": "a1p3k0000039ETPAA2",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v47.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a1p3k0000039ETPAA2"
+            }
+        },
+        {
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SG_empOnlyCount\":\"\",\"SG_empSpouseCount\":\"\",\"SG_empChildCount\":\"\",\"SG_empFamilyCount\":\"\",\"SG_CM_MemberClass\":null,\"SG_CM_IsSpouse\":false,\"SG_CM_Age\":\"\",\"SG_CM_State\":null,\"SG_CM_Gender\":null,\"SG_CM_Smoker\":false,\"SG_CM_IsPrimary\":true}",
+            "%vlocity_namespace%__Birthdate__c": "2016-10-10",
+            "%vlocity_namespace%__CensusId__c": "a1q3k0000012X9WAAU",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "%vlocity_namespace%__SpecProduct2Id__c": "01t3k000005vv4XAAQ",
+            "Id": "a1p3k0000039ETQAA2",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v47.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a1p3k0000039ETQAA2"
+            }
+        },
+        {
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SG_empOnlyCount\":\"\",\"SG_empSpouseCount\":\"\",\"SG_empChildCount\":\"\",\"SG_empFamilyCount\":\"\",\"SG_CM_MemberClass\":null,\"SG_CM_IsSpouse\":false,\"SG_CM_Age\":\"\",\"SG_CM_State\":null,\"SG_CM_Gender\":null,\"SG_CM_Smoker\":false,\"SG_CM_IsPrimary\":true}",
+            "%vlocity_namespace%__Birthdate__c": "1968-11-12",
+            "%vlocity_namespace%__CensusId__c": "a1q3k0000012X9WAAU",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "%vlocity_namespace%__SpecProduct2Id__c": "01t3k000005vv4XAAQ",
+            "Id": "a1p3k0000039ETRAA2",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v47.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a1p3k0000039ETRAA2"
+            }
+        },
+        {
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SG_empOnlyCount\":\"\",\"SG_empSpouseCount\":\"\",\"SG_empChildCount\":\"\",\"SG_empFamilyCount\":\"\",\"SG_CM_MemberClass\":null,\"SG_CM_IsSpouse\":false,\"SG_CM_Age\":\"\",\"SG_CM_State\":null,\"SG_CM_Gender\":null,\"SG_CM_Smoker\":false,\"SG_CM_IsPrimary\":true}",
+            "%vlocity_namespace%__Birthdate__c": "2015-11-11",
+            "%vlocity_namespace%__CensusId__c": "a1q3k0000012X9WAAU",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "%vlocity_namespace%__SpecProduct2Id__c": "01t3k000005vv4XAAQ",
+            "Id": "a1p3k0000039ETSAA2",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v47.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a1p3k0000039ETSAA2"
+            }
+        },
+        {
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SG_empOnlyCount\":\"\",\"SG_empSpouseCount\":\"\",\"SG_empChildCount\":\"\",\"SG_empFamilyCount\":\"\",\"SG_CM_MemberClass\":null,\"SG_CM_IsSpouse\":false,\"SG_CM_Age\":\"\",\"SG_CM_State\":null,\"SG_CM_Gender\":null,\"SG_CM_Smoker\":false,\"SG_CM_IsPrimary\":true}",
+            "%vlocity_namespace%__Birthdate__c": "2016-11-11",
+            "%vlocity_namespace%__CensusId__c": "a1q3k0000012X9WAAU",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "%vlocity_namespace%__SpecProduct2Id__c": "01t3k000005vv4XAAQ",
+            "Id": "a1p3k0000039ETTAA2",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v47.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a1p3k0000039ETTAA2"
+            }
+        },
+        {
+            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"SG_empOnlyCount\":\"\",\"SG_empSpouseCount\":\"\",\"SG_empChildCount\":\"\",\"SG_empFamilyCount\":\"\",\"SG_CM_MemberClass\":null,\"SG_CM_IsSpouse\":false,\"SG_CM_Age\":\"\",\"SG_CM_State\":null,\"SG_CM_Gender\":null,\"SG_CM_Smoker\":false,\"SG_CM_IsPrimary\":true}",
+            "%vlocity_namespace%__Birthdate__c": "2014-11-11",
+            "%vlocity_namespace%__CensusId__c": "a1q3k0000012X9WAAU",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "%vlocity_namespace%__SpecProduct2Id__c": "01t3k000005vv4XAAQ",
+            "Id": "a1p3k0000039ETUAA2",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v47.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a1p3k0000039ETUAA2"
+            }
+        }
+    ],
+    "groupClasses": [
+    ]
+}

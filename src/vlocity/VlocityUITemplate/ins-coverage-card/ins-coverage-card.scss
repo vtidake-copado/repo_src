@@ -1,0 +1,487 @@
+@import "ins-product-attributes-variables";
+.via-slds{
+    .vloc-theme_icon-error {
+        color: #c23934;
+    }
+
+    .vloc-italic{
+        font-style: italic; 
+    }
+     .vloc-ins-product-rules-container {
+        color: #16325c;
+
+        .vloc-ins-validation-rules{
+            position: absolute; 
+            right: 1.5rem;
+
+            &.vloc-ins-comments{
+                .vloc-ins-icon{
+                    color: #0070D2;
+                }
+            }
+
+            &.vloc-ins-no-comments{
+                .vloc-ins-icon{
+                    color: #c9c7c5;
+                }
+            }
+
+            .vloc-ins-rule-message-tooltip {
+                top: .75rem; 
+                right: -1.3rem; 
+                height: 10rem; 
+                width: 20rem;
+
+                .vloc-comment-text-area {
+                    height: 7.5rem; 
+                }
+            }
+        }
+
+        .vloc-ins-product-rules-heading {
+            font-weight: 400;
+            padding-left: 3.4rem;
+            padding-bottom: 0.5rem;
+        }
+        
+        monaco-editor.validation-rule{
+            height: 5.25rem; 
+            max-height: 5.25rem;
+        }
+        
+        monaco-editor {
+            border-radius: 0.25rem;
+            width: 100%;
+            height: 3.5rem;
+            max-height: 3.5rem;
+            padding: 0;
+            position: absolute;
+
+            > .monaco-editor {
+                border-radius: 0.25rem;
+
+                > .overflow-guard {
+                    border-radius: 0.25rem;
+                    padding: 0.25rem 0;
+
+                    > .monaco-scrollable-element {
+                        > .monaco-editor-background {
+                            height: 500% !important;
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+   .rule-border{
+    transition: border-color 150ms ease-in;
+
+        &.rule-saved {
+            border-color: rgba(#04844b, 0.7);
+        }
+
+        &.rule-unsaved {
+            border-color: rgba(#ffb75d, 0.7);
+        }
+
+        &.rule-save-error {
+            border-color: rgba(#c23934, 0.7);
+        }
+    }
+
+     .vloc-ins-product-rules-eligibility-container {
+
+        .slds-button__icon:hover {
+            cursor: pointer;
+        }
+
+        .vloc-ins-product-rules-eligibility-expression-message{
+            width: 48%;
+        }
+        .vloc-ins-product-rules-eligibility-expression {
+            min-height: 5rem;
+            padding-left: 1.3rem;
+            position: relative;
+
+            .slds-textarea{
+            transition: border-color 150ms ease-in;
+
+                &.rule-saved {
+                    border-color: rgba(#04844b, 0.7);
+                }
+
+                &.rule-unsaved {
+                    border-color: rgba(#ffb75d, 0.7);
+                }
+
+                &.rule-save-error {
+                    border-color: rgba(#c23934, 0.7);
+                }
+            }
+
+            .vloc-ins-product-rules-eligibility-number {
+                position: absolute;
+                left: 1rem;
+                font-size: 1rem;
+                width: 1.5rem;
+                height: 1.5rem;
+                line-height: 1.5rem;
+                border-radius: 50%;
+                background-color: lighten(#54698d, 30%);
+                text-align: center;
+                color: white;
+                top: 1.75rem;
+                transition: background-color 150ms ease-in;
+
+                &.rule-saved {
+                    background-color: rgba(#04844b, 0.7);
+                }
+
+                &.rule-unsaved {
+                    background-color: rgba(#ffb75d, 0.7);
+                }
+
+                &.rule-save-error {
+                    background-color: rgba(#c23934, 0.7);
+                }
+            }
+        }
+    }
+    
+    .vloc-collapse-icon {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+    .vloc-expanded {
+        .slds-button__icon {
+            transform: rotate(90deg);
+        }
+    }
+
+    .vloc-attr-add-new{
+        &:active{
+            box-shadow: none;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+
+    .vloc-card-header{
+        &:hover{
+            cursor: move;
+
+        }
+    }
+    .vloc-checkbox-position{
+        top: 0.3rem;
+        position: relative;
+    }
+     .vloc-attr-rules-outer{
+        background: $primary-light;
+        color: white;
+        border-radius: 1.5rem;
+        position: relative;
+        font-size: 1rem;
+        top: .3rem;
+        margin-right: 0rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        &:hover{
+            cursor: pointer;
+        }
+
+        .number{
+            font-size: .9rem;
+            padding-left: .6rem;
+            position: relative;
+            left: .15rem;
+        }
+        .slds-button__icon{
+            position: relative;
+            top: -.1rem;
+            width: 2.2rem;
+            height: 1.4rem;
+        }
+    }
+     
+
+     .vloc-attr-rules{
+        background: $primary-light;
+        color: white;
+        border-radius: 1.5rem;
+        padding: 0rem .1rem;
+        position: relative;
+        font-size: 1rem;
+        top: .1rem;
+        left: 0;
+        &:hover{
+            cursor: pointer;
+        }
+
+        &.vloc-theme_error {
+            background: #c23934;
+        }
+
+       
+        .number{
+            font-size: .75rem;
+            padding-left: .21rem;
+            position: relative;
+            top: -.1rem;
+            left: .15rem;
+        }
+
+        .slds-button__icon{
+            position: relative;
+            top: -.1rem;
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+
+    }
+
+      .draggable-items {
+            li {
+                i.icon-v-grip {
+                    position: absolute;
+                    padding: 15px 2px 11px 7px;
+                    top: 0;
+                    left: 0;
+                    font-size: 28px;
+                    color:  $primary-dark;
+                    transition: all 150ms ease-in;
+                    cursor: move;
+
+                    &:before {
+                        margin: 0;
+                    }
+
+                }
+
+                &.hovering {
+                    .slds-card{
+                        border-color: $primary-light; 
+                        background: $primary-light;
+                    }
+
+                    &.active {
+                        .contract-icon:not(.icon-v-close-circle-line):not(.icon-v-save-line) {
+                            &.sequence {
+                                color: $primary-dark;
+                            }
+                        }
+                    }
+                }
+
+            &.dndDraggingSource {
+                opacity: 0;
+                position: absolute;
+                left: -999px;
+                .vloc-card-header{
+                    border-color: $primary-light; 
+                    background: $primary-light;
+                }
+                .vloc-card-body{
+                    display: none
+                }
+                .vloc-attr-grid{
+                    display: none;
+                }
+            }
+
+            &.dndDragging {
+                cursor: move;
+                border: 1px solid #CFD7E6;
+
+                 .vloc-card-body{
+                    display: none
+                }
+                .vloc-attr-grid{
+                    display: none;
+                }
+            }
+
+            &.dndPlaceholder {
+                background:  $cards-gray;
+                height: 5rem;
+                margin-top: 1rem; 
+                margin-bottom: 1rem; 
+                border-radius: .5rem; 
+            }
+
+            &.template-active {
+                padding-left: 16px;
+
+                i.icon-v-grip {
+                    display: none;
+                }
+            }
+
+            &.dnd-disabled {
+                i.icon-v-grip {
+                    display: none;
+                }
+            }
+        }
+
+        &.existing-data {
+            li {
+                &:hover {
+                    span.data-name {
+                        color: $cards-gray;
+                    }
+                }
+
+                &.hovering {
+                    span.data-name {
+                        color: $cards-gray;
+                    }
+                }
+            }
+        }
+    }
+ .vloc-attr-table {
+        background: white;
+        min-height: 45rem;
+        -webkit-transition: all 0.3s ease;                  
+        -moz-transition: all 0.3s ease;                 
+        -o-transition: all 0.3s ease;   
+        -ms-transition: all 0.3s ease;          
+        transition: all 0.3s ease;
+
+        &.newAttr{
+            width: 50%;
+        }
+        
+        .vloc-attr-table-header{
+            border-bottom: 1px solid  $cards-border-gray;
+            .vloc-attr-title-cell {
+                &:hover{
+                    cursor:pointer;
+                }
+             }
+        }
+    }
+    .vloc-attr-row {
+        position: relative;
+        &.can-hover{
+            &:hover {
+                .vloc-attr-data-cell{
+                cursor: pointer; 
+                background: $cards-gray;
+                }
+            }
+        }
+        &.selected{
+            .vloc-attr-data-cell{
+                background: $cards-gray;
+            }
+        }
+        .vloc-attr-cell {
+            .vloc-attr-title-cell {
+
+            }  
+
+            .vloc-attr-data-cell{
+                min-height: 2.3rem;
+                border-bottom: 1px solid $cards-border-gray;
+            }
+        }
+        .vloc-attr-fly-out{
+            position: absolute; 
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+            .vloc-attr-config-container{
+            margin: 0;
+            position: -webkit-sticky;
+            position: sticky;
+            top: -1px;
+            background: $cards-gray;
+            -webkit-transition: all 0.3s ease;                  
+            -moz-transition: all 0.3s ease;                 
+            -o-transition: all 0.3s ease;   
+            -ms-transition: all 0.3s ease;          
+            transition: all 0.3s ease;
+
+            &.newAttr{
+                width: 50%;
+            }
+
+            .vloc-attr-input-title{
+                background: none;
+                border: none;
+                border-radius: 0;
+                padding: 0;
+                &:focus{
+                    box-shadow: none;
+                    border-bottom: 1px solid $primary-light;
+                }
+            }
+
+            .vloc-attr-config-close{
+                position: absolute;
+                right: 0;
+                top: .25rem; 
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .vloc-attr-actions-container{
+                position: absolute;
+                right: 2rem;
+                top: .5rem;
+                .vloc-attr-delete{
+                &:hover{
+                    cursor: pointer;
+                }
+        }
+            }
+
+            .vloc-attr-config-grid {
+                background: white;
+
+                .vloc-attrs-input{
+                    border: none;
+                    border-radius: 0;
+                    padding: 0;
+                    &:focus{
+                        box-shadow: none;
+                        border-bottom: 1px solid $primary-light;
+                    }
+                }
+            }
+        }
+
+    .vloc-tooltip-adjust {
+        padding-right: 0px;
+    }
+
+    .vloc-overriden-info {
+        color: #0070d2;
+        font-size: 1rem;
+        &:hover {
+            cursor: pointer;
+        }
+        &:hover .vloc-overriden-tooltip {
+            display: inline;
+            visibility: initial;
+        }
+    }
+
+    .vloc-overriden-tooltip{
+        position: absolute;
+        white-space: initial;
+        min-width: 17rem;
+        visibility: hidden;
+        left: 7px;
+    }
+
+}

@@ -1,0 +1,75 @@
+{
+    "%vlocity_namespace%__ApplicableObject__c": "",
+    "%vlocity_namespace%__CalculationProcedureId__c": {
+        "Name": "SmallGroupVision",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+    },
+    "%vlocity_namespace%__CalculationProcedureId__r.Name": "SmallGroupVision",
+    "%vlocity_namespace%__CalculationProcedureStep__c": "SmallGroupVision_Steps.json",
+    "%vlocity_namespace%__CalculationProcedureVariable__c": "SmallGroupVision_Variables.json",
+    "%vlocity_namespace%__Constants__c": [
+        {
+            "alias": "EmpFactor",
+            "dataType": "Number",
+            "isEditable": false,
+            "name": "EmpFactor",
+            "precision": "",
+            "userDefined": true,
+            "value": "1",
+            "valuePlaceHolder": "Enter a Value"
+        },
+        {
+            "alias": "EmpSpFactor",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": false,
+            "name": "EmpSpFactor",
+            "precision": "",
+            "userDefined": true,
+            "value": "1.6",
+            "valuePlaceHolder": "Enter a Value"
+        },
+        {
+            "alias": "EmpChFactor",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": false,
+            "name": "EmpChFactor",
+            "precision": "",
+            "userDefined": true,
+            "value": "1.4",
+            "valuePlaceHolder": "Enter a Value"
+        },
+        {
+            "alias": "EmpFaFactor",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": false,
+            "name": "EmpFaFactor",
+            "precision": "",
+            "userDefined": true,
+            "value": "2",
+            "valuePlaceHolder": "Enter a Value"
+        }
+    ],
+    "%vlocity_namespace%__CurrentStatus__c": "Active",
+    "%vlocity_namespace%__EnableLooping__c": false,
+    "%vlocity_namespace%__EndDateTime__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "SmallGroupVision",
+    "%vlocity_namespace%__InputBundleId__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "{\"empFamilyCount\":\"1\",\"empChildCount\":\"1\",\"empSpouseCount\":\"1\",\"empOnlyCount\":\"1\",\"ProductCode\":\"SGRP-VIS-GLD\"}",
+    "%vlocity_namespace%__LoopingSpecification__c": "",
+    "%vlocity_namespace%__OutputBundleId__c": "",
+    "%vlocity_namespace%__PostProcessorClass__c": "",
+    "%vlocity_namespace%__PreProcessorClass__c": "",
+    "%vlocity_namespace%__Priority__c": 1,
+    "%vlocity_namespace%__StartDateTime__c": "2019-01-01T16:40:00.000Z",
+    "%vlocity_namespace%__Variables__c": "",
+    "%vlocity_namespace%__VersionNumber__c": 1,
+    "Name": "SmallGroupVision",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision"
+}

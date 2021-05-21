@@ -1,0 +1,17 @@
+{
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{\"records\": 1}"
+        }
+    },
+    "previewType": "runTime",
+    "templates": {
+        "0": {
+            "templateUrl": "ins-large-group-csv-upload-table"
+        }
+    },
+    "workspace": [
+        "ins-large-group-upload-csv-table/vlocityDev/1/1542047879288"
+    ]
+}

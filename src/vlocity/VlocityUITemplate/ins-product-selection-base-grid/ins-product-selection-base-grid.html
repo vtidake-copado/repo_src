@@ -1,0 +1,50 @@
+<div class="plan-selection-base-grid slds-p-vertical_medium">
+    <!--LOADER: -->
+    <div class="slds-spinner_container" ng-show="!$root.isLoaded">
+        <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+
+    <!--Header:-->
+   <div class="slds-grid slds-p-top_medium slds-p-horizontal_medium slds-size_1-of-1" style="position: relative;
+    left: 10%;
+    width: 80%;">
+    <div class="slds-p-horizontal_small slds-size_2-of-3">
+        <h1 class="slds-page-header__title slds-p-bottom_medium bold">Select Plans</h1>
+    </div> 
+    <div class="slds-p-left_small slds-size_1-of-3">
+        <div class="slds-size_1-of-1 slds-text-align_right">
+            <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open" aria-expanded="true"
+            ng-class="{'slds-is-open': lineActions.show}" ng-click="lineActions.show = !lineActions.show">
+                <button class="slds-button via-status-select-button slds-button_neutral" ins-dropdown-handler="lineActions.show = false">
+                    <slds-button-svg-icon size="type === 'button-group' ? null : 'small'" sprite="'utility'" icon="'down'" extra-classes="'slds-button__icon_left'"></slds-button-svg-icon>
+                    <span>{{importedScope.selectedType}}</span>
+                </button>
+                <div class="slds-dropdown slds-dropdown_right" ng-show="lineActions.show">
+                    <ul class="dropdown__list" role="menu">
+                        <li class="slds-dropdown__item" ng-repeat="type in importedScope.types">
+                            <a role="menuitem" ng-click="importedScope.filterType(type)">
+                                <p class="slds-truncate">{{type}}</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <button class="slds-button slds-button_neutral">Compare</button>
+        <div class="slds-icon_container filter-icon slds-p-left_small slds-text-link">
+              <slds-button-svg-icon size="type === 'button-group' ? null : 'small'" sprite="'utility'" icon="'filterList'" extra-classes="'slds-button__icon_left'"></slds-button-svg-icon>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!--Plans:-->
+    <div class="slds-p-horizontal_medium" style="position: absolute;
+    width: 100%;
+    left: 10%;"">
+        <vloc-layout layout-name="ins-product-selection-grid"></vloc-layout>
+    </div>
+ 
+</div>

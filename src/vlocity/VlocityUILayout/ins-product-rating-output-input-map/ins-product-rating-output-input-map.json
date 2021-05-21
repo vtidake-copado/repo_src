@@ -1,0 +1,32 @@
+{
+    "Cards": [
+    ],
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "01t6A000000O1IK"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "body": "{\n\"ratingMappings\": {\n\"productRatingInfo\": {\n\"productRatingOutputs\": {\n\"01t41000003bpO7AAI\":\n{ \"pricingSource\": \"premiumCovX__premiumCovX\", \"name\": \"Coverage2\" }\n,\n\"01t41000003bpNiAAI\":\n{ \"pricingSource\": null, \"name\": \"Coverage1\" }\n,\n\"01t41000003bPAAAA2\":\n{ \"pricingSource\": null, \"name\": \"House\" }\n,\n\"01t41000003JwZlAAK\":\n{ \"pricingSource\": null, \"name\": \"Superior Renters\" }\n,\n\"01t41000003JwZeAAK\":\n{ \"pricingSource\": null, \"name\": \"Business Use\" }\n},\n\"productRatingInputs\": {\n\"01t41000003JwZlAAK\": {\n\"a0841000008AwLJAA0\":\n{ \"attributeDefaultValue\": \"1\", \"categoryName\": \"Coverages and Limits of Liability\", \"categoryCode\": \"Coverage Info\", \"ratingIput\": \"amountDeductible\", \"attributeLabel\": \"amountDeductible\", \"attributeCode\": \"amountDeductible\" }\n,\n\"productName\": \"Superior Renters\"\n},\n\"01t41000003JwZeAAK\": {\n\"a0841000009F7w4AAC\":\n{ \"attributeDefaultValue\": \"office\", \"categoryName\": \"Coverages and Limits of Liability\", \"categoryCode\": \"Coverage Info\", \"ratingIput\": \"typeBusinessUse\", \"attributeLabel\": \"Limit - Business Use (P)\", \"attributeCode\": \"typeBusinessUse\" }\n,\n\"productName\": \"Business Use\"\n},\n\"01t41000003bpO7AAI\": {\n\"a0841000009F7koAAC\":\n{ \"attributeDefaultValue\": \"2500\", \"categoryName\": \"Coverages and Limits of Liability\", \"categoryCode\": \"Coverage Info\", \"ratingIput\": \"limitCovY\", \"attributeLabel\": \"Limit - Guest Medical (Y)\", \"attributeCode\": \"limitCovY\" }\n,\n\"productName\": \"Coverage2\"\n},\n\"01t41000003bpNiAAI\": {\n\"a0841000009F7iDAAS\":\n{ \"attributeDefaultValue\": \"200000\", \"categoryName\": \"Coverages and Limits of Liability\", \"categoryCode\": \"Coverage Info\", \"ratingIput\": \"limitCovX\", \"attributeLabel\": \"Limit - Family Liability (X)\", \"attributeCode\": \"limitCovX\" }\n,\n\"productName\": \"Coverage1\"\n}\n}\n},\n\"pricingInterface\": {\n\"procedureInfo\":\n{ \"procedureVersionId\": \"a1a41000001xk8RAAQ\", \"procedureName\": \"rentersInsurance v7\" }\n,\n\"pricingOutputVariables\": [\n\"premiumCovX__premiumCovX\",\n\"premiumCovY__premiumCovY\",\n\"premiumBusUse__premiumBusinessUse\",\n\"BasePremium\",\n\"adjustPremium\",\n\"multilineDiscountValue\",\n\"totalPremium\",\n\"monthlyPremium\"\n],\n\"pricingInputVariablesDataType\":\n{ \"premiumCovY__premiumCovY\": \"Currency\", \"monthlyPremium\": \"Currency\", \"totalPremium\": \"Currency\", \"discProtection__discProtection\": \"Number\", \"netPremium\": \"Currency\", \"protectionDiscountValue\": \"Currency\", \"multilineDiscountValue\": \"Currency\", \"adjustPremium\": \"Currency\", \"factorDeductible__factorDeductible\": \"Number\", \"BasePremium\": \"Currency\", \"premiumBusUse__premiumBusinessUse\": \"Currency\", \"premiumCoverageY\": \"Currency\", \"premiumCoverageC\": \"Currency\", \"limitCoverageY\": \"Currency\", \"limitCoverageC\": \"Currency\", \"premiumCovX__premiumCovX\": \"Currency\", \"premiumCovC__rateBase\": \"Number\", \"amountDeductible\": \"Currency\", \"typeBusinessUse\": \"Text\", \"limitCovY\": \"Currency\", \"limitCovX\": \"Currency\", \"centralFire\": \"Boolean\", \"centralBurglar\": \"Boolean\", \"localBurglar\": \"Boolean\", \"deadBolt\": \"Boolean\", \"smokeDetect\": \"Boolean\", \"buildingAge\": \"Number\", \"distFire\": \"Number\", \"factorTerritory\": \"Number\" }\n,\n\"pricingInputVariables\": [\n\"factorTerritory\",\n\"distFire\",\n\"buildingAge\",\n\"smokeDetect\",\n\"deadBolt\",\n\"localBurglar\",\n\"centralBurglar\",\n\"centralFire\",\n\"limitCovX\",\n\"limitCovY\",\n\"typeBusinessUse\",\n\"amountDeductible\"\n]\n}\n},\n\"errorCode\": \"INVOKE-200\",\n\"error\": \"OK\"\n}",
+            "inputMap": {
+                "productId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceProductAdminHandler"
+            },
+            "remoteClass": "InsuranceProductAdminHandler",
+            "remoteMethod": "getRatingInputOutputs",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": "",
+            "timeout": null
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-product-rating-map-container"
+        }
+    }
+}

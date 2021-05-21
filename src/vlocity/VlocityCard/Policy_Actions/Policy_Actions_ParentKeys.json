@@ -1,0 +1,14 @@
+[
+    "VlocityAction/PolServ_CancelPolicy",
+    "VlocityAction/PolServ_ModifyCoverages",
+    "VlocityAction/VPL-AddDriver-103-1",
+    "VlocityAction/VPL-AddVehicle-103-1",
+    "VlocityAction/VPL-ChangeGarageLocation-103-1",
+    "VlocityAction/VPL-PolicyClaimAutoFNOL-103-1",
+    "VlocityAction/VPL-ReinstatePolicy-103-1",
+    "VlocityAction/VPL-RemoteAuto-103-1",
+    "VlocityAction/VPL-RemoveDriver-103-1",
+    "VlocityAction/VPL-RemoveVehicle-103-1",
+    "VlocityAction/VPL-RewritePolicy-103-1",
+    "VlocityUITemplate/action-grid-card-slds"
+]

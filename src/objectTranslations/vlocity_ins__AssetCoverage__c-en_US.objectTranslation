@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- CoverageVerificationFields --></label>
+        <name>vlocity_ins__CoverageVerificationFields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Aggregate Limit --></label>
+        <name>vlocity_ins__AggregateLimitAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insured Item --></label>
+        <name>vlocity_ins__AssetInsuredItemId__c</name>
+        <relationshipLabel><!-- Coverages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attribute Selected Values --></label>
+        <name>vlocity_ins__AttributeSelectedValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>vlocity_ins__CoverageCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coverage Number --></label>
+        <name>vlocity_ins__CoverageNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Difference --></label>
+        <name>vlocity_ins__DateDifference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deductible --></label>
+        <name>vlocity_ins__DeductibleAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>vlocity_ins__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Amount --></label>
+        <name>vlocity_ins__FeeAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image &amp; Icon --></label>
+        <name>vlocity_ins__ImageId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insured Party --></label>
+        <name>vlocity_ins__InsuredPartyRelationshipId__c</name>
+        <relationshipLabel><!-- Coverages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Policy --></label>
+        <name>vlocity_ins__PolicyAssetId__c</name>
+        <relationshipLabel><!-- Coverages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Premium --></label>
+        <name>vlocity_ins__PremiumAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Source Mapping --></label>
+        <name>vlocity_ins__PricingSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prorated Premium --></label>
+        <name>vlocity_ins__ProRatedPremiumAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coverage Spec --></label>
+        <name>vlocity_ins__Product2Id__c</name>
+        <relationshipLabel><!-- Policy Coverages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Policy Coverage Spec --></label>
+        <name>vlocity_ins__ProductChildItemId__c</name>
+        <relationshipLabel><!-- Policy Coverages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Prorated Fee Amount --></label>
+        <name>vlocity_ins__ProratedFeeAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prorated Tax Amount --></label>
+        <name>vlocity_ins__ProratedTaxAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Record Type Name --></label>
+        <name>vlocity_ins__RecordTypeName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Limit --></label>
+        <name>vlocity_ins__SingleLimitAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>vlocity_ins__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Amount --></label>
+        <name>vlocity_ins__TaxAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>vlocity_ins__TotalAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Prorated Amount --></label>
+        <name>vlocity_ins__TotalProratedAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__Type__c</name>
+        <picklistValues>
+            <masterLabel>Coverage</masterLabel>
+            <translation><!-- Coverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endorsement</masterLabel>
+            <translation><!-- Endorsement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peril</masterLabel>
+            <translation><!-- Peril --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rider</masterLabel>
+            <translation><!-- Rider --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

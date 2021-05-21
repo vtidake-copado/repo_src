@@ -1,0 +1,72 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Census",
+        "%vlocity_namespace%__FilterGroup__c": 0,
+        "%vlocity_namespace%__FilterOperator__c": "=",
+        "%vlocity_namespace%__FilterValue__c": "Id",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Id",
+        "%vlocity_namespace%__InterfaceObjectLookupOrder__c": 1,
+        "%vlocity_namespace%__InterfaceObjectName__c": "%vlocity_namespace%__GroupCensus__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CensusHeaderExtractSOLNCustom3413",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "CensusHeaderExtractSOLN",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "userInputs:SG-Vision-CH-RF.SG_empChildCount",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Census:%vlocity_namespace%__CountOfEmployeePlusChild__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CensusHeaderExtractSOLNCustom7662",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "CensusHeaderExtractSOLN",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "userInputs:SG-Vision-CH-RF.SG_empFamilyCount",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Census:%vlocity_namespace%__CountOfEmployeePlusFamily__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CensusHeaderExtractSOLNCustom8718",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "CensusHeaderExtractSOLN",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "userInputs:SG-Vision-CH-RF.SG_empOnlyCount",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Census:%vlocity_namespace%__CountOfEmployeeOnly__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CensusHeaderExtractSOLNCustom6507",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "CensusHeaderExtractSOLN",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "userInputs:SG-Vision-CH-RF.SG_empSpouseCount",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Census:%vlocity_namespace%__CountOfEmployeePlusSpouse__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CensusHeaderExtractSOLNCustom3029",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "CensusHeaderExtractSOLN",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

@@ -1,0 +1,58 @@
+{
+    "prices": [
+        {
+            "configuredValue": 2158,
+            "mileageAdjustment": 350,
+            "optionAdjustment": 0,
+            "priceTypeDisplay": "Typical Listing Price",
+            "priceTypeId": 2
+        },
+        {
+            "condition": "Fair",
+            "configuredValue": 624,
+            "mileageAdjustment": 350,
+            "optionAdjustment": 0,
+            "priceTypeDisplay": "Trade-In Value Fair",
+            "priceTypeId": 3
+        },
+        {
+            "condition": "Good",
+            "configuredValue": 703,
+            "mileageAdjustment": 350,
+            "optionAdjustment": 0,
+            "priceTypeDisplay": "Trade-In Value Good",
+            "priceTypeId": 4
+        },
+        {
+            "condition": "Excellent",
+            "configuredValue": 865,
+            "mileageAdjustment": 350,
+            "optionAdjustment": 0,
+            "priceTypeDisplay": "Trade-In Value Excellent",
+            "priceTypeId": 5
+        },
+        {
+            "condition": "Very Good",
+            "configuredValue": 802,
+            "mileageAdjustment": 350,
+            "optionAdjustment": 0,
+            "priceTypeDisplay": "Trade-In Value Very Good",
+            "priceTypeId": 109
+        },
+        {
+            "configuredValue": 1868,
+            "mileageAdjustment": 350,
+            "optionAdjustment": 0,
+            "priceTypeDisplay": "Fair Purchase Price",
+            "priceTypeId": 130
+        }
+    ],
+    "typicalMileage": 109053,
+    "valuationDate": "06/17/2019",
+    "warnings": [
+        {
+            "code": "VehicleService.DefaultOptions",
+            "message": "No VehicleOptonIds input provided. Defaulted to typical Option configuration"
+        }
+    ]
+}

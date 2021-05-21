@@ -1,0 +1,18 @@
+[
+    "DataRaptor/AutoGetRatedProducts_Pre",
+    "DataRaptor/AutoUserInputsTransform",
+    "DataRaptor/PersonalLinesQuote-CreateAcctOppty",
+    "DataRaptor/VPL-quotepolicyJSONtransform-103-1",
+    "DataRaptor/autoDiscount-transform",
+    "DataRaptor/driverDiscount-Transform",
+    "DataRaptor/getBrokerId",
+    "DataRaptor/multiAutoPreReprice_MultiAuto",
+    "DataRaptor/postTransformMultiAutoVehicleData",
+    "DataRaptor/readQuoteConfirmation",
+    "IntegrationProcedure/Quote_MergeAutoInsuredItems",
+    "VlocityUITemplate/ins-os-attribute-component",
+    "VlocityUITemplate/ins-os-coverage-component",
+    "VlocityUITemplate/ins-os-multi-item",
+    "VlocityUITemplate/ins-os-multi-item-modal",
+    "VlocityUITemplate/ins-os-quote-confirmation-newport"
+]

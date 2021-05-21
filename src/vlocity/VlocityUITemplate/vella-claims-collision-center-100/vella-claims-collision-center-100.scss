@@ -1,0 +1,73 @@
+.collision-center {
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	width: 100%;
+	}
+	.collision-center .header {
+	background-color: #00CEFF;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: white;
+	padding: 10px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	}
+	.collision-center .center {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-bottom: 15px;
+	border: 1px solid #EDEDED;
+	border-top: unset;
+	padding: 10px;
+	padding-top: 15px;	
+	}
+
+	.collision-center .center .info {
+	display:flex;
+	flex-direction: column;
+	margin-left: 15px;
+	color: #4C4C4C;
+	}
+	.collision-center .center .select {
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	border: 1px solid #9B9B9B;
+	overflow: hidden;
+	position: relative;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	cursor: hand;	 
+	margin: 10px;
+	}
+	.collision-center .center .select .check {
+	width: 100%;
+	height: 100%;
+	background-color: #00CEFF;	
+	}
+	.collision-center .center .select .check::after,
+	.collision-center .center .select .check::before {
+	width: 100%;
+	position: absolute;
+	content:'';
+	padding: 0;
+	width: 60%;
+	height: 35%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%) rotate(-45deg);
+	border-radius: 3px;
+	}
+	.collision-center .center .select .check::before {
+	border-left: 4px solid white;
+	}
+	.collision-center .center .select .check::after {
+	border-bottom: 4px solid white;	
+	}
+	.collision-center .center .info .email{
+	color: #468EE5;
+	text-decoration: none;
+	}

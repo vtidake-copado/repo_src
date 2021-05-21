@@ -1,0 +1,98 @@
+<div class="vloc-ins-selectable-item-outer-container" ng-if="control.vlcSI[control.itemsKey]">
+    <div ng-if="!control.vlcSI[control.itemsKey][0].$$hashKey || (!baseCtrl.$scope.insPsControlRef || !baseCtrl.$scope.insPsControlRef[control.name])" ng-init="baseCtrl.setSelectedProductSelectionProducts(control)"></div>
+    <div class="vloc-ins-selectable-item-container" ng-controller="insOsProductSelectionCtrl">
+        <div class="vloc-ins-selectable-item-inner-wrapper" ng-if="!showSmallGroupProductSelection">
+            <div class="slds-box slds-grid slds-theme_shade slds-m-bottom_medium nds-box nds-grid nds-theme_shade nds-m-bottom_medium vloc-ins-selectable-item-pagination-container" ng-if="currentProducts.length && (pageSize < control.vlcSI[control.itemsKey].length) && usePagination">
+                <button class="slds-button slds-button_neutral slds-max-small-size_1-of-3 slds-size_1-of-8 nds-button nds-button_neutral nds-max-small-size_1-of-3 nds-size_1-of-8" ng-disabled="!showPageControl('prev')" ng-click="paginateItems('prev')" title="Previous {{pageSize}} Products">
+                    <slds-button-svg-icon size="'small'" sprite="'utility'" icon="'back'" extra-classes="'slds-button__icon_left nds-button__icon_left'"></slds-button-svg-icon>
+                </button>
+                <p class="slds-text-align_center slds-max-small-size_1-of-3 nds-text-align_center nds-max-small-size_1-of-3 vloc-mobile-show vloc-mobile-page-count">{{currentProducts[0].originalIndex + 1}} of {{control.vlcSI[control.itemsKey].length}}</p>
+                <p class="slds-size_6-of-8 slds-text-align_center nds-size_6-of-8 nds-text-align_center vloc-ins-selected-product vloc-mobile-hide">
+                    <span class="slds-m-right_small nds-m-right_small"><span class="vloc-ins-selected-product-strong">{{control.vlcSI[control.itemsKey].length}}</span> Total Products</span>
+                </p>
+                <button class="slds-button slds-button_neutral slds-max-small-size_1-of-3 slds-size_1-of-8 nds-button nds-button_neutral nds-max-small-size_1-of-3 nds-size_1-of-8" ng-disabled="!showPageControl('next')" ng-click="paginateItems('next')" title="Next Products">
+                    <slds-button-svg-icon size="'small'" sprite="'utility'" icon="'forward'" extra-classes="'slds-button__icon_right nds-button__icon_right'"></slds-button-svg-icon>
+                </button>
+            </div>
+            <div class="slds-grid nds-grid vloc-ins-selectable-item-inner-container">
+                <div ng-class="getSelectableItemClass(product, $index)" class="slds-col nds-col vloc-ins-selectable-item" vloc-slds-added="{{control.vlcSI[control.itemsKey][product.originalIndex].vlcSelected}}" vloc-slds-prod-desc="{{control.vlcSI[control.itemsKey][product.originalIndex].Description}}" ng-repeat="product in currentProducts track by $index" only-on-load="true" ng-if="currentProducts.length">
+                    <div class="vloc-ins-selcetable-item-inner-wrapper nds-p-vertical_large">
+                        <div class="vloc-ins-renewal-flag-container" ng-if="product.originalPlan">
+                            <svg width="100%" height="100%" viewBox="0 0 348 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <path d="M174.699219,57.1757812 L347.023437,39.9960937 C347.023437,32.6328125 347.023437,21.2721354 347.023437,5.9140625 C347.023437,2.45572917 344.829427,0.7265625 340.441406,0.7265625 L7.140625,0.7265625 C2.72395833,0.7265625 0.515625,2.45572917 0.515625,5.9140625 C0.515625,28.6354167 0.515625,39.9960937 0.515625,39.9960937 L174.699219,57.1757812 Z" id="Path" stroke="#0070D2" fill="#0070D2"></path>
+                                </g>
+                            </svg>
+                            <div id="content" class="nds-text-align_center" ng-if="product.originalPlan.records[0].Name">
+                                <div>Replaces {{product.originalPlan.records[0].Name}}</div>
+                                <a href=""  ng-click="compareToLastYearModal(product, control)">View Changes</a>
+                            </div>
+                        </div>
+                        <div class="vloc-ins-selectable-item-similar-plan-container" ng-if="product.similarToLastYear">
+                            <div class="vloc-ins-selectable-item-similar-plan">
+                                <span class="vloc-ins-selectable-item-similar-plan-label">Similar to last year's plan</span>
+                                <div class="vloc-ins-selectable-item-similar-plan-triangle-pointing-down"></div>
+                            </div>
+                        </div>
+                        <div class="vloc-ins-selectable-item-image nds-text-align_center" ng-class="{'is-custom-image': product.ImageId}">
+                            <img ng-hide="product.originalPlan.records[0]" ng-src="{{instanceHost + product.ImageId}}" class="vloc-ins-selectable-custom-image" ng-if="product.ImageId" />
+                            <span ng-hide="product.originalPlan.records[0]" class="slds-icon_container nds-icon_container vloc-ins-selectable-item-image-fallback vloc-ins-selectable-item-icon" ng-if="!product.ImageId" ng-class="{'bronze' : product.tier === 'Bronze', 'gold' : product.tier === 'Gold', 'silver' : product.tier === Silver}">
+                                <slds-svg-icon extra-classes="'vloc-ins-plan-icon'" sprite="'custom'" size="'large'" icon="'custom91'"></slds-svg-icon>
+                                <span class="slds-assistive-text nds-assistive-text">Default Icon</span>
+                            </span>
+                        </div>
+                        <div class="vloc-ins-selectable-item-top">
+                            <div ng-hide="true" class="vloc-ins-selectable-item-price" ng-if="!enrollmentFlow">{{product.Price | currency: currencyCode: 0}}</div>
+                            <h2 class="vloc-ins-selectable-item-name" ng-init="setTier(product)">{{product.productName}}</h2>
+                            <h4 class="slds-text-align_center nds-text-align_center slds-truncate nds-truncate vloc-ins-selectable-item-description">{{product.ProductCode}}</h4>
+                        </div>
+                        <div class="vloc-ins-selectable-item-bottom nds-m-bottom_xx-large nds-m-top_large">
+                            <ul class="vloc-ins-selectable-item-coverages">
+                                <div class="vloc-ins-selectable-item-coverage-details">
+                                    <div class="nds-text-align_center">
+                                        <div class="nds-text-heading_large"> 
+                                            {{product.Price | currency: currencyCode: 0}}/mo
+                                        </div>
+                                        <div class="slds-text-heading_small nds-text-heading_small vloc-ins-selectable-item-coverage-details-attributes-label">You Pay</div>
+                                    </div>
+                                    <div class="vloc-ins-selectable-item-coverage-details-categories" ng-repeat="category in product.attributeCategories.records | orderBy: 'displaySequence'" ng-if="$index === 0">
+                                        <div ng-repeat="attribute in category.productAttributes.records | orderBy: 'displaySequence'" ng-init="attribute.labelAndValue = getAttributeData(attribute)" ng-hide="attribute.hidden || attribute.inputType === 'equalizer'"
+                                            class="nds-p-top_large nds-text-align_center slds-text-align_center">
+                                            <div class=" nds-clearfix vloc-ins-selectable-item-coverage-details-attributes" ng-if="attribute.code.toLowerCase().indexOf('limit') < 0 && attribute.label && !attribute.hiddenByRule">
+                                                <div class="nds-text-heading_large vloc-ins-selectable-item-coverage-details-attributes-value" ng-if="!attribute.labelAndValue.valueHiddenByRule">
+                                                 <div ng-if="attribute.inputType === 'checkbox' && !attribute.multiselect" class="nds-form-element">
+                                                    <div class="nds-form-element__control">
+                                                        <div class="nds-checkbox">
+                                                            <input type="checkbox" name="options" id="vloc-checkbox-plan-{{$index}}" ng-model="attribute.userValues" ng-disabled="true"/>
+                                                            <label class="nds-checkbox__label" for="vloc-checkbox-plan-{{$index}}">
+                                                                <span class="nds-checkbox_faux"></span>
+                                                                <span class="nds-form-element__label"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p class="vloc-ins-coverages-attribute-readonly" ng-if="attribute.dataType === 'currency'">{{attribute.userValues | currency: currencyCode: 0}}</p>
+                                                <p class="vloc-ins-coverages-attribute-readonly" ng-if="attribute.dataType === 'percentage'">{{attribute.userValues}}%</p>
+                                                <p class="vloc-ins-coverages-attribute-readonly" ng-if="attribute.dataType === 'date'">{{formatDate(attribute.userValues)}}</p>
+                                                <p class="vloc-ins-coverages-attribute-readonly" ng-if="attribute.dataType === 'datetime'">{{formatDate(attribute.userValues, true)}}</p>
+                                                <p class="vloc-ins-coverages-attribute-readonly" ng-if="(attribute.inputType !== 'checkbox' || attribute.multiselect) && attribute.dataType !== 'currency' && attribute.dataType !== 'percentage' && attribute.dataType !== 'date' && attribute.dataType !== 'datetime'">
+                                                    <span ng-if="!attribute.labelAndValue">{{attribute.userValues}}</span>
+                                                    <span ng-if="attribute.labelAndValue">{{attribute.labelAndValue.valueLabel}}</span>
+                                                </p>
+                                                </div>
+                                                <div class="slds-text-heading_small nds-text-heading_small vloc-ins-selectable-item-coverage-details-attributes-label">{{attribute.label}}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="vloc-ins-selectable-item-bottom vloc-ins-selectable-item-bottom-link nds-text-align_center nds-m-bottom_x-large" ng-class="{'disabled-by-rate-band': product.disabledByRateBand}">
+                            <a href="javascript:void(0)" class="slds-truncate nds-truncate vloc-ins-enrollment-plan-details" ng-click="openDetailView(product, control)">View full plan details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+{
+    "ContextId": "",
+    "Step1": {
+        "Cars": [
+            {
+                "Make": "Lexus",
+                "Model": "LX250",
+                "Year": 2011
+            },
+            {
+                "Make": "Honda",
+                "Model": "Odyssey",
+                "Year": 2006
+            }
+        ],
+        "Drivers": [
+            {
+                "Age": 20,
+                "FirstName": "A",
+                "Gender": "Female",
+                "LastName": "A"
+            },
+            {
+                "Age": 30,
+                "FirstName": "B",
+                "Gender": "Male",
+                "LastName": "B"
+            }
+        ]
+    },
+    "accountId": "001f400000RrQSrAAN",
+    "id": "a1nf4000000AweeAAC",
+    "layout": "lightning",
+    "opportunityId": "006f400000AwHTX",
+    "timeStamp": "2018-06-18T20:37:23.157Z",
+    "userCurrencyCode": "USD",
+    "userId": "005f4000001nkcjAAA",
+    "userName": "ins_feature_daily@vlocity.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": -420,
+    "vlcPersistentComponent": {
+    }
+}

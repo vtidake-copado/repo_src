@@ -1,0 +1,33 @@
+<!--LOADER: -->
+<div class="slds-spinner_container" ng-show="!$root.isLoaded">
+    <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+        <div class="slds-spinner__dot-a"></div>
+        <div class="slds-spinner__dot-b"></div>
+    </div>
+</div>
+<div class="via-slds" ng-init="$root.productId = params.id">
+    <div class="slds-notify_container" ng-if="$root.notification.active">
+      <div class="slds-notify slds-notify_toast" role="alert" ng-class="{'slds-theme_success' : $root.notification.type === 'success', 'slds-theme_error' : $root.notification.type === 'error'}">
+        <span class="slds-assistive-text">Info</span>
+        <button class="slds-button slds-notify__close" title="Close" ng-click="$root.notification.active = false">
+           <slds-svg-icon sprite="'utility'" icon="'close'" extra-classes="'slds-button__icon_left'"></slds-svg-icon>
+        </button>
+        <div class="slds-notify__content">
+          <h2 class="slds-text-heading_small">{{$root.notification.message}}</h2>
+        </div>
+      </div>
+    </div>
+    <form class="slds-grid slds-m-around_small slds-wrap slds-grid_pull-padded">
+        <div class="slds-col slds-col_padded slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_4-of-12 slds-form-element">
+          <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+            <slds-svg-icon sprite="'utility'" icon="'search'" extra-classes="'slds-icon_small slds-input__icon'"></slds-svg-icon>
+            <input ng-model="$root.searchTerm" class="slds-input" type="text" placeholder="{{::$root.vlocity.getCustomLabel('InsProductSearch')}}" />
+          </div>
+        </div>
+    </form>
+    <div class="slds-grid slds-m-around_small slds-wrap slds-grid_pull-padded cards-container">
+        <div vloc-card ctrl="InsInsuredItemsController" ng-model="cards[0]" data="cards[0]" records="records" index="{{$index}}" session-id="{{sessionId}}"
+            class="slds-p-around_small slds-size_1-of-1" use-existing-element-type>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Diagnosis Code --></label>
+        <name>vlocity_ins__DiagnosisCodeId__c</name>
+        <relationshipLabel><!-- Diagnosis Code --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Procedure Code --></label>
+        <name>vlocity_ins__ProcedureCodeId__c</name>
+        <relationshipLabel><!-- Procedure Code --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

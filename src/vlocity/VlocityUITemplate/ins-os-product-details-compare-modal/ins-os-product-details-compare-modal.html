@@ -1,0 +1,44 @@
+<div role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open nds-modal nds-fade-in-open vloc-ins-product-details-compare-modal" ng-controller="insOsProductDetailsCompareModalCtrl">
+    <div class="slds-modal__container nds-modal__container vloc-ins-product-details-compare-modal-container" ng-init="initCompareModal(content)" ng-class="{'single-product': formattedContent.topRow.length === 1}">
+        <div class="slds-modal__header nds-modal__header vloc-ins-product-details-compare-modal-header">
+            <button class="slds-button nds-button vloc-ins-product-details-compare-modal-close-btn" title="Close" ng-click="cancel()">
+                <slds-button-svg-icon sprite="'utility'" icon="'close'" size="'large'"></slds-button-svg-icon>
+                <span class="slds-assistive-text nds-assistive-text">Close</span>
+            </button>
+            <h2 id="header43" class="slds-text-heading--medium nds-text-heading--medium" ng-if="formattedContent.topRow.length > 1">Compare Plans</h2>
+            <h2 id="header43" class="slds-text-heading--medium nds-text-heading--medium" ng-if="formattedContent.topRow.length === 1">Plan Details</h2>
+        </div>
+        <div class="slds-modal__content nds-modal__content vloc-ins-product-details-compare-modal-content-container">
+            <div class="slds-grid nds-grid vloc-ins-product-details-compare-modal-top">
+                <div class="slds-large-size--2-of-{{formattedContent.topRow.length + 2}} slds-large-show nds-large-size--2-of-{{formattedContent.topRow.length + 2}} nds-large-show"></div>
+                <div class="slds-p-horizontal--xx-small nds-p-horizontal--xx-small vloc-ins-product-details-compare-modal-product-container" ng-class="decideHtmlClasses()" ng-repeat="product in formattedContent.topRow">
+                    <h3 class="vloc-ins-product-details-compare-modal-product-name">{{product.Name}}</h3>
+                    <div class="vloc-ins-product-details-compare-modal-product-bottom-wrapper">
+                        <span class="vloc-ins-product-details-compare-modal-product-price" ng-if="!product.disabledByRateBand">{{product.Price | currency: currencyCode: 0}}<span>/mo</span></span>
+                        <span class="vloc-ins-product-details-compare-modal-product-price" ng-if="product.disabledByRateBand">--</span>
+                        <button class="slds-button slds-button--brand nds-button nds-button--brand vloc-ins-product-details-compare-modal-product-select-btn" ng-click="selectProductFromCompare(product)" ng-if="!product.disabledByRateBand">Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vloc-ins-product-details-compare-modal-attr-rows-container">
+                <div class="slds-grid slds-wrap nds-grid nds-wrap vloc-ins-product-details-compare-modal-attr-row" ng-repeat="attribute in formattedContent.attributeRows" ng-if="attribute.inputType !== 'equalizer'">
+                    <div class="slds-large-size--2-of-{{formattedContent.topRow.length + 2}} slds-size--1-of-1 slds-truncate nds-large-size--2-of-{{formattedContent.topRow.length + 2}} nds-size--1-of-1 nds-truncate vloc-ins-product-details-compare-modal-attribute-label">{{attribute.label}}</div>                  
+                    <div class="vloc-ins-product-details-compare-modal-attribute-value" ng-class="decideHtmlClasses()" ng-repeat="value in attribute.attributeValues">
+                        <div ng-if="value.formattedValues">
+                            <span ng-repeat="val in value.formattedValues">{{val}}<span ng-if="$index !== value.formattedValues.length - 1">, </span>
+                            </span>
+                        </div>  
+                        <span ng-if="!value.formattedValues">
+                            <p class="vloc-ins-coverages-attribute-readonly" ng-if="value.dataType === 'currency'">{{value.userValues | currency: currencyCode: 0}}</p>
+                            <p class="vloc-ins-coverages-attribute-readonly" ng-if="value.dataType === 'percentage'">{{value.userValues}}%</p>
+                            <p class="vloc-ins-coverages-attribute-readonly" ng-if="value.dataType !== 'currency' && value.dataType !== 'percentage' && !value.multiselect && value.dataType !== 'currency'">
+                                <span ng-if="!attribute.labelAndValue">{{attribute.userValues}}</span>
+                                <span ng-if="attribute.labelAndValue">{{attribute.labelAndValue.valueLabel}}</span>
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

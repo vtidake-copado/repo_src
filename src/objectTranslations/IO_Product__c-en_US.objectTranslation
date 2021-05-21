@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>IO Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>IO Products</value>
+    </caseValues>
+    <fields>
+        <label><!-- DRError --></label>
+        <name>DRError__c</name>
+    </fields>
+    <fields>
+        <label><!-- DRProgressData --></label>
+        <name>DRProgressData__c</name>
+    </fields>
+    <fields>
+        <label><!-- DRStatus --></label>
+        <name>DRStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- PricebookEntryFloorPrice --></label>
+        <name>PricebookEntryFloorPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- PricebookEntryOverageCharge --></label>
+        <name>PricebookEntryOverageCharge__c</name>
+    </fields>
+    <fields>
+        <label><!-- PricebookEntryOverageUOM --></label>
+        <name>PricebookEntryOverageUOM__c</name>
+    </fields>
+    <fields>
+        <label><!-- PricebookEntryRecurringPrice --></label>
+        <name>PricebookEntryRecurringPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- PricebookEntryRecurringUOM --></label>
+        <name>PricebookEntryRecurringUOM__c</name>
+    </fields>
+    <fields>
+        <label><!-- PricebookEntryUnitPrice --></label>
+        <name>PricebookEntryUnitPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductDescription --></label>
+        <name>ProductDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductFamily --></label>
+        <name>ProductFamily__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductLineOfBusiness --></label>
+        <name>ProductLineOfBusiness__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductName --></label>
+        <name>ProductName__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProductProductCode --></label>
+        <name>ProductProductCode__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>vlocity_ins__BatchSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client ID --></label>
+        <name>vlocity_ins__ClientID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Secret --></label>
+        <name>vlocity_ins__ClientSecret__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Default --></label>
+        <name>vlocity_ins__IsDefault__c</name>
+    </fields>
+    <fields>
+        <label><!-- Login URL --></label>
+        <name>vlocity_ins__LoginURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Orchestration Job Id --></label>
+        <name>vlocity_ins__OrchestrationJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Orchestration Scheduler Implementation --></label>
+        <name>vlocity_ins__OrchestrationSchedulerImplementationId__c</name>
+        <relationshipLabel><!-- Orchestration Queues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>vlocity_ins__Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Items Count --></label>
+        <name>vlocity_ins__Replicas__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site URL --></label>
+        <name>vlocity_ins__SiteURL__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>vlocity_ins__State__c</name>
+        <picklistValues>
+            <masterLabel>Running</masterLabel>
+            <translation><!-- Running --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stopped</masterLabel>
+            <translation><!-- Stopped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspended</masterLabel>
+            <translation><!-- Suspended --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>vlocity_ins__Username__c</name>
+    </fields>
+</CustomObjectTranslation>

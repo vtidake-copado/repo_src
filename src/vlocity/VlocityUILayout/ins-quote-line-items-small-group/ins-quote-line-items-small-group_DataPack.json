@@ -1,0 +1,15 @@
+{
+    "%vlocity_namespace%__Author__c": "Vlocity",
+    "%vlocity_namespace%__Datasource__c": "",
+    "%vlocity_namespace%__Definition__c": "ins-quote-line-items-small-group.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "ins-quote-line-items-small-group/1/Vlocity/1545937887022",
+    "%vlocity_namespace%__ParentID__c": "ins-quote-line-items-large-group/1/Vlocity/1539103530721",
+    "%vlocity_namespace%__RequiredPermission__c": "",
+    "%vlocity_namespace%__Type__c": "Layout",
+    "%vlocity_namespace%__Version__c": 1,
+    "Name": "ins-quote-line-items-small-group",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUILayout__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUILayout__c/ins-quote-line-items-small-group"
+}

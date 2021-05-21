@@ -1,0 +1,32 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "BodyClass",
+        "%vlocity_namespace%__DomainObjectFieldType__c": "String",
+        "%vlocity_namespace%__GlobalKey__c": "9fb66f97-0792-8eec-92df-2da642950bab",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "data:Results|1:BodyClass",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "postTransformMultiAutoVehicleDataCustom9110",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "postTransformMultiAutoVehicleData",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "VehicleType",
+        "%vlocity_namespace%__DomainObjectFieldType__c": "String",
+        "%vlocity_namespace%__GlobalKey__c": "1930df2c-ca6e-c397-f436-2cb6ae05550e",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "data:Results|1:VehicleType",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "postTransformMultiAutoVehicleDataCustom7629",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "postTransformMultiAutoVehicleData",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

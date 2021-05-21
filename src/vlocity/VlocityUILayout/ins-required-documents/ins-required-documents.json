@@ -1,0 +1,35 @@
+{
+    "Cards": [
+        "ins-required-documents-category"
+    ],
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0Q06A000000PfoBSAS"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "body": "",
+            "inputMap": {
+                "objectId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.TrailingDocumentHandler"
+            },
+            "remoteClass": "TrailingDocumentHandler",
+            "remoteMethod": "getTrailingDocuments",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": ""
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-required-documents-container"
+        }
+    },
+    "workspace": [
+        "ins-required-documents-category/Vlocity/1/1518634370188"
+    ]
+}

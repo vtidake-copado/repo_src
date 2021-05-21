@@ -157,7 +157,7 @@
     <listViews>
         <fullName>All_AuthorizationFormText</fullName>
         <filterScope>Everything</filterScope>
-        <label>Todo Texto de formulario de autorización</label>
+        <label>All Authorization Form Text</label>
     </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>AuthorizationForm</customTabListAdditionalFields>

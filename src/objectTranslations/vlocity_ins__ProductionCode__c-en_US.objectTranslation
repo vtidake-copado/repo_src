@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>vlocity_ins__AgencyBrokerageId__c</name>
+        <relationshipLabel><!-- Production Codes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>vlocity_ins__ContractId__c</name>
+        <relationshipLabel><!-- Production Codes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Writing Code --></label>
+        <name>vlocity_ins__IsWritingCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line of Business --></label>
+        <name>vlocity_ins__LineofBusiness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Code --></label>
+        <name>vlocity_ins__ParentCodeId__c</name>
+        <relationshipLabel><!-- Production Codes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Payment To --></label>
+        <name>vlocity_ins__PaymentToPartyId__c</name>
+        <relationshipLabel><!-- Production Codes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>vlocity_ins__ProducerId__c</name>
+        <relationshipLabel><!-- Production Codes --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

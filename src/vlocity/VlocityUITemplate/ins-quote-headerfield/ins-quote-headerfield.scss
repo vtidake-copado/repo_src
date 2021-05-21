@@ -1,0 +1,75 @@
+@import "ins-product-selection-variables";
+@import "ins-product-selection-mixins";
+
+
+.vloc-title-header-container{
+
+    h2.warning-title{
+        color: white;
+        padding-top: .1rem;
+    }
+
+    .slds-notify_container{
+        &.warning{
+            position: relative;
+        }
+    }
+
+    .warning-icon{
+        position: relative;
+        top: -2px;
+        left: -2px;
+    }
+
+    .vloc-title {
+        font-size: 1.55rem;
+    }
+
+    .vloc-title-border-container {
+        width:3rem; 
+
+        .vloc-title-border {
+            fill: #FF6E0D;
+            border-top: 2px solid #FF6E0D; 
+            margin: 0;
+        }
+    }
+
+    .vloc-quote-header-footer{
+        padding-bottom: 2rem;
+    }
+}
+
+
+@media screen and (max-width: $bp-small) {
+    .via-slds{
+        .vloc-title-header-container{
+            .vloc-title-border-container {
+                width: 2.2rem;
+            }
+            .vloc-title{
+                font-size: 1.25rem;
+                margin-bottom: .5rem;
+            }
+            .vloc-quote-header-grid{
+                position: relative;
+                top: -0.5rem;
+            }
+            .vloc-header-quote-number {
+                margin: 0;
+                float: right;
+                position: relative;
+                top: -2rem;
+            }
+
+            .vloc-title-header-container{
+                margin-bottom: 0;
+            }
+
+            .vloc-quote-header-footer{
+                padding-top: .5rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}

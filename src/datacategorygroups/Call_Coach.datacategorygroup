@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>Platinum</label>
+                <name>Platinum</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Gold</label>
+                <name>Gold</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Silver</label>
+                <name>Silver</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Bronze</label>
+                <name>Bronze</name>
+            </dataCategory>
+            <label>SLA</label>
+            <name>SLA</name>
+        </dataCategory>
+        <dataCategory>
+            <label>KPIs</label>
+            <name>KPIs</name>
+        </dataCategory>
+        <dataCategory>
+            <label>General</label>
+            <name>General</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Call Coach</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

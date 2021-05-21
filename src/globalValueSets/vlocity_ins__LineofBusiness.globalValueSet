@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Property</fullName>
+        <default>false</default>
+        <label>Property</label>
+    </customValue>
+    <customValue>
+        <fullName>Auto</fullName>
+        <default>false</default>
+        <label>Auto</label>
+    </customValue>
+    <customValue>
+        <fullName>Life</fullName>
+        <default>false</default>
+        <label>Life</label>
+    </customValue>
+    <customValue>
+        <fullName>Accident</fullName>
+        <default>false</default>
+        <label>Accident</label>
+    </customValue>
+    <customValue>
+        <fullName>Health</fullName>
+        <default>false</default>
+        <label>Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Variable</fullName>
+        <default>false</default>
+        <label>Variable</label>
+    </customValue>
+    <customValue>
+        <fullName>General Liability</fullName>
+        <default>false</default>
+        <label>General Liability</label>
+    </customValue>
+    <customValue>
+        <fullName>Casualty</fullName>
+        <default>false</default>
+        <label>Casualty</label>
+    </customValue>
+    <masterLabel>Line of Business</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

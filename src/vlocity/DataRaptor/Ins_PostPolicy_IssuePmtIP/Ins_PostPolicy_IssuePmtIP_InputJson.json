@@ -1,0 +1,255 @@
+{
+    "ApplyOneTimePremium": {
+        "error": "OK",
+        "errorCode": "INVOKE-200",
+        "output": [
+            {
+                "aggregationResults": {
+                },
+                "calculationResults": [
+                    {
+                        "AmountDue": 325.33,
+                        "AnnualPremium": 1301.32,
+                        "BeginPaidtoDate": "09/25/2018",
+                        "BeginPolicyStatus": 3,
+                        "EndofGraceperiodDate": "2019-01-25",
+                        "FinalAmountDue": 0,
+                        "GracePeriod": 30,
+                        "ID": "input",
+                        "InitiateGracePeriodDate": "2018-12-26",
+                        "ModalPremium": 325.33,
+                        "NumofDays": 3,
+                        "PaidtoDate": "2018-12-25",
+                        "PastDue": 0,
+                        "PaymentAmount": 325.33,
+                        "PaymentFrequency": 4,
+                        "PolicyStatus": 1,
+                        "nextPayAmount": 325.33
+                    }
+                ]
+            }
+        ]
+    },
+    "ApplyOneTimePremiumDebug": {
+        "ElapsedTime": 143,
+        "Input": {
+            "ContextId": "02i6A000000mRODQA2",
+            "GetPolicyInfo": {
+                "AmountDue": 325.33,
+                "AnnualPremium": 1301.32,
+                "BillDueDate": "2018-09-25",
+                "GracePeriod": "30",
+                "NumofDays": 3,
+                "PaidToDate": "2018-09-25",
+                "PastDue": "0",
+                "PaymentFrequency": 4,
+                "PolicyStatus": "InForce"
+            },
+            "GetPolicyInfoStatus": true,
+            "Setpolicy": {
+                "policyId": "02i6A000000mRODQA2"
+            },
+            "SetpolicyStatus": true,
+            "options": {
+                "chainable": false
+            }
+        },
+        "Options": {
+            "configurationName": "OneTimePayment",
+            "includeInputs": true,
+            "matchInputVariables": true,
+            "postTransformBundle": "",
+            "preTransformBundle": "TransformPolicyforOneTimePayment"
+        },
+        "Status": true,
+        "Type": "Calculation Action"
+    },
+    "GetPolicyInfo": {
+        "AmountDue": 325.33,
+        "AnnualPremium": 1301.32,
+        "BillDueDate": "2018-09-25",
+        "GracePeriod": "30",
+        "NumofDays": 3,
+        "PaidToDate": "2018-09-25",
+        "PastDue": "0",
+        "PaymentFrequency": 4,
+        "PolicyStatus": "InForce"
+    },
+    "GetPolicyInfoDebug": {
+        "ElapsedTime": 224,
+        "Input": {
+            "Id": "02i6A000000mRODQA2"
+        },
+        "Status": true,
+        "Type": "DataRaptor Extract Action"
+    },
+    "Setpolicy": {
+        "policyId": "02i6A000000mRODQA2"
+    },
+    "SetpolicyDebug": {
+        "ElapsedTime": 27,
+        "Input": "Running Set Values",
+        "Status": true,
+        "Type": "Set Values"
+    },
+    "UpdatePolicyValues": {
+        "ActualTime": 512,
+        "Asset_1": [
+            {
+                "Id": "02i6A000000mRODQA2",
+                "UpsertSuccess": true
+            }
+        ],
+        "CpuTime": 359,
+        "error": "OK",
+        "responseType": "SObject"
+    },
+    "UpdatePolicyValuesDebug": {
+        "ElapsedTime": 160,
+        "Input": {
+            "ApplyOneTimePremium": {
+                "error": "OK",
+                "errorCode": "INVOKE-200",
+                "output": [
+                    {
+                        "aggregationResults": {
+                        },
+                        "calculationResults": [
+                            {
+                                "AmountDue": 325.33,
+                                "AnnualPremium": 1301.32,
+                                "BeginPaidtoDate": "09/25/2018",
+                                "BeginPolicyStatus": 3,
+                                "EndofGraceperiodDate": "2019-01-25",
+                                "FinalAmountDue": 0,
+                                "GracePeriod": 30,
+                                "ID": "input",
+                                "InitiateGracePeriodDate": "2018-12-26",
+                                "ModalPremium": 325.33,
+                                "NumofDays": 3,
+                                "PaidtoDate": "2018-12-25",
+                                "PastDue": 0,
+                                "PaymentAmount": 325.33,
+                                "PaymentFrequency": 4,
+                                "PolicyStatus": 1,
+                                "nextPayAmount": 325.33
+                            }
+                        ]
+                    }
+                ]
+            },
+            "ApplyOneTimePremiumStatus": true,
+            "ContextId": "02i6A000000mRODQA2",
+            "GetPolicyInfo": {
+                "AmountDue": 325.33,
+                "AnnualPremium": 1301.32,
+                "BillDueDate": "2018-09-25",
+                "GracePeriod": "30",
+                "NumofDays": 3,
+                "PaidToDate": "2018-09-25",
+                "PastDue": "0",
+                "PaymentFrequency": 4,
+                "PolicyStatus": "InForce"
+            },
+            "GetPolicyInfoStatus": true,
+            "Setpolicy": {
+                "policyId": "02i6A000000mRODQA2"
+            },
+            "SetpolicyStatus": true,
+            "options": {
+                "chainable": false
+            }
+        },
+        "Status": true,
+        "Type": "DataRaptor Post Action"
+    },
+    "debugLog": [
+        "2018-09-19T05:42:21.404Z: Query - SELECT id,%vlocity_namespace%__automaticpaymentamount__c,%vlocity_namespace%__billingfrequency__c,status,%vlocity_namespace%__annualpremium__c,%vlocity_namespace%__billduedate__c,%vlocity_namespace%__policypaidtodate__c FROM Asset WHERE (Id = '02i6A000000mRODQA2') LIMIT 50000",
+        "2018-09-19T05:42:21.408Z: Query Results Found: 1",
+        "2018-09-19T05:42:21.451Z: 2018-09-25 00:00:00",
+        "2018-09-19T05:42:21.632Z: Query - SELECT id FROM Asset WHERE (Id = '02i6A000000mRODQA2') LIMIT 50000",
+        "2018-09-19T05:42:21.644Z: Query Results Found: 1"
+    ],
+    "elapsedTimeActual": 576,
+    "elapsedTimeCPU": 360,
+    "executionSequence": [
+        "Setpolicy",
+        "GetPolicyInfo",
+        "ApplyOneTimePremium",
+        "UpdatePolicyValues"
+    ],
+    "fullDataJson": {
+        "ApplyOneTimePremium": {
+            "error": "OK",
+            "errorCode": "INVOKE-200",
+            "output": [
+                {
+                    "aggregationResults": {
+                    },
+                    "calculationResults": [
+                        {
+                            "AmountDue": 325.33,
+                            "AnnualPremium": 1301.32,
+                            "BeginPaidtoDate": "09/25/2018",
+                            "BeginPolicyStatus": 3,
+                            "EndofGraceperiodDate": "2019-01-25",
+                            "FinalAmountDue": 0,
+                            "GracePeriod": 30,
+                            "ID": "input",
+                            "InitiateGracePeriodDate": "2018-12-26",
+                            "ModalPremium": 325.33,
+                            "NumofDays": 3,
+                            "PaidtoDate": "2018-12-25",
+                            "PastDue": 0,
+                            "PaymentAmount": 325.33,
+                            "PaymentFrequency": 4,
+                            "PolicyStatus": 1,
+                            "nextPayAmount": 325.33
+                        }
+                    ]
+                }
+            ]
+        },
+        "ApplyOneTimePremiumStatus": true,
+        "ContextId": "02i6A000000mRODQA2",
+        "GetPolicyInfo": {
+            "AmountDue": 325.33,
+            "AnnualPremium": 1301.32,
+            "BillDueDate": "2018-09-25",
+            "GracePeriod": "30",
+            "NumofDays": 3,
+            "PaidToDate": "2018-09-25",
+            "PastDue": "0",
+            "PaymentFrequency": 4,
+            "PolicyStatus": "InForce"
+        },
+        "GetPolicyInfoStatus": true,
+        "Setpolicy": {
+            "policyId": "02i6A000000mRODQA2"
+        },
+        "SetpolicyStatus": true,
+        "UpdatePolicyValues": {
+            "ActualTime": 512,
+            "Asset_1": [
+                {
+                    "Id": "02i6A000000mRODQA2",
+                    "UpsertSuccess": true
+                }
+            ],
+            "CpuTime": 359,
+            "error": "OK",
+            "responseType": "SObject"
+        },
+        "UpdatePolicyValuesStatus": true,
+        "options": {
+            "chainable": false
+        },
+        "response": {
+        }
+    },
+    "originalInput": {
+        "ContextId": "02i6A000000mRODQA2"
+    },
+    "response": {
+    }
+}

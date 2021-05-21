@@ -1,0 +1,43 @@
+<div class="slds-p-bottom_medium slds-border_bottom slds-m-bottom_medium slds-p-right_large vloc-ins-product-rules-eligibility-container"
+    ng-controller="vlocInsRulesEligibilityCtrl" ng-init="initEligibility(obj, params.id)" ng-mouseleave="popoverOpen = false">
+    <div class="slds-grid">
+        <h3 class="slds-text-heading_medium vloc-ins-product-rules-heading">{{customLabels.InsProductEligibility}}</h3>
+        <div class="vloc-ins-rules-comments"
+            ng-class="{'vloc-ins-comments': eligibility.eligibilityRuleComment.length > 0, 'vloc-ins-no-comments': !eligibility.eligibilityRuleComment || eligibility.eligibilityRuleComment.length < 1}">
+            <slds-button-svg-icon extra-classes="'vloc-ins-icon'" ng-mouseover="popoverOpen = true" size="'large'"
+                sprite="'utility'" icon="'comments'" no-hint="true"></slds-button-svg-icon>
+            <div ng-if="popoverOpen"
+                class="slds-m-top_xx-small slds-m-bottom_x-small slds-m-horizontal_xx-small slds-is-relative">
+                <div class="vloc-ins-rule-message-tooltip slds-popover slds-nubbin_top-right slds-is-absolute"
+                    role="tooltip" id="help">
+                    <div class="slds-popover__body">
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label"
+                                for="textarea-id-01">{{customLabels.InsEligibilityRuleComment}}</label>
+                            <div class="slds-form-element__control">
+                                <textarea ng-change="saveEligibilityRule();" ng-model-options="{debounce: 250}" ng-model="eligibility.eligibilityRuleComment"
+                                    id="textarea-id-{{key}}" class="vloc-comment-text-area slds-textarea"
+                                    placeholder="{{customLabels.InsRuleCommentsPlaceholder}}"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slds-size_1-of-1 vloc-ins-product-rules-eligibility-expression">
+        <div class="vloc-ins-product-rules-eligibility-number"
+            ng-class="{'rule-saved': eligibility.saveStatus === 'saved', 'rule-unsaved': eligibility.saveStatus === 'unsaved', 'rule-save-error': eligibility.saveStatus === 'error'}">
+            1</div>
+        <div class="slds-form-element">
+            <label class="slds-form-element__label"
+                for="eligibility-rule-expression">{{customLabels.InsProductExpression}}</label>
+            <div class="slds-form-element__control slds-is-relative">
+                <monaco-editor id="eligibility-rule-expression" class="slds-textarea" language="vlocity-formula"
+                    ng-model="eligibility.rule" ng-change="saveEligibilityRule()" ng-if="$root.insTypeAheads"
+                    ng-keydown="vlocInsProductRulesService.switchTypeAheadData(eligibility)"
+                    ng-keyup="markExpressionUnsaved($event)"></monaco-editor>
+            </div>
+        </div>
+    </div>
+</div>

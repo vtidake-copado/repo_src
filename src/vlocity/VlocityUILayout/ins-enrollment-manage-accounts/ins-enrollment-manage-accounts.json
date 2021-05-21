@@ -1,0 +1,21 @@
+{
+    "Cards": [
+        "ins-enrollment-manage-accounts-card"
+    ],
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{\"records\": 1}",
+            "resultVar": ""
+        }
+    },
+    "previewType": "designTime",
+    "templates": {
+        "0": {
+            "templateUrl": "ins-enrollment-manage-accounts-container"
+        }
+    },
+    "workspace": [
+        "ins-enrollment-manage-accounts-card/Vlocity/1/1520868174457"
+    ]
+}

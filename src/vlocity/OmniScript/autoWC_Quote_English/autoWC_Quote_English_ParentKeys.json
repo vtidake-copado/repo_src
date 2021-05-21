@@ -1,0 +1,11 @@
+[
+    "DataRaptor/auto_ExtRecordType",
+    "DataRaptor/auto_ExtrPersAcctDetails_QuoteOS",
+    "DataRaptor/auto_ExtrProducer_QuoteOS",
+    "DataRaptor/auto_ReadQuote_QuoteOS",
+    "DataRaptor/auto_TransForGetRatedProducts_QuoteOS",
+    "IntegrationProcedure/Auto_CreateUpdateQuote",
+    "IntegrationProcedure/Auto_MergeInsuredItems",
+    "VlocityUITemplate/ins-os-attribute-component",
+    "VlocityUITemplate/ins-os-coverage-component"
+]

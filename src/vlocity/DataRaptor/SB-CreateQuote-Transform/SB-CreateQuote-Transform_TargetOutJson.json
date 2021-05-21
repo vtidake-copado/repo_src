@@ -1,0 +1,30 @@
+{
+    "quoteJson": {
+        "Id": null,
+        "additionalFields": {
+        },
+        "effectiveDate": null,
+        "endDate": null,
+        "insuredItems": {
+            "SBBusinessProfile": [
+                {
+                    "SBbusLegalForm": "corporation",
+                    "SBbusRevAnnual": null,
+                    "SBbusType": "office",
+                    "additionalFields": {
+                    },
+                    "instanceKey": null,
+                    "isPrimary": true,
+                    "productCode": "SBBusinessProfile",
+                    "productId": "01t6A000003pmHpQAI"
+                }
+            ]
+        },
+        "opportunityId": null,
+        "productConfigurationDetail:records": "JSONResult Object",
+        "rootItemId": null,
+        "term": null,
+        "toBeDeletedQuoteLineItems": [
+        ]
+    }
+}

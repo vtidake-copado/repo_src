@@ -1,0 +1,57 @@
+<div class="slds-grid">
+    <div class="slds-section" ng-class="{'slds-is-open': !groupCollapsed}">
+        <h3 class="slds-section__title">
+            <button aria-controls="expando-groups" class="slds-button slds-section__title-action" ng-click="groupCollapsed = !groupCollapsed">
+                <slds-button-svg-icon sprite="'utility'" icon="'switch'" class="slds-section__title-action-icon slds-button__icon_left"></slds-button-svg-icon>
+                <span class="slds-truncate" title="{{::$root.customLabels.InsQuotesGroups}}">{{ ::$root.customLabels.InsQuotesGroups}}</span>
+            </button>
+        </h3>
+        <div aria-hidden="false" class="slds-section__content" id="expando-groups">
+            <div class="slds-grid slds-grid_vertical-align-center slds-grid_align-end slds-p-bottom_small">
+                <button class="slds-button slds-button_brand" ng-click="importedScope.openGroupModal()">{{ ::$root.customLabels.InsQuotesAddGroups}}</button>
+            </div>
+            <table class="slds-table slds-table_bordered slds-table_fixed-layout" role="grid">
+                <thead> 
+                    <tr>
+                        <th aria-label="Group" scope="col">
+                            <span class="slds-truncate" title="{{ ::$root.customLabels.InsQuotesGroup }}">{{ ::$root.customLabels.InsQuotesGroup }}</span>
+                        </th>
+                        <th aria-label="Class" scope="col">
+                            <span class="slds-truncate" title="{{ ::$root.customLabels.InsQuotesClass }}">{{ ::$root.customLabels.InsQuotesClass }}</span>
+                        </th>
+                        <th aria-label="Group Code" scope="col">
+                            <span class="slds-truncate" title="{{ ::$root.customLabels.InsQuotesGroupCode }}">{{ ::$root.customLabels.InsQuotesGroupCode }}</span>
+                        </th>
+                        <th aria-label="Class Code" scope="col">
+                            <span class="slds-truncate" title="{{ ::$root.customLabels.InsQuotesClassCode }}">{{ ::$root.customLabels.InsQuotesClassCode }}</span>
+                        </th>
+                        <th scope="col" class="vloc-delete-col">
+                            <div class="slds-truncate slds-assistive-text" title="{{ ::$root.customLabels.Delete }}">{{ ::$root.customLabels.Delete }}</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="group in $root.activeRow.groupClasses.records">
+                        <td role="gridcell">
+                            <div class="slds-truncate" title="{{group.formattedValues.groupName}}">{{group.formattedValues.groupName}}</div>
+                        </td>
+                        <td role="gridcell">
+                            <div class="slds-truncate" title="{{group.formattedValues.className}}">{{group.formattedValues.className}}</div>
+                        </td>
+                        <td role="gridcell">
+                            <div class="slds-truncate" title="{{group.formattedValues.groupCode}}">{{group.formattedValues.groupCode}}</div>
+                        </td>
+                        <td role="gridcell">
+                            <div class="slds-truncate" title="{{group.formattedValues.classCode}}">{{group.formattedValues.classCode}}</div>
+                        </td>
+                        <td>
+                            <span class="vloc-icon-button" title="{{::$root.customLabels.RemoveGroup}}">
+                                <slds-button-svg-icon sprite="'utility'" icon="'delete'" no-hint="true" ng-click="importedScope.removeQliGroupClass(group.Id)"></slds-button-svg-icon>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

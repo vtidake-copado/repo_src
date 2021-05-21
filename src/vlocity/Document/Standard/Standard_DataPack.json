@@ -1,0 +1,17 @@
+{
+    "Body": "File_Standard.png",
+    "BodyLength": 17960,
+    "ContentType": "image/png",
+    "Description": "",
+    "DeveloperName": "Standard",
+    "IsBodySearchable": false,
+    "IsInternalUseOnly": false,
+    "IsPublic": true,
+    "Keywords": "",
+    "Name": "Standard",
+    "Type": "png",
+    "Url": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Document",
+    "VlocityRecordSourceKey": "Document/Standard"
+}

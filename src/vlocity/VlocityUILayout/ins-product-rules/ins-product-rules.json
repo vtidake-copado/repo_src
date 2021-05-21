@@ -1,0 +1,11 @@
+{
+    "Cards": [
+        "ins-product-rules-eligibility-card",
+        "ins-product-rules-requirements-card"
+    ],
+    "templates": {
+        "0": {
+            "templateUrl": "ins-product-rules-container"
+        }
+    }
+}

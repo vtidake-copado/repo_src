@@ -1,0 +1,86 @@
+{
+    "insuredItems": {
+        "Auto": [
+            {
+                "BodyClass": "Sedan/Saloon",
+                "VehicleType": "PASSENGER CAR",
+                "autoCondition": null,
+                "autoGaragePostalCode": null,
+                "autoInstanceKey": "2015 Lexus LX250",
+                "autoMake": "Lexus",
+                "autoMileage": 15000,
+                "autoModel": "LX250",
+                "autoTrim": "Sedan/Saloon",
+                "autoVehicleType": "PASSENGER CAR",
+                "autoYear": 2015,
+                "discAltFuel": true,
+                "discAntiLock": false,
+                "discAntiTheft": false,
+                "discStab": false,
+                "discountAutoInstanceKey": "2015 Lexus LX250",
+                "instanceKey": "2015 Lexus LX250",
+                "isPrimary": true,
+                "typeAutoDiscount": "AltFuel"
+            },
+            {
+                "BodyClass": "Minivan",
+                "VehicleType": "MULTIPURPOSE PASSENGER VEHICLE (MPV)",
+                "autoCondition": "Good",
+                "autoGaragePostalCode": null,
+                "autoInstanceKey": "2006 Honda Odyssey",
+                "autoMake": "Honda",
+                "autoMileage": 13000,
+                "autoModel": "Odyssey",
+                "autoTrim": "Minivan",
+                "autoVehicleType": "MULTIPURPOSE PASSENGER VEHICLE (MPV)",
+                "autoYear": 2006,
+                "discAltFuel": true,
+                "discAntiLock": false,
+                "discAntiTheft": true,
+                "discStab": false,
+                "discountAutoInstanceKey": "2006 Honda Odyssey",
+                "instanceKey": "2006 Honda Odyssey",
+                "isPrimary": true,
+                "typeAutoDiscount": "AltFuel;AntiTheft"
+            }
+        ],
+        "Driver": [
+            {
+                "discountDriverInstanceKey": "Roger Moore",
+                "driverAge": 32,
+                "driverAgeLicensed": 16,
+                "driverBirthdate": "1986-02-14T08:00:00.000Z",
+                "driverFirstName": "Roger",
+                "driverGPA": null,
+                "driverGender": "M",
+                "driverInstanceKey": "Roger Moore",
+                "driverLastName": "Moore",
+                "driverMaritalStatus": "M",
+                "driverMiddleName": null,
+                "driverMilitaryID": null,
+                "driverMiltaryBranch": null,
+                "instanceKey": "Roger Moore",
+                "isPrimary": true,
+                "typeDriverDiscount": null
+            },
+            {
+                "discountDriverInstanceKey": "Joan Moore",
+                "driverAge": 40,
+                "driverAgeLicensed": 18,
+                "driverBirthdate": "1978-07-07T07:00:00.000Z",
+                "driverFirstName": "Joan",
+                "driverGPA": null,
+                "driverGender": "F",
+                "driverInstanceKey": "Joan Moore",
+                "driverLastName": "Moore",
+                "driverMaritalStatus": "M",
+                "driverMiddleName": null,
+                "driverMilitaryID": null,
+                "driverMiltaryBranch": null,
+                "instanceKey": "Joan Moore",
+                "isPrimary": true,
+                "typeDriverDiscount": null
+            }
+        ]
+    }
+}

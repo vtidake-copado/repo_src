@@ -1,0 +1,388 @@
+[
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "SmallGroupVision",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/SmallGroupVision",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SmallGroupVision",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SmallGroupVision",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "724282",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "ProductCode"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "5a9c07",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "Price"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"Price\":\"smallgroupvision__Price\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "smallgroupvision__Price * EmpFactor * empOnlyCount",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "smallgroupvision__Price",
+                "dataType": "Number",
+                "text": "Price ( smallgroupvision )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "EmpFactor",
+                "dataType": "Number",
+                "text": "EmpFactor"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "empOnlyCount",
+                "dataType": "Number",
+                "text": "empOnlyCount",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SmallGroupVision",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SmallGroupVision",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "empOnlyCount"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "TotalEmpOnly",
+            "dataType": "Number",
+            "name": "TotalEmpOnly"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"TotalEmpOnly\":\"TotalEmpOnly\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "smallgroupvision__Price * EmpSpFactor * empSpouseCount",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "smallgroupvision__Price",
+                "dataType": "Number",
+                "text": "Price ( smallgroupvision )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "EmpSpFactor",
+                "dataType": "Number",
+                "text": "EmpSpFactor"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "empSpouseCount",
+                "dataType": "Number",
+                "text": "empSpouseCount",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SmallGroupVision",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SmallGroupVision",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "empSpouseCount"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "TotalEmpSpouse",
+            "dataType": "Number",
+            "name": "TotalEmpSpouse"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"TotalEmpSpouse\":\"TotalEmpSpouse\"}",
+        "%vlocity_namespace%__Sequence__c": 3,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "smallgroupvision__Price * EmpChFactor * empChildCount",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "smallgroupvision__Price",
+                "dataType": "Number",
+                "text": "Price ( smallgroupvision )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "EmpChFactor",
+                "dataType": "Number",
+                "text": "EmpChFactor"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "empChildCount",
+                "dataType": "Number",
+                "text": "empChildCount",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SmallGroupVision",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SmallGroupVision",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "empChildCount"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "TotalEmpChild",
+            "dataType": "Number",
+            "name": "TotalEmpChild"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"TotalEmpChild\":\"TotalEmpChild\"}",
+        "%vlocity_namespace%__Sequence__c": 4,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "smallgroupvision__Price * EmpFaFactor * empFamilyCount",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "smallgroupvision__Price",
+                "dataType": "Number",
+                "text": "Price ( smallgroupvision )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "EmpFaFactor",
+                "dataType": "Number",
+                "text": "EmpFaFactor"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "empFamilyCount",
+                "dataType": "Number",
+                "text": "empFamilyCount",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SmallGroupVision",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SmallGroupVision",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "empFamilyCount"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "TotalEmpFamily",
+            "dataType": "Number",
+            "name": "TotalEmpFamily"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"TotalEmpFamily\":\"TotalEmpFamily\"}",
+        "%vlocity_namespace%__Sequence__c": 5,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "TotalEmpOnly + TotalEmpChild + TotalEmpSpouse + TotalEmpFamily",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "TotalEmpOnly",
+                "dataType": "Number",
+                "text": "TotalEmpOnly",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "TotalEmpChild",
+                "dataType": "Number",
+                "text": "TotalEmpChild",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "TotalEmpSpouse",
+                "dataType": "Number",
+                "text": "TotalEmpSpouse",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "TotalEmpFamily",
+                "dataType": "Number",
+                "text": "TotalEmpFamily",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SmallGroupVision",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SmallGroupVision",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SmallGroupVision",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "TotalEmpOnly"
+            },
+            {
+                "dataType": "Number",
+                "name": "TotalEmpChild"
+            },
+            {
+                "dataType": "Number",
+                "name": "TotalEmpSpouse"
+            },
+            {
+                "dataType": "Number",
+                "name": "TotalEmpFamily"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "TotalPrice",
+            "dataType": "Number",
+            "name": "TotalPrice"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"TotalPrice\":\"TotalPrice\"}",
+        "%vlocity_namespace%__Sequence__c": 6,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

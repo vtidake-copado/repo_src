@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- HTML Template --></label>
+        <name>vlocity_ins__HTMLTemplateId__c</name>
+    </fields>
+    <fields>
+        <label><!-- UI Display Type --></label>
+        <name>vlocity_ins__UIDisplayType__c</name>
+        <picklistValues>
+            <masterLabel>Check-box</masterLabel>
+            <translation><!-- Check-box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drop-down</masterLabel>
+            <translation><!-- Drop-down --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio-button</masterLabel>
+            <translation><!-- Radio-button --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Range-Slider</masterLabel>
+            <translation><!-- Range-Slider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text-box</masterLabel>
+            <translation><!-- Text-box --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

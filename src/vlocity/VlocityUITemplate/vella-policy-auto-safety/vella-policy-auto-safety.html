@@ -1,0 +1,33 @@
+<div class="vella-policy-auto-safety-container" ng-controller="vellaPolicyAutoSafetyController" ng-init="init(obj)" ng-show="chartData.values.length">
+    <div class="vella-policy-auto-safety-top">
+        <h2 class="vella-policy-auto-safety-name">Safety & Use</h2>
+        <p class="vella-policy-auto-safety-description">Your costs are based on the amount and how safe you drive.</p>
+    </div>
+    <div class="vella-policy-auto-safety-chart">
+        <span class="vella-policy-auto-safety-chart-upper-limit">{{ceil(chartData.highMonthValue)}}</span>
+        <div class="slds-grid vella-policy-auto-safety-chart-bars">
+            <div class="slds-size--1-of-12" ng-repeat="value in chartData.values track by $index">
+                <div class="vella-policy-auto-safety-chart-bar" ng-style="value.height">
+                    <span class="vella-policy-auto-safety-chart-bar-label">{{value.label}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slds-grid vella-policy-auto-safety-data">
+        <div class="slds-size--1-of-3 vella-policy-auto-safety-data-item vella-policy-auto-safety-data-item-safety-rating">
+            <span class="value">
+                {{chartData.values[chartData.mostRecentIndex].score}}
+                <slds-svg-icon size="'small'" sprite="'utility'" icon="'trending'"></slds-svg-icon>
+            </span>
+            <span class="label">Safety Rating</span>
+        </div>
+        <div class="slds-size--1-of-3 vella-policy-auto-safety-data-item vella-policy-auto-safety-data-item-mi-last-month">
+            <span class="value">{{chartData.values[chartData.mostRecentIndex].value}}</span>
+            <span class="label">MI Last Month</span>
+        </div>
+        <div class="slds-size--1-of-3 vella-policy-auto-safety-data-item vella-policy-auto-safety-data-item-per-mile">
+            <span class="value">{{chartData.values[chartData.mostRecentIndex].rate * 100}}&cent;</span>
+            <span class="label">Per Mile</span>
+        </div>
+    </div>
+</div>

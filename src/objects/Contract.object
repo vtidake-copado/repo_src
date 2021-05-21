@@ -170,6 +170,376 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
+    <fieldSets>
+        <fullName>vlocity_ins__FrameContractList</fullName>
+        <description>The fields on frame contract list page</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ContractNumber</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>AccountId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>StartDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ContractTerm</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>EndDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>FrameContractList</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>vlocity_ins__GetContractDetailFields</fullName>
+        <availableFields>
+            <field>vlocity_ins__AccountMarketSegment__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ActivatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>ActivatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__ActiveContractVersionId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__AgencyBrokerageId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__AgencyLicenseId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__ApplicationId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__AutoRenewObjectCreation__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CompanySignedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CompanySignedId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__ContractReferenceNumber__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__ContractType__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__CountofContractVersion__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CustomerSignedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CustomerSignedId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CustomerSignedTitle</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__EnrollmentWaitingPeriod__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__ExpirationReason__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__ExpiredContractId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__FinalRatingGroupCensusId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__IsActiveDocumentLocked__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__IsActiveVersionBatchTemplate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__IsAutoRenew__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__IsFrameContract__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__IsNonStandard__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__LastDocumentBatchJobError__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__LastDocumentBatchJobId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__LastDocumentBatchJobStatus__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__LocaleCode__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__OpportunityId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__OrderId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__OriginalContractId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__ParentContractId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__PriceListId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__ProducerId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__QuoteId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__RenewalNotificationTerm__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__RenewalNotification__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__RenewalStartDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__SendRenewalNotification__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SpecialTerms</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Status</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>StatusCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__TerminateDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__TerminationReason__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__TerminationType__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__TermofEligibility__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__UnderwriterId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>For Contract details JSON</description>
+        <displayedFields>
+            <field>Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>AccountId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ContractNumber</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>StartDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>EndDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ContractTerm</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__EnrollmentCensusId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__EnrollmentStartDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__EnrollmentEndDate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Pricebook2Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>GetContractDetailFields</label>
+    </fieldSets>
     <fields>
         <fullName>AccountId</fullName>
         <trackHistory>true</trackHistory>
@@ -257,6 +627,566 @@
         <trackHistory>true</trackHistory>
         <type>Picklist</type>
     </fields>
+    <fields>
+        <fullName>vlocity_ins__AccountMarketSegment__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Text(Account.vlocity_ins__MarketSegment__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Market Segment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ActiveContractVersionId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Stores the version identifier of the active contract document of this contract</description>
+        <externalId>false</externalId>
+        <label>Active Contract Document</label>
+        <referenceTo>vlocity_ins__ContractVersion__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__AgencyBrokerageId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency/Brokerage</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__AgencyLicenseId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Channel Partner License</label>
+        <referenceTo>vlocity_ins__AgencyLicense__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ApplicationId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <referenceTo>vlocity_ins__Application__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__AutoRenewObjectCreation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The object that is created as part of a renewal initiation. Object could be Opportunity, Quote or Order</description>
+        <externalId>false</externalId>
+        <label>Renewal Notification Object</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Opportunity</fullName>
+                    <default>false</default>
+                    <label>Opportunity</label>
+                </value>
+                <value>
+                    <fullName>Quote</fullName>
+                    <default>false</default>
+                    <label>Quote</label>
+                </value>
+                <value>
+                    <fullName>Order</fullName>
+                    <default>false</default>
+                    <label>Order</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ContractReferenceNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A field that can be used to store a user entered or externally referenced contract number</description>
+        <externalId>false</externalId>
+        <label>Contract Reference Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ContractType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The contract type this contract belongs to.</description>
+        <externalId>false</externalId>
+        <label>Contract Type</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__CountofContractVersion__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The number of document versions that have been created for this contract</description>
+        <externalId>false</externalId>
+        <label>Count of Contract Document</label>
+        <summaryForeignKey>vlocity_ins__ContractVersion__c.vlocity_ins__ContractId__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__EnrollmentCensusId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Enrollment Census</label>
+        <referenceTo>vlocity_ins__GroupCensus__c</referenceTo>
+        <relationshipLabel>Contracts (Enrollment Census)</relationshipLabel>
+        <relationshipName>EnrollmentContract</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__EnrollmentEndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Enrollment End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__EnrollmentStartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Enrollment Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__EnrollmentWaitingPeriod__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Enrollment Waiting Period</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ExpirationReason__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Reason why they contract expired</description>
+        <externalId>false</externalId>
+        <label>Expiration Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Does not want to renew</fullName>
+                    <default>false</default>
+                    <label>Does not want to renew</label>
+                </value>
+                <value>
+                    <fullName>Moving to M2M</fullName>
+                    <default>false</default>
+                    <label>Moving to M2M</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ExpiredContractId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Specifies the expired contract which this contact now replaces. This contract is considered an replacement of the expired contract</description>
+        <externalId>false</externalId>
+        <label>Expired Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Replacement Contract</relationshipLabel>
+        <relationshipName>ReplacementContracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__FinalRatingGroupCensusId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Final Rating Census</label>
+        <referenceTo>vlocity_ins__GroupCensus__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsActiveDocumentLocked__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the active version of the contract document of this contract is locked</description>
+        <externalId>false</externalId>
+        <formula>vlocity_ins__ActiveContractVersionId__r.vlocity_ins__IsDocumentLocked__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Active Document Locked</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsActiveVersionBatchTemplate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>vlocity_ins__ActiveContractVersionId__r.vlocity_ins__IsTemplateBatchable__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IsActiveVersionBatchTemplate</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsAutoRenew__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Checked if this contract will be renewed automatically.</description>
+        <externalId>false</externalId>
+        <label>Auto Renew</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsFrameContract__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Checked if this contract is a frame contract or a pricing agreement</description>
+        <externalId>false</externalId>
+        <label>Is Frame Contract</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsNonStandard__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If checked, specifies that this contract is a non-standard contract. A non-standard contract is one that deviates from its contract template</description>
+        <externalId>false</externalId>
+        <formula>if( vlocity_ins__ActiveContractVersionId__r.vlocity_ins__CountOfNonStandardSection__c &gt;0, true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Non Standard</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__LastDocumentBatchJobError__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Document Batch Job Error</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__LastDocumentBatchJobId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Document Batch Job Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__LastDocumentBatchJobStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Document Batch Job Status</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__LocaleCode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>vlocity_ins__VlocityLocaleCode</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__OpportunityId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__OrderId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The order from which this contract was created</description>
+        <externalId>false</externalId>
+        <label>Order</label>
+        <referenceTo>Order</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__OriginalContractId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Specifies the original contract from which this contact was created. This contract is considered an amendment of the original contract</description>
+        <externalId>false</externalId>
+        <label>Original Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Amendment Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ParentContractId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Specifies parent contract of this contract. This contract is considered a sub-contract of the parent contract</description>
+        <externalId>false</externalId>
+        <label>Parent Contract</label>
+        <referenceTo>Contract</referenceTo>
+        <relationshipLabel>Sub Contract</relationshipLabel>
+        <relationshipName>ParentContract</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PriceListId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Price list used by contracts</description>
+        <externalId>false</externalId>
+        <label>Price List</label>
+        <referenceTo>vlocity_ins__PriceList__c</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ProducerId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Producer</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__QuoteId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The quote from which this contract was created</description>
+        <externalId>false</externalId>
+        <label>Quote</label>
+        <referenceTo>Quote</referenceTo>
+        <relationshipLabel>Contracts</relationshipLabel>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RenewalNotificationTerm__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The unit of measure for renewal notification period (days or months)</description>
+        <externalId>false</externalId>
+        <label>Renewal Notification Term</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Months</fullName>
+                    <default>true</default>
+                    <label>Months</label>
+                </value>
+                <value>
+                    <fullName>Days</fullName>
+                    <default>false</default>
+                    <label>Days</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RenewalNotification__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The time interval before contract expiration when a renewal notification is initiated</description>
+        <externalId>false</externalId>
+        <label>Renewal Notification Period</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RenewalStartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date on which a renewal notification is created, along with the specified renewal notification object. Calculated based on the contract end date, and the renewal notification term and renewal notification period values</description>
+        <externalId>false</externalId>
+        <label>Renewal Notification Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SendRenewalNotification__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, indicates that a renewal notification message would be sent on the renewal notification date.</description>
+        <externalId>false</externalId>
+        <label>Send Renewal Notification</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__TerminateDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date this contract was terminated</description>
+        <externalId>false</externalId>
+        <label>Terminate Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__TerminationReason__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The reason this contract was terminated</description>
+        <externalId>false</externalId>
+        <label>Termination Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Not Compliance</fullName>
+                    <default>false</default>
+                    <label>Customer Not Compliance</label>
+                </value>
+                <value>
+                    <fullName>Termination without Cause</fullName>
+                    <default>false</default>
+                    <label>Termination without Cause</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__TerminationType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The type of contract termination</description>
+        <externalId>false</externalId>
+        <label>Termination Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>With Cause</fullName>
+                    <default>false</default>
+                    <label>With Cause</label>
+                </value>
+                <value>
+                    <fullName>Without Cause</fullName>
+                    <default>false</default>
+                    <label>Without Cause</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__TermofEligibility__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Term of Eligibility</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__UnderwriterId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Underwriter</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Contracts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
     <listViews>
         <fullName>AllActivatedContracts</fullName>
         <filterScope>Everything</filterScope>
@@ -322,6 +1252,575 @@
         </filters>
         <label>My In Approval Contracts</label>
     </listViews>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>vlocity_ins__Carrier</fullName>
+        <active>true</active>
+        <label>Carrier</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Activated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__AutoRenewObjectCreation__c</picklist>
+            <values>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ExpirationReason__c</picklist>
+            <values>
+                <fullName>Does not want to renew</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving to M2M</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__LocaleCode__c</picklist>
+            <values>
+                <fullName>de</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>en_US</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>fi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fr</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RenewalNotificationTerm__c</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Months</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationReason__c</picklist>
+            <values>
+                <fullName>Customer Not Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Termination without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationType__c</picklist>
+            <values>
+                <fullName>With Cause</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>vlocity_ins__Contract</fullName>
+        <active>true</active>
+        <label>Contract</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Activated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__AutoRenewObjectCreation__c</picklist>
+            <values>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ExpirationReason__c</picklist>
+            <values>
+                <fullName>Does not want to renew</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving to M2M</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__LocaleCode__c</picklist>
+            <values>
+                <fullName>de</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fr</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RenewalNotificationTerm__c</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Months</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationReason__c</picklist>
+            <values>
+                <fullName>Customer Not Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Termination without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationType__c</picklist>
+            <values>
+                <fullName>With Cause</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>vlocity_ins__Group</fullName>
+        <active>true</active>
+        <label>Group</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Activated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__AutoRenewObjectCreation__c</picklist>
+            <values>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ExpirationReason__c</picklist>
+            <values>
+                <fullName>Does not want to renew</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving to M2M</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__LocaleCode__c</picklist>
+            <values>
+                <fullName>de</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fr</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RenewalNotificationTerm__c</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Months</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationReason__c</picklist>
+            <values>
+                <fullName>Customer Not Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Termination without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationType__c</picklist>
+            <values>
+                <fullName>With Cause</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>vlocity_ins__Producer</fullName>
+        <active>true</active>
+        <label>Producer</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Activated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__AutoRenewObjectCreation__c</picklist>
+            <values>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ExpirationReason__c</picklist>
+            <values>
+                <fullName>Does not want to renew</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving to M2M</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__LocaleCode__c</picklist>
+            <values>
+                <fullName>de</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fr</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RenewalNotificationTerm__c</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Months</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationReason__c</picklist>
+            <values>
+                <fullName>Customer Not Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Termination without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationType__c</picklist>
+            <values>
+                <fullName>With Cause</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>vlocity_ins__Provider</fullName>
+        <active>true</active>
+        <label>Provider</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Activated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__AutoRenewObjectCreation__c</picklist>
+            <values>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ExpirationReason__c</picklist>
+            <values>
+                <fullName>Does not want to renew</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving to M2M</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__LocaleCode__c</picklist>
+            <values>
+                <fullName>de</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fr</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RenewalNotificationTerm__c</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Months</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationReason__c</picklist>
+            <values>
+                <fullName>Customer Not Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Termination without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationType__c</picklist>
+            <values>
+                <fullName>With Cause</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>vlocity_ins__ReadOnlyContract</fullName>
+        <active>true</active>
+        <label>Read Only</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Activated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__AutoRenewObjectCreation__c</picklist>
+            <values>
+                <fullName>Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ExpirationReason__c</picklist>
+            <values>
+                <fullName>Does not want to renew</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moving to M2M</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__LocaleCode__c</picklist>
+            <values>
+                <fullName>de</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>fr</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RenewalNotificationTerm__c</picklist>
+            <values>
+                <fullName>Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Months</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationReason__c</picklist>
+            <values>
+                <fullName>Customer Not Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Termination without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__TerminationType__c</picklist>
+            <values>
+                <fullName>With Cause</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Without Cause</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>CONTRACT.CONTRACT_NUMBER</customTabListAdditionalFields>
         <customTabListAdditionalFields>CONTRACT.NAME</customTabListAdditionalFields>
@@ -342,4 +1841,297 @@
         <searchResultsAdditionalFields>CONTRACT_TERM</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>vlocity_ins__CloneContract</fullName>
+        <availability>online</availability>
+        <description>Clone a Contract including line Items</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Clone</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/32.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/32.0/apex.js&quot;)}
+
+var namespace_prefix = &apos;&apos;;
+var gettingnamespace = sforce.connection.query(&quot;SELECT NamespacePrefix FROM ApexClass where Name = &apos;ApplicationUtilities&apos; LIMIT 1&quot;);
+var getname = gettingnamespace.getArray(&quot;records&quot;);
+if(getname.length &gt; 0 &amp;&amp; getname[0].NamespacePrefix)
+{
+namespace_prefix = getname[0].NamespacePrefix + &apos;.&apos;;
+}
+
+var result = sforce.apex.execute(namespace_prefix+&quot;ContractResource&quot;,&quot;deepCopyContract&quot;, {toCopy: &quot;{!Contract.Id}&quot;});
+console.log(result);
+window.location.href = &apos;/&apos; + result + &apos;/e?retURL=%2F&apos; + result;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__CreateNewVersion</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create New Version</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+
+{!REQUIRESCRIPT(&quot;/xdomain/xdomain.js&quot;)} 
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+
+{!REQUIRESCRIPT(&quot;/support/console/22.0/integration.js&quot;)} 
+
+
+
+var namespace_prefix = &apos;&apos;; 
+
+var result = sforce.connection.describeGlobal(); 
+
+var TOKEN_OBJ = &quot;Party__c&quot;; 
+
+var sobjects = result.getArray(&quot;sobjects&quot;); 
+
+for(var i=0; i&lt;sobjects.length; i++) { 
+
+   var sobjName = sobjects[i].name; 
+
+   var str = sobjName.split(&quot;__&quot;); 
+
+
+
+   //if there are 3 values there is a namespace 
+
+   if (str.length == 3){ 
+
+       var sobj = str[1].valueOf() +&apos;__c&apos;; 
+
+       if(sobj == TOKEN_OBJ) { 
+
+         namespace_prefix = str[0].valueOf(); 
+
+       } 
+
+    } 
+
+} 
+
+
+
+if(namespace_prefix != &quot;&quot;){ 
+
+  namespace_prefix+= &apos;.&apos;; 
+
+} 
+
+
+
+var result = sforce.apex.execute(namespace_prefix+&quot;ContractServiceResource&quot;,&quot;createNewContractVersion&quot;, {contractId:&apos;{!Contract.Id}&apos;}); 
+
+
+
+
+
+if (!sforce.console.isInConsole()) { 
+
+   window.location.href = &apos;/&apos; + &apos;{!Contract.Id}&apos;;
+
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__CreateRenewalOpportunity</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Renewal Opportunity</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+
+
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+
+
+
+var namespace_prefix = &apos;&apos;; 
+
+var result = sforce.connection.describeGlobal(); 
+
+var TOKEN_OBJ = &quot;Party__c&quot;; 
+
+var sobjects = result.getArray(&quot;sobjects&quot;); 
+
+
+
+for(var i=0; i&lt;sobjects.length; i++) { 
+
+
+
+   var sobjName = sobjects[i].name; 
+
+   var str = sobjName.split(&quot;__&quot;); 
+
+   //if there are 3 values there is a namespace 
+
+
+
+   if (str.length == 3){ 
+
+       var sobj = str[1].valueOf() +&apos;__c&apos;; 
+
+
+
+       if(sobj == TOKEN_OBJ) { 
+
+         namespace_prefix = str[0].valueOf(); 
+
+       } 
+
+    } 
+
+} 
+
+
+
+if(namespace_prefix != &quot;&quot;){ 
+
+  namespace_prefix+= &apos;.&apos;; 
+
+} 
+var contractName = &apos;{!Contract.Name}&apos;;
+
+if (contractName!=null &amp;&amp; contractName!=&apos;&apos;)
+{
+
+var result = sforce.apex.execute(namespace_prefix+&quot;ContractServiceResource&quot;,&quot;createRenewalOpportunity&quot;, {contractId:&apos;{!Contract.Id}&apos;}); 
+
+
+
+window.location.href = &apos;/&apos; + result;
+}
+else
+{
+alert(&apos;Please enter Contract Name&apos;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__GenerateDocument</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Generate Document</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+
+{!REQUIRESCRIPT(&quot;/xdomain/xdomain.js&quot;)} 
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+
+{!REQUIRESCRIPT(&quot;/support/console/31.0/integration.js&quot;)} 
+
+
+
+var namespace_prefix = &apos;&apos;; 
+
+var result = sforce.connection.describeGlobal(); 
+
+var TOKEN_OBJ = &quot;Party__c&quot;; 
+
+var sobjects = result.getArray(&quot;sobjects&quot;); 
+
+for(var i=0; i&lt;sobjects.length; i++) { 
+
+var sobjName = sobjects[i].name; 
+
+var str = sobjName.split(&quot;__&quot;); 
+
+
+
+//if there are 3 values there is a namespace 
+
+if (str.length == 3){ 
+
+var sobj = str[1].valueOf() +&apos;__c&apos;; 
+
+if(sobj == TOKEN_OBJ) { 
+
+namespace_prefix = str[0].valueOf(); 
+
+} 
+
+} 
+
+} 
+
+
+
+if(namespace_prefix != &quot;&quot;){ 
+
+namespace_prefix+= &apos;.&apos;; 
+
+} 
+
+
+
+var result = sforce.apex.execute(namespace_prefix+&quot;ContractServiceResource&quot;,&quot;createNewContractVersionDocument&quot;, {contractId:&apos;{!Contract.Id}&apos;}); 
+
+var url = &apos;/&apos; + result;
+
+if (sforce.console.isInConsole()) { 
+
+  srcUp(url); 
+
+} else { 
+
+  window.location.href = &apos;/&apos; + result;
+
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__ProductSelection</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Product Selection</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+var namespace_prefix = &apos;&apos;;
+var gettingnamespace = sforce.connection.query(&quot;SELECT NamespacePrefix FROM ApexClass where Name = &apos;ApplicationUtilities&apos; LIMIT 1&quot;);
+var getname = gettingnamespace.getArray(&quot;records&quot;);
+if(getname.length &gt; 0)
+{
+namespace_prefix = getname[0].NamespacePrefix;
+}
+if (namespace_prefix==null || namespace_prefix==&apos;&apos;)
+{
+var acctId = &apos;{!Contract.AccountId}&apos;;
+if(acctId!=&apos;&apos;)
+window.location = &apos;apex/InsuranceSelectionUI?accountId=&apos; + &apos;{!Contract.AccountId}&apos;+&apos;&amp;targetObjectId=&apos; +&apos;{!Contract.Id}&apos;;
+else
+window.location = &apos;apex/InsuranceSelectionUI?targetObjectId=&apos; +&apos;{!Contract.Id}&apos;;
+}
+else
+{
+var acctId = &apos;{!Contract.AccountId}&apos;;
+if(acctId!=&apos;&apos;)
+window.location = &apos;apex/&apos;+namespace_prefix+&apos;__InsuranceSelectionUI?accountId=&apos; + &apos;{!Contract.AccountId}&apos;+&apos;&amp;targetObjectId=&apos; +&apos;{!Contract.Id}&apos;;
+else
+window.location = &apos;apex/&apos;+namespace_prefix+&apos;__InsuranceSelectionUI?targetObjectId=&apos; +&apos;{!Contract.Id}&apos;;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__TagForRenewal</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Tag for Renewal</masterLabel>
+        <openType>sidebar</openType>
+        <page>vlocity_ins__ContractMultiSelect</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
 </CustomObject>

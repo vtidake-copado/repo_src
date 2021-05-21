@@ -1,0 +1,22 @@
+<div class="slds-notify_container" ng-if="!records.length" ng-init="importedScope.organizeData(records)">
+    <div class="slds-notify slds-notify_alert slds-theme_alert-texture" role="alert">
+        <span class="slds-assistive-text">There are no Involved Injuries</span>
+        <h2>There are no Involved Injuries</h2>
+    </div>
+</div>
+<div class="slds-notify_container" ng-show="importedScope.InsProductModelNotificationService.show">
+    <div class="slds-notify slds-notify_toast slds-theme_{{importedScope.InsProductModelNotificationService.type}}" role="alert">
+        <span class="slds-assistive-text">Success</span>
+        <button class="slds-button slds-notify__close slds-button_icon-inverse" title="Close" ng-click="importedScope.InsProductModelNotificationService.show = false">
+            <slds-button-svg-icon sprite="'utility'" icon="'close'" size="'large'" extra-classes="'slds-m-right_small slds-col slds-no-flex'"></slds-button-svg-icon>
+            <span class="slds-assistive-text">Close</span>
+        </button>
+        <div class="slds-notify__content slds-grid">
+            <slds-svg-icon sprite="'utility'" icon="'notification'" size="'small'" extra-classes="'slds-m-right_small slds-col slds-no-flex'"></slds-svg-icon>
+            <div class="slds-col slds-align-middle">
+                <h2 class="slds-text-heading_small" ng-bind-html="importedScope.InsProductModelNotificationService.message"></h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div vloc-card ng-repeat="card in cards | orderBy:order" ctrl="InsProductModelController" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="slds-p-around_small slds-size_1-of-1" ng-init="importedScope.organizeData(records)"></div>

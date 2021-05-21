@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Check_for_Errors__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Used in validation rules</description>
+        <externalId>false</externalId>
+        <label>Check for Errors</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ActionIcon__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If an image is uploaded here, it will take precedent over the Vlocity Icon. The image will automatically be resized to 22px wide in the Action.</inlineHelpText>
+        <label>Custom Icon</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__AdditionalFilter__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Additional Filter</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ApplicablePermissionName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Applicable Permission Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ApplicableTypes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Applicable Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Account</fullName>
+                    <default>false</default>
+                    <label>Account</label>
+                </value>
+                <value>
+                    <fullName>All</fullName>
+                    <default>true</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>Contact</fullName>
+                    <default>false</default>
+                    <label>Contact</label>
+                </value>
+                <value>
+                    <fullName>Home</fullName>
+                    <default>false</default>
+                    <label>Home</label>
+                </value>
+                <value>
+                    <fullName>Case</fullName>
+                    <default>false</default>
+                    <label>Case</label>
+                </value>
+                <value>
+                    <fullName>Event</fullName>
+                    <default>false</default>
+                    <label>Event</label>
+                </value>
+                <value>
+                    <fullName>Asset</fullName>
+                    <default>false</default>
+                    <label>Asset</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ApplicableUserProfiles__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Applicable User Profile</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Vlocity Admin</fullName>
+                    <default>false</default>
+                    <label>Vlocity Admin</label>
+                </value>
+                <value>
+                    <fullName>Vlocity Health</fullName>
+                    <default>false</default>
+                    <label>Vlocity Health</label>
+                </value>
+                <value>
+                    <fullName>Vlocity Insurance</fullName>
+                    <default>false</default>
+                    <label>Vlocity Insurance</label>
+                </value>
+                <value>
+                    <fullName>All</fullName>
+                    <default>true</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>Vlocity Partner Community User</fullName>
+                    <default>false</default>
+                    <label>Vlocity Partner Community User</label>
+                </value>
+                <value>
+                    <fullName>System Administrator</fullName>
+                    <default>false</default>
+                    <label>System Administrator</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__CustomLabelName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of a Salesforce Custom Label to be used instead of the Display Label to define the text to show on the action in the UI. Using a Custom Label allows translations of the display text and the ability to update the display text for many actions with a single edit.</description>
+        <externalId>false</externalId>
+        <label>Custom Label</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DisplayLabel__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Display Label</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DisplayOn__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Display On</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All</fullName>
+                    <default>false</default>
+                    <label>All</label>
+                </value>
+                <value>
+                    <fullName>Mobile</fullName>
+                    <default>false</default>
+                    <label>Mobile</label>
+                </value>
+                <value>
+                    <fullName>Web Client</fullName>
+                    <default>false</default>
+                    <label>Web Client</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DisplaySequence__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Display Sequence</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Filter__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Filter</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__InvokeClassName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invocation Class Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__InvokeMethodName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Invocation Method Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsActive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsSeedAction__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Seed Action</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Keyword__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Keyword</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__LinkType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Link Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>OmniScript</fullName>
+                    <default>false</default>
+                    <label>OmniScript</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>ConsoleCards</fullName>
+                    <default>false</default>
+                    <label>ConsoleCards</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__OpenUrlMode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Open URL in</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Current Window</fullName>
+                    <default>true</default>
+                    <label>Current Window</label>
+                </value>
+                <value>
+                    <fullName>New Tab / Window</fullName>
+                    <default>false</default>
+                    <label>New Tab / Window</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__StateId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>To State</label>
+        <referenceTo>vlocity_ins__VlocityState__c</referenceTo>
+        <relationshipLabel>Vlocity Actions</relationshipLabel>
+        <relationshipName>Vlocity_Actions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__StateModelId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>State Model</label>
+        <referenceTo>vlocity_ins__VlocityStateModel__c</referenceTo>
+        <relationshipLabel>Vlocity Actions</relationshipLabel>
+        <relationshipName>VlocityActions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__UrlParameters__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>URL Parameter</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Url__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Target URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ValidationClassName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Validation Class Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ValidationMethodName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Validation Method Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__VlocityIcon__c</fullName>
+        <defaultValue>&apos;icon-v-document1-line&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose an icon from the list of icons below the Vlocity Action Detail (will not show up in Vlocity Action Edit) by copying its class name here (i.e. icon-v-document1-line). Use attachment to load custom image.</inlineHelpText>
+        <label>Vlocity Icon</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Vlocity Action</label>
+    <listViews>
+        <fullName>All_Actions</fullName>
+        <columns>NAME</columns>
+        <columns>vlocity_ins__DisplayLabel__c</columns>
+        <columns>vlocity_ins__ApplicableTypes__c</columns>
+        <columns>vlocity_ins__DisplayOn__c</columns>
+        <columns>vlocity_ins__LinkType__c</columns>
+        <columns>vlocity_ins__DisplaySequence__c</columns>
+        <columns>vlocity_ins__IsActive__c</columns>
+        <columns>Check_for_Errors__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Actions</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Case_Actions</fullName>
+        <columns>NAME</columns>
+        <columns>vlocity_ins__DisplayLabel__c</columns>
+        <columns>vlocity_ins__ApplicableTypes__c</columns>
+        <columns>vlocity_ins__DisplayOn__c</columns>
+        <columns>vlocity_ins__DisplaySequence__c</columns>
+        <columns>vlocity_ins__IsActive__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Case Actions</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>vlocity_ins__All</fullName>
+        <columns>NAME</columns>
+        <columns>vlocity_ins__DisplayLabel__c</columns>
+        <columns>vlocity_ins__IsActive__c</columns>
+        <columns>vlocity_ins__ApplicableTypes__c</columns>
+        <columns>vlocity_ins__DisplaySequence__c</columns>
+        <columns>vlocity_ins__LinkType__c</columns>
+        <columns>vlocity_ins__DisplayOn__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Vlocity Actions Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Vlocity Actions</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>vlocity_ins__DisplayLabel__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>vlocity_ins__IsActive__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>vlocity_ins__ApplicableTypes__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>vlocity_ins__LinkType__c</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>vlocity_ins__DisplayLabel__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>vlocity_ins__IsActive__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>vlocity_ins__ApplicableTypes__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>vlocity_ins__LinkType__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Must_Display_on_All_or_Web</fullName>
+        <active>false</active>
+        <errorConditionFormula>OR(AND( Check_for_Errors__c, TEXT(vlocity_ins__DisplayOn__c) = &quot;&quot;))</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__DisplayOn__c</errorDisplayField>
+        <errorMessage>Display On Cannot Be Blank</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Must_be_Active</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND( Check_for_Errors__c,  vlocity_ins__IsActive__c = false)</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__IsActive__c</errorDisplayField>
+        <errorMessage>Active must be checked.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Must_have_URL_Parameter</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND( Check_for_Errors__c, CONTAINS( vlocity_ins__Url__c , &quot;{0}&quot;), ISBLANK( vlocity_ins__UrlParameters__c ) )</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__UrlParameters__c</errorDisplayField>
+        <errorMessage>The URL Target has {0}, but the URL Parameter is missing.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Namespace_should_have_double_underscore</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND( Check_for_Errors__c, 
+AND( 
+CONTAINS( vlocity_ins__Url__c , &quot;vlocity_ins&quot;), NOT(CONTAINS( vlocity_ins__Url__c , &quot;vlocity_ins__&quot;)) 
+) 
+)</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__Url__c</errorDisplayField>
+        <errorMessage>The Namespace should be followed by double underscore: &quot;vlocity_cmt__&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>URL_Id_Parameter_should_be_correct_case</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND( 
+Check_for_Errors__c, 
+AND( 
+CONTAINS( LOWER( vlocity_ins__UrlParameters__c ),&quot;id&quot;), 
+NOT(CONTAINS( vlocity_ins__UrlParameters__c ,&quot;Id&quot;)) 
+) 
+)</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__UrlParameters__c</errorDisplayField>
+        <errorMessage>The URL Parameter contains an &quot;id&quot; reference, but it is not properly capitalized. It should be &quot;Id&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>URL_Target_has_parentheses</fullName>
+        <active>false</active>
+        <errorConditionFormula>OR( 
+AND( Check_for_Errors__c, CONTAINS( vlocity_ins__Url__c ,&quot;)&quot; )), 
+AND( Check_for_Errors__c, CONTAINS( vlocity_ins__Url__c ,&quot;(&quot; )) 
+)</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__Url__c</errorDisplayField>
+        <errorMessage>The Target URL contains &apos;(&apos; or &apos;)&apos;. For variables, use &apos;{&apos; or &apos;}&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>URL_Target_must_have_variable</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND( 
+Check_for_Errors__c, 
+NOT(ISBLANK( vlocity_ins__UrlParameters__c)), 
+NOT(CONTAINS( vlocity_ins__Url__c, &quot;{0}&quot;)) 
+)</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__Url__c</errorDisplayField>
+        <errorMessage>The URL Parameters field has a parameter, but there is no parameter in the Target URL. There should be {0}.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>vlocity_ins__Export</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Export</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var dataPackType = &apos;VlocityAction&apos;;
+var objectId = &apos;{!vlocity_ins__VlocityAction__c.Id}&apos;;
+var suggestedName = &apos;{!vlocity_ins__VlocityAction__c.Name}&apos;;
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+
+var namespace_prefix = &apos;&apos;; 
+var result = sforce.connection.describeGlobal(); 
+var TOKEN_OBJ = &quot;VlocityDataPack__c&quot;; 
+var sobjects = result.getArray(&quot;sobjects&quot;); 
+for (var i=0; i&lt;sobjects.length; i++) { 
+	var sobjName = sobjects[i].name; 
+
+	var str = sobjName.split(&quot;__&quot;); 
+
+	//if there are 3 values there is a namespace 
+	if (str.length == 3) {
+		var sobj = str[1].valueOf() +&apos;__c&apos;; 
+		if (sobj == TOKEN_OBJ) { 
+			namespace_prefix = str[0].valueOf(); 
+		}
+	}
+} 
+
+if (namespace_prefix != &quot;&quot;) { 
+	namespace_prefix += &apos;__&apos;; 
+}
+
+window.location = &apos;apex/&apos;+namespace_prefix+&apos;DataPacksHome?exportDataPackType=&apos;+dataPackType+&apos;&amp;exportData=&apos;+objectId+&apos;&amp;exportSuggestedName=&apos;+suggestedName;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__ImportExport</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Import/Export</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)} 
+
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+
+var namespace_prefix = &apos;&apos;; 
+
+
+
+var result = sforce.connection.describeGlobal(); 
+
+var TOKEN_OBJ = &quot;Party__c&quot;; 
+
+var sobjects = result.getArray(&quot;sobjects&quot;); 
+
+
+
+for(var i=0; i&lt;sobjects.length; i++) { 
+
+var sobjName = sobjects[i].name; 
+
+var str = sobjName.split(&quot;__&quot;); 
+
+//if there are 3 values there is a namespace 
+
+if (str.length == 3){ 
+
+//Is it one of ours? 
+
+var sobj = str[1].valueOf() +&apos;__c&apos;; 
+
+if(sobj == TOKEN_OBJ) { 
+
+namespace_prefix = str[0].valueOf(); 
+
+} 
+
+} 
+
+} 
+
+if(namespace_prefix != &quot;&quot;){ 
+
+namespace_prefix+= &apos;__&apos;; 
+
+} 
+window.location = &apos;apex/&apos;+namespace_prefix+&apos;ActionImportExport?Id=&apos; +&apos;{!vlocity_ins__VlocityAction__c.Id}&apos;;</url>
+    </webLinks>
+</CustomObject>

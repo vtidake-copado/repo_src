@@ -1,0 +1,345 @@
+// $primary-light: #0070D2;
+@import "ins-product-attributes-variables";
+
+.via-slds {
+    .vloc-add-product-open {
+        .slds-button__icon {
+            transform: rotate(90deg);
+        }
+    }
+
+    .ins-quote-line-card-modal {
+        position: relative;
+        top: -1rem;
+        left: -1rem;
+        width: 103%;
+    }
+
+    .vloc-left-col {
+        .vloc-qli-shade-box {
+            padding: .5rem;
+            position: relative;
+
+            .vloc-add-product-link {
+                font-style: italic;
+                padding: 0.25rem;
+                font-size: .9rem;
+                color: $neutral-dark;
+            }
+        }
+
+        .vloc-add-product {
+            overflow-y: hidden;
+            min-height: 0rem;
+            transition-property: all;
+            transition-duration: .75s;
+            transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+            position: relative;
+            top: -3px;
+
+            .vloc-no-products {
+                background: white;
+
+                .vloc-no-products-message {
+                    color: white;
+                    border-radius: .3rem;
+                }
+            }
+
+            .long-description {
+                overflow: visible;
+                white-space: normal;
+                padding-top: .5%;
+                margin: 0;
+                font-size: .6rem;
+            }
+
+            .vloc-popover {
+                display: none;
+            }
+
+            .vloc-search-icon {
+                position: absolute;
+                left: .6rem;
+                top: .3rem;
+            }
+
+            &.vloc-add-product-fly-out {
+                min-height: 35rem;
+            }
+
+            .vloc-show-fly-out {
+                position: absolute;
+                bottom: -12rem;
+                min-width: 187%;
+                border-radius: 0;
+                max-height: 11rem;
+                left: 0;
+                min-height: 11rem;
+            }
+
+            &.hide {
+                min-height: 0;
+                max-height: 0;
+                top: -3rem;
+                z-index: -1;
+                position: relative;
+                margin-bottom: -2rem;
+            }
+        }
+
+        .vloc-plan-row {
+            padding: .25rem;
+            position: relative;
+            max-height: 2.6rem;
+            font-weight: 700;
+            cursor: pointer;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &.vloc-plan-row-active {
+                border: 2px solid $primary-light;
+            }
+        }
+
+        .vloc-plan-row-edit-link {
+            font-weight: 400;
+            font-style: italic;
+        }
+    
+        .vloc-plan-row-action {
+            display: flex;
+            align-items: center;
+        }
+    
+        .vloc-transition {
+            transition: 0.4s ease;
+        }
+    }
+
+    .vloc-box_product {
+        position: relative;
+        height: 100%;
+
+        .vloc-flyout {
+            background: white;
+            overflow-y: hidden;
+            min-height: 1rem;
+            /* approximate max height */
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+            &.hidden {
+
+                min-height: 0;
+                max-height: 0;
+                top: -3rem;
+                z-index: -1;
+                position: relative;
+                padding-bottom: 0;
+            }
+
+            .vloc-flyout-triangle {
+                width: 0;
+                height: 0;
+                border-left: 21px solid transparent;
+                border-right: 22px solid transparent;
+                border-bottom: 19px solid #dddbda;
+                position: absolute;
+                top: 31px;
+                left: 27.8rem;
+            }
+
+            .vloc-flyout-inner-triangle {
+                width: 0;
+                height: 0;
+                border-left: 23px solid transparent;
+                border-right: 23px solid transparent;
+                border-bottom: 20px solid white;
+                position: absolute;
+                top: 33px;
+                left: 27.7rem;
+            }
+        }
+
+        &.replace {
+            background: $highlight-blue;
+            border-color: $primary-light;
+        }
+
+        .vloc-product-title {
+            font-size: 1rem;
+            top: .2rem;
+            position: relative;
+        }
+
+        .vloc-flag-compare-container {
+            &.not-recommended {
+                position: absolute;
+                width: 33.33%;
+                right: 1.5rem;
+                top: 0.75rem;
+
+                .vloc-flag-container {
+                    display: none;
+                }
+
+                .vloc-compare-checkbox {
+                    width: 100%;
+                }
+            }
+        }
+
+        .vloc-sub-text {
+            &.not-recommended {
+                margin: 0;
+            }
+        }
+
+        .vloc-button_select {
+            color: #fff;
+            transition: background-color 150ms ease-in,
+                border-color 150ms ease-in;
+        }
+
+        .vloc-attrs-container {
+            padding-bottom: 6rem;
+        }
+
+        .vloc-footer-link {
+            color: #62B7ED;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .slds-popover_tooltip {
+            position: absolute; // overriding relative
+            left: auto !important;
+            top: auto !important; // overriding ngstrap auto-generated css that does not work
+            bottom: 2.5rem;
+            width: 100%;
+        }
+
+        .not-recommended {
+            background-color: transparent;
+            border-radius: 3rem;
+            height: 1.5rem;
+            width: 1.5rem;
+            left: .5rem;
+            position: relative;
+            padding-left: 0.3rem;
+            padding-top: .1rem;
+            top: .7rem;
+            color: white;
+
+            .letter {
+                position: relative;
+                left: .2rem;
+            }
+
+            &.gold {
+                background-color: #F8DD34;
+            }
+
+            &.silver {
+                background-color: #C3C3C3;
+            }
+
+            &.bronze {
+                background-color: #D89451;
+            }
+        }
+
+
+        .vloc-type-icon {
+            &:hover {
+                cursor: pointer;
+
+                .vloc-popover {
+                    display: block;
+                }
+            }
+        }
+
+        .vloc-is-reccomended {
+            background: $neutral-dark;
+            border-radius: 3rem;
+            height: 1.5rem;
+            width: 1.5rem;
+            left: .5rem;
+            position: relative;
+            color: white;
+            padding-left: 0.3rem;
+            padding-top: .1rem;
+            top: .7rem;
+
+            &.gold {
+                background-color: #F8DD34;
+            }
+
+            &.silver {
+                background-color: #C3C3C3;
+            }
+
+            &.bronze {
+                background-color: #D89451;
+            }
+        }
+
+        .vloc-flag {
+            height: 26px;
+            width: 180px;
+            background: #3A4C5E;
+            color: #fff;
+            position: absolute;
+            left: 0;
+            top: 0.25rem;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-left: 24px solid #3A4C5E;
+                border-top: 24px solid transparent;
+                bottom: 0px;
+                right: -24px;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-left: 24px solid #3A4C5E;
+                border-bottom: 24px solid transparent;
+                top: 0;
+                right: -24px;
+            }
+
+            .vloc-flag-label {
+                color: #fff;
+                text-transform: none;
+                font-weight: 100;
+                line-height: 26px;
+                padding-left: 0.5rem;
+                text-align: center;
+            }
+        }
+
+        .vloc-compare-checkbox {
+            .vloc-check {
+                margin-bottom: 0;
+            }
+
+            .vloc-checbox-label {
+                font-size: .5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,297 @@
+{
+    "censusMembers": [
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 58,
+            "%vlocity_namespace%__ClassCodes__c": "SALARY,HOURLY",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__GroupClassId__c": "a1go0000005HM7hAAG",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003fJUSAA2",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003fJUSAA2"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 60,
+            "%vlocity_namespace%__ClassCodes__c": "SALARY",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__GroupClassId__c": "a1go0000005HM7hAAG",
+            "%vlocity_namespace%__IsPrimaryMember__c": false,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003fKG2AAM",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003fKG2AAM"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 28,
+            "%vlocity_namespace%__ClassCodes__c": "SALARY",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__GroupClassId__c": "a1go0000005HM7hAAG",
+            "%vlocity_namespace%__IsPrimaryMember__c": false,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003fKFxAAM",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003fKFxAAM"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 33,
+            "%vlocity_namespace%__ClassCodes__c": "SALARY",
+            "%vlocity_namespace%__Gender__c": "Female",
+            "%vlocity_namespace%__GroupClassId__c": "a1go0000005HM7hAAG",
+            "%vlocity_namespace%__IsPrimaryMember__c": false,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003fKFsAAM",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003fKFsAAM"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 48,
+            "%vlocity_namespace%__Gender__c": "Female",
+            "%vlocity_namespace%__GroupClassId__c": "a1go0000005HM7mAAG",
+            "%vlocity_namespace%__IsPrimaryMember__c": false,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003fKJuAAM",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003fKJuAAM"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 58,
+            "%vlocity_namespace%__ClassCodes__c": "SALARY",
+            "%vlocity_namespace%__Gender__c": "Female",
+            "%vlocity_namespace%__GroupClassId__c": "a1go0000005HM7hAAG",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000002smL4AAI",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000002smL4AAI"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 33,
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003oj0VAAQ",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003oj0VAAQ"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 43,
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003oj0WAAQ",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003oj0WAAQ"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 43,
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003oj0XAAQ",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003oj0XAAQ"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 43,
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003oj0YAAQ",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003oj0YAAQ"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 43,
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003oj0ZAAQ",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003oj0ZAAQ"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 37,
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003oj0aAAA",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003oj0aAAA"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 37,
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003oj0bAAA",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003oj0bAAA"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 37,
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003oj0cAAA",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003oj0cAAA"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 37,
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003oj0dAAA",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003oj0dAAA"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 25,
+            "%vlocity_namespace%__ClassCodes__c": "SALARY,HOURLY",
+            "%vlocity_namespace%__Gender__c": "Female",
+            "%vlocity_namespace%__GroupClassId__c": "a1go0000005HM7hAAG",
+            "%vlocity_namespace%__IsPrimaryMember__c": false,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003fKJpAAM",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003fKJpAAM"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 40,
+            "%vlocity_namespace%__ClassCodes__c": "HOURLY",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__GroupClassId__c": "a1go0000005HM7mAAG",
+            "%vlocity_namespace%__IsPrimaryMember__c": false,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003fKK4AAM",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003fKK4AAM"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 28,
+            "%vlocity_namespace%__ClassCodes__c": "SALARY,HOURLY",
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__GroupClassId__c": "a1go0000005HM7hAAG",
+            "%vlocity_namespace%__IsPrimaryMember__c": false,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003fKJkAAM",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003fKJkAAM"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 38,
+            "%vlocity_namespace%__ClassCodes__c": "HOURLY",
+            "%vlocity_namespace%__Gender__c": "Female",
+            "%vlocity_namespace%__GroupClassId__c": "a1go0000005HM7mAAG",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003fKFiAAM",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003fKFiAAM"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 8,
+            "%vlocity_namespace%__ClassCodes__c": "HOURLY",
+            "%vlocity_namespace%__Gender__c": "Female",
+            "%vlocity_namespace%__GroupClassId__c": "a1go0000005HM7mAAG",
+            "%vlocity_namespace%__IsPrimaryMember__c": false,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003fKJzAAM",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003fKJzAAM"
+            }
+        },
+        {
+            "%vlocity_namespace%__AgeAsOfToday__c": 48,
+            "%vlocity_namespace%__Gender__c": "Male",
+            "%vlocity_namespace%__GroupClassId__c": "a1go0000005HM7mAAG",
+            "%vlocity_namespace%__IsPrimaryMember__c": true,
+            "%vlocity_namespace%__IsSpouse__c": false,
+            "Id": "a14o0000003fKFdAAM",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupCensusMember__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupCensusMember__c/a14o0000003fKFdAAM"
+            }
+        }
+    ],
+    "groupClasses": [
+        {
+            "%vlocity_namespace%__ClassCode__c": "SALARY",
+            "%vlocity_namespace%__Description__c": "salary class",
+            "%vlocity_namespace%__EmployerContributionPercent__c": 50,
+            "%vlocity_namespace%__GroupId__c": "001o000000w7AYWAA2",
+            "%vlocity_namespace%__IsActive__c": true,
+            "%vlocity_namespace%__Type__c": "Medical",
+            "CreatedById": "005o0000000KTFkAAO",
+            "CreatedDate": "2016-10-31T23:27:42.000+0000",
+            "Id": "a1go0000005HM7hAAG",
+            "IsDeleted": false,
+            "LastModifiedById": "005o0000000KTFkAAO",
+            "LastModifiedDate": "2018-03-09T00:54:59.000+0000",
+            "Name": "Salary",
+            "SystemModstamp": "2018-03-10T11:43:50.000+0000",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupClass__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupClass__c/a1go0000005HM7hAAG"
+            }
+        },
+        {
+            "%vlocity_namespace%__ClassCode__c": "HOURLY",
+            "%vlocity_namespace%__EmployerContributionPercent__c": 40,
+            "%vlocity_namespace%__GroupId__c": "001o000000w7AYWAA2",
+            "%vlocity_namespace%__IsActive__c": true,
+            "CreatedById": "005o0000000KTFkAAO",
+            "CreatedDate": "2016-10-31T23:27:46.000+0000",
+            "Id": "a1go0000005HM7mAAG",
+            "IsDeleted": false,
+            "LastModifiedById": "005o0000000KTFkAAO",
+            "LastModifiedDate": "2018-03-02T01:20:17.000+0000",
+            "Name": "Hourly",
+            "SystemModstamp": "2018-03-03T11:44:21.000+0000",
+            "attributes": {
+                "type": "%vlocity_namespace%__GroupClass__c",
+                "url": "/services/data/v42.0/sobjects/%vlocity_namespace%__GroupClass__c/a1go0000005HM7mAAG"
+            }
+        }
+    ]
+}

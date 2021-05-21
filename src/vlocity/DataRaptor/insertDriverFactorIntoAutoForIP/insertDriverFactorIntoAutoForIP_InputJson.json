@@ -1,0 +1,62 @@
+{
+    "01t6A000002qvMWQAY_01t6A000002qvMWQAY": [
+        {
+            "AUTO.instanceKey": "AAA",
+            "carAltFuel": "true",
+            "carBrake": "true",
+            "carStability": "true",
+            "carTheft": "true",
+            "carValue": "35000",
+            "carYear": "2014",
+            "dedCCD": "500",
+            "dedCOLL": "1000",
+            "driverAccidentPoints": "1",
+            "driverAgeLicensed": "16",
+            "driverBirthdate": "1995-09-18",
+            "driverGPA": "3.5",
+            "driverGender": "M",
+            "driverMVRPoints": "0",
+            "driverMaritalStatus": "S",
+            "limitBI": "1000/1000/100",
+            "limitMED": "10000",
+            "limitPD": "100000",
+            "limitUM": "15/30",
+            "parentProdKey": "01t6A000002qvMWQAY",
+            "productKey": "01t6A000002qvMWQAY"
+        },
+        {
+            "AUTO.instanceKey": "AAA",
+            "carAltFuel": "true",
+            "carBrake": "true",
+            "carStability": "true",
+            "carTheft": "true",
+            "carValue": "35000",
+            "carYear": "2014",
+            "dedCCD": "500",
+            "dedCOLL": "1000",
+            "driverAccidentPoints": "2",
+            "driverAgeLicensed": "16",
+            "driverBirthdate": "1965-09-18",
+            "driverGPA": "0",
+            "driverGender": "F",
+            "driverMVRPoints": "2",
+            "driverMaritalStatus": "M",
+            "limitBI": "1000/1000/100",
+            "limitMED": "10000",
+            "limitPD": "100000",
+            "limitUM": "15/30",
+            "parentProdKey": "01t6A000002qvMWQAY",
+            "productKey": "01t6A000002qvMWQAY"
+        }
+    ],
+    "RateDrivers": {
+        "ratedDriver-BIPD": 1.06,
+        "ratedDriver-CCD": 1.71,
+        "ratedDriver-COLL": 1.33,
+        "ratedDriver-MED": 0.97,
+        "ratedDriver-UM": 1.03
+    },
+    "RateDriversStatus": true,
+    "options": {
+    }
+}

@@ -1,0 +1,234 @@
+<div class="slds-tree__item vloc-req-doc-tree-item" bs-collapse-toggle ng-click="importedScope.getTabIndex(obj, 'menuTabIndex', cardIndex); importedScope.decideOverflowClass(obj, cardIndex)">
+    <div id="tree0-node{{cardIndex}}__label" class="slds-grid vloc-req-doc-category-container" title="{{obj.Name}} Category">
+        <div class="slds-p-horizontal_large slds-p-vertical_xx-small">
+            <button class="vloc-req-doc-folder-icon" aria-controls="tree0-node{{cardIndex}}" title="Toggle" tabindex="0" ng-click="importedScope.getTabIndex(obj, 'menuTabIndex', cardIndex); importedScope.decideOverflowClass(obj, cardIndex)">
+                <slds-button-svg-icon sprite="'utility'" icon="'open_folder'" extra-classes="'vloc-req-doc-button-icon slds-button__icon_large'" ng-if="importedScope.placeholdersAccordion.activePlaceholders.indexOf(cardIndex*1) < 0"></slds-button-svg-icon>
+                <slds-button-svg-icon sprite="'utility'" icon="'opened_folder'" extra-classes="'vloc-req-doc-button-icon vloc-req-doc-button-icon-opened slds-button__icon_large'" ng-if="importedScope.placeholdersAccordion.activePlaceholders.indexOf(cardIndex*1) > -1"></slds-button-svg-icon>
+                <span class="slds-assistive-text"> {{ ::importedScope.customLabels.InsAssetToggle }}</span>
+            </button>
+        </div>
+        <div class="slds-grid slds-p-vertical_xx-small vloc-req-doc-category-inner-container">
+            <div class="slds-large-size_1-of-3 slds-max-large-size_1-of-3 slds-text-title_caps vloc-req-doc-category">{{obj.Name}}</div>
+            <div class="slds-large-size_2-of-3 slds-max-large-size_2-of-3 slds-p-right_large slds-text-align_right slds-text-title_caps vloc-req-doc-category-info">
+                <span class="vloc-req-doc-files-count" ng-if="obj.filesCount">
+                  <span ng-if="obj.filesCount === 1">{{obj.filesCount}} {{ ::importedScope.customLabels.InsAssetFile }}</span>
+                  <span ng-if="obj.filesCount > 1">{{obj.filesCount}} {{ ::importedScope.customLabels.InsAssetFiles }}</span>
+                </span>
+
+                <span class="vloc-req-doc-files-count" ng-if="!obj.filesCount">
+                  <span class="vloc-req-doc-no-files"> {{ ::importedScope.customLabels.InsAssetNoFiles }} </span>
+                  <span class="vloc-req-doc-no-files-yet"> {{ ::importedScope.customLabels.InsAssetNoFilesYet }} </span>
+                </span>
+                <span class="slds-m-horizontal_x-small vloc-req-doc-separator">|</span>
+                <span class="vloc-req-doc-requirements-count" ng-if="obj.requirementsCount">
+                  <span class="vloc-req-doc-requirements"> {{obj.requirementsCount}} {{ ::importedScope.customLabels.InsAssetRequirements }}</span>
+                  <span class="vloc-req-doc-requirements-remaining"> {{obj.requirementsCount}} {{ ::importedScope.customLabels.InsAssetRequirementsRemaining }}</span>
+                </span>
+
+                <span class="vloc-req-doc-requirements-count vloc-req-doc-requirements-count-0" ng-if="!obj.requirementsCount">
+                  <span class="vloc-req-doc-no-requirements"> {{ ::importedScope.customLabels.InsAssetNoRequirements }}</span>
+                  <span class="vloc-req-doc-no-requirements-remaining"> {{ ::importedScope.customLabels.InsAssetNoRequirementsRemaining }}</span>
+                </span>
+                <span class="slds-m-left_x-small vloc-req-doc-separator">|</span>
+                <div class="slds-is-relative vloc-req-doc-category-upload-btn-container" ins-dropzone="{{cardIndex}}" object-type="category" object-id="{{obj.Id}}" ins-stop-propagation ng-class="{'vloc-req-doc-file-uploading': obj.fileUploading}">
+                    <div class="slds-spinner_container vloc-req-doc-file-spinner-container">
+                        <div role="status" class="slds-spinner slds-spinner_small slds-spinner_brand vloc-req-doc-file-spinner">
+                            <span class="slds-assistive-text">{{ ::importedScope.customLabels.LoadingLC }}</span>
+                            <div class="slds-spinner__dot-a"></div>
+                            <div class="slds-spinner__dot-b"></div>
+                        </div>
+                    </div>
+                    <button class="slds-button slds-m-left_x-small vloc-req-doc-upload-helper-text-upload-link vloc-req-doc-category-upload-btn vloc-req-doc-category-{{cardIndex}}-upload-btn" ins-stop-propagation>
+                        <slds-button-svg-icon sprite="'utility'" icon="'upload'" extra-classes="'slds-button__icon_left'"></slds-button-svg-icon>
+                        {{ ::importedScope.customLabels.InsAssetUploadFiles }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ul class="vloc-req-doc-subtree-items-container" aria-labelledby="tree0-node{{cardIndex}}__label" role="group" ins-collapse-calc-height bs-collapse-target ng-class="{'overflow-unset': obj.overflowUnset}">
+    <li id="tree0-node{{cardIndex}}-{{$index}}" class="slds-is-relative vloc-req-doc-subtree-item-container vloc-req-doc-subtree-item-container-file" role="treeitem" aria-level="2" ng-repeat="documentPlaceholder in obj.documentPlaceholders.records | orderBy: 'displaySequence'" ng-class="{'vloc-req-doc-new-file-uploaded': documentPlaceholder.newFileUploaded, 'vloc-req-doc-new-file-deleted': documentPlaceholder.fileJustDeleted, 'editing-or-deleting-placeholder': documentPlaceholder.editingDeletingPlaceholder}" ng-if="documentPlaceholder.uploadedDocuments.records.length">
+        <div class="slds-spinner_container vloc-req-doc-placeholder-spinner-container">
+            <div role="status" class="slds-spinner slds-spinner_small slds-spinner_brand vloc-req-doc-placeholder-spinner">
+                <span class="slds-assistive-text">{{ ::importedScope.customLabels.LoadingLC }}</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+        <div class="slds-p-vertical_xx-small slds-grid slds-is-relative vloc-req-doc-placeholder-heading vloc-req-doc-placeholder-wrapper-{{documentPlaceholder.Id}}">
+            <div class="slds-small-size_1-of-2 slds-medium-size_3-of-5 slds-large-size_2-of-3">
+                <span class="vloc-req-doc-placeholder-heading-name">
+                    {{documentPlaceholder.Name}}
+                    <span ng-if="!documentPlaceholder.notInPlaceholder">{{ ::importedScope.customLabels.InsAssetFiles }} - </span>
+                    <span ng-if="documentPlaceholder.notInPlaceholder"> - </span>
+                </span>
+                <span class="vloc-req-doc-placeholder-heading-status" ng-if="!documentPlaceholder.notInPlaceholder"><em>{{documentPlaceholder.placeholderStatus}} - {{ ::importedScope.customLabels.InsAssetDue }} {{documentPlaceholder.DueDateFormatted}}</em></span>
+                <span class="vloc-req-doc-placeholder-heading-status" ng-if="documentPlaceholder.notInPlaceholder"><em> {{ ::importedScope.customLabels.InsAssetFilesStoredInCategory }}</em></span>
+            </div>
+            <div class="slds-small-size_1-of-2 slds-medium-size_2-of-5 slds-large-size_1-of-3">
+                <div class="slds-grid" ng-if="!documentPlaceholder.notInPlaceholder">
+                    <div class="slds-size_5-of-6 slds-text-align_right slds-p-right_medium vloc-req-doc-placeholder-edit-container" ng-click="importedScope.editPlaceholder(documentPlaceholder, '.vloc-req-doc-placeholder-wrapper-' + documentPlaceholder.Id, obj, cardIndex)">
+                        <button class="slds-button vloc-req-doc-placeholder-edit">{{ ::importedScope.customLabels.InsAssetEditPlaceholder }}</button>
+                        <span class="slds-icon_container slds-icon-utility-edit vloc-req-doc-icon-container" title="Edit Status">
+                            <slds-svg-icon sprite="'utility'" icon="'edit'" size="'xx-small'" extra-classes="'slds-icon_xx-small vloc-req-doc-icon'"></slds-svg-icon>
+                        </span>
+                    </div>
+                    <div class="slds-size_1-of-6 vloc-req-doc-placeholder-delete-container">
+                        <button class="slds-button slds-button_icon slds-float_right vloc-req-doc-placeholder-delete-btn" aria-haspopup="true" title="Delete Placeholder" tabindex="{{obj.menuTabIndex}}" ng-if="!documentPlaceholder.isRequired" ng-click="importedScope.deletePlaceholder(documentPlaceholder, '.vloc-req-doc-placeholder-wrapper-' + documentPlaceholder.Id, cardIndex)">
+                            <slds-button-svg-icon sprite="'utility'" icon="'delete'" extra-classes="'vloc-req-doc-button-icon-delete'"></slds-button-svg-icon>
+                            <span class="slds-assistive-text">{{ ::importedScope.customLabels.InsAssetDeletePlaceholder }}</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-tree__item slds-wrap vloc-req-doc-file-tree-item">
+            <div class="slds-grid slds-p-vertical_small slds-is-relative vloc-req-doc-file-info-container vloc-req-doc-file-info-container-current-obj-id-{{uploadedDocument.Id}}" ng-repeat="uploadedDocument in documentPlaceholder.uploadedDocuments.records" ng-class="{'vloc-req-doc-new-file': uploadedDocument.newlyAddedFile, 'vloc-req-doc-delete-started': uploadedDocument.deleteStarted}" ins-dropzone="{{cardIndex}}" object-type="uploadedDocument" object-id="{{documentPlaceholder.Id}}" content-document-id="{{uploadedDocument.ContentDocumentId}}">
+                <div class="slds-spinner_container vloc-req-doc-file-spinner-container">
+                    <div role="status" class="slds-spinner slds-spinner_small slds-spinner_brand vloc-req-doc-file-spinner">
+                        <span class="slds-assistive-text">{{ ::importedScope.customLabels.LoadingLC }}</span>
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                    </div>
+                </div>
+                <div class="slds-small-size_1-of-2 slds-medium-size_3-of-5 slds-large-size_2-of-3">
+                    <div class="slds-grid">
+                        <div class="slds-small-size_1-of-6 slds-medium-size_1-of-8 slds-large-size_1-of-12">
+                            <slds-svg-icon sprite="'doctype'" icon="uploadedDocument.svgIcon"></slds-svg-icon>
+                        </div>
+                        <div class="slds-small-size_5-of-6 slds-medium-size_7-of-8 vloc-req-doc-file-info slds-large-size_11-of-12">
+                            <div class="vloc-req-doc-file-name">
+                                <button class="slds-button slds-button_icon" ng-click="importedScope.goToContentDocument(uploadedDocument, $event)">{{uploadedDocument.PathOnClient}}</button>
+                            </div>
+                            <div class="vloc-req-doc-file-meta">
+                              {{ importedScope.getFormattedTranslationLabel(uploadedDocument.LastModifiedDateFormatted, uploadedDocument.FirstName, uploadedDocument.LastName) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-small-size_1-of-2 slds-medium-size_2-of-5 slds-large-size_1-of-3 slds-p-top_xxx-small">
+                    <div class="slds-grid">
+                        <div class="slds-size_5-of-6 slds-text-align_right slds-p-right_medium vloc-req-doc-file-info-status-wrapper vloc-req-doc-file-info-status-wrapper-{{uploadedDocument.Id}}" ng-show="!uploadedDocument.showSelect" ins-dropdown-handler="uploadedDocument.showSelect = !uploadedDocument.showSelect" restrict-element="slds-select">
+                            <p class="vloc-req-doc-file-info-status"><em>{{ importedScope.getTranslatedDocumentStatus(uploadedDocument[$root.nsPrefix + 'Status__c']) }}</em></p>
+                            <span class="slds-icon_container slds-icon-utility-edit vloc-req-doc-icon-container" title="Edit Status">
+                                <slds-svg-icon sprite="'utility'" icon="'edit'" size="'xx-small'" extra-classes="'slds-icon_xx-small vloc-req-doc-icon'"></slds-svg-icon>
+                            </span>
+                        </div>
+                        <div class="slds-size_5-of-6 slds-text-align_right slds-p-right_medium vloc-req-doc-file-info-status-picklist" ng-show="uploadedDocument.showSelect">
+                            <div class="slds-form-element vloc-req-doc-select-element" ng-if="$root.statusList.documentStatus">
+
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select ng-change="importedScope.updateDocumentStatus(uploadedDocument, '.vloc-req-doc-file-info-status-wrapper-' + uploadedDocument.Id)" class="slds-select" id="vloc-req-doc-file-info-status-picklist-{{uploadedDocument.Id}}" ng-model="uploadedDocument[$root.nsPrefix + 'Status__c']" ng-options="value.value as value.label for value in $root.statusList.documentStatus"></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-size_1-of-6 vloc-req-doc-uploadedFile-actions-container">
+                            <button class="slds-button slds-button_icon slds-float_right vloc-req-doc-uploadedFile-actions-delete-btn" aria-haspopup="true" title="{{ ::importedScope.customLabels.InsAssetDeleteDocument }}" tabindex="{{obj.menuTabIndex}}" ng-click="importedScope.deleteDocument('.vloc-req-doc-file-info-container-current-obj-id-' + uploadedDocument.Id, cardIndex, documentPlaceholder, uploadedDocument)">
+                                <slds-button-svg-icon sprite="'utility'" icon="'delete'" extra-classes="'vloc-req-doc-button-icon-delete'"></slds-button-svg-icon>
+                                <span class="slds-assistive-text">{{ ::importedScope.customLabels.InsAssetDeleteDocument }}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li id="tree0-node{{cardIndex}}-{{$index + 100}}" class="slds-is-relative vloc-req-doc-subtree-item-container vloc-req-doc-subtree-item-container-placeholder" ng-class="{'editing-or-deleting-placeholder': documentPlaceholder.editingDeletingPlaceholder}" role="treeitem" aria-level="2" ng-repeat="documentPlaceholder in obj.documentPlaceholders.records | orderBy: 'displaySequence'" ng-if="!documentPlaceholder.uploadedDocuments && !documentPlaceholder.notInPlaceholder">
+        <div class="slds-spinner_container vloc-req-doc-placeholder-spinner-container">
+            <div role="status" class="slds-spinner slds-spinner_small slds-spinner_brand vloc-req-doc-placeholder-spinner">
+                <span class="slds-assistive-text">{{ ::importedScope.customLabels.LoadingLC }}</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+        <div class="slds-tree__item slds-wrap vloc-req-doc-child-dropzone-tree-item">
+            <div class="slds-p-vertical_small slds-m-top_small slds-is-relative vloc-req-doc-dropzone-info-container vloc-req-doc-dropzone-info-container-{{documentPlaceholder.Id}}" ins-dropzone="{{cardIndex}}" object-type="documentPlaceholder" object-id="{{documentPlaceholder.Id}}">
+                <div class="slds-spinner_container vloc-req-doc-file-spinner-container">
+                    <div role="status" class="slds-spinner slds-spinner_small slds-spinner_brand vloc-req-doc-file-spinner">
+                        <span class="slds-assistive-text">{{ ::importedScope.customLabels.LoadingLC }}</span>
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                    </div>
+                </div>
+                <div class="slds-grid slds-grid_vertical-align-center">
+                    <div class="slds-size_4-of-12 slds-p-left_small">
+                        <div class="slds-grid slds-grid_vertical-align-center">
+                            <div class="slds-size_1-of-6">
+                                <slds-svg-icon sprite="'utility'" icon="'warning'" size="'small'"></slds-svg-icon>
+                            </div>
+                            <div class="slds-size_5-of-6 vloc-req-doc-info">
+                                <div class="slds-truncate vloc-req-doc-document-placeholder-name">{{documentPlaceholder.Name}}</div>
+                                <div class="slds-truncate vloc-req-doc-document-placeholder-meta">{{ ::importedScope.customLabels.InsAssetDue }} {{documentPlaceholder.DueDateFormatted}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-size_4-of-12 slds-text-align_center">
+                        <button class="slds-button vloc-req-doc-upload-helper-text vloc-req-doc-upload-helper-text-upload-link">Choose File</button>
+                        <span class="slds-icon_container slds-icon_container_circle slds-icon-action-upload slds-m-horizontal_xx-small" title="Upload File to Placeholder">
+                            <slds-svg-icon sprite="'action'" icon="'upload'" extra-classes="'slds-icon_small'"></slds-svg-icon>
+                            <span class="slds-assistive-text">{{ ::importedScope.customLabels.InsAssetUploadFileToPlaceholder }}</span>
+                        </span>
+                        <span class="vloc-req-doc-upload-helper-text">{{ ::importedScope.customLabels.InsAssetDragAndDrop }}</span>
+                    </div>
+                    <div class="slds-size_4-of-12 slds-text-align_right slds-p-right_medium">
+                        <div class="slds-grid">
+                            <div class="slds-size_5-of-6 slds-text-align_right slds-p-right_medium vloc-req-doc-placeholder-edit-container" ng-click="importedScope.editPlaceholder(documentPlaceholder, '.vloc-req-doc-dropzone-info-container-' + documentPlaceholder.Id, obj, cardIndex)">
+                                <button class="slds-button vloc-req-doc-placeholder-edit">{{ ::importedScope.customLabels.InsAssetEditPlaceholder }}</button>
+                                <span class="slds-icon_container slds-icon-utility-edit vloc-req-doc-icon-container" title="Edit Status">
+                                    <slds-svg-icon sprite="'utility'" icon="'edit'" size="'xx-small'" extra-classes="'slds-icon_xx-small vloc-req-doc-icon'"></slds-svg-icon>
+                                </span>
+                            </div>
+                            <div class="slds-size_1-of-6 vloc-req-doc-placeholder-delete-container">
+                                <button class="slds-button slds-button_icon vloc-req-doc-placeholder-delete-btn" aria-haspopup="true" title="Delete Placeholder" tabindex="{{obj.menuTabIndex}}" ng-if="!documentPlaceholder.isRequired" ng-click="importedScope.deletePlaceholder(documentPlaceholder, '.vloc-req-doc-dropzone-info-container-' + documentPlaceholder.Id, cardIndex)">
+                                    <slds-button-svg-icon sprite="'utility'" icon="'delete'" extra-classes="'vloc-req-doc-button-icon-delete'"></slds-button-svg-icon>
+                                    <span class="slds-assistive-text">{{ ::importedScope.customLabels.InsAssetDeletePlaceholder }}</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li id="tree0-node{{cardIndex}}-{{$index + 1000}}" class="vloc-req-doc-subtree-item-container vloc-req-doc-subtree-item-container-no-placeholders" role="treeitem" aria-level="2" ng-if="!obj.filesInCategory">
+        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_info" role="alert" ng-if="obj.documentPlaceholders.records.length <= 1">
+            <span class="slds-assistive-text">info</span>
+            <h2>{{ ::importedScope.customLabels.InsAssetNoPlaceholderReqsDefined }}</h2>
+        </div>
+        <div class="slds-tree__item slds-wrap vloc-req-doc-child-dropzone-tree-item vloc-req-doc-child-dropzone-tree-item-category-upload">
+            <div class="slds-p-vertical_small slds-m-top_small slds-is-relative vloc-req-doc-dropzone-info-container" ins-dropzone="{{cardIndex}}" object-type="category" object-id="{{obj.Id}}">
+                <div class="slds-spinner_container vloc-req-doc-file-spinner-container">
+                    <div role="status" class="slds-spinner slds-spinner_small slds-spinner_brand vloc-req-doc-file-spinner">
+                        <span class="slds-assistive-text">{{ ::importedScope.customLabels.LoadingLC }}</span>
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                    </div>
+                </div>
+                <div class="slds-grid slds-grid_vertical-align-center">
+                    <div class="slds-size_4-of-12 slds-p-left_small slds-truncate">
+                        <div class="slds-grid slds-grid_vertical-align-center">
+                            <div class="slds-size_1-of-6">
+                                <slds-svg-icon extra-classes="'vloc-req-doc-file-icon'" sprite="'utility'" icon="'file'" size="'small'"></slds-svg-icon>
+                            </div>
+                            <div class="slds-size_5-of-6 vloc-req-doc-info">
+                                <span class="vloc-req-doc-document-placeholder-name">{{ ::importedScope.customLabels.InsAssetAddOtherFiles }} <em>({{obj.Name}})</em></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-size_4-of-12 slds-text-align_center">
+                        <button class="slds-button vloc-req-doc-upload-helper-text vloc-req-doc-upload-helper-text-upload-link">{{ ::importedScope.customLabels.InsAssetChooseFile }}</button>
+                        <span class="slds-icon_container slds-icon_container_circle slds-icon-action-upload slds-m-horizontal_xx-small" title="Upload File to Placeholder">
+                            <slds-svg-icon sprite="'action'" icon="'upload'" extra-classes="'slds-icon_small'"></slds-svg-icon>
+                            <span class="slds-assistive-text">{{ ::importedScope.customLabels.InsAssetUploadFileToCategory }}</span>
+                        </span>
+                        <span class="vloc-req-doc-upload-helper-text">{{ ::importedScope.customLabels.InsAssetDragAndDrop }}</span>
+                    </div>
+                    <div class="slds-size_4-of-12 slds-text-align_right slds-p-right_small"></div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

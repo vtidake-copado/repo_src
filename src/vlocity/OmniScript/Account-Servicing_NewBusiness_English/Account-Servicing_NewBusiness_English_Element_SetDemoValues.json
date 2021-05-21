@@ -1,0 +1,68 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "New Business Account",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Account Servicing/NewBusiness/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "New Business Account",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Account Servicing/NewBusiness/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "newAccount",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Account Servicing/NewBusiness/English/newAccount",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "newAccount",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "controlWidth": 4,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "MethodHolderName": "Brian Owen",
+            "MethodName": "OwensAcct",
+            "authEmail": "dlq@vlocity.com",
+            "authFirstName": "Brian",
+            "authLastName": "Owen",
+            "authMobilePhone": "(603) 801-2640",
+            "authOfficePhone": "(603) 801-2640",
+            "authSalutation": "Mr.",
+            "authTitle": "Director",
+            "billDelivery": "Email",
+            "billMethod": "Direct Bill",
+            "billingFirstName": "Brian",
+            "billingLastName": "Owens",
+            "billingSalutation": "Mr.",
+            "newAccountName": "ABC Company",
+            "newAccountSite": "ABC Site",
+            "newMainPhone": "(603) 801-2640",
+            "newTaxId": "11-9999999",
+            "newWebSite": "https://www.abc.com",
+            "statementFrequency": "Monthly"
+        },
+        "label": "Prefill Demo",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "SetDemoValues",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Account Servicing/NewBusiness/English/SetDemoValues"
+}

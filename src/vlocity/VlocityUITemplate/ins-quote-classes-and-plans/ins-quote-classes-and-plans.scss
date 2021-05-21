@@ -1,0 +1,335 @@
+@import "ins-product-selection-variables";
+@import "ins-product-selection-mixins";
+
+.vloc-enrollment-container{
+    margin-top: 1.5rem;
+    margin-left: 1.5rem; 
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+  
+    .underline { 
+        position: relative;
+        height: .25rem;
+        margin: 0;
+        background: #0070d2;
+        border: none;
+        transition: 250ms ease-in-out;
+    }
+
+    .slds-button {
+        &.vloc-add-class-button{
+            border: none;
+
+            &:hover{
+                cursor: pointer; 
+                background: white;
+            }
+
+            .vloc-icon-add-class{
+                fill: #0070d2;
+                margin-right: .25rem;
+                margin-bottom: 0.15rem;
+                border: 1px solid #0070d2;
+                border-radius: 13px;
+                padding: .2rem;
+            }
+        }
+    }
+
+    .vloc-title {
+        font-size: 1.55rem;
+    }
+
+    .vloc-section-header {
+        &.vloc-title-border-container {
+            width:3rem; 
+
+            .vloc-title-border {
+                fill: #FF6E0D;
+                border-top: 2px solid #FF6E0D; 
+                margin: 0;
+            }
+        }
+    }
+
+    li {
+        &.dashed-border{
+        border-bottom: 1px dashed #d8dde6;
+        }
+    }
+
+    li:last-child{
+        &.dashed-border{
+        border-bottom: none;
+        }
+    }
+
+    .enrollment-container {
+        .slds-text-heading_small {
+            line-height: 2rem;
+        }
+    }
+
+    .enrollment-total{
+        text-transform: uppercase;
+    }
+
+    .enrollment-actions{
+        top: -5px;
+        position: relative;
+    }
+
+    .add-new-class{
+        color:#005fb2;
+        margin: 0 1rem 0 0; 
+        line-height: 1.7 !important;
+        font-size: .75rem; 
+    }
+}
+
+.loading{
+    opacity: 0;
+}
+
+
+@media screen and (min-width: $bp-small) {
+
+    .vloc-qli-tab {
+        margin-top: 1rem;
+        transition: max-height .5s linear;
+        max-height: 2.7rem;
+        position: relative;
+        z-index: 5;
+
+        .member-log-actions-tabs {
+            position: relative;
+
+            .slds-tabs_scoped {
+                transition: max-height .5s linear;
+                max-height: 2.7rem;
+            }
+
+            .slds-hide{
+                display: block; 
+                visibility: hidden; 
+              //  opacity: 0;
+              //  transition: visibility 0ms linear 500ms,
+                           // opacity 500ms ease-in 500ms;
+
+                &.slds-show{
+                    visibility: visible; 
+                    opacity: 1;
+                 //   transition: visibility 0ms linear 0ms,
+                           //     opacity 500ms ease-in 500ms;
+                }
+
+            }
+
+            .slds-tabs_scoped__nav {
+                position: relative;
+                transition: all .5s linear;
+                display: inline-block;
+                border-color: transparent;
+                background-color: white;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                overflow-x: auto;
+                width: 100%;
+                overflow-y: hidden;
+
+                .slds-tabs_scoped__item {
+                    background-color: white;
+                    margin-bottom: 0;
+                    display: table-cell;
+
+                .slds-tabs_scoped__link:hover{
+                    border-color: transparent;
+                    cursor: pointer;
+                }
+
+                   
+                    &.slds-active {
+                        background-color: white;
+
+                        .slds-tabs_scoped__link:focus{
+                            text-decoration: none;
+                        }
+
+                        .slds-tabs_scoped__link {
+                          border-color: transparent;
+                        }
+
+
+                        .vloc-title-border-container {
+                            width: 2rem;
+                            margin-left: 1rem;
+
+                            .vloc-title-border {
+                                fill: #FF6E0D;
+                                border-top: 2px solid #FF6E0D; 
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .slds-tabs_scoped__content {
+                position: relative;
+                border: none;
+                padding-left: 0;
+
+                .vloc-quote-tabs{
+                    position: absolute; 
+                    left: 0; 
+                    top: 0;
+                }
+
+            }
+            .slds-form_stacked {
+                .slds-button_brand, .slds-button_neutral {
+                    min-width: 7rem;
+                }
+            }
+        }
+        &.via-toggle-tabs-collapsed {
+            max-height: 2.7rem;
+
+            .member-log-actions-tabs {
+                .slds-tabs_scoped {
+                    max-height: 2.7rem;
+                }
+
+                .slds-tabs_scoped__content {
+                    transform: scaleY(0);
+                    border: none;
+
+                    &:before {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+
+        &.via-toggle-tabs-expanded {
+            max-height: 35rem;
+
+            .member-log-actions-tabs {
+                .slds-tabs_scoped {
+                    max-height: 35rem;
+                }
+
+                .slds-tabs_scoped__nav {
+
+                    .slds-tabs_scoped__item {
+                        margin-bottom: -1px;
+
+                    }
+                }
+                .slds-tabs_scoped__content {
+                    transform: scaleY(1);
+
+                    &:before {
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: $bp-medium) {
+     .vloc-qli-tab{
+        .member-log-actions-tabs {
+            .slds-tabs_scoped__nav {
+                .vloc-census-tabs {
+                    font-size: 1rem;
+                }
+            } 
+        } 
+    }
+
+}
+
+@media screen and (max-width: $bp-small) {
+     .vloc-qli-tab{
+        position:relative; 
+        .slds-tabs_scoped__nav{
+            background: none;
+            width: 20rem;
+            height: auto;
+            overflow: scroll;
+            border-left: none; 
+            border-right: none;
+
+            .slds-tabs_scoped__item{
+                font-weight: 300;
+                font-size: 1.25rem;
+                line-height: 1.25;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .slds-tabs_scoped__item:first-child .slds-tabs_scoped__link{
+                padding-left: 0;
+            }
+        }
+     }
+     .via-slds{
+         .slds-tabs_scoped__content{
+            border: none;   
+
+            .vloc-quote-tab-header {
+                margin-top:1.5rem;
+            }
+         }
+     }
+     .vloc-enrollment-container{ 
+        margin-top: 0;
+
+        .vloc-title {
+            font-size: 1.25rem;
+            margin-bottom: .5rem;
+        }
+
+        .vloc-section-header.vloc-title-border-container{
+            width: 2.2rem;
+            margin-bottom: .5rem;
+        }
+         .vloc-add-class-button{
+                position: absolute;
+                top: -2.7rem;
+                bottom: 5rem;
+                right: 0;
+                background: transparent;
+
+                .slds-icon_small {
+                    width: 2rem; 
+                    height: 2rem;
+                }
+
+                .vloc-add-class-label{
+                    display: none;
+                }
+            }
+            .underline {
+                display: none;
+            } 
+
+        .slds-button {
+            &.vloc-add-class-button {
+                .vloc-icon-add-class{
+                    border-radius: 17px;
+                    padding: .4rem;
+                 }
+            }
+        }
+
+    }
+  
+}

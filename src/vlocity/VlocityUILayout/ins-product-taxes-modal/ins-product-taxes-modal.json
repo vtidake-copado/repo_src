@@ -1,0 +1,25 @@
+{
+    "Cards": [
+        "ins-product-taxes-card"
+    ],
+    "dataSource": {
+        "type": "Inherit",
+        "value": {
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceProductAdminHandler"
+            },
+            "remoteClass": "InsuranceProductAdminHandler",
+            "remoteMethod": "getTaxesAndFees",
+            "remoteNSPrefix": "%vlocity_namespace%"
+        }
+    },
+    "previewType": "runTime",
+    "templates": {
+        "0": {
+            "templateUrl": "ins-product-taxes-modal"
+        }
+    },
+    "workspace": [
+        "ins-product-taxes-card/Vlocity/1/1553624429235"
+    ]
+}

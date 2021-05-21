@@ -1,0 +1,15 @@
+<div class="slds-form-element">
+     <h1 class="vloc-title slds-m-bottom_small">{{data.title}}</h1>
+       <div class="vloc-section-header vloc-title-border-container">
+            <hr class="vloc-title-border"/>
+        </div>
+        <div class="slds-form-element__control slds-m-vertical_small">
+        <div class="slds-select_container">
+          <select ng-options="action as action.displayName for action in data.actions" ng-model="action" class="slds-select slds-m-right_xx-small" id="select-01">
+          </select>
+        </div>
+    </div>
+    <div class="slds-m-vertical_small">
+        <button class="slds-button slds-button_brand slds-size_1-of-1" ng-click="performAction(action)" hotkey-card-action>{{data.title}}</button>
+    </div>
+</div>

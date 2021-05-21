@@ -1,0 +1,22 @@
+.via-slds {
+    .slds-popover {
+        position: absolute;
+        left: .2rem !important;
+        width: auto !important;
+    }
+
+    .vloc-product-title {
+        &:hover {
+            cursor: pointer;
+        }
+
+        .slds-popover_tooltip {
+            position: absolute; // overriding relative
+            left: auto !important;
+            top: auto !important; // overriding ngstrap auto-generated css that does not work
+            bottom: 0;
+            width: 100%;
+            background: red;
+        }
+    }
+}

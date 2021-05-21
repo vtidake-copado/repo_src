@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Amount Due --></label>
+        <name>vlocity_ins__AmountDue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billed by --></label>
+        <name>vlocity_ins__BillingPartyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim --></label>
+        <name>vlocity_ins__ClaimId__c</name>
+        <relationshipLabel><!-- Claim Invoices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoice Date --></label>
+        <name>vlocity_ins__InvoiceDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__Status__c</name>
+        <picklistValues>
+            <masterLabel>Invoiced</masterLabel>
+            <translation><!-- Invoiced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outstanding</masterLabel>
+            <translation><!-- Outstanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

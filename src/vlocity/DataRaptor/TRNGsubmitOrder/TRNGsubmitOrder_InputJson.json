@@ -1,0 +1,29 @@
+{
+    "ContextId": "001o000000WRGNa",
+    "DRId_Order": "801o0000000zrKnAAI",
+    "DRId_OrderItem": "802o0000004Y78yAAC",
+    "Event Invitation": {
+        "Product": [
+            {
+                "Description": "If you can't be a VIP, hey, at least you're there!",
+                "Id": "01to0000003V2LiAAK",
+                "Image": "015o0000001ULiN",
+                "Name": "Customer Appreciation Event - Standard Ticket",
+                "OneTimeCost": 99,
+                "PricebookEntryId": "01uo0000005w0QwAAI",
+                "PricebookId": "01so0000003hdFfAAI",
+                "vlcSelected": true
+            }
+        ]
+    },
+    "OSseedPricebookName": "Standard",
+    "OSseedProductFamily": "Customer Appreciation",
+    "timeStamp": "2016-03-29T20:59:17.771Z",
+    "userName": "training@ins.edu",
+    "userProfile": "System Administrator",
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "Event Invitation": 2286
+    }
+}

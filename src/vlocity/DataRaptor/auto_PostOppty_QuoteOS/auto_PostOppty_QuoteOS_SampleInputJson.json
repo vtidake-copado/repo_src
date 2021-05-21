@@ -1,0 +1,97 @@
+{
+    "ContextId": null,
+    "ISOClass": 3,
+    "configureCoverages": {
+        "configureProduct": null,
+        "effectiveDate": null,
+        "expirationDate": null
+    },
+    "confirm": {
+        "generateDocument": null
+    },
+    "craft": {
+        "opptyName": null,
+        "wcAge": null,
+        "wcEngineFuel": null,
+        "wcHorsepower": null,
+        "wcHullMaterial": null,
+        "wcHullType": null,
+        "wcLength": null,
+        "wcMake": null,
+        "wcMaxSpeed": null,
+        "wcModel": null,
+        "wcName": null,
+        "wcNavDistance": null,
+        "wcNumberEngines": null,
+        "wcPropulsion": null,
+        "wcValue": null,
+        "wcYear": null
+    },
+    "intro": {
+    },
+    "operator": {
+        "opAccidents": null,
+        "opAddress-Block": {
+            "City": null,
+            "Country": null,
+            "State": null,
+            "Street": null,
+            "opAddress": null,
+            "postalCode": null
+        },
+        "opAge": null,
+        "opBirthdate": null,
+        "opCGEducation": null,
+        "opCGUsage": null,
+        "opConvictions": null,
+        "opEmail": null,
+        "opExpYears": null,
+        "opFirstName": null,
+        "opHomeowner": null,
+        "opLastName": null,
+        "opMVRPoints": null,
+        "opMaritalStatus": null,
+        "opMiddleName": null,
+        "opName": null,
+        "opNumOwners": null,
+        "opPrefix": null,
+        "opportunityName": null,
+        "previousAccidents": {
+            "opAccidentDate": null,
+            "opAccidentDesc": null,
+            "opAccidentLoss": null,
+            "opAccidentType": null,
+            "opPointType-A": null
+        },
+        "previousConvictions": {
+            "opCitationDate": null,
+            "opCitationDesc": null,
+            "opCitationType": null,
+            "opPointType-C": null
+        }
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "SetPolicyHolderValue": null,
+        "SetValues": null,
+        "TransformToQuote": null,
+        "configureCoverages": null,
+        "confirm": null,
+        "craft": null,
+        "createAcctOpptyContact": null,
+        "createDoc": null,
+        "createQuote": null,
+        "doneToQuote": null,
+        "extractTemplate": null,
+        "getWatercraft": null,
+        "intro": null,
+        "operator": null,
+        "readProducer": null
+    }
+}

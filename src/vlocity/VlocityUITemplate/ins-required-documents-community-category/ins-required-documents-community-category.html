@@ -1,0 +1,110 @@
+<div class="slds-grid slds-wrap vloc-req-doc-community-category-placeholders-container">
+    <div class="slds-max-small-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-3 slds-large-size_1-of-4 vloc-req-doc-community-category-placeholder-wrapper" ng-repeat="documentPlaceholder in obj.documentPlaceholders.records | orderBy: 'displaySequence'">
+        <div class="vloc-req-doc-community-category-placeholder" ins-dropzone="{{cardIndex}}" object-type="documentPlaceholder" object-id="{{documentPlaceholder.Id}}">
+            <div class="slds-spinner_container vloc-req-doc-placeholder-spinner-container">
+                <div role="status" class="slds-spinner slds-spinner_small slds-spinner_brand vloc-req-doc-placeholder-spinner">
+                    <span class="slds-assistive-text">Loading</span>
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>
+            <div class="slds-shrink-none slds-dropdown-trigger slds-dropdown-trigger_click vloc-req-doc-community-category-placeholder-actions-dropdown-container" ng-class="{'slds-is-open': documentPlaceholder.actionsDropdown}">
+                <button class="slds-button slds-button_icon slds-button_icon-border-filled slds-button_icon-x-small vloc-req-doc-community-category-placeholder-actions-dropdown-btn" aria-haspopup="true"
+                    title="More options" aria-activedescendant="placeholder-actions-{{documentPlaceholder.Id}}-upload-file" aria-controls="placeholder-actions-{{documentPlaceholder.Id}}" ins-dropdown-handler="documentPlaceholder.actionsDropdown = !documentPlaceholder.actionsDropdown">
+                    <slds-button-svg-icon sprite="'utility'" icon="'down'" extra-classes="'slds-button__icon_hint'"></slds-button-svg-icon>
+                    <span class="slds-assistive-text">More options</span>
+                </button>
+                <div class="vloc-req-doc-community-category-placeholder-actions-dropdown-list" id="placeholder-actions-{{documentPlaceholder.Id}}" role="listbox">
+                    <ul class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid" role="presentation">
+                        <li role="presentation" class="slds-listbox__item vloc-req-doc-upload-helper-text-upload-link">
+                            <span id="placeholder-actions-{{documentPlaceholder.Id}}-upload-file" class="slds-media slds-listbox__option slds-listbox__option_plain slds-media_small slds-media_center" role="option">
+                                <span class="slds-media__figure vloc-req-doc-community-category-placeholder-actions-dropdown-list-item-icon-container">
+                                    <slds-svg-icon sprite="'utility'" icon="'upload'" size="'x-small'" extra-classes="'slds-icon_x-small vloc-req-doc-community-category-placeholder-actions-dropdown-list-item-icon'"></slds-svg-icon>
+                                </span>
+                                <span class="slds-media__body">
+                                    <span class="slds-truncate" title="Upload File"> Upload File</span>
+                                </span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h3 class="vloc-req-doc-community-category-placeholder-name">{{documentPlaceholder.Name}}</h3>
+            <div class="vloc-req-doc-community-category-placeholder-icon-container">
+                <slds-svg-icon sprite="'utility'" icon="'file'" size="'large'" extra-classes="'slds-icon_large vloc-req-doc-community-category-placeholder-icon ' + importedScope.getPlaceholderStatusClass(documentPlaceholder.placeholderStatus)" ng-if="!documentPlaceholder.notInPlaceholder"></slds-svg-icon>
+                <slds-svg-icon sprite="'utility'" icon="'open_folder'" size="'large'" extra-classes="'slds-icon_large vloc-req-doc-community-category-placeholder-icon category-icon'" ng-if="documentPlaceholder.notInPlaceholder"></slds-svg-icon>
+                <span class="slds-icon_container slds-icon_container_circle vloc-req-doc-community-category-placeholder-icon-extra approval" ng-if="importedScope.decideXIconVisibility(documentPlaceholder.placeholderStatus, 'approval')">
+                    <slds-svg-icon sprite="'action'" icon="'approval'" size="'x-small'" extra-classes="'slds-icon_x-small vloc-placeholder-status-icon'" ng-if="importedScope.decideXIconVisibility(documentPlaceholder.placeholderStatus, 'approval')"></slds-svg-icon>
+                </span>
+                <span class="slds-icon_container slds-icon_container_circle vloc-req-doc-community-category-placeholder-icon-extra reject" ng-if="importedScope.decideXIconVisibility(documentPlaceholder.placeholderStatus, 'reject')">
+                    <slds-svg-icon sprite="'action'" icon="'reject'" size="'x-small'" extra-classes="'slds-icon_x-small vloc-placeholder-status-icon'" ng-if="importedScope.decideXIconVisibility(documentPlaceholder.placeholderStatus, 'reject')"></slds-svg-icon>
+                </span>
+                <span class="slds-icon_container slds-icon_container_circle vloc-req-doc-community-category-placeholder-icon-extra refresh" ng-if="importedScope.decideXIconVisibility(documentPlaceholder.placeholderStatus, 'refresh')">
+                    <slds-svg-icon sprite="'action'" icon="'refresh'" size="'x-small'" extra-classes="'slds-icon_x-small vloc-placeholder-status-icon'"></slds-svg-icon>
+                    <span class="slds-assistive-text">Status Icon</span>
+                </span>
+                <span class="slds-icon_container slds-icon_container_circle vloc-req-doc-community-category-placeholder-icon-extra clock" ng-if="importedScope.decideXIconVisibility(documentPlaceholder.placeholderStatus, 'clock')">
+                    <slds-svg-icon sprite="'utility'" icon="'clock'" size="'x-small'" extra-classes="'slds-icon_x-small vloc-placeholder-status-icon'"></slds-svg-icon>
+                    <span class="slds-assistive-text">Status Icon</span>
+                </span>
+            </div>
+            <p class="vloc-req-doc-community-category-placeholder-status">{{documentPlaceholder.placeholderStatus}}</p>
+            <p class="vloc-req-doc-community-category-placeholder-due-date">Due: <span>{{documentPlaceholder.DueDateFormatted}}</span></p>
+            <div class="vloc-req-doc-community-category-bottom">
+                <p class="vloc-req-doc-community-category-bottom-no-files" ng-show="!documentPlaceholder.uploadedDocuments">No Files Yet</p>
+                <a href="javascript:void(0)" ins-dropdown-handler="documentPlaceholder.showFiles = !documentPlaceholder.showFiles" restrict-element="vloc-req-doc-community-category-placeholder-files-popover" use-focus="false" ng-show="documentPlaceholder.uploadedDocuments">View {{documentPlaceholder.uploadedDocuments.records.length}} File<span ng-if="documentPlaceholder.uploadedDocuments.records.length > 1">s</span></a>
+                <section class="slds-popover slds-popover_large slds-nubbin_top vloc-req-doc-community-category-placeholder-files-popover vloc-req-doc-community-category-placeholder-files-popover-{{documentPlaceholder.Id}}" ng-class="importedScope.decidePopoverLocation($index)" role="dialog" aria-label="Dialog Title" aria-labelledby="placeholder-files-header-{{documentPlaceholder.Id}}" aria-describedby="placeholder-files-{{documentPlaceholder.Id}}" ng-show="documentPlaceholder.showFiles">
+                    <div class="vloc-button-wrapper">
+                        <button class="slds-button slds-button_icon slds-button_icon-small slds-float_right slds-popover__close slds-button_icon"
+                            title="Close dialog">
+                            <slds-button-svg-icon sprite="'utility'" icon="'close'"></slds-button-svg-icon>
+                            <span class="slds-assistive-text">Close dialog</span>
+                        </button>
+                    </div>
+                    <header class="slds-popover__header vloc-req-doc-community-category-placeholder-files-popover-header">
+                        <h2 id="placeholder-files-header-{{documentPlaceholder.Id}}" class="slds-text-heading_small vloc-req-doc-community-category-placeholder-files-popover-header-heading">{{documentPlaceholder.Name}} Files</h2>
+                    </header>
+                    <div class="slds-popover__body vloc-req-doc-community-category-placeholder-files-popover-body" id="placeholder-files-{{documentPlaceholder.Id}}">
+                        <div class="slds-grid slds-p-vertical_small slds-is-relative vloc-req-doc-community-category-placeholder-files-popover-list vloc-req-doc-file-info-container vloc-req-doc-file-info-container-current-obj-id-{{uploadedDocument.Id}}" ng-repeat="uploadedDocument in documentPlaceholder.uploadedDocuments.records" ng-class="{'vloc-req-doc-new-file': uploadedDocument.newlyAddedFile, 'vloc-req-doc-delete-started': uploadedDocument.deleteStarted}" ins-dropzone="{{cardIndex}}" object-type="uploadedDocument" object-id="{{documentPlaceholder.Id}}" content-document-id="{{uploadedDocument.ContentDocumentId}}">
+                            <div class="slds-spinner_container vloc-req-doc-file-spinner-container">
+                                <div role="status" class="slds-spinner slds-spinner_small slds-spinner_brand vloc-req-doc-file-spinner">
+                                    <span class="slds-assistive-text">Loading</span>
+                                    <div class="slds-spinner__dot-a"></div>
+                                    <div class="slds-spinner__dot-b"></div>
+                                </div>
+                            </div>
+                            <div class="slds-max-small-size_5-of-6 slds-small-size_2-of-3 slds-medium-size_3-of-5 slds-large-size_2-of-3 vloc-req-doc-community-category-placeholder-files-popover-file-details">
+                                <div class="slds-grid">
+                                    <div class="slds-small-size_1-of-6 slds-medium-size_1-of-8 slds-large-size_1-of-12 vloc-req-doc-community-category-placeholder-files-popover-file-icon-container">
+                                        <slds-svg-icon sprite="'doctype'" icon="uploadedDocument.svgIcon" extra-classes="'vloc-req-doc-community-category-placeholder-files-popover-file-icon'"></slds-svg-icon>
+                                    </div>
+                                    <div class="slds-truncate slds-small-size_5-of-6 slds-medium-size_7-of-8 slds-large-size_11-of-12 vloc-req-doc-file-info vloc-req-doc-community-category-placeholder-files-popover-file-info">
+                                        <div class="slds-truncate vloc-req-doc-file-name vloc-req-doc-community-category-placeholder-files-popover-file-name">
+                                            <a class="vloc-req-doc-community-category-placeholder-files-popover-file-preview" href="javascript:void(0)" ng-click="importedScope.goToContentDocument(uploadedDocument, $event)">{{uploadedDocument.PathOnClient}}</a>
+                                        </div>
+                                        <div class="slds-truncate vloc-req-doc-file-meta vloc-req-doc-community-category-placeholder-files-popover-file-meta">
+                                            Last Modified {{uploadedDocument.LastModifiedDateFormatted}} by {{uploadedDocument.FirstName}} {{uploadedDocument.LastName}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-max-small-size_1-of-6 slds-small-size_1-of-3 slds-medium-size_2-of-5 slds-large-size_1-of-3 vloc-req-doc-community-category-placeholder-files-popover-file-actions">
+                                <div class="slds-grid">
+                                    <div class="slds-size_5-of-6 slds-text-align_right slds-p-right_medium vloc-req-doc-file-info-status-wrapper vloc-req-doc-file-info-status-wrapper-{{uploadedDocument.Id}} vloc-req-doc-community-category-placeholder-files-popover-file-status-wrapper">
+                                        <p class="vloc-req-doc-file-info-status vloc-req-doc-community-category-placeholder-files-popover-file-status"><em>{{uploadedDocument[$root.nsPrefix + 'Status__c']}}</em></p>
+                                    </div>
+                                    <div class="slds-max-small-size_1-of-1 slds-size_1-of-6 vloc-req-doc-uploadedFile-actions-container">
+                                        <button class="slds-button slds-button_icon slds-float_right vloc-req-doc-uploadedFile-actions-delete-btn vloc-req-doc-community-category-placeholder-files-popover-file-delete-btn" aria-haspopup="true" title="Delete Document" tabindex="{{obj.menuTabIndex}}" ng-click="importedScope.deleteDocument('.via-slds', cardIndex, documentPlaceholder, uploadedDocument)">
+                                            <slds-button-svg-icon sprite="'utility'" icon="'delete'" extra-classes="'vloc-req-doc-button-icon-delete'"></slds-button-svg-icon>
+                                            <span class="slds-assistive-text">Delete Document</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+{
+    "RecordTypes": [
+        {
+            "Object": "Account",
+            "Type": "Group"
+        },
+        {
+            "Object": "Contact",
+            "Type": "Standard Contact"
+        },
+        {
+            "Object": "%vlocity_namespace%__GroupCensus__c",
+            "Type": "Small Group"
+        }
+    ]
+}

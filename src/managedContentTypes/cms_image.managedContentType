@@ -3,14 +3,6 @@
     <description>Add media files, such as PNG or JPEG, or link to a URL.</description>
     <developerName>cms_image</developerName>
     <managedContentNodeTypes>
-        <helpText>Adds media to your content from a desktop file or URL link. Make sure the domain for your URL is allowed by your org so your users can access it.</helpText>
-        <isLocalizable>false</isLocalizable>
-        <isRequired>true</isRequired>
-        <nodeLabel>Source</nodeLabel>
-        <nodeName>source</nodeName>
-        <nodeType>MEDIA</nodeType>
-    </managedContentNodeTypes>
-    <managedContentNodeTypes>
         <helpText>Links a thumbnail image to the content.</helpText>
         <isLocalizable>false</isLocalizable>
         <isRequired>false</isRequired>
@@ -33,6 +25,14 @@
         <nodeLabel>Alt Text</nodeLabel>
         <nodeName>altText</nodeName>
         <nodeType>MTEXT</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>Adds media to your content from a desktop file or URL link. Make sure the domain for your URL is allowed by your org so your users can access it.</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>true</isRequired>
+        <nodeLabel>Source</nodeLabel>
+        <nodeName>source</nodeName>
+        <nodeType>MEDIA</nodeType>
     </managedContentNodeTypes>
     <masterLabel>Image</masterLabel>
 </ManagedContentType>

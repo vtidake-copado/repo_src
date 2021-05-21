@@ -1,0 +1,16 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "discountDriver:driverDiscounts:discountDriverInstanceKey",
+        "%vlocity_namespace%__GlobalKey__c": "9f14c3f4-3231-6a98-10a9-3fd765aae8f3",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "autoDrivers:autoDriver:adInstanceKey",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "auto_TransDriversforDiscounts_ReusableDriverInputOS002655638870090904",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "auto_TransDriversforDiscounts_ReusableDriverInputOS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

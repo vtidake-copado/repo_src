@@ -1,0 +1,90 @@
+{
+    "ContextId": null,
+    "RatingFactProductCode": "SG-Census-RF",
+    "RecordTypes": [
+        {
+            "Object": "Account",
+            "Type": "Group"
+        },
+        {
+            "Object": "Contact",
+            "Type": "Contact"
+        },
+        {
+            "Object": "%vlocity_namespace%__GroupCensus__c",
+            "Type": "Small Group"
+        }
+    ],
+    "census": {
+        "Census": null
+    },
+    "groupProfile": {
+        "SICTypeAhead-Block": {
+            "SICCode": null,
+            "SICDescription": null,
+            "SICTypeAhead": null
+        },
+        "agency": null,
+        "broker": null,
+        "county": null,
+        "email": null,
+        "firstName": null,
+        "groupName": null,
+        "lastName": null,
+        "mailingAddress": null,
+        "mailingCity": null,
+        "mailingState": null,
+        "mailingZipCode": null,
+        "phone": null,
+        "producerNumber": null,
+        "title": null
+    },
+    "groupQualification": {
+        "cobra": null,
+        "effectiveDate": null,
+        "eligibleEmployees": null,
+        "employeesEnrolling": null,
+        "firstYearDental": null,
+        "outOfStateEmployees": null,
+        "pediatricDental": null,
+        "privateExchange": null
+    },
+    "medicalPage": {
+        "MedicalPlans": null
+    },
+    "quoteSummary": {
+    },
+    "selectPlanTypes": {
+        "isMedicalSelected": null,
+        "isVisionSelected": null,
+        "plansSelection": null
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "visionPage": {
+        "VisionPlans": null
+    },
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "census": null,
+        "createGroupAndCensus": null,
+        "done": null,
+        "getBrokerInfo": null,
+        "getCensusRateType": null,
+        "getRatingFactSpecId": null,
+        "getRecordTypes": null,
+        "groupProfile": null,
+        "groupQualification": null,
+        "medicalPage": null,
+        "quoteSummary": null,
+        "selectPlanTypes": null,
+        "setIds": null,
+        "setMedicalPlans": null,
+        "setMemberRatingFacts": null,
+        "visionPage": null
+    }
+}

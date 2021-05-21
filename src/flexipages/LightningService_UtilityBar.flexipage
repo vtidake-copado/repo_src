@@ -4,16 +4,20 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>console:history</componentName>
+                <componentName>notes:utilityBarNoteList</componentName>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentName>notes:utilityBarNoteList</componentName>
+                <componentName>console:history</componentName>
             </componentInstance>
         </itemInstances>
         <name>utilityItems</name>
         <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>backgroundComponents</name>
+        <type>Background</type>
     </flexiPageRegions>
     <masterLabel>Service Console App Utility Bar</masterLabel>
     <template>

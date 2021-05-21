@@ -1,0 +1,449 @@
+<div class="slds-grid slds-wrap slds-size_1-of-1" ng-init="$root.count = {};">
+    <div ng-init="$root.isLoaded = true; importedScope.insFn.setData(obj['coverages']); importedScope.insFn.setProductRecordType(obj, params);  importedScope.insFn.getInsuredItems(); importedScope.processFieldMap(records.fieldsMap)"
+        ng-class="{'slds-size_5-of-8 slds-p-right_small' : $root.config.attr, 'slds-size_1-of-1' : !$root.config.attr}">
+        <ul dnd-list="importedScope.insVar.obj" dnd-drop="importedScope.reorderSequences(index, item)"
+            class="existing-data draggable-items">
+            <li ng-repeat="obj in importedScope.insVar.obj" ng-class="{selected: isSelected(cardIndex)}"
+                ng-show="importedScope.insFn.filter(obj.Name)" dnd-draggable="obj"
+                dnd-dragstart="importedScope.startCoveragesDragging()"
+                dnd-dragend="importedScope.endCoveragesDragging()" dnd-disable-if="!$root.disableDragging"
+                data-card="{{uniqueLayoutId}}-card-{{cardIndex}}" data-popover-flyout="true" add-hover-class="true"
+                class="slds-card via-slds-card_horiz slds-m-bottom_small">
+                <div class="slds-card__header via-slds-card__header slds-grid vloc-card-header"
+                    title="{{::importedScope.customLabels.InsProductCollapseAllTooltip}}">
+                    <div class="slds-media slds-media_center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            <vloc-card-icon data="data" obj="obj" size="'medium'"></vloc-card-icon>
+                        </div>
+                        <div class="slds-media__body slds-truncate slds-grid slds-grid_vertical-align-center">
+                            <a href="javascript:void(0);" class="slds-button vloc-link" tooltip-placement="bottom"
+                                tooltip="{{data.title}}">
+                                <span class="slds-text-heading_small"
+                                    ng-click="importedScope.navigateTo(obj.ChildProductId)"> {{obj.Name}}</span>
+                            </a>
+                            <span class="slds-text-color_weak vloc-italic"
+                                ng-if="obj.ProductCode">&nbsp;({{obj.ProductCode}})</span>
+                        </div>
+                    </div>
+                    <div ng-if="!$root.dragging && !$root.collapseFlags[obj.Id]"
+                        class="slds-grid slds-wrap slds-size_1-of-2">
+                        <div class="slds-size_1-of-6"></div>
+                        <div class="slds-size_1-of-2">
+                            <label
+                                class="slds-text-heading_label">{{::importedScope.customLabels.InsProductParentInsuredItem}}</label>
+                            <div class="slds-form-element__control slds-select_container">
+                                <div class="slds-select_container">
+                                    <select
+                                        ng-options="value.ChildProductId as value.Name for value in importedScope.insuredItems"
+                                        ng-model="obj.parentSpecId" class="slds-select slds-m-right_xx-small"
+                                        id="select-{{$index}}" ng-change="importedScope.linkChildSpecs(obj)">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-size_1-of-6 slds-text-align_center slds-m-top_medium">
+                            <div ng-show="obj.IsOptional">
+                                <label
+                                    class="slds-text-heading_label">{{::importedScope.customLabels.InsProductAttributeRules}}</label>
+                            </div>
+                            <span class="vloc-attr-rules-outer slds-m-right_xx-small" ng-show="obj.IsOptional"
+                                ng-click="obj.showRules = !obj.showRules; obj.isRulesRendered = true">
+                                <span class="number"
+                                    ng-init="$root.count[obj.Id].defaultSelectedRule = obj.DefaultSelectedCriteria.length > 0; $root.count[obj.Id].EligibilityCriteria = obj.EligibilityCriteria.length > 0; $root.count[obj.Id].requiredRule = obj.RequiredCriteria.length > 0; $root.count[obj.Id].selectValidationCriteria = importedScope.insFn.initSelectCriteriaCount(obj)">
+                                    {{$root.count[obj.Id].defaultSelectedRule + $root.count[obj.Id].EligibilityCriteria + $root.count[obj.Id].requiredRule + $root.count[obj.Id].selectValidationCriteria}}
+                                </span>
+                                <slds-button-svg-icon sprite="'custom'" icon="'custom90'" no-hint="true"
+                                    extra-classes="">
+                                </slds-button-svg-icon>
+                            </span>
+                        </div>
+                        <div class="slds-size_1-of-6 slds-text-align_center">
+                            <div>
+                                <label
+                                    class="slds-text-heading_label">{{::importedScope.customLabels.InsProductOptional}}</label>
+                            </div>
+                            <div class="slds-text-align_center vloc-checkbox-position">
+                                <span class="slds-checkbox">
+                                    <input type="checkbox" name="opt-attrs-{{$index}}" id="opt-attrs-{{$index}}"
+                                        ng-model="obj.IsOptional"
+                                        ng-change="importedScope.insFn.changeOptional(obj); importedScope.insFn.saveItemUpdated(obj.Id, obj.IsOptional, obj.MinQuantity,  obj.MaxQuantity, 'coverage')" />
+                                    <label class="slds-checkbox__label slds-m-around_none" for="opt-attrs-{{$index}}">
+                                        <span class="slds-checkbox_faux vloc-check"></span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <span ng-click="importedScope.insFn.toggleCollapse(obj.Id)"
+                        ng-class="{'vloc-expanded': !$root.collapseFlags[obj.Id]}"
+                        class="slds-m-left_medium vloc-collapse-icon">
+                        <slds-button-svg-icon sprite="'utility'" icon="'right'" no-hint="true" size="'large'">
+                        </slds-button-svg-icon>
+                    </span>
+                </div>
+                <div ng-if="!$root.dragging && !$root.collapseFlags[obj.Id]">
+                    <div class="vloc-card-body slds-small-show via-slds-card__body slds-grid slds-grid_vertical slds-theme_default"
+                        ng-if="obj.isRulesRendered">
+                        <div ng-show="obj.IsOptional && obj.showRules" class="vloc-ins-product-rules-container"
+                            ng-controller="vlocInsRulesContainerCtrl">
+                            <div class="vloc-ins-product-rules-container-cards">
+                                <div class="slds-p-bottom_small slds-border_top slds-m-bottom_small slds-p-right_large vloc-ins-product-rules-eligibility-container slds-p-top_small"
+                                    ng-controller="vlocInsRulesEligibilityCtrl"
+                                    ng-init="initEligibility(obj.EligibilityCriteria)" ng-mouseleave="importedScope.insVar.popoverOpen[obj.Id].EligibilityCriteriaComment = false">
+                                    <div class="slds-grid">
+                                        <div class="slds-text-title_caps slds-m-horizontal_small slds-p-left_x-small slds-p-bottom_x-small">
+                                            {{::importedScope.customLabels.InsProductEligibilityRules}}
+                                        </div>
+                                        <div ng-init="key = 'EligibilityCriteriaComment'; label = importedScope.customLabels.InsEligibilityCriteriaComments; saveKey = 'eligibilityRuleComment'"
+                                            ng-include="'ruleCommentTooltip.html'"></div>
+                                    </div>
+                                    <div class="slds-size_1-of-1 vloc-ins-product-rules-eligibility-expression">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label"
+                                                for="eligibility-rule-expression">{{::importedScope.customLabels.InsProductExpression}}</label>
+                                            <div class="slds-form-element__control slds-is-relative">
+                                                <monaco-editor id="eligibility-rule-expression"
+                                                    ng-class="{'rule-saved': eligibility.saveStatus === 'saved', 'rule-unsaved': eligibility.saveStatus === 'unsaved', 'rule-save-error': eligibility.saveStatus === 'error'}"
+                                                    class="slds-textarea" language="vlocity-formula"
+                                                    ng-model="eligibility.rule"
+                                                    ng-change="saveEligibilityRuleCoverage(obj.Id)"
+                                                    ng-if="$root.insTypeAheads"
+                                                    ng-keydown="vlocInsProductRulesService.switchTypeAheadData(eligibility)"
+                                                    ng-keyup="markExpressionUnsaved($event)"></monaco-editor>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vloc-ins-product-rules-container-cards">
+                                <div class="slds-p-bottom_small slds-border_top slds-m-bottom_small slds-p-right_large vloc-ins-product-rules-eligibility-container slds-p-top_small"
+                                    ng-controller="vlocInsRulesEligibilityCtrl"
+                                    ng-init="initRule(obj.RequiredCriteria)" ng-mouseleave="importedScope.insVar.popoverOpen[obj.Id].RequiredCriteriaComment = false">
+                                    <div class="slds-grid">
+                                        <div class="slds-text-title_caps slds-m-horizontal_small slds-p-left_x-small slds-p-bottom_x-small">
+                                            {{::importedScope.customLabels.InsProductRequiredCoverage}}
+                                        </div>
+                                        <div ng-init="key = 'RequiredCriteriaComment'; label = importedScope.customLabels.InsRequiredCriteriaComments; saveKey = 'requiredRuleComment'"
+                                            ng-include="'ruleCommentTooltip.html'"></div>
+                                    </div>
+                                    <div class="slds-size_1-of-1 vloc-ins-product-rules-eligibility-expression">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label"
+                                                for="eligibility-rule-expression">{{::importedScope.customLabels.InsProductExpression}}</label>
+                                            <div class="slds-form-element__control slds-is-relative">
+                                                <monaco-editor id="eligibility-rule-expression"
+                                                    ng-class="{'rule-saved': rule.saveStatus === 'saved', 'rule-unsaved': rule.saveStatus === 'unsaved', 'rule-save-error': rule.saveStatus === 'error'}"
+                                                    class="slds-textarea" language="vlocity-formula"
+                                                    ng-model="rule.rule"
+                                                    ng-change="saveRuleCoverage(obj.Id, 'requiredRule')"
+                                                    ng-if="$root.insTypeAheads"
+                                                    ng-keydown="vlocInsProductRulesService.switchTypeAheadData(rule)"
+                                                    ng-keyup="markExpressionUnsaved($event)"></monaco-editor>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vloc-ins-product-rules-container-cards">
+                                <div class="slds-p-bottom_small slds-border_top slds-m-bottom_small slds-p-right_large vloc-ins-product-rules-eligibility-container slds-p-top_small"
+                                    ng-controller="vlocInsRulesEligibilityCtrl"
+                                    ng-init="initRule(obj.DefaultSelectedCriteria)" ng-mouseleave="importedScope.insVar.popoverOpen[obj.Id].DefaultSelectedCriteriaComment = false">
+                                    <div class="slds-grid">
+                                        <div class="slds-text-title_caps slds-m-horizontal_small slds-p-left_x-small slds-p-bottom_x-small">
+                                            {{::importedScope.customLabels.InsProductDefaultSelected}}
+                                        </div>
+                                        <div ng-init="key = 'DefaultSelectedCriteriaComment'; label = importedScope.customLabels.InsDefaultSelectedCriteriaComments; saveKey = 'defaultSelectedRuleComment'"
+                                            ng-include="'ruleCommentTooltip.html'"></div>
+                                    </div>
+                                    <div class="slds-size_1-of-1 vloc-ins-product-rules-eligibility-expression">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label"
+                                                for="eligibility-rule-expression">{{::importedScope.customLabels.InsProductExpression}}</label>
+                                            <div class="slds-form-element__control slds-is-relative">
+                                                <monaco-editor id="eligibility-rule-expression"
+                                                    ng-class="{'rule-saved': rule.saveStatus === 'saved', 'rule-unsaved': rule.saveStatus === 'unsaved', 'rule-save-error': rule.saveStatus === 'error'}"
+                                                    class="slds-textarea" language="vlocity-formula"
+                                                    ng-model="rule.rule"
+                                                    ng-change="saveRuleCoverage(obj.Id, 'defaultSelectedRule')"
+                                                    ng-if="$root.insTypeAheads"
+                                                    ng-keydown="vlocInsProductRulesService.switchTypeAheadData(rule)"
+                                                    ng-keyup="markExpressionUnsaved($event)"></monaco-editor>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vloc-ins-product-rules-container-cards">
+                                <div class="slds-p-bottom_small slds-border_top slds-m-bottom_small slds-p-right_large vloc-ins-product-rules-eligibility-container slds-p-top_small"
+                                    ng-controller="vlocInsRulesEligibilityCtrl"
+                                    ng-init="initRule(obj.selectValidationCriteria, true)">
+                                    <button class="slds-button slds-button_neutral vloc-ins-validation-rules"
+                                        ng-click="addMultiRule()">{{::importedScope.customLabels.Add}}</button>
+                                    <div
+                                        class="slds-text-title_caps slds-m-horizontal_small slds-p-left_x-small slds-p-bottom_x-small">
+                                        {{::importedScope.customLabels.InsProductValidationRules}}</div>
+                                    <div class="slds-grid slds-size_1-of-1" ng-repeat="rule in rules">
+                                        <div class="vloc-ins-product-rules-eligibility-expression slds-size_1-of-2">
+                                            <div class="slds-form-element">
+                                                <label class="slds-form-element__label"
+                                                    for="eligibility-rule-expression">{{::importedScope.customLabels.InsProductExpression}}</label>
+                                                <div class="slds-form-element__control slds-is-relative">
+                                                    <monaco-editor id="eligibility-rule-expression"
+                                                        ng-class="{'rule-saved': rule.saveStatus === 'saved', 'rule-unsaved': rule.saveStatus === 'unsaved', 'rule-save-error': rule.saveStatus === 'error'}"
+                                                        class="validation-rule slds-textarea" language="vlocity-formula"
+                                                        ng-model="rule.rule"
+                                                        ng-change="saveRuleCoverage(obj.Id, 'selectValidationCriteria')"
+                                                        ng-if="$root.insTypeAheads"
+                                                        ng-keydown="vlocInsProductRulesService.switchTypeAheadData(rule)"
+                                                        ng-keyup="markExpressionUnsaved($event, $index)">
+                                                    </monaco-editor>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="vloc-ins-product-rules-eligibility-expression vloc-ins-product-rules-eligibility-expression-message">
+                                            <div class="slds-form-element">
+                                                <label class="slds-form-element__label"
+                                                    for="vloc-rule-requirement-applicable-type-{{$index + 1}}">
+                                                    {{::importedScope.customLabels.InsProductSeverity}}
+                                                </label>
+                                                <div class="slds-form-element__control">
+                                                    <div class="slds-select_container">
+                                                        <select
+                                                            ng-class="{'rule-saved': rule.saveStatus === 'saved', 'rule-unsaved': rule.saveStatus === 'unsaved', 'rule-save-error': rule.saveStatus === 'error'}"
+                                                            class="slds-select rule-border"
+                                                            id="vloc-rule-requirement-applicable-type-{{$index + 1}}"
+                                                            required=""
+                                                            ng-options="messageType.code as messageType.label for messageType in importedScope.rulesOptions.messageTypes"
+                                                            ng-model="rule.severity"
+                                                            ng-change="saveRuleCoverage(obj.Id, 'selectValidationMessage')"></select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slds-form-element">
+                                                <label class="slds-form-element__label"
+                                                    for="eligibility-rule-expression">{{::importedScope.customLabels.InsProductMessage}}</label>
+                                                <div class="slds-form-element__control slds-is-relative">
+                                                    <input
+                                                        ng-class="{'rule-saved': rule.saveStatus === 'saved', 'rule-unsaved': rule.saveStatus === 'unsaved', 'rule-save-error': rule.saveStatus === 'error'}"
+                                                        type="text" id="vloc-rule-message-{{$index + 1}}"
+                                                        ng-blur="saveRuleCoverage(obj.Id, 'selectValidationMessage')"
+                                                        required="" class="slds-input rule-border"
+                                                        ng-model="rule.message"
+                                                        ng-keyup="markExpressionUnsaved($event, $index)" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slds-align_absolute-center slds-m-left_small">
+                                            <slds-button-svg-icon extra-classes="vloc-ins-icon-delete"
+                                                sprite="'utility'" icon="'delete'" no-hint="true"
+                                                ng-click="deleteMultiRule($index)"></slds-button-svg-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Atributes: -->
+                    <div class="vloc-attr-grid">
+                        <div class="slds-grid slds-wrap slds-size_1-of-1 slds-border_top slds-border_bottom">
+                            <div class="slds-small-show vloc-attr-cell slds-size_1-of-{{data.fields.length}}"
+                                ng-repeat="field in data.fields" ng-show="key != 'attributes'">
+                                <div class="vloc-attr-table-header slds-col slds-grid slds-wrap slds-grid_align-spread">
+                                    <div class="slds-small-show vloc-attr-cell slds-size_1-of-1"
+                                        ng-show="key != 'attributes'">
+                                        <div class="vloc-attr-title-cell slds-truncate slds-text-heading_label slds-p-around_x-small slds-p-vertical_small"
+                                            ng-class="{'slds-p-left_x-large slds-m-left_xx-small' : $index === 0}"
+                                            title="{{field.label}}">
+                                            <div class="vloc-attrs-header-label slds-truncate">
+                                                <span
+                                                    ng-if="records.fieldsMap && records.fieldsMap[field.name] && records.fieldsMap[field.name].fieldLabel">{{records.fieldsMap[field.name].fieldLabel}}</span>
+                                                <span
+                                                    ng-if="!records.fieldsMap || !records.fieldsMap[field.name] || !records.fieldsMap[field.name].fieldLabel">{{field.label}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vloc-attr-row vloc-attr-data-cell slds-grid slds-wrap slds-grid_align-spread"
+                            ng-repeat="row in obj.AttributeAssignmentList | orderBy : $root.nsPrefix + 'CategoryName__c'"
+                            ng-click="importedScope.insFn.setAttr(row, obj.Id, obj.ChildProductId); importedScope.processFieldMap(records.fieldsMap); importedScope.insFn.setProductRecordType(records)"
+                            ng-class="{'selected' : row.Id === $root.config.attr.Id, 'can-hover' : row[$root.nsPrefix + 'IsConfigurable__c']}">
+
+                            <div class="slds-small-show vloc-attr-cell slds-size_1-of-{{data.fields.length}}"
+                                ng-repeat="field in data.fields" ng-show="key != 'attributes'">
+                                <div class="vloc-attr-data-cell slds-truncate slds-p-around_xx-small">
+                                    <span ng-if="$index === 0 && !row.ruleError" class="slds-p-horizontal_small"
+                                        ng-class="{'vloc-tooltip-adjust': importedScope.shouldDisplayOverridenInfo(row[$root.nsPrefix + 'ObjectId__c'], obj.Id)}">
+                                        {{$parent.$parent.$index + 1}} </span>
+
+                                    <span ng-if="$index === 0 && row.ruleError"
+                                        class="vloc-theme_icon-error slds-p-left_x-small slds-p-right_x-small">
+                                        <slds-button-svg-icon sprite="'utility'" icon="'error'" no-hint="true"
+                                            extra-classes="'slds-button__icon_medium'">
+                                    </span>
+                                    <span
+                                        ng-if="$index === 0 && !row.ruleError && importedScope.shouldDisplayOverridenInfo(row[$root.nsPrefix + 'ObjectId__c'], obj.Id)"
+                                        class="vloc-overriden-info">
+                                        <div class="vloc-overriden-tooltip slds-popover slds-popover_tooltip slds-nubbin_bottom-left"
+                                            ins-tooltip-offset="coverage" role="tooltip" id="help">
+                                            <div class="slds-popover__body">
+                                                {{::importedScope.customLabels.InsProductOverridenMessage}}</div>
+                                        </div>
+                                        <span>*</span>
+                                    </span>
+
+                                    <span
+                                        ng-if="field.name !== $root.nsPrefix + 'Value__c' && field.name !== $root.nsPrefix + 'ValueDataType__c' && field.type !== 'BOOLEAN'">
+                                        {{row | getter: field | picker: field.type}}
+                                    </span>
+
+                                    <span
+                                        ng-if="field.name === $root.nsPrefix + 'ValueDataType__c' && field.type !== 'BOOLEAN'">
+                                        {{row | getter: field | picker: field.type | getTranslatedDataType}}
+                                    </span>
+
+                                    <span ng-if="field.name === $root.nsPrefix + 'Value__c'">
+                                        <span ng-if="row[$root.nsPrefix + 'ValueDataType__c'] === 'Datetime'">
+                                            {{row[$root.nsPrefix + 'Value__c'] | date : 'MM/dd/yyyy h:mma'}}
+                                        </span>
+                                        <span ng-if="row[$root.nsPrefix + 'ValueDataType__c'] === 'Date'">
+                                            {{row[$root.nsPrefix + 'Value__c'] | date : 'MM/dd/yyyy'}}
+                                        </span>
+                                        <span
+                                            ng-if="row.valueType !== 'percent' && row[$root.nsPrefix + 'ValueDataType__c'] !== 'Date' && row[$root.nsPrefix + 'ValueDataType__c'] !== 'Datetime'">
+                                            {{row | getter: field | picker: row.valueType}}</span>
+                                        <span ng-if="row.valueType === 'percent'">
+                                            {{row[$root.nsPrefix + 'Value__c']}}%</span>
+                                    </span>
+                                    <div class="slds-form-element__control slds-text-align_left"
+                                        ng-if="field.type === 'BOOLEAN'">
+                                        <span class="slds-checkbox">
+                                            <input type="checkbox" name="attrs-{{$index}}" id="attrs-{{$index}}"
+                                                ng-model="row[field.name]" ng-disabled="!field.isUpdateable" />
+                                            <label class="slds-checkbox__label slds-m-around_none"
+                                                for="attrs-{{$index}}">
+                                                <span class="slds-checkbox_faux vloc-check"></span>
+                                            </label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            class="vloc-card-body slds-button slds-button_link slds-m-horizontal_small slds-p-horizontal_medium"
+                            ng-click="importedScope.insFn.deleteCoverage(obj.Id, $index)">{{::importedScope.customLabels.Remove}}</button>
+                        <div class="embed-flyout slds-p-left_medium slds-p-right_medium"></div>
+                        <div
+                            class="slds-x-small-show-only via-slds-x-small-card__body slds-card__body slds-grid slds-grid_vertical slds-theme_default">
+                            <div class="slds-size_1-of-1 slds-x-small-show-only"
+                                ng-repeat="field in data.fields.slice(1, 6)" ng-show="key != 'attributes'">
+                                <div class="slds-grid via-slds-grid slds-p-around_small">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <span
+                                            ng-if="records.fieldsMap && records.fieldsMap[field.name] && records.fieldsMap[field.name].fieldLabel">{{records.fieldsMap[field.name].fieldLabel}}</span>
+                                        <span
+                                            ng-if="!records.fieldsMap || !records.fieldsMap[field.name] || !records.fieldsMap[field.name].fieldLabel">{{field.label}}&nbsp;</span>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2" ng-if="!obj[field.relationshipName]">
+                                        <p class="slds-text-align_right slds-truncate">
+                                            {{obj | getter: field | picker: field.type}}&nbsp;</p>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2" ng-if="obj[field.relationshipName]">
+                                        <p class="slds-text-align_right slds-truncate">
+                                            {{obj[field.relationshipName]['Name']}}&nbsp;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-card__footer slds-x-small-show-only">
+                            <button class="slds-button" ng-click="performFlyout(uniqueLayoutId + '-card-'+ cardIndex);">
+                                <span
+                                    ng-if="!isSelected(cardIndex)">{{::$root.vlocity.getCustomLabel('ViewMore', 'View More')}}</span>
+                                <span
+                                    ng-if="isSelected(cardIndex)">{{::$root.vlocity.getCustomLabel('ViewLess', 'View Less')}}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="vloc-add slds-p-around_small slds-text-align_center" ng-if="importedScope.insVar.obj.length < 1">
+            {{::importedScope.customLabels.InsProductNoCoveragesAssociated}}</div>
+        <button class="vloc-attr-add-new slds-button slds-button_link slds-p-left_small"
+            ng-class="{'slds-size_1-of-1 slds-text-align_center' :  importedScope.insVar.obj.length < 1}"
+            ng-click="importedScope.insFn.launchCoverageModal()">{{::importedScope.customLabels.AddNew}}</button>
+    </div>
+    <div class="vloc-attr-config-container slds-size_3-of-8 slds-border_left slds-border_right slds-border_top slds-border_bottom"
+        ng-if="$root.config.show">
+        <div class="vloc-attr-config-header slds-p-bottom_small slds-border_bottom slds-p-around_small">
+            <div class="slds-text-heading_medium slds-size_2-of-3 slds-truncate">
+                <span ng-if="$root.config.attr">{{$root.config.attr.Name}} </span>
+                <span ng-if="!$root.config.attr">{{::importedScope.customLabels.InsProductNewAttribute}}</span>
+            </div>
+            <div class="vloc-attr-config-close slds-m-horizontal_small">
+                <slds-button-svg-icon sprite="'utility'" icon="'close'" no-hint="true"
+                    ng-click="$root.config.show = false; $root.config.attr = null"></slds-button-svg-icon>
+            </div>
+            <div class="vloc-attr-actions-container">
+                <span ng-class="{'vloc-theme_error' : $root.config.attr.ruleError}"
+                    class="vloc-attr-rules slds-m-right_xx-small" ng-if="$root.config.attr.Id" ng-click="importedScope.insFn.showRules(
+               $root.config.attr.coverageId,
+               importedScope.obj.coverages[$root.config.attr.coverageId].IsOptional,
+               importedScope.obj.coverages[$root.config.attr.coverageId].AttributeAssignmentList,
+               importedScope.obj.coverages[$root.config.attr.coverageId].MinQuantity,
+               importedScope.obj.coverages[$root.config.attr.coverageId].MaxQuantity,
+               'coverage'
+               )">
+                    <span class="number">{{$root.config.attr.rules.length}}</span>
+                    <slds-button-svg-icon sprite="'custom'" icon="'custom90'" no-hint="true"
+                        extra-classes="'slds-button__icon_large'">
+                    </slds-button-svg-icon>
+                </span>
+                <button class="slds-button slds-button_neutral"
+                    ng-if="importedScope.obj.coverages[$root.config.attr.coverageId].Id === $root.config.attr[$root.nsPrefix + 'ObjectId__c']">
+                    <span
+                        ng-click="importedScope.revertAttribute($root.config.attr.coverageId, $root.config.attr.childProductId,  $root.config.attr, 'coverage')">
+                        {{::importedScope.customLabels.InsProductRevert}} </span>
+                </button>
+
+                <button class="slds-button slds-button_neutral">
+                    <span
+                        ng-click="importedScope.saveAttribute($root.config.attr.coverageId, $root.config.attr.childProductId, $root.config.attr, 'coverage')">
+                        {{::importedScope.customLabels.Save}} </span>
+                </button>
+                <button class="slds-button slds-button_neutral" ng-click="showJson = !showJson; importedScope.showJSONdiff(
+                     $root.config.attr,
+                     obj,
+                     importedScope.obj.coverages[$root.config.attr.coverageId].Id === $root.config.attr[$root.nsPrefix + 'ObjectId__c'],
+                     'coverage'
+                     )">
+                    <span> JSON </span>
+                </button>
+            </div>
+        </div>
+        <vloc-layout records="attrs" layout-name="ins-coverages-attributes-config" ng-if="!showJson"></vloc-layout>
+    </div>
+</div>
+
+<!-- rule comment tooltip-->
+<script type="text/ng-template" id="ruleCommentTooltip.html">
+    <div ng-init="importedScope.insVar.popoverOpen[obj.Id] = {}" class="vloc-ins-validation-rules" ng-class="{'vloc-ins-comments': obj[key].length > 0, 'vloc-ins-no-comments': !obj[key] || obj[key].length < 1}">
+        <slds-button-svg-icon extra-classes="'vloc-ins-icon'" ng-mouseover="importedScope.insVar.popoverOpen[obj.Id][key] = true"  size="'large'" sprite="'utility'" icon="'comments'" no-hint="true"></slds-button-svg-icon>
+        <div ng-if="importedScope.insVar.popoverOpen[obj.Id][key]" class="slds-m-top_xx-small slds-m-bottom_x-small slds-m-horizontal_xx-small slds-is-relative">
+            <div class="vloc-ins-rule-message-tooltip slds-popover slds-nubbin_top-right slds-is-absolute" role="tooltip" id="help">
+                <div class="slds-popover__body">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="textarea-id-{{key}}">{{label}}</label>
+                        <div class="slds-form-element__control">
+                            <textarea ng-change="importedScope.insFn.saveRuleComment(obj, key, saveKey)" ng-model-options="{debounce: 1000}" ng-model="obj[key]" id="textarea-id-{{key}}" class="vloc-comment-text-area slds-textarea" placeholder="{{importedScope.customLabels.InsRuleCommentsPlaceholder}}"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

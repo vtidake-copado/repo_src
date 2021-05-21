@@ -1,0 +1,73 @@
+[
+    {
+        "%vlocity_namespace%__DefaultValue__c": "0",
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Asset",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "%vlocity_namespace%__AutomaticPaymentAmount__c",
+        "%vlocity_namespace%__GlobalKey__c": "d83e845a-7b17-579c-dfc9-ecf28defd105",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "Ins_PostPreviousPolicyUpdates_EndorsementBillingIP6112904913786772",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "Ins_PostPreviousPolicyUpdates_EndorsementBillingIP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DefaultValue__c": "0",
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Asset",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "%vlocity_namespace%__NextPaymentAmountDue__c",
+        "%vlocity_namespace%__GlobalKey__c": "ffdb756e-e866-7108-d5aa-fdc45125c916",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "Ins_PostPreviousPolicyUpdates_EndorsementBillingIP4863750785688967",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "Ins_PostPreviousPolicyUpdates_EndorsementBillingIP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DefaultValue__c": "0",
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Asset",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "%vlocity_namespace%__PastDue__c",
+        "%vlocity_namespace%__GlobalKey__c": "be99f459-f575-e6dd-4efe-6ded6c8b54cb",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "Ins_PostPreviousPolicyUpdates_EndorsementBillingIP24655224747864235",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "Ins_PostPreviousPolicyUpdates_EndorsementBillingIP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Asset",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Id",
+        "%vlocity_namespace%__GlobalKey__c": "a196d6f0-ad5b-a618-f50b-c2db4e52f7d3",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "ContextId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "Ins_PostPreviousPolicyUpdates_EndorsementBillingIP4856163452886113",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "Ins_PostPreviousPolicyUpdates_EndorsementBillingIP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__ConfigurationValue__c": "FAKEMAPPING",
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Asset",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Id",
+        "%vlocity_namespace%__FilterOperator__c": "=",
+        "%vlocity_namespace%__GlobalKey__c": "8c2c1b79-24dc-edce-1fff-1a61e1a7f5d0",
+        "%vlocity_namespace%__IsDisabled__c": true,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "Ins_PostPreviousPolicyUpdates_EndorsementBillingIP08113858319677059",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "Ins_PostPreviousPolicyUpdates_EndorsementBillingIP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

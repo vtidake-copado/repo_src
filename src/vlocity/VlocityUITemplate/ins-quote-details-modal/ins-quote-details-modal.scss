@@ -1,0 +1,63 @@
+@import "ins-product-selection-variables";
+.via-slds {
+
+    .vloc-quote-details-modal{
+        .vloc-plan-detail-name {
+            font-weight: 400;
+        }
+        .vloc-plan-detail-subtitle {
+            color: $neutral-dark;
+        }
+        .vloc-plan-detail-price{
+
+        }
+        .vloc-plan-detail-bold{  
+            font-weight: bold;
+            text-align: left;
+        }
+        .vloc-plan-detail-row{
+            text-align: left;
+            padding-left: 1.75rem;
+            padding-right: 1rem;
+            color: #4F6A92;
+        }
+    }
+
+
+
+    @media screen and (max-width: $bp-large) { // 64
+        .vloc-quote-details-modal {
+            .vloc-plan-detail-name {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            .vloc-plan-detail-price{
+                font-size: 0.8125rem;
+            }
+            .vloc-plan-detail-subtitle {
+                font-size: 0.75rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: $bp-phablet) { 
+        .vloc-quote-details-modal{
+            .vloc-plan-detail-container {
+                text-align:center
+            }
+        }
+    }
+
+    @media screen and (max-width: $bp-small) { 
+        .vloc-quote-details-modal {
+            .vloc-plan-detail-container {
+                text-align:center
+            }
+
+            .vloc-plan-detail-row{
+                padding-left: .75rem;
+                padding-right: .75rem;
+            }
+        }
+    }
+}

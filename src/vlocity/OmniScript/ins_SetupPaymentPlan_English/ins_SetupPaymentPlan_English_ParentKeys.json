@@ -1,0 +1,5 @@
+[
+    "DataRaptor/Ins_PostBillingAccount_PaymentPlanOS",
+    "DataRaptor/Ins_PostPaymentMethod_PaymentPlansOS",
+    "DataRaptor/Ins_ReadAccountDetails_PaymentPlanOS"
+]

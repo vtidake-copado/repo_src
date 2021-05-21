@@ -1,0 +1,13 @@
+{
+    "%vlocity_namespace%__Author__c": "Vlocity",
+    "%vlocity_namespace%__Datasource__c": "",
+    "%vlocity_namespace%__Definition__c": "vella-policy-detail-card.json",
+    "%vlocity_namespace%__GlobalKey__c": "vella-policy-detail-card/Vlocity/1504212259815",
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": "",
+    "Name": "vella-policy-detail-card",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/vella-policy-detail-card"
+}

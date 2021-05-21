@@ -1,0 +1,77 @@
+{
+    "bundleName": "SGCreateGroupAndCensus",
+    "filesMap": {
+    },
+    "objectList": {
+        "AccountRecordTypeId": "0121U0000013D6DQAU",
+        "CensusRecordTypeId": "0121U0000013D7EQAU",
+        "ContactRecordTypeId": "0121U0000013D68QAE",
+        "ContextId": "",
+        "RatingFactProductCode": "SG-Census-RF",
+        "RecordTypes": [
+            {
+                "Object": "Account",
+                "Type": "Group"
+            },
+            {
+                "Object": "Contact",
+                "Type": "Contact"
+            },
+            {
+                "Object": "%vlocity_namespace%__GroupCensus__c",
+                "Type": "Small Group"
+            }
+        ],
+        "contextId": "",
+        "groupProfile": {
+            "SICTypeAhead-Block": {
+                "SICCode": null,
+                "SICDescription": null,
+                "SICTypeAhead": null
+            },
+            "agency": null,
+            "broker": "Jonathan Bridges",
+            "county": null,
+            "email": "rmoore@abccorp.com",
+            "firstName": "Roger",
+            "groupName": "ABC Corp - JG TEST",
+            "lastName": "Moore",
+            "mailingAddress": "50 Fremont",
+            "mailingCity": "San Francisco",
+            "mailingState": "California",
+            "mailingZipCode": 94103,
+            "phone": "555-555-5555",
+            "producerNumber": null,
+            "title": "COO"
+        },
+        "groupQualification": {
+            "cobra": null,
+            "effectiveDate": "2019-02-01 00:00:00",
+            "eligibleEmployees": null,
+            "employeesEnrolling": null,
+            "firstYearDental": null,
+            "outOfStateEmployees": null,
+            "pediatricDental": null,
+            "privateExchange": null
+        },
+        "id": "a0g1U000000fDKqQAM",
+        "isdtp": "p1",
+        "layout": "newport",
+        "selectPlanTypes": {
+            "isDentalSelected": null,
+            "isMedicalSelected": null,
+            "isVisionSelected": null,
+            "plansSelection": null
+        },
+        "sfdcIFrameHost": "web",
+        "sfdcIFrameOrigin": "https://jbtso01182019--vlocity-ins.visualforce.com",
+        "timeStamp": "2019-01-19T15:49:23.436Z",
+        "userCurrencyCode": "USD",
+        "userId": "0051U000002HkPIQA0",
+        "userName": "jbridges@vlocity.com.tso011718",
+        "userProfile": "System Administrator",
+        "userTimeZone": -480,
+        "vlcPersistentComponent": {
+        }
+    }
+}

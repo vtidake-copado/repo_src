@@ -1,0 +1,39 @@
+{
+    "Cards": [
+        "ins-add-product-dropdown",
+        "ins-large-group-quote-product-card",
+        "ins-large-group-quote-groups-card"
+    ],
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0Q01I0000003Wo5SAE"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "inputMap": {
+                "quoteId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceQuoteProcessingService"
+            },
+            "remoteClass": "InsuranceQuoteProcessingService",
+            "remoteMethod": "getRootLineItems",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": "result.rootLines.records"
+        }
+    },
+    "previewType": "runTime",
+    "templates": {
+        "0": {
+            "templateUrl": "ins-large-group-quote-plans-card-container"
+        }
+    },
+    "workspace": [
+        "ins-add-product-dropdown/Vlocity/1/1543536415910",
+        "ins-large-group-quote-product-card/Vlocity/1/1541025135099",
+        "ins-large-group-quote-groups-card/Vlocity/1/1541025301165"
+    ]
+}

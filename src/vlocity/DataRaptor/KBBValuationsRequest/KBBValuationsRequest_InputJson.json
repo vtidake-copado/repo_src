@@ -1,0 +1,52 @@
+{
+    "GetVehicleId": {
+        "count": 1,
+        "href": "https://sandbox.api.kbb.com/idws/vehicle/vehicles?api_key=d51c688d57a241b58a9e44b5d&vehicleClass=UsedCar&ApplicationFilter=Consumer&makeId=15&modelId=104&yearId=&trimId=270655&start=1&limit=50",
+        "items": [
+            {
+                "bodyStyle": "Coupe",
+                "doors": 2,
+                "generationEndYear": "1997",
+                "generationId": 246,
+                "generationInstanceId": 570,
+                "generationName": "Thunderbird",
+                "generationSequence": 9,
+                "generationStartYear": "1992",
+                "genericBodyStyle": "Car",
+                "isConsumer": true,
+                "kbbCategories": [
+                    "Full-size Car"
+                ],
+                "luxuryType": "Non-Luxury",
+                "makeId": 15,
+                "makeName": "Ford",
+                "modelId": 104,
+                "modelName": "Thunderbird",
+                "modelPlusTrimName": "Thunderbird LX Coupe 2D",
+                "modelYearId": 995,
+                "oemBodyStyle": "Coupe",
+                "originalMSRP": 18278,
+                "size": "Full-Size",
+                "sortOrder": 2,
+                "sportType": "Non-Sport",
+                "standardDrivetrain": "RWD",
+                "standardEngine": "V6, 3.8 Liter",
+                "standardTransmission": "Automatic",
+                "trimId": 270655,
+                "trimName": "LX Coupe 2D",
+                "vehicleClass": "UsedCar",
+                "vehicleId": 11945,
+                "vehicleName": "LX Coupe 2D",
+                "yearId": 1992
+            }
+        ],
+        "limit": 50
+    },
+    "makeId": "15",
+    "mileage": "50000",
+    "modelId": "104",
+    "trimId": "270655",
+    "vehicleId": "11945",
+    "yearId": "1992",
+    "zipCode": "75094"
+}

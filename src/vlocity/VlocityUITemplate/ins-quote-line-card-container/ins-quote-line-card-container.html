@@ -1,0 +1,178 @@
+<div class="slds-spinner_container vloc-spinner_container vloc-show-loader" ng-show="!$root.isLoaded">
+    <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+        <div class="slds-spinner__dot-a"></div>
+        <div class="slds-spinner__dot-b"></div>
+    </div>
+</div>
+<div class="slds-notify_container" ng-show="$root.notification.active">
+    <div class="slds-notify slds-notify_toast" role="alert" ng-class="{'slds-theme_success': $root.notification.type === 'success', 'slds-theme_error': $root.notification.type === 'error'}">
+        <button class="slds-button slds-button_icon-inverse slds-notify__close" ng-click="$root.notification.active = false">
+            <slds-button-svg-icon sprite="'utility'" icon="'close'"></slds-button-svg-icon>
+            <span class="slds-assistive-text">Close</span>
+        </button>
+        <span class="slds-assistive-text">Info</span>
+        <h2 ng-bind-html="$root.notification.message"></h2>
+    </div>
+</div>
+<div class="slds-grid slds-size_1-of-1 slds-wrap" ng-init="importedScope.setActiveList(records[0])">
+    <div class="slds-grid slds-size_1-of-1 slds-wrap slds-p-right_small vloc-left-col" ng-class="{'slds-size_3-of-5' : importedScope.activeRow}">
+        <div class="slds-box slds-theme_shade slds-size_1-of-1 slds-wrap slds-grid vloc-qli-shade-box">
+            <div class="vloc-add-product-link slds-size_2-of-3">
+                <a class="slds-m-left_xx-small slds-truncate" ng-click="addProductOpen = !addProductOpen; importedScope.hideRightCol(addProductOpen)">Add Product</a>
+            </div>
+            <vloc-card ng-repeat="card in cards |orderBy:order|filter: searchFunc(card)" ng-model="card" data="card" records="records"
+                index="{{$index}}" class="slds-size_1-of-4" session-id="{{sessionId}}" ctrl="InsQuoteLineItemsController" params-id="{{attrs.paramsId}}">
+            </vloc-card>
+            <div class="vloc-product-type-select-container slds-grid slds-wrap">
+                <span class="vloc-filter-icon" ng-if="addProductOpen" ng-click="importedScope.showFilter = !importedScope.showFilter">
+                    <slds-button-svg-icon sprite="'utility'" icon="'filterList'" no-hint="true" extra-classes=""></slds-button-svg-icon>
+                </span>
+                <span ng-click="addProductOpen = !addProductOpen; importedScope.hideRightCol(addProductOpen)">
+                    <div class="vloc-chevron-down" ng-if="addProductOpen">
+                        <slds-button-svg-icon extra-classes="'slds-button__icon slds-button__icon_large'" sprite="'utility'" icon="'down'" no-hint="true"
+                            extra-classes=""></slds-button-svg-icon>
+                    </div>
+                    <div class="vloc-chevron-right" ng-if="!addProductOpen">
+                        <slds-button-svg-icon extra-classes="'slds-button__icon slds-button__icon_large'" sprite="'utility'" icon="'right'" no-hint="true"
+                            extra-classes=""></slds-button-svg-icon>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="vloc-add-product slds-border_right slds-border_left slds-grid slds-wrap slds-size_1-of-1" ng-class="{'hide' : !addProductOpen, 'slds-border_top' : !importedScope.showFilter}"
+            ng-if="!importedScope.activeRow">
+            <div class="slds-p-around_small slds-size_1-of-1 slds-border_bottom" ng-if="importedScope.showFilter">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                        <span class="vloc-search-icon">
+                            <slds-button-svg-icon sprite="'utility'" icon="'search'" no-hint="true" extra-classes=""></slds-button-svg-icon>
+                        </span>
+                        </svg>
+                        <input class="slds-input slds-size_1-of-3" placeholder="Search Products" ng-model="importedScope.searchTerm" />
+                    </div>
+                </div>
+            </div>
+            <div class="vloc-box_product slds-theme_shade slds-size_1-of-1 slds-grid slds-wrap slds-border_bottom" ng-repeat="record in $root.productTypeMap[$root.addProductType.id] | filter : importedScope.searchTerm| orderBy : 'Name'"
+                ng-if="!record.isQLI">
+                <!--Title-->
+                <div class="vloc-type-icon slds-grid" ng-class="{'not-recommended': !record.IsRecommended__c, 'gold': record.Tier__c === 'Gold', 'silver' : record.Tier__c === 'Silver', 'bronze' : record.Tier__c === 'Bronze', 'vloc-is-reccomended' : record.IsRecommended__c}">
+                    <div class="vloc-popover" style="padding-left: 2rem;padding-top: 5rem;top: -4px;position: absolute;width: 14rem;left: 1.3rem;">
+                        <div class="slds-popover slds-popover_tooltip slds-nubbin_left" role="tooltip" id="help" style="position: absolute; top: 0px; left: 15px;"
+                            ng-if="record.Tier__c || record.IsRecommended__c">
+                            <div class="slds-popover__body">
+                                <span ng-if="record.Tier__c">{{record.Tier__c}} Tier
+                                    <span ng-if="record.IsRecommended__c"> & </span>
+                                </span>
+                                <span class="record.IsRecommended__c" ng-if="record.IsRecommended__c">Recommended</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="letter" ng-if="record.Tier__c === 'Gold' && !record.IsRecommended__c">G</span>
+                    <span class="letter" ng-if="record.Tier__c === 'Silver' &&  !record.IsRecommended__c">S</span>
+                    <span class="letter" ng-if="record.Tier__c === 'Bronze' &&  !record.IsRecommended__c">B</span>
+                    <div ng-if="record.IsRecommended__c">
+                        <slds-button-svg-icon sprite="'action'" size="'check'" icon="'check'" extra-classes="'slds-button__icon_left'"></slds-button-svg-icon>
+                    </div>
+                </div>
+                <div class="slds-size_2-of-7">
+                    <h1 class="vloc-product-title slds-text-heading_medium slds-p-around_small slds-m-bottom_xx-small slds-p-right_x-small slds-truncate slds-m-left_xxx-small"
+                        title="{{importedScope.vlocProdSelectItem.record.Name}}">{{record.Name}}
+                        <span class="slds-text-align_right">{{record.Price | currency}}</span>
+                    </h1>
+                </div>
+                <!--Attributes-->
+                <div class="vloc-record-description slds-size_1-of-3 slds-p-top_medium slds-truncate" ng-class="{'long-description': record.Description.length > 60}">
+                    {{record.Description}}
+                </div>
+                <div class="slds-size_1-of-3 slds-grid slds-wrap slds-p-right_small">
+                    <div class="slds-grid slds-size_1-of-2 slds-text-align_center slds-p-top_medium">
+                        <div ng-if="!record.showFlyOut" class="slds-size_1-of-1 slds-text-align_center slds-text-link vloc-footer-link" ng-click="record.showFlyOut = true">Details</div>
+                        <div ng-if="record.showFlyOut" class="slds-size_1-of-1 slds-text-align_center slds-text-link vloc-footer-link" ng-click="record.showFlyOut = false">Hide Details</div>
+                        <div class="vloc-footer-divider"></div>
+                    </div>
+                    <button ng-disabled="record.isReplace" class="slds-button slds-button_brand slds-size_1-of-2 slds-p-around_x-small slds-m-vertical_x-small  slds-text-title_caps vloc-button_select"
+                        ng-click="record.isSelected = true; importedScope.addItem(record); addProductOpen = false">
+                        <slds-button-svg-icon sprite="'utility'" size="'small'" icon="'check'" extra-classes="'slds-button__icon_left'" ng-show="record.isSelected"></slds-button-svg-icon>
+                        <span ng-show="!record.isSelected">Select</span>
+                        <span ng-show="record.isSelected">Selected</span>
+                    </button>
+                </div>
+                <div class="vloc-flyout slds-size_1-of-1 slds-border_top slds-p-bottom_small" ng-class="{'hidden' : !record.showFlyOut}">
+                    <div class="vloc-flyout-triangle"></div>
+                    <div class="vloc-flyout-inner-triangle"></div>
+                    <div class="slds-p-top_small slds-p-horizontal_small slds-grid slds-wrap" ng-repeat="catt in record.attributeCategories.records">
+                        <div class="slds-text-title_caps slds-size_1-of-1">{{catt.Name}}</div>
+                        <div ng-repeat="attr in catt.productAttributes.records" class="slds-size_1-of-4">
+                            <div class="slds-m-right_xx-small slds-truncate">{{attr.label}}</div>
+                            <div class="slds-size_1-of-1 slds-p-right_small slds-truncate slds-m-bottom_xx-small">
+                                <span ng-if="attr.dataType !== 'currency' && attr.dataType !== 'percentage'">
+                                    {{attr.userValues}}
+                                </span>
+                                <span ng-if="attr.dataType === 'currency'">
+                                    {{attr.userValues | currency}}
+                                </span>
+                                <span ng-if="attr.dataType === 'percentage'">
+                                    {{attr.userValues}}%
+                                </span>
+                                <span ng-if="attr.userValues === null">
+                                    --
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-p-around_small" ng-if="!record.attributeCategories.records.length">
+                        There are no attributes configured for this product
+                    </div>
+
+                </div>
+            </div>
+            <div ng-if="!$root.productTypeMap[$root.addProductType.id] && $root.isLoaded" class="slds-size_1-of-1 vloc-no-products slds-border_bottom">
+                <div class="slds-p-around_small slds-theme_warning slds-m-around_large slds-text-align_center vloc-no-products-message">
+                    No Products Returned
+                </div>
+            </div>
+        </div>
+        <div class="slds-m-top_small slds-box slds-size_1-of-1 slds-wrap slds-grid vloc-qli-box" ng-click="addProductOpen = false; importedScope.activeRow = obj; importedScope.setActiveList(obj)"
+            ng-class="{'vloc-qli-active' : importedScope.activeRow.quoteLineId === obj.quoteLineId}" ng-repeat="obj in records">
+            <div class="slds-size_1-of-2 vloc-qli-line slds-grid">
+                <span class="vloc-qli-index slds-p-horizontal_small">{{$index + 1}}</span>
+                <span class="vloc-qli-icon-type slds-p-right_medium">
+                    <div class="vloc-popover-qli-type" style="    padding-left: 2rem;padding-top: 5rem;top: -3.5rem;position: absolute;width: 14rem;left: -2rem;">
+                        <div class="slds-popover slds-popover_tooltip slds-nubbin_bottom-left" role="tooltip" id="help" style="position: absolute; top: 0px; left: 15px;"
+                            ng-if="obj['Product2.' + $root.nsPrefix + 'Type__c'].value">
+                            <div class="slds-popover__body">
+                                {{obj['Product2.' + $root.nsPrefix + 'Type__c'].value}}
+                            </div>
+                        </div>
+                    </div>
+                    <slds-button-svg-icon ng-if="$root.typeIcons[obj['Product2.' + $root.nsPrefix + 'Type__c'].value].sprite && $root.typeIcons[obj['Product2.' + $root.nsPrefix + 'Type__c'].value].icon"
+                        sprite="$root.typeIcons[obj['Product2.' + $root.nsPrefix + 'Type__c'].value].sprite" icon="$root.typeIcons[obj['Product2.' + $root.nsPrefix + 'Type__c'].value].icon"
+                        no-hint="true"></slds-button-svg-icon>
+                </span>
+                <span class="vloc-qli-name slds-truncate slds-truncate">{{obj['Product2.Name'].value}}</span>
+
+                <span class="vloc-qli-type slds-p-left_x-small slds-truncate">{{obj['Product2.' + $root.nsPrefix +'Tier__c'].value}}</span>
+            </div>
+            <div class="slds-size_1-of-3 vloc-qli-line slds-truncate">
+                <span class="vloc-qli-type slds-truncate">{{obj[$root.nsPrefix + 'ClassCodes__c'].value}}
+                    <button class="slds-button slds-button_link vloc-edit-qli-link slds-p-horizontal_small"
+                        ng-click="importedScope.editModal(obj)"> Edit </button>
+                </span>
+            </div>
+            <div class="slds-size_1-of-3 vloc-qli-line">
+                <span class="vloc-qli-name slds-truncate">{{obj['Total Cost'] | currency}}</span>
+                <span class="vloc-qli-delete">
+                    <slds-button-svg-icon sprite="'utility'" icon="'delete'" no-hint="true" ng-click="importedScope.removeItem(obj.quoteLineId)"></slds-button-svg-icon>
+                    <!--<slds-button-svg-icon sprite="'utility'" icon="'chevrondown'"  no-hint="true"></slds-button-svg-icon>-->
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="slds-grid slds-size_2-of-5 slds-wrap vloc-right-col slds-border_left slds-border_right slds-border_top slds-border_bottom"
+        ng-if="importedScope.activeRow">
+        <div class="slds-size_1-of-1 slds-grid slds-wrap vloc-product-action-links slds-p-horizontal_small">
+            <ins-rules-attributes product-data="importedScope.activeList" one-product="true" update-method="importedScope.updateActiveList()"></ins-rules-attributes>
+        </div>
+    </div>
+</div>

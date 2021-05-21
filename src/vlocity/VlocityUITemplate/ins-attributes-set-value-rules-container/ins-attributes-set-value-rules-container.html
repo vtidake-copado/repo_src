@@ -1,0 +1,97 @@
+<div ng-init="importedScope.getRulesNeedUpgrade()" ng-controller="vlocInsRulesContainerCtrl">
+    <div ng-if="!importedScope.rules" class="vloc-no-set-value-rules slds-align_absolute-center">
+        <p> {{::importedScope.customLabels.InsSetValueRulesNoData}}</p>
+    </div>
+    <div ng-if="importedScope.rules && importedScope.rules.length > 0" class="slds-p-top_small slds-p-bottom_x-small vloc-ins-rules-table-container">
+        <div class="vloc-instructions-container">
+            <blockquote class="vloc-instructions-text">
+                <p class="vloc-instructions-header">{{::importedScope.customLabels.InsProductWarning}}</p>
+                <p>{{::importedScope.customLabels.InsSetValueRulesInstructions}}</p>
+                <div class="vloc-method-container">
+                    <div class="vloc-invalid-methods">
+                        <p class="vloc-invalid-methods-header">{{::importedScope.customLabels.InsSetValueRulesIncompatibleMethods}}</p>
+                        <div>
+                            'AND(', 'OR(', 'AVERAGE', 'CONCATENATE', 'EXISTS'.
+                        </div>
+                    </div>
+                    <div class="vloc-invalid-methods">
+                        <p class="vloc-invalid-methods-header">{{::importedScope.customLabels.InsSetValueRulesUnsupportedMethods}}</p>
+                        <div>
+                            ‘ARRAY’, ‘BOOLEAN’, ‘CASE’, ‘CONTAINS’, ‘COUNT’, ‘COUNTIF’, ‘CURRENCY’,
+                            ‘DATE’, ‘DAYOFMONTH’, ‘DAYOFWEEK’, ‘HOUR’, ‘INTEGER’, ‘MINUTE’, ‘MOMENT’,
+                            ‘NOW’, ‘NULL’, ‘NUMBER’, ‘POW’, ‘RANDOM’, ‘SPLIT’, ‘STRING’, ‘SUBSTRING’, ‘SUMIF’.
+                        </div>
+                    </div>
+                </div>
+            </blockquote>
+        </div>
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-no-row-hover">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="vloc-attrs-table-col vloc-product-data-col" scope="col">
+                        <div class="slds-truncate" title="{{::importedScope.customLabels.InsSetValueRulesProductName}}">{{::importedScope.customLabels.InsSetValueRulesProductName}}</div>
+                    </th>
+                    <th class="vloc-attrs-table-col vloc-product-data-col" scope="col">
+                        <div class="slds-truncate" title="{{::importedScope.customLabels.InsSetValueRulesParentProduct}}">{{::importedScope.customLabels.InsSetValueRulesParentProduct}}</div>
+                    </th>
+                    <th class="vloc-attrs-table-col vloc-product-data-col" scope="col">
+                        <div class="slds-truncate" title="{{::importedScope.customLabels.InsSetValueRulesProductCode}}">{{::importedScope.customLabels.InsSetValueRulesProductCode}}</div>
+                    </th>
+                    <th class="vloc-attrs-table-col vloc-rule-data-col" scope="col">
+                        <div class="slds-truncate" title="{{::importedScope.customLabels.InsSetValueRulesValueExpression}}">{{::importedScope.customLabels.InsSetValueRulesValueExpression}}</div>
+                    </th>
+                    <th class="vloc-attrs-table-col vloc-rule-data-col" scope="col">
+                        <div class="slds-truncate" title="{{::importedScope.customLabels.InsSetValueRulesExpression}}">{{::importedScope.customLabels.InsSetValueRulesExpression}}</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="slds-hint-parent" ng-repeat="rule in importedScope.rules" ng-init="ruleIndex = $index">
+                    <td class="vloc-attrs-table-col vloc-product-name-col" data-label="{{::importedScope.customLabels.InsSetValueRulesProductName}}" scope="row">
+                        <div class="slds-truncate" title="{{rule.productName}}">
+                            {{rule.productName}}
+                        </div>
+                    </td>
+                    <td class="vloc-attrs-table-col vloc-product-name-col" data-label="{{::importedScope.customLabels.InsSetValueRulesParentProductName}}" scope="row">
+                        <div ng-if="rule.parentProductName" class="slds-truncate" title="{{rule.parentProductName}}">
+                            {{rule.parentProductName}}
+                        </div>
+                        <div ng-if="!rule.parentProductName" class="slds-truncate" title="{{rule.parentProductName}}">
+                            N/A
+                        </div>
+                    </td>
+                    <td class="vloc-attrs-table-col vloc-product-code-col" data-label="{{::importedScope.customLabels.InsSetValueRulesProductCode}}">
+                        <div class="slds-truncate"> {{rule.attributeCode}}</div>
+                    </td>
+                    <!-- Value Expression -->
+                    <td class="vloc-attrs-table-col vloc-rule-data-col" ng-class="{'vloc-textbox-inactive': importedScope.selectedIndex !== ruleIndex}" ng-init="importedScope.selectedIndex = 0;" data-label="{{::importedScope.customLabels.InsSetValueRulesValueExpression}}">
+                        <div ng-if="ruleConfig.ruleType === 'Set Value'" class="slds-truncate vloc-rule-container" ng-repeat="ruleConfig in rule.ruleData">
+                            <div class="vloc-monaco-editor-container" ng-click="importedScope.selectedIndex = ruleIndex;">
+                                <monaco-editor
+                                    class="vloc-formula-builder vloc-value-expression slds-textarea"
+                                    language="vlocity-formula"
+                                    id="set-value-value-{{$index + 1}}"
+                                    ng-model="ruleConfig.valueExpression"
+                                    ng-change="importedScope.saveUpgradedRules();">
+                                </monaco-editor>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- Expression -->
+                    <td class="vloc-attrs-table-col vloc-rule-data-col" ng-class="{'vloc-textbox-inactive': importedScope.selectedIndex !== ruleIndex }" ng-init="importedScope.selectedIndex = 0;" data-label="{{::importedScope.customLabels.InsSetValueRulesExpression}}">
+                        <div ng-if="ruleConfig.ruleType === 'Set Value'" class="slds-truncate vloc-rule-container" ng-repeat="ruleConfig in rule.ruleData">
+                            <div class="vloc-monaco-editor-container" ng-click="importedScope.selectedIndex = ruleIndex;">
+                                <monaco-editor
+                                    class="vloc-formula-builder vloc-value-expression slds-textarea"
+                                    language="vlocity-formula" id="set-value-value-{{$index + 1}}"
+                                    ng-model="ruleConfig.expression"
+                                    ng-change="importedScope.saveUpgradedRules();">
+                                </monaco-editor>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

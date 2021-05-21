@@ -1,0 +1,30 @@
+<div class="vella-policy-detail-inner-wrapper" ng-controller="vellaPolicyDetailsController" ng-init="getPolicyDetails(obj)">
+    <div class="slds-clearfix vella-policy-detail-top">
+        <div class="slds-float--left vella-policy-detail-circle">
+            <img ng-src="{{$root.cardData.Image}}" class="vella-policy-img"/>
+        </div>
+        <!-- <div class="slds-float--right vella-policy-detail-premium-container">
+            <p class="vella-policy-detail-premium">{{placeholder.PolicyPremium.value}}</p>
+            <p class="vella-policy-detail-premium-label">{{placeholder.PolicyPremium.label}}</p>
+        </div> -->
+        <div class="slds-float--right vella-policy-detail-premium-container" ng-repeat="field in data.fields" ng-if="field.name.indexOf('AnnualPremium') > -1">
+            <p class="vella-policy-detail-premium">${{obj | getter: field | picker: field.type}}</p>
+            <p class="vella-policy-detail-premium-label">{{field.label}}</p>
+        </div>
+    </div>
+    <div class="vella-policy-detail-middle">
+        <h1 class="vella-policy-detail-name">{{placeholder.PolicyName.value}}</h1>
+        <div class="vella-policy-detail-fields-container">
+            <div class="vella-policy-detail-field" ng-repeat="field in data.fields" ng-if="field.name.toLowerCase().indexOf('premium') < 0">
+                <span class="vella-policy-detail-field-label">{{field.label}}: </span>
+                <span class="vella-policy-detail-field-value" ng-if="field.type === 'date'">{{obj | getter: field | date: 'mediumDate'}}</span>
+                <span class="vella-policy-detail-field-value" ng-if="field.type !== 'date'">{{obj | getter: field | picker: field.type}}</span>
+            </div>
+        </div>
+        <button class="slds-button vella-policy-detail-learn-more-btn" ng-click="goToMoreDetail()">Learn More</button>
+    </div>
+    <div class="slds-clearfix vella-policy-detail-actions">
+        <button class="slds-float--left slds-size--1-of-3 vella-policy-detail-action" ng-click="launchAction({id: 'id_card_modal'})">View ID Card</button>
+        <button class="slds-float--left slds-size--1-of-3 vella-policy-detail-action" ng-repeat="action in data.actions" ng-click="launchAction(action)">{{action.displayName}}</button>
+    </div>
+</div>

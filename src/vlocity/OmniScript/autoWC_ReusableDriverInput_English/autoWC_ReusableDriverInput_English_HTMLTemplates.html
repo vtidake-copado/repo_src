@@ -1,0 +1,40 @@
+<style>
+ng-form.demo-short {
+    min-height: 1em !important;
+}
+
+#configureProduct .slds-form-element__label {
+display:none;
+}
+
+#selectProduct .slds-form-element__label {
+display:none;
+}
+
+#RulesResults .slds-form-element__label {
+display:none;
+}
+
+.via-nds .nds-block .nds-control-action__container[vlc-bubble-canceller] {
+display: none;
+}
+
+</style>
+
+<script type="text/ng-template" id="quickfill">
+ <div class="slds-col--padded slds-size--1-of-1 ng-scope">
+   <ng-form name="loopform"
+     class="slds-form-element vlc-flex vlc-form-group vlc-slds-remote-action--button ng-pristine ng-valid ng-scope demo-short"
+     ng-repeat="control in child.eleArray">
+       <div class="slds-form-element__control">
+         <div class="vlc-control-wrapper">
+           <div  id='{{::control.name}}'
+                 title='{{::control.propSetMap.label}}'
+                 ng-click="buttonClick(this.bpTree.response, control, this)"
+                 style="font-style: italic; font-size: smaller; cursor: pointer; text-align: right;">{{::control.propSetMap.label}}</div>
+         </div>
+       <div class="vlc-sub-block"></div>
+     </div>
+   </ng-form>
+ </div>
+</script>

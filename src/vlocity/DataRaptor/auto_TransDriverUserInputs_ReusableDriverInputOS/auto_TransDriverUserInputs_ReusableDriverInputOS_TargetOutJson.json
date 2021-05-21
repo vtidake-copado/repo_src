@@ -1,0 +1,115 @@
+{
+    "ContextId": "",
+    "EnterCars": {
+        "Cars": [
+            {
+                "BodyClass": "Sedan/Saloon",
+                "Make": "Lexus",
+                "Model": "LX250",
+                "VIN": "JTHBF1D25F5074100",
+                "VehicleType": "PASSENGER CAR",
+                "Year": 2015
+            },
+            {
+                "BodyClass": "Minivan",
+                "Make": "Honda",
+                "Model": "Odyssey",
+                "VIN": "5FNRL38706B069959",
+                "VehicleType": "MULTIPURPOSE PASSENGER VEHICLE (MPV)",
+                "Year": 2006
+            }
+        ]
+    },
+    "accountId": "0016A00000W6JmWQAV",
+    "autos": {
+        "auto": [
+            {
+                "autoCondition": "VeryGood",
+                "autoGaragePostalCode": "94549",
+                "autoInstanceKey": null,
+                "autoMake": "Buick",
+                "autoMileage": 12399,
+                "autoModel": "Enclave",
+                "autoTrim": "Premier",
+                "autoYear": 2015
+            },
+            {
+                "autoCondition": "Good",
+                "autoGaragePostalCode": "94549",
+                "autoInstanceKey": null,
+                "autoMake": "Acura",
+                "autoMileage": 2560,
+                "autoModel": "SLX",
+                "autoTrim": "Superior",
+                "autoYear": 2013
+            }
+        ]
+    },
+    "discountAutos": {
+        "discountAuto": [
+            {
+                "discAltFuel": null,
+                "discAntiLock": null,
+                "discAntiTheft": null,
+                "discStab": null,
+                "discountAutoInstanceKey": "2015 Buick Enclave Premier",
+                "typeAutoDiscount": "Stab;AntiTheft"
+            },
+            {
+                "discAltFuel": null,
+                "discAntiLock": null,
+                "discAntiTheft": null,
+                "discStab": null,
+                "discountAutoInstanceKey": "2013 Acura SLX Superior",
+                "typeAutoDiscount": "AltFuel;Stab"
+            }
+        ]
+    },
+    "driverBirthdate": "1986-02-14T08:00:00.000Z",
+    "driverFirstName": "Roger",
+    "driverGender": "Male",
+    "driverLastName": "Moore",
+    "driverMaritalStatus": "",
+    "driverMiddleName": "James",
+    "drivers": {
+        "driver": {
+            "driverAge": 0,
+            "driverAgeLicensed": 16,
+            "driverBirthdate": "2018-07-04T07:00:00.000Z",
+            "driverFirstName": "sx",
+            "driverGender": "Male",
+            "driverInstanceKey": "sx  sadf  sadf",
+            "driverLastName": "sadf",
+            "driverMaritalStatus": "Single",
+            "driverMiddleName": "sadf"
+        }
+    },
+    "drivers:driver:driverBirthdate": "1986-02-14T08:00:00.000Z",
+    "id": "a2C6A000000FmWhUAK",
+    "insured": {
+        "effectiveDate": "2018-07-18",
+        "insuredAge": 32,
+        "insuredAgeLicensed": 16,
+        "insuredBirthdate": "1986-02-14T08:00:00.000Z",
+        "insuredCity": "Burton",
+        "insuredFirstName": "Roger",
+        "insuredFullName": "Roger James Moore",
+        "insuredGender": "Male",
+        "insuredLastName": "Moore",
+        "insuredMaritalStatus": "Married",
+        "insuredMiddleName": "James",
+        "insuredPostalCode": "48509",
+        "insuredState": "MI",
+        "insuredStreet": "5340 Davison Road"
+    },
+    "layout": "lightning",
+    "opportunityId": "0066A000007jw4eQAA",
+    "timeStamp": "2018-07-27T02:39:17.097Z",
+    "userCurrencyCode": "USD",
+    "userId": "0056A000000INnpQAG",
+    "userName": "rajaibomaster@demo.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": -420,
+    "vlcPersistentComponent": {
+    }
+}

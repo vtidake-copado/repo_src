@@ -2,34 +2,49 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
+        <fullName>Analyst</fullName>
+        <default>false</default>
+        <label>Analyst</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Competitor</fullName>
+        <default>false</default>
+        <label>Competitor</label>
+    </standardValue>
+    <standardValue>
         <fullName>Prospect</fullName>
         <default>false</default>
         <label>Prospect</label>
     </standardValue>
     <standardValue>
-        <fullName>Customer - Direct</fullName>
+        <fullName>Integrator</fullName>
         <default>false</default>
-        <label>Customer - Direct</label>
+        <label>Integrator</label>
     </standardValue>
     <standardValue>
-        <fullName>Customer - Channel</fullName>
+        <fullName>Investor</fullName>
         <default>false</default>
-        <label>Customer - Channel</label>
+        <label>Investor</label>
     </standardValue>
     <standardValue>
-        <fullName>Channel Partner / Reseller</fullName>
+        <fullName>Partner</fullName>
         <default>false</default>
-        <label>Channel Partner / Reseller</label>
+        <label>Partner</label>
     </standardValue>
     <standardValue>
-        <fullName>Installation Partner</fullName>
+        <fullName>Press</fullName>
         <default>false</default>
-        <label>Installation Partner</label>
+        <label>Press</label>
     </standardValue>
     <standardValue>
-        <fullName>Technology Partner</fullName>
+        <fullName>Customer</fullName>
         <default>false</default>
-        <label>Technology Partner</label>
+        <label>Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reseller</fullName>
+        <default>false</default>
+        <label>Reseller</label>
     </standardValue>
     <standardValue>
         <fullName>Other</fullName>

@@ -1,0 +1,85 @@
+{
+    "dataSource": {
+        "type": null,
+        "value": {
+            "resultVar": ""
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Attribute Code",
+                    "name": "%vlocity_namespace%__AttributeUniqueCode__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Category",
+                    "name": "%vlocity_namespace%__CategoryName__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Label",
+                    "name": "%vlocity_namespace%__AttributeDisplayNameOverride__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Value",
+                    "name": "%vlocity_namespace%__Value__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Data Type",
+                    "name": "%vlocity_namespace%__ValueDataType__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Customizable",
+                    "name": "%vlocity_namespace%__IsConfigurable__c",
+                    "type": "BOOLEAN"
+                }
+            ],
+            "name": "ins-coverage",
+            "templateUrl": "ins-coverage-card"
+        }
+    ],
+    "title": "ins-coverage"
+}

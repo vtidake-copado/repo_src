@@ -1,0 +1,30 @@
+<div class="slds-notify slds-notify_alert slds-theme_alert-texture" ng-show="importedScope.notification.active" role="alert" ng-class="{'slds-theme_success': importedScope.notification.type === 'success', 'slds-theme_error': importedScope.notification.type === 'error'}">
+    <button class="slds-button slds-button_icon-inverse slds-notify__close" ng-click="importedScope.notification.active = false">
+        <slds-button-svg-icon sprite="'utility'" icon="'close'" ></slds-button-svg-icon>
+        <span class="slds-assistive-text">Close</span>
+    </button>
+    <span class="slds-assistive-text">Info</span>
+    <h2 ng-bind-html="importedScope.notification.message"></h2>
+</div>
+<div class="vloc-add-class-form-container slds-form_horizontal ng-scope slds-size_1-of-1 slds-text-align_center slds-m-around_large"> 
+    <div class="slds-form-element" ng-repeat="record in records" ng-class="{'vloc-reference' : record.fieldType === 'REFERENCE'}">
+        <label class="slds-form-element__label" for="inputSample2" ng-if="record.fieldType !== 'REFERENCE' && record.fieldLabel">{{record.fieldLabel}}</label>
+        <div class="slds-form-element__control" ng-if="record.fieldType !== 'BOOLEAN' && record.fieldType !== 'REFERENCE' && record.fieldType !== 'CURRENCY' && record.fieldType !== 'PERCENT' && record.fieldLabel">
+            <input id="text-input-01" class="slds-input slds-size_1-of-1 slds-large-size_1-of-2 slds-medium-size_1-of-2" type="text" placeholder="Please enter a {{record.fieldType}}" 
+            ng-model="record.fieldValue"/>
+        </div> 
+         <div class="slds-form-element__control" ng-if="record.fieldType === 'CURRENCY' || record.fieldType === 'PERCENT'">
+            <input id="text-input-01" class="slds-input slds-size_1-of-1 slds-large-size_1-of-2 slds-medium-size_1-of-2" type="number" placeholder="Please enter a {{record.fieldType}}" 
+            ng-model="record.fieldValue"/>
+        </div> 
+        <div class="slds-form-element__control" ng-if="record.fieldType === 'REFERENCE'" ng-init="record.fieldValue = $root.accountId">
+        </div> 
+        <div class="slds-form-element__control slds-checkbox vloc-class-boolean" ng-if="record.fieldType === 'BOOLEAN'" ng-init="record.fieldValue = true">
+             <label class="slds-checkbox">
+                <input type="checkbox" name="options" id="checkbox-contacts" ng-model="record.fieldValue" ng-disabled="record.fieldLabel === 'Active' && !records.Id"/>
+                <span class="slds-checkbox_faux"></span>
+                <span class="slds-form-element__label"></span>
+              </label>
+        </div> 
+    </div>
+</div>

@@ -1,0 +1,58 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "insuredVehicles",
+        "%vlocity_namespace%__DomainObjectFieldType__c": "List<Map>",
+        "%vlocity_namespace%__GlobalKey__c": "93af7c68-6cd1-874b-cf2d-14b25ef42ba7",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "auto_TransfForVehicleSelect_removeVehiclesOSCustom1868",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "auto_TransfForVehicleSelect_removeVehiclesOS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "insuredVehicles:InsuredItemId",
+        "%vlocity_namespace%__GlobalKey__c": "ad848be2-fd79-190f-a185-962984e68367",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "insuredItems:autoVehicle:Id",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "auto_TransfForVehicleSelect_removeVehiclesOS4259023914822673",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "auto_TransfForVehicleSelect_removeVehiclesOS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "insuredVehicles:Model",
+        "%vlocity_namespace%__GlobalKey__c": "7f2dda28-5c9f-c62f-d9fc-0b67cb8790ef",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "insuredItems:autoVehicle:avModel",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "auto_TransfForVehicleSelect_removeVehiclesOS25300683467548724",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "auto_TransfForVehicleSelect_removeVehiclesOS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "insuredVehicles:VehicleName",
+        "%vlocity_namespace%__GlobalKey__c": "fcd2c33a-a5d2-5750-645b-94b3499d5533",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "insuredItems:autoVehicle:instanceKey",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "auto_TransfForVehicleSelect_removeVehiclesOS5885621994365013",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "auto_TransfForVehicleSelect_removeVehiclesOS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

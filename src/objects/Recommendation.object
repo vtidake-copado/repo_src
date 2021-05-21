@@ -152,6 +152,11 @@
     <fields>
         <fullName>RejectionLabel</fullName>
     </fields>
+    <listViews>
+        <fullName>All_Recommendations</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Recommendations</label>
+    </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>Description</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>Description</lookupDialogsAdditionalFields>

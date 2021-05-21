@@ -1,0 +1,60 @@
+{
+    "AccountId": "0013k00002dXeK9AAK",
+    "ContextId": "",
+    "billMethod": {
+        "billAddress": {
+            "billingAddress-Block": {
+                "City": "Sunnyvale",
+                "Country": "United States",
+                "PostalCode": "94089",
+                "State": "CA",
+                "Street": "111 West Java Drive",
+                "billingAddress": "111 W Java Dr, Sunnyvale, CA 94089, USA"
+            }
+        },
+        "billDeliveryMethod": "Email",
+        "billingAccountName": "test",
+        "billingCity": null,
+        "billingPostalCode": null,
+        "billingState": null,
+        "billingStreet": null,
+        "useAccountAddress": false
+    },
+    "billingAddress-Block": {
+        "administrative_area_level_2": "Santa Clara County"
+    },
+    "billingOptionsSetUp": {
+        "billingOptions": "autoPay"
+    },
+    "id": "a3F3k000007U653EAC",
+    "isdtp": "p1",
+    "layout": "newport",
+    "setUpPaymentMethods": {
+        "bankAccount": null,
+        "creditCard": {
+            "cardCVV": "565",
+            "cardExpMonth": "10",
+            "cardExpYear": "2023",
+            "cardHolder": "test card",
+            "cardNumber": "6756565674545645",
+            "cardType": "mc"
+        },
+        "paymentMethod": "Credit Card"
+    },
+    "setUpPaymentMode": {
+        "billingFee": null,
+        "modalPremium": null,
+        "paymentFrequency": "Annually",
+        "policyPremium": null
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://expressspin1028--vlocity-ins.visualforce.com",
+    "timeStamp": "2019-11-04T07:57:32.086Z",
+    "userCurrencyCode": "USD",
+    "userId": "0053k00000AV5BoAAL",
+    "userName": "asingh@ex1028.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": -480,
+    "vlcPersistentComponent": {
+    }
+}

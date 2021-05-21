@@ -1,0 +1,15 @@
+[
+    "DataRaptor/VPL MatchBillingMailingAddress 14-1",
+    "DataRaptor/VPL MatchBillingShippingAddress 14-1",
+    "DataRaptor/VPL MatchMailingBillingAddress 14-1",
+    "DataRaptor/VPL MatchMailingShippingAddress 14-1",
+    "DataRaptor/VPL MatchShippingBillingAddress 14-1",
+    "DataRaptor/VPL MatchShippingMailingAddress 14-1",
+    "DataRaptor/VPL ReadAccountAddress 14-1",
+    "DataRaptor/VPL UpdateAcctBillingAddress 14-1",
+    "DataRaptor/VPL UpdateAcctMailingAddrFromBillingAddr 14-1",
+    "DataRaptor/VPL UpdateAcctMailingAddrFromShippingAddr 14-1",
+    "DataRaptor/VPL UpdateAcctShippingAddr 14-1",
+    "DataRaptor/VPL UpdateAcctShippingAddrFromBillingAddr 14-1",
+    "DataRaptor/VPL UpdatePersonMailingAddr 14-1"
+]

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Application --></label>
+        <name>vlocity_ins__ApplicationId__c</name>
+        <relationshipLabel><!-- Application Party Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client --></label>
+        <name>vlocity_ins__PartyId__c</name>
+        <relationshipLabel><!-- Application Party Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Production Code --></label>
+        <name>vlocity_ins__ProductionCodeId__c</name>
+        <relationshipLabel><!-- Application Party Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>vlocity_ins__Role__c</name>
+        <picklistValues>
+            <masterLabel>Applicant</masterLabel>
+            <translation><!-- Applicant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Producer</masterLabel>
+            <translation><!-- Producer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Split Percent --></label>
+        <name>vlocity_ins__SplitPercentage__c</name>
+    </fields>
+</CustomObjectTranslation>

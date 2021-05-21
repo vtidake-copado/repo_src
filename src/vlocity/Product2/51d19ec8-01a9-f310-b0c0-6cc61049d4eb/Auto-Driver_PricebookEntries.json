@@ -1,0 +1,92 @@
+[
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": "",
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "Auto Driver",
+        "Pricebook2.Name": "AR Price Book",
+        "Pricebook2Id": {
+            "Name": "AR Price Book",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/AR Price Book",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "51d19ec8-01a9-f310-b0c0-6cc61049d4eb",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "51d19ec8-01a9-f310-b0c0-6cc61049d4eb",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/51d19ec8-01a9-f310-b0c0-6cc61049d4eb",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "autoDriver",
+        "UnitPrice": 50,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/AR Price Book/Product2/51d19ec8-01a9-f310-b0c0-6cc61049d4eb"
+    },
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": "",
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "Auto Driver",
+        "Pricebook2.Name": "Standard Price Book",
+        "Pricebook2Id": {
+            "Name": "Standard Price Book",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "51d19ec8-01a9-f310-b0c0-6cc61049d4eb",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "51d19ec8-01a9-f310-b0c0-6cc61049d4eb",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/51d19ec8-01a9-f310-b0c0-6cc61049d4eb",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "autoDriver",
+        "UnitPrice": 1,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/51d19ec8-01a9-f310-b0c0-6cc61049d4eb"
+    },
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": "",
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "Auto Driver",
+        "Pricebook2.Name": "Standard",
+        "Pricebook2Id": {
+            "Name": "Standard",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/Standard",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "51d19ec8-01a9-f310-b0c0-6cc61049d4eb",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "51d19ec8-01a9-f310-b0c0-6cc61049d4eb",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/51d19ec8-01a9-f310-b0c0-6cc61049d4eb",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "autoDriver",
+        "UnitPrice": 1,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard/Product2/51d19ec8-01a9-f310-b0c0-6cc61049d4eb"
+    }
+]

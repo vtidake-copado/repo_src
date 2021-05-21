@@ -1,0 +1,15 @@
+{
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__Element__c": "Library_Get-Communication-Preferences-Data_English_Element_Get-Communication-Preferences-Data-Raptor-Action.json",
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": false,
+    "%vlocity_namespace%__IsReusable__c": true,
+    "%vlocity_namespace%__Language__c": "English",
+    "%vlocity_namespace%__PropertySet__c": "Library_Get-Communication-Preferences-Data_English_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "Get Communication Preferences Data",
+    "%vlocity_namespace%__Type__c": "Library",
+    "Name": "Get Communication Preferences Data",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Library/Get Communication Preferences Data/English"
+}

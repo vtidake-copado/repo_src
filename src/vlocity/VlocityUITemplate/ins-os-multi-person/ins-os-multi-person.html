@@ -1,0 +1,93 @@
+<div class="vloc-ins-multi-person-container vloc-ins-coverages-container-wrapper" ng-if="control.vlcSI[control.itemsKey]">
+    <div ng-if="baseCtrl.vlocOSInsConfigProductSet && baseCtrl.vlocOSInsConfigProductSet.timestamp !== control.vlcSI[control.itemsKey][0].timestamp" ng-init="baseCtrl.setSelectedProducts(control)"></div>
+    <div class="vloc-ins-multi-person-product-container" ng-controller="insMultiPersonCtrl" ng-init="createData(control.vlcSI[control.itemsKey], baseCtrl.$scope.bpTree.response)">
+        <div class="vloc-ins-multi-person-product" ng-repeat="product in productsList track by $index" ng-if="$index === 0" ng-init="setSelectedOption(control, product, option, this, sortMultiPersonCoverages)" ins-rules-evaluate ins-rules-product="product">
+            <div class="vloc-ins-multi-person-total"><span class="vloc-ins-multi-person-total-label">Total: </span><span class="vloc-ins-multi-person-total-price">{{product.Price | currency: currencyCode: 2}}</span></div>
+            <div class="vloc-ins-multi-person-child-outer-container">
+                <div class="nds-grid vloc-ins-multi-person-child-inner-container">
+                    <div class="vloc-ins-multi-person-column vloc-ins-multi-person-label-column-container" ng-if="!equals({}, sortedCoverages)">
+                        <div class="vloc-ins-multi-person-label-column-label vloc-ins-multi-person-label-column-label-blank">
+                            <!-- Need this blank space to account for column headers -->
+                        </div>
+                        <div class="vloc-ins-multi-person-label-column-label" ng-repeat="labelObj in labelColumn" ng-class="decideLabelColumnClassNames(labelObj)">
+                            <p class="nds-truncate vloc-ins-multi-person-label-column-label-type" ng-show="labelObj.showTypeHeader">{{labelObj.type}}</p>
+                            <div class="nds-grid vloc-ins-multi-person-label-column-label-text">
+                                <p class="nds-truncate">{{labelObj.label}}</p>
+                                <span class="vloc-ins-multi-person-label-column-label-description" bs-popover data-content="{{labelObj.description}}" data-trigger="hover" ng-if="labelObj.description">
+                                    <slds-svg-icon sprite="'utility'" icon="'info_alt'" size="'xx-small'" extra-classes="'slds-m-left--xx-small nds-m-left--xx-small description-icon'"></slds-svg-icon>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vloc-ins-multi-person-column" ng-repeat="(childProductIndex, childProduct) in product.childProducts.records | orderBy: 'displaySequence' track by $index" ng-show="childProduct.instanceKey" ins-rules-evaluate ins-rules-product="childProduct">
+                        <div class="vloc-ins-multi-person-child-column-container">
+                            <div class="vloc-ins-multi-person-child-column-header">
+                                <h3 class="vloc-ins-multi-person-child-name">{{childProduct.instanceKey}}</h3>
+                                <p class="vloc-ins-multi-person-child-demographics">{{bpTree.response.PolicyHolders[$index].Gender}}, {{bpTree.response.PolicyHolders[$index].Age}} y/o</p>
+                                <p class="vloc-ins-multi-person-child-total-price"><span>{{childProduct.Price | currency: currencyCode: 2}}</span></p>
+                            </div>
+                            <div class="vloc-ins-multi-person-child-column-top-attribute">
+                                <div class="vloc-ins-multi-person-child-category-container vloc-ins-child-level-first-attribute-container" ng-repeat="category in childProduct.attributeCategories.records | orderBy: 'displaySequence' | limitTo: 1 track by $index">
+                                    <div class="vloc-ins-multi-person-child-attribute-container" ng-repeat="attribute in category.productAttributes.records | orderBy: 'displaySequence' | limitTo: 1 track by $index" ng-if="!attribute.hiddenByRule && attribute.inputType !== 'equalizer'" ins-rules-evaluate="attribute" ng-hide="attribute.hidden">
+                                        <div ins-os-include-template="{{customTemplates.AttributesDisplayTemplate}}"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vloc-ins-multi-item-child-customize vloc-ins-coverages-container">
+                                <div class="vloc-ins-multi-item-child-coverage-popover">
+                                    <article class="nds-p-horizontal--medium vloc-ins-coverages-card ng-hide" ng-repeat="(coverageIndex, coverage) in sortedCoverages[childProduct.instanceKey || childProduct.Name] track by $index" ng-show="coverage.RecordTypeName__c === 'CoverageSpec' || coverage[nsPrefix + 'RecordTypeName__c'] === 'CoverageSpec' || (coverage.parentProduct && insCoveragesConfig.showParentProduct)" ng-class="decideCoverageCardClassNames(coverage)" ng-style="{'z-index': coverage.popoverOpen ? 7000 : 0}" scope="" onload="" ins-rules-evaluate ins-rules-product="coverage">
+                                        <div class="vloc-ins-coverages-card-inner-wrapper" ng-class="{'optional-coverage': coverage.isOptional && !coverage.isAddedOptional, 'optional-coverage-selected': coverage.isOptional && coverage.isSelected, 'accordion-active': doAccordion(coverage)}" bs-collapse>
+                                            <div class="vloc-product-attribute-category-container " bs-collapse-target ng-class="{'accordion-toggle-active': doAccordion(coverage)}" ng-if="coverage.productId">
+                                                <div class="slds-form-element nds-form-element vloc-ins-coverages-coverage-printed-optional-checkbox-container">
+                                                    <div class="slds-form-element__control nds-form-element__control">
+                                                        <span class="slds-checkbox nds-checkbox">
+                                                            <input type="checkbox" name="multi-person-options" id="printed-optional-coverage-checkbox-{{coverage.formattedParentInstanceKey}}-{{coverage.ProductCode}}"
+                                                                ng-model="coverage.isSelected" ng-disabled="!coverage.isOptional || coverage.isExcluded" ng-change="selectOptionalCoverage(coverage, bpTree.response, control, scpReference)" />
+                                                            <label class="slds-checkbox__label nds-checkbox__label" for="printed-optional-coverage-checkbox-{{coverage.formattedParentInstanceKey}}-{{coverage.ProductCode}}">
+                                                                <span class="slds-checkbox--faux nds-checkbox--faux"></span>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="vloc-ins-coverages-coverage-row-container" ng-style="{'z-index': (5555 - $index)}">
+                                                    <div class="vloc-ins-coverages-coverage-row-outer-container vloc-ins-popover-element-{{childProductIndex}}-{{coverageIndex}}" ng-class="{'popover-open': coverage.popoverOpen}">
+                                                        <p class="vloc-ins-coverages-bold nds-m-bottom_small nds-truncate">{{coverage.Name}}</p>
+                                                        <div class="vloc-product-attribute-category" ng-repeat="category in coverage.attributeCategories.records track by $index" ng-class="{'category-accordion': insCoveragesConfig.attrCatAccordion, 'last': $last}" bs-collapse>
+                                                            <div class="nds-box nds-m-bottom_small" ng-repeat="attribute in category.productAttributes.records track by $index" ng-if="!attribute.hiddenByRule && attribute.inputType !== 'equalizer'" ins-rules-evaluate="attribute" ins-rules-coverage="coverage" ng-hide="attribute.hidden">
+                                                                <div ins-os-include-template="{{customTemplates.AttributesDisplayTemplate}}"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nds-p-horizontal_medium nds-text-align_right">
+                                                            <button ng-disabled="isDoneDisabled(coverage, control)" ng-click="closeCoverageEditor(coverage); changeCoverage(bpTree.response, control, scpReference, coverage, attribute, null)" class="nds-button ins-os-dropdown-handler-ignore slds-button--brand nds-button--brand">Done</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vloc-ins-coverages-coverage-row-flex-container nds-truncate">
+                                                        <p class="vloc-ins-coverages-bold" ng-if="coverage.Price">{{coverage.Price | currency: currencyCode: 2}}</p>
+                                                        <button ng-disabled="coverage.isExcluded" ng-show="coverage.attributeCategories.records" ng-click="openCoverageEditor(coverage)" class="nds-button vloc-coverage-edit">edit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nds-grid nds-grid_align-center nds-m-top_medium" ng-show="validationMessages.length">
+                <div class="nds-p-horizontal_medium nds-p-top_medium nds-p-bottom_x-small nds-theme_shade nds-size_1-of-2">
+                    <div class="nds-grid nds-p-bottom_small" ng-repeat="message in validationMessages">
+                        <div class="vloc-validation-icon nds-grid nds-grid_vertical-align-center nds-p-right_medium">
+                            <slds-svg-icon sprite="'utility'" icon="'warning'" size="'xx-small'" extra-classes="'slds-m-left--xx-small nds-m-left--xx-small'"></slds-svg-icon>
+                        </div>
+                        <div class="nds-grid_vertical">
+                            <h3 class="vloc-ins-coverages-bold">{{message.title}}</h3>
+                            <p>{{message.message}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

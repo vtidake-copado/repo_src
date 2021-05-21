@@ -1,0 +1,28 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "result:filterAttrValues",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "result:filterAttrValues",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "transformVisionPlansCustom8025",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "transformVisionPlans",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "result:listProducts",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "result:ratedProducts",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "transformVisionPlansCustom7060",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "transformVisionPlans",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

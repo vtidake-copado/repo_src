@@ -1,0 +1,17 @@
+{
+    "Body": "File_Premier.png",
+    "BodyLength": 25401,
+    "ContentType": "image/png",
+    "Description": "",
+    "DeveloperName": "Premier",
+    "IsBodySearchable": false,
+    "IsInternalUseOnly": false,
+    "IsPublic": true,
+    "Keywords": "",
+    "Name": "Premier",
+    "Type": "png",
+    "Url": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Document",
+    "VlocityRecordSourceKey": "Document/Premier"
+}

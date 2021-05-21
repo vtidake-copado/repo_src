@@ -1,0 +1,338 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "SG-Dental-Plan-Classic_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "SG_ProductName": "SG Dental Plan - Classic",
+        "SG_ProductSubtype": "QHP",
+        "SG_annual_bene": "$1,000",
+        "SG_annual_carry": "No",
+        "SG_basic_serv_INN": "80%",
+        "SG_major_serv_INN": "50%",
+        "SG_pers_fam": "$50/$150"
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "records": [
+            {
+                "Code__c": "SG_Dental",
+                "Name": "SG Dental",
+                "displaySequence": 2010,
+                "id": "a0B6A0000089LUkUAM",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0C3s00000A79jPEAR",
+                            "cloneable": true,
+                            "code": "SG_annual_bene",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 0,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Annual Benefit",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C3s00000A79jQEAR",
+                            "cloneable": true,
+                            "code": "SG_annual_carry",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Annual Carryover",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C6A000006lqyWUAQ",
+                            "cloneable": true,
+                            "code": "SG_pers_fam",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 2,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Person/Family",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqyZUAQ",
+                            "cloneable": true,
+                            "code": "SG_basic_serv_INN",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 3,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Basic Services - In Network",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqydUAA",
+                            "cloneable": true,
+                            "code": "SG_major_serv_INN",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 4,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Major Services - In Network",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 5
+                }
+            },
+            {
+                "Code__c": "SG_ProductRating",
+                "Name": "SG Product Rating",
+                "displaySequence": 2150,
+                "id": "a0B6A0000089LVsUAM",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0C6A000006lr6YUAQ",
+                            "cloneable": true,
+                            "code": "SG_ProductName",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 5,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Product Name",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C6A000006lr6ZUAQ",
+                            "cloneable": true,
+                            "code": "SG_ProductSubtype",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 6,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Product Subtype",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 2
+                }
+            }
+        ],
+        "totalSize": 2
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__Availability__c": "",
+    "%vlocity_namespace%__CarrierId__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CompiledAttributeOverride__c": "SG-Dental-Plan-Classic_CompiledAttributeOverrides.json",
+    "%vlocity_namespace%__CoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2019-01-01",
+    "%vlocity_namespace%__EligibilityCriteriaComments__c": "",
+    "%vlocity_namespace%__EligibilityCriteria__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__EnrollmentStatus__c": "Active",
+    "%vlocity_namespace%__FormularyId__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2018-01-01T08:00:00.000Z",
+    "%vlocity_namespace%__GlobalKey__c": "cb2457eb-545c-d5c1-1b83-c4b4f02a2108",
+    "%vlocity_namespace%__HasCustomAttributesProcess__c": false,
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__InstanceKeyFormula__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__IsRecommended__c": false,
+    "%vlocity_namespace%__LastPublishDate__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "{\"options\":{\"rateType\":\"Composite\",\"mergeList\":true,\"effectiveDate\":\"11/14/19\"},\"inputs\":{\"01t6A0000040Ip2QAE\":{\"a0A6A000009StcuUAC\":{\"count\":9,\"attributeCode\":\"SG_empFamilyCount\",\"attributeLabel\":\"Employee + Family Count\",\"objectId\":\"a2z6A0000002yb2QAA\",\"ratingInput\":\"empFamilyCount\",\"attributeDataType\":\"Number\",\"categoryCode\":\"SG_Census\",\"categoryName\":\"Census\",\"attributeDefaultValue\":\"2\"},\"productName\":\"Small Group Census\",\"productRecordType\":\"RatingFactSpec\",\"productCode\":\"SG-Census-RF\",\"isOptional\":false,\"pciId\":\"a2z6A0000002yb2QAA\",\"a0A6A000009StctUAC\":{\"count\":8,\"attributeCode\":\"SG_empChildCount\",\"attributeLabel\":\"Employee + Child Count\",\"objectId\":\"a2z6A0000002yb2QAA\",\"ratingInput\":\"empChildCount\",\"attributeDataType\":\"Number\",\"categoryCode\":\"SG_Census\",\"categoryName\":\"Census\",\"attributeDefaultValue\":\"1\"},\"a0A6A000009StcsUAC\":{\"count\":7,\"attributeCode\":\"SG_empSpouseCount\",\"attributeLabel\":\"Employee + Spouse Count\",\"objectId\":\"a2z6A0000002yb2QAA\",\"ratingInput\":\"empSpouseCount\",\"attributeDataType\":\"Number\",\"categoryCode\":\"SG_Census\",\"categoryName\":\"Census\",\"attributeDefaultValue\":\"1\"},\"a0A6A000009StcrUAC\":{\"count\":6,\"attributeCode\":\"SG_empOnlyCount\",\"attributeLabel\":\"Employee Only Count\",\"objectId\":\"a2z6A0000002yb2QAA\",\"ratingInput\":\"empOnlyCount\",\"attributeDataType\":\"Number\",\"categoryCode\":\"SG_Census\",\"categoryName\":\"Census\",\"attributeDefaultValue\":\"1\"},\"a0A6A000009StcyUAC\":{\"count\":5,\"attributeCode\":\"SG_CM_Smoker\",\"attributeLabel\":\"Smoker\",\"objectId\":\"a2z6A0000002yb2QAA\",\"ratingInput\":\"Smoker\",\"attributeDataType\":\"Boolean\",\"categoryCode\":\"SG_CensusMember\",\"categoryName\":\"CensusMember\",\"attributeDefaultValue\":true},\"a0A6A000009StcxUAC\":{\"count\":4,\"attributeCode\":\"SG_CM_IsPrimary\",\"attributeLabel\":\"IsPrimary\",\"objectId\":\"a2z6A0000002yb2QAA\",\"ratingInput\":\"IsPrimary\",\"attributeDataType\":\"Boolean\",\"categoryCode\":\"SG_CensusMember\",\"categoryName\":\"CensusMember\",\"attributeDefaultValue\":true},\"a0A6A000009StcwUAC\":{\"count\":3,\"attributeCode\":\"SG_CM_Gender\",\"attributeLabel\":\"Gender\",\"objectId\":\"a2z6A0000002yb2QAA\",\"ratingInput\":\"Gender\",\"attributeDataType\":\"Text\",\"categoryCode\":\"SG_CensusMember\",\"categoryName\":\"CensusMember\",\"attributeDefaultValue\":\"Female\"},\"a0A6A000009StczUAC\":{\"count\":2,\"attributeCode\":\"SG_CM_IsSpouse\",\"attributeLabel\":\"IsSpouse\",\"objectId\":\"a2z6A0000002yb2QAA\",\"ratingInput\":\"IsSpouse\",\"attributeDataType\":\"Boolean\",\"categoryCode\":\"SG_CensusMember\",\"categoryName\":\"CensusMember\",\"attributeDefaultValue\":true},\"a0A6A000009StcvUAC\":{\"count\":1,\"attributeCode\":\"SG_CM_Age\",\"attributeLabel\":\"Age\",\"objectId\":\"a2z6A0000002yb2QAA\",\"ratingInput\":\"Age\",\"attributeDataType\":\"Number\",\"categoryCode\":\"SG_CensusMember\",\"categoryName\":\"CensusMember\",\"attributeDefaultValue\":\"35\"}},\"01t6A0000040IrOQAU\":{\"a0A6A000009StcpUAC\":{\"count\":2,\"attributeCode\":\"SG_ProductSubtype\",\"attributeLabel\":\"Product Subtype\",\"objectId\":\"01t6A0000040IrOQAU\",\"ratingInput\":\"ProductSubtype\",\"attributeDataType\":\"Text\",\"categoryCode\":\"SG_ProductRating\",\"categoryName\":\"SG Product Rating\",\"attributeDefaultValue\":\"QHP\"},\"productName\":\"SG Dental Plan - Classic\",\"productRecordType\":\"Product\",\"productCode\":\"SGRP-DNT-CLS\",\"isRoot\":true,\"a0A6A000009StcqUAC\":{\"count\":1,\"attributeCode\":\"SG_ProductName\",\"attributeLabel\":\"Product Name\",\"objectId\":\"01t6A0000040IrOQAU\",\"ratingInput\":\"ProductName\",\"attributeDataType\":\"Text\",\"categoryCode\":\"SG_ProductRating\",\"categoryName\":\"SG Product Rating\",\"attributeDefaultValue\":\"SG Dental Plan - Classic\"}}}}",
+    "%vlocity_namespace%__LineOfBusiness__c": "Group Dental",
+    "%vlocity_namespace%__MarketSegment__c": "Small Group",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__OverrideDefinition__c": "SG-Dental-Plan-Classic_OverrideDefinitions.json",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PricingFormula__c": "GroupPremium",
+    "%vlocity_namespace%__PricingSource__c": "",
+    "%vlocity_namespace%__ProductChildItem__c": "SG-Dental-Plan-Classic_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "918b83a4-495a-06db-5154-ad8822bad5ea",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "Product2/918b83a4-495a-06db-5154-ad8822bad5ea",
+        "VlocityRecordSObjectType": "Product2"
+    },
+    "%vlocity_namespace%__ProviderNetworkId__c": "",
+    "%vlocity_namespace%__RateBandId__c": "",
+    "%vlocity_namespace%__RatingCalcProcedureName__c": "SOLN_Dental",
+    "%vlocity_namespace%__RatingProcedureType__c": "Integration Procedure",
+    "%vlocity_namespace%__RecordTypeName__c": "Product",
+    "%vlocity_namespace%__ReplacementProductId__c": "",
+    "%vlocity_namespace%__ReserveProcessingMode__c": "",
+    "%vlocity_namespace%__Scope__c": "",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2019-01-01T08:00:00.000Z",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "HMO",
+    "%vlocity_namespace%__Term__c": "",
+    "%vlocity_namespace%__Tier__c": "Silver",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TotalCoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__TotalInsuredFormula__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "Dental",
+    "CanUseQuantitySchedule": true,
+    "CanUseRevenueSchedule": true,
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Other",
+    "Image__c": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "SG Dental Plan - Classic",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "SG-Dental-Plan-Classic_PricebookEntries.json",
+    "ProductCode": "SGRP-DNT-CLS",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": "",
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "SG Dental Plan - Classic",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "cb2457eb-545c-d5c1-1b83-c4b4f02a2108",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "cb2457eb-545c-d5c1-1b83-c4b4f02a2108",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/cb2457eb-545c-d5c1-1b83-c4b4f02a2108",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "SGRP-DNT-CLS",
+            "UnitPrice": 150,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/cb2457eb-545c-d5c1-1b83-c4b4f02a2108"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/cb2457eb-545c-d5c1-1b83-c4b4f02a2108"
+}

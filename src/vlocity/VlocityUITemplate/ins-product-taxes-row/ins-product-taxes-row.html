@@ -1,0 +1,36 @@
+<div ng-repeat="row in records | orderBy: $root.orderTerm : $root.orderAsc | filter: $root.searchTerm"
+   ng-init="$root.isLoaded = true;" class="vloc-attr-row slds-row" data-card="card-{{cardIndex}}"
+   ng-class="{'selected': row.Id ===  $root.config.taxAndFee.Id}" ng-click="$root.config.taxAndFee = row">
+   <div class="slds-col slds-grid slds-wrap slds-grid_align-spread" ng-init="$first ? $root.config.taxAndFee = row : ''">
+      <div class="slds-small-show vloc-attr-cell slds-size_1-of-{{$root.rowFields.length}}"
+         ng-repeat="field in $root.rowFields" ng-show="key != 'attributes'">
+         <div class="vloc-attr-data-cell slds-truncate slds-p-around_x-small">
+            <span ng-if="field.label !== 'Value' && field.type !== 'boolean'">
+               {{row | getter: field | picker: field.type}}</span>
+            <span ng-if="field.label === 'Value'">
+               <span ng-if="row.valueType !== 'percent' && row.valueType !== 'datetime' && row.valueType !== 'date'">
+                  {{row | getter: field | picker: row.valueType}}
+               </span>
+               <span ng-if="row.valueType === 'date'">
+                  {{row[$root.nsPrefix + 'Value__c'] | date : 'MM/dd/yyyy'}}
+               </span>
+               <span ng-if="row.valueType === 'datetime'">
+                  {{row[$root.nsPrefix + 'Value__c'] | date : 'MM/dd/yyyy h:mma'}}
+               </span>
+               <span ng-if="row.valueType === 'percent'"> {{row[$root.nsPrefix + 'Value__c']}}<span
+                     ng-if="row[$root.nsPrefix + 'Value__c']">%</span></span>
+            </span>
+            <div class="slds-form-element__control slds-text-align_left slds-text-align_center"
+               ng-if="field.type === 'boolean'">
+               <span class="slds-checkbox">
+                  <input type="checkbox" name="attrs-{{$index}}" id="attrs-{{$index}}"
+                     ng-model="row[$root.nsPrefix + 'IsRatingAttribute__c']" ng-disabled="true" />
+                  <label class="slds-checkbox__label slds-m-around_none" for="attrs-{{$index}}">
+                     <span class="slds-checkbox_faux vloc-check"></span>
+                  </label>
+               </span>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

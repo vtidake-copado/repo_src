@@ -1,0 +1,104 @@
+@import 'vella-mixins-variables';
+
+.vella-swipe-container {
+    .list {
+        padding: 0 0 0.45rem 0;
+        margin: 0;
+    }
+
+    .item {
+        height: 4.75rem;
+        border: none;
+        width: 100%;
+        margin: 0;
+        background-color: $vella-orange;
+
+        .item-content {
+            height: 100%;
+            background-color: $vella-insurable-item-bg;
+            border-top: 1px solid darken($vella-insurable-item-bg, 3%);
+            border-bottom: 1px solid darken($vella-insurable-item-bg, 3%);
+            padding: 1.15rem 2rem;
+
+            .vella-swipe-item-container {
+                p {
+                    margin: 0;
+                }
+
+                .vella-swipe-item-left {
+                    .vella-swipe-item-name {
+                        font-size: 0.8125rem;
+                        margin-bottom: 0.25rem;
+                    }
+
+                    .vella-swipe-item-description {
+                        font-size: 0.625rem;
+
+                        span {
+                            margin: 0 0.25rem;
+                        }
+                    }
+                }
+
+                .vella-swipe-item-right {
+                    .vella-swipe-item-price {
+                        font-size: 0.8125rem;
+                    }
+                }
+            }
+        }
+    }
+    .vella-swipe-btn {
+        background-color: $vella-orange;
+        color: white;
+        text-transform: uppercase;
+        width: 5.125rem;
+
+        .vella-swipe-btn-contents {
+            .slds-icon {
+                vertical-align: top;
+                margin-top: 0.75rem;
+            }
+            .vella-swipe-btn-label {
+                font-size: 0.625rem;
+                white-space: normal;
+                line-height: 1.1;
+                font-weight: bold;
+                margin-bottom: 0.75rem;
+            }
+        }
+    }
+
+    &.vella-swipe-insured-item {
+        .item {
+            background-color: $vella-red;
+
+            .item-content {
+                background-color: $vella-insured-item-bg;
+                border-top: 1px solid darken($vella-insured-item-bg, 3%);
+                border-bottom: 1px solid darken($vella-insured-item-bg, 3%);
+
+                .vella-swipe-item-container {
+                    .vella-swipe-item-right {
+                        .slds-icon {
+                            fill: $vella-sky-text;
+                            width: 1rem;
+                            height: 1rem;
+                            margin-top: 0.65rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .vella-swipe-btn {
+            background-color: $vella-red;
+        }
+    }
+
+    .vella-policy-add-item {
+        color: $vella-light-gray;
+        font-size: 0.8125rem;
+        margin-left: 3.25rem;
+    }
+}

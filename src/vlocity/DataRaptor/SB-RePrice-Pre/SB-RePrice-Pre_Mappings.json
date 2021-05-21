@@ -1,0 +1,41 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "selectedProduct:records",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "configure:configureProduct",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "SB-RePrice-PreCustom5371",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "SB-RePrice-Pre",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "userInputs:SBBusinessProfile.SBbusRevAnnual",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "BusinessInfo:busRevAnnual",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "SB-RePrice-PreCustom5775",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "SB-RePrice-Pre",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "userInputs:SBBusinessProfile.SBbusType",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "BusinessInfo:busType",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "SB-RePrice-PreCustom4588",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "SB-RePrice-Pre",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

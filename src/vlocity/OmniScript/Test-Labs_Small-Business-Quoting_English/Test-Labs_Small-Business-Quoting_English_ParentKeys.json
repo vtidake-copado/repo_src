@@ -1,0 +1,11 @@
+[
+    "DataRaptor/CreateOppty",
+    "DataRaptor/SB-CreateQuote-Transform",
+    "DataRaptor/SB-GetRatedProducts-TestLab-Pre",
+    "DataRaptor/SB-Reprice-TestLab",
+    "DataRaptor/readQuoteConfirmation",
+    "VlocityUITemplate/ins-coverages-os-template",
+    "VlocityUITemplate/ins-os-attribute-component",
+    "VlocityUITemplate/ins-os-coverage-component",
+    "VlocityUITemplate/ins-os-quote-confirmation"
+]

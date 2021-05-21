@@ -1,0 +1,766 @@
+// Variables:
+$royal-blue: #0070D2;
+$dark-navy: #19355E;
+$attr-label: #16325C;
+$slds-green: #04844b;
+$border-color: #d8dde6;
+$enrollment-text: #053a69;
+$enrollment-cards-border: #d7dde6;
+$enrollment-cards-bg: #f8fbfe;
+
+// Mixins:
+@mixin changeColor($newColor) {
+    cursor: pointer;
+    border-color: $newColor;
+    background-color: lighten($newColor, 72%);
+    .vloc-ins-selectable-item-container.vloc-ins-enrollment-skin .vloc-ins-selectable-item .vloc-ins-selectable-item-image
+    .vloc-ins-selectable-item-similar-plan-container {
+        background-color: $newColor;
+
+        .vloc-ins-selectable-item-similar-plan {
+            .vloc-ins-selectable-item-similar-plan-triangle-pointing-down {
+                border-top-color: $newColor;
+            }
+        }
+    }
+
+    .vloc-ins-selectable-item-top {
+        .vloc-ins-selectable-item-price {
+            background-color: $newColor;
+        }
+        .vloc-ins-selectable-item-name {
+            color: darken($newColor, 25%);
+        }
+        .vloc-ins-selectable-item-description {
+            color: darken($newColor, 25%);
+        }
+    }
+
+    .vloc-ins-selectable-item-middle {
+        color: darken($newColor, 25%);
+
+        &.vloc-ins-parent-attr-non-regular {
+            .vloc-ins-selectable-item-parent-attribute-value {
+                color: $newColor;
+
+                .slds-icon {
+                    fill: $newColor;
+                }
+            }
+        }
+    }
+
+    .vloc-ins-selectable-item-bottom {
+        .vloc-ins-selectable-item-coverages {
+            .vloc-ins-selectable-item-coverage {
+                .vloc-ins-selectable-item-coverage-details {
+                    .vloc-ins-selectable-item-coverage-details-wrapper {
+                        .vloc-ins-selectable-item-coverage-details-limit-label {
+                            color: darken($newColor, 25%);
+                        }
+                        .vloc-ins-selectable-item-coverage-details-limit-value {
+                            color: $newColor;
+                        }
+                    }
+                    .vloc-ins-selectable-item-coverage-details-categories {
+                        .vloc-ins-selectable-item-coverage-details-attributes {
+                            .vloc-ins-selectable-item-coverage-details-attributes-value {
+                                color: $newColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .vloc-ins-enrollment-price-container {
+            .vloc-ins-enrollment-price-price,
+            .vloc-ins-enrollment-price-label {
+                color: darken($newColor, 25%);
+            }
+        }
+        .vloc-ins-enrollment-select-plan-btn {
+            border-color: $newColor;
+            color: white;
+            // background-color: rgba($newColor, 0.6);
+            background-color: $newColor;
+        }
+        .vloc-ins-selectable-item-compare-container {
+            label.vloc-ins-selectable-item-compare-checkbox-label-container {
+                color: $newColor;
+
+                .vloc-ins-selectable-item-compare-checkbox-faux {
+                    border-color: $newColor;
+                }
+                .vloc-ins-selectable-item-compare-checkbox-label {
+                    color: $newColor;
+                }
+            }
+        }
+        .vloc-ins-enrollment-plan-details {
+            color: darken($newColor, 25%);
+        }
+    }
+}
+
+// Styles:
+.vloc-mobile-hide {
+    display: block;
+}
+.vloc-mobile-show {
+    display: none;
+}
+
+.via-slds {
+    &.via-omni {
+        .vlc-slds-selItem {
+            > .slds-form-element__control {
+                &:first-child {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .vloc-ins-selectable-item-outer-container {
+        width: 100%;
+    }
+    .vloc-ins-selectable-item-container:not(.vloc-ins-enrollment-skin) {
+        width: 100%;
+
+        .vloc-ins-selectable-item-pagination-container {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+
+            .vloc-ins-selected-product {
+                > span {
+                    line-height: 2rem;
+
+                    .vloc-ins-selected-product-strong {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        .vloc-ins-selectable-item-inner-container {
+            margin: 0 auto;
+
+            .vloc-ins-selectable-item {
+                display: flex;
+
+                .vloc-ins-selectable-item-inner-wrapper {
+                    position: relative;
+                    border: 1px solid $royal-blue;
+                    border-radius: 0.25rem;
+                    background-color: $enrollment-cards-bg;
+                    padding: 2.25rem 2rem;
+                    transition: border-color 150ms ease-in,
+                                background-color 150ms ease-in;
+                    margin: 0 0.5rem;
+                    width: 100%;
+                }
+
+                &:first-child {
+                    .vloc-ins-selectable-item-inner-wrapper {
+                        margin-left: 0;
+                    }
+                }
+
+                &:last-child {
+                    .vloc-ins-selectable-item-inner-wrapper {
+                        margin-right: 0;
+                    }
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &.vloc-ins-one-product {
+                    .vloc-ins-selectable-item-inner-wrapper {
+                        margin: 0 auto;
+                        max-width: 50%;
+                    }
+
+                    &:last-child {
+                        .vloc-ins-selectable-item-inner-wrapper {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+
+                .vloc-ins-selectable-item-selected {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 4rem 4rem 0;
+                    border-color: transparent $slds-green transparent transparent;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: visibility 0ms linear 150ms,
+                                opacity 150ms ease-in;
+
+                    &.active {
+                        opacity: 1;
+                        visibility: visible;
+                        transition: visibility 0ms linear 0ms,
+                                    opacity 150ms ease-in;
+                    }
+
+                    .slds-icon {
+                        fill: white;
+                        position: absolute;
+                        left: 2.1rem;
+                        top: 0.5rem;
+                    }
+                }
+
+                .vloc-ins-selectable-item-top {
+                    .vloc-ins-selectable-item-price {
+                        width: 6.25rem;
+                        height: 6.25rem;
+                        margin: 0 auto;
+                        text-align: center;
+                        background-color: $royal-blue;
+                        border-radius: 50%;
+                        margin-bottom: 1.5rem;
+                        color: white;
+                        line-height: 6.25rem;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        transition: background-color 150ms ease-in;
+                    }
+
+                    .vloc-ins-selectable-item-name {
+                        font-size: 1.75rem;
+                        line-height: 1.3;
+                        font-weight: 400;
+                        color: $dark-navy;
+                        text-align: center;
+                        margin-bottom: 1.75rem;
+                    }
+                }
+
+                .vloc-ins-selectable-item-middle {
+                    color: $attr-label;
+                    width: 100%;
+                    text-align: center;
+
+                    .vloc-ins-selectable-item-parent-attribute-label {
+                        margin-right: 0.25rem;
+                        display: inline-block;
+                    }
+
+                    .vloc-ins-selectable-item-parent-attribute-value {
+                        font-weight: 400;
+                        display: inline-block;
+                    }
+
+                    &.vloc-ins-parent-attr-regular + .vloc-ins-parent-attr-non-regular {
+                        margin-top: 1.5rem;
+                    }
+
+                    &.vloc-ins-parent-attr-non-regular {
+                        border-bottom: 1px solid $border-color;
+                        padding: 0.75rem 0.25rem;
+                        margin: 0;
+                        text-align: left;
+                        font-size: 0.875rem;
+
+                        .vloc-ins-selectable-item-parent-attribute-label {
+                            float: left;
+                        }
+
+                        .vloc-ins-selectable-item-parent-attribute-value {
+                            float: right;
+                            color: $royal-blue;
+
+                            .slds-icon {
+                                fill: $royal-blue;
+                            }
+                        }
+                    }
+                }
+
+                .vloc-ins-selectable-item-bottom {
+                    .vloc-ins-selectable-item-coverages {
+                        .vloc-ins-selectable-item-coverage {
+                            .vloc-ins-selectable-item-optional-heading-container {
+                                margin: 2rem 0 1.25rem;
+                                border-bottom: 1px solid rgba($attr-label, .4);
+                                padding-bottom: 0.25rem;
+
+                                .vloc-ins-selectable-item-optional-heading {
+                                    .vloc-ins-selectable-item-optional-heading-text {
+                                        text-transform: uppercase;
+                                        letter-spacing: 1px;
+                                        font-size: 1rem;
+                                        font-weight: 400;
+                                        color: $attr-label;
+                                    }
+                                }
+                            }
+                            .vloc-ins-selectable-item-coverage-details {
+                                .vloc-ins-selectable-item-coverage-details-wrapper {
+                                    font-size: 0.875rem;
+
+                                    .vloc-ins-selectable-item-coverage-details-limit-label {
+                                        color: $attr-label;
+                                        font-weight: 400;
+                                    }
+
+                                    .vloc-ins-selectable-item-coverage-details-limit-value {
+                                        color: $royal-blue;
+                                        transition: color 150ms ease-in;
+                                    }
+                                }
+                                .vloc-ins-selectable-item-coverage-details-categories {
+                                    .vloc-ins-selectable-item-coverage-details-attributes {
+                                        font-size: 0.75rem;
+
+                                        .vloc-ins-selectable-item-coverage-details-attributes-label {
+                                            color: #979797;
+                                        }
+
+                                        .vloc-ins-selectable-item-coverage-details-attributes-value {
+                                            color: $royal-blue;
+                                            transition: color 150ms ease-in;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .vloc-ins-selectable-item-inner-wrapper {
+                        @include changeColor($dark-navy);
+                    }
+                }
+                &[vloc-slds-added="true"] {
+                    .vloc-ins-selectable-item-inner-wrapper {
+                        @include changeColor($slds-green);
+                    }
+                }
+            }
+        }
+    }
+    .vloc-ins-selectable-item-container.vloc-ins-enrollment-skin {
+        width: 100%;
+        color: $enrollment-text;
+
+        .vloc-ins-selectable-item-enrollment-top {
+            width: 50%;
+            margin: 0 auto;
+
+            .vloc-ins-selectable-item-enrollment-top-label {
+                line-height: 1.875rem;
+            }
+        }
+
+        .vloc-ins-selectable-item {
+            .vloc-ins-selectable-item-inner-wrapper {
+                text-align: center;
+                position: relative;
+                background-color: $enrollment-cards-bg;
+                border: 1px solid $enrollment-cards-border;
+                border-radius: 0.5rem;
+                margin: 0;
+                transition: border-color 150ms ease-in,
+                            background-color 150ms ease-in;
+                margin: 0 0.5rem;
+                padding: 1rem 1.5rem 14.875rem 1.5rem;
+                height: 100%;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            .vloc-ins-selectable-item-similar-plan-container {
+                width: calc(100% + 2px);
+                height: 1.5rem;
+                background-color: $dark-navy;
+                transition: background-color 150ms ease-in;
+                color: white;
+                position: absolute;
+                top: -1.55rem;
+                left: -1px;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+                line-height: 2.25rem;
+                font-size: 0.75rem;
+
+                .vloc-ins-selectable-item-similar-plan {
+                    position: relative;
+                    overflow: hidden;
+                    padding-bottom: 1rem;
+
+                    .vloc-ins-selectable-item-similar-plan-label {
+                        display: inline-block;
+                        line-height: 1;
+                    }
+
+                    .vloc-ins-selectable-item-similar-plan-triangle-pointing-down {
+                        width: 100%;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 1rem 12rem 0 12rem;
+                        border-color: $dark-navy transparent transparent transparent;
+                        transition: border-top-color 150ms ease-in;
+                        position: absolute;
+                        top: 1.5rem;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+
+            .vloc-ins-selectable-item-image {
+                min-height: 2.5rem;
+                margin-top: 0.5rem;
+
+                &.is-custom-image {
+                    min-height: 3.25rem;
+                    padding-top: 0.25rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                .vloc-ins-selectable-custom-image {
+                    height: 3.25rem;
+                }
+
+                .vloc-ins-selectable-item-image-fallback {
+                    background: transparent;
+
+                    .slds-icon {
+                        fill: #f06e2f;
+                        width: 4rem;
+                        height: 4rem;
+                    }
+                }
+            }
+
+            .vloc-ins-selectable-item-top {
+                margin-bottom: 0.75rem;
+                min-height: 4.5rem;
+
+                .vloc-ins-selectable-item-name {
+                    font-weight: bold;
+                    font-size: 1.125rem;
+                    line-height: 1.3;
+                    max-height: 2.875rem;
+                    overflow: hidden;
+                }
+
+                .vloc-ins-selectable-item-description {
+                    font-size: 0.875rem;
+                    margin-top: 0.25rem;
+                }
+            }
+
+            .vloc-ins-selectable-item-middle {
+                margin-bottom: 2rem;
+
+                .vloc-ins-selectable-item-parent-attribute-value {
+                    display: block;
+                    font-size: 1.5rem;
+                    line-height: 1.4;
+                    font-weight: 400;
+                }
+
+                .vloc-ins-selectable-item-parent-attribute-label {
+                    display: block;
+                    font-size: 1rem;
+                }
+            }
+
+            .vloc-ins-selectable-item-bottom {
+                height: 14.375rem;
+                position: absolute;
+                bottom: 0.5rem;
+                left: 0;
+                width: 100%;
+                padding: 0 1.5rem;
+                overflow: hidden;
+
+                .vloc-ins-enrollment-price-container {
+                    margin-bottom: 2.25rem;
+
+                    .vloc-ins-enrollment-price-price {
+                        display: block;
+                        font-size: 1.5rem;
+                        line-height: 1.4;
+                        font-weight: 400;
+
+                        .vloc-ins-enrollment-price-period {
+                            font-size: 1.15rem;
+                            font-weight: normal;
+                        }
+                    }
+
+                    .vloc-ins-enrollment-price-label {
+                        display: block;
+                        font-size: 1rem;
+                    }
+                }
+
+                .vloc-ins-enrollment-select-plan-btn {
+                    cursor: pointer;
+                    background: 0 0;
+                    background-color: white;
+                    display: block;
+                    width: 100%;
+                    padding: 0.65rem 0;
+                    border: 2px solid $royal-blue;
+                    border-radius: 0.25rem;
+                    color: #1589ee;
+                    margin-bottom: 1.5rem;
+                    transition: border-color 150ms ease-in,
+                                background-color 150ms ease-in,
+                                color 150ms ease-in;
+                }
+
+                .vloc-ins-selectable-item-compare-container {
+                    .vloc-ins-selectable-item-compare-checkbox-label {
+                        line-height: 1.6;
+                    }
+                }
+
+                .vloc-ins-enrollment-plan-details {
+                    cursor: pointer;
+                    font-size: 0.875rem;
+                    color: #1589ee;
+                    display: inline-block;
+                }
+
+                &.disabled-by-rate-band {
+                    .vloc-ins-enrollment-select-plan-btn {
+                        visibility: hidden;
+                    }
+                }
+            }
+            &:not(.disabled-by-rate-band) {
+                &:hover {
+                    .vloc-ins-selectable-item-inner-wrapper {
+                        @include changeColor($dark-navy);
+                    }
+                }
+                &[vloc-slds-added="true"] {
+                    .vloc-ins-selectable-item-inner-wrapper {
+                        @include changeColor($slds-green);
+                    }
+                }
+            }
+        }
+
+        .vloc-ins-selectable-item-enrollment-bottom {
+            .vloc-ins-selectable-item-compare-btn {
+                padding: 0 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    .via-slds {
+        .vloc-ins-selectable-item-container {
+            &.vloc-ins-enrollment-skin {
+                .vloc-ins-selectable-item {
+                    .vloc-ins-selectable-item-inner-wrapper {
+                        padding: 1rem 1rem 14.875rem 1rem;
+                    }
+
+                    .vloc-ins-selectable-item-bottom {
+                        padding: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .via-slds {
+        .vloc-ins-selectable-item-container {
+            &.vloc-ins-enrollment-skin {
+                .vloc-ins-selectable-item-enrollment-top {
+                    width: 75%;
+                }
+                .vloc-ins-selectable-item {
+                    margin: 1rem 0 0;
+
+                    .vloc-ins-selectable-item-similar-plan-container {
+                        top: -1.25rem;
+                    }
+
+                    .vloc-ins-selectable-item-middle {
+                        &.vloc-ins-hide-on-large-screens {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .vloc-ins-selectable-item-inner-container {
+                flex-wrap: wrap;
+                align-items: flex-start;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 999px) {
+    html, body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .via-slds {
+        .vloc-ins-selectable-item-container {
+            &.vloc-ins-enrollment-skin {
+                .vloc-ins-selectable-item-enrollment-top {
+                    width: 100%;
+
+                    .vloc-ins-selectable-item-enrollment-top-label {
+                        font-size: 0.875rem;
+                        padding-right: 0.25rem;
+                    }
+
+                    .vloc-ins-selectable-item-enrollment-top-form-element {
+                        padding-right: 20%;
+                    }
+                }
+                .vloc-ins-selectable-item {
+                    &.vloc-ins-has-similar-flag {
+                        margin-top: 2.125rem;
+                    }
+
+                    .vloc-ins-selectable-item-inner-wrapper {
+                        padding: 1rem 2.5rem 14.375rem 2.5rem;
+                    }
+
+                    .vloc-ins-selectable-item-top {
+                        min-height: 0;
+                    }
+
+                    .vloc-ins-selectable-item-similar-plan-container {
+                        .vloc-ins-selectable-item-similar-plan {
+                            .vloc-ins-selectable-item-similar-plan-triangle-pointing-down {
+                                border-width: 1rem 24rem 0 24rem;
+                            }
+                        }
+                    }
+
+                    .vloc-ins-selectable-item-middle {
+                        &.vloc-ins-hide-on-small-screens {
+                            display: none;
+                        }
+                    }
+
+                    .vloc-ins-selectable-item-bottom {
+                        .vloc-ins-enrollment-price-container {
+                            margin-bottom: 1.25rem;
+                        }
+
+                        .vloc-ins-enrollment-select-plan-btn {
+                            margin-bottom: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .via-slds {
+        .vloc-ins-selectable-item-container {
+            .vloc-ins-selectable-item-inner-container {
+                .vloc-ins-selectable-item {
+                    &.vloc-ins-one-product {
+                        .vloc-ins-selectable-item-inner-wrapper {
+                            max-width: 80%;
+                        }
+
+                        .vloc-ins-selectable-item-top {
+                            .vloc-ins-selectable-item-name {
+                                font-size: 1.5rem;
+                                line-height: 1.2;
+                            }
+                        }
+                    }
+
+                    .vloc-ins-selectable-item-inner-wrapper {
+                        padding: 1rem 2rem 14.375rem 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .vloc-mobile-hide {
+        display: none;
+    }
+    .vloc-mobile-show {
+        display: block;
+    }
+
+    .via-slds {
+        .vloc-ins-selectable-item-container:not(.vloc-ins-enrollment-skin) {
+            &.vloc-ins-enrollment-skin {
+                .vloc-ins-selectable-item-enrollment-top {
+                    .vloc-ins-selectable-item-enrollment-top-form-element {
+                        padding-right: 7%;
+                    }
+                }
+            }
+            .vloc-ins-selected-product {
+                padding: 0 0.25rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.4;
+
+                .vloc-ins-selected-product-strong {
+                    font-weight: bold;
+                }
+            }
+
+            .vloc-ins-selectable-item-pagination-container {
+                margin-bottom: 0.75rem;
+
+                .slds-button {
+                    padding: 0;
+
+                    .slds-button__icon {
+                        margin: 0;
+                    }
+                }
+
+                .vloc-mobile-page-count {
+                    line-height: 2rem;
+                }
+            }
+
+            .vloc-ins-selectable-item-inner-container {
+                .vloc-ins-selectable-item {
+                    &.vloc-ins-one-product {
+                        .vloc-ins-selectable-item-inner-wrapper {
+                            max-width: 100%;
+                        }
+                    }
+
+                    .vloc-ins-selectable-item-inner-wrapper {
+                        padding: 1rem 1rem 14.375rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

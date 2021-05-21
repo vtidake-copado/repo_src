@@ -1,0 +1,49 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "02i1I000000U8v6QAC"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "body": "{}",
+            "inputMap": {
+                "assetId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceAssetHandler"
+            },
+            "remoteClass": "InsuranceAssetHandler",
+            "remoteMethod": "getInsuredItems",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": "records"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankCardState": false,
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "filter": "$scope.data.status === 'active'",
+            "name": "vella-swipe-item",
+            "templateUrl": "vella-swipe"
+        }
+    ],
+    "title": "Vella Swipe Insured Items"
+}

@@ -1,0 +1,71 @@
+<div class="plan-selection-base-grid" ng-class="{'in-iframe': importedScope.vlocProdSelect.responsiveService.isIframe, 'in-omniscript': importedScope.vlocProdSelect.responsiveService.isOmniScript}" ng-init="importedScope.vlocProdSelect.sortCards(data)">
+    <!--LOADER: -->
+    <div class="slds-spinner_container vloc-spinner_container" ng-class="{'vloc-show-loader': !$root.isLoaded}">
+        <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+
+    <div class="slds-notify_container" ng-if="$root.vlocInsProdSelectItem.validation.showError">
+        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error" role="alert">
+            <button class="slds-button slds-button_icon-inverse slds-notify__close" ng-click="$root.vlocInsProdSelectItem.validation.showError = false">
+                <slds-button-svg-icon sprite="'utility'" icon="'close'" ></slds-button-svg-icon>
+                <span class="slds-assistive-text">Close</span>
+            </button>
+            <h2> {{$root.vlocInsProdSelectItem.validation.errorMsg}}</h2>
+        </div>
+    </div>
+    
+    <button ng-if="$root.showProductSelection && !importedScope.vlocProdSelect.responsiveService.mobileTabletDevice() && !importedScope.vlocProdSelect.responsiveService.isOmniScript" class="slds-button slds-button_neutral slds-float_right slds-m-left_x-small slds-m-top_medium slds-m-right_large vloc-product-selection-back" ng-click="$root.vlocInsProdSelectItem.resetUI(); $root.replaceQLI = null;"> 
+        Back
+    </button>
+
+    <!--Eligibility Filter:-->
+    <form class="slds-form_stacked slds-box slds-size_1-of-4 slds-max-small-size_1-of-1 slds-m-horizontal_small slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-4 vloc-entity-filter slds-p-top_small" ng-if="!$root.showProductSelection" ng-class="{'broker-portal' : attrs.view === 'brokerPortal'}" ng-submit="importedScope.vlocProdSelect.submitInput()" ng-init="$root.setLoaded(true)">
+        <div class="slds-form-element slds-p-horizontal_x-small vloc-entity-filter-field vloc-entity-filter-field-{{$index}}" ng-repeat="record in records.result">
+            <div class="slds-form-element__control" ng-if="record.dataType !== 'Boolean'">
+                <label class="slds-form-element__label vloc-label" for="vloc-entity-filter-field-{{record.name.toLowerCase()}}">{{record.name}}</label>
+                <input id="vloc-entity-filter-field-{{record.name.toLowerCase()}}" class="slds-input" type="{{record.dataType}}" ng-model="importedScope.vlocProdSelect.inputMap[record.name]"></input>
+            </div>
+            <div class="slds-form-element__control" ng-if="record.dataType === 'Boolean'">
+                <span class="slds-checkbox" ng-init="importedScope.vlocProdSelect.inputMap[record.name] = false">
+                    <input type="checkbox" name="options" id="vloc-entity-filter-field-{{record.name.toLowerCase()}}" checked="" ng-model="importedScope.vlocProdSelect.inputMap[record.name]"/>
+                    <label class="slds-checkbox__label vloc-label" for="vloc-entity-filter-field-{{record.name.toLowerCase()}}">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label">{{record.name}}</span>
+                    </label>
+                </span>
+            </div>
+        </div>
+        <div class="vloc-footer slds-m-around_small">
+            <button class="slds-button slds-button_brand vloc-entity-filter-submit-btn">Submit</button>
+        </div>
+    </form>
+
+    <!-- Product Selection Heading-->
+    <div class="vloc-product-selection" ng-if="$root.showProductSelection">
+        <div class="slds-p-top_medium slds-p-horizontal_large vloc-page-header" ng-if="!importedScope.vlocProdSelect.responsiveService.isOmniScript">
+            <div class="slds-grid slds-is-relative">
+                <div class="slds-size_1-of-1">
+                    <h1 ng-if="!$root.replaceQLI" class="slds-page-header__title bold vloc-title slds-m-bottom_small">Select Plans <span class="vloc-filters-result-count">({{$root.vlocInsProdSelectItem.totalRecords}} results)</span></h1>
+                    <h1 ng-if="$root.replaceQLI" class="slds-page-header__title bold vloc-title slds-m-bottom_small">Replace '{{$root.replaceQLI.quoteLineItem.Name}}' <span class="vloc-filters-result-count">({{$root.vlocInsProdSelectItem.totalRecords}} results)</span></h1>
+                    <div class="vloc-title-border-container">
+                        <hr class="vloc-title-border" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Plans:-->
+        <div class="vloc-product-selection slds-clearfix">
+            <vloc-card ng-if="$root.vlocInsProdSelectItem.records.length" class="vloc-product-selection-card" ng-repeat="card in cards |orderBy:order|filter: searchFunc(card)"
+                ng-model="card" 
+                data="card" 
+                records="records"
+                index="{{$index}}" 
+                session-id="{{sessionId}}"
+                ctrl="InsProductSelectionItemController">
+            </vloc-card>
+        </div>
+    </div>
+</div>

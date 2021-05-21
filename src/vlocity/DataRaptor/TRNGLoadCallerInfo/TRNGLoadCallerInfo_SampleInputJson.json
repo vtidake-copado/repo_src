@@ -1,0 +1,41 @@
+{
+    "Account": {
+        "AccountId": "0014600000DLyyTAAT",
+        "AnnualRevenue": 100000000,
+        "CallerId": "0034600000Arr8yAAB",
+        "OwnerId": "0034600000Arr8wAAB",
+        "OwnerName": "Edward Stamos",
+        "SLA": "Platinum",
+        "Type": "Customer"
+    },
+    "CallerLastName": "Tomlin",
+    "ContextId": "0034600000Arr8y",
+    "OwnerEmail": "celtophile@mac.com",
+    "Step2CallerSnapshot": {
+        "Block 1 Caller Verification Data": {
+            "CallerBirthDate": "1977-01-09T08:00:00.000Z",
+            "CallerName": "Leanne Tomlin",
+            "CallerSSN": "123456789",
+            "CallerZipCode": "31350",
+            "Name": "Acme"
+        },
+        "Block 2 Caller Contact Information": {
+            "CallerEmail": "celtophile@mac.com",
+            "CallerPhoneTxt": "(650) 589-8979"
+        }
+    },
+    "id": "a0g46000000WUWeAAO",
+    "layout": "lightning",
+    "timeStamp": "2017-04-21T20:49:20.506Z",
+    "userId": "00546000000mMGNAA2",
+    "userName": "student555@ins.edu",
+    "userProfile": "System Administrator",
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "DRAccountExtract": 817,
+        "OmniScriptSessionToken": "8ce17404-a08b-430c-a475-2a12f38075dd",
+        "Script Constants": 3,
+        "Step2CallerSnapshot": 161806
+    }
+}

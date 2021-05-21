@@ -1,0 +1,15 @@
+<div class="via-omni slds-p-horizontal_small">
+    <div class="vloc-slds-underline--gradient slds-m-top_small slds-m-bottom_large slds-m-top_large">
+        <h1 class="vloc-slds-page_header">Table View Settings</h1>
+    </div>
+    <div class="slds-grid slds-wrap slds-size_1-of-1">
+        <div class="vloc-attr-title-cell slds-form-element__label slds-size_1-of-9">
+            <label class="vloc-slds-inline-control__label">Number of Columns Per Page</label>
+            <input type="number" class="slds-input" ng-model="$root.showColNum" ng-change="$root.headerStart = 0; $root.headerEnd = $root.showColNum">
+        </div>
+        <div class="vloc-attr-title-cell slds-form-element__label slds-size_1-of-9">
+            <label class="vloc-slds-inline-control__label">Number of Rows Per Page</label>
+            <input type="number" class="slds-input" ng-model="$root.itemsPerPage">
+        </div>
+    </div>
+</div>

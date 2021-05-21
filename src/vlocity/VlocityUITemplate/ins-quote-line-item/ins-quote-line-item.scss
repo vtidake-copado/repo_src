@@ -1,0 +1,23 @@
+@import "ins-product-selection-variables";
+@import "ins-product-selection-mixins";
+
+
+
+.vloc-plans-container{
+}
+
+
+@media screen and (max-width: $bp-small) {
+    .vloc-plans-container{
+        .vloc-plan-grid-header{
+            padding-bottom: 0;
+            .vloc-product-heading{
+                font-size:1rem;
+            }
+            .vloc-details-icon-label{
+                display: block;
+                padding: 0;
+            }
+        }
+    }
+}

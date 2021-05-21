@@ -1,0 +1,38 @@
+{
+    "Cards": [
+        "ins-coverage-policy"
+    ],
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "02i6A000000Hj0k"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "body": "",
+            "inputMap": {
+                "assetId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "assetId": "{{params.id}}",
+                "includeFieldsDetail": "true",
+                "includeUnSelected": "false",
+                "vlcClass": "%vlocity_namespace%.InsuranceAssetHandler"
+            },
+            "remoteClass": "InsuranceAssetHandler",
+            "remoteMethod": "getPolicyDetails",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": ""
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-coverage-runtime-container"
+        }
+    },
+    "workspace": [
+        "ins-coverage-policy/Vlocity/1510783334317"
+    ]
+}

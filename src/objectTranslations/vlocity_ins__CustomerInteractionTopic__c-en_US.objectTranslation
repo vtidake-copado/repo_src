@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>vlocity_ins__AccountId__c</name>
+        <relationshipLabel><!-- Customer Interaction Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>vlocity_ins__AssetId__c</name>
+        <relationshipLabel><!-- Customer Interaction Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Held Product Relationship --></label>
+        <name>vlocity_ins__AssetPartyRelationshipId__c</name>
+        <relationshipLabel><!-- Customer Interaction Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>vlocity_ins__CaseId__c</name>
+        <relationshipLabel><!-- Customer Interaction Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Claim --></label>
+        <name>vlocity_ins__ClaimId__c</name>
+        <relationshipLabel><!-- Customer Interaction Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>vlocity_ins__ContractId__c</name>
+        <relationshipLabel><!-- Customer Interaction Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Interaction --></label>
+        <name>vlocity_ins__CustomerInteractionId__c</name>
+        <relationshipLabel><!-- Customer Interaction Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>vlocity_ins__OrderId__c</name>
+        <relationshipLabel><!-- Customer Interaction Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Policy --></label>
+        <name>vlocity_ins__PolicyId__c</name>
+        <relationshipLabel><!-- Customer Interaction Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Policy Relationship --></label>
+        <name>vlocity_ins__PolicyPartyRelationshipId__c</name>
+        <relationshipLabel><!-- Customer Interaction Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote --></label>
+        <name>vlocity_ins__QuoteId__c</name>
+        <relationshipLabel><!-- Customer Interaction Topics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>vlocity_ins__Role__c</name>
+    </fields>
+</CustomObjectTranslation>

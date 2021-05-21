@@ -1,0 +1,13 @@
+{
+    "AUTO": {
+        "BodyClass": "Sedan/Saloon",
+        "VehicleType": "PASSENGER CAR",
+        "autoAntiTheft": false,
+        "autoLicNum": "Lexus",
+        "autoModel": "LX250",
+        "autoYear": 2015,
+        "est_annual_mileage": "10001-20000",
+        "instanceKey": "2015 Lexus LX250",
+        "isPrimary": true
+    }
+}

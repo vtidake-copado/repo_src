@@ -1,0 +1,84 @@
+{
+    "insuredItems": {
+        "Auto": [
+            {
+                "BodyClass": "Sedan/Saloon",
+                "VehicleType": "PASSENGER CAR",
+                "autoLicNum": "Lexus",
+                "autoModel": "LX250",
+                "autoYear": 2015,
+                "instanceKey": "2015 Lexus LX250",
+                "isPrimary": true
+            },
+            {
+                "BodyClass": "Minivan",
+                "VehicleType": "MULTIPURPOSE PASSENGER VEHICLE (MPV)",
+                "autoLicNum": "Honda",
+                "autoModel": "Odyssey",
+                "autoYear": 2006,
+                "instanceKey": "2006 Honda Odyssey",
+                "isPrimary": true
+            },
+            {
+                "BodyClass": "Sedan/Saloon",
+                "VehicleType": "PASSENGER CAR",
+                "autoLicNum": "530",
+                "autoModel": "BMW",
+                "autoYear": 2018,
+                "instanceKey": "2018 530 BMW",
+                "isPrimary": true
+            },
+            {
+                "BodyClass": "Sedan/Saloon",
+                "VehicleType": "PASSENGER CAR",
+                "autoLicNum": "Camry",
+                "autoModel": "Toyota",
+                "autoYear": 2016,
+                "instanceKey": "2016 Camry Toyota",
+                "isPrimary": true
+            }
+        ],
+        "Driver": [
+            {
+                "AGE": 20,
+                "FN": "Joan",
+                "GENDER": "Female",
+                "LN": "Smith",
+                "instanceKey": "Joan Smith",
+                "isPrimary": false
+            },
+            {
+                "AGE": 30,
+                "FN": "John",
+                "GENDER": "Male",
+                "LN": "Smith",
+                "instanceKey": "John Smith",
+                "isPrimary": false
+            },
+            {
+                "AGE": 30,
+                "FN": "Robert",
+                "GENDER": "Male",
+                "LN": "Henderson",
+                "instanceKey": "Robert Henderson",
+                "isPrimary": false
+            },
+            {
+                "AGE": 20,
+                "FN": "Kinsey",
+                "GENDER": "Female",
+                "LN": "Schell",
+                "instanceKey": "Kinsey Schell",
+                "isPrimary": false
+            },
+            {
+                "AGE": 26,
+                "FN": "Grant",
+                "GENDER": "Male",
+                "LN": "Ramil",
+                "instanceKey": "Grant Ramil",
+                "isPrimary": false
+            }
+        ]
+    }
+}

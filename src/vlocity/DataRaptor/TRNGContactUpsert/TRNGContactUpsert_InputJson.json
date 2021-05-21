@@ -1,0 +1,76 @@
+{
+    "AccountId": "00141000002glnwAAA",
+    "AccountName": "Acme",
+    "City": "New York City",
+    "CommunicationPreference": "Email",
+    "Contact": "00341000001r8A0AAI",
+    "ContactId": "00341000001r8A0AAI",
+    "ContextId": "00141000002glnw",
+    "DaysSinceLastContact": 0,
+    "FirstName": "Edward",
+    "LastName": "Stamos",
+    "Name": "Edward Stamos",
+    "PhotoUrl": "/services/images/photo/00341000001r8A0AAI",
+    "State": "NY",
+    "Step 1 Identify Caller": {
+        "TypeAhead-Block": {
+            "TypeAhead": "Edward Stamos"
+        }
+    },
+    "Step 2 Verify Caller": {
+        "Customer Snapshot Block": {
+            "Age": 46,
+            "ContactStatus": "Satisfied",
+            "Email": "edward@acme.com",
+            "MobilePhone": null,
+            "Phone": "(212) 669-1475",
+            "TotalCases": 0
+        },
+        "MinorAlert": true,
+        "SLAAlert": false,
+        "Verification Block": {
+            "Birthdate": "1970-09-03T06:00:00.000Z",
+            "PostalCode": "10017",
+            "SSN": "789434567"
+        },
+        "Verified": true
+    },
+    "Step 4 Success BRANCH 2": {
+        "CommunicationPreference": "Email",
+        "EmailPreference": "Email",
+        "PhonePreference": "",
+        "SMSPreference": ""
+    },
+    "StreetAddress": "685 Third Ave",
+    "Title": "President and CEO",
+    "TypeAhead-Block": {
+        "AccountId": "00141000002glnwAAA",
+        "Birthdate": "1970-09-03",
+        "ContactAccountId": "00141000002glnwAAA",
+        "ContactId": "00341000001r8A0AAI",
+        "Email": "edward@acme.com",
+        "FirstName": "Edward",
+        "LastName": "Stamos",
+        "Phone": "(212) 669-1475",
+        "PostalCode": "10017",
+        "SSN": "789434567"
+    },
+    "id": "a0Z41000000fyRhEAI",
+    "testContextId": "00141000002glnw",
+    "timeStamp": "2016-11-23T22:04:36.802Z",
+    "userName": "trainingv13@telco.edu",
+    "userProfile": "System Administrator",
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "Get Account Data DR": 719,
+        "Get Communication Preferences Data Raptor Action": 573,
+        "Get Customer Data Raptor Action": 432,
+        "OmniScriptSessionToken": "ba636db2-2976-47a9-984e-f40cf4d255a5",
+        "Script Constants": 4,
+        "Set Contact": 1,
+        "Step 1 Identify Caller": 6780,
+        "Step 2 Verify Caller": 6053,
+        "Step 4 Success BRANCH 2": 5074
+    }
+}

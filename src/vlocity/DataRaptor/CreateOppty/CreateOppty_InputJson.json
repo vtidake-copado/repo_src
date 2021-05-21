@@ -1,0 +1,93 @@
+{
+    "ContextId": null,
+    "PaymentMethod": {
+        "PaymentMethods": {
+            "AccountId__c": null,
+            "BankAccountNumber__c": null,
+            "BankAccountType__c": null,
+            "BankRoutingNumber__c": null,
+            "CardHolderName__c": null,
+            "CardNumber__c": null,
+            "CardType__c": null,
+            "ExpirationMonth__c": null,
+            "ExpirationYear__c": null,
+            "IsPrimary__c": null,
+            "MethodType__c": null,
+            "Name": null,
+            "PaymentId": null,
+            "PaymentMethodToken__c": null,
+            "Selected": null
+        }
+    },
+    "configure": {
+        "configurePolicy": null,
+        "effectiveDate": null
+    },
+    "craft": {
+        "opptyName": null,
+        "wcAge": null,
+        "wcEngineFuel": null,
+        "wcHorsepower": null,
+        "wcHullMaterial": null,
+        "wcHullType": null,
+        "wcLength": null,
+        "wcMake": null,
+        "wcMaxSpeed": null,
+        "wcModel": null,
+        "wcName": null,
+        "wcNavDistance": null,
+        "wcNumberEngines": null,
+        "wcPropulsion": null,
+        "wcValue": null,
+        "wcYear": null
+    },
+    "intro": {
+    },
+    "operator": {
+        "opAge": null,
+        "opBirthdate": null,
+        "opCGEducation": null,
+        "opCGUsage": null,
+        "opConvictions": null,
+        "opExpYears": null,
+        "opFirstName": null,
+        "opHomeowner": null,
+        "opLastName": null,
+        "opMaritalStatus": null,
+        "opMiddleName": null,
+        "opName": null,
+        "opNumOwners": null,
+        "opPrefix": null,
+        "previousConvictions": {
+            "opCitationDate": null,
+            "opCitationDesc": null,
+            "opCitationType": null,
+            "opPointType-C": null
+        }
+    },
+    "purchase": {
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "PaymentMethod": null,
+        "Set Values 1": null,
+        "calculateMVRPoints": null,
+        "configure": null,
+        "craft": null,
+        "createOpportunity": null,
+        "getAccount": null,
+        "getSelectedValues": null,
+        "getWatercraft": null,
+        "intro": null,
+        "navigateToPolicy": null,
+        "operator": null,
+        "purchase": null,
+        "readPaymentMethods": null,
+        "transformForCreation": null
+    }
+}

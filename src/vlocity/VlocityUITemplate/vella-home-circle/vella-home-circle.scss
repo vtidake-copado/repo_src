@@ -1,0 +1,70 @@
+@import 'vella-mixins-variables';
+
+.vella-home-circle-main-wrapper {
+    margin: 0 0 0.5rem 0;
+    padding: 0 1.5rem;
+
+    &.vella-zone-middle {
+        background-color: $vella-sky;
+        margin: 0;
+        padding: 1.5rem 1.5rem 0.5rem;
+    }
+
+    .vella-home-circle-card {
+        .vella-home-circle-inner-wrapper {
+            padding-bottom: 1.5rem;
+
+            .vella-home-circle-circle {
+                @include policyCircle(0 auto, white, '.vella-home-circle-img');
+
+                &:before {
+                    content: "1";
+                    display: block;
+                    position: absolute;
+                    z-index: 10;
+                    top: 0;
+                    right: 0;
+                    width: 1.375rem;
+                    height: 1.375rem;
+                    background-color: $vella-orange;
+                    border-radius: 50%;
+                    color: white;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: 1.6rem;
+                    letter-spacing: 1px;
+                    opacity: 0;
+                    transition: opacity 100ms ease-in;
+                }
+
+                &.vella-policy-notification {
+                    position: relative;
+
+                    &:before {
+                        opacity: 1;
+                    }
+                }
+            }
+            .vella-home-circle-name {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                color: white;
+                margin-top: 0.75rem;
+                font-size: 0.8125rem;
+                font-weight: bold;
+                line-height: 1.2;
+            }
+
+            .vella-add-insurable {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                color: $vella-sky-text;
+                margin-top: 0.25rem;
+                font-size: 0.8125rem;
+                line-height: 1.2;
+            }
+        }
+    }
+}

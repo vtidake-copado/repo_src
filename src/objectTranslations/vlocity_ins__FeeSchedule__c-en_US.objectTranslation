@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Fee Schedule Data --></label>
+        <name>vlocity_ins__CalculationMatrixId__c</name>
+        <relationshipLabel><!-- Fee Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective End Date --></label>
+        <name>vlocity_ins__EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Start Date --></label>
+        <name>vlocity_ins__EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Schedule Code --></label>
+        <name>vlocity_ins__FeeScheduleCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>vlocity_ins__Source__c</name>
+        <picklistValues>
+            <masterLabel>CMS</masterLabel>
+            <translation><!-- CMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrier</masterLabel>
+            <translation><!-- Carrier --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

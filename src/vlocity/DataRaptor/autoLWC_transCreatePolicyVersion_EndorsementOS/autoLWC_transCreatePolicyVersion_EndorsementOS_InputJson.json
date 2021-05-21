@@ -1,0 +1,2037 @@
+{
+    "Config": {
+        "ConfigureCoverages": [
+            {
+                "$$hashKey": "object:491",
+                "CalculatedPriceData": {
+                    "ID": "0",
+                    "productKey": "01t6F0000075f7yQAA",
+                    "wcBoatLiftNet": 40,
+                    "wcFishingEquipNet": 0,
+                    "wcLiabilityNet": 24,
+                    "wcMedPaymentsNet": 10,
+                    "wcPersonalEffectsNet": 75,
+                    "wcPropertyNet": 3100,
+                    "wcTotalPremium": 3279,
+                    "wcTowingNet": 0,
+                    "wcTrailerNet": 20,
+                    "wcUninsuredNet": 10
+                },
+                "EffectiveEnd": "2018-08-31",
+                "EffectiveStart": "2017-09-01",
+                "Id": "01t6F0000075f7yQAA",
+                "Price": 3279,
+                "PricingSource__c": "wcTotalPremium",
+                "childProducts": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "$$hashKey": "object:495",
+                            "%vlocity_namespace%__AggregateLimitAmount__c": 0,
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"covType\":\"5\",\"LIMIT2\":\"25000\",\"covDeductible\":\"3\",\"covBenefit\":\"Agreed Value\"}",
+                            "%vlocity_namespace%__DeductibleAmount__c": 0,
+                            "%vlocity_namespace%__PolicyAssetId__c": "02i6F000003JlUSQA0",
+                            "%vlocity_namespace%__PricingSource__c": "wcPropertyNet",
+                            "%vlocity_namespace%__Product2Id__c": "01t6F0000075f83QAA",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "CreatedById": "0056F0000077bTYQAY",
+                            "CreatedDate": "2017-09-01T23:23:14.000+0000",
+                            "Id": "a3d6F000000KEuWQAW",
+                            "IsDeleted": false,
+                            "LastModifiedById": "0056F0000077bTYQAY",
+                            "LastModifiedDate": "2017-09-01T23:23:14.000+0000",
+                            "Name": "Watercraft Physical Damage",
+                            "Price": 3100,
+                            "SystemModstamp": "2017-09-01T23:23:14.000+0000",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "$$hashKey": "object:526",
+                                        "Code__c": "terms",
+                                        "Name": "Policy Terms",
+                                        "displaySequence": 265,
+                                        "id": "a1Q6F0000092i9FUAQ",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "object:529",
+                                                    "attributeId": "a1R6F00000Jqd7OUAR",
+                                                    "code": "covBenefit",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "radio",
+                                                    "label": "Benefit",
+                                                    "messages": [
+                                                    ],
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Agreed Value",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "Cash Value",
+                                                            "readonly": false,
+                                                            "value": "Actual Cash Value"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "Declared Value",
+                                                            "readonly": false,
+                                                            "value": "Agreed Value"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "Replacement Cost",
+                                                            "readonly": false,
+                                                            "value": "Replacement Cost"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "object:530",
+                                                    "attributeId": "a1R6F00000Jqd7EUAR",
+                                                    "code": "covDeductible",
+                                                    "dataType": "percentage",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "number",
+                                                    "label": "Deductible",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "3",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "object:531",
+                                                    "attributeId": "a1R6F00000Jqd74UAB",
+                                                    "code": "LIMIT2",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Limit",
+                                                    "messages": [
+                                                    ],
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "25000",
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:559",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "$5,000",
+                                                            "readonly": false,
+                                                            "value": "5000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:560",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "$1,000",
+                                                            "readonly": false,
+                                                            "value": "1000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:561",
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "$25,000",
+                                                            "readonly": false,
+                                                            "value": "25000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:562",
+                                                            "disabled": false,
+                                                            "id": "3",
+                                                            "label": "$50,000",
+                                                            "readonly": false,
+                                                            "value": "50000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:563",
+                                                            "disabled": false,
+                                                            "id": "4",
+                                                            "label": "$100,000",
+                                                            "readonly": false,
+                                                            "value": "100000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:564",
+                                                            "disabled": false,
+                                                            "id": "5",
+                                                            "label": "$250,000",
+                                                            "readonly": false,
+                                                            "value": "250000"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "object:532",
+                                                    "attributeId": "a1R6F00000Jqd79UAB",
+                                                    "code": "covType",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "radio",
+                                                    "label": "Type",
+                                                    "messages": [
+                                                    ],
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "5",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "1%",
+                                                            "readonly": false,
+                                                            "value": "1"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "2%",
+                                                            "readonly": false,
+                                                            "value": "2"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "3%",
+                                                            "readonly": false,
+                                                            "value": "3"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "3",
+                                                            "label": "4%",
+                                                            "readonly": false,
+                                                            "value": "4"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "4",
+                                                            "label": "5%",
+                                                            "readonly": false,
+                                                            "value": "5"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "5",
+                                                            "label": "6%",
+                                                            "readonly": false,
+                                                            "value": "6"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "6",
+                                                            "label": "7%",
+                                                            "readonly": false,
+                                                            "value": "7"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "7",
+                                                            "label": "8%",
+                                                            "readonly": false,
+                                                            "value": "8"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "8",
+                                                            "label": "9%",
+                                                            "readonly": false,
+                                                            "value": "9"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "9",
+                                                            "label": "10%",
+                                                            "readonly": false,
+                                                            "value": "10"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "10",
+                                                            "label": "11%",
+                                                            "readonly": false,
+                                                            "value": "11"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "11",
+                                                            "label": "12%",
+                                                            "readonly": false,
+                                                            "value": "12"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "12",
+                                                            "label": "13%",
+                                                            "readonly": false,
+                                                            "value": "13"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "13",
+                                                            "label": "14%",
+                                                            "readonly": false,
+                                                            "value": "14"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "14",
+                                                            "label": "15%",
+                                                            "readonly": false,
+                                                            "value": "15"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "15",
+                                                            "label": "16%",
+                                                            "readonly": false,
+                                                            "value": "16"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "16",
+                                                            "label": "17%",
+                                                            "readonly": false,
+                                                            "value": "17"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "17",
+                                                            "label": "18%",
+                                                            "readonly": false,
+                                                            "value": "18"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "18",
+                                                            "label": "19%",
+                                                            "readonly": false,
+                                                            "value": "19"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "19",
+                                                            "label": "20%",
+                                                            "readonly": false,
+                                                            "value": "20"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 4
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ],
+                            "minCount": false,
+                            "productId": "01t6F0000075f83QAA",
+                            "productName": "Watercraft Physical Damage"
+                        },
+                        {
+                            "$$hashKey": "object:496",
+                            "%vlocity_namespace%__AggregateLimitAmount__c": 0,
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"LIMIT2\":\"100000\"}",
+                            "%vlocity_namespace%__DeductibleAmount__c": 0,
+                            "%vlocity_namespace%__PolicyAssetId__c": "02i6F000003JlUSQA0",
+                            "%vlocity_namespace%__PricingSource__c": "wcLiabilityNet",
+                            "%vlocity_namespace%__Product2Id__c": "01t6F0000075f88QAA",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "CreatedById": "0056F0000077bTYQAY",
+                            "CreatedDate": "2017-09-01T23:23:14.000+0000",
+                            "Id": "a3d6F000000KEuXQAW",
+                            "IsDeleted": false,
+                            "LastModifiedById": "0056F0000077bTYQAY",
+                            "LastModifiedDate": "2017-09-01T23:23:14.000+0000",
+                            "Name": "Watercraft Liability",
+                            "Price": 24,
+                            "SystemModstamp": "2017-09-01T23:23:14.000+0000",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "$$hashKey": "object:580",
+                                        "Code__c": "terms",
+                                        "Name": "Policy Terms",
+                                        "displaySequence": 265,
+                                        "id": "a1Q6F0000092i9FUAQ",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "object:583",
+                                                    "attributeId": "a1R6F00000Jqd74UAB",
+                                                    "code": "LIMIT2",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "radio",
+                                                    "label": "Limit",
+                                                    "messages": [
+                                                    ],
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "100000",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "$25,000",
+                                                            "readonly": false,
+                                                            "value": "25000"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "$50,000",
+                                                            "readonly": false,
+                                                            "value": "50000"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "$100,000",
+                                                            "readonly": false,
+                                                            "value": "100000"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "3",
+                                                            "label": "$300,000",
+                                                            "readonly": false,
+                                                            "value": "300000"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "4",
+                                                            "label": "$500,000",
+                                                            "readonly": false,
+                                                            "value": "500000"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "5",
+                                                            "label": "$1,000,000",
+                                                            "readonly": false,
+                                                            "value": "1000000"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ],
+                            "minCount": false,
+                            "productId": "01t6F0000075f88QAA",
+                            "productName": "Watercraft Liability"
+                        },
+                        {
+                            "$$hashKey": "object:497",
+                            "%vlocity_namespace%__AggregateLimitAmount__c": 0,
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"LIMIT2\":\"100000\"}",
+                            "%vlocity_namespace%__DeductibleAmount__c": 0,
+                            "%vlocity_namespace%__PolicyAssetId__c": "02i6F000003JlUSQA0",
+                            "%vlocity_namespace%__PricingSource__c": "wcUninsuredNet",
+                            "%vlocity_namespace%__Product2Id__c": "01t6F0000075f84QAA",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "CreatedById": "0056F0000077bTYQAY",
+                            "CreatedDate": "2017-09-01T23:23:14.000+0000",
+                            "Id": "a3d6F000000KEuYQAW",
+                            "IsDeleted": false,
+                            "LastModifiedById": "0056F0000077bTYQAY",
+                            "LastModifiedDate": "2017-09-01T23:23:14.000+0000",
+                            "Name": "Uninsured Watercraft",
+                            "Price": 10,
+                            "SystemModstamp": "2017-09-01T23:23:14.000+0000",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "$$hashKey": "object:601",
+                                        "Code__c": "terms",
+                                        "Name": "Policy Terms",
+                                        "displaySequence": 265,
+                                        "id": "a1Q6F0000092i9FUAQ",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "object:604",
+                                                    "attributeId": "a1R6F00000Jqd74UAB",
+                                                    "code": "LIMIT2",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Limit",
+                                                    "messages": [
+                                                    ],
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "100000",
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:613",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "$25,000",
+                                                            "readonly": false,
+                                                            "value": "25000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:614",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "$50,000",
+                                                            "readonly": false,
+                                                            "value": "50000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:615",
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "$100,000",
+                                                            "readonly": false,
+                                                            "value": "100000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:616",
+                                                            "disabled": false,
+                                                            "id": "3",
+                                                            "label": "$300,000",
+                                                            "readonly": false,
+                                                            "value": "300000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:617",
+                                                            "disabled": false,
+                                                            "id": "4",
+                                                            "label": "$500,000",
+                                                            "readonly": false,
+                                                            "value": "500000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:618",
+                                                            "disabled": false,
+                                                            "id": "5",
+                                                            "label": "$1,000,000",
+                                                            "readonly": false,
+                                                            "value": "1000000"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ],
+                            "minCount": false,
+                            "productId": "01t6F0000075f84QAA",
+                            "productName": "Uninsured Watercraft"
+                        },
+                        {
+                            "$$hashKey": "object:498",
+                            "%vlocity_namespace%__AggregateLimitAmount__c": 0,
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"LIMIT2\":\"2500\"}",
+                            "%vlocity_namespace%__DeductibleAmount__c": 0,
+                            "%vlocity_namespace%__PolicyAssetId__c": "02i6F000003JlUSQA0",
+                            "%vlocity_namespace%__PricingSource__c": "wcTrailerNet",
+                            "%vlocity_namespace%__Product2Id__c": "01t6F0000075f85QAA",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "CreatedById": "0056F0000077bTYQAY",
+                            "CreatedDate": "2017-09-01T23:23:14.000+0000",
+                            "Id": "a3d6F000000KEuZQAW",
+                            "IsDeleted": false,
+                            "LastModifiedById": "0056F0000077bTYQAY",
+                            "LastModifiedDate": "2017-09-01T23:23:14.000+0000",
+                            "Name": "Trailer",
+                            "Price": 20,
+                            "SystemModstamp": "2017-09-01T23:23:14.000+0000",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "$$hashKey": "object:628",
+                                        "Code__c": "terms",
+                                        "Name": "Policy Terms",
+                                        "displaySequence": 265,
+                                        "id": "a1Q6F0000092i9FUAQ",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "object:631",
+                                                    "attributeId": "a1R6F00000Jqd74UAB",
+                                                    "code": "LIMIT2",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Limit",
+                                                    "messages": [
+                                                    ],
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "2500",
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:640",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "$2,500",
+                                                            "readonly": false,
+                                                            "value": "2500"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:641",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "$1,000",
+                                                            "readonly": false,
+                                                            "value": "1000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:642",
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "$5,000",
+                                                            "readonly": false,
+                                                            "value": "5000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:643",
+                                                            "disabled": false,
+                                                            "id": "3",
+                                                            "label": "$10,000",
+                                                            "readonly": false,
+                                                            "value": "10000"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ],
+                            "minCount": false,
+                            "productId": "01t6F0000075f85QAA",
+                            "productName": "Trailer"
+                        },
+                        {
+                            "$$hashKey": "object:499",
+                            "%vlocity_namespace%__AggregateLimitAmount__c": 0,
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"LIMIT2\":500}",
+                            "%vlocity_namespace%__DeductibleAmount__c": 0,
+                            "%vlocity_namespace%__PolicyAssetId__c": "02i6F000003JlUSQA0",
+                            "%vlocity_namespace%__PricingSource__c": "wcTowingNet",
+                            "%vlocity_namespace%__Product2Id__c": "01t6F0000075f8IQAQ",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "CreatedById": "0056F0000077bTYQAY",
+                            "CreatedDate": "2017-09-01T23:23:14.000+0000",
+                            "Id": "a3d6F000000KEuaQAG",
+                            "IsDeleted": false,
+                            "LastModifiedById": "0056F0000077bTYQAY",
+                            "LastModifiedDate": "2017-09-01T23:23:14.000+0000",
+                            "Name": "Towing",
+                            "Price": 0,
+                            "SystemModstamp": "2017-09-01T23:23:14.000+0000",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "$$hashKey": "object:653",
+                                        "Code__c": "terms",
+                                        "Name": "Policy Terms",
+                                        "displaySequence": 265,
+                                        "id": "a1Q6F0000092i9FUAQ",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "object:656",
+                                                    "attributeId": "a1R6F00000Jqd74UAB",
+                                                    "code": "LIMIT2",
+                                                    "dataType": "currency",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Limit",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 500,
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:665",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "$500",
+                                                            "readonly": false,
+                                                            "value": 500
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:666",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "$1,000",
+                                                            "readonly": false,
+                                                            "value": 1000
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:667",
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "$2,500",
+                                                            "readonly": false,
+                                                            "value": 2500
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ],
+                            "minCount": false,
+                            "productId": "01t6F0000075f8IQAQ",
+                            "productName": "Towing"
+                        },
+                        {
+                            "$$hashKey": "object:500",
+                            "%vlocity_namespace%__AggregateLimitAmount__c": 0,
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"LIMIT2\":\"5,000\",\"covDeductible\":250}",
+                            "%vlocity_namespace%__DeductibleAmount__c": 0,
+                            "%vlocity_namespace%__PolicyAssetId__c": "02i6F000003JlUSQA0",
+                            "%vlocity_namespace%__PricingSource__c": "wcPersonalEffectsNet",
+                            "%vlocity_namespace%__Product2Id__c": "01t6F0000075f8EQAQ",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "CreatedById": "0056F0000077bTYQAY",
+                            "CreatedDate": "2017-09-01T23:23:14.000+0000",
+                            "Id": "a3d6F000000KEubQAG",
+                            "IsDeleted": false,
+                            "LastModifiedById": "0056F0000077bTYQAY",
+                            "LastModifiedDate": "2017-09-01T23:23:14.000+0000",
+                            "Name": "Personal Effect",
+                            "Price": 75,
+                            "SystemModstamp": "2017-09-01T23:23:14.000+0000",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "$$hashKey": "object:677",
+                                        "Code__c": "terms",
+                                        "Name": "Policy Terms",
+                                        "displaySequence": 265,
+                                        "id": "a1Q6F0000092i9FUAQ",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "object:680",
+                                                    "attributeId": "a1R6F00000Jqd7EUAR",
+                                                    "code": "covDeductible",
+                                                    "dataType": "currency",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "number",
+                                                    "label": "Deductible",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 250,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "object:681",
+                                                    "attributeId": "a1R6F00000Jqd74UAB",
+                                                    "code": "LIMIT2",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "radio",
+                                                    "label": "Limit",
+                                                    "messages": [
+                                                    ],
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "5,000",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "$5,000",
+                                                            "readonly": false,
+                                                            "value": "5,000"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "$10,000",
+                                                            "readonly": false,
+                                                            "value": "10,000"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "$25,000",
+                                                            "readonly": false,
+                                                            "value": "25000"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "3",
+                                                            "label": "$50,000",
+                                                            "readonly": false,
+                                                            "value": "50000"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "4",
+                                                            "label": "$100,000",
+                                                            "readonly": false,
+                                                            "value": "100000"
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "5",
+                                                            "label": "$250,000",
+                                                            "readonly": false,
+                                                            "value": "250000"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 2
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ],
+                            "minCount": false,
+                            "productId": "01t6F0000075f8EQAQ",
+                            "productName": "Personal Effect"
+                        },
+                        {
+                            "$$hashKey": "object:501",
+                            "%vlocity_namespace%__AggregateLimitAmount__c": 0,
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"LIMIT2\":5000}",
+                            "%vlocity_namespace%__DeductibleAmount__c": 0,
+                            "%vlocity_namespace%__PolicyAssetId__c": "02i6F000003JlUSQA0",
+                            "%vlocity_namespace%__PricingSource__c": "wcMedPaymentsNet",
+                            "%vlocity_namespace%__Product2Id__c": "01t6F0000075f8DQAQ",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "CreatedById": "0056F0000077bTYQAY",
+                            "CreatedDate": "2017-09-01T23:23:14.000+0000",
+                            "Id": "a3d6F000000KEucQAG",
+                            "IsDeleted": false,
+                            "LastModifiedById": "0056F0000077bTYQAY",
+                            "LastModifiedDate": "2017-09-01T23:23:14.000+0000",
+                            "Name": "Medical Payment",
+                            "Price": 10,
+                            "SystemModstamp": "2017-09-01T23:23:14.000+0000",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "$$hashKey": "object:709",
+                                        "Code__c": "terms",
+                                        "Name": "Policy Terms",
+                                        "displaySequence": 265,
+                                        "id": "a1Q6F0000092i9FUAQ",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "object:712",
+                                                    "attributeId": "a1R6F00000Jqd74UAB",
+                                                    "code": "LIMIT2",
+                                                    "dataType": "currency",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Limit",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 5000,
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:721",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "$5,000",
+                                                            "readonly": false,
+                                                            "value": 5000
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:722",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "$25,000",
+                                                            "readonly": false,
+                                                            "value": 25000
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ],
+                            "minCount": false,
+                            "productId": "01t6F0000075f8DQAQ",
+                            "productName": "Medical Payment"
+                        },
+                        {
+                            "$$hashKey": "object:502",
+                            "%vlocity_namespace%__AggregateLimitAmount__c": 0,
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"LIMIT2\":500,\"covDeductible\":250}",
+                            "%vlocity_namespace%__DeductibleAmount__c": 0,
+                            "%vlocity_namespace%__PolicyAssetId__c": "02i6F000003JlUSQA0",
+                            "%vlocity_namespace%__PricingSource__c": "wcFishingEquipNet",
+                            "%vlocity_namespace%__Product2Id__c": "01t6F0000075f8JQAQ",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "CreatedById": "0056F0000077bTYQAY",
+                            "CreatedDate": "2017-09-01T23:23:14.000+0000",
+                            "Id": "a3d6F000000KEudQAG",
+                            "IsDeleted": false,
+                            "LastModifiedById": "0056F0000077bTYQAY",
+                            "LastModifiedDate": "2017-09-01T23:23:14.000+0000",
+                            "Name": "Fishing Equipment",
+                            "Price": 0,
+                            "SystemModstamp": "2017-09-01T23:23:14.000+0000",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "$$hashKey": "object:732",
+                                        "Code__c": "terms",
+                                        "Name": "Policy Terms",
+                                        "displaySequence": 265,
+                                        "id": "a1Q6F0000092i9FUAQ",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "object:735",
+                                                    "attributeId": "a1R6F00000Jqd7EUAR",
+                                                    "code": "covDeductible",
+                                                    "dataType": "currency",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "number",
+                                                    "label": "Deductible",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 250,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "object:736",
+                                                    "attributeId": "a1R6F00000Jqd74UAB",
+                                                    "code": "LIMIT2",
+                                                    "dataType": "currency",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Limit",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 500,
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:755",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "$500",
+                                                            "readonly": false,
+                                                            "value": 500
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:756",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "$1,000",
+                                                            "readonly": false,
+                                                            "value": 1000
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:757",
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "$2,500",
+                                                            "readonly": false,
+                                                            "value": 2500
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:758",
+                                                            "disabled": false,
+                                                            "id": "3",
+                                                            "label": "$5,000",
+                                                            "readonly": false,
+                                                            "value": 5000
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:759",
+                                                            "disabled": false,
+                                                            "id": "4",
+                                                            "label": "$10,000",
+                                                            "readonly": false,
+                                                            "value": 10000
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:760",
+                                                            "disabled": false,
+                                                            "id": "5",
+                                                            "label": "$25,000",
+                                                            "readonly": false,
+                                                            "value": 25000
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 2
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ],
+                            "minCount": false,
+                            "productId": "01t6F0000075f8JQAQ",
+                            "productName": "Fishing Equipment"
+                        },
+                        {
+                            "$$hashKey": "object:503",
+                            "%vlocity_namespace%__AggregateLimitAmount__c": 0,
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"LIMIT2\":\"1000\"}",
+                            "%vlocity_namespace%__DeductibleAmount__c": 0,
+                            "%vlocity_namespace%__PolicyAssetId__c": "02i6F000003JlUSQA0",
+                            "%vlocity_namespace%__PricingSource__c": "wcBoatLiftNet",
+                            "%vlocity_namespace%__Product2Id__c": "01t6F0000075f8FQAQ",
+                            "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+                            "CreatedById": "0056F0000077bTYQAY",
+                            "CreatedDate": "2017-09-01T23:23:14.000+0000",
+                            "Id": "a3d6F000000KEueQAG",
+                            "IsDeleted": false,
+                            "LastModifiedById": "0056F0000077bTYQAY",
+                            "LastModifiedDate": "2017-09-01T23:23:14.000+0000",
+                            "Name": "Boat Lift",
+                            "Price": 40,
+                            "SystemModstamp": "2017-09-01T23:23:14.000+0000",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "$$hashKey": "object:770",
+                                        "Code__c": "terms",
+                                        "Name": "Policy Terms",
+                                        "displaySequence": 265,
+                                        "id": "a1Q6F0000092i9FUAQ",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "object:773",
+                                                    "attributeId": "a1R6F00000Jqd74UAB",
+                                                    "code": "LIMIT2",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Limit",
+                                                    "messages": [
+                                                    ],
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "2000",
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:782",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "$1,000",
+                                                            "readonly": false,
+                                                            "value": "1000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:783",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "$2,000",
+                                                            "readonly": false,
+                                                            "value": "2000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:784",
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "$3,000",
+                                                            "readonly": false,
+                                                            "value": "3000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:785",
+                                                            "disabled": false,
+                                                            "id": "3",
+                                                            "label": "$5,000",
+                                                            "readonly": false,
+                                                            "value": "5000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:786",
+                                                            "disabled": false,
+                                                            "id": "4",
+                                                            "label": "$10,000",
+                                                            "readonly": false,
+                                                            "value": "10000"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ],
+                            "minCount": false,
+                            "productId": "01t6F0000075f8FQAQ",
+                            "productName": "Boat Lift"
+                        },
+                        {
+                            "$$hashKey": "object:504",
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"AGE2\":46,\"opBirthdate\":\"1970-09-12T07:00:00.000Z\",\"opCGEducation\":\"None\",\"opCGUsage\":\"20\",\"opExperience\":12,\"opHomeowner\":\"Homeowner\",\"opMaritalStatus\":\"Married\",\"opPoints\":0,\"NAME2\":\"44 44 44\",\"opOwners\":\"2\"}",
+                            "%vlocity_namespace%__MarketValue__c": 0,
+                            "%vlocity_namespace%__PolicyAssetId__c": "02i6F000003JlUSQA0",
+                            "%vlocity_namespace%__Product2Id__c": "01t6F0000075f7tQAA",
+                            "%vlocity_namespace%__RecordTypeName__c": "InsuredItemSpec",
+                            "CreatedById": "0056F0000077bTYQAY",
+                            "CreatedDate": "2017-09-01T23:23:13.000+0000",
+                            "Id": "a3e6F000001EXq7QAG",
+                            "IsDeleted": false,
+                            "LastModifiedById": "0056F0000077bTYQAY",
+                            "LastModifiedDate": "2017-09-01T23:23:13.000+0000",
+                            "Name": "Watercraft Operator",
+                            "SystemModstamp": "2017-09-01T23:23:13.000+0000",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "Code__c": "wcOperator",
+                                        "Name": "Operator",
+                                        "displaySequence": 261,
+                                        "id": "a1Q6F0000092i9AUAQ",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "attributeId": "a1R6F00000JqdAhUAJ",
+                                                    "code": "opAddress",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Address",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": null,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd6fUAB",
+                                                    "code": "AGE2",
+                                                    "dataType": "number",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "number",
+                                                    "label": "Age",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": true,
+                                                    "required": false,
+                                                    "userValues": 46,
+                                                    "values": [
+                                                        {
+                                                            "disabled": true,
+                                                            "readonly": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000JqdAwUAJ",
+                                                    "code": "opBirthdate",
+                                                    "dataType": "date",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "date",
+                                                    "label": "Birthdate",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "1970-09-12T07:00:00.000Z",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd6pUAB",
+                                                    "code": "opCGEducation",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Coast Guard Education",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": true,
+                                                    "required": false,
+                                                    "userValues": "None",
+                                                    "values": [
+                                                        {
+                                                            "disabled": true,
+                                                            "readonly": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd6uUAB",
+                                                    "code": "opCGUsage",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Coast Guard Usage",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": true,
+                                                    "required": false,
+                                                    "userValues": "20",
+                                                    "values": [
+                                                        {
+                                                            "disabled": true,
+                                                            "readonly": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd7dUAB",
+                                                    "code": "opHomeowner",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Homeowner",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": true,
+                                                    "required": false,
+                                                    "userValues": "Homeowner",
+                                                    "values": [
+                                                        {
+                                                            "disabled": true,
+                                                            "readonly": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd6zUAB",
+                                                    "code": "opMaritalStatus",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Marital Status",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": true,
+                                                    "required": false,
+                                                    "userValues": "Married",
+                                                    "values": [
+                                                        {
+                                                            "disabled": true,
+                                                            "readonly": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000JqdArUAJ",
+                                                    "code": "opPoints",
+                                                    "dataType": "number",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "number",
+                                                    "label": "MVR Points",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 0,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000JqdAcUAJ",
+                                                    "code": "NAME2",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Name",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "44 44 44",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd6aUAB",
+                                                    "code": "opOwners",
+                                                    "dataType": "number",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "number",
+                                                    "label": "Number of Owner",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "2",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000JqdAmUAJ",
+                                                    "code": "opExperience",
+                                                    "dataType": "number",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "number",
+                                                    "label": "Years Experience",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 12,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 11
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "maxCount": 1,
+                            "messages": [
+                            ],
+                            "minCount": 1,
+                            "productId": "01t6F0000075f7tQAA",
+                            "productName": "Watercraft Operator"
+                        },
+                        {
+                            "$$hashKey": "object:505",
+                            "%vlocity_namespace%__AttributeSelectedValues__c": "{\"wcAge\":127,\"wcFuelType\":\"Other\",\"wcHorsepower\":44,\"wcHullMaterial\":\"Fiberglass\",\"wcHullType\":\"Cruiser\",\"wcManufacturer\":\"55\",\"wcModel\":\"55\",\"wcVesselName\":\"44\",\"wcDistance\":44,\"wcEngines\":\"1\",\"wcPropulsion\":\"Other\",\"wcValue\":1222222,\"wcMfgYear\":1890,\"wcSpeed\":55}",
+                            "%vlocity_namespace%__MarketValue__c": 0,
+                            "%vlocity_namespace%__PolicyAssetId__c": "02i6F000003JlUSQA0",
+                            "%vlocity_namespace%__Product2Id__c": "01t6F0000075f7oQAA",
+                            "%vlocity_namespace%__RecordTypeName__c": "InsuredItemSpec",
+                            "CreatedById": "0056F0000077bTYQAY",
+                            "CreatedDate": "2017-09-01T23:23:13.000+0000",
+                            "Id": "a3e6F000001EXq8QAG",
+                            "IsDeleted": false,
+                            "LastModifiedById": "0056F0000077bTYQAY",
+                            "LastModifiedDate": "2017-09-01T23:23:13.000+0000",
+                            "Name": "Watercraft",
+                            "SystemModstamp": "2017-09-01T23:23:13.000+0000",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "Code__c": "WC",
+                                        "Name": "Watercraft",
+                                        "displaySequence": 260,
+                                        "id": "a1Q6F0000092i95UAA",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd61UAB",
+                                                    "code": "wcAge",
+                                                    "dataType": "number",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "formatMask": "##",
+                                                    "hasRules": false,
+                                                    "inputType": "number",
+                                                    "label": "Age",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": true,
+                                                    "required": false,
+                                                    "userValues": 127,
+                                                    "values": [
+                                                        {
+                                                            "disabled": true,
+                                                            "readonly": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd6VUAR",
+                                                    "code": "wcDistance",
+                                                    "dataType": "number",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "number",
+                                                    "label": "Distance Offshore",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": true,
+                                                    "required": false,
+                                                    "userValues": 44,
+                                                    "values": [
+                                                        {
+                                                            "disabled": true,
+                                                            "readonly": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd7YUAR",
+                                                    "code": "wcEngines",
+                                                    "dataType": "number",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "number",
+                                                    "label": "Engines",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": true,
+                                                    "required": false,
+                                                    "userValues": "1",
+                                                    "values": [
+                                                        {
+                                                            "disabled": true,
+                                                            "readonly": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd6LUAR",
+                                                    "code": "wcFuelType",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Fuel Type",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": true,
+                                                    "required": false,
+                                                    "userValues": "Other",
+                                                    "values": [
+                                                        {
+                                                            "disabled": true,
+                                                            "readonly": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000JqdA3UAJ",
+                                                    "code": "wcHorsepower",
+                                                    "dataType": "number",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "number",
+                                                    "label": "Horsepower",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 44,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd6BUAR",
+                                                    "code": "wcHullMaterial",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Hull Material",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": true,
+                                                    "required": false,
+                                                    "userValues": "Fiberglass",
+                                                    "values": [
+                                                        {
+                                                            "disabled": true,
+                                                            "readonly": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd66UAB",
+                                                    "code": "wcHullType",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Hull Type",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": true,
+                                                    "required": false,
+                                                    "userValues": "Cruiser",
+                                                    "values": [
+                                                        {
+                                                            "disabled": true,
+                                                            "readonly": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000JqdAIUAZ",
+                                                    "code": "wcManufacturer",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Manufacturer",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "55",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000JqdANUAZ",
+                                                    "code": "wcModel",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Model",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "55",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd6GUAR",
+                                                    "code": "wcPropulsion",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Propulsion",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": true,
+                                                    "required": false,
+                                                    "userValues": "Other",
+                                                    "values": [
+                                                        {
+                                                            "disabled": true,
+                                                            "readonly": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000JqdADUAZ",
+                                                    "code": "wcSerialNumber",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Serial Number",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": null,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd5wUAB",
+                                                    "code": "wcSpeed",
+                                                    "dataType": "number",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "number",
+                                                    "label": "Speed",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": true,
+                                                    "required": false,
+                                                    "userValues": 55,
+                                                    "values": [
+                                                        {
+                                                            "disabled": true,
+                                                            "readonly": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000Jqd6QUAR",
+                                                    "code": "wcValue",
+                                                    "dataType": "currency",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Value",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 1222222,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000JqdA8UAJ",
+                                                    "code": "wcVesselName",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Vessel Name",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "44",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000JqdASUAZ",
+                                                    "code": "wcMfgYear",
+                                                    "dataType": "number",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "number",
+                                                    "label": "Year Manufactured",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 1890,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 15
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "maxCount": 1,
+                            "messages": [
+                            ],
+                            "minCount": 1,
+                            "productId": "01t6F0000075f7oQAA",
+                            "productName": "Watercraft"
+                        }
+                    ],
+                    "totalSize": 9
+                },
+                "displaySequence": -1,
+                "messages": [
+                ],
+                "prodSelectedValues": {
+                    "Boat Lift": {
+                        "LIMIT2": "2000",
+                        "Price": 40,
+                        "productId": "01t6F0000075f8FQAQ"
+                    },
+                    "Fishing Equipment": {
+                        "LIMIT2": 500,
+                        "Price": 0,
+                        "covDeductible": 250,
+                        "productId": "01t6F0000075f8JQAQ"
+                    },
+                    "Medical Payment": {
+                        "LIMIT2": 5000,
+                        "Price": 10,
+                        "productId": "01t6F0000075f8DQAQ"
+                    },
+                    "Personal Effect": {
+                        "LIMIT2": "5,000",
+                        "Price": 75,
+                        "covDeductible": 250,
+                        "productId": "01t6F0000075f8EQAQ"
+                    },
+                    "Towing": {
+                        "LIMIT2": 500,
+                        "Price": 0,
+                        "productId": "01t6F0000075f8IQAQ"
+                    },
+                    "Trailer": {
+                        "LIMIT2": "2500",
+                        "Price": 20,
+                        "productId": "01t6F0000075f85QAA"
+                    },
+                    "Uninsured Watercraft": {
+                        "LIMIT2": "100000",
+                        "Price": 10,
+                        "productId": "01t6F0000075f84QAA"
+                    },
+                    "Watercraft": {
+                        "CalculatedPriceData": {
+                            "ID": "0",
+                            "productKey": "01t6F0000075f7yQAA",
+                            "wcBoatLiftNet": 40,
+                            "wcFishingEquipNet": 0,
+                            "wcLiabilityNet": 24,
+                            "wcMedPaymentsNet": 10,
+                            "wcPersonalEffectsNet": 75,
+                            "wcPropertyNet": 3100,
+                            "wcTotalPremium": 3279,
+                            "wcTowingNet": 0,
+                            "wcTrailerNet": 20,
+                            "wcUninsuredNet": 10
+                        },
+                        "Price": 3279,
+                        "productId": "01t6F0000075f7oQAA",
+                        "wcAge": 127,
+                        "wcDistance": 44,
+                        "wcEngines": "1",
+                        "wcFuelType": "Other",
+                        "wcHorsepower": 44,
+                        "wcHullMaterial": "Fiberglass",
+                        "wcHullType": "Cruiser",
+                        "wcManufacturer": "55",
+                        "wcMfgYear": 1890,
+                        "wcModel": "55",
+                        "wcPropulsion": "Other",
+                        "wcSpeed": 55,
+                        "wcValue": 1222222,
+                        "wcVesselName": "44"
+                    },
+                    "Watercraft Liability": {
+                        "LIMIT2": "100000",
+                        "Price": 24,
+                        "productId": "01t6F0000075f88QAA"
+                    },
+                    "Watercraft Operator": {
+                        "AGE2": 46,
+                        "NAME2": "44 44 44",
+                        "opBirthdate": "1970-09-12T07:00:00.000Z",
+                        "opCGEducation": "None",
+                        "opCGUsage": "20",
+                        "opExperience": 12,
+                        "opHomeowner": "Homeowner",
+                        "opMaritalStatus": "Married",
+                        "opOwners": "2",
+                        "opPoints": 0,
+                        "productId": "01t6F0000075f7tQAA"
+                    },
+                    "Watercraft Physical Damage": {
+                        "LIMIT2": "25000",
+                        "Price": 3100,
+                        "covBenefit": "Agreed Value",
+                        "covDeductible": "3",
+                        "covType": "5",
+                        "productId": "01t6F0000075f83QAA"
+                    }
+                },
+                "productName": "Watercraft"
+            }
+        ],
+        "EffectiveDate": "2017-11-29T08:00:00.000Z",
+        "endDate": "2018-08-31T07:00:00.000Z",
+        "originalPremium": 2987,
+        "startDate": "2017-09-01T07:00:00.000Z"
+    },
+    "ContextId": "",
+    "PolicyId": "02i6F000003JlUS",
+    "id": "a1e6F0000031ciBQAQ",
+    "layout": "lightning",
+    "timeStamp": "2017-09-05T18:18:52.263Z",
+    "userId": "0056F0000077bTYQAY",
+    "userName": "%vlocity_namespace%@vlocity.com",
+    "userProfile": "System Administrator",
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "GetPolicyCoverages": 1905,
+        "OmniScriptSessionToken": "90726283-8745-47a6-9276-14725f420169",
+        "PrefillDateInformation": 563
+    }
+}

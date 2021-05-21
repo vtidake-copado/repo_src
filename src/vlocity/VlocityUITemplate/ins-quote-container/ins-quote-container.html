@@ -1,0 +1,25 @@
+<!-- <div class="slds-spinner_container vloc-spinner_container vloc-show-loader" ng-class="{'vloc-show-loader': !$root.isLoaded}"> -->
+<div class="slds-spinner_container vloc-spinner_container vloc-show-loader" ng-show="!$root.isLoaded && !$root.showProductSelection">
+    <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+        <div class="slds-spinner__dot-a"></div>
+        <div class="slds-spinner__dot-b"></div>
+    </div>
+</div>
+<div class="slds-notify_container" ng-show="$root.notification.active">
+    <div class="slds-notify slds-notify_alert slds-theme_alert-texture" role="alert" ng-class="{'slds-theme_success': $root.notification.type === 'success', 'slds-theme_error': $root.notification.type === 'error'}">
+        <button class="slds-button slds-button_icon-inverse slds-notify__close" ng-click="$root.notification.active = false">
+            <slds-button-svg-icon sprite="'utility'" icon="'close'" ></slds-button-svg-icon>
+            <span class="slds-assistive-text">Close</span>
+        </button>
+        <span class="slds-assistive-text">Info</span>
+        <h2 ng-bind-html="$root.notification.message"></h2>
+    </div>
+</div>
+<div class="vloc-quote-wrapper" ng-if="!$root.showProductSelection">
+    <vloc-layout layout-name="ins-quote-header" params-id="{{attrs.paramsId}}"></vloc-layout>
+    <vloc-layout layout-name="ins-quote-classes-and-plans" ctrl="InsQuoteClassAndPlansController" params-id="{{attrs.paramsId}}"></vloc-layout>
+    <!--<vloc-layout layout-name="KDEMO_plan_offerings" ctrl="kdemoCtrl"></vloc-layout> -->
+</div>
+<div ng-if="$root.showProductSelection">
+    <vloc-layout layout-name="ins-product-selection-container"></vloc-layout> 
+</div>

@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Represents education and certification achieved by a service provider such as Doctor of Medicine (MD) earned by a physician or a Doctor of Dental Medicine (DMD) earned by a dentist. This object can also be used to track required continuing education courses. Master-detail child object of a Provider Contact.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>vlocity_ins__AccreditationType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Accreditation Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>University</fullName>
+                    <default>false</default>
+                    <label>University</label>
+                </value>
+                <value>
+                    <fullName>Internship</fullName>
+                    <default>false</default>
+                    <label>Internship</label>
+                </value>
+                <value>
+                    <fullName>Fellowship</fullName>
+                    <default>false</default>
+                    <label>Fellowship</label>
+                </value>
+                <value>
+                    <fullName>Residency</fullName>
+                    <default>false</default>
+                    <label>Residency</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__AgencyName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Agency Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__CertificationNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Certification #</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ContactId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Provider Education</relationshipLabel>
+        <relationshipName>ProviderEducation</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DegreeThroughDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Degree Through</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__EducationType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Education Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ethics</fullName>
+                    <default>false</default>
+                    <label>Ethics</label>
+                </value>
+                <value>
+                    <fullName>Life Training</fullName>
+                    <default>false</default>
+                    <label>Life Training</label>
+                </value>
+                <value>
+                    <fullName>Life Insurance</fullName>
+                    <default>false</default>
+                    <label>Life Insurance</label>
+                </value>
+                <value>
+                    <fullName>Property Insurance</fullName>
+                    <default>false</default>
+                    <label>Property Insurance</label>
+                </value>
+                <value>
+                    <fullName>Auto Insurance</fullName>
+                    <default>false</default>
+                    <label>Auto Insurance</label>
+                </value>
+                <value>
+                    <fullName>Annuities</fullName>
+                    <default>false</default>
+                    <label>Annuities</label>
+                </value>
+                <value>
+                    <fullName>Business Insurance</fullName>
+                    <default>false</default>
+                    <label>Business Insurance</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__HoursApplied__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hours Applied</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__HoursNeededToRenew__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hours Needed to Renew</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__HoursRequired__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hours Required</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__InstitutionAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Institution Address</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__InstitutionName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Institution Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Jurisdiction__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Jurisdiction</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AK</fullName>
+                    <default>false</default>
+                    <label>AK</label>
+                </value>
+                <value>
+                    <fullName>AL</fullName>
+                    <default>false</default>
+                    <label>AL</label>
+                </value>
+                <value>
+                    <fullName>AR</fullName>
+                    <default>false</default>
+                    <label>AR</label>
+                </value>
+                <value>
+                    <fullName>AZ</fullName>
+                    <default>false</default>
+                    <label>AZ</label>
+                </value>
+                <value>
+                    <fullName>CA</fullName>
+                    <default>false</default>
+                    <label>CA</label>
+                </value>
+                <value>
+                    <fullName>CO</fullName>
+                    <default>false</default>
+                    <label>CO</label>
+                </value>
+                <value>
+                    <fullName>CT</fullName>
+                    <default>false</default>
+                    <label>CT</label>
+                </value>
+                <value>
+                    <fullName>DE</fullName>
+                    <default>false</default>
+                    <label>DE</label>
+                </value>
+                <value>
+                    <fullName>FL</fullName>
+                    <default>false</default>
+                    <label>FL</label>
+                </value>
+                <value>
+                    <fullName>GA</fullName>
+                    <default>false</default>
+                    <label>GA</label>
+                </value>
+                <value>
+                    <fullName>HI</fullName>
+                    <default>false</default>
+                    <label>HI</label>
+                </value>
+                <value>
+                    <fullName>IA</fullName>
+                    <default>false</default>
+                    <label>IA</label>
+                </value>
+                <value>
+                    <fullName>ID</fullName>
+                    <default>false</default>
+                    <label>ID</label>
+                </value>
+                <value>
+                    <fullName>IL</fullName>
+                    <default>false</default>
+                    <label>IL</label>
+                </value>
+                <value>
+                    <fullName>IN</fullName>
+                    <default>false</default>
+                    <label>IN</label>
+                </value>
+                <value>
+                    <fullName>KS</fullName>
+                    <default>false</default>
+                    <label>KS</label>
+                </value>
+                <value>
+                    <fullName>KY</fullName>
+                    <default>false</default>
+                    <label>KY</label>
+                </value>
+                <value>
+                    <fullName>LA</fullName>
+                    <default>false</default>
+                    <label>LA</label>
+                </value>
+                <value>
+                    <fullName>MA</fullName>
+                    <default>false</default>
+                    <label>MA</label>
+                </value>
+                <value>
+                    <fullName>MD</fullName>
+                    <default>false</default>
+                    <label>MD</label>
+                </value>
+                <value>
+                    <fullName>ME</fullName>
+                    <default>false</default>
+                    <label>ME</label>
+                </value>
+                <value>
+                    <fullName>MI</fullName>
+                    <default>false</default>
+                    <label>MI</label>
+                </value>
+                <value>
+                    <fullName>MN</fullName>
+                    <default>false</default>
+                    <label>MN</label>
+                </value>
+                <value>
+                    <fullName>MO</fullName>
+                    <default>false</default>
+                    <label>MO</label>
+                </value>
+                <value>
+                    <fullName>MS</fullName>
+                    <default>false</default>
+                    <label>MS</label>
+                </value>
+                <value>
+                    <fullName>MT</fullName>
+                    <default>false</default>
+                    <label>MT</label>
+                </value>
+                <value>
+                    <fullName>NC</fullName>
+                    <default>false</default>
+                    <label>NC</label>
+                </value>
+                <value>
+                    <fullName>ND</fullName>
+                    <default>false</default>
+                    <label>ND</label>
+                </value>
+                <value>
+                    <fullName>NE</fullName>
+                    <default>false</default>
+                    <label>NE</label>
+                </value>
+                <value>
+                    <fullName>NH</fullName>
+                    <default>false</default>
+                    <label>NH</label>
+                </value>
+                <value>
+                    <fullName>NJ</fullName>
+                    <default>false</default>
+                    <label>NJ</label>
+                </value>
+                <value>
+                    <fullName>NM</fullName>
+                    <default>false</default>
+                    <label>NM</label>
+                </value>
+                <value>
+                    <fullName>NV</fullName>
+                    <default>false</default>
+                    <label>NV</label>
+                </value>
+                <value>
+                    <fullName>NY</fullName>
+                    <default>false</default>
+                    <label>NY</label>
+                </value>
+                <value>
+                    <fullName>OH</fullName>
+                    <default>false</default>
+                    <label>OH</label>
+                </value>
+                <value>
+                    <fullName>OK</fullName>
+                    <default>false</default>
+                    <label>OK</label>
+                </value>
+                <value>
+                    <fullName>OR</fullName>
+                    <default>false</default>
+                    <label>OR</label>
+                </value>
+                <value>
+                    <fullName>PA</fullName>
+                    <default>false</default>
+                    <label>PA</label>
+                </value>
+                <value>
+                    <fullName>RI</fullName>
+                    <default>false</default>
+                    <label>RI</label>
+                </value>
+                <value>
+                    <fullName>SC</fullName>
+                    <default>false</default>
+                    <label>SC</label>
+                </value>
+                <value>
+                    <fullName>SD</fullName>
+                    <default>false</default>
+                    <label>SD</label>
+                </value>
+                <value>
+                    <fullName>TN</fullName>
+                    <default>false</default>
+                    <label>TN</label>
+                </value>
+                <value>
+                    <fullName>TX</fullName>
+                    <default>false</default>
+                    <label>TX</label>
+                </value>
+                <value>
+                    <fullName>UT</fullName>
+                    <default>false</default>
+                    <label>UT</label>
+                </value>
+                <value>
+                    <fullName>VA</fullName>
+                    <default>false</default>
+                    <label>VA</label>
+                </value>
+                <value>
+                    <fullName>VT</fullName>
+                    <default>false</default>
+                    <label>VT</label>
+                </value>
+                <value>
+                    <fullName>WA</fullName>
+                    <default>false</default>
+                    <label>WA</label>
+                </value>
+                <value>
+                    <fullName>WI</fullName>
+                    <default>false</default>
+                    <label>WI</label>
+                </value>
+                <value>
+                    <fullName>WV</fullName>
+                    <default>false</default>
+                    <label>WV</label>
+                </value>
+                <value>
+                    <fullName>WY</fullName>
+                    <default>false</default>
+                    <label>WY</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ProgramCompletedDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Program Completed Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ProgramName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Program Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ProgramStartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Program Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SpecialtyType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Specialty Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Adult Intensivist</fullName>
+                    <default>false</default>
+                    <label>Adult Intensivist</label>
+                </value>
+                <value>
+                    <fullName>Allergy</fullName>
+                    <default>false</default>
+                    <label>Allergy</label>
+                </value>
+                <value>
+                    <fullName>Anesthesia</fullName>
+                    <default>false</default>
+                    <label>Anesthesia</label>
+                </value>
+                <value>
+                    <fullName>Bariatric Medicine / Surgery</fullName>
+                    <default>false</default>
+                    <label>Bariatric Medicine / Surgery</label>
+                </value>
+                <value>
+                    <fullName>Burn / Trauma</fullName>
+                    <default>false</default>
+                    <label>Burn / Trauma</label>
+                </value>
+                <value>
+                    <fullName>Cardiac Catheterization</fullName>
+                    <default>false</default>
+                    <label>Cardiac Catheterization</label>
+                </value>
+                <value>
+                    <fullName>Cardiology</fullName>
+                    <default>false</default>
+                    <label>Cardiology</label>
+                </value>
+                <value>
+                    <fullName>Cardiovascular Surgery</fullName>
+                    <default>false</default>
+                    <label>Cardiovascular Surgery</label>
+                </value>
+                <value>
+                    <fullName>Colorectal Surgery</fullName>
+                    <default>false</default>
+                    <label>Colorectal Surgery</label>
+                </value>
+                <value>
+                    <fullName>Dentistry</fullName>
+                    <default>false</default>
+                    <label>Dentistry</label>
+                </value>
+                <value>
+                    <fullName>Dermatology</fullName>
+                    <default>false</default>
+                    <label>Dermatology</label>
+                </value>
+                <value>
+                    <fullName>Electrophysiology</fullName>
+                    <default>false</default>
+                    <label>Electrophysiology</label>
+                </value>
+                <value>
+                    <fullName>Emergency Medicine</fullName>
+                    <default>false</default>
+                    <label>Emergency Medicine</label>
+                </value>
+                <value>
+                    <fullName>Endocrinology</fullName>
+                    <default>false</default>
+                    <label>Endocrinology</label>
+                </value>
+                <value>
+                    <fullName>Family Practice</fullName>
+                    <default>false</default>
+                    <label>Family Practice</label>
+                </value>
+                <value>
+                    <fullName>Gastroenterology</fullName>
+                    <default>false</default>
+                    <label>Gastroenterology</label>
+                </value>
+                <value>
+                    <fullName>General Surgery</fullName>
+                    <default>false</default>
+                    <label>General Surgery</label>
+                </value>
+                <value>
+                    <fullName>Geriatrics</fullName>
+                    <default>false</default>
+                    <label>Geriatrics</label>
+                </value>
+                <value>
+                    <fullName>Gynecologic Oncology</fullName>
+                    <default>false</default>
+                    <label>Gynecologic Oncology</label>
+                </value>
+                <value>
+                    <fullName>Hematology Oncology</fullName>
+                    <default>false</default>
+                    <label>Hematology Oncology</label>
+                </value>
+                <value>
+                    <fullName>Hepatobiliary</fullName>
+                    <default>false</default>
+                    <label>Hepatobiliary</label>
+                </value>
+                <value>
+                    <fullName>Hospitalist</fullName>
+                    <default>false</default>
+                    <label>Hospitalist</label>
+                </value>
+                <value>
+                    <fullName>Infectious Disease</fullName>
+                    <default>false</default>
+                    <label>Infectious Disease</label>
+                </value>
+                <value>
+                    <fullName>Internal Medicine</fullName>
+                    <default>false</default>
+                    <label>Internal Medicine</label>
+                </value>
+                <value>
+                    <fullName>Interventional Radiology</fullName>
+                    <default>false</default>
+                    <label>Interventional Radiology</label>
+                </value>
+                <value>
+                    <fullName>Medical Genetics</fullName>
+                    <default>false</default>
+                    <label>Medical Genetics</label>
+                </value>
+                <value>
+                    <fullName>Neonatology</fullName>
+                    <default>false</default>
+                    <label>Neonatology</label>
+                </value>
+                <value>
+                    <fullName>Nephrology</fullName>
+                    <default>false</default>
+                    <label>Nephrology</label>
+                </value>
+                <value>
+                    <fullName>Neuroradiology</fullName>
+                    <default>false</default>
+                    <label>Neuroradiology</label>
+                </value>
+                <value>
+                    <fullName>Neurology</fullName>
+                    <default>false</default>
+                    <label>Neurology</label>
+                </value>
+                <value>
+                    <fullName>Neurosurgery</fullName>
+                    <default>false</default>
+                    <label>Neurosurgery</label>
+                </value>
+                <value>
+                    <fullName>Nuclear Medicine</fullName>
+                    <default>false</default>
+                    <label>Nuclear Medicine</label>
+                </value>
+                <value>
+                    <fullName>Obstetrics &amp; Gynecology</fullName>
+                    <default>false</default>
+                    <label>Obstetrics &amp; Gynecology</label>
+                </value>
+                <value>
+                    <fullName>Occupational Medicine</fullName>
+                    <default>false</default>
+                    <label>Occupational Medicine</label>
+                </value>
+                <value>
+                    <fullName>Ophthalmology</fullName>
+                    <default>false</default>
+                    <label>Ophthalmology</label>
+                </value>
+                <value>
+                    <fullName>Optometry</fullName>
+                    <default>false</default>
+                    <label>Optometry</label>
+                </value>
+                <value>
+                    <fullName>Oral Surgery</fullName>
+                    <default>false</default>
+                    <label>Oral Surgery</label>
+                </value>
+                <value>
+                    <fullName>Orthopedics</fullName>
+                    <default>false</default>
+                    <label>Orthopedics</label>
+                </value>
+                <value>
+                    <fullName>Otolaryngology / Head &amp; Neck Surgery</fullName>
+                    <default>false</default>
+                    <label>Otolaryngology / Head &amp; Neck Surgery</label>
+                </value>
+                <value>
+                    <fullName>Pain Management</fullName>
+                    <default>false</default>
+                    <label>Pain Management</label>
+                </value>
+                <value>
+                    <fullName>Palliative Care</fullName>
+                    <default>false</default>
+                    <label>Palliative Care</label>
+                </value>
+                <value>
+                    <fullName>Pathology Surgical &amp; Anatomic</fullName>
+                    <default>false</default>
+                    <label>Pathology Surgical &amp; Anatomic</label>
+                </value>
+                <value>
+                    <fullName>Pediatric Intensivist</fullName>
+                    <default>false</default>
+                    <label>Pediatric Intensivist</label>
+                </value>
+                <value>
+                    <fullName>Pediatrics</fullName>
+                    <default>false</default>
+                    <label>Pediatrics</label>
+                </value>
+                <value>
+                    <fullName>Pediatric Surgery</fullName>
+                    <default>false</default>
+                    <label>Pediatric Surgery</label>
+                </value>
+                <value>
+                    <fullName>Plastic &amp; Reconstructive Surgery</fullName>
+                    <default>false</default>
+                    <label>Plastic &amp; Reconstructive Surgery</label>
+                </value>
+                <value>
+                    <fullName>Podiatric Surgery</fullName>
+                    <default>false</default>
+                    <label>Podiatric Surgery</label>
+                </value>
+                <value>
+                    <fullName>Psychiatry</fullName>
+                    <default>false</default>
+                    <label>Psychiatry</label>
+                </value>
+                <value>
+                    <fullName>Pulmonary Medicine</fullName>
+                    <default>false</default>
+                    <label>Pulmonary Medicine</label>
+                </value>
+                <value>
+                    <fullName>Radiation Oncology</fullName>
+                    <default>false</default>
+                    <label>Radiation Oncology</label>
+                </value>
+                <value>
+                    <fullName>Radiology</fullName>
+                    <default>false</default>
+                    <label>Radiology</label>
+                </value>
+                <value>
+                    <fullName>Rheumatology</fullName>
+                    <default>false</default>
+                    <label>Rheumatology</label>
+                </value>
+                <value>
+                    <fullName>Surgical Oncology</fullName>
+                    <default>false</default>
+                    <label>Surgical Oncology</label>
+                </value>
+                <value>
+                    <fullName>Thoracic Surgery</fullName>
+                    <default>false</default>
+                    <label>Thoracic Surgery</label>
+                </value>
+                <value>
+                    <fullName>Transplant Surgery</fullName>
+                    <default>false</default>
+                    <label>Transplant Surgery</label>
+                </value>
+                <value>
+                    <fullName>Urology</fullName>
+                    <default>false</default>
+                    <label>Urology</label>
+                </value>
+                <value>
+                    <fullName>Vascular Surgery</fullName>
+                    <default>false</default>
+                    <label>Vascular Surgery</label>
+                </value>
+                <value>
+                    <fullName>Wound Care</fullName>
+                    <default>false</default>
+                    <label>Wound Care</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Expired</fullName>
+                    <default>false</default>
+                    <label>Expired</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Provider Education</label>
+    <nameField>
+        <label>Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Provider Education</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

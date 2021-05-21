@@ -1,0 +1,123 @@
+[
+    {
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "SUM",
+                "text": "SUM"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "SGMedicalQHPRates__QHPRate",
+                "dataType": "Number",
+                "text": "QHPRate ( SGMedicalQHPRates )",
+                "userDefined": false
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationFormula__c": "SUM ( SGMedicalQHPRates__QHPRate )",
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SGMedicalRatingAge",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingAge",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SGMedicalRatingAge",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingAge",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__Function__c": "Aggregation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "GroupPremium",
+            "dataType": "Currency",
+            "name": "GroupPremium"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"GroupPremium\":\"GroupPremium\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "%vlocity_namespace%__TaskType__c": "Aggregation",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "SGMedicalQHPRates",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/SGMedicalQHPRates",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SGMedicalRatingAge",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingAge",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SGMedicalRatingAge",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingAge",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "b62071",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "ProductCode"
+            },
+            {
+                "columnKey": "9b9731",
+                "dataType": "Number Range",
+                "label": null,
+                "listValues": "20,30,40,50",
+                "name": "Age"
+            },
+            {
+                "columnKey": "19e23a",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "Gender"
+            },
+            {
+                "columnKey": "302cf3",
+                "dataType": "Boolean",
+                "label": null,
+                "listValues": null,
+                "name": "Smoker"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "71c4ac",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "QHPRate"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"QHPRate\":\"SGMedicalQHPRates__QHPRate\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

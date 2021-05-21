@@ -1,0 +1,32 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "years:name",
+        "%vlocity_namespace%__DomainObjectFieldType__c": "String",
+        "%vlocity_namespace%__GlobalKey__c": "1a3f46ef-93f8-e104-51a0-a94e4572db94",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "items:yearId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBBGetYearsResponseCustom172",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetYearsResponse",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "years:value",
+        "%vlocity_namespace%__DomainObjectFieldType__c": "String",
+        "%vlocity_namespace%__GlobalKey__c": "0c592845-da44-76ad-e5f2-210051585a0d",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "items:yearId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBBGetYearsResponseCustom2973",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetYearsResponse",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

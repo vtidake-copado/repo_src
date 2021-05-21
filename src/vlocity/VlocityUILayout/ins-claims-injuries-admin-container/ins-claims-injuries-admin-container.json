@@ -1,0 +1,34 @@
+{
+    "Cards": [
+        "ins-claims-admin-injuries-association-card"
+    ],
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "01t6A000000WBeiQAG"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "body": "",
+            "inputMap": {
+                "productId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceProductAdminHandler"
+            },
+            "remoteClass": "InsuranceProductAdminHandler",
+            "remoteMethod": "getAssociatedClaimInjuries",
+            "remoteNSPrefix": "%vlocity_namespace%"
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-insured-items-container"
+        }
+    },
+    "workspace": [
+        "ins-claims-admin-injuries-association-card/vlocityDev/null/1517509673394"
+    ]
+}

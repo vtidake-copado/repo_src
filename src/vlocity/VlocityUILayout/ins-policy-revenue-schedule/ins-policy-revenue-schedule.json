@@ -1,0 +1,10 @@
+{
+    "Cards": [
+    ],
+    "previewType": "designTime",
+    "templates": {
+        "0": {
+            "templateUrl": "ins-policy-revenue-schedule"
+        }
+    }
+}

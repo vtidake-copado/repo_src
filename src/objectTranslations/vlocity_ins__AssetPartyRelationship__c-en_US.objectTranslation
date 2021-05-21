@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Held Product --></label>
+        <name>vlocity_ins__AssetId__c</name>
+        <relationshipLabel><!-- Held Product Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attribute Selected Values --></label>
+        <name>vlocity_ins__AttributeSelectedValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beneficiary Percentage --></label>
+        <name>vlocity_ins__BeneficiaryPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commission Percentage --></label>
+        <name>vlocity_ins__CommissionPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Amount --></label>
+        <name>vlocity_ins__FeeAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image &amp; Icon --></label>
+        <name>vlocity_ins__ImageId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insured Party Number --></label>
+        <name>vlocity_ins__InsuredPartyNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insured Party Spec Id --></label>
+        <name>vlocity_ins__InsuredPartySpecId__c</name>
+        <relationshipLabel><!-- Held Product Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Membership Number --></label>
+        <name>vlocity_ins__MembershipNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Id --></label>
+        <name>vlocity_ins__PartyAccountId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Id --></label>
+        <name>vlocity_ins__PartyContactId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>vlocity_ins__PartyId__c</name>
+        <relationshipLabel><!-- Held Product Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>vlocity_ins__PartyLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Type --></label>
+        <name>vlocity_ins__PartyRelationshipTypeId__c</name>
+        <relationshipLabel><!-- Held Product Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Premium --></label>
+        <name>vlocity_ins__PremiumAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prorated Premium --></label>
+        <name>vlocity_ins__ProRatedPremiumAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Production Code --></label>
+        <name>vlocity_ins__ProductionCodeId__c</name>
+        <relationshipLabel><!-- Held Product Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Prorated Fee Amount --></label>
+        <name>vlocity_ins__ProratedFeeAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prorated Tax Amount --></label>
+        <name>vlocity_ins__ProratedTaxAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Record Type Name --></label>
+        <name>vlocity_ins__RecordTypeName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship to Insured --></label>
+        <name>vlocity_ins__RelationshipToInsured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Amount --></label>
+        <name>vlocity_ins__TaxAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>vlocity_ins__TotalAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Prorated Amount --></label>
+        <name>vlocity_ins__TotalProratedAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Sum Insured --></label>
+        <name>vlocity_ins__TotalSumInsured__c</name>
+    </fields>
+</CustomObjectTranslation>

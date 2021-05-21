@@ -1,0 +1,32 @@
+[
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": "",
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "SG Dental Plan - Enhanced",
+        "Pricebook2.Name": "Standard Price Book",
+        "Pricebook2Id": {
+            "Name": "Standard Price Book",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "3130c5ba-2031-9f66-43d2-dc9e2065e80e",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "3130c5ba-2031-9f66-43d2-dc9e2065e80e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/3130c5ba-2031-9f66-43d2-dc9e2065e80e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "SGRP-DNT-EH",
+        "UnitPrice": 1,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/3130c5ba-2031-9f66-43d2-dc9e2065e80e"
+    }
+]

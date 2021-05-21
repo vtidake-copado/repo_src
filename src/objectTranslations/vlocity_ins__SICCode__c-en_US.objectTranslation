@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Category --></label>
+        <name>vlocity_ins__Category__c</name>
+        <picklistValues>
+            <masterLabel>0100-0999	Agriculture, Forestry and Fishing</masterLabel>
+            <translation><!-- 0100-0999	Agriculture, Forestry and Fishing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1000-1499	Mining</masterLabel>
+            <translation><!-- 1000-1499	Mining --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1500-1799	Construction</masterLabel>
+            <translation><!-- 1500-1799	Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1800-1999	not used</masterLabel>
+            <translation><!-- 1800-1999	not used --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2000-3999	Manufacturing</masterLabel>
+            <translation><!-- 2000-3999	Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4000-4999	Transportation, Communications, Electric, Gas and Sanitary service</masterLabel>
+            <translation><!-- 4000-4999	Transportation, Communications, Electric, Gas and Sanitary service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5000-5199	Wholesale Trade</masterLabel>
+            <translation><!-- 5000-5199	Wholesale Trade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5200-5999	Retail Trade</masterLabel>
+            <translation><!-- 5200-5999	Retail Trade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6000-6799	Finance, Insurance and Real Estate</masterLabel>
+            <translation><!-- 6000-6799	Finance, Insurance and Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7000-8999	Services</masterLabel>
+            <translation><!-- 7000-8999	Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9100-9729	Public Administration</masterLabel>
+            <translation><!-- 9100-9729	Public Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9900-9999	Nonclassifiable</masterLabel>
+            <translation><!-- 9900-9999	Nonclassifiable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Display Name --></label>
+        <name>vlocity_ins__DisplayName__c</name>
+    </fields>
+    <fields>
+        <label><!-- SIC Code --></label>
+        <name>vlocity_ins__SICCode__c</name>
+    </fields>
+</CustomObjectTranslation>

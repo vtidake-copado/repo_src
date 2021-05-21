@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Add Date --></label>
+        <name>vlocity_ins__AddDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Story --></label>
+        <name>vlocity_ins__EndStory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Id --></label>
+        <name>vlocity_ins__ObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>vlocity_ins__ObjectLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- ObjectType --></label>
+        <name>vlocity_ins__ObjectType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profiling Segment Category --></label>
+        <name>vlocity_ins__ParentSegmentCategory__c</name>
+        <relationshipLabel><!-- Deprecated Profiling Segment Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Profiling Segment --></label>
+        <name>vlocity_ins__ProfSegment__c</name>
+        <relationshipLabel><!-- Deprecated Profiling Segment Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remove Date --></label>
+        <name>vlocity_ins__RemoveDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- RemovedFlag --></label>
+        <name>vlocity_ins__RemovedFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment Data --></label>
+        <name>vlocity_ins__SegmentData__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Story --></label>
+        <name>vlocity_ins__StartStory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value In Number --></label>
+        <name>vlocity_ins__ValueInNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>vlocity_ins__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

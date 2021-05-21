@@ -1,0 +1,13 @@
+.via-slds {
+    .vloc-link {
+        line-height: 1;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "AccountId": "001f40000040s51AAA",
+    "AddressChange": {
+        "BillingShippingSame": null,
+        "BlockAcctInfo": {
+            "AccountFax": "(212) 154-6452",
+            "AccountName": "Acme",
+            "AccountPhone": "(212) 154-6450",
+            "AcctEmployeeCount": 680
+        },
+        "BlockPriContactInfo": {
+            "PriContactEmail": null,
+            "PriContactName": null
+        },
+        "ChkBxChngPriContact": true,
+        "MatchBillingShipping": false,
+        "MatchShippingBilling": false,
+        "TypeAheadBillingAddress-Block": null,
+        "TypeAheadPriContact-Block": {
+            "TypeAheadPriContact": "Leanne Tomlin"
+        },
+        "TypeAheadShippingAddress-Block": null,
+        "UpdateBillingAddress": false,
+        "UpdateShippingAddress": false
+    },
+    "BillingCity": "New York",
+    "BillingCountry": "United States",
+    "BillingState": "NY",
+    "BillingStreet": "400 Main Street",
+    "BillingZip": "10044",
+    "ContextId": "001f40000040s51",
+    "ShippingCity": "New York",
+    "ShippingCountry": "United States",
+    "ShippingState": "NY",
+    "ShippingStreet": "400 Main Street",
+    "ShippingZip": "10044",
+    "TypeAheadPriContact-Block": {
+        "AccountId": "001f40000040s51AAA",
+        "Birthdate": "1985-02-03",
+        "ContactAccountId": "001f40000040s51AAA",
+        "ContactId": "003f4000002csq2AAA",
+        "Email": "ltomlin@acme.com",
+        "FirstName": "Leanne",
+        "LastName": "Tomlin",
+        "MobilePhone": "(212) 177-6630",
+        "Phone": "(212) 189-8979",
+        "PostalCode": "31349",
+        "SSN": "371003008"
+    },
+    "id": "a0gf4000000YcOCAA0",
+    "layout": "lightning",
+    "timeStamp": "2017-07-22T09:11:24.033Z",
+    "userId": "005f4000000Z92VAAS",
+    "userName": "student710@ins.edu",
+    "userProfile": "System Administrator",
+    "vlcPersistentComponent": {
+    }
+}

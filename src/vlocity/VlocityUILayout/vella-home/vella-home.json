@@ -1,0 +1,52 @@
+{
+    "Cards": [
+        "vella-in-force-policies",
+        "vella-insurable-items",
+        "vella-discovery-questions",
+        "VlocityIntelligentInterviews"
+    ],
+    "dataSource": {
+        "contextVariables": [
+        ],
+        "type": null,
+        "value": {
+            "query": ""
+        }
+    },
+    "sessionVars": [
+    ],
+    "templates": {
+        "0": {
+            "templateUrl": "vella-home-container"
+        }
+    },
+    "zones": {
+        "bottom": {
+            "cardNames": [
+                "VlocityIntelligentInterviews"
+            ],
+            "label": "Bottom",
+            "layouts": [
+            ],
+            "name": "bottom"
+        },
+        "middle": {
+            "cardNames": [
+                "vella-insurable-items"
+            ],
+            "label": "Middle",
+            "layouts": [
+            ],
+            "name": "middle"
+        },
+        "top": {
+            "cardNames": [
+                "vella-in-force-policies"
+            ],
+            "label": "Top",
+            "layouts": [
+            ],
+            "name": "top"
+        }
+    }
+}

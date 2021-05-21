@@ -1,0 +1,49 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "02i41000004S9v7AAC"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "body": "{}",
+            "inputMap": {
+            },
+            "optionsMap": {
+                "PolicyId": "{{params.id}}",
+                "vlcClass": "%vlocity_namespace%.UnboundInsuredItemHandler"
+            },
+            "remoteClass": "UnboundInsuredItemHandler",
+            "remoteMethod": "getUnboundInsuredItemForPolicy",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": "records"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankCardState": false,
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "filter": "$scope.data.status === 'active'",
+            "name": "vella-swipe-item",
+            "templateUrl": "vella-swipe"
+        }
+    ],
+    "title": "Vella Swipe Items Policy"
+}

@@ -1,0 +1,764 @@
+{
+    "dataSource": {
+        "contextVariables": [
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "body": "{}",
+            "inputMap": {
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.EnrollmentHandler"
+            },
+            "query": "SELECT LastModifiedDate,Name, %vlocity_namespace%__MarketSegment__c ,QuoteNumber,Status,TotalPrice FROM Quote",
+            "remoteClass": "EnrollmentHandler",
+            "remoteMethod": "getNextYearPlans",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": "records"
+        }
+    },
+    "filter": {
+    },
+    "sessionVars": [
+        {
+            "name": "enrollmentType",
+            "val": "future"
+        }
+    ],
+    "states": [
+        {
+            "blankStateCheck": false,
+            "collapse": true,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "active"
+                    },
+                    {
+                        "field": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                        "logicalOperator": "&&",
+                        "operator": "!=",
+                        "type": "custom",
+                        "value": "Life"
+                    },
+                    {
+                        "field": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                        "logicalOperator": "&&",
+                        "operator": "!=",
+                        "type": "custom",
+                        "value": "Long Term Care"
+                    },
+                    {
+                        "field": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                        "logicalOperator": "&&",
+                        "operator": "!=",
+                        "type": "custom",
+                        "value": "Vision"
+                    },
+                    {
+                        "field": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                        "logicalOperator": "&&",
+                        "operator": "!=",
+                        "type": "custom",
+                        "value": "Medical"
+                    },
+                    {
+                        "field": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                        "logicalOperator": "&&",
+                        "operator": "!=",
+                        "type": "custom",
+                        "value": "Dental"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "editMode": false,
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Type",
+                    "name": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Monthly Premium",
+                    "name": "['%vlocity_namespace%__MonthlyPremium__c']['fieldValue']",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Total Premium",
+                    "name": "['%vlocity_namespace%__TotalPremiumForTerm__c']['fieldValue']",
+                    "type": "currency"
+                }
+            ],
+            "filter": "$scope.data.status === 'active' && $scope.obj['Product2.%vlocity_namespace%__Type__c']['fieldValue'] != 'Life' && $scope.obj['Product2.%vlocity_namespace%__Type__c']['fieldValue'] != 'Long Term Care' && $scope.obj['Product2.%vlocity_namespace%__Type__c']['fieldValue'] != 'Vision' && $scope.obj['Product2.%vlocity_namespace%__Type__c']['fieldValue'] != 'Medical' && $scope.obj['Product2.%vlocity_namespace%__Type__c']['fieldValue'] != 'Dental'",
+            "flyout": {
+                "layout": null
+            },
+            "name": "Current Policies - Default",
+            "sObjectType": null,
+            "templateUrl": "ins-enrollment-home-card"
+        },
+        {
+            "blankStateCheck": false,
+            "collapse": true,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "active"
+                    },
+                    {
+                        "field": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                        "logicalOperator": "&&",
+                        "operator": "==",
+                        "type": "custom",
+                        "value": "Life"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "editMode": false,
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Type",
+                    "name": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Total Premium",
+                    "name": "['%vlocity_namespace%__TotalPremiumForTerm__c']['fieldValue']",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Monthly Premium",
+                    "name": "['%vlocity_namespace%__MonthlyPremium__c']['fieldValue']",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Insured Amount",
+                    "name": "Insured Amount",
+                    "type": "currency"
+                }
+            ],
+            "filter": "$scope.data.status === 'active' && $scope.obj['Product2.%vlocity_namespace%__Type__c']['fieldValue'] == 'Life'",
+            "flyout": {
+                "layout": null
+            },
+            "name": "Current Policies - Life",
+            "sObjectType": null,
+            "templateUrl": "ins-enrollment-home-card"
+        },
+        {
+            "blankStateCheck": false,
+            "collapse": true,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "active"
+                    },
+                    {
+                        "field": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                        "logicalOperator": "&&",
+                        "operator": "==",
+                        "type": "custom",
+                        "value": "Long Term Care"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "editMode": false,
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Type",
+                    "name": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Total Premium",
+                    "name": "['%vlocity_namespace%__TotalPremiumForTerm__c']['fieldValue']",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Monthly Premium",
+                    "name": "['%vlocity_namespace%__MonthlyPremium__c']['fieldValue']",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Daily Benefit Amount",
+                    "name": "Daily Benefit Amount",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Benefit Period",
+                    "name": "Benefit Period",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Maximum Lifetime Benefit",
+                    "name": "Maximum Lifetime Benefit",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Waiting Period",
+                    "name": "Waiting Period",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Hospice Care",
+                    "name": "Hospice Care",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Respite Cate",
+                    "name": "Respite Cate",
+                    "type": "string"
+                }
+            ],
+            "filter": "$scope.data.status === 'active' && $scope.obj['Product2.%vlocity_namespace%__Type__c']['fieldValue'] == 'Long Term Care'",
+            "flyout": {
+                "layout": null
+            },
+            "name": "Current Policies - \tLong Term Care",
+            "sObjectType": null,
+            "templateUrl": "ins-enrollment-home-card"
+        },
+        {
+            "blankStateCheck": false,
+            "collapse": true,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "active"
+                    },
+                    {
+                        "field": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                        "logicalOperator": "&&",
+                        "operator": "==",
+                        "type": "custom",
+                        "value": "Vision"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "editMode": false,
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Type",
+                    "name": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Total Premium",
+                    "name": "['%vlocity_namespace%__TotalPremiumForTerm__c']['fieldValue']",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Monthly Premium",
+                    "name": "['%vlocity_namespace%__MonthlyPremium__c']['fieldValue']",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Exam",
+                    "name": "Exam",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Glasses",
+                    "name": "Glasses",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Contacts",
+                    "name": "Contacts",
+                    "type": "string"
+                }
+            ],
+            "filter": "$scope.data.status === 'active' && $scope.obj['Product2.%vlocity_namespace%__Type__c']['fieldValue'] == 'Vision'",
+            "flyout": {
+                "layout": null
+            },
+            "name": "Current Policies - \tVision",
+            "sObjectType": null,
+            "templateUrl": "ins-enrollment-home-card"
+        },
+        {
+            "blankStateCheck": false,
+            "collapse": true,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "active"
+                    },
+                    {
+                        "field": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                        "logicalOperator": "&&",
+                        "operator": "==",
+                        "type": "custom",
+                        "value": "Medical"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "editMode": false,
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Type",
+                    "name": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Total Premium",
+                    "name": "['%vlocity_namespace%__TotalPremiumForTerm__c']['fieldValue']",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Monthly Premium",
+                    "name": "['%vlocity_namespace%__MonthlyPremium__c']['fieldValue']",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Individual Deductible",
+                    "name": "Individual Deductible",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Family Deductible",
+                    "name": "Family Deductible",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Individual Out of Pocket Maximum",
+                    "name": "Individual Out of Pocket Maximum",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Family Out of Pocket Maximum",
+                    "name": "Family Out of Pocket Maximum",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Doctor’s Office Visit Copayment",
+                    "name": "Doctor’s Office Visit Copayment",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Emergency Room Copayment",
+                    "name": "Emergency Room Copayment",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Prescription Drug Deductible",
+                    "name": "Prescription Drug Deductible",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Prescription Drug Out of Pocket Maximum",
+                    "name": "Prescription Drug Out of Pocket Maximum",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Preventive Care",
+                    "name": "Preventive Care",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Laboratory Services",
+                    "name": "Laboratory Services",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Outpatient Hospital",
+                    "name": "Outpatient Hospital",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Outpatient Surgery",
+                    "name": "Outpatient Surgery",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Rehabilitation and Habilitation",
+                    "name": "Rehabilitation and Habilitation",
+                    "type": "string"
+                }
+            ],
+            "filter": "$scope.data.status === 'active' && $scope.obj['Product2.%vlocity_namespace%__Type__c']['fieldValue'] == 'Medical'",
+            "flyout": {
+                "layout": null
+            },
+            "name": "Current Policies - \tMedical",
+            "sObjectType": null,
+            "templateUrl": "ins-enrollment-home-card"
+        },
+        {
+            "blankStateCheck": false,
+            "collapse": true,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "active"
+                    },
+                    {
+                        "field": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                        "logicalOperator": "&&",
+                        "operator": "==",
+                        "type": "custom",
+                        "value": "Dental"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "editMode": false,
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Type",
+                    "name": "['Product2.%vlocity_namespace%__Type__c']['fieldValue']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Total Premium",
+                    "name": "['%vlocity_namespace%__TotalPremiumForTerm__c']['fieldValue']",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Monthly Premium",
+                    "name": "['%vlocity_namespace%__MonthlyPremium__c']['fieldValue']",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Deductible",
+                    "name": "Deductible",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Preventive Care",
+                    "name": "Preventive Care",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Routine/Basic Care",
+                    "name": "Routine/Basic Care",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Major Care",
+                    "name": "Major Care",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Waiting Period",
+                    "name": "Waiting Period",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Plan Year Maximum",
+                    "name": "Plan Year Maximum",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Out of Pocket Maximum",
+                    "name": "Out of Pocket Maximum",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Exams(instead of preventive)",
+                    "name": "Exams(instead of preventive)",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "X-Rays(instead of preventive)",
+                    "name": "X-Rays(instead of preventive)",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Cleanings(instead of preventive)",
+                    "name": "Cleanings(instead of preventive)",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Fillings(routine/basic)",
+                    "name": "Fillings(routine/basic)",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Periodontal(major)",
+                    "name": "Periodontal(major)",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Root Canals(major)",
+                    "name": "Root Canals(major)",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Crowns(major)",
+                    "name": "Crowns(major)",
+                    "type": "string"
+                }
+            ],
+            "filter": "$scope.data.status === 'active' && $scope.obj['Product2.%vlocity_namespace%__Type__c']['fieldValue'] == 'Dental'",
+            "flyout": {
+                "layout": null
+            },
+            "name": "Current Policies - \tDental",
+            "sObjectType": null,
+            "templateUrl": "ins-enrollment-home-card"
+        }
+    ],
+    "title": "Future Enrollment"
+}

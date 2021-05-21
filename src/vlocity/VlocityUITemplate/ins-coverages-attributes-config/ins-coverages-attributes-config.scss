@@ -1,0 +1,216 @@
+@import "ins-product-attributes-variables";
+
+.via-slds{
+
+    .slds-radio_faux{
+        &.checked:after,{
+        width: .5rem;
+        height: .5rem;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%,-50%,0);
+        border-radius: 50%;
+        background: #1589ee;
+        }
+    }
+
+    .vloc-valid-values{
+        &.slds-box{
+            padding: 0;
+            margin-bottom: 10px;
+        }
+    }
+
+     .vloc-attrs-picklist-label{
+                margin: 0;
+                &.vloc-attrs-add-new {
+                    line-height: .5;
+                }
+            }
+            .vloc-attrs-picklist-values{
+
+               .vloc-ins-rules-box{
+                   display: none;
+
+                    &.showRules{
+                        display: block;
+                    }
+                }
+                .vloc-rules-icon{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    &.has-rules{
+                        color: $primary-light;
+                        fill: $primary-light;
+                    }
+                    
+                }
+                .vloc-attrs-delete{
+                    position: relative;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .vloc-delete-icon{
+                    position: absolute;
+                    right: 5px;
+                }
+            }
+
+
+    .vloc-attr-config-grid {
+        background: white;
+    .vloc-attr-config-row {
+        border-bottom: 1px solid $cards-border-gray;
+        position: relative;
+        min-height: 5rem;
+
+        &.vloc-attr-config-row_description{
+            border-top: 1px solid $cards-border-gray;
+        }
+
+        &.vloc-attr-config-row_value{
+            border-bottom: none;
+        }
+
+        .vloc-attrs-select{
+            margin-bottom: .25rem;
+        }
+
+        &.configurable{
+            width: 100%;
+        }
+
+        .vloc-attrs-value-decoder {
+            position: absolute;
+            top: 1rem;
+            width: 50%;
+            right: -.5rem;
+        }
+
+        .vloc-attrs-input{
+            border: none;
+            border-radius: 0;
+            padding: 0;
+            line-height: 2.7rem;
+            background: none;
+            &.disabled{
+                background: none;
+                color: $neutral-dark;
+            }
+            &.vloc-attrs-picklist-input{
+                line-height: 1.875rem;
+            }
+        }
+
+        .vloc-attrs-picklist{
+            .vloc-attrs-picklist-label{
+                margin: 0;
+                &.vloc-attrs-add-new {
+                    line-height: .5;
+                }
+            }
+            .vloc-attrs-picklist-values{
+                .vloc-attrs-delete{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .vloc-attrs-add-row{
+                position: relative; 
+                .vloc-attrs-add-value{
+                    position: absolute;
+                    right: -1rem;
+                    top: 0rem;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+
+        .vloc-attrs-slider{
+            .vloc-attrs-slider-label{
+                margin-right: 0;
+                margin-top: 0;
+            }
+        }
+        .vloc-attrs-add-value{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .vloc-attr-title-cell{
+            margin-bottom: 0;
+
+        }
+        .vloc-attrs-checkbox{
+            position: absolute;
+            bottom: 1.25rem;
+        }
+
+    }
+
+
+    /*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      //overflow: hidden;
+       background-color: #d8dde6;
+      -webkit-appearance: none;
+    }
+    
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 2px;
+      -webkit-appearance: none;
+      color: #0C8EFF;
+    }
+    
+    input[type='range']:focus {
+        outline:none;
+        
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: .15rem solid #0C8EFF;
+      border-radius: 2rem;
+      background: #0C8EFF;
+      margin-top: -.5rem;
+      overflow: hidden;
+      height: 1rem;
+      width: 1rem;
+      &:hover{
+        cursor: pointer;
+      }
+    
+    }
+    input[type='range'].min-range::-webkit-slider-thumb {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+
+} 
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #43e5f7; 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: #9a905d;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #43e5f7; 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: #9a905d;
+}
+    }
+}

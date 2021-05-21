@@ -1,0 +1,16 @@
+<div ng-controller="vellaHomeCircleController" ng-init="getObj(obj)">
+    <div class="vella-home-circle-policies vella-home-circle-inner-wrapper" ng-if="circleObj.mobileType === 'Policy'">
+        <div class="vella-home-circle-circle" ng-click="goToItem(circleObj.mobileType, circleObj, imageUrl)" ng-class="{'vella-policy-notification': ($root.vlocityMobileNotification && circleObj.Type === 'Auto') || ($root.vlocityMobileNotificationSensor.active && (circleObj.Type === 'Renters' || circleObj.Type === 'Homeowners' || circleObj.Type === 'Property'))}">
+            <img ng-src="{{imageUrl}}" class="vella-home-circle-img"/>
+        </div>
+        <span class="vella-home-circle-name" ng-click="goToItem(circleObj.mobileType, circleObj, imageUrl)">{{circleObj.ProductName}}</span>
+    </div>
+    <div class="slds-grid slds-wrap" ng-if="circleObj.mobileType === 'Insurable'">
+        <div class="slds-size--1-of-2 vella-home-circle-insurables vella-home-circle-inner-wrapper" ng-repeat="item in circleObj.items">
+            <div class="vella-home-circle-circle" ng-click="goToItem(circleObj.mobileType, item, item.Image)">
+                <img ng-src="{{item.Image}}" class="vella-home-circle-img"/>
+            </div>
+            <span class="vella-home-circle-name" ng-click="goToItem(circleObj.mobileType, item, item.Image)">{{item.Name}}</span>
+        </div>
+    </div>
+</div>

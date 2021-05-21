@@ -1,0 +1,6 @@
+[
+    "CalculationProcedure/OneTimePayment",
+    "DataRaptor/Ins_ExtractPolicyInfoForPayment_IssuePaymentIP",
+    "DataRaptor/Ins_PostPolicy_IssuePmtIP",
+    "DataRaptor/Ins_TransforOneTimePaymentCalc_ApplyIssuePaymentIP"
+]

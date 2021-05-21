@@ -1,0 +1,57 @@
+<article class="slds-p-horizontal--medium nds-p-horizontal--medium vloc-ins-coverages-card ng-hide" ng-repeat="coverage in sortedCoverages[childProduct.instanceKey || childProduct.productName || childProduct.Name] track by $index" ng-show="coverage.RecordTypeName__c === 'CoverageSpec' || coverage[nsPrefix + 'RecordTypeName__c'] === 'CoverageSpec' || (coverage.parentProduct && insCoveragesConfig.showParentProduct)" ng-class="decideCoverageCardClassNames(coverage)" scope="" onload="" ng-style="{'z-index': coverage.popoverOpen ? 7000 : (5000 - $index)}" ins-rules-evaluate ins-rules-product="coverage">
+    <div class="slds-m-bottom--small nds-m-bottom--small vloc-ins-coverages-heading" ng-if="coverage.firstOptional">
+        <div class="slds-text-align--left nds-text-align--left vloc-ins-coverage-main-heading">
+            <h2 class="slds-text-heading--medium nds-text-heading--medium">Optional</h2>
+        </div>
+    </div>
+    <div class="vloc-ins-coverages-card-inner-wrapper" ng-class="{'optional-coverage': coverage.isOptional && !coverage.isAddedOptional, 'optional-coverage-selected': coverage.isOptional && coverage.isSelected, 'accordion-active': doAccordion(coverage)}" bs-collapse>
+        <div class="slds-grid slds-p-top--medium slds-p-left--medium slds-p-right--x-large slds-p-bottom--x-small slds-is-relative nds-grid nds-p-top--medium nds-p-left--medium nds-p-right--x-large nds-p-bottom--x-small nds-is-relative vloc-ins-coverages-header-container" ng-class="{'has-price': coverage.Price}">
+            <div class="slds-media slds-media--center slds-has-flexi-truncate nds-media nds-media--center nds-has-flexi-truncate vloc-ins-coverages-header">
+                <div class="slds-media__figure slds-m-right--large nds-media__figure nds-m-right--large" ng-if="!coverage.isOptional && !coverage.parentProduct">
+                    <img ng-src="{{instanceHost + coverage.ImageId}}" class="vloc-ins-coverage-custom-image" ng-if="coverage.ImageId" />
+                    <span class="slds-icon_container nds-icon_container" ng-if="!coverage.ImageId">
+                        <slds-svg-icon sprite="'custom'" size="'large'" icon="'custom91'"></slds-svg-icon>
+                        <span class="slds-assistive-text nds-assistive-text">Default Icon</span>
+                    </span>
+                </div>
+                <div class="slds-media__figure slds-m-right--large slds-form-element nds-media__figure nds-m-right--large nds-form-element vloc-ins-coverages-optional-checkbox" ng-if="coverage.isOptional">
+                    <div class="slds-form-element__control nds-form-element__control">
+                        <span class="slds-checkbox--add-button nds-checkbox--add-button">
+                            <input type="checkbox" name="options" id="optional-coverage-{{childProductIndex}}-{{$index}}" class="slds-assistive-text nds-assistive-text" ng-disabled="coverage.isExcluded" ng-model="coverage.isSelected" ng-change="selectOptionalCoverage(coverage, bpTree.response, control, scpReference)" />
+                            <label class="slds-checkbox--faux nds-checkbox--faux" for="optional-coverage-{{childProductIndex}}-{{$index}}">
+                                <span class="slds-assistive-text nds-assistive-text">Select optional coverage</span>
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="slds-grid slds-grid--align-spread slds-media__body nds-grid nds-grid--align-spread nds-media__body vloc-ins-coverage-child-name-description-container">
+                    <div class="slds-col slds-p-right--medium nds-col nds-p-right--medium">
+                        <h3 class="slds-text-heading--large nds-text-heading--large vloc-ins-coverages-child-name">{{coverage.Name || coverage.productName}}</h3>
+                        <div class="slds-text-body--regular nds-text-body--regular vloc-ins-coverages-child-description">{{coverage.Description}}</div>
+                    </div>
+                    <div class="slds-text-heading--small nds-text-heading--small vloc-ins-coverages-total" ng-hide="coverage.parentProduct">{{coverage.Price | currency: currencyCode: 0}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="vloc-product-attribute-category-container" bs-collapse-target ng-class="{'accordion-toggle-active': doAccordion(coverage)}">
+            <div class="vloc-product-attribute-category" ng-repeat="category in coverage.attributeCategories.records track by $index" ng-class="{'category-accordion': insCoveragesConfig.attrCatAccordion, 'last': $last}" bs-collapse ng-style="{'z-index': (5555 - $index)}">
+                <div class="vloc-ins-coverages-coverage-row-container" ng-class="{'toggle-categories': insCoveragesConfig.attrCatAccordion && category.productAttributes.totalSize >= insCoveragesConfig.coverageAccordionMinAttrs}" bs-collapse-target>
+                    <h4 class="vloc-product-attribute-category-name" ng-if="insCoveragesConfig.attrCatAccordion && category.productAttributes.totalSize < insCoveragesConfig.coverageAccordionMinAttrs">{{category.Name}}</h4>
+                    <h4 class="vloc-product-attribute-category-name accordion-toggle" ng-if="insCoveragesConfig.attrCatAccordion && category.productAttributes.totalSize >= insCoveragesConfig.coverageAccordionMinAttrs" bs-collapse-toggle>
+                        <slds-svg-icon sprite="'utility'" icon="'chevronright'" size="'xx-small'" extra-classes="'slds-m-right--xx-small nds-m-right--xx-small'"></slds-svg-icon>
+                        <span>{{category.Name}}</span>
+                    </h4>
+                    <div class="vloc-ins-coverages-coverage-row-attributes-outer-container">
+                        <div class="vloc-ins-coverages-coverage-row-inner-container" ng-repeat="attribute in category.productAttributes.records track by $index" ng-if="!attribute.hiddenByRule && attribute.inputType !== 'equalizer'" ng-style="{'z-index': (100 + (100 * (100 - $parent.$index)) - $index)}" ins-rules-evaluate="attribute" ins-rules-coverage="coverage" ng-hide="attribute.hidden">
+                            <div ins-os-include-template="{{customTemplates.AttributesDisplayTemplate}}"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vloc-ins-coverages-collapse-toggle" ng-if="doAccordion(coverage)" bs-collapse-toggle ng-click="stopPropagation($event)">
+                <span class="toggle-label"><span class="toggle-show">Show</span><span class="toggle-hide">Hide</span> Coverage Attributes</span>
+                <slds-svg-icon sprite="'utility'" icon="'chevrondown'" size="'xx-small'" extra-classes="'slds-m-left--xx-small slds-m-right--xx-small nds-m-left--xx-small nds-m-right--xx-small'"></slds-svg-icon>
+            </div>
+        </div>
+    </div>
+</article>

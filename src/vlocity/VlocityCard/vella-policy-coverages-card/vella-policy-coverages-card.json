@@ -1,0 +1,48 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "02i6A0000009XL6QAM"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "inputMap": {
+                "assetId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceAssetHandler"
+            },
+            "remoteClass": "InsuranceAssetHandler",
+            "remoteMethod": "getCoverages",
+            "remoteNSPrefix": "%vlocity_namespace%"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankStateCheck": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "name": "vella-policy-coverages",
+            "templateUrl": "vella-policy-coverages"
+        }
+    ],
+    "title": "Vella Policy Coverages Card"
+}

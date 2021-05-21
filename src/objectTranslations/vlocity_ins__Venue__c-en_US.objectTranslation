@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>vlocity_ins__PrimaryContactId__c</name>
+        <relationshipLabel><!-- Venues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__Type__c</name>
+        <picklistValues>
+            <masterLabel>Convention Center</masterLabel>
+            <translation><!-- Convention Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employer Site</masterLabel>
+            <translation><!-- Employer Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotel</masterLabel>
+            <translation><!-- Hotel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant</masterLabel>
+            <translation><!-- Restaurant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vendor --></label>
+        <name>vlocity_ins__VendorId__c</name>
+        <relationshipLabel><!-- Venues --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

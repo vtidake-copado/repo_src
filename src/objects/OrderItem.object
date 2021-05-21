@@ -134,6 +134,11 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>QuoteLineItemId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>ServiceDate</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -143,5 +148,497 @@
     <fields>
         <fullName>UnitPrice</fullName>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Action__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The action desired for this line item with values of Add, Change, Existing or Disconnect. Existing means no change is requested. Add is a request to add the item, Change is a request to change it. Disconnect is a request to remove it.</description>
+        <externalId>false</externalId>
+        <label>Action</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Add</fullName>
+                    <default>false</default>
+                    <label>Add</label>
+                </value>
+                <value>
+                    <fullName>Change</fullName>
+                    <default>false</default>
+                    <label>Change</label>
+                </value>
+                <value>
+                    <fullName>Disconnect</fullName>
+                    <default>false</default>
+                    <label>Disconnect</label>
+                </value>
+                <value>
+                    <fullName>Existing</fullName>
+                    <default>false</default>
+                    <label>Existing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ActivationName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of person who activates this item</description>
+        <externalId>false</externalId>
+        <label>Activation Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__AssetId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The asset that this Order Product was pushed to by Order To Asset</description>
+        <externalId>false</externalId>
+        <label>Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Order Product</relationshipLabel>
+        <relationshipName>OrderProducts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__AssetReferenceId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Unique identifier of the asset refereced by this line item. Used by Vlocity CPQ to track the asset across various objects in the asset-based ordering lifecycle.</description>
+        <externalId>false</externalId>
+        <label>Asset Reference Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__AttributeMetadataChanges__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Attribute Metadata Changes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__AttributeSelectedValues__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Attribute Selected Values</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__BillingAccountId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Billing Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Order Products (Billing Account)</relationshipLabel>
+        <relationshipName>BillingAccountOrderItems</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ConnectDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Connect Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DisconnectDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Disconnect Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ExpectedCompletionDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Expected Completion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__FulfilmentStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The fulfilment status of this line item. Populated and updated by order management processes for submitted orders.</description>
+        <externalId>false</externalId>
+        <label>Fulfilment Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>false</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Activated</fullName>
+                    <default>false</default>
+                    <label>Activated</label>
+                </value>
+                <value>
+                    <fullName>Superseded</fullName>
+                    <default>false</default>
+                    <label>Superseded</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>PONR</fullName>
+                    <default>false</default>
+                    <label>PONR</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__InCartQuantityMap__c</fullName>
+        <deprecated>false</deprecated>
+        <description>JSON field calculated by Vlocity with the following structure: {&quot;[childProductId]&quot;: [quantity], ....} that describes the child item quantities that roll-up to the quantity of this item. For example, {&quot;01t0O00000BPrs1QAD&quot;:1,&quot;01t0O00000BPrrwQAD&quot;:1}. The quantity value is the sum of quantities for that product across all instances on the child items. For example, if two child assets exist of type Product A, the first with quantity 2 and the second with quantity 1, the map quantity for Product A should be 3. Helps CPQ identify quantities and enforce cardinality rules. Populated for all items that have direct children, but it is not populated for virtual products or items with no children. Also, child virtual products are not included in the map on their parent item.</description>
+        <externalId>false</externalId>
+        <label>InCartQuantityMap</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsEditable__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Is line item editable</description>
+        <externalId>false</externalId>
+        <label>IsEditable</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsProductTrackAgreement__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Denotes if product is tracked as part of agreement</description>
+        <externalId>false</externalId>
+        <formula>PricebookEntry.Product2.vlocity_ins__TrackAsAgreement__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Product Track Agreement</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__JSONAttribute__c</fullName>
+        <deprecated>false</deprecated>
+        <description>JSON body containing Vlocity Attribute value data.</description>
+        <externalId>false</externalId>
+        <label>JSONAttribute</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__LineNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Vlocity line number generated by code which serves to sequence the line items and organize them into a hierarchy.</description>
+        <externalId>false</externalId>
+        <label>LineNumber</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ParentItemId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>ID of the parent Order Item. Used by Vlocity CPQ to track the hierarchy of items.</description>
+        <externalId>false</externalId>
+        <label>ParentItemId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PremisesId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Premises</label>
+        <referenceTo>vlocity_ins__Premises__c</referenceTo>
+        <relationshipLabel>Order Line Item</relationshipLabel>
+        <relationshipName>OrderProducts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PricingLogData__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Detailed pricing log information for this item stored as a JSON structure. The JSON records the detailed prices, adjustments and interim calculations which result in the price to the customer.</description>
+        <externalId>false</externalId>
+        <label>Pricing Log</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Product2Id__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Order Products</relationshipLabel>
+        <relationshipName>OrderProducts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ProductHierarchyPath__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Vlocity internal field which identifies the path for this item within the product hierarchy.</description>
+        <externalId>false</externalId>
+        <label>Product Hierarchy Path</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ProvisioningStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>(NOTE: The functionality of this field is replaced by the Action, Sub-Action and Fulfilment Status fields.) The desired provisioning action for the asset identified on this line item. Values include New (add), Active (no change), Changed or Deleted.</description>
+        <externalId>false</externalId>
+        <label>Provisioning Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PushEventData__c</fullName>
+        <defaultValue>&quot;[]&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The list of Push Event Orchestration Items related to the Order Item</description>
+        <externalId>false</externalId>
+        <label>Push Event Data</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RateBandId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Rate Band</label>
+        <referenceTo>vlocity_ins__RateBand__c</referenceTo>
+        <relationshipLabel>Order Products</relationshipLabel>
+        <relationshipName>Order_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RelationshipType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>RelationshipType</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Child</fullName>
+                    <default>true</default>
+                    <label>Child</label>
+                </value>
+                <value>
+                    <fullName>Realization</fullName>
+                    <default>false</default>
+                    <label>Realization</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RequestedChange__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Requested Change</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Add</fullName>
+                    <default>false</default>
+                    <label>Add</label>
+                </value>
+                <value>
+                    <fullName>Change</fullName>
+                    <default>false</default>
+                    <label>Change</label>
+                </value>
+                <value>
+                    <fullName>Delete</fullName>
+                    <default>false</default>
+                    <label>Delete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RequestedCompletionDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Requested Completion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RootItemId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>ID of the ultimate, top-level parent Order Item. Used by Vlocity CPQ to track a full tree of items.</description>
+        <externalId>false</externalId>
+        <label>RootItemId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SerialNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Serial Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ServiceAccountId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Service Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Order Products (Service Account)</relationshipLabel>
+        <relationshipName>ServiceAccountOrderItems</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SubAction__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The sub-action requested for this line item typically used for moves of service from one location to another with values of Move-Add and Move-Delete. Move-Add means this item is being added as part of the move and usually should be added before the previous service is disconnected. Move-Delete means this item is the service to be disconnected after the service is activated at the new location.</description>
+        <externalId>false</externalId>
+        <label>Sub Action</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Move</fullName>
+                    <default>false</default>
+                    <label>Move</label>
+                </value>
+                <value>
+                    <fullName>Cancel</fullName>
+                    <default>false</default>
+                    <label>Cancel</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ThorJeopardyStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Jeopardy Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>Yellow</fullName>
+                    <default>false</default>
+                    <label>Yellow</label>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                    <label>Red</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
 </CustomObject>

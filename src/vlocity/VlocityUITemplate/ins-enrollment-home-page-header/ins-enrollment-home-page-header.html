@@ -1,0 +1,20 @@
+<div class="vloc-font-container">
+<div ng-init="backgroundImg = data.Deck[0].sessionVars[0].val">
+    <img ng-if="backgroundImg" class="vloc-background" src="{{backgroundImg}}"/>
+    <div class="vloc-enrollment-home">
+        <div class="slds-text-align_center slds-text-heading_large slds-p-top_small">
+            Choose your coverage for 2018
+        </div>
+        <div class="slds-text-align_center slds-text-heading_x-small slds-p-vertical_small">
+            You have until <span class="vloc-bold">December 17th, 2017</span> to select plans or opt out of coverage
+        </div>
+        <div vloc-card ng-repeat="card in cards | orderBy:order" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="slds-size_1-of-1" use-existing-element-type>
+        </div>
+    </div>
+</div>
+</div>
+<div ng-if="$root.displayIframe">
+    <iframe src="{{$root.iframeURL}}" height="800px" width="100%" frameborder="0" />
+</div>
+<a ng-if="$root.displayIframe" ng-click="$root.displayIframe = false" class="slds-link slds-p-left_medium"> close
+        </a>

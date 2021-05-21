@@ -1,0 +1,1059 @@
+{
+    "AccountId": "0016A00000r2kt4QAA",
+    "BillingId": "a3g6A000000YLRlQAO",
+    "BusinessInfo": {
+        "busLegalForm": "sole proprietorship",
+        "busName": "test tom",
+        "busRevAnnual": 768768,
+        "businessType": "teaching",
+        "effectiveDate": "2019-04-30 00:00:00",
+        "quoteEffectiveDate": "2019-04-30"
+    },
+    "ContactId": "",
+    "ContextId": "",
+    "DRId_%vlocity_namespace%__PaymentMethod__c": "a3g6A000000YLRlQAO",
+    "DRId_Account": "0016A00000r2kt4QAA",
+    "DRId_Opportunity": "0066A00000CuanoQAB",
+    "configure": {
+        "configureProduct": [
+            {
+                "$$hashKey": "insobject:1197577",
+                "CalculatedPriceData": {
+                    "ID": "0",
+                    "premiumLiability": 1619.09,
+                    "premiumProperty": 48
+                },
+                "Family": "Commercial Lines",
+                "Id": "01t6A000003pn7hQAA",
+                "IsConfigurable__c": true,
+                "IsRecommended__c": false,
+                "LineOfBusiness__c": "Property & Casualty",
+                "Name": "SB One",
+                "Price": 1667.09,
+                "PricingFormula__c": "premiumLiability + premiumProperty",
+                "ProductCode": "SBOne",
+                "RawPriceData": [
+                    {
+                        "aggregationResults": null,
+                        "calculationResults": [
+                            {
+                                "ID": "0",
+                                "premiumLiability": 1619.09,
+                                "premiumProperty": 48
+                            }
+                        ]
+                    }
+                ],
+                "RecordTypeName__c": "Product",
+                "Term__c": "Annual",
+                "attributeCategories": {
+                    "records": [
+                        {
+                            "$$hashKey": "insobject:1155837",
+                            "Code__c": "terms",
+                            "Name": "Policy Terms",
+                            "displaySequence": 100,
+                            "id": "a0B6A000001cEWvUAM",
+                            "productAttributes": {
+                                "records": [
+                                    {
+                                        "$$hashKey": "insobject:116101",
+                                        "attributeId": "a0C6A000002e45wUAA",
+                                        "cloneable": true,
+                                        "code": "termDeductible",
+                                        "dataType": "text",
+                                        "disabled": false,
+                                        "displaySequence": 1,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "hidden": false,
+                                        "inputType": "dropdown",
+                                        "instanceKey": "root",
+                                        "isNotTranslatable": false,
+                                        "label": "Deductible",
+                                        "multiselect": false,
+                                        "parentProductCode": "SBOne",
+                                        "parentProductId": "01t6A000003pn7hQAA",
+                                        "pathFromChild": "attributeCategories.records[0].productAttributes.records[0]",
+                                        "pathFromRoot": "attributeCategories.records[0].productAttributes.records[0]",
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": "10",
+                                        "values": [
+                                            {
+                                                "$$hashKey": "object:788",
+                                                "disabled": false,
+                                                "id": "0",
+                                                "label": "5%",
+                                                "readonly": false,
+                                                "value": "5"
+                                            },
+                                            {
+                                                "$$hashKey": "object:789",
+                                                "disabled": false,
+                                                "id": "1",
+                                                "label": "10%",
+                                                "readonly": false,
+                                                "value": "10"
+                                            },
+                                            {
+                                                "$$hashKey": "object:790",
+                                                "disabled": false,
+                                                "id": "2",
+                                                "label": "20%",
+                                                "readonly": false,
+                                                "value": "20"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "totalSize": 1
+                            }
+                        }
+                    ],
+                    "totalSize": 1
+                },
+                "cached": true,
+                "childProducts": {
+                    "records": [
+                        {
+                            "$$hashKey": "insobject:3395901",
+                            "Family": "Commercial Lines",
+                            "Id": "01t6A000003pmHuQAI",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "LineOfBusiness__c": "Property & Casualty",
+                            "Name": "SB Business Property",
+                            "Price": 48,
+                            "PricingSource__c": "premiumProperty",
+                            "ProductCode": "SBbusProperty",
+                            "RecordTypeName__c": "CoverageSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "$$hashKey": "insobject:3329090",
+                                        "Code__c": "terms",
+                                        "Name": "Policy Terms",
+                                        "displaySequence": 100,
+                                        "id": "a0B6A000001cEWvUAM",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "insobject:3311217",
+                                                    "attributeId": "a0C6A000002e45mUAA",
+                                                    "cloneable": true,
+                                                    "code": "termLimit",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 2,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "dropdown",
+                                                    "instanceKey": "root",
+                                                    "isNotTranslatable": false,
+                                                    "label": "Limit",
+                                                    "multiselect": false,
+                                                    "originalAttributeIndex": 0,
+                                                    "originalCategoryIndex": 0,
+                                                    "originalProductIndex": 0,
+                                                    "parentProductCode": "SBbusProperty",
+                                                    "parentProductId": "a2z6A000000AlwqQAC",
+                                                    "pathFromChild": "attributeCategories.records[0].productAttributes.records[0]",
+                                                    "pathFromRoot": "childProducts.records[0].attributeCategories.records[0].productAttributes.records[0]",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "100000",
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:819",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "$100,000",
+                                                            "readonly": false,
+                                                            "value": "100000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:820",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "$500,000",
+                                                            "readonly": false,
+                                                            "value": "500000"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "cached": true,
+                            "displaySequence": 1,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "numberAttributes": 2,
+                            "numberCategories": 2,
+                            "originalIndex": 0,
+                            "parentProductCode": "SBOne",
+                            "parentProductId": "01t6A000003pn7hQAA",
+                            "parentProductName": "SB One",
+                            "pathFromRoot": "[0].childProducts.records[0]",
+                            "pciId": "a2z6A000000AlwqQAC",
+                            "popoverOpen": false,
+                            "productId": "01t6A000003pmHuQAI",
+                            "rootProductCode": "SBbusProperty",
+                            "rootProductId": "a2z6A000000AlwqQAC"
+                        },
+                        {
+                            "$$hashKey": "insobject:6344299",
+                            "Family": "Commercial Lines",
+                            "Id": "01t6A000004U2OlQAK",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "LineOfBusiness__c": "Property & Casualty",
+                            "Name": "General Liability",
+                            "Price": 1619.09,
+                            "PricingSource__c": "premiumLiability",
+                            "ProductCode": "busGenLiability",
+                            "RecordTypeName__c": "CoverageSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "$$hashKey": "insobject:6339305",
+                                        "Code__c": "terms",
+                                        "Name": "Policy Terms",
+                                        "displaySequence": 100,
+                                        "id": "a0B6A000001cEWvUAM",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "insobject:6383904",
+                                                    "attributeId": "a0C6A000002e45mUAA",
+                                                    "code": "termLimit",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 2,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "dropdown",
+                                                    "instanceKey": "root",
+                                                    "label": "Liability Limit",
+                                                    "multiselect": false,
+                                                    "originalAttributeIndex": 0,
+                                                    "originalCategoryIndex": 0,
+                                                    "originalProductIndex": 1,
+                                                    "parentProductCode": "busGenLiability",
+                                                    "parentProductId": "a2z6A000000AlwrQAC",
+                                                    "pathFromChild": "attributeCategories.records[0].productAttributes.records[0]",
+                                                    "pathFromRoot": "childProducts.records[1].attributeCategories.records[0].productAttributes.records[0]",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "500000",
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:825",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "$100,000",
+                                                            "readonly": false,
+                                                            "value": "100000"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:826",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "$500,000",
+                                                            "readonly": false,
+                                                            "value": "500000"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "cached": true,
+                            "displaySequence": 2,
+                            "isOptional": false,
+                            "isSelected": true,
+                            "lastNonOptional": true,
+                            "numberAttributes": 2,
+                            "numberCategories": 2,
+                            "originalIndex": 1,
+                            "parentProductCode": "SBOne",
+                            "parentProductId": "01t6A000003pn7hQAA",
+                            "parentProductName": "SB One",
+                            "pathFromRoot": "[0].childProducts.records[1]",
+                            "pciId": "a2z6A000000AlwrQAC",
+                            "popoverOpen": false,
+                            "productId": "01t6A000004U2OlQAK",
+                            "rootProductCode": "busGenLiability",
+                            "rootProductId": "a2z6A000000AlwrQAC"
+                        },
+                        {
+                            "$$hashKey": "insobject:9321759",
+                            "Family": "Commercial Lines",
+                            "Id": "01t6A000003pmHpQAI",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "LineOfBusiness__c": "Property & Casualty",
+                            "Name": "SB Business Profile",
+                            "ProductCode": "SBBusinessProfile",
+                            "RecordTypeName__c": "InsuredItemSpec",
+                            "Term__c": "Annual",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "$$hashKey": "insobject:9332719",
+                                        "Code__c": "catSBBusSmall",
+                                        "Name": "SB - Small Business",
+                                        "displaySequence": 20,
+                                        "id": "a0B6A00000A1QJJUA3",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "insobject:9365724",
+                                                    "attributeId": "a0C6A000007muYBUAY",
+                                                    "cloneable": true,
+                                                    "code": "SBbusRevAnnual",
+                                                    "dataType": "currency",
+                                                    "disabled": false,
+                                                    "displaySequence": 1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "number",
+                                                    "instanceKey": "root",
+                                                    "isNotTranslatable": false,
+                                                    "label": "SB - Annual Revenue",
+                                                    "multiselect": false,
+                                                    "originalAttributeIndex": 0,
+                                                    "originalCategoryIndex": 0,
+                                                    "originalProductIndex": 2,
+                                                    "parentProductCode": "SBBusinessProfile",
+                                                    "parentProductId": "a2z6A000000AlwvQAC",
+                                                    "pathFromChild": "attributeCategories.records[0].productAttributes.records[0]",
+                                                    "pathFromRoot": "childProducts.records[2].attributeCategories.records[0].productAttributes.records[0]",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 768768,
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:796",
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "insobject:12391417",
+                                                    "attributeId": "a0C6A000007muYfUAI",
+                                                    "cloneable": true,
+                                                    "code": "SBbusType",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 2,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "dropdown",
+                                                    "instanceKey": "root",
+                                                    "isNotTranslatable": false,
+                                                    "label": "SB - Business Type",
+                                                    "multiselect": false,
+                                                    "originalAttributeIndex": 1,
+                                                    "originalCategoryIndex": 0,
+                                                    "originalProductIndex": 2,
+                                                    "parentProductCode": "SBBusinessProfile",
+                                                    "parentProductId": "a2z6A000000AlwvQAC",
+                                                    "pathFromChild": "attributeCategories.records[0].productAttributes.records[1]",
+                                                    "pathFromRoot": "childProducts.records[2].attributeCategories.records[0].productAttributes.records[1]",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "teaching",
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:801",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "Office",
+                                                            "readonly": false,
+                                                            "value": "office"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:802",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "Manufacturing",
+                                                            "readonly": false,
+                                                            "value": "manufacturing"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:803",
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "Repair",
+                                                            "readonly": false,
+                                                            "value": "repair"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:804",
+                                                            "disabled": false,
+                                                            "id": "3",
+                                                            "label": "Teaching",
+                                                            "readonly": false,
+                                                            "value": "teaching"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "insobject:1539190",
+                                                    "attributeId": "a0C6A000007muYHUAY",
+                                                    "cloneable": true,
+                                                    "code": "SBbusLegalForm",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": 3,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "hidden": false,
+                                                    "inputType": "dropdown",
+                                                    "instanceKey": "root",
+                                                    "isNotTranslatable": false,
+                                                    "label": "SB - Legal Form",
+                                                    "multiselect": false,
+                                                    "originalAttributeIndex": 2,
+                                                    "originalCategoryIndex": 0,
+                                                    "originalProductIndex": 2,
+                                                    "parentProductCode": "SBBusinessProfile",
+                                                    "parentProductId": "a2z6A000000AlwvQAC",
+                                                    "pathFromChild": "attributeCategories.records[0].productAttributes.records[2]",
+                                                    "pathFromRoot": "childProducts.records[2].attributeCategories.records[0].productAttributes.records[2]",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "sole proprietorship",
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:811",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "Corporation",
+                                                            "readonly": false,
+                                                            "value": "corporation"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:812",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "Sole Proprietorship",
+                                                            "readonly": false,
+                                                            "value": "sole proprietorship"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:813",
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "Partnership",
+                                                            "readonly": false,
+                                                            "value": "partnership"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 3
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "cached": true,
+                            "displaySequence": 1,
+                            "maxQuantity": 1,
+                            "minQuantity": 1,
+                            "numberAttributes": 3,
+                            "numberCategories": 1,
+                            "originalIndex": 2,
+                            "parentProductCode": "SBOne",
+                            "parentProductId": "01t6A000003pn7hQAA",
+                            "parentProductName": "SB One",
+                            "pathFromRoot": "[0].childProducts.records[2]",
+                            "pciId": "a2z6A000000AlwvQAC",
+                            "popoverOpen": false,
+                            "productId": "01t6A000003pmHpQAI",
+                            "rootProductCode": "SBBusinessProfile",
+                            "rootProductId": "a2z6A000000AlwvQAC"
+                        }
+                    ],
+                    "totalSize": 3
+                },
+                "displaySequence": -1,
+                "instanceKeyChildren": 0,
+                "parentProduct": true,
+                "pathFromChild": "[0]",
+                "pathFromRoot": "[0]",
+                "productId": "01t6A000003pn7hQAA",
+                "rootProductCode": "SBOne",
+                "rootProductId": "01t6A000003pn7hQAA",
+                "timestamp": 1555462990084
+            }
+        ]
+    },
+    "debugLog": true,
+    "error": "OK",
+    "id": "a0g6A00000AZoSXQA1",
+    "isdtp": "p1",
+    "layout": "newport",
+    "newAccount": {
+        "BankAccountNumber": null,
+        "BankAccountRoutingNumber": null,
+        "BankAccountType": null,
+        "CardCCV": null,
+        "CardExpirationMonth": null,
+        "CardExpirationYear": null,
+        "CardNumber": null,
+        "CardType": null,
+        "DifferentFromBilling": false,
+        "MethodHolderName": "Brian Owen",
+        "MethodName": "OwensAcct",
+        "MethodType": null,
+        "authorizedContact": {
+            "authEmail": "dlq@vlocity.com",
+            "authFirstName": "Brian",
+            "authLastName": "Owen",
+            "authMobilePhone": "(603) 801-2640",
+            "authOfficePhone": "(603) 801-2640",
+            "authSalutation": null,
+            "authTitle": "Director"
+        },
+        "billDelivery": "Email",
+        "billMethod": "Direct Bill",
+        "billingContact": {
+            "billingEmail": null,
+            "billingFirstName": "Brian",
+            "billingLastName": "Owens",
+            "billingMobile": null,
+            "billingPhone": null,
+            "billingSalutation": null,
+            "billingTitle": null
+        },
+        "broker": "Howard Hoot",
+        "newAccountName": "ABC Company",
+        "newAccountSite": "ABC Site",
+        "newBillingAddress-Block": {
+            "newBillingAddress": null,
+            "newBillingCity": null,
+            "newBillingCountry": null,
+            "newBillingPostalCode": null,
+            "newBillingState": null,
+            "newBillingStreet": null
+        },
+        "newMainFax": null,
+        "newMainPhone": "(603) 801-2640",
+        "newShippingAddress-Block": null,
+        "newTaxId": "11-9999999",
+        "newWebSite": "https://www.abc.com",
+        "statementFrequency": "Monthly"
+    },
+    "newShippingCity": "",
+    "newShippingCountry": "",
+    "newShippingPostalCode": "",
+    "newShippingState": "",
+    "newShippingStreet": "",
+    "quoteJson": {
+        "additionalFields": {
+            "Name": "test tom"
+        },
+        "effectiveDate": "2019-04-30 00:00:00",
+        "insuredItems": {
+            "SBBusinessProfile": {
+                "SBbusLegalForm": "sole proprietorship",
+                "SBbusRevAnnual": 768768,
+                "SBbusType": "teaching"
+            }
+        },
+        "opportunityId": "0066A00000CuanoQAB",
+        "productConfigurationDetail": {
+            "records": [
+                {
+                    "CalculatedPriceData": {
+                        "ID": "0",
+                        "premiumLiability": 1619.09,
+                        "premiumProperty": 48
+                    },
+                    "Family": "Commercial Lines",
+                    "Id": "01t6A000003pn7hQAA",
+                    "IsConfigurable__c": true,
+                    "IsRecommended__c": false,
+                    "LineOfBusiness__c": "Property & Casualty",
+                    "Name": "SB One",
+                    "Price": 1667.09,
+                    "PricingFormula__c": "premiumLiability + premiumProperty",
+                    "ProductCode": "SBOne",
+                    "RawPriceData": [
+                        {
+                            "aggregationResults": null,
+                            "calculationResults": [
+                                {
+                                    "ID": "0",
+                                    "premiumLiability": 1619.09,
+                                    "premiumProperty": 48
+                                }
+                            ]
+                        }
+                    ],
+                    "RecordTypeName__c": "Product",
+                    "Term__c": "Annual",
+                    "attributeCategories": {
+                        "records": [
+                            {
+                                "Code__c": "terms",
+                                "Name": "Policy Terms",
+                                "displaySequence": 100,
+                                "id": "a0B6A000001cEWvUAM",
+                                "productAttributes": {
+                                    "records": [
+                                        {
+                                            "attributeId": "a0C6A000002e45wUAA",
+                                            "cloneable": true,
+                                            "code": "termDeductible",
+                                            "dataType": "text",
+                                            "disabled": false,
+                                            "displaySequence": 1,
+                                            "filterable": true,
+                                            "hasRules": false,
+                                            "hidden": false,
+                                            "inputType": "dropdown",
+                                            "instanceKey": "root",
+                                            "isNotTranslatable": false,
+                                            "label": "Deductible",
+                                            "multiselect": false,
+                                            "parentProductCode": "SBOne",
+                                            "parentProductId": "01t6A000003pn7hQAA",
+                                            "pathFromChild": "attributeCategories.records[0].productAttributes.records[0]",
+                                            "pathFromRoot": "attributeCategories.records[0].productAttributes.records[0]",
+                                            "readonly": false,
+                                            "required": false,
+                                            "userValues": "10",
+                                            "values": [
+                                                {
+                                                    "disabled": false,
+                                                    "id": "0",
+                                                    "label": "5%",
+                                                    "readonly": false,
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "1",
+                                                    "label": "10%",
+                                                    "readonly": false,
+                                                    "value": "10"
+                                                },
+                                                {
+                                                    "disabled": false,
+                                                    "id": "2",
+                                                    "label": "20%",
+                                                    "readonly": false,
+                                                    "value": "20"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                }
+                            }
+                        ],
+                        "totalSize": 1
+                    },
+                    "cached": true,
+                    "childProducts": {
+                        "records": [
+                            {
+                                "Family": "Commercial Lines",
+                                "Id": "01t6A000003pmHuQAI",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "SB Business Property",
+                                "Price": 48,
+                                "PricingSource__c": "premiumProperty",
+                                "ProductCode": "SBbusProperty",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Term__c": "Annual",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0B6A000001cEWvUAM",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0C6A000002e45mUAA",
+                                                        "cloneable": true,
+                                                        "code": "termLimit",
+                                                        "dataType": "text",
+                                                        "disabled": false,
+                                                        "displaySequence": 2,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "instanceKey": "root",
+                                                        "isNotTranslatable": false,
+                                                        "label": "Limit",
+                                                        "multiselect": false,
+                                                        "originalAttributeIndex": 0,
+                                                        "originalCategoryIndex": 0,
+                                                        "originalProductIndex": 0,
+                                                        "parentProductCode": "SBbusProperty",
+                                                        "parentProductId": "a2z6A000000AlwqQAC",
+                                                        "pathFromChild": "attributeCategories.records[0].productAttributes.records[0]",
+                                                        "pathFromRoot": "childProducts.records[0].attributeCategories.records[0].productAttributes.records[0]",
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": "100000",
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$100,000",
+                                                                "readonly": false,
+                                                                "value": "100000"
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": "500000"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "cached": true,
+                                "displaySequence": 1,
+                                "isOptional": false,
+                                "isSelected": true,
+                                "numberAttributes": 2,
+                                "numberCategories": 2,
+                                "originalIndex": 0,
+                                "parentProductCode": "SBOne",
+                                "parentProductId": "01t6A000003pn7hQAA",
+                                "parentProductName": "SB One",
+                                "pathFromRoot": "[0].childProducts.records[0]",
+                                "pciId": "a2z6A000000AlwqQAC",
+                                "popoverOpen": false,
+                                "productId": "01t6A000003pmHuQAI",
+                                "rootProductCode": "SBbusProperty",
+                                "rootProductId": "a2z6A000000AlwqQAC"
+                            },
+                            {
+                                "Family": "Commercial Lines",
+                                "Id": "01t6A000004U2OlQAK",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "General Liability",
+                                "Price": 1619.09,
+                                "PricingSource__c": "premiumLiability",
+                                "ProductCode": "busGenLiability",
+                                "RecordTypeName__c": "CoverageSpec",
+                                "Term__c": "Annual",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "terms",
+                                            "Name": "Policy Terms",
+                                            "displaySequence": 100,
+                                            "id": "a0B6A000001cEWvUAM",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0C6A000002e45mUAA",
+                                                        "code": "termLimit",
+                                                        "dataType": "text",
+                                                        "disabled": false,
+                                                        "displaySequence": 2,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "instanceKey": "root",
+                                                        "label": "Liability Limit",
+                                                        "multiselect": false,
+                                                        "originalAttributeIndex": 0,
+                                                        "originalCategoryIndex": 0,
+                                                        "originalProductIndex": 1,
+                                                        "parentProductCode": "busGenLiability",
+                                                        "parentProductId": "a2z6A000000AlwrQAC",
+                                                        "pathFromChild": "attributeCategories.records[0].productAttributes.records[0]",
+                                                        "pathFromRoot": "childProducts.records[1].attributeCategories.records[0].productAttributes.records[0]",
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": "500000",
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "$100,000",
+                                                                "readonly": false,
+                                                                "value": "100000"
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "$500,000",
+                                                                "readonly": false,
+                                                                "value": "500000"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 1
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "cached": true,
+                                "displaySequence": 2,
+                                "isOptional": false,
+                                "isSelected": true,
+                                "lastNonOptional": true,
+                                "numberAttributes": 2,
+                                "numberCategories": 2,
+                                "originalIndex": 1,
+                                "parentProductCode": "SBOne",
+                                "parentProductId": "01t6A000003pn7hQAA",
+                                "parentProductName": "SB One",
+                                "pathFromRoot": "[0].childProducts.records[1]",
+                                "pciId": "a2z6A000000AlwrQAC",
+                                "popoverOpen": false,
+                                "productId": "01t6A000004U2OlQAK",
+                                "rootProductCode": "busGenLiability",
+                                "rootProductId": "a2z6A000000AlwrQAC"
+                            },
+                            {
+                                "Family": "Commercial Lines",
+                                "Id": "01t6A000003pmHpQAI",
+                                "IsConfigurable__c": true,
+                                "IsRecommended__c": false,
+                                "LineOfBusiness__c": "Property & Casualty",
+                                "Name": "SB Business Profile",
+                                "ProductCode": "SBBusinessProfile",
+                                "RecordTypeName__c": "InsuredItemSpec",
+                                "Term__c": "Annual",
+                                "attributeCategories": {
+                                    "records": [
+                                        {
+                                            "Code__c": "catSBBusSmall",
+                                            "Name": "SB - Small Business",
+                                            "displaySequence": 20,
+                                            "id": "a0B6A00000A1QJJUA3",
+                                            "productAttributes": {
+                                                "records": [
+                                                    {
+                                                        "attributeId": "a0C6A000007muYBUAY",
+                                                        "cloneable": true,
+                                                        "code": "SBbusRevAnnual",
+                                                        "dataType": "currency",
+                                                        "disabled": false,
+                                                        "displaySequence": 1,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "number",
+                                                        "instanceKey": "root",
+                                                        "isNotTranslatable": false,
+                                                        "label": "SB - Annual Revenue",
+                                                        "multiselect": false,
+                                                        "originalAttributeIndex": 0,
+                                                        "originalCategoryIndex": 0,
+                                                        "originalProductIndex": 2,
+                                                        "parentProductCode": "SBBusinessProfile",
+                                                        "parentProductId": "a2z6A000000AlwvQAC",
+                                                        "pathFromChild": "attributeCategories.records[0].productAttributes.records[0]",
+                                                        "pathFromRoot": "childProducts.records[2].attributeCategories.records[0].productAttributes.records[0]",
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": 768768,
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "readonly": false
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "attributeId": "a0C6A000007muYfUAI",
+                                                        "cloneable": true,
+                                                        "code": "SBbusType",
+                                                        "dataType": "text",
+                                                        "disabled": false,
+                                                        "displaySequence": 2,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "instanceKey": "root",
+                                                        "isNotTranslatable": false,
+                                                        "label": "SB - Business Type",
+                                                        "multiselect": false,
+                                                        "originalAttributeIndex": 1,
+                                                        "originalCategoryIndex": 0,
+                                                        "originalProductIndex": 2,
+                                                        "parentProductCode": "SBBusinessProfile",
+                                                        "parentProductId": "a2z6A000000AlwvQAC",
+                                                        "pathFromChild": "attributeCategories.records[0].productAttributes.records[1]",
+                                                        "pathFromRoot": "childProducts.records[2].attributeCategories.records[0].productAttributes.records[1]",
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": "teaching",
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "Office",
+                                                                "readonly": false,
+                                                                "value": "office"
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "Manufacturing",
+                                                                "readonly": false,
+                                                                "value": "manufacturing"
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "Repair",
+                                                                "readonly": false,
+                                                                "value": "repair"
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "3",
+                                                                "label": "Teaching",
+                                                                "readonly": false,
+                                                                "value": "teaching"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "attributeId": "a0C6A000007muYHUAY",
+                                                        "cloneable": true,
+                                                        "code": "SBbusLegalForm",
+                                                        "dataType": "text",
+                                                        "disabled": false,
+                                                        "displaySequence": 3,
+                                                        "filterable": true,
+                                                        "hasRules": false,
+                                                        "hidden": false,
+                                                        "inputType": "dropdown",
+                                                        "instanceKey": "root",
+                                                        "isNotTranslatable": false,
+                                                        "label": "SB - Legal Form",
+                                                        "multiselect": false,
+                                                        "originalAttributeIndex": 2,
+                                                        "originalCategoryIndex": 0,
+                                                        "originalProductIndex": 2,
+                                                        "parentProductCode": "SBBusinessProfile",
+                                                        "parentProductId": "a2z6A000000AlwvQAC",
+                                                        "pathFromChild": "attributeCategories.records[0].productAttributes.records[2]",
+                                                        "pathFromRoot": "childProducts.records[2].attributeCategories.records[0].productAttributes.records[2]",
+                                                        "readonly": false,
+                                                        "required": false,
+                                                        "userValues": "sole proprietorship",
+                                                        "values": [
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "0",
+                                                                "label": "Corporation",
+                                                                "readonly": false,
+                                                                "value": "corporation"
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "1",
+                                                                "label": "Sole Proprietorship",
+                                                                "readonly": false,
+                                                                "value": "sole proprietorship"
+                                                            },
+                                                            {
+                                                                "disabled": false,
+                                                                "id": "2",
+                                                                "label": "Partnership",
+                                                                "readonly": false,
+                                                                "value": "partnership"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "totalSize": 3
+                                            }
+                                        }
+                                    ],
+                                    "totalSize": 1
+                                },
+                                "cached": true,
+                                "displaySequence": 1,
+                                "maxQuantity": 1,
+                                "minQuantity": 1,
+                                "numberAttributes": 3,
+                                "numberCategories": 1,
+                                "originalIndex": 2,
+                                "parentProductCode": "SBOne",
+                                "parentProductId": "01t6A000003pn7hQAA",
+                                "parentProductName": "SB One",
+                                "pathFromRoot": "[0].childProducts.records[2]",
+                                "pciId": "a2z6A000000AlwvQAC",
+                                "popoverOpen": false,
+                                "productId": "01t6A000003pmHpQAI",
+                                "rootProductCode": "SBBusinessProfile",
+                                "rootProductId": "a2z6A000000AlwvQAC"
+                            }
+                        ],
+                        "totalSize": 3
+                    },
+                    "displaySequence": -1,
+                    "instanceKeyChildren": 0,
+                    "parentProduct": true,
+                    "pathFromChild": "[0]",
+                    "pathFromRoot": "[0]",
+                    "productId": "01t6A000003pn7hQAA",
+                    "rootProductCode": "SBOne",
+                    "rootProductId": "01t6A000003pn7hQAA",
+                    "timestamp": 1555462990084
+                }
+            ]
+        }
+    },
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://12345--vlocity-ins.na50.visual.force.com",
+    "timeStamp": "2019-04-17T01:02:52.338Z",
+    "userCurrencyCode": "USD",
+    "userId": "0056A000002haemQAA",
+    "userName": "tflaherty.ins.tso@vlocity.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": -420,
+    "vlcPersistentComponent": {
+    }
+}

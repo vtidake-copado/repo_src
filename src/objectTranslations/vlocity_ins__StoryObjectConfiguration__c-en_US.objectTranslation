@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Detail Fields --></label>
+        <name>vlocity_ins__DetailFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edit Fields --></label>
+        <name>vlocity_ins__EditFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable New Action --></label>
+        <name>vlocity_ins__EnableNewAction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Owner --></label>
+        <name>vlocity_ins__HasOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Indicators --></label>
+        <name>vlocity_ins__IndicatorImage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoke Class Name --></label>
+        <name>vlocity_ins__InvokeClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoke Method Name --></label>
+        <name>vlocity_ins__InvokeMethodName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Junction Lookup Field --></label>
+        <name>vlocity_ins__JunctionLookupField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Junction Object Filter --></label>
+        <name>vlocity_ins__JunctionObjectFilter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Junction Object --></label>
+        <name>vlocity_ins__JunctionObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Navigation Field Name --></label>
+        <name>vlocity_ins__NavigationFieldName__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Action Name --></label>
+        <name>vlocity_ins__NewActionName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ongoing Filters --></label>
+        <name>vlocity_ins__OngoingFilters__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Object Field --></label>
+        <name>vlocity_ins__ParentObjectField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Object Name Field Path --></label>
+        <name>vlocity_ins__ParentObjectNameFieldPath__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Object Name --></label>
+        <name>vlocity_ins__ParentObjectName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quick Action --></label>
+        <name>vlocity_ins__QuickAction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Object Id --></label>
+        <name>vlocity_ins__ReferenceObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Object Name --></label>
+        <name>vlocity_ins__ReferenceObjectName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Field Is Date --></label>
+        <name>vlocity_ins__SortFieldIsDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Story Object Filter --></label>
+        <name>vlocity_ins__StoryObjectFilter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Story Object Is Not SObject --></label>
+        <name>vlocity_ins__StoryObjectIsNotSObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Story Object Lookup Field --></label>
+        <name>vlocity_ins__StoryObjectLookupField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Story Object Name --></label>
+        <name>vlocity_ins__StoryObjectName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Story Object Reference Id --></label>
+        <name>vlocity_ins__StoryObjectReferenceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Story Object Sort Field --></label>
+        <name>vlocity_ins__StoryObjectSortField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary Fields --></label>
+        <name>vlocity_ins__SummaryFields__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -172,7 +172,7 @@
     <listViews>
         <fullName>All_AuthorizationFormConsents</fullName>
         <filterScope>Everything</filterScope>
-        <label>Todos los Consentimientos de formularios de autorización</label>
+        <label>All Authorization Form Consents</label>
     </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>ConsentGiver</customTabListAdditionalFields>

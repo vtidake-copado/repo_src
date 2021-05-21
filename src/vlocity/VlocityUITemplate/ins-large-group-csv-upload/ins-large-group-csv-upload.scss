@@ -1,0 +1,266 @@
+@import "ins-product-attributes-variables";
+.via-slds {
+    .vloc-ins-add-new {
+        min-height: 1rem;
+    }
+    .vloc-sorted-column {
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgb(0, 112, 210) 0 0 0 1px inset, rgb(0, 112, 210) -0.25rem 0 0 inset;
+        color: currentColor;
+        cursor: pointer;
+    }
+    .vloc-not-sorted-column {
+        &:hover {
+            box-shadow: rgb(216, 221, 230) -0.25rem 0 0 inset;
+            background-color: rgb(255, 255, 255);
+            color: currentColor;
+            cursor: pointer;
+        }
+    }
+    .vloc-ins-pending-save{
+        transform-origin: 50% 50%;
+        position: absolute;
+        top: 49.1%;
+        left: 49.4%;
+        z-index: 9051;
+        font-size: .25rem;
+    }
+    .vloc-ins-upload-csv {
+        width: 50%;
+        left: 26%;
+    }
+    .vloc-ins-toolbar {
+        text-align: right;
+        padding-right: .5%;
+        padding-top: 1rem;
+        .slds-theme_warning {
+            .vloc-icon {
+                fill: white;
+            }
+        }
+        .vloc-icon_container--actions {
+            width: 2rem;
+            height: 2rem;
+            margin-right: .4rem;
+            border-color: none;
+            .vloc-icon {
+                position: relative;
+                top: -0.25rem;
+            }
+            .vloc-warning {
+                fill: $notify-warning;
+            }
+            .vloc-success {
+                fill: $notify-success;
+            }
+        }
+    }
+    .vloc-ins-label-description {
+        +.popover {
+            position: relative;
+            z-index: 100000;
+            top: 5rem;
+            left: 1rem;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .via-ins-table-container {
+        width: 99%;
+        min-height: 4rem;
+
+        .vloc-header-th{
+            height: 2rem;
+        }
+        .vloc-button {
+            width: 4%;
+            .slds-theme_warning {
+                .vloc-icon {
+                    fill: white;
+                }
+            }
+            .vloc-icon_container--actions {
+                width: 2rem;
+                height: 2rem;
+                margin-right: .4rem;
+                border-color: none;
+
+                &.vloc-brand{
+                    fill: #0070d2;
+                }
+                .vloc-icon {
+                    position: relative;
+                    top: -0.25rem;
+                }
+                .vloc-warning {
+                    fill: $notify-warning;
+                }
+                .vloc-success {
+                    fill: $notify-success;
+                }
+            }
+        }
+        td {
+            min-width: 1.5rem;
+            max-width: 1.5rem;
+            display: table-cell;
+        }
+        th {
+            min-width: 1.5rem;
+            max-width: 1.5rem;
+        }
+        .vloc-ins-rule-delete-warning-wrapper {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 80%;
+            z-index: -1;
+            background-color: #f4f6f9;
+            transition: z-index 0ms linear 300ms;
+        }
+        .vloc-icon_save {
+            position: absolute;
+        }
+        .vloc-ins-rule-delete-warning-wrapper .vloc-ins-rule-delete-warning-footer {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .vloc-ins-rule-delete-warning-wrapper.delete-warning-active {
+            z-index: 1;
+            transition: z-index 0ms linear 0ms;
+        }
+        .vloc-data-body {
+            td {
+                left: 0rem;
+                z-index: 100;
+                transition: .25s left ease-in;
+                padding-top: 0;
+                display: table-cell;
+                &.slider {
+                    left: .8rem;
+                    z-index: -100;
+                    position: absolute;
+                    height: 2.3rem;
+                    display: inline-table;
+                    &.delete-in {
+                        z-index: 20000;
+                        left: .8rem;
+                        padding-top: 1rem;
+                        position: absolute;
+                        height: 2.3rem;
+                        display: inline-table;
+                    }
+                    .vloc-text {
+                        position: relative;
+                        top: 0.2rem;
+                        left: 2.2rem;
+                    }
+                    .slds-button__icon {
+                        position: relative;
+                        top: -.7rem;
+                        right: .5rem;
+                        &.vloc-ins-green {
+                            color: #04844b
+                        }
+                        &.vloc-ins-red {
+                            right: 0rem;
+                            color: #c23934
+                        }
+                    }
+                    .slds-button__icon:hover {
+                        cursor: pointer;
+                    }
+                }
+                &.vloc-cell.delete-in {
+                    left: 13.3rem;
+                    z-index: 100;
+                    background: #f3f2f2;
+                }
+            }
+            .vloc-ins-edit-cell {
+                border: none;
+                border-radius: 0 !important;
+                position: relative;
+                top: .3rem;
+                background: none;
+                box-shadow: none;
+            }
+            .vloc-ins-edit-cell:focus {
+                box-shadow: none;
+                border-bottom: 2px solid $primary-light;
+            }
+            .vloc-ins-edit-cell:hover {
+                border-bottom: 2px solid $primary-light;
+                border-color: $primary-light;
+            }
+            .vloc-ins-edit-cell.vloc-ins-edited-element {
+                border-bottom: 2px solid $primary-light;
+                border-color: $notify-warning;
+            }
+        }
+    }
+    .rowsTbody {
+        .vloc-button {
+            width: 1rem;
+        }
+    }
+    .slds-icon {
+        fill: $notify-warning;
+        position: relative;
+        top: -2px;
+        &.vloc-req-doc-file-icon {
+            fill: $neutral-medium;
+            top: -1px;
+        }
+    }
+    .vloc-req-doc-upload-helper-text {
+        position: relative;
+        display: inline-block;
+        top: 1px;
+    }
+    .vloc-req-doc-upload-helper-text-upload-link {
+        color: $primary-light;
+    }
+    .vloc-input-group .form-control:first-child,
+    .vlocity .vloc-input-group-addon:first-child,
+    .vlocity .vloc-input-group-btn:first-child>.btn,
+    .vlocity .vloc-input-group-btn:first-child>.btn-group>.btn,
+    .vlocity .vloc-input-group-btn:first-child>.dropdown-toggle,
+    .vlocity .vloc-input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle),
+    .vlocity .vloc-input-group-btn:last-child>.btn-group:not(:last-child)>.btn {
+        border-radius: 3px;
+    }
+    .table>tbody>tr>td {
+        overflow: visible;
+    }
+    .vlc-overlay {
+        position: fixed;
+        z-index: 1038;
+        background-color: rgba(0, 0, 0, .5);
+        width: 100%;
+        height: 100%
+    }
+    .vlc-overlay svg {
+        width: 28px;
+        display: block;
+        margin: 32px auto
+    }
+}
+
+.pagination{
+    display: flex;
+    left: 48%;
+    right: 50%;
+    position: relative;
+
+    li {
+        margin-left: .25rem;
+    }
+
+    .active{
+        text-decoration: underline;
+    }
+}

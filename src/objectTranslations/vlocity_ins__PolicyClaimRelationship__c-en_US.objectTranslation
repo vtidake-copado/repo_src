@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Claim --></label>
+        <name>vlocity_ins__ClaimId__c</name>
+        <relationshipLabel><!-- Policy Claim Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ClaimStatus --></label>
+        <name>vlocity_ins__ClaimStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy --></label>
+        <name>vlocity_ins__PolicyId__c</name>
+        <relationshipLabel><!-- Policy Claim Relationships --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

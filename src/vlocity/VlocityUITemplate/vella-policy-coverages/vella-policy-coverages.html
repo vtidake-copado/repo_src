@@ -1,0 +1,31 @@
+<div class="vella-policy-coverages-inner-wrapper" ng-controller="vellaPolicyCoveragesController" ng-init="getCoveragesDetails(obj)">
+    <div class="vella-policy-coverages-container vella-policy-coverages-whats-covered-container" ng-if="$root.coverages.coveragesMap && $root.coverages.coveragesMap.length">
+        <h3>What's Covered</h3>
+        <div class="slds-clearfix vella-policy-coverages-inner-container vella-policy-coverages-whats-covered-inner-container">
+            <div class="slds-size--1-of-3 slds-float--left vella-policy-coverages-item vella-policy-coverages-whats-covered-item" ng-repeat="coverage in $root.coverages.coveragesMap">
+                <div class="vella-policy-coverages-item-circle vella-policy-coverages-whats-covered-item-circle">
+                    <img class="vella-policy-coverages-item-img vella-policy-coverages-whats-covered-item-img" ng-src="{{coverage.image}}" alt="{{coverage.name.fieldValue}}"/>
+                </div>
+                <span class="vella-policy-coverages-item-name vella-policy-coverages-whats-covered-item-name">{{coverage.name.fieldValue}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="vella-policy-coverages-container vella-policy-coverages-whats-not-covered-container" ng-if="$root.coverages.optionalCoveragesMap && $root.coverages.optionalCoveragesMap.length">
+        <h3>What's Not Covered</h3>
+        <div class="slds-clearfix vella-policy-coverages-inner-container vella-policy-coverages-whats-not-covered-inner-container">
+            <div class="slds-size--1-of-3 slds-float--left vella-policy-coverages-item vella-policy-coverages-whats-not-covered-item" ng-repeat="coverage in $root.coverages.optionalCoveragesMap">
+                <div class="vella-policy-coverages-item-circle vella-policy-coverages-whats-not-covered-item-circle">
+                    <img class="vella-policy-coverages-item-img vella-policy-coverages-whats-not-covered-item-img" ng-src="{{coverage.image}}" alt="{{coverage.name.fieldValue}}"/>
+                </div>
+                <span class="vella-policy-coverages-item-name vella-policy-coverages-whats-not-covered-item-name">{{coverage.name.fieldValue}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="vella-policy-coverages-container vella-policy-coverages-coverage-amounts-container" ng-if="$root.coverages.coverageAmounts && $root.coverages.coverageAmounts.length">
+        <h3>Coverage Amounts</h3>
+        <div class="slds-grid vella-policy-coverages-coverage-amounts-inner-container" ng-repeat="coverage in $root.coverages.coverageAmounts">
+            <div class="slds-size--1-of-2 slds-text-align--left">{{coverage.name.fieldValue}}</div>
+            <div class="slds-size--1-of-2 slds-text-align--right">{{coverage.value.limit}} <span ng-if="coverage.value.coverage">/ {{coverage.value.coverage}}</span></div>
+        </div>
+    </div>
+</div>

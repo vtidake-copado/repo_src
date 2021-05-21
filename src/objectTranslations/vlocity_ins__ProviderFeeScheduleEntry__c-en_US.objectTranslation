@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Additional Amount --></label>
+        <name>vlocity_ins__AdditionalFeeAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code Short Description --></label>
+        <name>vlocity_ins__CodeShortDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Type --></label>
+        <name>vlocity_ins__FeeType__c</name>
+        <picklistValues>
+            <masterLabel>Fixed Amount</masterLabel>
+            <translation><!-- Fixed Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rate Factor</masterLabel>
+            <translation><!-- Rate Factor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Negotiated Amount --></label>
+        <name>vlocity_ins__NegotiatedAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Fee Schedule --></label>
+        <name>vlocity_ins__ProviderFeeScheduleId__c</name>
+        <relationshipLabel><!-- Provider Fee Schedule Entries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rate Factor --></label>
+        <name>vlocity_ins__RateFactor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Location --></label>
+        <name>vlocity_ins__ServiceLocationAccountId__c</name>
+        <relationshipLabel><!-- Provider Fee Schedule Entries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Insurance Code --></label>
+        <name>vlocity_ins__VlocityCodeId__c</name>
+        <relationshipLabel><!-- Provider Fee Schedule Entries --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,9 @@
+{
+    "Cards": [
+    ],
+    "templates": {
+        "0": {
+            "templateUrl": "ins-quote-coverages-add-modal"
+        }
+    }
+}

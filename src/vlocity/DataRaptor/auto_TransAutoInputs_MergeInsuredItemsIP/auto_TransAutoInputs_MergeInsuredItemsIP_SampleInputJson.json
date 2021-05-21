@@ -1,0 +1,163 @@
+{
+    "ContextId": "02i6A0000013i6GQAQ",
+    "authKey": "MzM5NTg=",
+    "autos": {
+        "auto": {
+            "VehicleType": "PASSENGER CAR",
+            "autoBodyType": "Sedan/Saloon",
+            "autoCondition": "VeryGood",
+            "autoGaragePostalCode": "94105",
+            "autoInstanceKey": "2017 BMW 5 Series",
+            "autoMake": "BMW_5",
+            "autoMakeName": [
+                "BMW"
+            ],
+            "autoMileage": 10000,
+            "autoModel": "5 Series_14",
+            "autoModelName": [
+                "5 Series"
+            ],
+            "autoTrim": "Sedan 4D 6-Cyl, Turbo, 3.0 Liter Auto, 8-Spd Stptnc Manual AWD_424316",
+            "autoTrimName": [
+                "Sedan 4D 6-Cyl, Turbo, 3.0 Liter Auto, 8-Spd Stptnc Manual AWD"
+            ],
+            "autoValue": 40962,
+            "autoValue1": "40962",
+            "autoYear": "2017",
+            "autoYearName": "2017",
+            "effectiveDate": "2018-10-01"
+        }
+    },
+    "discountAutos": {
+        "discountAuto": {
+            "autoAltFuel": false,
+            "autoAntiTheft": true,
+            "autoBrakes": true,
+            "autoStabilization": true,
+            "discountAutoInstanceKey": "2017 BMW 5 Series",
+            "typeAutoDiscount": "AntiLock;Stab;AntiTheft"
+        }
+    },
+    "getInsuredItemsResult": {
+        "AUTO": [
+            {
+                "BodyClass": "Sedan/Saloon",
+                "Id": "a0F6A000001pC67UAE",
+                "VehicleType": "PASSENGER CAR",
+                "autoAltFuel": true,
+                "autoAntiTheft": false,
+                "autoBrakes": false,
+                "autoCondition": "Excellent",
+                "autoGaragePostalCode": "94103",
+                "autoInstanceKey": "2015 Lexus LX250",
+                "autoMake": "Lexus",
+                "autoMileage": 15000,
+                "autoModel": "LX250",
+                "autoStabilization": false,
+                "autoTrim": "Sedan/Saloon",
+                "autoValue": 35000,
+                "autoVehicleType": "PASSENGER CAR",
+                "autoYear": 2015,
+                "discAltFuel": true,
+                "discAntiLock": false,
+                "discAntiTheft": false,
+                "discStab": false,
+                "discountAutoInstanceKey": "2015 Lexus LX250",
+                "instanceKey": "2015 Lexus LX250",
+                "isPrimary": true,
+                "typeAutoDiscount": "AltFuel"
+            },
+            {
+                "BodyClass": "Minivan",
+                "Id": "a0F6A000001pC68UAE",
+                "VehicleType": "MULTIPURPOSE PASSENGER VEHICLE (MPV)",
+                "autoAltFuel": false,
+                "autoAntiTheft": true,
+                "autoBrakes": true,
+                "autoCondition": "Good",
+                "autoGaragePostalCode": "94103",
+                "autoInstanceKey": "2006 Honda Odyssey",
+                "autoMake": "Honda",
+                "autoMileage": 13000,
+                "autoModel": "Odyssey",
+                "autoStabilization": true,
+                "autoTrim": "Minivan",
+                "autoValue": 35000,
+                "autoVehicleType": "MULTIPURPOSE PASSENGER VEHICLE (MPV)",
+                "autoYear": 2006,
+                "discAltFuel": false,
+                "discAntiLock": true,
+                "discAntiTheft": true,
+                "discStab": true,
+                "discountAutoInstanceKey": "2006 Honda Odyssey",
+                "instanceKey": "2006 Honda Odyssey",
+                "isPrimary": true,
+                "typeAutoDiscount": "AntiLock;Stab;AntiTheft"
+            }
+        ],
+        "DRIVER": [
+            {
+                "FirstName": "Roger",
+                "Id": "a0G6A000005gvmGUAQ",
+                "LastName": "Moore",
+                "discountDriverInstanceKey": "Roger Moore",
+                "driverAge": 32,
+                "driverAgeLicensed": 16,
+                "driverBirthdate": "1986-02-14T08:00:00.000Z",
+                "driverFirstName": "Roger",
+                "driverGPA": "4.5",
+                "driverGender": "M",
+                "driverInstanceKey": "Roger Moore",
+                "driverLastName": "Moore",
+                "driverMaritalStatus": "M",
+                "driverMiddleName": "M",
+                "driverMilitaryID": null,
+                "driverMiltaryBranch": null,
+                "instanceKey": "Roger Moore",
+                "isPrimary": false,
+                "typeDriverDiscount": "student"
+            },
+            {
+                "FirstName": "Amy",
+                "Id": "a0G6A000005gvmHUAQ",
+                "LastName": "Moore",
+                "discountDriverInstanceKey": "Amy Moore",
+                "driverAge": 36,
+                "driverAgeLicensed": 16,
+                "driverBirthdate": "1981-08-05T07:00:00.000Z",
+                "driverFirstName": "Amy",
+                "driverGPA": null,
+                "driverGender": "F",
+                "driverInstanceKey": "Amy Moore",
+                "driverLastName": "Moore",
+                "driverMaritalStatus": "M",
+                "driverMiddleName": null,
+                "driverMilitaryID": "2134123",
+                "driverMiltaryBranch": "USAIR",
+                "instanceKey": "Amy Moore",
+                "isPrimary": false,
+                "typeDriverDiscount": "military"
+            }
+        ],
+        "null": [
+            {
+                "Id": "a0G6A000005gvmFUAQ",
+                "instanceKey": "Policyholder"
+            }
+        ]
+    },
+    "id": "a2C6A000000p0iWUAQ",
+    "isdtp": "p1",
+    "layout": "newport",
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://agility-velocity-7484--%vlocity_namespace%.na50.visual.force.com",
+    "testContextId": "02i6A0000013i6GQAQ",
+    "timeStamp": "2018-08-17T18:18:16.800Z",
+    "userCurrencyCode": "USD",
+    "userId": "0056A000000taWIQAY",
+    "userName": "insdemo2@demo.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": -420,
+    "vlcPersistentComponent": {
+    }
+}

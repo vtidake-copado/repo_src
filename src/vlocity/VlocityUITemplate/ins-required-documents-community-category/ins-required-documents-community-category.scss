@@ -1,0 +1,429 @@
+/** 
+ ** Reusing product attributes variables because it is in the InsProductModel datapack
+ ** and don't want to be redundant
+ **/
+ @import "ins-product-attributes-variables";
+
+.via-slds {
+    .slds-theme_info {
+        background-color: $notify-default;
+    }
+    [ins-dropzone] {
+        .dz-preview {
+            display: none;
+        }
+    }
+    &.vlocity {
+        .vloc-modal.slds-modal.slds-modal_prompt {
+            position: fixed;
+            top: 4rem !important;
+    
+            .slds-button__icon {
+                fill: $primary-slds-navy;
+            }
+            .slds-modal__content {
+                box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .slds-backdrop {
+        background: rgba(255, 255, 255, 0.8);
+    }
+    .vloc-req-doc-community-category-placeholders-container {
+        padding-top: 0.5rem;
+    
+        .vloc-req-doc-community-category-placeholder-wrapper {
+            position: relative;
+
+            .vloc-req-doc-community-category-placeholder {
+                position: relative;
+                padding: 1rem 1rem 3rem 1rem;
+                margin: 0 0.5rem 1rem;
+                min-height: 14.5rem;
+                max-height: 14.5rem;
+                height: 14.5rem;
+                text-align: center;
+                background-color: $np-cards-bg;
+                border: 1px solid $np-cards-border;
+                color: $primary-slds-navy;
+                transition: border-color 100ms ease-in,
+                            background-color 100ms ease-in;
+
+                .vloc-req-doc-placeholder-spinner-container {
+                    display: none;
+                    z-index: 999;
+                }
+    
+                &.dz-drag-hover {
+                    border-style: dashed;
+                    border-color: $primary-light;
+                    background-color: darken($np-cards-bg, 2%);
+                }
+    
+                .dz-default, .dz-preview {
+                    display: none;
+                }
+
+                &.dz-started {
+                    .vloc-req-doc-placeholder-spinner-container {
+                        display: block;
+                    }
+                }
+                
+                .vloc-req-doc-community-category-placeholder-actions-dropdown-container {
+                    position: absolute;
+                    top: 0.9rem;
+                    right: 0.75rem;
+                    text-align: right;
+
+                    .vloc-req-doc-community-category-placeholder-actions-dropdown-list {
+                        text-align: left;
+                        min-width: 10rem;
+                        width: 10rem;
+
+                        .vloc-req-doc-community-category-placeholder-actions-dropdown-list-item-icon-container {
+                            margin-right: 0.5rem;
+                            position: relative;
+                            top: -1px;
+                        }
+                        .vloc-req-doc-community-category-placeholder-actions-dropdown-list-item-icon {
+                            fill: $primary-slds-navy;
+                        }
+                    }
+                }
+    
+                .vloc-req-doc-community-category-placeholder-name {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    line-height: 1.3;
+                    max-height: 2.5rem;
+                    overflow: hidden;
+                    height: 2.5rem;
+                    padding: 0 1.5rem;
+                    margin-bottom: 0.75rem;
+                }
+    
+                .vloc-req-doc-community-category-placeholder-icon-container {
+                    margin-bottom: 0.75rem;
+                    position: relative;
+    
+                    .vloc-req-doc-community-category-placeholder-icon {
+                        fill: $np-cards-border;
+                        width: 4rem;
+                        height: 4rem;
+    
+                        &.accepted, &.complete, &.in-process {
+                            fill: $primary-medium;
+                        }
+                    }
+    
+                    .vloc-req-doc-community-category-placeholder-icon-extra {
+                        position: absolute;
+                        bottom: -0.5rem;
+                        left: 53%;
+                        width: 2rem;
+                        height: 2rem;
+                        
+                        &.refresh, &.approval {
+                            background-color: $notify-success;
+                        }
+    
+                        &.reject {
+                            background-color: $notify-danger;
+                        }
+    
+                        &.clock {
+                            background-color: $notify-warning;
+                        }
+    
+                        .vloc-placeholder-status-icon {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateY(-50%) translateX(-50%);
+                        }
+                    }
+                }
+    
+                .vloc-req-doc-community-category-placeholder-status {
+                    font-style: italic;
+                    font-weight: 400;
+                }
+    
+                .vloc-req-doc-community-category-placeholder-due-date {
+                    font-weight: 100;
+    
+                    span {
+                        font-style: italic;
+                        font-weight: 400;
+                    }
+                }
+    
+                .vloc-req-doc-community-category-bottom {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    height: 3rem;
+                    max-height: 3rem;
+    
+                    .vloc-req-doc-community-category-bottom-no-files {
+                        line-height: 3rem;
+                        font-style: italic;
+                        color: $notify-danger;
+                    }
+    
+                    > a {
+                        line-height: 3rem;
+                    }
+    
+                    .vloc-req-doc-community-category-placeholder-files-popover {
+                        position: absolute;
+                        width: 45rem;
+                        max-width: 45rem;
+                        z-index: 990;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 2.6rem;
+    
+                        &.vloc-popover-left {
+                            left: -0.5rem;
+                            transform: none;
+    
+                            &:before, &:after {
+                                left: 19.25%;
+                            }
+                        }
+    
+                        &.vloc-popover-right {
+                            left: auto;
+                            right: -0.5rem;
+                            transform: none;
+    
+                            &:before, &:after {
+                                left: auto;
+                                right: 17.75%;
+                            }
+                        }
+                    }
+                }
+    
+                .vloc-req-doc-file-info-container {
+                    position: relative;
+                    width: 100%;
+                    text-align: left;
+                    color: $primary-dark;
+                    border: 1px solid transparent;
+                    border-bottom: 1px solid rgba($cards-border-gray, .5);
+                    background-color: white;
+                    transition: background-color 100ms ease-in,
+                                border-style 100ms ease-in;
+    
+                    &:last-child {
+                        border-bottom-color: transparent;
+                    }
+    
+                    &.dz-drag-hover {
+                        border: 1px dashed $primary-light;
+                        background-color: $neutral-lightest;
+                    }
+    
+                    &.vloc-req-doc-new-file {
+                        background-color: $neutral-light;
+                    }
+    
+                    .vloc-req-doc-file-spinner-container {
+                        background-color: white;
+                        z-index: 999;
+                        display: none;
+    
+                        .vloc-req-doc-file-spinner {
+                            transform: translate(-99%,-50%) rotate(90deg);
+                        }
+                    }
+    
+                    &.dz-started,
+                    &.vloc-req-doc-delete-started {
+                        .vloc-req-doc-file-spinner-container {
+                            display: block;
+                        }
+                    }
+    
+                    .vloc-req-doc-file-info {
+                        line-height: 1.3;
+    
+                        .vloc-req-doc-file-name {
+                            font-size: 0.875rem;
+
+                            .vloc-req-doc-community-category-placeholder-files-popover-file-preview {
+                                display: inline-block;
+                            }
+                        }
+    
+                        .vloc-req-doc-file-meta {
+                            font-style: italic;
+                            color: lighten($notify-default, 25%);
+                        }
+                    }
+
+                    .vloc-req-doc-community-category-placeholder-files-popover-file-actions {
+                        padding-top: 0.45rem;
+                    }
+    
+                    .vloc-req-doc-file-info-status-wrapper {
+                        color: $neutral-dark;
+                        display: inline-block;
+    
+                        .vloc-req-doc-icon-container {
+                            margin-left: 0.25rem;
+                            position: relative;
+                            top: -1px;
+    
+                            .vloc-req-doc-icon {
+                                fill: $neutral-light;
+                                width: 0.75rem;
+                                height: 0.75rem;
+                                transition: fill 150ms ease-in;
+                            }
+                        }
+    
+                        .vloc-req-doc-file-info-status {
+                            display: inline-block;
+                        }
+    
+                        &:hover {
+                            .vloc-req-doc-icon-container {
+                                .vloc-req-doc-icon {
+                                    fill: $neutral-medium;
+                                }
+                            }
+                        }
+                    }
+    
+                    .vloc-req-doc-file-info-status-picklist {
+                        .vloc-req-doc-select-element {
+                            display: inline-block;
+                        }
+                    }
+    
+                    .vloc-req-doc-uploadedFile-actions-container {
+                        .vloc-req-doc-uploadedFile-actions-delete-btn {
+                            height: 100%;
+                            width: 2rem;
+                            border: none;
+    
+                            .vloc-req-doc-button-icon-delete {
+                                position: relative;
+                                top: -1px;
+                                transition: fill 150ms ease-in;
+                                fill: $neutral-medium;
+                            }
+    
+                            &:hover {
+                                .vloc-req-doc-button-icon-delete {
+                                    fill: $neutral-dark;
+                                }
+                            }
+                        }
+                    }
+    
+                    .dz-default {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 45rem) {
+    .via-slds {
+        .vloc-req-doc-community-category-placeholders-container {
+            .vloc-req-doc-community-category-placeholder-wrapper {
+                .vloc-req-doc-community-category-placeholder {
+                    .vloc-req-doc-community-category-bottom {
+                        .vloc-req-doc-community-category-placeholder-files-popover {
+                            width: 35rem;
+                            max-width: 35rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 35rem) {
+    .via-slds {
+        .vloc-req-doc-community-category-placeholders-container {
+            .vloc-req-doc-community-category-placeholder-wrapper {
+                .vloc-req-doc-community-category-placeholder {
+                    .vloc-req-doc-community-category-bottom {
+                        .vloc-req-doc-community-category-placeholder-files-popover {
+                            width: 479px;
+                            max-width: 479px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .via-slds {
+        .vloc-req-doc-community-category-placeholders-container {
+            .vloc-req-doc-community-category-placeholder-wrapper {
+                .vloc-req-doc-community-category-placeholder {
+                    max-height: 100%;
+                    height: auto;
+                    padding-bottom: 0;
+
+                    .vloc-req-doc-community-category-bottom {
+                        position: relative;
+                        height: auto;
+                        max-height: 100%;
+
+                        .vloc-req-doc-community-category-placeholder-files-popover {
+                            position: static;
+                            width: 100%;
+                            max-width: 100%;
+                            min-width: 0;
+                            box-shadow: none;
+                            border: none;
+                            border-radius: 0;
+                            margin-bottom: 1rem;
+                            left: auto;
+                            transform: none;
+
+                            .vloc-req-doc-community-category-placeholder-files-popover-file-icon-container,
+                            .vloc-req-doc-community-category-placeholder-files-popover-file-status-wrapper {
+                                display: none;
+                            }
+
+                            .vloc-button-wrapper {
+                                display: none;
+                            }
+
+                            .vloc-req-doc-community-category-placeholder-files-popover-header {
+                                display: none;
+                            }
+
+                            &:before, &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

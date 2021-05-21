@@ -1,0 +1,13 @@
+{
+    "confirmQuote": {
+        "quoteConfirm": {
+            "quoteConfirmProducerEmail": "dlq@vlocity.com",
+            "quoteConfirmProducerName": "Larry Sullivan",
+            "quoteConfirmProducerPhone": "(415) 789-8474",
+            "quoteConfirmProduct": "Superior Business",
+            "quoteConfirmQuoteNumber": "00000050",
+            "quoteConfirmStatus": "Submitted",
+            "quoteConfirmTotalPremium": "$14,249.52"
+        }
+    }
+}

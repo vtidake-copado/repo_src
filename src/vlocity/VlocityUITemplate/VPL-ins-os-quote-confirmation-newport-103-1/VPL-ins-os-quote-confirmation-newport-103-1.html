@@ -1,0 +1,37 @@
+<div class="ins-os-confirmation-wrapper nds-p-around--small" ng-if="control.vlcSI[control.itemsKey]">
+    <div class="ins-os-confirmation-container" ng-repeat="p in control.vlcSI[control.itemsKey]">
+        <p>Thank You for Submitting Your Information, and Completing the Quote Process.</p>
+        <div class="nds-grid nds-wrap ins-os-confirmation-card">
+             <div class="nds-size--1-of-1 nds-m-bottom--x-small ins-os-confirmation-m-bottom--x-small">
+                <h3>{{p.quoteConfirmProduct}}</h3>
+            </div>
+            <div class="nds-size--1-of-2 nds-m-bottom--x-small ins-os-confirmation-m-bottom--x-small">
+                <span class="ins-os-confirmation-label">Quote Number</span>
+            </div>
+             <div class="nds-size--1-of-2 nds-m-bottom--x-small ins-os-confirmation-m-bottom--x-small">
+                <span class="ins-os-confirmation-value">{{p.quoteConfirmQuoteNumber}}</span>
+            </div>
+            <div class="nds-size--1-of-2 nds-m-bottom--x-small  ins-os-confirmation-m-bottom--x-small ">
+                <span class="ins-os-confirmation-label">Annual Premium</span>
+            </div>
+            <div class="nds-size--1-of-2 nds-m-bottom--x-small  ins-os-confirmation-m-bottom--x-small ">
+                <span class="ins-os-confirmation-value">{{p.quoteConfirmTotalPremium}}</span>
+            </div>
+            <!-- <div class="nds-size--1-of-4 nds-m-bottom--x-small  ins-os-confirmation-m-bottom--x-small ins-os-confirmation-print-desktop">
+                <a href="javascript:void(0)"><span class="ins-os-confirmation-value">Print ID Card</span></a>
+            </div> -->
+            <div class="nds-size--2-of-2" ng-if="p.quoteConfirmProducerName">
+                <span class="ins-os-confirmation-label">Your Representative: </span>
+                <span class="ins-os-confirmation-value">{{p.quoteConfirmProducerName}}</span>
+                <span class="ins-os-confirmation-label"> Phone:</span>
+                <span class="ins-os-confirmation-value">{{p.quoteConfirmProducerPhone}}</span>
+                <span class="ins-os-confirmation-label">  Email:</span>
+                <span class="ins-os-confirmation-value">{{p.quoteConfirmProducerEmail}}</span>
+            </div>
+            <!-- <div class="nds-size--2-of-2 nds-m-top--medium nds-m-bottom--x-small nds-text-align--center ins-os-confirmation-print-mobile">
+                <a href="javascript:void(0)"><span class="ins-os-confirmation-value">Print ID Card</span></a>
+            </div> -->
+        </div>
+        <p>We look forward to serving you as your insurance needs evolve.  Please contact us at <a href="https://www.vlocity.com/" target="_blank"><strong>www.vlocity.com</strong></a>, via email at <a href="mailto:customerservice@vlocity.com"><strong>customerservice@vlocity.com</strong></a> or or via phone at <a href="tel:18448562489"><strong>888.Vlocity</strong></a> if we can be of assistance.</p>
+    </div>
+</div>

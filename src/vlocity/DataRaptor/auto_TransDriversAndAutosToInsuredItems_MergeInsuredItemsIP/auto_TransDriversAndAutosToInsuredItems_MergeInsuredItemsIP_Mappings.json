@@ -1,0 +1,59 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "insuredItems:autoDriver",
+        "%vlocity_namespace%__GlobalKey__c": "e47c9da9-b4ef-b803-3cf8-5c788f1ab408",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "getInsuredItemsResult:autoDriver",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "auto_TransDriversAndAutosToInsuredItems_MergeInsuredItemsIP5172336327652445",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "auto_TransDriversAndAutosToInsuredItems_MergeInsuredItemsIP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "insuredItems:autoVehicle",
+        "%vlocity_namespace%__GlobalKey__c": "f610b78a-b8e0-d891-bf92-a664134b4e54",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "MergeAuto",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "auto_TransDriversAndAutosToInsuredItems_MergeInsuredItemsIP7861450391448821",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "auto_TransDriversAndAutosToInsuredItems_MergeInsuredItemsIP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "modifiedItems:autoDriver",
+        "%vlocity_namespace%__GlobalKey__c": "82fa3b9f-e984-7ade-621d-3ca1884ec13c",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "getInsuredItemsResult:autoDriver",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "auto_TransDriversAndAutosToInsuredItems_MergeInsuredItemsIP782709979669163",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "auto_TransDriversAndAutosToInsuredItems_MergeInsuredItemsIP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "modifiedItems:autoVehicle",
+        "%vlocity_namespace%__GlobalKey__c": "51c0e123-7f6c-0e46-bc7c-4e23726850c1",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "MergeAuto",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "auto_TransDriversAndAutosToInsuredItems_MergeInsuredItemsIP6124721910941668",
+        "%vlocity_namespace%__TransformValuesMap__c": "{}",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "auto_TransDriversAndAutosToInsuredItems_MergeInsuredItemsIP",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

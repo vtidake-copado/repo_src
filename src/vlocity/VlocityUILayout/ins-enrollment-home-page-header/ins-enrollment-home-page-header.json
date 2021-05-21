@@ -1,0 +1,20 @@
+{
+    "Cards": [
+        "ins-enrollment-page-actions"
+    ],
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{\"records\" : 1}"
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-enrollment-home-page-header"
+        }
+    },
+    "workspace": [
+        null,
+        "ins-enrollment-page-actions/Vlocity/1/1520891747786"
+    ]
+}

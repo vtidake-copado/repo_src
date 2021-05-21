@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Discount Amount --></label>
+        <name>vlocity_ins__DiscountAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount % --></label>
+        <name>vlocity_ins__DiscountPercent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dosage Form --></label>
+        <name>vlocity_ins__DosageForm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drug Name --></label>
+        <name>vlocity_ins__DrugName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective End Date --></label>
+        <name>vlocity_ins__EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Start Date --></label>
+        <name>vlocity_ins__EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Formulary Drug --></label>
+        <name>vlocity_ins__FormularyDrugId__c</name>
+        <relationshipLabel><!-- Provider Network Formulary Drugs Price --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Negotiated Price --></label>
+        <name>vlocity_ins__NegotiatedPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Account --></label>
+        <name>vlocity_ins__ProviderAccountId__c</name>
+        <relationshipLabel><!-- Provider Network Formulary Drugs Price --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Provider Network --></label>
+        <name>vlocity_ins__ProviderNetworkId__c</name>
+        <relationshipLabel><!-- Provider Network Formulary Drugs Price --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>vlocity_ins__Quantity__c</name>
+    </fields>
+</CustomObjectTranslation>

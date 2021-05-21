@@ -1,0 +1,165 @@
+@import "ins-product-attributes-variables";
+.via-slds{
+
+    .vloc-attr-add-new{
+        &:active{
+            box-shadow: none;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+
+    .vloc-card-header{
+        &:hover{
+            cursor: move
+        }
+    }
+
+    .vloc-rules-icon{
+        &:hover{
+            cursor: pointer;
+        }
+        &.has-rules{
+            color: $primary-light;
+            fill: $primary-light;
+        }
+        
+    }
+
+          .draggable-items {
+            li {
+                i.icon-v-grip {
+                    position: absolute;
+                    padding: 15px 2px 11px 7px;
+                    top: 0;
+                    left: 0;
+                    font-size: 28px;
+                    color:  $primary-dark;
+                    transition: all 150ms ease-in;
+                    cursor: move;
+
+                    &:before {
+                        margin: 0;
+                    }
+
+                }
+
+              &.dndDragging {
+                cursor: move;
+                border: 1px solid #CFD7E6;
+                }
+
+                &.hovering {
+                    cursor: move;
+                    &.active {
+                        .contract-icon:not(.icon-v-close-circle-line):not(.icon-v-save-line) {
+                            &.sequence {
+                                color: $primary-dark;
+                            }
+                        }
+                    }
+                }
+
+            &.dndDraggingSource {
+                opacity: 0;
+                position: absolute;
+                left: -999px;
+                cursor: move;
+                .vloc-card-header{
+                    border-color: $primary-light; 
+                    background: $primary-light;
+                }
+            }
+
+            &.dndPlaceholder {
+                background:  $cards-gray;   
+                height: 5rem;
+                margin-top: 1rem; 
+                margin-bottom: 1rem; 
+                border-radius: .5rem; 
+            }
+
+            &.template-active {
+                padding-left: 16px;
+
+                i.icon-v-grip {
+                    display: none;
+                }
+            }
+
+            &.dnd-disabled {
+                i.icon-v-grip {
+                    display: none;
+                }
+            }
+        }
+
+        &.existing-data {
+            li {
+                &:hover {
+                    span.data-name {
+                        color: $cards-gray;
+                    }
+                }
+
+                &.hovering {
+                    span.data-name {
+                        color: $cards-gray;
+                    }
+                }
+            }
+        }
+    }
+ .vloc-attr-table {
+        background: white;
+        min-height: 45rem;
+        -webkit-transition: all 0.3s ease;                  
+        -moz-transition: all 0.3s ease;                 
+        -o-transition: all 0.3s ease;   
+        -ms-transition: all 0.3s ease;          
+        transition: all 0.3s ease;
+
+        &.newAttr{
+            width: 50%;
+        }
+        
+        .vloc-attr-table-header{
+            border-bottom: 1px solid  $cards-border-gray;
+            .vloc-attr-title-cell {
+                &:hover{
+                    cursor:pointer;
+                }
+             }
+        }
+    }
+    .vloc-attr-row {
+        position: relative;
+
+        .vloc-attr-category-heading{
+            border-bottom: 1px solid $cards-border-gray;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        &.selected{
+            .vloc-attr-data-cell{
+                background: $cards-gray;
+            }
+        }
+        .vloc-attr-cell {
+            .vloc-attr-title-cell {
+
+            }  
+
+            .vloc-attr-data-cell{
+            }
+        }
+        .vloc-attr-fly-out{
+            position: absolute; 
+            right: 0;
+            bottom: 0;
+        }
+    }
+}

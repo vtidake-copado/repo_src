@@ -1,0 +1,156 @@
+{
+    "RateDrivers": {
+        "output": [
+            {
+                "aggregationResults": {
+                    "ratedDriver-BIPD": 1.16,
+                    "ratedDriver-CCD": 2.4,
+                    "ratedDriver-COLL": 1.61,
+                    "ratedDriver-MED": 0.9,
+                    "ratedDriver-UM": 0.99
+                },
+                "calculationResults": [
+                    {
+                        "AUTO.instanceKey": "2017 Honda Odessey",
+                        "DRIVER.instanceKey": "ANIK SINGH",
+                        "ID": "0",
+                        "autoSafeDriver__driverSafe": "Y",
+                        "driverAge": 23,
+                        "driverBIPD": 1.16,
+                        "driverCCD": 2.4,
+                        "driverCOLL": 1.61,
+                        "driverGoodStudent__driverGoodStudent": "Y",
+                        "driverMED": 0.9,
+                        "driverPoints": 1,
+                        "driverUM": 0.99,
+                        "driverYrsExp": 7
+                    }
+                ]
+            },
+            {
+                "aggregationResults": {
+                    "ratedDriver-BIPD": 1.06,
+                    "ratedDriver-CCD": 1.71,
+                    "ratedDriver-COLL": 1.33,
+                    "ratedDriver-MED": 0.97,
+                    "ratedDriver-UM": 1.03
+                },
+                "calculationResults": [
+                    {
+                        "AUTO.instanceKey": "2018 BMW X6",
+                        "DRIVER.instanceKey": "ANIKet SINGH",
+                        "ID": "1",
+                        "autoSafeDriver__driverSafe": "Y",
+                        "driverAge": 23,
+                        "driverBIPD": 1.16,
+                        "driverCCD": 2.4,
+                        "driverCOLL": 1.61,
+                        "driverGoodStudent__driverGoodStudent": "Y",
+                        "driverMED": 0.9,
+                        "driverPoints": 1,
+                        "driverUM": 0.99,
+                        "driverYrsExp": 7
+                    },
+                    {
+                        "AUTO.instanceKey": "2018 BMW X6",
+                        "DRIVER.instanceKey": "ANIKi SINGH",
+                        "ID": "2",
+                        "autoSafeDriver__driverSafe": "N",
+                        "driverAge": 53,
+                        "driverBIPD": 0.96,
+                        "driverCCD": 1.02,
+                        "driverCOLL": 1.05,
+                        "driverGoodStudent__driverGoodStudent": "N",
+                        "driverMED": 1.04,
+                        "driverPoints": 4,
+                        "driverUM": 1.06,
+                        "driverYrsExp": 37
+                    }
+                ]
+            }
+        ]
+    },
+    "error": "OK",
+    "errorCode": "INVOKE-200",
+    "transformKeys": {
+        "transformed": {
+            "input_1": [
+                {
+                    "AUTO.instanceKey": "2017 Honda Odessey",
+                    "DRIVER.instanceKey": "John Smith",
+                    "carAltFuel": "true",
+                    "carBrake": "true",
+                    "carStability": "true",
+                    "carTheft": "true",
+                    "carValue": "35000",
+                    "carYear": "2014",
+                    "dedCCD": "500",
+                    "dedCOLL": "1000",
+                    "driverAccidentPoints": "1",
+                    "driverAgeLicensed": "16",
+                    "driverBirthdate": "1995-09-18",
+                    "driverGPA": "3.5",
+                    "driverGender": "M",
+                    "driverMVRPoints": "0",
+                    "driverMaritalStatus": "S",
+                    "limitBI": "1000/1000/100",
+                    "limitMED": "10000",
+                    "limitPD": "100000",
+                    "limitUM": "15/30",
+                    "parentProdKey": "01t6A000002qvMWQAY",
+                    "productKey": "01t6A000002qvMWQAY"
+                },
+                {
+                    "AUTO.instanceKey": "2018 BMW X6",
+                    "DRIVER.instanceKey": "John Smith",
+                    "carAltFuel": "true",
+                    "carBrake": "true",
+                    "carStability": "true",
+                    "carTheft": "true",
+                    "carValue": "35000",
+                    "carYear": "2014",
+                    "dedCCD": "500",
+                    "dedCOLL": "1000",
+                    "driverAccidentPoints": "1",
+                    "driverAgeLicensed": "16",
+                    "driverBirthdate": "1995-09-18",
+                    "driverGPA": "3.5",
+                    "driverGender": "M",
+                    "driverMVRPoints": "0",
+                    "driverMaritalStatus": "S",
+                    "limitBI": "1000/1000/100",
+                    "limitMED": "10000",
+                    "limitPD": "100000",
+                    "limitUM": "15/30",
+                    "parentProdKey": "01t6A000002qvMWQAY",
+                    "productKey": "01t6A000002qvMWQAY"
+                },
+                {
+                    "AUTO.instanceKey": "2018 BMW X6",
+                    "DRIVER.instanceKey": "Amy Smith",
+                    "carAltFuel": "true",
+                    "carBrake": "true",
+                    "carStability": "true",
+                    "carTheft": "true",
+                    "carValue": "35000",
+                    "carYear": "2014",
+                    "dedCCD": "500",
+                    "dedCOLL": "1000",
+                    "driverAccidentPoints": "2",
+                    "driverAgeLicensed": "16",
+                    "driverBirthdate": "1965-09-18",
+                    "driverGPA": "0",
+                    "driverGender": "F",
+                    "driverMVRPoints": "2",
+                    "driverMaritalStatus": "M",
+                    "limitBI": "1000/1000/100",
+                    "limitMED": "10000",
+                    "limitPD": "100000",
+                    "limitUM": "15/30",
+                    "parentProdKey": "01t6A000002qvMWQAY",
+                    "productKey": "01t6A000002qvMWQAY"
+                }
+            ]
+        }
+    }
+}

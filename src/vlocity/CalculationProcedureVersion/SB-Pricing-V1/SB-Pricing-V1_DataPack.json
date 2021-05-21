@@ -1,0 +1,53 @@
+{
+    "%vlocity_namespace%__ApplicableObject__c": "",
+    "%vlocity_namespace%__CalculationProcedureId__c": {
+        "Name": "SB - Pricing",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+    },
+    "%vlocity_namespace%__CalculationProcedureId__r.Name": "SB - Pricing",
+    "%vlocity_namespace%__CalculationProcedureStep__c": "SB-Pricing-V1_Steps.json",
+    "%vlocity_namespace%__CalculationProcedureVariable__c": "SB-Pricing-V1_Variables.json",
+    "%vlocity_namespace%__Constants__c": [
+        {
+            "alias": "rateProperty",
+            "dataType": "Currency",
+            "isEditable": false,
+            "name": "rateProperty",
+            "precision": 2,
+            "userDefined": true,
+            "value": ".6",
+            "valuePlaceHolder": "Enter a Value"
+        },
+        {
+            "alias": "1000",
+            "dataType": "Number",
+            "duplicateAlias": true,
+            "isEditable": true,
+            "name": "1000",
+            "precision": 0,
+            "userDefined": true,
+            "value": "1000",
+            "valuePlaceHolder": "Enter a Value"
+        }
+    ],
+    "%vlocity_namespace%__CurrentStatus__c": "Active",
+    "%vlocity_namespace%__EnableLooping__c": false,
+    "%vlocity_namespace%__EndDateTime__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "SB - Pricing V1",
+    "%vlocity_namespace%__InputBundleId__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "{\"busType\":\"repair\",\"busRevAnnual\":\"459899\",\"limitLiability\":\"100000\",\"Deductible\":\"10\",\"limitProperty\":\"500000\"}",
+    "%vlocity_namespace%__LoopingSpecification__c": "",
+    "%vlocity_namespace%__OutputBundleId__c": "",
+    "%vlocity_namespace%__PostProcessorClass__c": "",
+    "%vlocity_namespace%__PreProcessorClass__c": "",
+    "%vlocity_namespace%__Priority__c": 1,
+    "%vlocity_namespace%__StartDateTime__c": "2019-01-02T03:34:00.000Z",
+    "%vlocity_namespace%__Variables__c": "",
+    "%vlocity_namespace%__VersionNumber__c": 1,
+    "Name": "SB - Pricing V1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SB - Pricing"
+}

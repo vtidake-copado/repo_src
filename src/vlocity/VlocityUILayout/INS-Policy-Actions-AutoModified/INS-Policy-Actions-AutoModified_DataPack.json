@@ -1,0 +1,26 @@
+{
+    "%vlocity_namespace%__Author__c": "VlocityIBO",
+    "%vlocity_namespace%__Datasource__c": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "02i6A0000009THNQA2"
+            }
+        ],
+        "type": "Query",
+        "value": {
+            "query": "SELECT AccountId,Name,RecordTypeId,%vlocity_namespace%__QualifiedType__c,Status,%vlocity_namespace%__Type__c FROM Asset WHERE Id = '{{params.id}}'"
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "INS-Policy-Actions-AutoModified.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "INS-Policy-Actions-AutoModified/1/VlocityIBO/1534152030455",
+    "%vlocity_namespace%__ParentID__c": "INS-Policy-Actions/1/VlocityIBO/1505461171422",
+    "%vlocity_namespace%__RequiredPermission__c": "",
+    "%vlocity_namespace%__Type__c": "Layout",
+    "%vlocity_namespace%__Version__c": 1,
+    "Name": "INS-Policy-Actions-AutoModified",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUILayout__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUILayout__c/INS-Policy-Actions-AutoModified"
+}

@@ -1,0 +1,29 @@
+{
+    "%vlocity_namespace%__CalculationMatrixId__c": {
+        "Name": "Zip_CBSA",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/Zip_CBSA",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+    },
+    "%vlocity_namespace%__CalculationMatrixRow__c": "Zip_CBSA-V1_Rows.json",
+    "%vlocity_namespace%__CurrentStatus__c": "Active",
+    "%vlocity_namespace%__EndDateTime__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "Zip_CBSA V1",
+    "%vlocity_namespace%__GroupKeyValue__c": "",
+    "%vlocity_namespace%__GroupKey__c": "",
+    "%vlocity_namespace%__IsEnabled__c": true,
+    "%vlocity_namespace%__MatrixRecordType__c": "",
+    "%vlocity_namespace%__MatrixUseLongOutput__c": false,
+    "%vlocity_namespace%__Priority__c": 1,
+    "%vlocity_namespace%__StartDateTime__c": "2017-11-30T22:47:53.000+0000",
+    "%vlocity_namespace%__SubGroupKeyValue__c": "",
+    "%vlocity_namespace%__SubGroupKey__c": "",
+    "%vlocity_namespace%__UseLongOutput__c": false,
+    "%vlocity_namespace%__VersionNumber__c": 1,
+    "%vlocity_namespace%__WildcardColumn__c": "",
+    "%vlocity_namespace%__WildcardValue__c": "",
+    "Name": "Zip_CBSA V1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/Zip_CBSA"
+}

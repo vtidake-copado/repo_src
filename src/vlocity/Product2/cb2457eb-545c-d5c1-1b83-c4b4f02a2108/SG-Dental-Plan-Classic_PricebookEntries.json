@@ -1,0 +1,32 @@
+[
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": "",
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "SG Dental Plan - Classic",
+        "Pricebook2.Name": "Standard Price Book",
+        "Pricebook2Id": {
+            "Name": "Standard Price Book",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "cb2457eb-545c-d5c1-1b83-c4b4f02a2108",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "cb2457eb-545c-d5c1-1b83-c4b4f02a2108",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/cb2457eb-545c-d5c1-1b83-c4b4f02a2108",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "SGRP-DNT-CLS",
+        "UnitPrice": 150,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/cb2457eb-545c-d5c1-1b83-c4b4f02a2108"
+    }
+]

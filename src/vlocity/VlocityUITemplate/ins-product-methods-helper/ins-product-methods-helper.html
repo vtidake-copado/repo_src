@@ -1,0 +1,25 @@
+<div class="slds-p-around_small slds-theme_shade slds-grid slds-wrap slds-size_1-of-1" ng-init="importedScope.setData(records.result.methodName, params.id, records)">
+    <div class="slds-size_1-of-2">
+         <div class="slds-form-element__control slds-select_container slds-m-right_large slds-m-bottom_small">
+            <div class="slds-select_container">
+              <select ng-options="method as method for method in importedScope.methods" ng-model="importedScope.selectedMethod"  class="slds-select slds-m-right_xx-small" id="select-01" ng-change="importedScope.invokeMethod(importedScope.selectedMethod)">
+              </select>
+          </div>
+        </div>
+    </div>
+    <div class="slds-size_1-of-2">
+    </div>
+    <div class="slds-size-1-of-1 slds-m-bottom_small">
+        <div class="slds-text-heading_label">
+        {{ ::importedScope.customLabels.InsProductParameters}}
+        </div>
+        <div class="slds-size_1-of-1">
+            <span class="slds-p-right_small" ng-repeat="(key, value) in importedScope.records.result.parameters">
+            {{key}} ({{value}})
+            </span>
+        </div>
+    </div>
+</div>
+<div class="slds-p-horizontal_small" ng-init="importedScope.cleanUpResult(records.result)">
+    <pre>{{importedScope.results | json}}</pre>
+</div>

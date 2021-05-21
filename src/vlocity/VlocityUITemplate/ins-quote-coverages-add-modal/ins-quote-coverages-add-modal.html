@@ -1,0 +1,56 @@
+<div class="slds-size_1-of-1 slds-m-top_small slds-grid slds-wrap">
+   <button class="vloc-attr-container_select slds-button slds-button_brand" ng-click="importedScope.insFn.addItems(records.records, records.type)">Select</button>
+ </div>
+<div class="slds-grid slds-wrap slds-p-top_small">
+    <div class="vloc-product-grid slds-size_1-of-1 slds-grid slds-wrap" ng-repeat="prod in records.records">
+        <div class="vloc-product slds-grid slds-wrap slds-size_1-of-1 slds-border_bottom slds-p-vertical_small">
+            <div class="slds-size_4-of-6">
+            <label class="vloc-new-prod_label slds-text-heading_small slds-hyphenate slds-size_7-of-8 slds-m-left_x-small slds-p-top_xxx-small" ng-click="prod.isSelected = !prod.isSelected">
+              <span class="slds-checkbox vloc-new-prod_checkbox slds-p-left_small">
+              <input type="checkbox" name="attrs-{{$index}}" id="attrs-{{$index}}" ng-model="prod.isSelected"/>
+              <label class="slds-checkbox__label slds-m-around_none" for="attrs-{{$index}}">
+                  <span class="slds-checkbox_faux vloc-check"></span>
+              </label>
+              </span class="slds-p-left_small">{{prod.Name}}</label>
+            </div>
+            <div class="vloc-attr-show-more slds-size_2-of-6 slds-text-align_right slds-p-right_medium">
+            <button class="vloc-attr-show-more_btn slds-button slds-button_link slds-text-align_right" ng-click="prod.show = !prod.show" ng-if="prod.AttributeAssignment.length > 0"> <slds-button-svg-icon sprite="'utility'" icon="'chevronright'" ng-if="!prod.show" extra-classes="vloc-attrs-category-btn"></slds-button-svg-icon>
+            <slds-button-svg-icon sprite="'utility'" icon="'chevrondown'" ng-if="prod.show" extra-classes="vloc-attrs-category-btn"></slds-button-svg-icon><span class="slds-m-left_x-small">show</span> <span ng-if="!prod.show">more</span><span ng-if="prod.show">less</span></button>
+            </div>
+        </div>
+          <div class="vloc-prod-attrs slds-size_1-of-1 slds-grid slds-wrap slds-theme_shade slds-p-bottom_small slds-border_bottom" ng-if="prod.show">
+           <div class="slds-grid slds-wrap slds-size_1-of-1 slds-border_bottom slds-p-vertical_x-small">
+              <div class="slds-p-horizontal_small">
+              </div>
+            <div class="slds-size_1-of-5 slds-m-left_x-small slds-truncate">
+                  <span class="slds-text-title_caps" title="Name">Name</span>
+            </div>
+            <div class="slds-size_1-of-4 slds-truncate">
+                  <span class="slds-text-title_caps" title="Label">Category</span>
+            </div>
+          <div class="slds-size_1-of-4 slds-truncate">
+                  <span class="slds-text-title_caps" title="Data Type">Data Type</span>
+            </div>
+          <div class="slds-size_1-of-4 slds-truncate">
+                  <span class="slds-text-title_caps" title="Value Type">Value Type</span>
+            </div>
+            </div>
+          <div class="slds-size_1-of-1 slds-grid slds-wrap slds-p-top_small" ng-repeat="attr in prod.AttributeAssignment | orderBy : $root.nsPrefix + 'CategoryName__c'">
+              <div class="slds-p-horizontal_small">
+                {{$index + 1}}
+              </div>
+             <div class="slds-size_1-of-5 slds-truncate slds-p-right_x-small">
+              <span title="Name">{{attr[$root.nsPrefix + 'AttributeDisplayName__c']}}</span>
+                </div>
+              <div class="slds-size_1-of-4 slds-truncate slds-p-right_x-small">
+                      <span title="Label">{{attr[$root.nsPrefix + 'CategoryName__c']}}</span>
+                </div>
+               <div class="slds-size_1-of-4 slds-truncate slds-p-right_x-small">
+                      <span title="Control">{{attr[$root.nsPrefix + 'ValueDataType__c']}}</span>
+                </div>
+              <div class="slds-size_1-of-4 slds-truncate">
+                      <span title="Value Type">{{attr[$root.nsPrefix + 'Value__c']}}</span>
+                </div>
+          </div>
+      </div>
+</div>

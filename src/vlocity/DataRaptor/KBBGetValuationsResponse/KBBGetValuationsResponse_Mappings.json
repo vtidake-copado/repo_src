@@ -1,0 +1,58 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "valuations:id",
+        "%vlocity_namespace%__GlobalKey__c": "23699bd5-7f43-a024-a865-41b00d20bbc4",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "prices:priceTypeId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBBGetValuationsResponseCustom8158",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetValuationsResponse",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "valuations:priceType",
+        "%vlocity_namespace%__GlobalKey__c": "4eccd9fa-44ae-2402-177b-399e64513331",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "prices:priceTypeDisplay",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBBGetValuationsResponseCustom5068",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetValuationsResponse",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "valuations:typicalMileage",
+        "%vlocity_namespace%__GlobalKey__c": "0a464602-03c7-f7d2-8823-6a258f930bca",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "typicalMileage",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBBGetValuationsResponseCustom9802",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetValuationsResponse",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "valuations:value",
+        "%vlocity_namespace%__GlobalKey__c": "10cc27e4-d0cf-d4c8-4267-10934bc3b99d",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "prices:configuredValue",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBBGetValuationsResponseCustom5465",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetValuationsResponse",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

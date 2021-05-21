@@ -225,38 +225,154 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <compactLayouts>
-        <fullName>Custom_Acc_Compact_Layout</fullName>
-        <fields>Name</fields>
-        <fields>Industry</fields>
-        <fields>Type</fields>
-        <label>Custom Acc Compact Layout</label>
-    </compactLayouts>
-    <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
     <externalSharingModel>Private</externalSharingModel>
-    <fields>
-        <fullName>AccountLookup__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>AccountLookup</label>
-        <lookupFilter>
-            <active>true</active>
-            <filterItems>
-                <field>$Source.RecordTypeId</field>
-                <operation>equals</operation>
-                <value>Record Type1</value>
-            </filterItems>
-            <isOptional>false</isOptional>
-        </lookupFilter>
-        <referenceTo>Account</referenceTo>
-        <relationshipLabel>Accounts</relationshipLabel>
-        <relationshipName>Accounts</relationshipName>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Lookup</type>
-    </fields>
+    <fieldSets>
+        <fullName>vlocity_ins__InteractionFieldList</fullName>
+        <availableFields>
+            <field>vlocity_ins__AgencyBrokerageNumber__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__Email__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Fax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>vlocity_ins__NPNNumber__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Define list of fields used in interaction console side bar.</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__PrimaryContactId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Industry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingStreet</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingCity</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingState</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingPostalCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingCountry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Website</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>PhotoUrl</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__CalculatedAddress__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>InteractionFieldList</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>vlocity_ins__SegmentListExport</fullName>
+        <description>List of Account fields to export.</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Site</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingStreet</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingCity</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingState</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingPostalCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>BillingCountry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Segment List Export</label>
+    </fieldSets>
     <fields>
         <fullName>AccountNumber</fullName>
         <trackFeedHistory>false</trackFeedHistory>
@@ -267,25 +383,116 @@
         <type>Picklist</type>
     </fields>
     <fields>
-        <fullName>Account_Number__c</fullName>
-        <externalId>false</externalId>
-        <label>Account Number</label>
-        <length>30</length>
-        <required>false</required>
+        <fullName>AnnualRevenue</fullName>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Accoutn_Field_1__c</fullName>
+        <fullName>BillingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ivan_Test__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>Accoutn Field 1</label>
+        <label>Ivan Test</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Active__c</fullName>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ShippingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ActivePolicyNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Active Policy Number</label>
+        <summaryFilterItems>
+            <field>vlocity_ins__Policy__c.vlocity_ins__PolicyStatus__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </summaryFilterItems>
+        <summaryForeignKey>vlocity_ins__Policy__c.vlocity_ins__AccountId__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Active__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Active</label>
         <required>false</required>
@@ -308,27 +515,81 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>AnnualRevenue</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Big__c</fullName>
-        <defaultValue>false</defaultValue>
+        <fullName>vlocity_ins__AgencyBrokerageNumber__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Big</label>
+        <label>Agency / Brokerage No.</label>
+        <length>80</length>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>Checkbox</type>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
-        <fullName>BillingAddress</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
+        <fullName>vlocity_ins__AgencyCommission__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Commission</label>
+        <summarizedField>vlocity_ins__Policy__c.vlocity_ins__AgencyCommission__c</summarizedField>
+        <summaryFilterItems>
+            <field>vlocity_ins__Policy__c.vlocity_ins__PolicyStatus__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </summaryFilterItems>
+        <summaryForeignKey>vlocity_ins__Policy__c.vlocity_ins__AccountId__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
     </fields>
     <fields>
-        <fullName>CleanStatus</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
+        <fullName>vlocity_ins__CalculatedAddress__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Formula: A concatenation of billing street, city, state/province and postal code.</description>
+        <externalId>false</externalId>
+        <formula>BillingStreet &amp; BR() &amp; BillingCity &amp; &quot; &quot; &amp; BillingState &amp; &quot; &quot; &amp; BillingPostalCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Calculated Address</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
-        <fullName>CustomerPriority__c</fullName>
+        <fullName>vlocity_ins__ClaimSystemStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Claim processing system status for the group account. For example, “Pending” to denote that the group account is not setup for claim processing.</description>
+        <externalId>false</externalId>
+        <label>Claim System Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Validated</fullName>
+                    <default>false</default>
+                    <label>Validated</label>
+                </value>
+                <value>
+                    <fullName>Expired</fullName>
+                    <default>false</default>
+                    <label>Expired</label>
+                </value>
+                <value>
+                    <fullName>Terminated</fullName>
+                    <default>false</default>
+                    <label>Terminated</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__CustomerPriority__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Customer Priority</label>
         <required>false</required>
@@ -356,84 +617,377 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>DandbCompanyId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Description</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>DunsNumber</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>External_Id__c</fullName>
-        <caseSensitive>false</caseSensitive>
-        <externalId>true</externalId>
-        <label>External Id</label>
-        <length>255</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Text</type>
-        <unique>true</unique>
-    </fields>
-    <fields>
-        <fullName>Fax</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Industry</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>Jigsaw</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>NaicsCode</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>NaicsDesc</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Name</fullName>
-        <trackFeedHistory>true</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Nested_Test_RT__c</fullName>
+        <fullName>vlocity_ins__CustomerValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A ranking of the value of this customer to your business expressed in marketing terms such as Gold, Silver, Bronze, Diamond, Platinum.</description>
         <externalId>false</externalId>
-        <label>Nested Test RT</label>
+        <label>Customer Value</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
         <valueSet>
-            <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Destructive1</fullName>
+                    <fullName>Diamond</fullName>
                     <default>false</default>
-                    <label>Destructive1</label>
+                    <label>Diamond</label>
                 </value>
                 <value>
-                    <fullName>Destructive2</fullName>
+                    <fullName>Platinum</fullName>
                     <default>false</default>
-                    <label>Destructive2</label>
+                    <label>Platinum</label>
+                </value>
+                <value>
+                    <fullName>Gold</fullName>
+                    <default>false</default>
+                    <label>Gold</label>
+                </value>
+                <value>
+                    <fullName>Silver</fullName>
+                    <default>false</default>
+                    <label>Silver</label>
+                </value>
+                <value>
+                    <fullName>Bronze</fullName>
+                    <default>false</default>
+                    <label>Bronze</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
     <fields>
-        <fullName>NumberOfEmployees</fullName>
+        <fullName>vlocity_ins__DateFounded__c</fullName>
+        <deprecated>false</deprecated>
+        <description>For accounts that are companies, the date when the company was founded.</description>
+        <externalId>false</externalId>
+        <label>Date Founded</label>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
     </fields>
     <fields>
-        <fullName>NumberofLocations__c</fullName>
+        <fullName>vlocity_ins__DateOfFirstInsurance__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Date of First Insurance</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DirectoryListed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether this customer agrees to be listed in the communication company&apos;s directory (such as a telephone directory).</description>
+        <externalId>false</externalId>
+        <label>Directory Listed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Disclosure1__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether this customer is a company that participates in foreign exchange transactions in the course of doing business. Primarily relevant to financial services organizations using Vlocity, but may also be relevant for credit checks.</description>
+        <externalId>false</externalId>
+        <label>Foreign Exchange</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Disclosure2__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether this customer is a company in the gaming or gambling business. Primarily relevant to financial services organizations using Vlocity, but may also be relevant for credit checks.</description>
+        <externalId>false</externalId>
+        <label>Gaming or Gambling</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Disclosure3__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Whether this customer is a company in the money lending or pawning business. Primarily relevant to financial services organizations using Vlocity, but may also be relevant for credit checks.</description>
+        <externalId>false</externalId>
+        <label>Money Lending/Pawning</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Email__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__EnableAutopay__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indicates whether the customer has opted in to automatic payment. Part of the billing profile of a customer or billing account.</description>
+        <externalId>false</externalId>
+        <label>Enable Autopay</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__HasCarrierContract__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Use CMS MA Contract Amendment</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsPartner__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Partner</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsPersonAccount__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>DEPRECATED: Vlocity uses the standard IsPersonAccount field instead.</description>
+        <externalId>false</externalId>
+        <label>Is Person Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsRootResolved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Used in conjunction with RootAccountId__c, this flag is used by the Vlocity TelcoAccount trigger to determine if the RootAccountId__c value has been determined. When false, the RootAccountId__c may not reflect the actual ultimate (or root) parent account of this account.</description>
+        <externalId>false</externalId>
+        <label>Is Root Resolved</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__MarketSegment__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Market Segment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ASO (Admin Services Only)</fullName>
+                    <default>false</default>
+                    <label>ASO (Admin Services Only)</label>
+                </value>
+                <value>
+                    <fullName>Government</fullName>
+                    <default>false</default>
+                    <label>Government</label>
+                </value>
+                <value>
+                    <fullName>Individual</fullName>
+                    <default>false</default>
+                    <label>Individual</label>
+                </value>
+                <value>
+                    <fullName>Large Group</fullName>
+                    <default>false</default>
+                    <label>Large Group</label>
+                </value>
+                <value>
+                    <fullName>Medicare</fullName>
+                    <default>false</default>
+                    <label>Medicare</label>
+                </value>
+                <value>
+                    <fullName>Mid Sized Group</fullName>
+                    <default>false</default>
+                    <label>Mid Sized Group</label>
+                </value>
+                <value>
+                    <fullName>Small Group</fullName>
+                    <default>false</default>
+                    <label>Small Group</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__NPNNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>National Producer Number</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__NetWorth__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The estimated net worth of this customer. Primarily relevant to financial services organizations using Vlocity, but may also be relevant for credit checks.</description>
+        <externalId>false</externalId>
+        <label>Net Worth</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__NumberOfCommercialLines__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Commercial Lines</label>
+        <summaryFilterItems>
+            <field>vlocity_ins__Policy__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Commercial Lines</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>vlocity_ins__Policy__c.vlocity_ins__PolicyStatus__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </summaryFilterItems>
+        <summaryForeignKey>vlocity_ins__Policy__c.vlocity_ins__AccountId__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__NumberOfDependents__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total count of dependents.</description>
+        <externalId>false</externalId>
+        <label>Dependents</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__NumberOfEligibles__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total count of subscribers and their dependents eligible for the group benefits.</description>
+        <externalId>false</externalId>
+        <label>Eligibles</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__NumberOfIndividualAnnuity__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Individual Annuity</label>
+        <summaryFilterItems>
+            <field>vlocity_ins__Policy__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Individual Annuity</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>vlocity_ins__Policy__c.vlocity_ins__PolicyStatus__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </summaryFilterItems>
+        <summaryForeignKey>vlocity_ins__Policy__c.vlocity_ins__AccountId__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__NumberOfIndividualLife__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Individual Life</label>
+        <summaryFilterItems>
+            <field>vlocity_ins__Policy__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Individual Life</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>vlocity_ins__Policy__c.vlocity_ins__PolicyStatus__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </summaryFilterItems>
+        <summaryForeignKey>vlocity_ins__Policy__c.vlocity_ins__AccountId__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__NumberOfMedicareBeds__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>No. of Medicare Certified Beds</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__NumberOfMembers__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total count of subscribers and dependents enrolled for the group benefits.</description>
+        <externalId>false</externalId>
+        <label>Members</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__NumberOfPersonalLines__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Personal Lines</label>
+        <summaryFilterItems>
+            <field>vlocity_ins__Policy__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Personal Lines</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>vlocity_ins__Policy__c.vlocity_ins__PolicyStatus__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </summaryFilterItems>
+        <summaryForeignKey>vlocity_ins__Policy__c.vlocity_ins__AccountId__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__NumberOfSubscribers__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total count of subscribers.</description>
+        <externalId>false</externalId>
+        <label>Subscribers</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__NumberofLocations__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Number of Locations</label>
         <precision>3</precision>
@@ -444,95 +998,187 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>OperatingHoursId</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>OwnerId</fullName>
-        <trackFeedHistory>true</trackFeedHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Ownership</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>PA_Test_Field__c</fullName>
+        <fullName>vlocity_ins__NumberofProducers__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>PA Test Field</label>
+        <label>No. Producers</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PartnerTier__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Partner Tier</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
         <valueSet>
-            <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Value 1</fullName>
+                    <fullName>Bronze</fullName>
                     <default>false</default>
-                    <label>Value 1</label>
+                    <label>Bronze</label>
                 </value>
                 <value>
-                    <fullName>Value 2</fullName>
+                    <fullName>Silver</fullName>
                     <default>false</default>
-                    <label>Value 2</label>
+                    <label>Silver</label>
                 </value>
                 <value>
-                    <fullName>Value3</fullName>
+                    <fullName>Gold</fullName>
                     <default>false</default>
-                    <label>Value3</label>
+                    <label>Gold</label>
                 </value>
                 <value>
-                    <fullName>PLUS 1500 (0597)</fullName>
+                    <fullName>Platinum</fullName>
                     <default>false</default>
-                    <label>PLUS 1500 (0597)</label>
-                </value>
-                <value>
-                    <fullName>Value 4</fullName>
-                    <default>false</default>
-                    <label>Value 4</label>
-                </value>
-                <value>
-                    <fullName>Value5</fullName>
-                    <default>false</default>
-                    <label>Value5</label>
-                </value>
-                <value>
-                    <fullName>new</fullName>
-                    <default>false</default>
-                    <label>new</label>
-                </value>
-                <value>
-                    <fullName>Test PA</fullName>
-                    <default>false</default>
-                    <label>Test PA</label>
-                </value>
-                <value>
-                    <fullName>PA Fix</fullName>
-                    <default>false</default>
-                    <label>PA Fix</label>
+                    <label>Platinum</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
     <fields>
-        <fullName>ParentId</fullName>
+        <fullName>vlocity_ins__PartyId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The identity of the party who is the customer or prospect of this account.</description>
+        <externalId>false</externalId>
+        <label>Party</label>
+        <referenceTo>vlocity_ins__Party__c</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>Hierarchy</type>
+        <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Phone</fullName>
+        <fullName>vlocity_ins__PersonContactId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>For consumer accounts where the customer is a person, this field identifies the person who is considered the customer. If the Salesforce Person Accounts feature is used, this field is optional, but would logically point to the contact record built into the Person Account.</description>
+        <externalId>false</externalId>
+        <label>Person Contact Id</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Person Accounts</relationshipLabel>
+        <relationshipName>PersonAccount</relationshipName>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Rating</fullName>
+        <fullName>vlocity_ins__PremiumYear__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Premium Year</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PrimaryBroker__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Primary Producer</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Accounts (Primary Broker)</relationshipLabel>
+        <relationshipName>Groups</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PrimaryContactId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>ID of the primary person to contact for anything related to this account. For consumers, the primary contact is often the same as the person who is the consumer but need not be. For example, the consumer&apos;s assistant or spouse may be identified as the desired primary contact.</description>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Accounts</relationshipLabel>
+        <relationshipName>Accounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ProviderIdentifier__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Provider Identifier</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ProviderIsAcceptingNewPatients__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Accepts new patients</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RatingType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Rating Type</label>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Age</fullName>
+                    <default>false</default>
+                    <label>Age</label>
+                </value>
+                <value>
+                    <fullName>Composite</fullName>
+                    <default>false</default>
+                    <label>Composite</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
-        <fullName>SLAExpirationDate__c</fullName>
+        <fullName>vlocity_ins__ReferredByContactId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>ID of the contact who referred this account.</description>
+        <externalId>false</externalId>
+        <label>Referred By</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Accounts (Referred By)</relationshipLabel>
+        <relationshipName>ReferredAccounts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RelationshipStartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Relationship Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SLAExpirationDate__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>SLA Expiration Date</label>
         <required>false</required>
@@ -540,7 +1186,8 @@
         <type>Date</type>
     </fields>
     <fields>
-        <fullName>SLASerialNumber__c</fullName>
+        <fullName>vlocity_ins__SLASerialNumber__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>SLA Serial Number</label>
         <length>10</length>
@@ -550,7 +1197,8 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>SLA__c</fullName>
+        <fullName>vlocity_ins__SLA__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>SLA</label>
         <required>false</required>
@@ -579,123 +1227,163 @@
                     <default>false</default>
                     <label>Bronze</label>
                 </value>
-                <value>
-                    <fullName>Iron</fullName>
-                    <default>false</default>
-                    <label>Iron</label>
-                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
     <fields>
-        <fullName>ShippingAddress</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Sic</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>SicDesc</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Site</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>SubTrade_Channel__c</fullName>
+        <fullName>vlocity_ins__SSACountyCode__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>SubTrade Channel</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>001 - Bakery</fullName>
-                    <default>false</default>
-                    <label>001 - Bakery</label>
-                </value>
-                <value>
-                    <fullName>020</fullName>
-                    <default>false</default>
-                    <label>020</label>
-                </value>
-                <value>
-                    <fullName>021 - Hotell</fullName>
-                    <default>false</default>
-                    <label>021 - Hotell</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>TickerSymbol</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Tradestyle</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>Type</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>UpsellOpportunity__c</fullName>
-        <externalId>false</externalId>
-        <label>Upsell Opportunity</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Maybe</fullName>
-                    <default>false</default>
-                    <label>Maybe</label>
-                </value>
-                <value>
-                    <fullName>No</fullName>
-                    <default>false</default>
-                    <label>No</label>
-                </value>
-                <value>
-                    <fullName>Yes</fullName>
-                    <default>false</default>
-                    <label>Yes</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Website</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>YearStarted</fullName>
-        <trackFeedHistory>false</trackFeedHistory>
-    </fields>
-    <fields>
-        <fullName>xyz_Account_Number__c</fullName>
-        <caseSensitive>true</caseSensitive>
-        <externalId>true</externalId>
-        <label>xyz Account Number</label>
-        <length>40</length>
+        <label>SSA/County Code</label>
+        <length>10</length>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
-        <unique>true</unique>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The status of the customer&apos;s account such as active, inactive, suspended, pending or expired.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Expired</fullName>
+                    <default>false</default>
+                    <label>Expired</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SumOfEmployees__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>No. Employees</label>
+        <summarizedField>vlocity_ins__GroupCensus__c.vlocity_ins__CountOfEmployees__c</summarizedField>
+        <summaryFilterItems>
+            <field>vlocity_ins__GroupCensus__c.vlocity_ins__CensusStatus__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </summaryFilterItems>
+        <summaryForeignKey>vlocity_ins__GroupCensus__c.vlocity_ins__GroupId__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SumOfFTE__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Full Time Equivalent (FTE)</label>
+        <summarizedField>vlocity_ins__GroupCensus__c.vlocity_ins__SumOfFte__c</summarizedField>
+        <summaryFilterItems>
+            <field>vlocity_ins__GroupCensus__c.vlocity_ins__CensusStatus__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </summaryFilterItems>
+        <summaryForeignKey>vlocity_ins__GroupCensus__c.vlocity_ins__GroupId__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__TaxID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A tax identifier for this customer. Limited to 10 characters.</description>
+        <externalId>false</externalId>
+        <label>Tax ID</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__TerminationReason__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Termination reason for accounts which have been terminated or deactivated. For example in health insurance a group division account may be terminated from claims processing.</description>
+        <externalId>false</externalId>
+        <label>Termination Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__TerminationRequestedBy__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Termination Requested By</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__TotalAnnualPremium__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Premium Active Policies</label>
+        <summarizedField>vlocity_ins__Policy__c.vlocity_ins__AnnualPremium__c</summarizedField>
+        <summaryFilterItems>
+            <field>vlocity_ins__Policy__c.vlocity_ins__PolicyStatus__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </summaryFilterItems>
+        <summaryForeignKey>vlocity_ins__Policy__c.vlocity_ins__AccountId__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__TotalPremiumAllPolicies__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Premium All Policies</label>
+        <summarizedField>vlocity_ins__Policy__c.vlocity_ins__AnnualPremium__c</summarizedField>
+        <summaryForeignKey>vlocity_ins__Policy__c.vlocity_ins__AccountId__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
     </fields>
     <listViews>
         <fullName>AllAccounts</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
         <label>All Accounts</label>
+    </listViews>
+    <listViews>
+        <fullName>Created_Date_View</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>ACCOUNT.CREATED_DATE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Accounts (Created Date)</label>
     </listViews>
     <listViews>
         <fullName>MyAccounts</fullName>
@@ -703,17 +1391,13 @@
         <label>My Accounts</label>
     </listViews>
     <listViews>
-        <fullName>NewLastWeek</fullName>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.CREATED_DATE</field>
-            <operation>equals</operation>
-            <value>LAST_WEEK</value>
-        </filters>
-        <label>New Last Week</label>
-    </listViews>
-    <listViews>
         <fullName>NewThisWeek</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.SITE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>ACCOUNT.CREATED_DATE</field>
@@ -723,18 +1407,404 @@
         <label>New This Week</label>
     </listViews>
     <listViews>
-        <fullName>PlatinumandGoldSLACustomers</fullName>
+        <fullName>vlocity_ins__Agency</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>vlocity_ins__AgencyBrokerageNumber__c</columns>
+        <columns>vlocity_ins__NPNNumber__c</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>vlocity_ins__NumberofProducers__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.vlocity_ins__AgencyBrokerage</value>
+        </filters>
+        <label>Agency/Brokerages</label>
+    </listViews>
+    <listViews>
+        <fullName>vlocity_ins__Carriers</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.vlocity_ins__Carrier</value>
+        </filters>
+        <label>Carriers</label>
+    </listViews>
+    <listViews>
+        <fullName>vlocity_ins__Group</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.SITE</columns>
         <columns>ACCOUNT.ADDRESS1_STATE</columns>
         <columns>ACCOUNT.PHONE1</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
-        <label>Platinum and Gold SLA Customers</label>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.vlocity_ins__Group</value>
+        </filters>
+        <label>Groups</label>
+    </listViews>
+    <listViews>
+        <fullName>vlocity_ins__Policyholders</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>vlocity_ins__NumberOfCommercialLines__c</columns>
+        <columns>vlocity_ins__NumberOfIndividualAnnuity__c</columns>
+        <columns>vlocity_ins__NumberOfIndividualLife__c</columns>
+        <columns>vlocity_ins__NumberOfPersonalLines__c</columns>
+        <columns>vlocity_ins__TotalAnnualPremium__c</columns>
+        <columns>vlocity_ins__AgencyCommission__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>vlocity_ins__ActivePolicyNumber__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1</value>
+        </filters>
+        <label>Policyholders</label>
     </listViews>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypes>
-        <fullName>Business_Account</fullName>
+        <fullName>vlocity_ins__AgencyBrokerage</fullName>
+        <active>true</active>
+        <label>Agency/Brokerage</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Active__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ClaimSystemStatus__c</picklist>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerPriority__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__MarketSegment__c</picklist>
+            <values>
+                <fullName>ASO %28Admin Services Only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid Sized Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__PartnerTier__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RatingType__c</picklist>
+            <values>
+                <fullName>Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Composite</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__SLA__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>vlocity_ins__Business_Account</fullName>
         <active>true</active>
         <label>Business Account</label>
         <picklistValues>
@@ -744,15 +1814,339 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Partner Referral</fullName>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Phone Inquiry</fullName>
+                <fullName>Apparel</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Purchased List</fullName>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Active__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ClaimSystemStatus__c</picklist>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerPriority__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__MarketSegment__c</picklist>
+            <values>
+                <fullName>ASO %28Admin Services Only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid Sized Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__PartnerTier__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RatingType__c</picklist>
+            <values>
+                <fullName>Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Composite</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__SLA__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>vlocity_ins__Carrier</fullName>
+        <active>true</active>
+        <label>Carrier</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -761,32 +2155,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Active__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>CustomerPriority__c</picklist>
-            <values>
-                <fullName>High</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Medium</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Industry</picklist>
             <values>
                 <fullName>Agriculture</fullName>
@@ -918,17 +2286,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Nested_Test_RT__c</picklist>
-            <values>
-                <fullName>Destructive1</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Destructive2</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Ownership</picklist>
             <values>
                 <fullName>Other</fullName>
@@ -948,17 +2305,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>PA_Test_Field__c</picklist>
-            <values>
-                <fullName>Value 1</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value 2</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Rating</picklist>
             <values>
                 <fullName>Cold</fullName>
@@ -974,17 +2320,100 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>SLA__c</picklist>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Active__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ClaimSystemStatus__c</picklist>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerPriority__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__MarketSegment__c</picklist>
+            <values>
+                <fullName>ASO %28Admin Services Only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid Sized Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__PartnerTier__c</picklist>
             <values>
                 <fullName>Bronze</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Gold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Iron</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -997,87 +2426,63 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>SubTrade_Channel__c</picklist>
+            <picklist>vlocity_ins__RatingType__c</picklist>
             <values>
-                <fullName>001 - Bakery</fullName>
+                <fullName>Age</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>020</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>021 - Hotell</fullName>
+                <fullName>Composite</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Type</picklist>
+            <picklist>vlocity_ins__SLA__c</picklist>
             <values>
-                <fullName>Channel Partner %2F Reseller</fullName>
+                <fullName>Bronze</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer - Channel</fullName>
+                <fullName>Gold</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer - Direct</fullName>
+                <fullName>Platinum</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Installation Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Technology Partner</fullName>
+                <fullName>Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>UpsellOpportunity__c</picklist>
+            <picklist>vlocity_ins__Status__c</picklist>
             <values>
-                <fullName>Maybe</fullName>
+                <fullName>Active</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>No</fullName>
+                <fullName>Expired</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Yes</fullName>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
     </recordTypes>
     <recordTypes>
-        <fullName>DeleteRTacc</fullName>
+        <fullName>vlocity_ins__Group</fullName>
         <active>true</active>
-        <label>DeleteRTacc</label>
+        <label>Group</label>
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner Referral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone Inquiry</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Purchased List</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -1086,32 +2491,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Active__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>CustomerPriority__c</picklist>
-            <values>
-                <fullName>High</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Medium</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Industry</picklist>
             <values>
                 <fullName>Agriculture</fullName>
@@ -1243,17 +2622,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Nested_Test_RT__c</picklist>
-            <values>
-                <fullName>Destructive1</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Destructive2</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Ownership</picklist>
             <values>
                 <fullName>Other</fullName>
@@ -1273,45 +2641,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>PA_Test_Field__c</picklist>
-            <values>
-                <fullName>PA Fix</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PLUS 1500 %280597%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Test PA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value 1</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value 2</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value 4</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value3</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value5</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>new</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Rating</picklist>
             <values>
                 <fullName>Cold</fullName>
@@ -1327,111 +2656,18 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>SLA__c</picklist>
-            <values>
-                <fullName>Bronze</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Gold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Iron</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Platinum</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Silver</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>SubTrade_Channel__c</picklist>
-            <values>
-                <fullName>001 - Bakery</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>020</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>021 - Hotell</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Type</picklist>
             <values>
-                <fullName>Channel Partner %2F Reseller</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Customer - Channel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Customer - Direct</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Installation Partner</fullName>
+                <fullName>Customer</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Other</fullName>
                 <default>false</default>
             </values>
-            <values>
-                <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Technology Partner</fullName>
-                <default>false</default>
-            </values>
         </picklistValues>
         <picklistValues>
-            <picklist>UpsellOpportunity__c</picklist>
-            <values>
-                <fullName>Maybe</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
-    <recordTypes>
-        <fullName>RT_Nested_Test</fullName>
-        <active>true</active>
-        <label>RT Nested Test</label>
-        <picklistValues>
-            <picklist>AccountSource</picklist>
-            <values>
-                <fullName>Partner Referral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone Inquiry</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Purchased List</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Active__c</picklist>
+            <picklist>vlocity_ins__Active__c</picklist>
             <values>
                 <fullName>No</fullName>
                 <default>false</default>
@@ -1442,7 +2678,26 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CustomerPriority__c</picklist>
+            <picklist>vlocity_ins__ClaimSystemStatus__c</picklist>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerPriority__c</picklist>
             <values>
                 <fullName>High</fullName>
                 <default>false</default>
@@ -1457,69 +2712,9 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Industry</picklist>
+            <picklist>vlocity_ins__MarketSegment__c</picklist>
             <values>
-                <fullName>Agriculture</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Apparel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Banking</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Biotechnology</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Chemicals</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Communications</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Construction</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Consulting</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Education</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Electronics</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Energy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Engineering</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Entertainment</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Environmental</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Finance</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Food %26 Beverage</fullName>
+                <fullName>ASO %28Admin Services Only%29</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -1527,162 +2722,34 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Healthcare</fullName>
+                <fullName>Individual</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Hospitality</fullName>
+                <fullName>Large Group</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Insurance</fullName>
+                <fullName>Medicare</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Machinery</fullName>
+                <fullName>Mid Sized Group</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Manufacturing</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Media</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Not For Profit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Recreation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Retail</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Shipping</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Technology</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Telecommunications</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Transportation</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utilities</fullName>
+                <fullName>Small Group</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Nested_Test_RT__c</picklist>
-            <values>
-                <fullName>Destructive1</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Destructive2</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Ownership</picklist>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Private</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Public</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Subsidiary</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>PA_Test_Field__c</picklist>
-            <values>
-                <fullName>PA Fix</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PLUS 1500 %280597%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Test PA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value 1</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value 2</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value 4</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value3</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value5</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>new</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Rating</picklist>
-            <values>
-                <fullName>Cold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Hot</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Warm</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>SLA__c</picklist>
+            <picklist>vlocity_ins__PartnerTier__c</picklist>
             <values>
                 <fullName>Bronze</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Gold</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Iron</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -1695,87 +2762,63 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>SubTrade_Channel__c</picklist>
+            <picklist>vlocity_ins__RatingType__c</picklist>
             <values>
-                <fullName>001 - Bakery</fullName>
+                <fullName>Age</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>020</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>021 - Hotell</fullName>
+                <fullName>Composite</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Type</picklist>
+            <picklist>vlocity_ins__SLA__c</picklist>
             <values>
-                <fullName>Channel Partner %2F Reseller</fullName>
+                <fullName>Bronze</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer - Channel</fullName>
+                <fullName>Gold</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer - Direct</fullName>
+                <fullName>Platinum</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Installation Partner</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Technology Partner</fullName>
+                <fullName>Silver</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>UpsellOpportunity__c</picklist>
+            <picklist>vlocity_ins__Status__c</picklist>
             <values>
-                <fullName>Maybe</fullName>
+                <fullName>Active</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>No</fullName>
+                <fullName>Expired</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Yes</fullName>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
     </recordTypes>
     <recordTypes>
-        <fullName>Record_Type1</fullName>
+        <fullName>vlocity_ins__GroupDivision</fullName>
         <active>true</active>
-        <label>Record Type1</label>
+        <label>Group Division</label>
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner Referral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone Inquiry</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Purchased List</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -1784,32 +2827,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Active__c</picklist>
-            <values>
-                <fullName>No</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>CustomerPriority__c</picklist>
-            <values>
-                <fullName>High</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Low</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Medium</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Industry</picklist>
             <values>
                 <fullName>Agriculture</fullName>
@@ -1941,17 +2958,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Nested_Test_RT__c</picklist>
-            <values>
-                <fullName>Destructive1</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Destructive2</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Ownership</picklist>
             <values>
                 <fullName>Other</fullName>
@@ -1971,45 +2977,6 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>PA_Test_Field__c</picklist>
-            <values>
-                <fullName>PA Fix</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>PLUS 1500 %280597%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Test PA</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value 1</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value 2</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value 4</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value3</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Value5</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>new</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
             <picklist>Rating</picklist>
             <values>
                 <fullName>Cold</fullName>
@@ -2025,17 +2992,73 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>SLA__c</picklist>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Active__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ClaimSystemStatus__c</picklist>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerPriority__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerValue__c</picklist>
             <values>
                 <fullName>Bronze</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Gold</fullName>
+                <fullName>Diamond</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Iron</fullName>
+                <fullName>Gold</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2048,88 +3071,113 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>SubTrade_Channel__c</picklist>
+            <picklist>vlocity_ins__MarketSegment__c</picklist>
             <values>
-                <fullName>001 - Bakery</fullName>
+                <fullName>ASO %28Admin Services Only%29</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>020</fullName>
+                <fullName>Government</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>021 - Hotell</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Type</picklist>
-            <values>
-                <fullName>Channel Partner %2F Reseller</fullName>
+                <fullName>Individual</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer - Channel</fullName>
+                <fullName>Large Group</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer - Direct</fullName>
+                <fullName>Medicare</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Installation Partner</fullName>
+                <fullName>Mid Sized Group</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Prospect</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Technology Partner</fullName>
+                <fullName>Small Group</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>UpsellOpportunity__c</picklist>
+            <picklist>vlocity_ins__PartnerTier__c</picklist>
             <values>
-                <fullName>Maybe</fullName>
+                <fullName>Bronze</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>No</fullName>
+                <fullName>Gold</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Yes</fullName>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RatingType__c</picklist>
+            <values>
+                <fullName>Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Composite</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__SLA__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
     </recordTypes>
     <recordTypes>
-        <fullName>Record_Type2</fullName>
+        <fullName>vlocity_ins__MobilePhoneAccount</fullName>
         <active>true</active>
-        <compactLayoutAssignment>Custom_Acc_Compact_Layout</compactLayoutAssignment>
-        <label>Record Type2</label>
+        <label>MobilePhoneAccount</label>
         <picklistValues>
             <picklist>AccountSource</picklist>
             <values>
                 <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Partner Referral</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Phone Inquiry</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Purchased List</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2138,7 +3186,183 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Active__c</picklist>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Active__c</picklist>
             <values>
                 <fullName>No</fullName>
                 <default>false</default>
@@ -2149,7 +3373,26 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>CustomerPriority__c</picklist>
+            <picklist>vlocity_ins__ClaimSystemStatus__c</picklist>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerPriority__c</picklist>
             <values>
                 <fullName>High</fullName>
                 <default>false</default>
@@ -2160,6 +3403,121 @@
             </values>
             <values>
                 <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__MarketSegment__c</picklist>
+            <values>
+                <fullName>ASO %28Admin Services Only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid Sized Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__PartnerTier__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RatingType__c</picklist>
+            <values>
+                <fullName>Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Composite</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__SLA__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>vlocity_ins__Pharmacy</fullName>
+        <active>true</active>
+        <label>Pharmacy</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2295,13 +3653,361 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Nested_Test_RT__c</picklist>
+            <picklist>Ownership</picklist>
             <values>
-                <fullName>Destructive1</fullName>
+                <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Destructive2</fullName>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Active__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ClaimSystemStatus__c</picklist>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerPriority__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerValue__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diamond</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__MarketSegment__c</picklist>
+            <values>
+                <fullName>ASO %28Admin Services Only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid Sized Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__PartnerTier__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RatingType__c</picklist>
+            <values>
+                <fullName>Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Composite</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__SLA__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>vlocity_ins__Provider</fullName>
+        <active>true</active>
+        <label>Provider</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2325,41 +4031,361 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>PA_Test_Field__c</picklist>
+            <picklist>Rating</picklist>
             <values>
-                <fullName>PA Fix</fullName>
+                <fullName>Cold</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>PLUS 1500 %280597%29</fullName>
+                <fullName>Hot</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Test PA</fullName>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Other</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Value 1</fullName>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Active__c</picklist>
+            <values>
+                <fullName>No</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Value 2</fullName>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ClaimSystemStatus__c</picklist>
+            <values>
+                <fullName>Expired</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Value 4</fullName>
+                <fullName>Pending</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Value3</fullName>
+                <fullName>Terminated</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Value5</fullName>
+                <fullName>Validated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerPriority__c</picklist>
+            <values>
+                <fullName>High</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>new</fullName>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerValue__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Diamond</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__MarketSegment__c</picklist>
+            <values>
+                <fullName>ASO %28Admin Services Only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid Sized Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__PartnerTier__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RatingType__c</picklist>
+            <values>
+                <fullName>Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Composite</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__SLA__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>vlocity_ins__ProviderLocation</fullName>
+        <active>true</active>
+        <label>Provider Location</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2379,17 +4405,73 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>SLA__c</picklist>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Active__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ClaimSystemStatus__c</picklist>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerPriority__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerValue__c</picklist>
             <values>
                 <fullName>Bronze</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Gold</fullName>
+                <fullName>Diamond</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Iron</fullName>
+                <fullName>Gold</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2402,36 +4484,216 @@
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>SubTrade_Channel__c</picklist>
+            <picklist>vlocity_ins__MarketSegment__c</picklist>
             <values>
-                <fullName>001 - Bakery</fullName>
+                <fullName>ASO %28Admin Services Only%29</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>020</fullName>
+                <fullName>Government</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>021 - Hotell</fullName>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid Sized Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small Group</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>Type</picklist>
+            <picklist>vlocity_ins__PartnerTier__c</picklist>
             <values>
-                <fullName>Channel Partner %2F Reseller</fullName>
+                <fullName>Bronze</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer - Channel</fullName>
+                <fullName>Gold</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Customer - Direct</fullName>
+                <fullName>Platinum</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Installation Partner</fullName>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RatingType__c</picklist>
+            <values>
+                <fullName>Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Composite</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__SLA__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>vlocity_ins__StandardAccount</fullName>
+        <active>true</active>
+        <label>Standard Account</label>
+        <picklistValues>
+            <picklist>AccountSource</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry</picklist>
+            <values>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food %26 Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not For Profit</fullName>
                 <default>false</default>
             </values>
             <values>
@@ -2439,26 +4701,220 @@
                 <default>false</default>
             </values>
             <values>
-                <fullName>Prospect</fullName>
+                <fullName>Recreation</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Technology Partner</fullName>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utilities</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
-            <picklist>UpsellOpportunity__c</picklist>
+            <picklist>Ownership</picklist>
             <values>
-                <fullName>Maybe</fullName>
+                <fullName>Other</fullName>
                 <default>false</default>
             </values>
+            <values>
+                <fullName>Private</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Subsidiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rating</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Active__c</picklist>
             <values>
                 <fullName>No</fullName>
                 <default>false</default>
             </values>
             <values>
                 <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ClaimSystemStatus__c</picklist>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__CustomerPriority__c</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__MarketSegment__c</picklist>
+            <values>
+                <fullName>ASO %28Admin Services Only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mid Sized Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__PartnerTier__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__RatingType__c</picklist>
+            <values>
+                <fullName>Age</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Composite</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__SLA__c</picklist>
+            <values>
+                <fullName>Bronze</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Platinum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Silver</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -2482,26 +4938,8 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
-    <validationRules>
-        <fullName>New_Validation_Acc</fullName>
-        <active>true</active>
-        <errorConditionFormula>false</errorConditionFormula>
-        <errorMessage>This error will be never displayed.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Prevent_Edit_to_Relationship_Fields</fullName>
-        <active>true</active>
-        <errorConditionFormula>ISBLANK(Name)</errorConditionFormula>
-        <errorMessage>This is always false</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>Validation</fullName>
-        <active>true</active>
-        <errorConditionFormula>Name  &lt;&gt; &apos;&apos;</errorConditionFormula>
-        <errorMessage>You must enter a name for the XXXXXXXXXXX account</errorMessage>
-    </validationRules>
     <webLinks>
-        <fullName>Billing</fullName>
+        <fullName>AltavistaNews</fullName>
         <availability>online</availability>
         <displayType>link</displayType>
         <encodingKey>UTF-8</encodingKey>
@@ -2511,12 +4949,166 @@
         <height>600</height>
         <isResizable>true</isResizable>
         <linkType>url</linkType>
-        <masterLabel>Billing</masterLabel>
+        <masterLabel>Altavista News</masterLabel>
         <openType>newWindow</openType>
         <position>none</position>
         <protected>false</protected>
         <showsLocation>true</showsLocation>
         <showsStatus>true</showsStatus>
-        <url>http://www.genwatt.com/genwatt/billing.htm?actname={!Account_Name}</url>
+        <url>http://news.altavista.com/search?nc=0&amp;q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Account_BillingStreet}+{!Account_BillingCity}+{!Account_BillingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleNews</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google News</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/news?&amp;q={!Account_Name}&amp;btnG=Search+News</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>HooversProfile</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Hoovers Profile</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://search.hoovers.com/cgi-bin/hol_search?which=company&amp;query_string={!Account_Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>YahooMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>true</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>true</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Yahoo Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>http://maps.yahoo.com/py/maps.py?cn={!Account_BillingCountry}&amp;csz={!Account_BillingCity}+{!Account_BillingState}+{!Account_BillingPostalCode}+&amp;addr={!Account_BillingAddress}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__CreateGroup</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Create Group</masterLabel>
+        <openType>sidebar</openType>
+        <page>vlocity_ins__CreateGroupHouseholdFromAccount</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__CreateHousehold</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Create Household</masterLabel>
+        <openType>sidebar</openType>
+        <page>vlocity_ins__CreateHouseholdFromPersonAccount</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>vlocity_ins__ProductSelection</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Product Selection</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+var namespace_prefix = &apos;&apos;; 
+
+var result = sforce.connection.describeGlobal();
+var TOKEN_OBJ = &quot;Party__c&quot;;
+var sobjects = result.getArray(&quot;sobjects&quot;);
+
+for(var i=0; i&lt;sobjects.length; i++) {
+     var sobjName = sobjects[i].name;
+     var str = sobjName.split(&quot;__&quot;);
+     //if there are 3 values there is a namespace
+     if (str.length == 3){
+         //Is it one of ours?
+         var sobj = str[1].valueOf() +&apos;__c&apos;;
+         if(sobj == TOKEN_OBJ) {
+            namespace_prefix = str[0].valueOf();
+         }
+    } 
+}
+if(namespace_prefix != &quot;&quot;){
+    namespace_prefix+= &apos;__&apos;;
+} 
+
+if (namespace_prefix==null || namespace_prefix==&apos;&apos;)
+window.location = &apos;apex/InsuranceSelectionUI?accountId=&apos; + &apos;{!Account.Id}&apos;;
+else
+window.location = &apos;apex/&apos;+namespace_prefix+&apos;__InsuranceSelectionUI?accountId=&apos; + &apos;{!Account.Id}&apos;;</url>
     </webLinks>
 </CustomObject>

@@ -1,0 +1,24 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "Given an AuthenticationKey, a Year, and a ModelId, this procedure will return a list of Vehicle Trims that were available for this model in a given year.",
+    "%vlocity_namespace%__CustomJavaScript__c": "KBB_GetTrimsAndVehicleIdsByYearAndModel_SampleInput.json",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "KBB_GetTrimsAndVehicleIdsByYearAndModel_Element_CreateGetTrimsRequest.json",
+        "KBB_GetTrimsAndVehicleIdsByYearAndModel_Element_GetTrims.json",
+        "KBB_GetTrimsAndVehicleIdsByYearAndModel_Element_GetTrimsFromGetTrimsResponse.json",
+        "KBB_GetTrimsAndVehicleIdsByYearAndModel_Element_ReturnListOfTrims.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "KBB_GetTrimsAndVehicleIdsByYearAndModel",
+    "%vlocity_namespace%__PropertySet__c": "KBB_GetTrimsAndVehicleIdsByYearAndModel_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "GetTrimsAndVehicleIdsByYearAndModel",
+    "%vlocity_namespace%__Type__c": "KBB",
+    "Name": "KBBGetTrims",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/KBB/GetTrimsAndVehicleIdsByYearAndModel/Procedure"
+}

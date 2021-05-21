@@ -1,0 +1,40 @@
+<div class="vella-policy-id-card-page-wrapper" ng-controller="vellaPolicyIdCardController">
+    <div class="slds-spinner_container vella-spinner" ng-class="{'vella-spinner-active': !$root.isLoaded}">
+        <div role="status" class="slds-spinner slds-spinner--medium slds-spinner--inverse">
+            <span class="slds-assistive-text">Loading</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+    <div class="slds-grid">
+        <div class="slds-size--1-of-2 vella-policy-id-card-data">
+            <span class="vella-policy-id-card-label">Policy Holder</span>
+            <span class="vella-policy-id-card-value">{{$root.cardData.PolicyHolder}}</span>
+        </div>
+        <div class="slds-size--1-of-2 vella-policy-id-card-data">
+            <span class="vella-policy-id-card-label">Policy Number</span>
+            <span class="vella-policy-id-card-value">{{$root.cardData.PolicyNumber}}</span>
+        </div>
+    </div>
+    <div class="vella-policy-id-card-data">
+        <span class="vella-policy-id-card-label">Effective Term</span>
+        <span class="vella-policy-id-card-value">{{$root.cardData.EffectiveDate | date: 'mediumDate'}} - {{$root.cardData.ExpirationDate | date: 'mediumDate'}}</span>
+    </div>
+    <div class="vella-policy-id-card-data" ng-if="$root.cardData.Type === 'Auto'">
+        <span class="vella-policy-id-card-label">Vehicle</span>
+        <span class="vella-policy-id-card-value">{{$root.cardData.Name}}</span>
+        <span class="vella-policy-id-card-value vella-policy-id-card-value-italic">VIN: {{$root.cardData.AttributeSelectedValues.VIN}}</span>
+    </div>
+    <div class="vella-policy-id-card-data" ng-if="$root.coverages.coverageAmounts.length">
+        <span class="vella-policy-id-card-label">Coverages</span>
+        <span class="vella-policy-id-card-value" ng-repeat="coverage in $root.coverages.coverageAmounts">
+            {{coverage.name.fieldValue}}
+        </span>
+    </div>
+    <div class="vella-policy-id-card-data" ng-if="$root.cardData.AgentInfo">
+        <span class="vella-policy-id-card-label">Agent</span>
+        <span class="vella-policy-id-card-value">{{$root.cardData.AgentInfo.FirstName}} {{$root.cardData.AgentInfo.LastName}}</span>
+        <span class="vella-policy-id-card-value">{{$root.cardData.AgentInfo.Phone}}</span>
+        <span class="vella-policy-id-card-value">{{$root.cardData.AgentInfo.Email}}</span>
+    </div>
+</div>

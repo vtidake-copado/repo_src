@@ -1,0 +1,3956 @@
+[
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "415588",
+            "dataType": "Number",
+            "displayOrder": 5,
+            "headerType": "Output",
+            "label": null,
+            "listValues": null,
+            "name": "driverClass"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "6060d6",
+            "dataType": "Number",
+            "displayOrder": 7,
+            "headerType": "Output",
+            "label": null,
+            "listValues": null,
+            "name": "driverClassUM"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "69bf31",
+            "dataType": "Number Range",
+            "displayOrder": 1,
+            "headerType": "Input",
+            "label": null,
+            "listValues": "0,1,2,3,4,6,9,14,19,24,29,34,39,44,49,54,59,64",
+            "name": "driverYrsExp"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "961536",
+            "dataType": "Number",
+            "displayOrder": 10,
+            "headerType": "Output",
+            "label": null,
+            "listValues": null,
+            "name": "driverClassCOLL"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "b25dab",
+            "dataType": "Number",
+            "displayOrder": 9,
+            "headerType": "Output",
+            "label": null,
+            "listValues": null,
+            "name": "driverClassCCD"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "b82068",
+            "dataType": "Text",
+            "displayOrder": 4,
+            "headerType": "Input",
+            "label": null,
+            "listValues": null,
+            "name": "driverGoodStudent"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "c53c69",
+            "dataType": "Number",
+            "displayOrder": 8,
+            "headerType": "Output",
+            "label": null,
+            "listValues": null,
+            "name": "driverClassMED"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "d173b1",
+            "dataType": "Number",
+            "displayOrder": 6,
+            "headerType": "Output",
+            "label": null,
+            "listValues": null,
+            "name": "driverClassBIPD"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "da68ce",
+            "dataType": "Text",
+            "displayOrder": 2,
+            "headerType": "Input",
+            "label": null,
+            "listValues": null,
+            "name": "driverGender"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "columnKey": "f39fe5",
+            "dataType": "Text",
+            "displayOrder": 3,
+            "headerType": "Input",
+            "label": null,
+            "listValues": null,
+            "name": "driverMaritalStatus"
+        },
+        "Name": "Header",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "0"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 1,
+            "driverClassBIPD": 2.94,
+            "driverClassCCD": 2.86,
+            "driverClassCOLL": 3.03,
+            "driverClassMED": 1.81,
+            "driverClassUM": 1.3
+        },
+        "Name": "5a403edb8763e362989d92aff624a4d6",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "1"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 9,
+            "driverClassBIPD": 2.85,
+            "driverClassCCD": 2.86,
+            "driverClassCOLL": 3.03,
+            "driverClassMED": 1.73,
+            "driverClassUM": 1.29
+        },
+        "Name": "ae76c35494a07291d5755d7d71fabed8",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "14"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 53,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 1.08,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 1.05
+        },
+        "Name": "b8ffb740d4ee528b986fe39b763137b8",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "19"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 57,
+            "driverClassBIPD": 0.86,
+            "driverClassCCD": 0.99,
+            "driverClassCOLL": 0.92,
+            "driverClassMED": 0.97,
+            "driverClassUM": 1.04
+        },
+        "Name": "e9617ebfc108c0df522bf53f29406d60",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "2"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 17,
+            "driverClassBIPD": 2.61,
+            "driverClassCCD": 2.62,
+            "driverClassCOLL": 2.58,
+            "driverClassMED": 1.59,
+            "driverClassUM": 1.19
+        },
+        "Name": "e176252e9e53a5112e7e9280267f2103",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "24"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 61,
+            "driverClassBIPD": 0.89,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.98
+        },
+        "Name": "c1aabd3f97d6d63b87527e99cb20d6fb",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "29"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 65,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.95
+        },
+        "Name": "a30ae3809a4096b2fdc28505bfd3915a",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "3"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 25,
+            "driverClassBIPD": 2.4,
+            "driverClassCCD": 2.48,
+            "driverClassCOLL": 2.5,
+            "driverClassMED": 1.5,
+            "driverClassUM": 1.12
+        },
+        "Name": "1c9144fe040c53f63ab2e227033ced34",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "34"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 69,
+            "driverClassBIPD": 0.82,
+            "driverClassCCD": 0.84,
+            "driverClassCOLL": 0.86,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.91
+        },
+        "Name": "8c0ac8614fabcba73c646b8bd1f214c9",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "39"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 73,
+            "driverClassBIPD": 0.79,
+            "driverClassCCD": 0.79,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.93
+        },
+        "Name": "068003bc3a399cca32c1cf24b4302b03",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "4"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 33,
+            "driverClassBIPD": 1.74,
+            "driverClassCCD": 1.93,
+            "driverClassCOLL": 2.02,
+            "driverClassMED": 1.38,
+            "driverClassUM": 1.07
+        },
+        "Name": "9fcf157f9263980c25071182abc4428a",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "44"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 77,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.86,
+            "driverClassUM": 0.93
+        },
+        "Name": "bf741b7106c88845f5cfdc5a9138fba5",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "49"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 81,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.82,
+            "driverClassUM": 0.93
+        },
+        "Name": "bd4ca9db6fa23cdaf388fa76da053b5e",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "54"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 85,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.83,
+            "driverClassUM": 0.93
+        },
+        "Name": "ee60469d6d9a77138fe4a57aea60c234",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "59"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 89,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.72,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.77,
+            "driverClassUM": 1.01
+        },
+        "Name": "0072b14959498c23a0ad2fb4b6e37228",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "6"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 41,
+            "driverClassBIPD": 1.18,
+            "driverClassCCD": 1.69,
+            "driverClassCOLL": 1.38,
+            "driverClassMED": 1.26,
+            "driverClassUM": 0.98
+        },
+        "Name": "43cba61595d535bdb711e41e4d916dfa",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "64"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 93,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.68,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.72,
+            "driverClassUM": 1.01
+        },
+        "Name": "029ceb2538b7cc4474269d8cdd6ef512",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "9"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 49,
+            "driverClassBIPD": 0.93,
+            "driverClassCCD": 1.07,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.11,
+            "driverClassUM": 1.05
+        },
+        "Name": "774140167a60e724fe2490bf3827cf4e",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "0"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 3,
+            "driverClassBIPD": 2.51,
+            "driverClassCCD": 2.74,
+            "driverClassCOLL": 2.79,
+            "driverClassMED": 1.66,
+            "driverClassUM": 1.3
+        },
+        "Name": "a7067c84ca20c175f5a0a3d1e403f0bc",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "1"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 11,
+            "driverClassBIPD": 2.51,
+            "driverClassCCD": 2.65,
+            "driverClassCOLL": 2.79,
+            "driverClassMED": 1.66,
+            "driverClassUM": 1.29
+        },
+        "Name": "75454655a65e4b84f9be1262f0305aac",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "14"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 54,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 1.08,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 1.05
+        },
+        "Name": "315b0e72c37bb90e38e85f135a51368b",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "19"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 58,
+            "driverClassBIPD": 0.86,
+            "driverClassCCD": 0.99,
+            "driverClassCOLL": 0.92,
+            "driverClassMED": 0.97,
+            "driverClassUM": 1.04
+        },
+        "Name": "468ce2f8d9a8b44a9751ba7a5d9b3d77",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "2"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 19,
+            "driverClassBIPD": 2.24,
+            "driverClassCCD": 2.43,
+            "driverClassCOLL": 2.43,
+            "driverClassMED": 1.52,
+            "driverClassUM": 1.19
+        },
+        "Name": "50a35be426c16f36d1e79ce8aceb72c5",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "24"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 62,
+            "driverClassBIPD": 0.89,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.98
+        },
+        "Name": "942f1a93b276e5543e4827cc2f501347",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "29"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 66,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.95
+        },
+        "Name": "bc491c6396484b2fbe16c62d33be794b",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "3"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 27,
+            "driverClassBIPD": 2.03,
+            "driverClassCCD": 2.3,
+            "driverClassCOLL": 2.36,
+            "driverClassMED": 1.44,
+            "driverClassUM": 1.12
+        },
+        "Name": "f711f3b2ea6397de73dda2a31cc289d5",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "34"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 70,
+            "driverClassBIPD": 0.82,
+            "driverClassCCD": 0.84,
+            "driverClassCOLL": 0.86,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.91
+        },
+        "Name": "95c30ea48d56edc417f122307b3c41f2",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "39"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 74,
+            "driverClassBIPD": 0.79,
+            "driverClassCCD": 0.79,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.93
+        },
+        "Name": "c299e79848e8b88db75c5835fd4ae859",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "4"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 35,
+            "driverClassBIPD": 1.8,
+            "driverClassCCD": 1.98,
+            "driverClassCOLL": 2.06,
+            "driverClassMED": 1.43,
+            "driverClassUM": 1.07
+        },
+        "Name": "51cdbba0d14d31221e02a6a15d3cae95",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "44"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 78,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.86,
+            "driverClassUM": 0.93
+        },
+        "Name": "c0af8bf6c3cbda79f27d80cfcafdac62",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "49"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 82,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.82,
+            "driverClassUM": 0.93
+        },
+        "Name": "3db66df4ec51968052b427fbc19c1114",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "54"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 86,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.83,
+            "driverClassUM": 0.93
+        },
+        "Name": "ff2924291d7ded57658bb5bdb6c3a952",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "59"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 90,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.72,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.77,
+            "driverClassUM": 1.01
+        },
+        "Name": "3c9d1aba694212e066bf91c905173361",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "6"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 43,
+            "driverClassBIPD": 1.3,
+            "driverClassCCD": 1.72,
+            "driverClassCOLL": 1.47,
+            "driverClassMED": 1.26,
+            "driverClassUM": 0.98
+        },
+        "Name": "3b314c914ac786a539244347e4373802",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "64"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 94,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.68,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.72,
+            "driverClassUM": 1.01
+        },
+        "Name": "99481646132c6cc1356ec88e161f5534",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "9"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 50,
+            "driverClassBIPD": 1.03,
+            "driverClassCCD": 1.12,
+            "driverClassCOLL": 1.11,
+            "driverClassMED": 1.11,
+            "driverClassUM": 1.05
+        },
+        "Name": "96fd0f6eecc40f7a5f983f1069c542f2",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "0"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 2,
+            "driverClassBIPD": 2.21,
+            "driverClassCCD": 2.14,
+            "driverClassCOLL": 2.28,
+            "driverClassMED": 1.36,
+            "driverClassUM": 1.29
+        },
+        "Name": "ad796fb8c1fb4a8de1599d6cd1e768b4",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "1"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 10,
+            "driverClassBIPD": 2.15,
+            "driverClassCCD": 2.14,
+            "driverClassCOLL": 2.28,
+            "driverClassMED": 1.3,
+            "driverClassUM": 1.29
+        },
+        "Name": "89ce4441e740322108d5c2ec4d25bbf9",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "14"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 53,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 1.08,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 1.05
+        },
+        "Name": "c5bd8279d7b4dc8255b3c4a5729bfb01",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "19"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 57,
+            "driverClassBIPD": 0.86,
+            "driverClassCCD": 0.99,
+            "driverClassCOLL": 0.92,
+            "driverClassMED": 0.97,
+            "driverClassUM": 1.04
+        },
+        "Name": "099b0fdd6c4c3c43b69d3e926666f205",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "2"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 18,
+            "driverClassBIPD": 1.97,
+            "driverClassCCD": 1.96,
+            "driverClassCOLL": 1.95,
+            "driverClassMED": 1.19,
+            "driverClassUM": 1.19
+        },
+        "Name": "6b10189d148a6f34caa0d11c653c835f",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "24"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 61,
+            "driverClassBIPD": 0.89,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.98
+        },
+        "Name": "b2a9c9a66ecd31e7944d286ce55b06b2",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "29"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 65,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.95
+        },
+        "Name": "d79613358b972cd99c120dda2b4f61c7",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "3"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 26,
+            "driverClassBIPD": 1.81,
+            "driverClassCCD": 1.86,
+            "driverClassCOLL": 1.88,
+            "driverClassMED": 1.13,
+            "driverClassUM": 1.12
+        },
+        "Name": "136678b471d9d193c9291e3e2d4a60af",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "34"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 69,
+            "driverClassBIPD": 0.82,
+            "driverClassCCD": 0.84,
+            "driverClassCOLL": 0.86,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.91
+        },
+        "Name": "c38b66ffdb1522ee003185552927a528",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "39"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 73,
+            "driverClassBIPD": 0.79,
+            "driverClassCCD": 0.79,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.93
+        },
+        "Name": "3d1aef81b3762aa36e44e8e82ee4972b",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "4"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 34,
+            "driverClassBIPD": 1.37,
+            "driverClassCCD": 1.53,
+            "driverClassCOLL": 1.59,
+            "driverClassMED": 1.09,
+            "driverClassUM": 1.07
+        },
+        "Name": "e0d062d134ea95121eae64adc7b4de27",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "44"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 77,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.86,
+            "driverClassUM": 0.93
+        },
+        "Name": "8803734724292edac221ddee96e7a7d9",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "49"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 81,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.82,
+            "driverClassUM": 0.93
+        },
+        "Name": "b8719e28f12feddfa29da73a764cb4e3",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "54"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 85,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.83,
+            "driverClassUM": 0.93
+        },
+        "Name": "995875705262d95df12ee44ef50a49f9",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "59"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 89,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.72,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.77,
+            "driverClassUM": 1.01
+        },
+        "Name": "1d4604d813a7c85ae413fd68731c86d7",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "6"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 42,
+            "driverClassBIPD": 1.01,
+            "driverClassCCD": 1.34,
+            "driverClassCOLL": 1.13,
+            "driverClassMED": 1,
+            "driverClassUM": 0.98
+        },
+        "Name": "f575a4d21f73397b7869e55b36b87a91",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "64"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 93,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.68,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.72,
+            "driverClassUM": 1.01
+        },
+        "Name": "41c31b94cda0ea891fab33a1778d0377",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "9"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 49,
+            "driverClassBIPD": 0.93,
+            "driverClassCCD": 1.07,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.11,
+            "driverClassUM": 1.05
+        },
+        "Name": "cc616e2e5a56de24e755c003917cdc99",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "0"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 4,
+            "driverClassBIPD": 1.9,
+            "driverClassCCD": 2.07,
+            "driverClassCOLL": 2.1,
+            "driverClassMED": 1.25,
+            "driverClassUM": 1.29
+        },
+        "Name": "63cb8a62b20eb3f34674d7316bf72528",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "1"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 12,
+            "driverClassBIPD": 1.9,
+            "driverClassCCD": 1.99,
+            "driverClassCOLL": 2.1,
+            "driverClassMED": 1.25,
+            "driverClassUM": 1.29
+        },
+        "Name": "6da12c4459eddb211470d69730340e43",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "14"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 54,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 1.08,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 1.05
+        },
+        "Name": "c074ef6fbc85f0004e42d72b213e1389",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "19"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 58,
+            "driverClassBIPD": 0.86,
+            "driverClassCCD": 0.99,
+            "driverClassCOLL": 0.92,
+            "driverClassMED": 0.97,
+            "driverClassUM": 1.04
+        },
+        "Name": "601164bcc75a2cd88921a649b57aa2de",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "2"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 20,
+            "driverClassBIPD": 1.69,
+            "driverClassCCD": 1.82,
+            "driverClassCOLL": 1.83,
+            "driverClassMED": 1.15,
+            "driverClassUM": 1.19
+        },
+        "Name": "163f98b363c392d0b24d35a7f7066795",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "24"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 62,
+            "driverClassBIPD": 0.89,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.98
+        },
+        "Name": "b0f7d70881eb5db089b25dc99799c3e7",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "29"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 66,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.95
+        },
+        "Name": "d4280a0ecef99a2860d056538ff8c90f",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "3"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 28,
+            "driverClassBIPD": 1.54,
+            "driverClassCCD": 1.73,
+            "driverClassCOLL": 1.78,
+            "driverClassMED": 1.08,
+            "driverClassUM": 1.12
+        },
+        "Name": "e3f91e6132e65fc8f4335837589e3a5a",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "34"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 70,
+            "driverClassBIPD": 0.82,
+            "driverClassCCD": 0.84,
+            "driverClassCOLL": 0.86,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.91
+        },
+        "Name": "b3c5a0c9383df6ae6d97677595553ec6",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "39"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 74,
+            "driverClassBIPD": 0.79,
+            "driverClassCCD": 0.79,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.93
+        },
+        "Name": "e22b9fe73a32b05d68016cd6d44d1c2b",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "4"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 36,
+            "driverClassBIPD": 1.42,
+            "driverClassCCD": 1.56,
+            "driverClassCOLL": 1.63,
+            "driverClassMED": 1.15,
+            "driverClassUM": 1.07
+        },
+        "Name": "4d9d6d0efae9a3c1c2c7a30f521441e9",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "44"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 78,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.86,
+            "driverClassUM": 0.93
+        },
+        "Name": "ad52229aa054ecdfea7937730ee5ae6e",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "49"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 82,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.82,
+            "driverClassUM": 0.93
+        },
+        "Name": "ac45fb0c38ab7dd9e9cc0db12e7e1f57",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "54"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 86,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.83,
+            "driverClassUM": 0.93
+        },
+        "Name": "ee78c8d2cfdae0cea4a75dd3720e297d",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "59"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 90,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.72,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.77,
+            "driverClassUM": 1.01
+        },
+        "Name": "bd5032703ee8e0c514aa54b0712bd2c0",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "6"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 44,
+            "driverClassBIPD": 1.11,
+            "driverClassCCD": 1.36,
+            "driverClassCOLL": 1.19,
+            "driverClassMED": 1,
+            "driverClassUM": 0.98
+        },
+        "Name": "8018858995fd2eba626213de98c42ab1",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "64"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 94,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.68,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.72,
+            "driverClassUM": 1.01
+        },
+        "Name": "4d1725c1db386a0ab711e8aa8d5c7ef3",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "F",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "9"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 50,
+            "driverClassBIPD": 1.03,
+            "driverClassCCD": 1.12,
+            "driverClassCOLL": 1.11,
+            "driverClassMED": 1.11,
+            "driverClassUM": 1.05
+        },
+        "Name": "2a0e0e4eb861af811923b7c40ba1abf9",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "0"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 5,
+            "driverClassBIPD": 3.18,
+            "driverClassCCD": 3.14,
+            "driverClassCOLL": 3.63,
+            "driverClassMED": 1.81,
+            "driverClassUM": 1.28
+        },
+        "Name": "c9622ed72759aed087aa553f314c6e28",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "1"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 13,
+            "driverClassBIPD": 3.09,
+            "driverClassCCD": 3.14,
+            "driverClassCOLL": 3.63,
+            "driverClassMED": 1.73,
+            "driverClassUM": 1.27
+        },
+        "Name": "05c0edf0ba3fc877b6466951673aa99b",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "14"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 55,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 1.08,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 1.05
+        },
+        "Name": "50ba6414f9d41f0f85eb7a38392e4a10",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "19"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 59,
+            "driverClassBIPD": 0.86,
+            "driverClassCCD": 0.99,
+            "driverClassCOLL": 0.92,
+            "driverClassMED": 0.97,
+            "driverClassUM": 1.04
+        },
+        "Name": "62b7c504d0285c4ebc9a44c657b0e982",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "2"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 21,
+            "driverClassBIPD": 2.83,
+            "driverClassCCD": 2.88,
+            "driverClassCOLL": 3.11,
+            "driverClassMED": 1.66,
+            "driverClassUM": 1.17
+        },
+        "Name": "38d31a3ea5ac8e1279973ccd87d3d60e",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "24"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 63,
+            "driverClassBIPD": 0.89,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.98
+        },
+        "Name": "7e0769bfb16af455d3354cd8253510da",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "29"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 67,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.95
+        },
+        "Name": "2019cf3a39060c0a57eab7ba4d880355",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "3"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 29,
+            "driverClassBIPD": 2.59,
+            "driverClassCCD": 2.73,
+            "driverClassCOLL": 3,
+            "driverClassMED": 1.65,
+            "driverClassUM": 1.1
+        },
+        "Name": "708ce2912ccf466acaa5974d7e515b3f",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "34"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 71,
+            "driverClassBIPD": 0.82,
+            "driverClassCCD": 0.84,
+            "driverClassCOLL": 0.86,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.91
+        },
+        "Name": "6ede0e98ac94346b6e4b3a51c3450a89",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "39"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 75,
+            "driverClassBIPD": 0.79,
+            "driverClassCCD": 0.79,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.93
+        },
+        "Name": "d2a0fa8213f145056fd4524272ad99da",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "4"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 37,
+            "driverClassBIPD": 1.74,
+            "driverClassCCD": 2.13,
+            "driverClassCOLL": 2.43,
+            "driverClassMED": 1.24,
+            "driverClassUM": 1.05
+        },
+        "Name": "a079464ecbe4175aad6302cc8ee8d0eb",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "44"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 79,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.86,
+            "driverClassUM": 0.93
+        },
+        "Name": "4f95c85d493a412aca7340f9b3abe2ac",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "49"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 83,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.82,
+            "driverClassUM": 0.93
+        },
+        "Name": "03283ad80f209683b4c447d318665b64",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "54"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 87,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.83,
+            "driverClassUM": 0.93
+        },
+        "Name": "e489db11fbfe91779dc83821e4ea973d",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "59"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 91,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.72,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.77,
+            "driverClassUM": 1.01
+        },
+        "Name": "1b645a56b61e3dbd6c1e2302d9538cd6",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "6"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 45,
+            "driverClassBIPD": 1.2,
+            "driverClassCCD": 1.85,
+            "driverClassCOLL": 1.52,
+            "driverClassMED": 1.14,
+            "driverClassUM": 0.98
+        },
+        "Name": "ce537840ff2a39579f69d9a4ab85d269",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "64"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 95,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.68,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.72,
+            "driverClassUM": 1.01
+        },
+        "Name": "7fc41d8763f7bbec72425e48ad1adbdb",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "9"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 51,
+            "driverClassBIPD": 0.95,
+            "driverClassCCD": 1.12,
+            "driverClassCOLL": 1.01,
+            "driverClassMED": 1.11,
+            "driverClassUM": 1.05
+        },
+        "Name": "0e1a12b4555b144ea86df7ce2027811d",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "0"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 7,
+            "driverClassBIPD": 3.81,
+            "driverClassCCD": 4.7,
+            "driverClassCOLL": 4.86,
+            "driverClassMED": 1.74,
+            "driverClassUM": 1.28
+        },
+        "Name": "16e38830123b7f48e85bcc0d44e03c73",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "1"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 15,
+            "driverClassBIPD": 3.81,
+            "driverClassCCD": 4.7,
+            "driverClassCOLL": 4.86,
+            "driverClassMED": 1.74,
+            "driverClassUM": 1.27
+        },
+        "Name": "486cc16e85eb2583375de797bec65136",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "14"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 56,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 1.08,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 1.05
+        },
+        "Name": "12ce7440ece18c3eb17db38505310443",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "19"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 60,
+            "driverClassBIPD": 0.86,
+            "driverClassCCD": 0.99,
+            "driverClassCOLL": 0.92,
+            "driverClassMED": 0.97,
+            "driverClassUM": 1.04
+        },
+        "Name": "0bba2c18cdd46bc8526145de9964844a",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "2"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 23,
+            "driverClassBIPD": 3.4,
+            "driverClassCCD": 4.31,
+            "driverClassCOLL": 4.25,
+            "driverClassMED": 1.68,
+            "driverClassUM": 1.17
+        },
+        "Name": "4875c90c6dca97790991cbde730239e2",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "24"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 64,
+            "driverClassBIPD": 0.89,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.98
+        },
+        "Name": "3c14d9799a6604c251a08b58a33783d8",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "29"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 68,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.95
+        },
+        "Name": "73f16cc2d5bf4b5008d971155a1b2f83",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "3"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 31,
+            "driverClassBIPD": 3.21,
+            "driverClassCCD": 4.08,
+            "driverClassCOLL": 4.13,
+            "driverClassMED": 1.66,
+            "driverClassUM": 1.1
+        },
+        "Name": "f12d6e68b7fc6eb13ac5bcfa949a46a3",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "34"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 72,
+            "driverClassBIPD": 0.82,
+            "driverClassCCD": 0.84,
+            "driverClassCOLL": 0.86,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.91
+        },
+        "Name": "442e864d743f59790f65823d606d839c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "39"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 76,
+            "driverClassBIPD": 0.79,
+            "driverClassCCD": 0.79,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.93
+        },
+        "Name": "8cd91c9471de6b2b17a4586697c34525",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "4"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 39,
+            "driverClassBIPD": 2.2,
+            "driverClassCCD": 3.33,
+            "driverClassCOLL": 3.17,
+            "driverClassMED": 1.24,
+            "driverClassUM": 1.05
+        },
+        "Name": "f27466ada36407668c00f68230fbb88f",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "44"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 80,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.86,
+            "driverClassUM": 0.93
+        },
+        "Name": "7c0872a069465ab93095ba5cc86b7298",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "49"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 84,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.82,
+            "driverClassUM": 0.93
+        },
+        "Name": "4f8aef4d2fd4e1dd06b789c2f92e6030",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "54"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 88,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.83,
+            "driverClassUM": 0.93
+        },
+        "Name": "9ea7e558f138162e358a226ba94c8f98",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "59"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 92,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.72,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.77,
+            "driverClassUM": 1.01
+        },
+        "Name": "6a3a5f33b655d0db5c215ea401462fb7",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "6"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 47,
+            "driverClassBIPD": 1.45,
+            "driverClassCCD": 2.92,
+            "driverClassCOLL": 2.07,
+            "driverClassMED": 1.16,
+            "driverClassUM": 0.98
+        },
+        "Name": "fafbe9be57f0f9cd1345113a877e63b6",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "64"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 96,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.68,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.72,
+            "driverClassUM": 1.01
+        },
+        "Name": "7ed8f66eaf5c7406768ac8540ea26ed0",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "N",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "9"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 52,
+            "driverClassBIPD": 1.16,
+            "driverClassCCD": 1.18,
+            "driverClassCOLL": 1.25,
+            "driverClassMED": 1.22,
+            "driverClassUM": 1.05
+        },
+        "Name": "d0489e3e4360c575bd3687f455cfbce2",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "0"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 6,
+            "driverClassBIPD": 2.39,
+            "driverClassCCD": 2.37,
+            "driverClassCOLL": 2.73,
+            "driverClassMED": 1.36,
+            "driverClassUM": 1.26
+        },
+        "Name": "6292c387cf7efa36780410ba078e5acf",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "1"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 14,
+            "driverClassBIPD": 2.33,
+            "driverClassCCD": 2.37,
+            "driverClassCOLL": 2.73,
+            "driverClassMED": 1.3,
+            "driverClassUM": 1.27
+        },
+        "Name": "3c32effe3517a269be09130f4d47ce77",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "14"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 55,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 1.08,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 1.05
+        },
+        "Name": "ea379de5b8170f3ff77a08920bffea29",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "19"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 59,
+            "driverClassBIPD": 0.86,
+            "driverClassCCD": 0.99,
+            "driverClassCOLL": 0.92,
+            "driverClassMED": 0.97,
+            "driverClassUM": 1.04
+        },
+        "Name": "aae35d2203fd71203670ecec532ba5ed",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "2"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 22,
+            "driverClassBIPD": 2.14,
+            "driverClassCCD": 2.17,
+            "driverClassCOLL": 2.34,
+            "driverClassMED": 1.25,
+            "driverClassUM": 1.17
+        },
+        "Name": "451fd3479228cd2478e9877fc3fa3eea",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "24"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 63,
+            "driverClassBIPD": 0.89,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.98
+        },
+        "Name": "13b6a2e898f4d8fd783ce5249d090c6a",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "29"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 67,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.95
+        },
+        "Name": "2dc016b299f9e3fc089199dac268da86",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "3"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 30,
+            "driverClassBIPD": 1.95,
+            "driverClassCCD": 2.06,
+            "driverClassCOLL": 2.25,
+            "driverClassMED": 1.24,
+            "driverClassUM": 1.1
+        },
+        "Name": "f0cd9aed4631dc5ecd47ea03aadbecf8",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "34"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 71,
+            "driverClassBIPD": 0.82,
+            "driverClassCCD": 0.84,
+            "driverClassCOLL": 0.86,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.91
+        },
+        "Name": "36060a4e0d438b0d09918430c9d43f7e",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "39"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 75,
+            "driverClassBIPD": 0.79,
+            "driverClassCCD": 0.79,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.93
+        },
+        "Name": "41021248163d3984cfa1719c52352c49",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "4"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 38,
+            "driverClassBIPD": 1.37,
+            "driverClassCCD": 1.68,
+            "driverClassCOLL": 1.92,
+            "driverClassMED": 0.98,
+            "driverClassUM": 1.05
+        },
+        "Name": "ac1b0c92bde32b904506162e5c57c69b",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "44"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 79,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.86,
+            "driverClassUM": 0.93
+        },
+        "Name": "a9592436aacb0de8b7d5e5d7af6c6796",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "49"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 83,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.82,
+            "driverClassUM": 0.93
+        },
+        "Name": "024b920f5bb5404369b36b3909b94725",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "54"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 87,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.83,
+            "driverClassUM": 0.93
+        },
+        "Name": "f6f77711d975e34d78d649a1fb63d8f2",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "59"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 91,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.72,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.77,
+            "driverClassUM": 1.01
+        },
+        "Name": "2217f9547f5498d0118df96ffbae6cca",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "6"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 46,
+            "driverClassBIPD": 1.02,
+            "driverClassCCD": 1.47,
+            "driverClassCOLL": 1.23,
+            "driverClassMED": 0.9,
+            "driverClassUM": 0.98
+        },
+        "Name": "765696d2bb0c2cb855c01e44ad71b681",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "64"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 95,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.68,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.72,
+            "driverClassUM": 1.01
+        },
+        "Name": "952d90472a71db3f6209215dea074c93",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "M",
+            "driverYrsExp": "9"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 51,
+            "driverClassBIPD": 0.95,
+            "driverClassCCD": 1.12,
+            "driverClassCOLL": 1.01,
+            "driverClassMED": 1.11,
+            "driverClassUM": 1.05
+        },
+        "Name": "f3bf1a49b1e0603c40c19e72e8c55fb5",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "0"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 8,
+            "driverClassBIPD": 2.86,
+            "driverClassCCD": 3.54,
+            "driverClassCOLL": 3.66,
+            "driverClassMED": 1.31,
+            "driverClassUM": 1.26
+        },
+        "Name": "5bc8a555958a73733fcbad7cacc4d183",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "1"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 16,
+            "driverClassBIPD": 2.86,
+            "driverClassCCD": 3.54,
+            "driverClassCOLL": 3.66,
+            "driverClassMED": 1.31,
+            "driverClassUM": 1.27
+        },
+        "Name": "0c862912612e8340aaeeea069a2547d6",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "14"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 56,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 1.08,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 1.05
+        },
+        "Name": "8d9016a7f1bafad986a5682594631cb3",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "19"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 60,
+            "driverClassBIPD": 0.86,
+            "driverClassCCD": 0.99,
+            "driverClassCOLL": 0.92,
+            "driverClassMED": 0.97,
+            "driverClassUM": 1.04
+        },
+        "Name": "93738de2653419edaeb0d6573f54bb8c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "2"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 24,
+            "driverClassBIPD": 2.57,
+            "driverClassCCD": 3.25,
+            "driverClassCOLL": 3.2,
+            "driverClassMED": 1.27,
+            "driverClassUM": 1.17
+        },
+        "Name": "582450a59035582e10d1ca121f856343",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "24"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 64,
+            "driverClassBIPD": 0.89,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.98
+        },
+        "Name": "e790811bef406610fbc4b31b431d4aec",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "29"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 68,
+            "driverClassBIPD": 0.91,
+            "driverClassCCD": 0.93,
+            "driverClassCOLL": 0.97,
+            "driverClassMED": 1.01,
+            "driverClassUM": 0.95
+        },
+        "Name": "bcf263ad91687cdff2e6afa6cbfcbe94",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "3"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 32,
+            "driverClassBIPD": 2.42,
+            "driverClassCCD": 3.07,
+            "driverClassCOLL": 3.11,
+            "driverClassMED": 1.25,
+            "driverClassUM": 1.1
+        },
+        "Name": "35b9d2622f35444e5a86c5b79205ca24",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "34"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 72,
+            "driverClassBIPD": 0.82,
+            "driverClassCCD": 0.84,
+            "driverClassCOLL": 0.86,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.91
+        },
+        "Name": "04e9813cf9d8d4be5411e24526cbf8da",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "39"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 76,
+            "driverClassBIPD": 0.79,
+            "driverClassCCD": 0.79,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.89,
+            "driverClassUM": 0.93
+        },
+        "Name": "d499bd1724cdd6d7edfbb72e71d7fddc",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "4"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 40,
+            "driverClassBIPD": 1.73,
+            "driverClassCCD": 2.65,
+            "driverClassCOLL": 2.51,
+            "driverClassMED": 0.98,
+            "driverClassUM": 1.05
+        },
+        "Name": "54fba4b280ddb6c70be999c2339ba3a8",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "44"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 80,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.86,
+            "driverClassUM": 0.93
+        },
+        "Name": "0f9b7552213575782fdd78d3c3ba4922",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "49"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 84,
+            "driverClassBIPD": 0.83,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.81,
+            "driverClassMED": 0.82,
+            "driverClassUM": 0.93
+        },
+        "Name": "58e125b4491c4a55dee66d1c354ba374",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "54"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 88,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.74,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.83,
+            "driverClassUM": 0.93
+        },
+        "Name": "0b19937839ad6b221c1682fad7bdc0ad",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "59"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 92,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.72,
+            "driverClassCOLL": 0.87,
+            "driverClassMED": 0.77,
+            "driverClassUM": 1.01
+        },
+        "Name": "ddb5181a8c7bdf8116c92c7141f8ee39",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "6"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 48,
+            "driverClassBIPD": 1.23,
+            "driverClassCCD": 2.31,
+            "driverClassCOLL": 1.68,
+            "driverClassMED": 0.91,
+            "driverClassUM": 0.98
+        },
+        "Name": "1db0188a336c6a6080bff91398743bb1",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "64"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 96,
+            "driverClassBIPD": 0.92,
+            "driverClassCCD": 0.68,
+            "driverClassCOLL": 0.82,
+            "driverClassMED": 0.72,
+            "driverClassUM": 1.01
+        },
+        "Name": "fa7d394daaa09e13947bae945cdab3f2",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixVersionId__c": {
+            "%vlocity_namespace%__CalculationMatrixId__r.Name": "autoDriverClass",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/autoDriverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c"
+        },
+        "%vlocity_namespace%__InputData__c": {
+            "driverGender": "M",
+            "driverGoodStudent": "Y",
+            "driverMaritalStatus": "S",
+            "driverYrsExp": "9"
+        },
+        "%vlocity_namespace%__OutputData__c": {
+            "driverClass": 52,
+            "driverClassBIPD": 1.16,
+            "driverClassCCD": 1.18,
+            "driverClassCOLL": 1.25,
+            "driverClassMED": 1.22,
+            "driverClassUM": 1.05
+        },
+        "Name": "e9c59d2f8c2cc8c69c30b320a8be735e",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixRow__c"
+    }
+]

@@ -1,0 +1,62 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "id",
+                "val": "0016A000003MGzIQAW"
+            }
+        ],
+        "type": "ApexRest",
+        "value": {
+            "body": "{}",
+            "endpoint": "/services/apexrest/%vlocity_namespace%/v1/intelligence/vellaInterviews?contextId={{$root.accountId}}&pageSize=6"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankCardState": false,
+            "blankStateCheck": true,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['resource']['%vlocity_namespace%__Headline__c']",
+                    "editing": false,
+                    "group": "Custom Properties",
+                    "label": "Headline",
+                    "name": "['resource']['%vlocity_namespace%__Headline__c']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['resource']['%vlocity_namespace%__SubTitle__c']",
+                    "editing": false,
+                    "group": "Custom Properties",
+                    "label": "SubTitle",
+                    "name": "['resource']['%vlocity_namespace%__SubTitle__c']",
+                    "type": "string"
+                }
+            ],
+            "filter": "$scope.data.status === 'active'",
+            "name": "vella-discovery-questions-intelligent",
+            "sObjectType": null,
+            "templateUrl": "vella-discovery-questions-intelligent"
+        }
+    ],
+    "title": "Vella Discovery Questions"
+}

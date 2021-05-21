@@ -1,0 +1,27 @@
+<div class='collision-center'>
+	<div class='header'>
+	  Select a Collision Center
+	</div>
+	<div class='center' ng-repeat='center in control.vlcSI[control.itemsKey]' ng-model='center.vlcSelected' ng-click='onSelectItem(control, center, $index, this, true)' >
+	  <div class='select'>
+		<div class='check' ng-if='center.vlcSelected'></div>
+	  </div>
+	  <div class='info'>
+		<div class='title'>
+		  {{::center.centerName}}
+		</div>
+		<div class='street'>
+		  {{::center.centerStreet}}
+		</div>
+		<div class='city'>
+		  {{::center.centerCity}} , {{::center.centerState}} {{center.centerPostalCode}}
+		</div>
+		<div class='phone'>
+		  {{::center.centerPhone}}
+		</div>
+		<a ng-href='center.centerEmail' class='email'>
+		  {{::center.centerEmail}}
+		</a>
+	  </div>
+	</div>
+  </div>

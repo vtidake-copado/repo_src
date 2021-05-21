@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>vlocity_ins__AccountId__c</name>
+        <relationshipLabel><!-- Consumer Drugs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Administration Time --></label>
+        <name>vlocity_ins__AdministrationTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Expiration Date --></label>
+        <name>vlocity_ins__BatchExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>vlocity_ins__ContactId__c</name>
+        <relationshipLabel><!-- Consumer Drugs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dosage --></label>
+        <name>vlocity_ins__Dosage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drug --></label>
+        <name>vlocity_ins__DrugId__c</name>
+        <relationshipLabel><!-- Consumer Drugs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Drug Name --></label>
+        <name>vlocity_ins__DrugName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drug Price Paid --></label>
+        <name>vlocity_ins__DrugPricePaid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency --></label>
+        <name>vlocity_ins__Frequency__c</name>
+        <picklistValues>
+            <masterLabel>1x/month</masterLabel>
+            <translation><!-- 1x/month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2x/month</masterLabel>
+            <translation><!-- 2x/month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2x/week</masterLabel>
+            <translation><!-- 2x/week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3x/week</masterLabel>
+            <translation><!-- 3x/week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>after meals</masterLabel>
+            <translation><!-- after meals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>b.i.d.</masterLabel>
+            <translation><!-- b.i.d. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>before meals</masterLabel>
+            <translation><!-- before meals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>daily</masterLabel>
+            <translation><!-- daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>other</masterLabel>
+            <translation><!-- other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>p.r.n.</masterLabel>
+            <translation><!-- p.r.n. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>q.h.s.</masterLabel>
+            <translation><!-- q.h.s. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>q.i.d.</masterLabel>
+            <translation><!-- q.i.d. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>q12hrs</masterLabel>
+            <translation><!-- q12hrs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>q2hrs</masterLabel>
+            <translation><!-- q2hrs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>q4hrs</masterLabel>
+            <translation><!-- q4hrs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>q6hrs</masterLabel>
+            <translation><!-- q6hrs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>q8hrs</masterLabel>
+            <translation><!-- q8hrs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>t.i.d.</masterLabel>
+            <translation><!-- t.i.d. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>weekly</masterLabel>
+            <translation><!-- weekly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>with meals</masterLabel>
+            <translation><!-- with meals --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generic Ok --></label>
+        <name>vlocity_ins__IsGenericOk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medication End Date --></label>
+        <name>vlocity_ins__MedicationEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medication Start Date --></label>
+        <name>vlocity_ins__MedicationStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Refill --></label>
+        <name>vlocity_ins__NumberOfRefill__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prescribed By --></label>
+        <name>vlocity_ins__PrescribedBy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prescription Fill Date --></label>
+        <name>vlocity_ins__PrescriptionFillDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prescription Written Date --></label>
+        <name>vlocity_ins__PrescriptionWrittenDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Instruction --></label>
+        <name>vlocity_ins__SpecialInstruction__c</name>
+    </fields>
+    <fields>
+        <help><!-- The reason the Member stopped taking their medication. --></help>
+        <label><!-- Stop Reason --></label>
+        <name>vlocity_ins__StopReason__c</name>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medication added in error</masterLabel>
+            <translation><!-- Medication added in error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient stopped medication</masterLabel>
+            <translation><!-- Patient stopped medication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physician discontinued</masterLabel>
+            <translation><!-- Physician discontinued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescription change in dose or frequency</masterLabel>
+            <translation><!-- Prescription change in dose or frequency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescription complete</masterLabel>
+            <translation><!-- Prescription complete --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unit Of Measurement --></label>
+        <name>vlocity_ins__UnitOfMeasurement__c</name>
+        <picklistValues>
+            <masterLabel>%</masterLabel>
+            <translation><!-- % --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amb</masterLabel>
+            <translation><!-- Amb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAU</masterLabel>
+            <translation><!-- BAU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CELLS/ML</masterLabel>
+            <translation><!-- CELLS/ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IR</masterLabel>
+            <translation><!-- IR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCI/ML</masterLabel>
+            <translation><!-- MCI/ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEQ</masterLabel>
+            <translation><!-- MEQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEQ/MG</masterLabel>
+            <translation><!-- MEQ/MG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEQ/ML</masterLabel>
+            <translation><!-- MEQ/ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MG</masterLabel>
+            <translation><!-- MG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MG/ACTUAT</masterLabel>
+            <translation><!-- MG/ACTUAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MG/HR</masterLabel>
+            <translation><!-- MG/HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MG/MG</masterLabel>
+            <translation><!-- MG/MG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MG/ML</masterLabel>
+            <translation><!-- MG/ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MG/SQCM</masterLabel>
+            <translation><!-- MG/SQCM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ML</masterLabel>
+            <translation><!-- ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ML/ML</masterLabel>
+            <translation><!-- ML/ML --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNT</masterLabel>
+            <translation><!-- UNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNT/MG</masterLabel>
+            <translation><!-- UNT/MG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNT/ML</masterLabel>
+            <translation><!-- UNT/ML --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

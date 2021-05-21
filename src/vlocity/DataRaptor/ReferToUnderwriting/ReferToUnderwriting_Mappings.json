@@ -1,0 +1,73 @@
+[
+    {
+        "%vlocity_namespace%__DefaultValue__c": "$Vlocity.TODAY",
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Task",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "ActivityDate",
+        "%vlocity_namespace%__GlobalKey__c": "2cb9e039-a45d-a34e-0a3c-ec79dab6d601",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "timeStamp",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateTasksCustom5019",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "ReferToUnderwriting",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Task",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Description",
+        "%vlocity_namespace%__GlobalKey__c": "89772886-4a78-aab3-29e5-d9758b1d2389",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "rulesDetails:message",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateTasksCustom2054",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "ReferToUnderwriting",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Task",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Subject",
+        "%vlocity_namespace%__GlobalKey__c": "583e5884-9d57-d2cf-5e3c-508ba37e968e",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "rulesDetails:requirement name",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateTasksCustom2859",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "ReferToUnderwriting",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DefaultValue__c": "Refer",
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Task",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Type",
+        "%vlocity_namespace%__GlobalKey__c": "6944e601-aff2-f64a-46e4-dcc7f8500a54",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateTasksCustom2452",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "ReferToUnderwriting",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Task",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "WhatId",
+        "%vlocity_namespace%__GlobalKey__c": "e6a40c5d-73dc-b430-6cc7-a146aadf4949",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "contextId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateTasksCustom909",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "ReferToUnderwriting",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

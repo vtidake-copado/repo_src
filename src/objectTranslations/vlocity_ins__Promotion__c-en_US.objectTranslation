@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Console Admin Search --></label>
+        <name>vlocity_ins__ConsoleAdminSearch</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Console Admin Search for Discount --></label>
+        <name>vlocity_ins__ConsoleAdminSearch_Discount</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- New Promotion --></label>
+        <name>vlocity_ins__NewPromotion</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Applies To All Items --></label>
+        <name>vlocity_ins__AppliesToAllItems__c</name>
+    </fields>
+    <fields>
+        <label><!-- Benefit Time Plan --></label>
+        <name>vlocity_ins__BenefitTimePlanId__c</name>
+        <relationshipLabel><!-- Promotions (Benefit Time Plan) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Benefit Time Policy --></label>
+        <name>vlocity_ins__BenefitTimePolicyId__c</name>
+        <relationshipLabel><!-- Promotions (Benefit Time Policy) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cannot Be Combined --></label>
+        <name>vlocity_ins__CannotBeCombined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>vlocity_ins__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount Type --></label>
+        <name>vlocity_ins__DiscountType__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order</masterLabel>
+            <translation><!-- Order --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Commitment Duration Time Plan --></label>
+        <name>vlocity_ins__DurationTimePlanId__c</name>
+        <relationshipLabel><!-- Promotions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Commitment Duration Time Policy --></label>
+        <name>vlocity_ins__DurationTimePolicyId__c</name>
+        <relationshipLabel><!-- Promotions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Discount Duration Unit of Measure --></label>
+        <name>vlocity_ins__DurationUnitOfMeasure__c</name>
+        <picklistValues>
+            <masterLabel>Day</masterLabel>
+            <translation><!-- Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation><!-- Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation><!-- Week --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation><!-- Year --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Discount Duration --></label>
+        <name>vlocity_ins__Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective End Date --></label>
+        <name>vlocity_ins__EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Start Date --></label>
+        <name>vlocity_ins__EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto-Add Products --></label>
+        <name>vlocity_ins__EnableAutoAddProducts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto-Apply Promotion --></label>
+        <name>vlocity_ins__EnableAutoApplyPromotion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Follow-on Promotion --></label>
+        <name>vlocity_ins__FollowOnPromotionId__c</name>
+        <relationshipLabel><!-- Promotions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Global Key --></label>
+        <name>vlocity_ins__GlobalKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Limited Quantity --></label>
+        <name>vlocity_ins__IsLimitedQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Orderable --></label>
+        <name>vlocity_ins__IsOrderable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price List --></label>
+        <name>vlocity_ins__PriceListId__c</name>
+        <relationshipLabel><!-- Promotions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>vlocity_ins__Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rank Order --></label>
+        <name>vlocity_ins__RankOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redeemable Code --></label>
+        <name>vlocity_ins__RedeemableCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Continuation --></label>
+        <name>vlocity_ins__ServiceContinuation__c</name>
+        <picklistValues>
+            <masterLabel>Manual Opt-In</masterLabel>
+            <translation><!-- Manual Opt-In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Opt-Out</masterLabel>
+            <translation><!-- Manual Opt-Out --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <description><!-- Discount record --></description>
+        <label><!-- Discount --></label>
+        <name>vlocity_ins__Discount</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Promotion record --></description>
+        <label><!-- Promotion --></label>
+        <name>vlocity_ins__Promotion</name>
+    </recordTypes>
+</CustomObjectTranslation>

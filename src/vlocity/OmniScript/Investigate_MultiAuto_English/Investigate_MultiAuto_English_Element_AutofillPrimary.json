@@ -1,0 +1,58 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Multi Auto Quote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Investigate/MultiAuto/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "Multi Auto Quote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Investigate/MultiAuto/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "insured",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Investigate/MultiAuto/English/insured",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "insured",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "quickfill",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "insuredAgeLicensed": 16,
+            "insuredBirthdate": "11-01-1986",
+            "insuredCity": "San Francisco",
+            "insuredFirstName": "Roger",
+            "insuredGender": "M",
+            "insuredLastName": "Moore",
+            "insuredMaritalStatus": "M",
+            "insuredMiddleName": "M",
+            "insuredPostalCode": 94103,
+            "insuredState": "CA",
+            "insuredStreet": "50 Fremont"
+        },
+        "label": "Auto Fill",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            false
+        ],
+        "ssm": false,
+        "validationRequired": null,
+        "wpm": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Set Values",
+    "Name": "AutofillPrimary",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Investigate/MultiAuto/English/AutofillPrimary"
+}

@@ -157,7 +157,7 @@
     <listViews>
         <fullName>All_AuthorizationForms</fullName>
         <filterScope>Everything</filterScope>
-        <label>Todos los Formularios de autorización</label>
+        <label>All Authorization Forms</label>
     </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>RevisionNumber</customTabListAdditionalFields>

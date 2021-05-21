@@ -1,0 +1,622 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Laboratory-Outpatient-and-Professional-Services_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "SG_outpatientMental_INN": "20% Coins After Ded",
+        "SG_outpatientMental_OON": "30% Coins After Ded",
+        "SG_outpatientRehab_INN": "20% Coins After Ded",
+        "SG_outpatientRehab_OON": "Not Covered",
+        "SG_outpatientSurg_INN": "$75 Copay",
+        "SG_outpatientSurg_OON": "Not Covered",
+        "SG_outpatientXray_INN": "$50 Copay",
+        "SG_outpatientXray_OON": "Not Covered",
+        "SG_skilledNursing_INN": "20% Coins After Ded",
+        "SG_skilledNursing_OON": "Not Covered"
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "records": [
+            {
+                "Code__c": "SG_Medical",
+                "Name": "SG Medical",
+                "displaySequence": 2000,
+                "id": "a0B6A0000089LUpUAM",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzCUAQ",
+                            "cloneable": true,
+                            "code": "SG_outpatientXray_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 13,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Outpatient Lab/X-Ray",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$50 Copay",
+                                    "readonly": false,
+                                    "value": "$50 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$35 Copay",
+                                    "readonly": false,
+                                    "value": "$35 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "$75 Copay",
+                                    "readonly": false,
+                                    "value": "$75 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "$125 Copay",
+                                    "readonly": false,
+                                    "value": "$125 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "4",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "5",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzDUAQ",
+                            "cloneable": true,
+                            "code": "SG_outpatientXray_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 14,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Outpatient Lab/X-Ray",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzEUAQ",
+                            "cloneable": true,
+                            "code": "SG_outpatientMental_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 15,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Outpatient Mental Health",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzFUAQ",
+                            "cloneable": true,
+                            "code": "SG_outpatientMental_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 16,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Outpatient Mental Health",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzGUAQ",
+                            "cloneable": true,
+                            "code": "SG_outpatientRehab_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 17,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Outpatient Rehab Services",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzHUAQ",
+                            "cloneable": true,
+                            "code": "SG_outpatientRehab_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 18,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Outpatient Rehab Services",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzIUAQ",
+                            "cloneable": true,
+                            "code": "SG_outpatientSurg_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 19,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Outpatient Surgery",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "$75 Copay",
+                                    "readonly": false,
+                                    "value": "$75 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "$100 Copay",
+                                    "readonly": false,
+                                    "value": "$100 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "$150 Copay",
+                                    "readonly": false,
+                                    "value": "$150 Copay"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "4",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzJUAQ",
+                            "cloneable": true,
+                            "code": "SG_outpatientSurg_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Outpatient Surgery",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzKUAQ",
+                            "cloneable": true,
+                            "code": "SG_skilledNursing_INN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 21,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Skilled Nursing Facility Care",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "20% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "20% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "Out-Of-Network",
+                            "attributeId": "a0C6A000006lqzLUAQ",
+                            "cloneable": true,
+                            "code": "SG_skilledNursing_OON",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 22,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Skilled Nursing Facility Care",
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "id": "0",
+                                    "label": "Not Covered",
+                                    "readonly": false,
+                                    "value": "Not Covered"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "1",
+                                    "label": "30% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "30% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "2",
+                                    "label": "40% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "40% Coins After Ded"
+                                },
+                                {
+                                    "disabled": false,
+                                    "id": "3",
+                                    "label": "50% Coins After Ded",
+                                    "readonly": false,
+                                    "value": "50% Coins After Ded"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 10
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__Availability__c": "",
+    "%vlocity_namespace%__CarrierId__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2019-01-01",
+    "%vlocity_namespace%__EligibilityCriteriaComments__c": "",
+    "%vlocity_namespace%__EligibilityCriteria__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__EnrollmentStatus__c": "",
+    "%vlocity_namespace%__FormularyId__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2019-01-01T08:00:00.000Z",
+    "%vlocity_namespace%__GlobalKey__c": "4d221d1f-cb8c-15da-f3db-ac7eb2c22faa",
+    "%vlocity_namespace%__HasCustomAttributesProcess__c": false,
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__InstanceKeyFormula__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__IsRecommended__c": false,
+    "%vlocity_namespace%__LastPublishDate__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "",
+    "%vlocity_namespace%__LineOfBusiness__c": "",
+    "%vlocity_namespace%__MarketSegment__c": "",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PricingFormula__c": "",
+    "%vlocity_namespace%__PricingSource__c": "",
+    "%vlocity_namespace%__ProductRelationship__c": "Laboratory-Outpatient-and-Professional-Services_ProductRelationships.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__ProviderNetworkId__c": "",
+    "%vlocity_namespace%__RateBandId__c": "",
+    "%vlocity_namespace%__RatingCalcProcedureName__c": "",
+    "%vlocity_namespace%__RatingProcedureType__c": "",
+    "%vlocity_namespace%__RecordTypeName__c": "CoverageSpec",
+    "%vlocity_namespace%__ReplacementProductId__c": "",
+    "%vlocity_namespace%__ReserveProcessingMode__c": "",
+    "%vlocity_namespace%__Scope__c": "",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2019-01-01T08:00:00.000Z",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__Term__c": "",
+    "%vlocity_namespace%__Tier__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TotalCoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__TotalInsuredFormula__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "",
+    "CanUseQuantitySchedule": true,
+    "CanUseRevenueSchedule": true,
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "Image__c": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Laboratory Outpatient and Professional Services",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "Laboratory-Outpatient-and-Professional-Services_PricebookEntries.json",
+    "ProductCode": "SG_Lab_Outpat_Prof",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "CoverageSpec",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/CoverageSpec",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": "",
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Laboratory Outpatient and Professional Services",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "4d221d1f-cb8c-15da-f3db-ac7eb2c22faa",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "4d221d1f-cb8c-15da-f3db-ac7eb2c22faa",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/4d221d1f-cb8c-15da-f3db-ac7eb2c22faa",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "SG_Lab_Outpat_Prof",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/4d221d1f-cb8c-15da-f3db-ac7eb2c22faa"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/4d221d1f-cb8c-15da-f3db-ac7eb2c22faa"
+}

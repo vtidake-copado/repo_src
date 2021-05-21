@@ -1,0 +1,23 @@
+.vloc-ins-file-upload-container {
+    position: relative;
+    width: 100%;
+
+    .vloc-ins-file-upload-notify_container {
+        min-height: 2.5rem;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0ms linear 150ms,
+                    position 0ms linear 150ms,
+                    opacity 150ms ease-in;
+
+        &.active {
+            opacity: 1;
+            position: static;
+            visibility: visible;
+            transition: visibility 0ms linear 0ms,
+                        position 0ms linear 0ms,
+                        opacity 150ms ease-in;
+        }
+    }
+}

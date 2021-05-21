@@ -1,0 +1,614 @@
+[
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "SGTierSlopesMedical",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/SGTierSlopesMedical",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SGMedicalRatingComposite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SGMedicalRatingComposite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "d88025",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "ProductSubtype"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "ae822e",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "empOnlySlope"
+            },
+            {
+                "columnKey": "63460f",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "empSpouseSlope"
+            },
+            {
+                "columnKey": "a86d5e",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "empChildSlope"
+            },
+            {
+                "columnKey": "3b2471",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "empFamilySlope"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"empOnlySlope\":\"SGTierSlopesMedical__empOnlySlope\",\"empSpouseSlope\":\"SGTierSlopesMedical__empSpouseSlope\",\"empChildSlope\":\"SGTierSlopesMedical__empChildSlope\",\"empFamilySlope\":\"SGTierSlopesMedical__empFamilySlope\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "empOnlyCount * SGTierSlopesMedical__empOnlySlope + empSpouseCount * SGTierSlopesMedical__empSpouseSlope + empChildCount * SGTierSlopesMedical__empChildSlope + empFamilyCount * SGTierSlopesMedical__empFamilySlope",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "empOnlyCount",
+                "dataType": "Number",
+                "text": "empOnlyCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGTierSlopesMedical__empOnlySlope",
+                "dataType": "Number",
+                "text": "empOnlySlope ( SGTierSlopesMedical )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "empSpouseCount",
+                "dataType": "Number",
+                "text": "empSpouseCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGTierSlopesMedical__empSpouseSlope",
+                "dataType": "Number",
+                "text": "empSpouseSlope ( SGTierSlopesMedical )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "empChildCount",
+                "dataType": "Number",
+                "text": "empChildCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGTierSlopesMedical__empChildSlope",
+                "dataType": "Number",
+                "text": "empChildSlope ( SGTierSlopesMedical )",
+                "userDefined": false
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "empFamilyCount",
+                "dataType": "Number",
+                "text": "empFamilyCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGTierSlopesMedical__empFamilySlope",
+                "dataType": "Number",
+                "text": "empFamilySlope ( SGTierSlopesMedical )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SGMedicalRatingComposite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SGMedicalRatingComposite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "empOnlyCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "empSpouseCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "empChildCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "empFamilyCount"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "memberEquiv",
+            "dataType": "Number",
+            "name": "memberEquiv"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"memberEquiv\":\"memberEquiv\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "groupPremiumAgeRated / memberEquiv",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "groupPremiumAgeRated",
+                "dataType": "Currency",
+                "text": "groupPremiumAgeRated",
+                "userDefined": true
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "memberEquiv",
+                "dataType": "Number",
+                "text": "memberEquiv",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SGMedicalRatingComposite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SGMedicalRatingComposite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "groupPremiumAgeRated"
+            },
+            {
+                "dataType": "Number",
+                "name": "memberEquiv"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "employeePremium",
+            "dataType": "Currency",
+            "name": "employeePremium"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"employeePremium\":\"employeePremium\"}",
+        "%vlocity_namespace%__Sequence__c": 3,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "employeePremium * SGTierSlopesMedical__empOnlySlope",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "employeePremium",
+                "dataType": "Currency",
+                "text": "employeePremium",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGTierSlopesMedical__empOnlySlope",
+                "dataType": "Number",
+                "text": "empOnlySlope ( SGTierSlopesMedical )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SGMedicalRatingComposite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SGMedicalRatingComposite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "employeePremium"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "empOnlyRate",
+            "dataType": "Number",
+            "name": "empOnlyRate"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"empOnlyRate\":\"empOnlyRate\"}",
+        "%vlocity_namespace%__Sequence__c": 4,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "employeePremium * SGTierSlopesMedical__empSpouseSlope",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "employeePremium",
+                "dataType": "Currency",
+                "text": "employeePremium",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGTierSlopesMedical__empSpouseSlope",
+                "dataType": "Number",
+                "text": "empSpouseSlope ( SGTierSlopesMedical )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SGMedicalRatingComposite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SGMedicalRatingComposite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "employeePremium"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "empSpouseRate",
+            "dataType": "Number",
+            "name": "empSpouseRate"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"empSpouseRate\":\"empSpouseRate\"}",
+        "%vlocity_namespace%__Sequence__c": 5,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "employeePremium * SGTierSlopesMedical__empChildSlope",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "employeePremium",
+                "dataType": "Currency",
+                "text": "employeePremium",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGTierSlopesMedical__empChildSlope",
+                "dataType": "Number",
+                "text": "empChildSlope ( SGTierSlopesMedical )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SGMedicalRatingComposite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SGMedicalRatingComposite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "employeePremium"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "empChildRate",
+            "dataType": "Number",
+            "name": "empChildRate"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"empChildRate\":\"empChildRate\"}",
+        "%vlocity_namespace%__Sequence__c": 6,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "employeePremium * SGTierSlopesMedical__empFamilySlope",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "employeePremium",
+                "dataType": "Currency",
+                "text": "employeePremium",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SGTierSlopesMedical__empFamilySlope",
+                "dataType": "Number",
+                "text": "empFamilySlope ( SGTierSlopesMedical )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SGMedicalRatingComposite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SGMedicalRatingComposite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "employeePremium"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "empFamilyRate",
+            "dataType": "Number",
+            "name": "empFamilyRate"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"empFamilyRate\":\"empFamilyRate\"}",
+        "%vlocity_namespace%__Sequence__c": 7,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "empOnlyCount * empOnlyRate + empSpouseCount * empSpouseRate + empChildCount * empChildRate + empFamilyCount * empFamilyRate",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "empOnlyCount",
+                "dataType": "Number",
+                "text": "empOnlyCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "empOnlyRate",
+                "dataType": "Number",
+                "text": "empOnlyRate",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "empSpouseCount",
+                "dataType": "Number",
+                "text": "empSpouseCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "empSpouseRate",
+                "dataType": "Number",
+                "text": "empSpouseRate",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "empChildCount",
+                "dataType": "Number",
+                "text": "empChildCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "empChildRate",
+                "dataType": "Number",
+                "text": "empChildRate",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "empFamilyCount",
+                "dataType": "Number",
+                "text": "empFamilyCount",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "empFamilyRate",
+                "dataType": "Number",
+                "text": "empFamilyRate",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SGMedicalRatingComposite",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SGMedicalRatingComposite",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "empOnlyCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "empOnlyRate"
+            },
+            {
+                "dataType": "Number",
+                "name": "empSpouseCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "empSpouseRate"
+            },
+            {
+                "dataType": "Number",
+                "name": "empChildCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "empChildRate"
+            },
+            {
+                "dataType": "Number",
+                "name": "empFamilyCount"
+            },
+            {
+                "dataType": "Number",
+                "name": "empFamilyRate"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "GroupPremium",
+            "dataType": "Currency",
+            "name": "GroupPremium"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"GroupPremium\":\"GroupPremium\"}",
+        "%vlocity_namespace%__Sequence__c": 8,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Customer --></label>
+        <name>vlocity_ins__AccountId__c</name>
+        <relationshipLabel><!-- Billing Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Account Number --></label>
+        <name>vlocity_ins__AccountNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Automatic Payment Amount --></label>
+        <name>vlocity_ins__AutomaticPaymentAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Delivery Method --></label>
+        <name>vlocity_ins__BillDeliveryMethod__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail</masterLabel>
+            <translation><!-- Mail --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bill Due Date --></label>
+        <name>vlocity_ins__BillDueDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill Status --></label>
+        <name>vlocity_ins__BillStatus__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspended</masterLabel>
+            <translation><!-- Suspended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bill Type --></label>
+        <name>vlocity_ins__BillType__c</name>
+        <picklistValues>
+            <masterLabel>Loan</masterLabel>
+            <translation><!-- Loan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium</masterLabel>
+            <translation><!-- Premium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing City --></label>
+        <name>vlocity_ins__BillingCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Contact --></label>
+        <name>vlocity_ins__BillingContactId__c</name>
+        <relationshipLabel><!-- Billing Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing Country --></label>
+        <name>vlocity_ins__BillingCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Email --></label>
+        <name>vlocity_ins__BillingEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Frequency --></label>
+        <name>vlocity_ins__BillingFrequency__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-Monthly</masterLabel>
+            <translation><!-- Semi-Monthly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Postal Code --></label>
+        <name>vlocity_ins__BillingPostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing State --></label>
+        <name>vlocity_ins__BillingState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Street --></label>
+        <name>vlocity_ins__BillingStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Automatic Payment --></label>
+        <name>vlocity_ins__IsAutomaticPaymentEnabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Method --></label>
+        <name>vlocity_ins__PaymentMethodId__c</name>
+        <relationshipLabel><!-- Billing Accounts --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

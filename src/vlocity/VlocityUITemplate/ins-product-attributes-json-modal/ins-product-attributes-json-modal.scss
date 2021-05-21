@@ -1,0 +1,39 @@
+.via-slds {
+    .attribute-diff-indicator {
+        color: red;
+    }
+}
+
+.vloc-comparison-attributes-container {
+    font-family: monospace;
+    .vloc-attr-comparison-column {
+        max-width: 50%;
+        word-break: break-word;
+    }
+    .slds-text-title {
+        font-size: 1rem;
+        font-family: "Salesforce Sans", Arial, sans-serif;
+        background-color: #e8e8e8;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .vloc-comparison-json-container {
+        padding: 1rem 2rem 2rem;
+    }
+
+    .vloc-comparison-attributes-border {
+        border-left: 1px solid #c9c7c5;
+    }
+
+    .vloc-comparison-original-attribute {
+        padding: 1rem 2rem 2rem 2rem;
+        font-size: 0.6rem;
+    }
+
+    @media screen and (max-width: 990px) {
+        .vloc-attr-comparison-column {
+            max-width: 100%;
+        }
+    }
+}

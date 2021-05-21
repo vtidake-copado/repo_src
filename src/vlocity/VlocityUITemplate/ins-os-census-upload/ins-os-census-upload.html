@@ -1,0 +1,26 @@
+<div class="vloc-ins-file-upload-container" ng-init="baseCtrl.init(control)">
+    <div class="slds-notify_container vloc-ins-file-upload-notify_container" ng-class="{'active': baseCtrl.notification.active}">
+        <div class="slds-notify slds-notify--alert slds-theme--alert-texture" role="alert" ng-class="{'slds-theme--success': baseCtrl.notification.type === 'Success', 'slds-theme--error': baseCtrl.notification.type === 'Error'}">
+            <button class="slds-button slds-notify__close slds-button--icon-inverse" title="Close" ng-click="baseCtrl.closeNotification()">
+                <slds-button-svg-icon size="'small'" sprite="'utility'" icon="'close'" extra-classes="'slds-notify__close slds-button--icon-inverse'"></slds-button-svg-icon>
+                <span class="slds-assistive-text">Close</span>
+            </button>
+            <span class="slds-assistive-text">{{baseCtrl.notification.message}}</span>
+            <h2>{{baseCtrl.notification.message}}</h2>
+        </div>
+    </div>
+    <div class="slds-form-element">
+        <span class="slds-form-element__label" id="vloc-upload-census">Select the CSV File to Upload:</span>
+        <div class="slds-form-element__control">
+            <div class="slds-file-selector slds-file-selector--files">
+                <input type="file" class="slds-file-selector__input slds-assistive-text" accept=".csv" id="vloc-upload-census-input" aria-describedby="vloc-upload-census" ng-model="baseCtrl.selectedFile" vloc-ins-file-upload />
+                <label class="slds-file-selector__body" for="vloc-upload-census-input">
+                    <span class="slds-file-selector__button slds-button slds-button--neutral">
+                        <slds-button-svg-icon size="'small'" sprite="'utility'" icon="'upload'" extra-classes="'slds-button__icon--left'"></slds-button-svg-icon>
+                        Upload CSV File
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

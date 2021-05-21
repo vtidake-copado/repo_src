@@ -1,0 +1,40 @@
+{
+    "dataSource": {
+        "type": "DataRaptor",
+        "value": {
+            "bundle": "vella_GetPolicies",
+            "ctxId": "",
+            "inputMap": {
+                "Id": "$root.vlocity.userId"
+            }
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankCardState": false,
+            "blankStateCheck": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "filter": "$scope.data.status === 'active'",
+            "name": "vella-in-force-policy",
+            "templateUrl": "vella-home-circle"
+        }
+    ],
+    "title": "Vella In-Force Policies"
+}

@@ -144,7 +144,7 @@
     <listViews>
         <fullName>All_DataUseLegalBases</fullName>
         <filterScope>Everything</filterScope>
-        <label>Todas Bases legales de uso de datos</label>
+        <label>All Data Use Legal Bases</label>
     </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>Source</customTabListAdditionalFields>

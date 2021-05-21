@@ -156,6 +156,41 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
+    <fieldSets>
+        <fullName>vlocity_ins__StoryFieldSet</fullName>
+        <description>Story board</description>
+        <displayedFields>
+            <field>Subject</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Location</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__EventStatus__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>DurationInMinutes</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>StartDateTime</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>StoryFieldSet</label>
+    </fieldSets>
     <fields>
         <fullName>ActivityDate</fullName>
     </fields>
@@ -225,55 +260,10 @@
         <type>Lookup</type>
     </fields>
     <recordTypes>
-        <fullName>Time</fullName>
+        <fullName>vlocity_ins__MobilePhoneEvent</fullName>
         <active>true</active>
-        <label>Time</label>
-        <picklistValues>
-            <picklist>AAATask__c</picklist>
-            <values>
-                <fullName>1</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>2</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>3</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>4</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>5</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Next_Time__c</picklist>
-            <values>
-                <fullName>Friday</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Juernes</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Saturday</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Thursday</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Wednesday</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
+        <description>Mobile Phone Event</description>
+        <label>MobilePhoneEvent</label>
         <picklistValues>
             <picklist>Subject</picklist>
             <values>
@@ -313,6 +303,36 @@
             </values>
             <values>
                 <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__EventStatus__c</picklist>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Shared</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>vlocity_ins__ProviderSiteVisitReason__c</picklist>
+            <values>
+                <fullName>Medical Record Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Review - Provider Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Site Review - Provider Practitioner</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

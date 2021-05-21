@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Check for Errors --></label>
+        <name>Check_for_Errors__c</name>
+    </fields>
+    <fields>
+        <help><!-- If an image is uploaded here, it will take precedent over the Vlocity Icon. The image will automatically be resized to 22px wide in the Action. --></help>
+        <label><!-- Custom Icon --></label>
+        <name>vlocity_ins__ActionIcon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Filter --></label>
+        <name>vlocity_ins__AdditionalFilter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Permission Name --></label>
+        <name>vlocity_ins__ApplicablePermissionName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicable Type --></label>
+        <name>vlocity_ins__ApplicableTypes__c</name>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation><!-- Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asset</masterLabel>
+            <translation><!-- Asset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case</masterLabel>
+            <translation><!-- Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation><!-- Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Applicable User Profile --></label>
+        <name>vlocity_ins__ApplicableUserProfiles__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System Administrator</masterLabel>
+            <translation><!-- System Administrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vlocity Admin</masterLabel>
+            <translation><!-- Vlocity Admin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vlocity Health</masterLabel>
+            <translation><!-- Vlocity Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vlocity Insurance</masterLabel>
+            <translation><!-- Vlocity Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vlocity Partner Community User</masterLabel>
+            <translation><!-- Vlocity Partner Community User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Custom Label --></label>
+        <name>vlocity_ins__CustomLabelName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Label --></label>
+        <name>vlocity_ins__DisplayLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display On --></label>
+        <name>vlocity_ins__DisplayOn__c</name>
+        <picklistValues>
+            <masterLabel>All</masterLabel>
+            <translation><!-- All --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation><!-- Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Client</masterLabel>
+            <translation><!-- Web Client --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Display Sequence --></label>
+        <name>vlocity_ins__DisplaySequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter --></label>
+        <name>vlocity_ins__Filter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invocation Class Name --></label>
+        <name>vlocity_ins__InvokeClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invocation Method Name --></label>
+        <name>vlocity_ins__InvokeMethodName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Seed Action --></label>
+        <name>vlocity_ins__IsSeedAction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Keyword --></label>
+        <name>vlocity_ins__Keyword__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link Type --></label>
+        <name>vlocity_ins__LinkType__c</name>
+        <picklistValues>
+            <masterLabel>ConsoleCards</masterLabel>
+            <translation><!-- ConsoleCards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OmniScript</masterLabel>
+            <translation><!-- OmniScript --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Open URL in --></label>
+        <name>vlocity_ins__OpenUrlMode__c</name>
+        <picklistValues>
+            <masterLabel>Current Window</masterLabel>
+            <translation><!-- Current Window --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Tab / Window</masterLabel>
+            <translation><!-- New Tab / Window --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- To State --></label>
+        <name>vlocity_ins__StateId__c</name>
+        <relationshipLabel><!-- Vlocity Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State Model --></label>
+        <name>vlocity_ins__StateModelId__c</name>
+        <relationshipLabel><!-- Vlocity Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- URL Parameter --></label>
+        <name>vlocity_ins__UrlParameters__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target URL --></label>
+        <name>vlocity_ins__Url__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation Class Name --></label>
+        <name>vlocity_ins__ValidationClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation Method Name --></label>
+        <name>vlocity_ins__ValidationMethodName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose an icon from the list of icons below the Vlocity Action Detail (will not show up in Vlocity Action Edit) by copying its class name here (i.e. icon-v-document1-line). Use attachment to load custom image. --></help>
+        <label><!-- Vlocity Icon --></label>
+        <name>vlocity_ins__VlocityIcon__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Display On Cannot Be Blank --></errorMessage>
+        <name>Must_Display_on_All_or_Web</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Active must be checked. --></errorMessage>
+        <name>Must_be_Active</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The URL Target has {0}, but the URL Parameter is missing. --></errorMessage>
+        <name>Must_have_URL_Parameter</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Namespace should be followed by double underscore: &quot;vlocity_cmt__&quot; --></errorMessage>
+        <name>Namespace_should_have_double_underscore</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The URL Parameter contains an &quot;id&quot; reference, but it is not properly capitalized. It should be &quot;Id&quot;. --></errorMessage>
+        <name>URL_Id_Parameter_should_be_correct_case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Target URL contains &apos;(&apos; or &apos;)&apos;. For variables, use &apos;{&apos; or &apos;}&apos; --></errorMessage>
+        <name>URL_Target_has_parentheses</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The URL Parameters field has a parameter, but there is no parameter in the Target URL. There should be {0}. --></errorMessage>
+        <name>URL_Target_must_have_variable</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Export --></label>
+        <name>vlocity_ins__Export</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- ImportExport --></label>
+        <name>vlocity_ins__ImportExport</name>
+    </webLinks>
+</CustomObjectTranslation>

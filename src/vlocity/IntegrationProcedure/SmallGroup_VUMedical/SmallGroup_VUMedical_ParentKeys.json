@@ -1,0 +1,5 @@
+[
+    "CalculationProcedure/SGMedicalRatingAge",
+    "CalculationProcedure/SGMedicalRatingComposite",
+    "DataRaptor/SGTransformToSmallGroupCompositeRating"
+]

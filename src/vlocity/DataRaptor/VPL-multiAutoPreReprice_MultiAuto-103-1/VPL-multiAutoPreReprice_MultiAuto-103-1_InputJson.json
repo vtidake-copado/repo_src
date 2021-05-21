@@ -1,0 +1,1441 @@
+{
+    "ContextId": "",
+    "Step1": {
+        "Cars": [
+            {
+                "Make": "Mazda",
+                "Model": "CX-5",
+                "VIN": "JM3KE2CY7E0366835",
+                "Year": 2014
+            },
+            {
+                "Make": "Honda",
+                "Model": "Civic",
+                "VIN": "2HGFA16887H510453",
+                "Year": 2007
+            }
+        ],
+        "Drivers": [
+            {
+                "Age": 32,
+                "FirstName": "Robert",
+                "Gender": "Male",
+                "LastName": "Henderson"
+            },
+            {
+                "Age": 31,
+                "FirstName": "Justin",
+                "Gender": "Male",
+                "LastName": "Dowis"
+            }
+        ]
+    },
+    "configureItems": {
+        "ConfigureItems": [
+            {
+                "$$hashKey": "insobject:1134562",
+                "Id": "01t6A000002hDlXQAU",
+                "IsConfigurable__c": false,
+                "IsRecommended__c": false,
+                "Name": "Auto Insurance",
+                "Price": "",
+                "ProductCode": "AutoIns",
+                "RecordTypeName__c": "Product",
+                "Type__c": "Auto",
+                "childProducts": {
+                    "records": [
+                        {
+                            "$$hashKey": "insobject:338160",
+                            "Id": "01t6A000000sTJcQAM",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "Name": "Vehicle",
+                            "ProductCode": "VEHICLE",
+                            "RecordTypeName__c": "InsuredItemSpec",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "$$hashKey": "insobject:3347952",
+                                        "Code__c": "VEH",
+                                        "Name": "Vehicle",
+                                        "displaySequence": 4,
+                                        "id": "a1U6A000000dYxOUAU",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "insobject:3388227",
+                                                    "attributeId": "a1V6A000000dWhAUAU",
+                                                    "code": "MAKE",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Make",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Mazda",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "insobject:6319411",
+                                                    "attributeId": "a1V6A000000dWhCUAU",
+                                                    "code": "MODEL",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Model",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "CX-5",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "insobject:9337324",
+                                                    "attributeId": "a1V6A000000doxWUAQ",
+                                                    "code": "PolicyNumber",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "PolicyNumber",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": null,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "insobject:12316184",
+                                                    "attributeId": "a1V6A000000dWhBUAU",
+                                                    "code": "VIN",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Vin",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": null,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "insobject:15373",
+                                                    "attributeId": "a1V6A000000dWhDUAU",
+                                                    "code": "YEAR",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Year",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 2014,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 5
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "childProducts": {
+                                "records": [
+                                    {
+                                        "$$hashKey": "insobject:9918473",
+                                        "Description": "In case the other party doesn't have insurance.",
+                                        "Id": "01t6A000000sTJrQAM",
+                                        "ImageId": "/servlet/servlet.FileDownload?file=00P6A000001AjX5UAK",
+                                        "IsConfigurable__c": true,
+                                        "IsRecommended__c": false,
+                                        "Name": "Uninsured Motorist",
+                                        "ProductCode": "uninsured_motorist",
+                                        "RecordTypeName__c": "CoverageSpec",
+                                        "attributeCategories": {
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "insobject:9914165",
+                                                    "Code__c": "Coverage Info",
+                                                    "Name": "Coverages and Limits of Liability",
+                                                    "displaySequence": 1500,
+                                                    "id": "a1U6A000000dYxNUAU",
+                                                    "productAttributes": {
+                                                        "records": [
+                                                            {
+                                                                "$$hashKey": "insobject:9969870",
+                                                                "attributeId": "a1V6A000000dmwuUAA",
+                                                                "code": "auto_limit",
+                                                                "dataType": "currency",
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "inputType": "dropdown",
+                                                                "label": "Auto Limit",
+                                                                "originalAttributeIndex": 0,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 0,
+                                                                "pathFromRoot": "[0].attributeCategories.records[0].productAttributes.records[0]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": 15000,
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "$15,000",
+                                                                        "readonly": false,
+                                                                        "value": 15000
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "$30,000",
+                                                                        "readonly": false,
+                                                                        "value": 30000
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "2",
+                                                                        "label": "$50,000",
+                                                                        "readonly": false,
+                                                                        "value": 50000
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 1
+                                                    }
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        },
+                                        "displaySequence": 4,
+                                        "isOptional": false,
+                                        "isSelected": true,
+                                        "numberAttributes": 2,
+                                        "numberCategories": 2,
+                                        "originalIndex": 0,
+                                        "parentInstanceKey": "2014 Mazda CX-5",
+                                        "parentProductName": "2014 Mazda CX-5",
+                                        "pciId": "a2Y6A000000OhYHUA0",
+                                        "productId": "01t6A000000sTJrQAM"
+                                    },
+                                    {
+                                        "$$hashKey": "insobject:18972485",
+                                        "Description": "Coverage for assistance if your car breaks down.",
+                                        "Id": "01t6A000000sTJmQAM",
+                                        "ImageId": "/servlet/servlet.FileDownload?file=00P6A000001AjWbUAK",
+                                        "IsConfigurable__c": true,
+                                        "IsRecommended__c": false,
+                                        "Name": "Roadside Assistance",
+                                        "ProductCode": "roadside_assistance",
+                                        "RecordTypeName__c": "CoverageSpec",
+                                        "attributeCategories": {
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "insobject:18998525",
+                                                    "Code__c": "Coverage Info",
+                                                    "Name": "Coverages and Limits of Liability",
+                                                    "displaySequence": 1500,
+                                                    "id": "a1U6A000000dYxNUAU",
+                                                    "productAttributes": {
+                                                        "records": [
+                                                            {
+                                                                "$$hashKey": "insobject:18984095",
+                                                                "attributeId": "a1V6A000000dmwuUAA",
+                                                                "code": "auto_limit",
+                                                                "dataType": "currency",
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "inputType": "dropdown",
+                                                                "label": "Auto Limit",
+                                                                "originalAttributeIndex": 0,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 1,
+                                                                "pathFromRoot": "[1].attributeCategories.records[0].productAttributes.records[0]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": 50,
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "$50",
+                                                                        "readonly": false,
+                                                                        "value": 50
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "$100",
+                                                                        "readonly": false,
+                                                                        "value": 100
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "2",
+                                                                        "label": "$500",
+                                                                        "readonly": false,
+                                                                        "value": 500
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 1
+                                                    }
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        },
+                                        "displaySequence": 3,
+                                        "isOptional": false,
+                                        "isSelected": true,
+                                        "numberAttributes": 2,
+                                        "numberCategories": 2,
+                                        "originalIndex": 1,
+                                        "parentInstanceKey": "2014 Mazda CX-5",
+                                        "parentProductName": "2014 Mazda CX-5",
+                                        "pciId": "a2Y6A000000OhYCUA0",
+                                        "productId": "01t6A000000sTJmQAM"
+                                    },
+                                    {
+                                        "$$hashKey": "insobject:27985875",
+                                        "Description": "Test description for Collision coverage.",
+                                        "Id": "01t6A000002hDkoQAE",
+                                        "IsConfigurable__c": true,
+                                        "IsRecommended__c": false,
+                                        "LineOfBusiness__c": "Property & Casualty",
+                                        "Name": "Collision",
+                                        "PricingSource__c": "collisionPremium__collisionPremium",
+                                        "ProductCode": "COLLISION",
+                                        "RecordTypeName__c": "CoverageSpec",
+                                        "attributeCategories": {
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "insobject:27927779",
+                                                    "Code__c": "GeneralTerms",
+                                                    "Name": "Terms",
+                                                    "displaySequence": 47,
+                                                    "id": "a1U6A0000014XEBUA2",
+                                                    "productAttributes": {
+                                                        "records": [
+                                                            {
+                                                                "$$hashKey": "insobject:27944750",
+                                                                "attributeId": "a1V6A000000aAVsUAM",
+                                                                "code": "termDeductible",
+                                                                "dataType": "currency",
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "dropdown",
+                                                                "label": "Deductible",
+                                                                "originalAttributeIndex": 0,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 2,
+                                                                "pathFromRoot": "[2].attributeCategories.records[0].productAttributes.records[0]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": 500,
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "300",
+                                                                        "readonly": false,
+                                                                        "value": 300
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "500",
+                                                                        "readonly": false,
+                                                                        "value": 500
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "2",
+                                                                        "label": "1000",
+                                                                        "readonly": false,
+                                                                        "value": 1000
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 1
+                                                    }
+                                                },
+                                                {
+                                                    "$$hashKey": "insobject:36950738",
+                                                    "Code__c": "LIMIT",
+                                                    "Name": "Limit",
+                                                    "displaySequence": 5000,
+                                                    "id": "a1U6A000000dYxRUAU",
+                                                    "productAttributes": {
+                                                        "records": [
+                                                            {
+                                                                "$$hashKey": "insobject:36919179",
+                                                                "attributeId": "a1V6A000000dWhEUAU",
+                                                                "code": "Limit-PerOcc",
+                                                                "dataType": "currency",
+                                                                "disabled": false,
+                                                                "displaySequence": 1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "dropdown",
+                                                                "label": "Per Occurrance",
+                                                                "originalAttributeIndex": 0,
+                                                                "originalCategoryIndex": 1,
+                                                                "originalProductIndex": 2,
+                                                                "pathFromRoot": "[2].attributeCategories.records[1].productAttributes.records[0]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": 500,
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "500",
+                                                                        "readonly": false,
+                                                                        "value": 500
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "1000",
+                                                                        "readonly": false,
+                                                                        "value": 1000
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "$$hashKey": "insobject:4595824",
+                                                                "attributeId": "a1V6A000000dWhFUAU",
+                                                                "code": "Limit-Agg",
+                                                                "dataType": "currency",
+                                                                "disabled": false,
+                                                                "displaySequence": 2,
+                                                                "filterable": true,
+                                                                "hasRules": true,
+                                                                "hidden": false,
+                                                                "inputType": "dropdown",
+                                                                "label": "Per Aggregate",
+                                                                "originalAttributeIndex": 1,
+                                                                "originalCategoryIndex": 1,
+                                                                "originalProductIndex": 2,
+                                                                "pathFromRoot": "[2].attributeCategories.records[1].productAttributes.records[1]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                    {
+                                                                        "actions": {
+                                                                            "Hide": {
+                                                                                "client": {
+                                                                                    "params": {
+                                                                                    }
+                                                                                },
+                                                                                "remote": {
+                                                                                    "params": {
+                                                                                    }
+                                                                                },
+                                                                                "rest": {
+                                                                                    "link": null,
+                                                                                    "method": null,
+                                                                                    "params": {
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "ruleType": "Hide"
+                                                                    }
+                                                                ],
+                                                                "userValues": 2000,
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "1000",
+                                                                        "readonly": false,
+                                                                        "value": 1000
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "2000",
+                                                                        "readonly": false,
+                                                                        "value": 2000
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 2
+                                                    }
+                                                }
+                                            ],
+                                            "totalSize": 2
+                                        },
+                                        "displaySequence": 2,
+                                        "isOptional": false,
+                                        "isSelected": true,
+                                        "numberAttributes": 6,
+                                        "numberCategories": 4,
+                                        "originalIndex": 2,
+                                        "parentInstanceKey": "2014 Mazda CX-5",
+                                        "parentProductName": "2014 Mazda CX-5",
+                                        "pciId": "a2Y6A000000OhY7UAK",
+                                        "productId": "01t6A000002hDkoQAE"
+                                    },
+                                    {
+                                        "$$hashKey": "insobject:3695242",
+                                        "Family": "Personal Lines",
+                                        "Id": "01t6A000002hDlIQAU",
+                                        "IsConfigurable__c": true,
+                                        "IsRecommended__c": false,
+                                        "Name": "Driver",
+                                        "ProductCode": "DRIVER",
+                                        "RecordTypeName__c": "InsuredItemSpec",
+                                        "attributeCategories": {
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "insobject:36911536",
+                                                    "Code__c": "4293eed3-429e-3469-fa3a-85bb47d35939",
+                                                    "Name": "Driver",
+                                                    "displaySequence": 7,
+                                                    "id": "a1U39000004613FEAQ",
+                                                    "productAttributes": {
+                                                        "records": [
+                                                            {
+                                                                "$$hashKey": "insobject:36918540",
+                                                                "attributeId": "a1V39000005efcfEAA",
+                                                                "code": "BDAY",
+                                                                "dataType": "date",
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "date",
+                                                                "label": "Birthdate",
+                                                                "originalAttributeIndex": 0,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 3,
+                                                                "pathFromRoot": "[3].attributeCategories.records[0].productAttributes.records[0]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": "1996-01-01",
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "readonly": false
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "$$hashKey": "insobject:45922935",
+                                                                "attributeId": "a1V39000005efckEAA",
+                                                                "code": "GENDER",
+                                                                "dataType": "text",
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "radio",
+                                                                "label": "Gender",
+                                                                "multiselect": false,
+                                                                "originalAttributeIndex": 1,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 3,
+                                                                "pathFromRoot": "[3].attributeCategories.records[0].productAttributes.records[1]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": "Male",
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "Male",
+                                                                        "readonly": false,
+                                                                        "value": "Male"
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "Female",
+                                                                        "readonly": false,
+                                                                        "value": "Female"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "$$hashKey": "insobject:54952680",
+                                                                "attributeId": "a1V39000005axUeEAI",
+                                                                "code": "DAGE",
+                                                                "dataType": "number",
+                                                                "disabled": false,
+                                                                "displaySequence": 1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "number",
+                                                                "label": "DriverAge",
+                                                                "originalAttributeIndex": 2,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 3,
+                                                                "pathFromRoot": "[3].attributeCategories.records[0].productAttributes.records[2]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": null,
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "readonly": false
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "$$hashKey": "insobject:63933167",
+                                                                "attributeId": "a1V39000005edSJEAY",
+                                                                "code": "FirstName",
+                                                                "dataType": "text",
+                                                                "disabled": false,
+                                                                "displaySequence": 1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "text",
+                                                                "label": "First Name",
+                                                                "originalAttributeIndex": 3,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 3,
+                                                                "pathFromRoot": "[3].attributeCategories.records[0].productAttributes.records[3]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": "Preston",
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "readonly": false
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "$$hashKey": "insobject:72919640",
+                                                                "attributeId": "a1V39000005edSKEAY",
+                                                                "code": "LastName",
+                                                                "dataType": "text",
+                                                                "disabled": false,
+                                                                "displaySequence": 1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "text",
+                                                                "label": "Last Name",
+                                                                "originalAttributeIndex": 4,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 3,
+                                                                "pathFromRoot": "[3].attributeCategories.records[0].productAttributes.records[4]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": "Reed",
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "readonly": false
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 5
+                                                    }
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        },
+                                        "displaySequence": 1,
+                                        "maxQuantity": 99999,
+                                        "minQuantity": 0,
+                                        "numberAttributes": 5,
+                                        "numberCategories": 1,
+                                        "originalIndex": 3,
+                                        "parentInstanceKey": "2014 Mazda CX-5",
+                                        "parentProductName": "2014 Mazda CX-5",
+                                        "pciId": "a2Y6A000000OhY2UAK",
+                                        "productId": "01t6A000002hDlIQAU"
+                                    }
+                                ],
+                                "totalSize": 4
+                            },
+                            "customizeSectionsOpen": null,
+                            "displaySequence": 1,
+                            "instanceKey": "2014 Mazda CX-5",
+                            "maxQuantity": 1,
+                            "minQuantity": 1,
+                            "parentProductName": "Auto Insurance",
+                            "pciId": "a2Y6A000000OhXxUAK",
+                            "productId": "01t6A000000sTJcQAM"
+                        },
+                        {
+                            "$$hashKey": "insobject:6336424",
+                            "Id": "01t6A000000sTJcQAM",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "Name": "Vehicle",
+                            "ProductCode": "VEHICLE",
+                            "RecordTypeName__c": "InsuredItemSpec",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "$$hashKey": "insobject:6380992",
+                                        "Code__c": "VEH",
+                                        "Name": "Vehicle",
+                                        "displaySequence": 4,
+                                        "id": "a1U6A000000dYxOUAU",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "insobject:6388560",
+                                                    "attributeId": "a1V6A000000dWhAUAU",
+                                                    "code": "MAKE",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Make",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Honda",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "insobject:9339084",
+                                                    "attributeId": "a1V6A000000dWhCUAU",
+                                                    "code": "MODEL",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Model",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "Civic",
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "insobject:12325552",
+                                                    "attributeId": "a1V6A000000doxWUAQ",
+                                                    "code": "PolicyNumber",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "PolicyNumber",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": null,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "insobject:15366005",
+                                                    "attributeId": "a1V6A000000dWhBUAU",
+                                                    "code": "VIN",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Vin",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": null,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "insobject:18348605",
+                                                    "attributeId": "a1V6A000000dWhDUAU",
+                                                    "code": "YEAR",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "text",
+                                                    "label": "Year",
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 2007,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "readonly": false
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 5
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "childProducts": {
+                                "records": [
+                                    {
+                                        "$$hashKey": "insobject:9948769",
+                                        "Description": "In case the other party doesn't have insurance.",
+                                        "Id": "01t6A000000sTJrQAM",
+                                        "ImageId": "/servlet/servlet.FileDownload?file=00P6A000001AjX5UAK",
+                                        "IsConfigurable__c": true,
+                                        "IsRecommended__c": false,
+                                        "Name": "Uninsured Motorist",
+                                        "ProductCode": "uninsured_motorist",
+                                        "RecordTypeName__c": "CoverageSpec",
+                                        "attributeCategories": {
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "insobject:9921668",
+                                                    "Code__c": "Coverage Info",
+                                                    "Name": "Coverages and Limits of Liability",
+                                                    "displaySequence": 1500,
+                                                    "id": "a1U6A000000dYxNUAU",
+                                                    "productAttributes": {
+                                                        "records": [
+                                                            {
+                                                                "$$hashKey": "insobject:9919744",
+                                                                "attributeId": "a1V6A000000dmwuUAA",
+                                                                "code": "auto_limit",
+                                                                "dataType": "currency",
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "inputType": "dropdown",
+                                                                "label": "Auto Limit",
+                                                                "originalAttributeIndex": 0,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 0,
+                                                                "pathFromRoot": "[0].attributeCategories.records[0].productAttributes.records[0]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": 15000,
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "$15,000",
+                                                                        "readonly": false,
+                                                                        "value": 15000
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "$30,000",
+                                                                        "readonly": false,
+                                                                        "value": 30000
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "2",
+                                                                        "label": "$50,000",
+                                                                        "readonly": false,
+                                                                        "value": 50000
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 1
+                                                    }
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        },
+                                        "displaySequence": 4,
+                                        "isOptional": false,
+                                        "isSelected": true,
+                                        "numberAttributes": 2,
+                                        "numberCategories": 2,
+                                        "originalIndex": 0,
+                                        "parentInstanceKey": "2007 Honda Civic",
+                                        "parentProductName": "2007 Honda Civic",
+                                        "pciId": "a2Y6A000000OhYHUA0",
+                                        "productId": "01t6A000000sTJrQAM"
+                                    },
+                                    {
+                                        "$$hashKey": "insobject:18986010",
+                                        "Description": "Coverage for assistance if your car breaks down.",
+                                        "Id": "01t6A000000sTJmQAM",
+                                        "ImageId": "/servlet/servlet.FileDownload?file=00P6A000001AjWbUAK",
+                                        "IsConfigurable__c": true,
+                                        "IsRecommended__c": false,
+                                        "Name": "Roadside Assistance",
+                                        "ProductCode": "roadside_assistance",
+                                        "RecordTypeName__c": "CoverageSpec",
+                                        "attributeCategories": {
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "insobject:18926441",
+                                                    "Code__c": "Coverage Info",
+                                                    "Name": "Coverages and Limits of Liability",
+                                                    "displaySequence": 1500,
+                                                    "id": "a1U6A000000dYxNUAU",
+                                                    "productAttributes": {
+                                                        "records": [
+                                                            {
+                                                                "$$hashKey": "insobject:18998011",
+                                                                "attributeId": "a1V6A000000dmwuUAA",
+                                                                "code": "auto_limit",
+                                                                "dataType": "currency",
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "inputType": "dropdown",
+                                                                "label": "Auto Limit",
+                                                                "originalAttributeIndex": 0,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 1,
+                                                                "pathFromRoot": "[1].attributeCategories.records[0].productAttributes.records[0]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": 50,
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "$50",
+                                                                        "readonly": false,
+                                                                        "value": 50
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "$100",
+                                                                        "readonly": false,
+                                                                        "value": 100
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "2",
+                                                                        "label": "$500",
+                                                                        "readonly": false,
+                                                                        "value": 500
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 1
+                                                    }
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        },
+                                        "displaySequence": 3,
+                                        "isOptional": false,
+                                        "isSelected": true,
+                                        "numberAttributes": 2,
+                                        "numberCategories": 2,
+                                        "originalIndex": 1,
+                                        "parentInstanceKey": "2007 Honda Civic",
+                                        "parentProductName": "2007 Honda Civic",
+                                        "pciId": "a2Y6A000000OhYCUA0",
+                                        "productId": "01t6A000000sTJmQAM"
+                                    },
+                                    {
+                                        "$$hashKey": "insobject:27926310",
+                                        "Description": "Test description for Collision coverage.",
+                                        "Id": "01t6A000002hDkoQAE",
+                                        "IsConfigurable__c": true,
+                                        "IsRecommended__c": false,
+                                        "LineOfBusiness__c": "Property & Casualty",
+                                        "Name": "Collision",
+                                        "PricingSource__c": "collisionPremium__collisionPremium",
+                                        "ProductCode": "COLLISION",
+                                        "RecordTypeName__c": "CoverageSpec",
+                                        "attributeCategories": {
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "insobject:27967813",
+                                                    "Code__c": "GeneralTerms",
+                                                    "Name": "Terms",
+                                                    "displaySequence": 47,
+                                                    "id": "a1U6A0000014XEBUA2",
+                                                    "productAttributes": {
+                                                        "records": [
+                                                            {
+                                                                "$$hashKey": "insobject:27994423",
+                                                                "attributeId": "a1V6A000000aAVsUAM",
+                                                                "code": "termDeductible",
+                                                                "dataType": "currency",
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "dropdown",
+                                                                "label": "Deductible",
+                                                                "originalAttributeIndex": 0,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 2,
+                                                                "pathFromRoot": "[2].attributeCategories.records[0].productAttributes.records[0]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": 500,
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "300",
+                                                                        "readonly": false,
+                                                                        "value": 300
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "500",
+                                                                        "readonly": false,
+                                                                        "value": 500
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "2",
+                                                                        "label": "1000",
+                                                                        "readonly": false,
+                                                                        "value": 1000
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 1
+                                                    }
+                                                },
+                                                {
+                                                    "$$hashKey": "insobject:36926609",
+                                                    "Code__c": "LIMIT",
+                                                    "Name": "Limit",
+                                                    "displaySequence": 5000,
+                                                    "id": "a1U6A000000dYxRUAU",
+                                                    "productAttributes": {
+                                                        "records": [
+                                                            {
+                                                                "$$hashKey": "insobject:36949824",
+                                                                "attributeId": "a1V6A000000dWhEUAU",
+                                                                "code": "Limit-PerOcc",
+                                                                "dataType": "currency",
+                                                                "disabled": false,
+                                                                "displaySequence": 1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "dropdown",
+                                                                "label": "Per Occurrance",
+                                                                "originalAttributeIndex": 0,
+                                                                "originalCategoryIndex": 1,
+                                                                "originalProductIndex": 2,
+                                                                "pathFromRoot": "[2].attributeCategories.records[1].productAttributes.records[0]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": 500,
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "500",
+                                                                        "readonly": false,
+                                                                        "value": 500
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "1000",
+                                                                        "readonly": false,
+                                                                        "value": 1000
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "$$hashKey": "insobject:45911792",
+                                                                "attributeId": "a1V6A000000dWhFUAU",
+                                                                "code": "Limit-Agg",
+                                                                "dataType": "currency",
+                                                                "disabled": false,
+                                                                "displaySequence": 2,
+                                                                "filterable": true,
+                                                                "hasRules": true,
+                                                                "hidden": false,
+                                                                "inputType": "dropdown",
+                                                                "label": "Per Aggregate",
+                                                                "originalAttributeIndex": 1,
+                                                                "originalCategoryIndex": 1,
+                                                                "originalProductIndex": 2,
+                                                                "pathFromRoot": "[2].attributeCategories.records[1].productAttributes.records[1]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                    {
+                                                                        "actions": {
+                                                                            "Hide": {
+                                                                                "client": {
+                                                                                    "params": {
+                                                                                    }
+                                                                                },
+                                                                                "remote": {
+                                                                                    "params": {
+                                                                                    }
+                                                                                },
+                                                                                "rest": {
+                                                                                    "link": null,
+                                                                                    "method": null,
+                                                                                    "params": {
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "ruleType": "Hide"
+                                                                    }
+                                                                ],
+                                                                "userValues": 2000,
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "1000",
+                                                                        "readonly": false,
+                                                                        "value": 1000
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "2000",
+                                                                        "readonly": false,
+                                                                        "value": 2000
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 2
+                                                    }
+                                                }
+                                            ],
+                                            "totalSize": 2
+                                        },
+                                        "displaySequence": 2,
+                                        "isOptional": false,
+                                        "isSelected": true,
+                                        "numberAttributes": 6,
+                                        "numberCategories": 4,
+                                        "originalIndex": 2,
+                                        "parentInstanceKey": "2007 Honda Civic",
+                                        "parentProductName": "2007 Honda Civic",
+                                        "pciId": "a2Y6A000000OhY7UAK",
+                                        "productId": "01t6A000002hDkoQAE"
+                                    },
+                                    {
+                                        "$$hashKey": "insobject:3699473",
+                                        "Family": "Personal Lines",
+                                        "Id": "01t6A000002hDlIQAU",
+                                        "IsConfigurable__c": true,
+                                        "IsRecommended__c": false,
+                                        "Name": "Driver",
+                                        "ProductCode": "DRIVER",
+                                        "RecordTypeName__c": "InsuredItemSpec",
+                                        "attributeCategories": {
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "insobject:36968431",
+                                                    "Code__c": "4293eed3-429e-3469-fa3a-85bb47d35939",
+                                                    "Name": "Driver",
+                                                    "displaySequence": 7,
+                                                    "id": "a1U39000004613FEAQ",
+                                                    "productAttributes": {
+                                                        "records": [
+                                                            {
+                                                                "$$hashKey": "insobject:36997157",
+                                                                "attributeId": "a1V39000005efcfEAA",
+                                                                "code": "BDAY",
+                                                                "dataType": "date",
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "date",
+                                                                "label": "Birthdate",
+                                                                "originalAttributeIndex": 0,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 3,
+                                                                "pathFromRoot": "[3].attributeCategories.records[0].productAttributes.records[0]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": "1996-01-01",
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "readonly": false
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "$$hashKey": "insobject:45967362",
+                                                                "attributeId": "a1V39000005efckEAA",
+                                                                "code": "GENDER",
+                                                                "dataType": "text",
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "radio",
+                                                                "label": "Gender",
+                                                                "multiselect": false,
+                                                                "originalAttributeIndex": 1,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 3,
+                                                                "pathFromRoot": "[3].attributeCategories.records[0].productAttributes.records[1]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": "Male",
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "Male",
+                                                                        "readonly": false,
+                                                                        "value": "Male"
+                                                                    },
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "Female",
+                                                                        "readonly": false,
+                                                                        "value": "Female"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "$$hashKey": "insobject:54986881",
+                                                                "attributeId": "a1V39000005axUeEAI",
+                                                                "code": "DAGE",
+                                                                "dataType": "number",
+                                                                "disabled": false,
+                                                                "displaySequence": 1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "number",
+                                                                "label": "DriverAge",
+                                                                "originalAttributeIndex": 2,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 3,
+                                                                "pathFromRoot": "[3].attributeCategories.records[0].productAttributes.records[2]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": null,
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "readonly": false
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "$$hashKey": "insobject:63953627",
+                                                                "attributeId": "a1V39000005edSJEAY",
+                                                                "code": "FirstName",
+                                                                "dataType": "text",
+                                                                "disabled": false,
+                                                                "displaySequence": 1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "text",
+                                                                "label": "First Name",
+                                                                "originalAttributeIndex": 3,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 3,
+                                                                "pathFromRoot": "[3].attributeCategories.records[0].productAttributes.records[3]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": "Preston",
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "readonly": false
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "$$hashKey": "insobject:72972889",
+                                                                "attributeId": "a1V39000005edSKEAY",
+                                                                "code": "LastName",
+                                                                "dataType": "text",
+                                                                "disabled": false,
+                                                                "displaySequence": 1,
+                                                                "filterable": true,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "text",
+                                                                "label": "Last Name",
+                                                                "originalAttributeIndex": 4,
+                                                                "originalCategoryIndex": 0,
+                                                                "originalProductIndex": 3,
+                                                                "pathFromRoot": "[3].attributeCategories.records[0].productAttributes.records[4]",
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "userValues": "Reed",
+                                                                "values": [
+                                                                    {
+                                                                        "disabled": false,
+                                                                        "readonly": false
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 5
+                                                    }
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        },
+                                        "displaySequence": 1,
+                                        "maxQuantity": 99999,
+                                        "minQuantity": 0,
+                                        "numberAttributes": 5,
+                                        "numberCategories": 1,
+                                        "originalIndex": 3,
+                                        "parentInstanceKey": "2007 Honda Civic",
+                                        "parentProductName": "2007 Honda Civic",
+                                        "pciId": "a2Y6A000000OhY2UAK",
+                                        "productId": "01t6A000002hDlIQAU"
+                                    }
+                                ],
+                                "totalSize": 4
+                            },
+                            "customizeSectionsOpen": null,
+                            "displaySequence": 1,
+                            "instanceKey": "2007 Honda Civic",
+                            "maxQuantity": 1,
+                            "minQuantity": 1,
+                            "parentProductName": "Auto Insurance",
+                            "pciId": "a2Y6A000000OhXxUAK",
+                            "productId": "01t6A000000sTJcQAM"
+                        }
+                    ],
+                    "totalSize": 2
+                },
+                "displaySequence": -1,
+                "productId": "01t6A000002hDlXQAU"
+            }
+        ]
+    },
+    "id": "a1i6A000000k0xSQAQ",
+    "insuredItems": {
+        "Driver": [
+            {
+                "$$hashKey": "object:653",
+                "DAGE": 32,
+                "FirstName": "Robert",
+                "GENDER": "Male",
+                "LastName": "Henderson",
+                "instanceKey": "Robert Henderson"
+            },
+            {
+                "$$hashKey": "object:654",
+                "DAGE": 31,
+                "FirstName": "Justin",
+                "GENDER": "Male",
+                "LastName": "Dowis",
+                "instanceKey": "Justin Dowis"
+            }
+        ],
+        "Vehicle": [
+            {
+                "MAKE": "Mazda",
+                "MODEL": "CX-5",
+                "YEAR": 2014,
+                "instanceKey": "2014 Mazda CX-5"
+            },
+            {
+                "MAKE": "Honda",
+                "MODEL": "Civic",
+                "YEAR": 2007,
+                "instanceKey": "2007 Honda Civic"
+            }
+        ]
+    },
+    "layout": "lightning",
+    "timeStamp": "2018-06-13T17:31:17.267Z",
+    "userCurrencyCode": "USD",
+    "userId": "0056A0000014kRyQAI",
+    "userName": "%vlocity_namespace%urance@vlocity.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": -420,
+    "vlcPersistentComponent": {
+    }
+}

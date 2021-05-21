@@ -1,0 +1,106 @@
+<div ng-init="importedScope.insFn.setItems(obj['claimInjuries'])">
+<ul class="existing-data draggable-items" dnd-list="importedScope.insVar.items" dnd-dragover="importedScope.startDragging(event)">
+  <li class="slds-card via-slds-card_horiz slds-m-bottom_small" data-card="{{uniqueLayoutId}}-card-{{cardIndex}}" ng-class="{selected:isSelected(cardIndex)}" data-popover-flyout="true" ng-repeat="obj in importedScope.insVar.items | orderBy : 'LineNumber' | filter : $root.searchTerm" dnd-draggable="obj" dnd-effect-allowed="move" dnd-moved="importedScope.reorderSequencesItem($index, importedScope.insVar.items)" add-hover-class="true">
+    <div class="slds-card__header via-slds-card__header slds-grid vloc-card-header">
+      <div class="slds-media slds-media_center slds-has-flexi-truncate">
+        <div class="slds-media__figure">
+            <vloc-card-icon data="data" obj="obj" size="'medium'"></vloc-card-icon>
+        </div>
+        <div class="slds-media__body slds-truncate">
+          <a href="javascript:void(0);" class="slds-text-link_reset" tooltip-placement="bottom" tooltip="{{data.title}}">
+            <span class="slds-text-heading_small" ng-click="importedScope.insFn.navTo(obj.Id)"> {{obj.Name}}</span>
+          </a>
+           <span class="slds-text-color_weak vloc-italic" ng-if="obj.ProductCode">({{obj.ProductCode}})</span>
+        </div>
+      </div>
+      <div class="slds-no-flex slds-text-align_right">
+        <div>
+        <label class="slds-text-heading_label slds-p-right_medium">{{::importedScope.customLabels.InsProductCardinality}}</label>
+        </div>
+        <div class="slds-text-align_right">
+         <input class="slds-input slds-size_1-of-6" type="number" min="0" ng-model="obj.MinQuantity"/><span> - </span>
+         <input class="slds-input slds-size_1-of-6" type="number" min="obj.MinQuantity - 1" ng-model="obj.MaxQuantity"/>
+         </div>
+      </div>
+    </div>
+    <div class="slds-small-show via-slds-card__body slds-grid slds-grid_vertical slds-theme_default slds-p-left_small slds-p-right_small">
+        <!--Atributes:--> 
+      <div class="vloc-attr-grid slds-p-top_small">
+        <div class="vloc-attr-row slds-row slds-p-bottom_medium" data-card="card-{{cardIndex}}" data-popover-flyout="true" ng-repeat="(category, attributes) in obj.categories">
+             <div class="vloc-attr-category-heading slds-text-heading_small slds-m-left_xx-small slds-p-bottom_small" ng-click="categories.show = !categories.show"> 
+                    <slds-button-svg-icon sprite="'utility'" icon="'chevronright'" ng-if="!categories.show" extra-classes="vloc-attrs-category-btn"></slds-button-svg-icon>
+                      <slds-button-svg-icon sprite="'utility'" icon="'chevrondown'" ng-if="categories.show" extra-classes="vloc-attrs-category-btn"></slds-button-svg-icon>
+                    {{category}}
+              </div>
+              <div class="slds-col slds-grid slds-wrap slds-grid_align-spread" ng-repeat="row in attributes" ng-if="categories.show">
+                <div class="slds-small-show vloc-attr-cell slds-size_1-of-{{data.fields.length}}" ng-repeat="field in data.fields" ng-show="key != 'attributes'">
+                  <div class="slds-text-title_caps slds-small-show vloc-attr-cell slds-truncate slds-size_1-of-1 slds-p-around_xx-small slds-m-horizontal_xx-small" ng-if="$parent.$index === 0">
+                            {{field.label}}
+                   </div>
+                    <div class="vloc-attr-data-cell slds-truncate slds-p-around_xx-small slds-m-horizontal_xx-small">
+                     <span ng-if="field.name !== $root.nsPrefix + 'IsRatingAttribute__c' && field.name !==  $root.nsPrefix + 'RatingInput__c' && field.name !==  $root.nsPrefix + 'RatingOutput__c' && field.name !== $root.nsPrefix + 'HasRules__c'">
+                     <span ng-if="field.label !== 'Value' && field.type !== 'BOOLEAN'"> 
+                     {{row | getter: field | picker: field.type}}</span>
+                     <span ng-if="field.label === 'Value'"> 
+                          <span ng-if="row.valueType !== 'percent'"> {{row | getter: field | picker: row.valueType}}</span>
+                          <span ng-if="row.valueType === 'percent'"> {{row[$root.nsPrefix + 'Value__c']}}%</span>
+                    </span>
+
+                      <div class="slds-form-element__control slds-text-align_left" ng-if="field.type === 'BOOLEAN'">
+                            <span class="slds-checkbox">
+                                <input type="checkbox" name="attrs-{{$parent.$index}}" id="attrs-{{$parent.$index}}" ng-model="row[field.name]" />
+                                <label class="slds-checkbox__label slds-m-around_none" for="attrs-{{$parent.$index}}">
+                                    <span class="slds-checkbox_faux vloc-check"></span>
+                                </label>
+                            </span>
+                        </div>
+                      </span>
+                      <span ng-if="field.name === $root.nsPrefix + 'IsRatingAttribute__c' || field.name ===  $root.nsPrefix + 'RatingInput__c' ||  field.name ===  $root.nsPrefix + 'RatingOutput__c'">
+                        <input class="slds-input vloc-attrs-input" type="{row.dataType}}" ng-model="row[field.name]" ng-if="field.type !== 'BOOLEAN' && field.type !== 'boolean'"/>
+                        <div class="slds-form-element__control slds-text-align_left vloc-attrs-checkbox" ng-if="field.type === 'BOOLEAN' || field.type === 'boolean'">
+                            <span class="slds-checkbox">
+                                <input type="checkbox" name="config-attrs-{{row.Id}}" id="config-attrs-{{row.Id}}" ng-model="row[field.name]"/>
+                                <label class="slds-checkbox__label slds-m-around_none" for="config-attrs-{{row.Id}}">
+                                    <span class="slds-checkbox_faux vloc-check"></span>
+                                </label>
+                            </span>
+                        </div>
+                      </span>
+                      <span class="vloc-rules-icon slds-text-align_center" ng-if="field.name === $root.nsPrefix + 'HasRules__c'" ng-click="importedScope.insFn.showRulesOption(row)" ng-class="{'has-rules': row.rules.length > 0}">
+                         <slds-button-svg-icon sprite="'custom'" icon="'custom90'" no-hint="true" extra-classes="'slds-button__icon_large'"></slds-button-svg-icon>
+                      </span>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <button class="slds-button slds-button_link slds-m-horizontal_medium slds-p-horziontal_medium" ng-click="importedScope.insFn.saveItem(obj.Id, obj.IsOptional, obj.AttributeAssignmentList, obj.MinQuantity,  obj.MaxQuantity, 'claimInjuries')">{{::importedScope.customLabels.Save}}</button>
+    <button class="slds-button slds-button_link  slds-m-horizontal_medium slds-p-horizontal_medium" ng-click="importedScope.insFn.deleteClaimInjury(obj.Id)">{{::importedScope.customLabels.Remove}}</button>
+    <div class="embed-flyout slds-p-left_medium slds-p-right_medium"></div>
+    <div class="slds-x-small-show-only via-slds-x-small-card__body slds-card__body slds-grid slds-grid_vertical slds-theme_default">
+      <div class="slds-size_1-of-1 slds-x-small-show-only" ng-repeat="field in data.fields.slice(1, 6)" ng-show="key != 'attributes'">
+        <div class="slds-grid via-slds-grid slds-p-around_small">
+            <div class="slds-col slds-size_1-of-2">
+                <p class="slds-text-align_left slds-truncate slds-text-heading_label" title="{{field.label}}">{{field.label}} </p>
+            </div>
+            <div class="slds-col slds-size_1-of-2" ng-if="!obj[field.relationshipName]">
+                <p class="slds-text-align_right slds-truncate" >{{obj | getter: field | picker: field.type}} </p>
+            </div>
+            <div class="slds-col slds-size_1-of-2" ng-if="obj[field.relationshipName]">
+                <p class="slds-text-align_right slds-truncate" >{{obj[field.relationshipName]['Name']}} </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="slds-card__footer slds-x-small-show-only">
+      <button class="slds-button" ng-click="performFlyout(uniqueLayoutId + '-card-'+ cardIndex);">
+        <span ng-if="!isSelected(cardIndex)">{{::$root.vlocity.getCustomLabel('ViewMore', 'View More')}}</span>
+        <span ng-if="isSelected(cardIndex)">{{::$root.vlocity.getCustomLabel('ViewLess', 'View Less')}}</span>
+      </button>
+    </div>
+  </li>
+  </ul>
+  <div class="vloc-addslds-p-around_small slds-text-align_center" ng-if="importedScope.insVar.items.length < 1">{{::importedScope.customLabels.InsInvolvedInjuriesNoInjuries}}</div>
+  <button class="vloc-attr-add-new slds-button slds-button_link slds-p-left_small" ng-class="{'slds-size_1-of-1 slds-text-align_center' : importedScope.insVar.items.length < 1}" ng-click="importedScope.insFn.launchInjuriesModal()">{{::importedScope.customLabels.AddNew}}</button>
+</div>

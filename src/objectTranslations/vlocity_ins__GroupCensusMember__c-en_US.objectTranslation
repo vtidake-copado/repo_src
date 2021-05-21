@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Editable Table --></label>
+        <name>vlocity_ins__EditableTable</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Rating Fact Source Fields --></label>
+        <name>vlocity_ins__RatingFactSourceFields</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Age --></label>
+        <name>vlocity_ins__AgeAsOfToday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Selected Values --></label>
+        <name>vlocity_ins__AttributeSelectedValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Birthdate --></label>
+        <name>vlocity_ins__Birthdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Census --></label>
+        <name>vlocity_ins__CensusId__c</name>
+        <relationshipLabel><!-- Census Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Class Codes --></label>
+        <name>vlocity_ins__ClassCodes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>vlocity_ins__ContactId__c</name>
+        <relationshipLabel><!-- Census Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>vlocity_ins__Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- FTE --></label>
+        <name>vlocity_ins__FTE__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>vlocity_ins__FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>vlocity_ins__Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group Class --></label>
+        <name>vlocity_ins__GroupClassId__c</name>
+        <relationshipLabel><!-- Census Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Spouse --></label>
+        <name>vlocity_ins__HasSpouse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hire Date --></label>
+        <name>vlocity_ins__HireDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Family --></label>
+        <name>vlocity_ins__IsFamily__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opt-out --></label>
+        <name>vlocity_ins__IsOptOut__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Portal User --></label>
+        <name>vlocity_ins__IsPortalUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary --></label>
+        <name>vlocity_ins__IsPrimaryMember__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Spouse --></label>
+        <name>vlocity_ins__IsSpouse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>vlocity_ins__LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Identifier --></label>
+        <name>vlocity_ins__MemberIdentifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Name --></label>
+        <name>vlocity_ins__MemberName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__MemberType__c</name>
+        <picklistValues>
+            <masterLabel>Cobra</masterLabel>
+            <translation><!-- Cobra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Time</masterLabel>
+            <translation><!-- Full Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part Time</masterLabel>
+            <translation><!-- Part Time --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- No. Dependents --></label>
+        <name>vlocity_ins__NumberOfDependents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opt-out Types --></label>
+        <name>vlocity_ins__OptOutTypes__c</name>
+        <picklistValues>
+            <masterLabel>Dental</masterLabel>
+            <translation><!-- Dental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical</masterLabel>
+            <translation><!-- Medical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Savings Account</masterLabel>
+            <translation><!-- Medical Savings Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vision</masterLabel>
+            <translation><!-- Vision --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Party --></label>
+        <name>vlocity_ins__PartyId__c</name>
+        <relationshipLabel><!-- Census Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>vlocity_ins__PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Member Identifier --></label>
+        <name>vlocity_ins__PrimaryMemberIdentifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Census Member --></label>
+        <name>vlocity_ins__RelatedCensusMemberId__c</name>
+        <relationshipLabel><!-- Census Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Social Security Number --></label>
+        <name>vlocity_ins__SocialSecurityNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>vlocity_ins__SpecProduct2Id__c</name>
+        <relationshipLabel><!-- Census Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Dependents --></label>
+        <name>vlocity_ins__TotalDependents__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- FTE value is between 0 and 1. --></errorMessage>
+        <name>vlocity_ins__FTEValidation</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,77 @@
+<div ng-controller="InsCoverageModelRuntimeRowController">
+   <div class="slds-spinner_container" ng-show="!$root.isLoaded">
+      <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+         <div class="slds-spinner__dot-a"></div>
+         <div class="slds-spinner__dot-b"></div>
+      </div>
+   </div>
+   <div class="via-slds" ng-init="getOptionalCoverages(records.records[0]); quoteId = params.id">
+      <div class="slds-notify_container" ng-if="$root.notification.active">
+         <div class="slds-notify slds-notify_toast" role="alert"
+            ng-class="{'slds-theme_success' : $root.notification.type === 'success', 'slds-theme_error' : $root.notification.type === 'error'}">
+            <span class="slds-assistive-text">{{ ::customLabels.Info }}</span>
+            <div class="slds-notify__content">
+               <h2 class="slds-text-heading_small">{{$root.notification.message}}</h2>
+            </div>
+            <button class="slds-button slds-button_icon slds-notify__close" title="Close"
+               ng-click="$root.notification.active = false">
+               <slds-svg-icon sprite="'utility'" icon="'close'" size="'small'"></slds-svg-icon>
+            </button>
+         </div>
+      </div>
+      <!-- Selected Coverages + Root -->
+      <div class="slds-grid slds-wrap cards-container">
+         <div class="slds-notify slds-notify_alert slds-theme_alert-texture"
+            ng-if="$root.isLoaded && !records.records[0]" role="alert">
+            <span class="slds-assistive-text">{{ ::customLabels.InsCoverageNoCoverages }}</span>
+            <h2>{{ ::customLabels.InsCoverageNoCoverages }}</h2>
+         </div>
+         <div vloc-card ctrl="InsCoverageModelRuntimeRowController" ng-repeat="card in cards | orderBy:order"
+            ng-model="card" data="card" records="records.records[0]" index="{{$index}}" session-id="{{sessionId}}"
+            class="slds-size_1-of-1" use-existing-element-type>
+         </div>
+      </div>
+      <!--Optional Coverages-->
+      <div class="slds-p-top_xx-large slds-border_bottom" ng-if="$root.optionalCoverages.length > 0">
+         <div class="slds-p-around_small slds-text-heading_medium">
+            {{ ::customLabels.InsQuoteOptionalCoverages }}</div>
+         <div class="vloc-row slds-grid slds-wrap slds-size_1-of-1 slds-border_top slds-p-horizontal_small"
+            ng-repeat="product in $root.optionalCoverages">
+            <div class="slds-size_1-of-3 slds-p-top_x-small slds-p-left_small">
+               <div
+                  class="slds-form-element__control slds-text-align_left slds-float_left slds-m-right_small slds-p-top_xx-small">
+                  <span class="slds-checkbox">
+                     {{product.addCoverage}}
+                     <input type="checkbox" name="add-attrs-{{$index}}" id="add-attrs-{{$index}}"
+                        ng-model="product.addCoverage" ng-change="addCoverage(product, $index)" />
+                     <label class="slds-checkbox__label slds-m-around_none" for="add-attrs-{{$index}}">
+                        <span class="slds-checkbox_faux vloc-check"></span>
+                     </label>
+                  </span>
+               </div>
+               <div class="vloc-attr-title-cell slds-truncate slds-text-heading_label ">
+                  {{ ::customLabels.Name }}</div>
+               <span class="slds-p-top_xx-small"> {{product.productName}} </span>
+            </div>
+            <div class="slds-size_1-of-3 slds-p-top_x-small">
+               <div class="vloc-attr-title-cell slds-truncate slds-text-heading_label">
+                  {{::customLabels.InsCoveragesPremium}}
+               </div>
+               <span>{{product.Price | currency}}</span><span>{{product.UnitPrice.fieldValue | currency}}</span>
+               <span ng-if="!product.Price && !product.UnitPrice">--</span>
+            </div>
+            <div class="slds-no-flex vloc-attr-showmore slds-is-absolute"
+               ng-if="product.attributeCategories.records.length > 1">
+               <button class="slds-button slds-button_link vloc-attr-showmore-btn vloc-show-less"
+                  ng-click="record.showMore = !record.showMore;"><span
+                     ng-if="!record.showMore">{{ ::importedScope.customLabels.InsButtonMore }}</span>
+                  <span ng-if="record.showMore">{{ ::importedScope.customLabels.InsButtonLess }}</span></button>
+            </div>
+            <div class="vloc-attr-row slds-size_1-of-1 vloc-left-align"
+               ng-class="{'vloc-show-first-attr slds-size_1-of-3' : !record.showMore}"
+               ng-init="categories = product.attributeCategories.records; showFirstAttr = true"
+               ng-include="'ins-attribute-display-edit.tpl.html'"></div>
+         </div>
+      </div>
+   </div>
+</div>

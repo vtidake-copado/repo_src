@@ -146,7 +146,7 @@
     <listViews>
         <fullName>All_EngagementChannelTypes</fullName>
         <filterScope>Everything</filterScope>
-        <label>Todos los Tipos de canales de implicación</label>
+        <label>All Engagement Channel Types</label>
     </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>ContactPointType</customTabListAdditionalFields>

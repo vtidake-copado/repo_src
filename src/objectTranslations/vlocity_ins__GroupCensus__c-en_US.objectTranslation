@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Attribute Selected Values --></label>
+        <name>vlocity_ins__AttributeSelectedValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Census Number --></label>
+        <name>vlocity_ins__CensusNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>vlocity_ins__CensusSource__c</name>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation><!-- External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User</masterLabel>
+            <translation><!-- User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__CensusStatus__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__CensusType__c</name>
+        <picklistValues>
+            <masterLabel>Enrollment</masterLabel>
+            <translation><!-- Enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System</masterLabel>
+            <translation><!-- System --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- No. Cobra --></label>
+        <name>vlocity_ins__CountOfCobra__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Declined --></label>
+        <name>vlocity_ins__CountOfDeclined__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Employee Only --></label>
+        <name>vlocity_ins__CountOfEmployeeOnly__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Employee + Child --></label>
+        <name>vlocity_ins__CountOfEmployeePlusChild__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Employee + Family --></label>
+        <name>vlocity_ins__CountOfEmployeePlusFamily__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Employee + Spouse --></label>
+        <name>vlocity_ins__CountOfEmployeePlusSpouse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Employees + Dependents --></label>
+        <name>vlocity_ins__CountOfEmployeesPlusDependents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Employees --></label>
+        <name>vlocity_ins__CountOfEmployees__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Full Time --></label>
+        <name>vlocity_ins__CountOfFullTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Part Time --></label>
+        <name>vlocity_ins__CountOfPartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Alert --></label>
+        <name>vlocity_ins__DisplayAlert__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>vlocity_ins__EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>vlocity_ins__EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>vlocity_ins__GroupId__c</name>
+        <relationshipLabel><!-- Census --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>vlocity_ins__SpecProduct2Id__c</name>
+        <relationshipLabel><!-- Census --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- No. FTE --></label>
+        <name>vlocity_ins__SumOfFte__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Employees + Dependents --></label>
+        <name>vlocity_ins__TotalEmployeesPlusDependents__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Large Group --></label>
+        <name>vlocity_ins__LargeGroup</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Small Group --></label>
+        <name>vlocity_ins__SmallGroup</name>
+    </recordTypes>
+</CustomObjectTranslation>

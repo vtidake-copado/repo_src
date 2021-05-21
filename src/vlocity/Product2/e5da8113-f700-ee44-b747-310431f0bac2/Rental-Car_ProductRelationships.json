@@ -1,0 +1,55 @@
+[
+    {
+        "%vlocity_namespace%__ActionParameters__c": "",
+        "%vlocity_namespace%__AddMode__c": "asSibling",
+        "%vlocity_namespace%__AttributeModificationContext__c": "",
+        "%vlocity_namespace%__Context__c": "",
+        "%vlocity_namespace%__DefaultQuantity__c": 1,
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__Family__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "9f6a0f7c-a344-946d-6651-9ec5a9111018",
+        "%vlocity_namespace%__IsConditional__c": true,
+        "%vlocity_namespace%__MaxQuantity__c": 2,
+        "%vlocity_namespace%__MinQuantity__c": 1,
+        "%vlocity_namespace%__ObjectTypeId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "e5da8113-f700-ee44-b747-310431f0bac2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/e5da8113-f700-ee44-b747-310431f0bac2",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__ProductChildItemId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ef958e6c-6888-c46f-4df7-9a24d60eb5c0",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ProductChildItem__c/ef958e6c-6888-c46f-4df7-9a24d60eb5c0",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__ProductChildItem__c"
+        },
+        "%vlocity_namespace%__RelatedObjectTypeId__c": "",
+        "%vlocity_namespace%__RelatedProductChildItemId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "ef958e6c-6888-c46f-4df7-9a24d60eb5c0",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ProductChildItem__c/ef958e6c-6888-c46f-4df7-9a24d60eb5c0",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__ProductChildItem__c"
+        },
+        "%vlocity_namespace%__RelatedProductChildItemParentId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "eb00a7d8-cc0a-65fe-f3bc-b85e92fbf761",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/eb00a7d8-cc0a-65fe-f3bc-b85e92fbf761",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__RelatedProductFilterId__c": "",
+        "%vlocity_namespace%__RelatedProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "e5da8113-f700-ee44-b747-310431f0bac2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/e5da8113-f700-ee44-b747-310431f0bac2",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__RelationshipType__c": "Excludes",
+        "%vlocity_namespace%__ReverseMaxQuantity__c": "",
+        "%vlocity_namespace%__ReverseMinQuantity__c": "",
+        "Name": "9f6a0f7c-a344-946d-6651-9ec5a9111018",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductRelationship__c/9f6a0f7c-a344-946d-6651-9ec5a9111018"
+    }
+]

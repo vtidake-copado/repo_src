@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Member Age --></label>
+        <name>vlocity_ins__Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Birthday --></label>
+        <name>vlocity_ins__Birthday__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quoted Product Rate Procedure Name --></label>
+        <name>vlocity_ins__CalcRateProcedureName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Census Member --></label>
+        <name>vlocity_ins__CensusMemberId__c</name>
+        <relationshipLabel><!-- Quoted Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Member Gender --></label>
+        <name>vlocity_ins__Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quoted Product Plan Code --></label>
+        <name>vlocity_ins__PlanCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote --></label>
+        <name>vlocity_ins__QuoteId__c</name>
+        <relationshipLabel><!-- Quoted Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Line Item --></label>
+        <name>vlocity_ins__QuoteLineItemId__c</name>
+        <relationshipLabel><!-- Quoted Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Price --></label>
+        <name>vlocity_ins__TotalPrice__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,104 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "01t6A000000NlGxQAK"
+            }
+        ],
+        "type": null,
+        "value": {
+            "inputMap": {
+                "categoryCode": "{{attrs.categoryCode}}",
+                "productId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceProductAdminHandler"
+            },
+            "query": "",
+            "remoteClass": "InsuranceProductAdminHandler",
+            "remoteMethod": "getCategoryAttributes",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": ""
+        }
+    },
+    "filter": {
+    },
+    "sessionVars": [
+    ],
+    "states": [
+        {
+            "blankStateCheck": false,
+            "collapse": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['Name']['label']",
+                    "name": "Name",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__JurisdictionName__c']['label']",
+                    "name": "%vlocity_namespace%__JurisdictionName__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__Amount__c']['label']",
+                    "name": "%vlocity_namespace%__Amount__c",
+                    "type": "currency"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__Percent__c']['label']",
+                    "name": "%vlocity_namespace%__Percent__c",
+                    "type": "percentage"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__EffectiveFromDate__c']['label']",
+                    "name": "%vlocity_namespace%__EffectiveFromDate__c",
+                    "type": "datetime"
+                }
+            ],
+            "filter": "$scope.data.status === 'active'",
+            "flyout": {
+                "data": "",
+                "layout": null
+            },
+            "name": "Taxes - Row",
+            "templateUrl": "ins-product-taxes-row"
+        }
+    ],
+    "title": "Attributes"
+}

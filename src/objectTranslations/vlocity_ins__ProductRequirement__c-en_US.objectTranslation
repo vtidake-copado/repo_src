@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Applicable Object --></label>
+        <name>vlocity_ins__ApplicableObject__c</name>
+        <picklistValues>
+            <masterLabel>Asset</masterLabel>
+            <translation><!-- Asset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>vlocity_ins__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Conditions --></label>
+        <name>vlocity_ins__Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instructions --></label>
+        <name>vlocity_ins__Instructions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Required --></label>
+        <name>vlocity_ins__IsRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>vlocity_ins__Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>vlocity_ins__Product2Id__c</name>
+        <relationshipLabel><!-- Product Requirements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State Model Field API Name --></label>
+        <name>vlocity_ins__StateModelFieldAPIName__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Model Id --></label>
+        <name>vlocity_ins__StateModelId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vlocity State Model Version --></label>
+        <name>vlocity_ins__StateModelVersionId__c</name>
+        <relationshipLabel><!-- Product Requirements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vlocity State Transition --></label>
+        <name>vlocity_ins__StateTransitionId__c</name>
+        <relationshipLabel><!-- Product Requirements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State Transition Name --></label>
+        <name>vlocity_ins__StateTransitionName__c</name>
+    </fields>
+    <fields>
+        <label><!-- To State --></label>
+        <name>vlocity_ins__ToStateName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__Type__c</name>
+        <picklistValues>
+            <masterLabel>Call-Out</masterLabel>
+            <translation><!-- Call-Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DocuSign</masterLabel>
+            <translation><!-- DocuSign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Document</masterLabel>
+            <translation><!-- Document --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Image</masterLabel>
+            <translation><!-- Image --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task</masterLabel>
+            <translation><!-- Task --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vlocity Action --></label>
+        <name>vlocity_ins__VlocityActionId__c</name>
+        <relationshipLabel><!-- Product Requirements --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

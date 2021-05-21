@@ -1,0 +1,16 @@
+{
+    "trims": {
+        "defaultDrivetrain": "Text",
+        "defaultEngine": "Text",
+        "defaultTransmission": "Text",
+        "displayName": "Text",
+        "id": "Text",
+        "manufacturerCode": "Text",
+        "marketName": "Text",
+        "name": "Text",
+        "numberOfDoors": "Text",
+        "oemBodyStyle": "Text",
+        "value": "Text",
+        "vehicleId": "Text"
+    }
+}

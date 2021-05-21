@@ -1,0 +1,80 @@
+{
+    "ContextId": "",
+    "accountId": "0016A00000W6JmWQAV",
+    "discountAuto": {
+        "discountAutos": {
+            "discountAutoInstanceKey": null,
+            "typeAutoDiscount": null
+        }
+    },
+    "discountDriver": {
+        "driverDiscounts": {
+            "discountDriverInstanceKey": null,
+            "discountMilitary": null,
+            "discountStudents": null,
+            "typeDriverDiscount": null
+        }
+    },
+    "drivers": {
+        "driver": [
+            {
+                "driverAge": null,
+                "driverAgeLicensed": 16,
+                "driverBirthdate": "1984-07-11T07:00:00.000Z",
+                "driverFirstName": "Raja",
+                "driverGender": null,
+                "driverInstanceKey": null,
+                "driverLastName": "Singh",
+                "driverMaritalStatus": null,
+                "driverMiddleName": "Frederick"
+            },
+            {
+                "driverAge": null,
+                "driverAgeLicensed": 16,
+                "driverBirthdate": "1987-07-03T07:00:00.000Z",
+                "driverFirstName": "James",
+                "driverGender": "Male",
+                "driverInstanceKey": null,
+                "driverLastName": "Murphy",
+                "driverMaritalStatus": "Married",
+                "driverMiddleName": "Lafayette"
+            },
+            {
+                "driverAge": null,
+                "driverAgeLicensed": 16,
+                "driverBirthdate": "1952-07-04T07:00:00.000Z",
+                "driverFirstName": "Lois",
+                "driverGender": "Female",
+                "driverInstanceKey": null,
+                "driverLastName": "Hazelton",
+                "driverMaritalStatus": "Married",
+                "driverMiddleName": "Mary"
+            }
+        ]
+    },
+    "id": "a2C6A000000FmWhUAK",
+    "insured": {
+        "effectiveDate": null,
+        "insuredAge": null,
+        "insuredAgeLicensed": 16,
+        "insuredBirthdate": "1984-07-11T07:00:00.000Z",
+        "insuredCity": "Lafayette",
+        "insuredFirstName": "Raja",
+        "insuredFullName": null,
+        "insuredLastName": "Singh",
+        "insuredMiddleName": "Frederick",
+        "insuredPostalCode": "94596",
+        "insuredState": "CA",
+        "insuredStreet": "3210 Ameno Drive"
+    },
+    "layout": "lightning",
+    "opportunityId": "0066A000007jw4eQAA",
+    "timeStamp": "2018-07-26T23:26:13.355Z",
+    "userCurrencyCode": "USD",
+    "userId": "0056A000000INnpQAG",
+    "userName": "rajaibomaster@demo.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": -420,
+    "vlcPersistentComponent": {
+    }
+}

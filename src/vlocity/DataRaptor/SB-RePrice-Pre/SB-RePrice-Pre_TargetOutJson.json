@@ -1,0 +1,8 @@
+{
+    "selectedProduct:records": "JSONResult",
+    "userInputs": {
+        "SBBusinessProfile.SBbusRevAnnual": "Currency",
+        "SBBusinessProfile.SBbusType": "Text",
+        "SBBusinessProfile.instanceKey": "Text"
+    }
+}

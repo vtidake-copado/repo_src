@@ -1,0 +1,1691 @@
+{
+    "AccountId": "",
+    "Building": {
+        "buildingAge": "7",
+        "distFire": "4",
+        "factorTerritory": "1"
+    },
+    "ContextId": "",
+    "InsuredId": "0016F000022xZoM",
+    "ProducerId": "0036F00002B1k3a",
+    "ProductId": "01t6F0000075b6AQAQ",
+    "RootProduct": {
+        "ChildProduct": [
+            {
+                "Id": "01t6F0000075b5vQAA",
+                "Price": 9
+            },
+            {
+                "Id": "01t6F0000075RtkQAE",
+                "Price": 17
+            },
+            {
+                "Id": "01t6F0000075b5xQAA",
+                "Price": 6
+            }
+        ],
+        "Id": "01t6F0000075b6AQAQ",
+        "Price": 28.8
+    },
+    "Step7": {
+        "ListofProducts": [
+            {
+                "$$hashKey": "object:921",
+                "Id": "01t6F0000075b6AQAQ",
+                "IsRecommended__c": false,
+                "Name": "Superior Renters New",
+                "Price": 28.8,
+                "PricingSource__c": "totalPremium",
+                "ProductCode": "Rent-SUPER",
+                "Type__c": "Renters",
+                "attributeCategories": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "Code__c": "Coverage Info",
+                            "Name": "Coverages and Limits of Liability",
+                            "displaySequence": 1500,
+                            "id": "a1U3900000466ytEAA",
+                            "messages": [
+                            ],
+                            "productAttributes": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "attributeId": "a1V39000005efDMEAY",
+                                        "code": "amountDeductible",
+                                        "dataType": "currency",
+                                        "disabled": false,
+                                        "displaySequence": -1,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "inputType": "dropdown",
+                                        "label": "Property Deductible",
+                                        "messages": [
+                                        ],
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": 100,
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "id": "0",
+                                                "label": "50",
+                                                "readonly": false,
+                                                "value": 50
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "id": "1",
+                                                "label": "100",
+                                                "readonly": false,
+                                                "value": 100
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "id": "2",
+                                                "label": "250",
+                                                "readonly": false,
+                                                "value": 250
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "id": "3",
+                                                "label": "500",
+                                                "readonly": false,
+                                                "value": 500
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "id": "4",
+                                                "label": "1000",
+                                                "readonly": false,
+                                                "value": 1000
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "id": "5",
+                                                "label": "2500",
+                                                "readonly": false,
+                                                "value": 2500
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "totalSize": 1
+                            }
+                        }
+                    ],
+                    "totalSize": 1
+                },
+                "childProducts": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "$$hashKey": "object:926",
+                            "Id": "01t6F0000075b5vQAA",
+                            "IsRecommended__c": false,
+                            "Name": "Guest Medical",
+                            "Price": 9,
+                            "PricingSource__c": "GeustMedical_premiumCovY__premiumCovY",
+                            "ProductCode": "Y",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "Code__c": "Coverage Info",
+                                        "Name": "Coverages and Limits of Liability",
+                                        "displaySequence": 1500,
+                                        "id": "a1Q6F0000092gtyUAA",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "attributeId": "a1R6F00000JqZ3vUAF",
+                                                    "code": "limitCovY",
+                                                    "dataType": "currency",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Limit - Guest Medical (Y)",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 5000,
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:936",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "2500",
+                                                            "readonly": false,
+                                                            "value": 2500
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:937",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "5000",
+                                                            "readonly": false,
+                                                            "value": 5000
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ]
+                        },
+                        {
+                            "$$hashKey": "object:927",
+                            "Description": "Computers and Cell Phones",
+                            "Id": "01t6F0000075RtkQAE",
+                            "IsRecommended__c": false,
+                            "LineOfBusiness__c": "Property & Casualty",
+                            "Name": "Electronics",
+                            "Price": 17,
+                            "PricingSource__c": "ElectronicsJuly__PremiumElec",
+                            "ProductCode": "ELT",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "Code__c": "Coverage Info",
+                                        "Name": "Coverages and Limits of Liability",
+                                        "displaySequence": 1500,
+                                        "id": "a1Q6F0000092gtyUAA",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "attributeId": "a1R6F00000JqZ72UAF",
+                                                    "code": "Deductible",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Annual Deductible",
+                                                    "messages": [
+                                                    ],
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "500",
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:948",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "1000",
+                                                            "readonly": false,
+                                                            "value": "1000"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "attributeId": "a1R6F00000JqZK7UAN",
+                                                    "code": "LimitE",
+                                                    "dataType": "currency",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Limit",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 500,
+                                                    "values": [
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "200",
+                                                            "readonly": false,
+                                                            "value": 200
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "500",
+                                                            "readonly": false,
+                                                            "value": 500
+                                                        },
+                                                        {
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "3000",
+                                                            "readonly": false,
+                                                            "value": 3000
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 2
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ]
+                        },
+                        {
+                            "$$hashKey": "object:928",
+                            "Description": "Family Liability Coverage",
+                            "Id": "01t6F0000075b5xQAA",
+                            "IsRecommended__c": false,
+                            "Name": "Business Use",
+                            "Price": 6,
+                            "PricingSource__c": "premiumBusUseNew__premiumBusinessUse",
+                            "ProductCode": "BU",
+                            "Type__c": "Renters",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "Code__c": "Coverage Info",
+                                        "Name": "Coverages and Limits of Liability",
+                                        "displaySequence": 1500,
+                                        "id": "a1Q6F0000092gtyUAA",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "attributeId": "a1R6F00000JqZ3wUAF",
+                                                    "code": "typeBusinessUse",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Limit - Business Use (P)",
+                                                    "messages": [
+                                                    ],
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "office",
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:951",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "office",
+                                                            "readonly": false,
+                                                            "value": "office"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:952",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "mfg",
+                                                            "readonly": false,
+                                                            "value": "mfg"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:953",
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "repair",
+                                                            "readonly": false,
+                                                            "value": "repair"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:954",
+                                                            "disabled": false,
+                                                            "id": "3",
+                                                            "label": "teach",
+                                                            "readonly": false,
+                                                            "value": "teach"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:955",
+                                                            "disabled": false,
+                                                            "id": "4",
+                                                            "label": "other",
+                                                            "readonly": false,
+                                                            "value": "other"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ]
+                        }
+                    ],
+                    "totalSize": 3
+                },
+                "displaySequence": -1,
+                "messages": [
+                ],
+                "vlcSelected": true
+            }
+        ]
+    },
+    "Step8": {
+        "ConfigureProduct": [
+            {
+                "$$hashKey": "object:981",
+                "Id": "01t6F0000075b6AQAQ",
+                "IsRecommended__c": false,
+                "Name": "Superior Renters New",
+                "Price": 28.8,
+                "PricingSource__c": "totalPremium",
+                "ProductCode": "Rent-SUPER",
+                "Type__c": "Renters",
+                "attributeCategories": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "Code__c": "Coverage Info",
+                            "Name": "Coverages and Limits of Liability",
+                            "displaySequence": 1500,
+                            "id": "a1U3900000466ytEAA",
+                            "messages": [
+                            ],
+                            "productAttributes": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "attributeId": "a1V39000005efDMEAY",
+                                        "code": "amountDeductible",
+                                        "dataType": "currency",
+                                        "disabled": false,
+                                        "displaySequence": -1,
+                                        "filterable": true,
+                                        "hasRules": false,
+                                        "inputType": "dropdown",
+                                        "label": "Property Deductible",
+                                        "messages": [
+                                        ],
+                                        "readonly": false,
+                                        "required": false,
+                                        "userValues": 100,
+                                        "values": [
+                                            {
+                                                "disabled": false,
+                                                "id": "0",
+                                                "label": "50",
+                                                "readonly": false,
+                                                "value": 50
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "id": "1",
+                                                "label": "100",
+                                                "readonly": false,
+                                                "value": 100
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "id": "2",
+                                                "label": "250",
+                                                "readonly": false,
+                                                "value": 250
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "id": "3",
+                                                "label": "500",
+                                                "readonly": false,
+                                                "value": 500
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "id": "4",
+                                                "label": "1000",
+                                                "readonly": false,
+                                                "value": 1000
+                                            },
+                                            {
+                                                "disabled": false,
+                                                "id": "5",
+                                                "label": "2500",
+                                                "readonly": false,
+                                                "value": 2500
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "totalSize": 1
+                            }
+                        }
+                    ],
+                    "totalSize": 1
+                },
+                "childProducts": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "$$hashKey": "object:985",
+                            "Id": "01t6F0000075b5vQAA",
+                            "IsRecommended__c": false,
+                            "Name": "Guest Medical",
+                            "Price": 9,
+                            "PricingSource__c": "GeustMedical_premiumCovY__premiumCovY",
+                            "ProductCode": "Y",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "$$hashKey": "object:1000",
+                                        "Code__c": "Coverage Info",
+                                        "Name": "Coverages and Limits of Liability",
+                                        "displaySequence": 1500,
+                                        "id": "a1Q6F0000092gtyUAA",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "object:1003",
+                                                    "attributeId": "a1R6F00000JqZ3vUAF",
+                                                    "code": "limitCovY",
+                                                    "dataType": "currency",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Limit - Guest Medical (Y)",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 5000,
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:1013",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "2500",
+                                                            "readonly": false,
+                                                            "value": 2500
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:1014",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "5000",
+                                                            "readonly": false,
+                                                            "value": 5000
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ]
+                        },
+                        {
+                            "$$hashKey": "object:986",
+                            "Description": "Computers and Cell Phones",
+                            "Id": "01t6F0000075RtkQAE",
+                            "IsRecommended__c": false,
+                            "LineOfBusiness__c": "Property & Casualty",
+                            "Name": "Electronics",
+                            "Price": 17,
+                            "PricingSource__c": "ElectronicsJuly__PremiumElec",
+                            "ProductCode": "ELT",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "$$hashKey": "object:1021",
+                                        "Code__c": "Coverage Info",
+                                        "Name": "Coverages and Limits of Liability",
+                                        "displaySequence": 1500,
+                                        "id": "a1Q6F0000092gtyUAA",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "object:1024",
+                                                    "attributeId": "a1R6F00000JqZ72UAF",
+                                                    "code": "Deductible",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Annual Deductible",
+                                                    "messages": [
+                                                    ],
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "1000",
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:1037",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "1000",
+                                                            "readonly": false,
+                                                            "value": "1000"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "$$hashKey": "object:1025",
+                                                    "attributeId": "a1R6F00000JqZK7UAN",
+                                                    "code": "LimitE",
+                                                    "dataType": "currency",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Limit",
+                                                    "messages": [
+                                                    ],
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": 500,
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:1045",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "200",
+                                                            "readonly": false,
+                                                            "value": 200
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:1046",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "500",
+                                                            "readonly": false,
+                                                            "value": 500
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:1047",
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "3000",
+                                                            "readonly": false,
+                                                            "value": 3000
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 2
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ]
+                        },
+                        {
+                            "$$hashKey": "object:987",
+                            "Description": "Family Liability Coverage",
+                            "Id": "01t6F0000075b5xQAA",
+                            "IsRecommended__c": false,
+                            "Name": "Business Use",
+                            "Price": 6,
+                            "PricingSource__c": "premiumBusUseNew__premiumBusinessUse",
+                            "ProductCode": "BU",
+                            "Type__c": "Renters",
+                            "attributeCategories": {
+                                "messages": [
+                                ],
+                                "records": [
+                                    {
+                                        "$$hashKey": "object:1054",
+                                        "Code__c": "Coverage Info",
+                                        "Name": "Coverages and Limits of Liability",
+                                        "displaySequence": 1500,
+                                        "id": "a1Q6F0000092gtyUAA",
+                                        "messages": [
+                                        ],
+                                        "productAttributes": {
+                                            "messages": [
+                                            ],
+                                            "records": [
+                                                {
+                                                    "$$hashKey": "object:1057",
+                                                    "attributeId": "a1R6F00000JqZ3wUAF",
+                                                    "code": "typeBusinessUse",
+                                                    "dataType": "text",
+                                                    "disabled": false,
+                                                    "displaySequence": -1,
+                                                    "filterable": true,
+                                                    "hasRules": false,
+                                                    "inputType": "dropdown",
+                                                    "label": "Limit - Business Use (P)",
+                                                    "messages": [
+                                                    ],
+                                                    "multiselect": false,
+                                                    "readonly": false,
+                                                    "required": false,
+                                                    "userValues": "office",
+                                                    "values": [
+                                                        {
+                                                            "$$hashKey": "object:1067",
+                                                            "disabled": false,
+                                                            "id": "0",
+                                                            "label": "office",
+                                                            "readonly": false,
+                                                            "value": "office"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:1068",
+                                                            "disabled": false,
+                                                            "id": "1",
+                                                            "label": "mfg",
+                                                            "readonly": false,
+                                                            "value": "mfg"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:1069",
+                                                            "disabled": false,
+                                                            "id": "2",
+                                                            "label": "repair",
+                                                            "readonly": false,
+                                                            "value": "repair"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:1070",
+                                                            "disabled": false,
+                                                            "id": "3",
+                                                            "label": "teach",
+                                                            "readonly": false,
+                                                            "value": "teach"
+                                                        },
+                                                        {
+                                                            "$$hashKey": "object:1071",
+                                                            "disabled": false,
+                                                            "id": "4",
+                                                            "label": "other",
+                                                            "readonly": false,
+                                                            "value": "other"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 1
+                            },
+                            "displaySequence": -1,
+                            "messages": [
+                            ]
+                        }
+                    ],
+                    "totalSize": 3
+                },
+                "displaySequence": -1,
+                "messages": [
+                ],
+                "vlcSelected": true
+            }
+        ]
+    },
+    "coverages": {
+        "limitCamera": "1000",
+        "limitJewelry": "1000",
+        "limitMusicInst": "1000",
+        "limitSports": "1000"
+    },
+    "documentName": "Renters Insurance",
+    "error": "OK",
+    "filters": "%vlocity_namespace%__Type__c:Renters",
+    "id": "a1e6F0000031ajaQAA",
+    "intelligenceresp": [
+        {
+            "$$hashKey": "object:1080",
+            "acceptDecay": 0,
+            "acceptDecayRatio": 1,
+            "acceptLast": null,
+            "aggregatedScore": 0,
+            "attachment": {
+                "sidebar": "00P6F00001KAXRAUA5"
+            },
+            "componentScores": [
+            ],
+            "contextId": null,
+            "currentMachine": "offers",
+            "formattedAggregatedScore": 0,
+            "info": null,
+            "interactionId": null,
+            "rankings": null,
+            "rejectDecay": 0,
+            "rejectDecayRatio": 1,
+            "rejectLast": null,
+            "resource": {
+                "%vlocity_namespace%__Description__c": "Jay-Z, Katy Perry, Ed Sheeran... whoever you want! Take yourself and a friend to see any of these superstars and more live. All you need to do to qualify is refer a friend to purchase Renter's Insurance",
+                "%vlocity_namespace%__Headline__c": "Concert Tickets",
+                "%vlocity_namespace%__IsActive__c": true,
+                "%vlocity_namespace%__SubTitle__c": "Get two free tickets!",
+                "CreatedById": "0056F0000077bTYQAY",
+                "CreatedDate": "2017-07-07T07:38:35.000+0000",
+                "Id": "a1a6F00000VsQfvQAF",
+                "IsDeleted": false,
+                "LastModifiedById": "0056F0000077bTYQAY",
+                "LastModifiedDate": "2017-07-11T20:00:32.000+0000",
+                "Name": "Concert Tickets",
+                "OwnerId": "0056F0000077bTYQAY",
+                "SystemModstamp": "2017-07-11T20:00:32.000+0000",
+                "attributes": {
+                    "type": "%vlocity_namespace%__VqResource__c",
+                    "url": "/services/data/v40.0/sobjects/%vlocity_namespace%__VqResource__c/a1a6F00000VsQfvQAF"
+                }
+            },
+            "resourceId": "a1a6F00000VsQfvQAF",
+            "scaledRawScore": 0,
+            "targetObjectKey": null,
+            "targetObjectType": null,
+            "viewDecay": 0,
+            "viewDecayRatio": 1,
+            "viewLast": null,
+            "virtualResourceData": null,
+            "virtualResourceId": null
+        }
+    ],
+    "layout": "lightning",
+    "prodSeletedValues": {
+        "01t6F0000075RtkQAE": {
+            "Deductible": "1000",
+            "LimitE": 500
+        },
+        "01t6F0000075b5vQAA": {
+            "limitCovY": 5000
+        },
+        "01t6F0000075b5xQAA": {
+            "typeBusinessUse": "office"
+        },
+        "01t6F0000075b6AQAQ": {
+            "amountDeductible": 100
+        }
+    },
+    "residence": {
+        "EffectiveDate": "2017-07-12",
+        "Policyholder": "Sophia Fournier",
+        "PropertyAddress-Block": {
+            "City": null,
+            "Country": null,
+            "PostalCode": null,
+            "PropertyAddress": null,
+            "State": null,
+            "Street": null,
+            "UnitNumber": null
+        },
+        "burglarAlarm": false,
+        "businessUse": "office",
+        "centralAlarm": false,
+        "centralFire": false,
+        "deadBolt": false,
+        "protectDevice": null,
+        "smokeDetector": false,
+        "today": "2017-07-18"
+    },
+    "selectedProdResult": {
+        "actions": {
+        },
+        "data": {
+            "actions": {
+            },
+            "dataMap": {
+            },
+            "messages": [
+            ],
+            "totalSize": null
+        },
+        "description": null,
+        "messages": [
+        ],
+        "name": null,
+        "records": [
+            {
+                "actions": {
+                },
+                "displaySequence": -1,
+                "fields": {
+                    "Id": "01t6F0000075b6AQAQ",
+                    "IsRecommended__c": false,
+                    "Name": "Superior Renters New",
+                    "Price": 28.8,
+                    "PricingSource__c": "totalPremium",
+                    "ProductCode": "Rent-SUPER",
+                    "Type__c": "Renters",
+                    "vlcSelected": true
+                },
+                "messages": [
+                ],
+                "nameResult": {
+                    "attributeCategories": {
+                        "actions": {
+                        },
+                        "data": {
+                            "actions": {
+                            },
+                            "dataMap": {
+                            },
+                            "messages": [
+                            ],
+                            "totalSize": null
+                        },
+                        "description": null,
+                        "messages": [
+                        ],
+                        "name": null,
+                        "records": [
+                            {
+                                "actions": {
+                                },
+                                "displaySequence": 1500,
+                                "fields": {
+                                    "Code__c": "Coverage Info",
+                                    "Name": "Coverages and Limits of Liability",
+                                    "id": "a1U3900000466ytEAA"
+                                },
+                                "messages": [
+                                ],
+                                "nameResult": {
+                                    "productAttributes": {
+                                        "actions": {
+                                        },
+                                        "data": {
+                                            "actions": {
+                                            },
+                                            "dataMap": {
+                                            },
+                                            "messages": [
+                                            ],
+                                            "totalSize": null
+                                        },
+                                        "description": null,
+                                        "messages": [
+                                        ],
+                                        "name": null,
+                                        "records": [
+                                            {
+                                                "actions": {
+                                                },
+                                                "attributeConfigurable": null,
+                                                "attributeId": "a1V39000005efDMEAY",
+                                                "autocomplete": null,
+                                                "cloneable": null,
+                                                "code": "amountDeductible",
+                                                "customTemplate": null,
+                                                "dataType": "currency",
+                                                "description": null,
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "fields": {
+                                                },
+                                                "filterable": true,
+                                                "formatMask": null,
+                                                "hasRules": false,
+                                                "hidden": null,
+                                                "inputType": "dropdown",
+                                                "isConfigurable": null,
+                                                "isRatingAttribute": null,
+                                                "label": "Property Deductible",
+                                                "max": null,
+                                                "maxLongValue": null,
+                                                "maxlength": null,
+                                                "messages": [
+                                                ],
+                                                "min": null,
+                                                "minLongValue": null,
+                                                "minlength": null,
+                                                "multiselect": null,
+                                                "nameResult": {
+                                                },
+                                                "pattern": null,
+                                                "placeholder": null,
+                                                "readonly": false,
+                                                "required": false,
+                                                "step": null,
+                                                "uiStates": {
+                                                },
+                                                "userValues": {
+                                                    "value": 100
+                                                },
+                                                "values": [
+                                                    {
+                                                        "defaultSelected": null,
+                                                        "defaultValue": null,
+                                                        "disabled": false,
+                                                        "id": "0",
+                                                        "label": "50",
+                                                        "name": null,
+                                                        "readonly": false,
+                                                        "selected": null,
+                                                        "value": 50
+                                                    },
+                                                    {
+                                                        "defaultSelected": null,
+                                                        "defaultValue": null,
+                                                        "disabled": false,
+                                                        "id": "1",
+                                                        "label": "100",
+                                                        "name": null,
+                                                        "readonly": false,
+                                                        "selected": null,
+                                                        "value": 100
+                                                    },
+                                                    {
+                                                        "defaultSelected": null,
+                                                        "defaultValue": null,
+                                                        "disabled": false,
+                                                        "id": "2",
+                                                        "label": "250",
+                                                        "name": null,
+                                                        "readonly": false,
+                                                        "selected": null,
+                                                        "value": 250
+                                                    },
+                                                    {
+                                                        "defaultSelected": null,
+                                                        "defaultValue": null,
+                                                        "disabled": false,
+                                                        "id": "3",
+                                                        "label": "500",
+                                                        "name": null,
+                                                        "readonly": false,
+                                                        "selected": null,
+                                                        "value": 500
+                                                    },
+                                                    {
+                                                        "defaultSelected": null,
+                                                        "defaultValue": null,
+                                                        "disabled": false,
+                                                        "id": "4",
+                                                        "label": "1000",
+                                                        "name": null,
+                                                        "readonly": false,
+                                                        "selected": null,
+                                                        "value": 1000
+                                                    },
+                                                    {
+                                                        "defaultSelected": null,
+                                                        "defaultValue": null,
+                                                        "disabled": false,
+                                                        "id": "5",
+                                                        "label": "2500",
+                                                        "name": null,
+                                                        "readonly": false,
+                                                        "selected": null,
+                                                        "value": 2500
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    }
+                                },
+                                "uiStates": {
+                                }
+                            }
+                        ],
+                        "totalSize": 1
+                    },
+                    "childProducts": {
+                        "actions": {
+                        },
+                        "data": {
+                            "actions": {
+                            },
+                            "dataMap": {
+                            },
+                            "messages": [
+                            ],
+                            "totalSize": null
+                        },
+                        "description": null,
+                        "messages": [
+                        ],
+                        "name": null,
+                        "records": [
+                            {
+                                "actions": {
+                                },
+                                "displaySequence": -1,
+                                "fields": {
+                                    "Id": "01t6F0000075b5vQAA",
+                                    "IsRecommended__c": false,
+                                    "Name": "Guest Medical",
+                                    "Price": 9,
+                                    "PricingSource__c": "GeustMedical_premiumCovY__premiumCovY",
+                                    "ProductCode": "Y"
+                                },
+                                "messages": [
+                                ],
+                                "nameResult": {
+                                    "attributeCategories": {
+                                        "actions": {
+                                        },
+                                        "data": {
+                                            "actions": {
+                                            },
+                                            "dataMap": {
+                                            },
+                                            "messages": [
+                                            ],
+                                            "totalSize": null
+                                        },
+                                        "description": null,
+                                        "messages": [
+                                        ],
+                                        "name": null,
+                                        "records": [
+                                            {
+                                                "actions": {
+                                                },
+                                                "displaySequence": 1500,
+                                                "fields": {
+                                                    "Code__c": "Coverage Info",
+                                                    "Name": "Coverages and Limits of Liability",
+                                                    "id": "a1Q6F0000092gtyUAA"
+                                                },
+                                                "messages": [
+                                                ],
+                                                "nameResult": {
+                                                    "productAttributes": {
+                                                        "actions": {
+                                                        },
+                                                        "data": {
+                                                            "actions": {
+                                                            },
+                                                            "dataMap": {
+                                                            },
+                                                            "messages": [
+                                                            ],
+                                                            "totalSize": null
+                                                        },
+                                                        "description": null,
+                                                        "messages": [
+                                                        ],
+                                                        "name": null,
+                                                        "records": [
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a1R6F00000JqZ3vUAF",
+                                                                "autocomplete": null,
+                                                                "cloneable": null,
+                                                                "code": "limitCovY",
+                                                                "customTemplate": null,
+                                                                "dataType": "currency",
+                                                                "description": null,
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": null,
+                                                                "inputType": "dropdown",
+                                                                "isConfigurable": null,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Limit - Guest Medical (Y)",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": null,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": 5000
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "2500",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "selected": null,
+                                                                        "value": 2500
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "5000",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "selected": null,
+                                                                        "value": 5000
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 1
+                                                    }
+                                                },
+                                                "uiStates": {
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    }
+                                },
+                                "uiStates": {
+                                }
+                            },
+                            {
+                                "actions": {
+                                },
+                                "displaySequence": -1,
+                                "fields": {
+                                    "Description": "Computers and Cell Phones",
+                                    "Id": "01t6F0000075RtkQAE",
+                                    "IsRecommended__c": false,
+                                    "LineOfBusiness__c": "Property & Casualty",
+                                    "Name": "Electronics",
+                                    "Price": 17,
+                                    "PricingSource__c": "ElectronicsJuly__PremiumElec",
+                                    "ProductCode": "ELT"
+                                },
+                                "messages": [
+                                ],
+                                "nameResult": {
+                                    "attributeCategories": {
+                                        "actions": {
+                                        },
+                                        "data": {
+                                            "actions": {
+                                            },
+                                            "dataMap": {
+                                            },
+                                            "messages": [
+                                            ],
+                                            "totalSize": null
+                                        },
+                                        "description": null,
+                                        "messages": [
+                                        ],
+                                        "name": null,
+                                        "records": [
+                                            {
+                                                "actions": {
+                                                },
+                                                "displaySequence": 1500,
+                                                "fields": {
+                                                    "Code__c": "Coverage Info",
+                                                    "Name": "Coverages and Limits of Liability",
+                                                    "id": "a1Q6F0000092gtyUAA"
+                                                },
+                                                "messages": [
+                                                ],
+                                                "nameResult": {
+                                                    "productAttributes": {
+                                                        "actions": {
+                                                        },
+                                                        "data": {
+                                                            "actions": {
+                                                            },
+                                                            "dataMap": {
+                                                            },
+                                                            "messages": [
+                                                            ],
+                                                            "totalSize": null
+                                                        },
+                                                        "description": null,
+                                                        "messages": [
+                                                        ],
+                                                        "name": null,
+                                                        "records": [
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a1R6F00000JqZ72UAF",
+                                                                "autocomplete": null,
+                                                                "cloneable": null,
+                                                                "code": "Deductible",
+                                                                "customTemplate": null,
+                                                                "dataType": "text",
+                                                                "description": null,
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": null,
+                                                                "inputType": "dropdown",
+                                                                "isConfigurable": null,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Annual Deductible",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": "1000"
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "1000",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "selected": null,
+                                                                        "value": "1000"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a1R6F00000JqZK7UAN",
+                                                                "autocomplete": null,
+                                                                "cloneable": null,
+                                                                "code": "LimitE",
+                                                                "customTemplate": null,
+                                                                "dataType": "currency",
+                                                                "description": null,
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": null,
+                                                                "inputType": "dropdown",
+                                                                "isConfigurable": null,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Limit",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": null,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": 500
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "200",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "selected": null,
+                                                                        "value": 200
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "500",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "selected": null,
+                                                                        "value": 500
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "id": "2",
+                                                                        "label": "3000",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "selected": null,
+                                                                        "value": 3000
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 2
+                                                    }
+                                                },
+                                                "uiStates": {
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    }
+                                },
+                                "uiStates": {
+                                }
+                            },
+                            {
+                                "actions": {
+                                },
+                                "displaySequence": -1,
+                                "fields": {
+                                    "Description": "Family Liability Coverage",
+                                    "Id": "01t6F0000075b5xQAA",
+                                    "IsRecommended__c": false,
+                                    "Name": "Business Use",
+                                    "Price": 6,
+                                    "PricingSource__c": "premiumBusUseNew__premiumBusinessUse",
+                                    "ProductCode": "BU",
+                                    "Type__c": "Renters"
+                                },
+                                "messages": [
+                                ],
+                                "nameResult": {
+                                    "attributeCategories": {
+                                        "actions": {
+                                        },
+                                        "data": {
+                                            "actions": {
+                                            },
+                                            "dataMap": {
+                                            },
+                                            "messages": [
+                                            ],
+                                            "totalSize": null
+                                        },
+                                        "description": null,
+                                        "messages": [
+                                        ],
+                                        "name": null,
+                                        "records": [
+                                            {
+                                                "actions": {
+                                                },
+                                                "displaySequence": 1500,
+                                                "fields": {
+                                                    "Code__c": "Coverage Info",
+                                                    "Name": "Coverages and Limits of Liability",
+                                                    "id": "a1Q6F0000092gtyUAA"
+                                                },
+                                                "messages": [
+                                                ],
+                                                "nameResult": {
+                                                    "productAttributes": {
+                                                        "actions": {
+                                                        },
+                                                        "data": {
+                                                            "actions": {
+                                                            },
+                                                            "dataMap": {
+                                                            },
+                                                            "messages": [
+                                                            ],
+                                                            "totalSize": null
+                                                        },
+                                                        "description": null,
+                                                        "messages": [
+                                                        ],
+                                                        "name": null,
+                                                        "records": [
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a1R6F00000JqZ3wUAF",
+                                                                "autocomplete": null,
+                                                                "cloneable": null,
+                                                                "code": "typeBusinessUse",
+                                                                "customTemplate": null,
+                                                                "dataType": "text",
+                                                                "description": null,
+                                                                "disabled": false,
+                                                                "displaySequence": -1,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": null,
+                                                                "inputType": "dropdown",
+                                                                "isConfigurable": null,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Limit - Business Use (P)",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": "office"
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "id": "0",
+                                                                        "label": "office",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "selected": null,
+                                                                        "value": "office"
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "id": "1",
+                                                                        "label": "mfg",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "selected": null,
+                                                                        "value": "mfg"
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "id": "2",
+                                                                        "label": "repair",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "selected": null,
+                                                                        "value": "repair"
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "id": "3",
+                                                                        "label": "teach",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "selected": null,
+                                                                        "value": "teach"
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "id": "4",
+                                                                        "label": "other",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "selected": null,
+                                                                        "value": "other"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 1
+                                                    }
+                                                },
+                                                "uiStates": {
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    }
+                                },
+                                "uiStates": {
+                                }
+                            }
+                        ],
+                        "totalSize": 3
+                    }
+                },
+                "uiStates": {
+                }
+            }
+        ],
+        "totalSize": null
+    },
+    "timeStamp": "2017-07-19T01:25:40.602Z",
+    "urlPrefix": "https://insplan-dev-ed--ins-plan-daily.ap4.visual.force.com/apex",
+    "userId": "0056F0000077bTYQAY",
+    "userInputs": {
+        "Business Use_Limit - Business Use (P)": "office",
+        "Electronics_Annual Deductible": "1000",
+        "Electronics_Limit": 500,
+        "Guest Medical_Limit - Guest Medical (Y)": 5000,
+        "Superior Renters New_Property Deductible": 100,
+        "buildingAge": "7",
+        "centralBurglar": false,
+        "centralFire": false,
+        "deadBolt": false,
+        "distFire": "4",
+        "factorTerritory": "1",
+        "localBurglar": false,
+        "smokeDetect": false,
+        "typeBusinessUse": "office"
+    },
+    "userName": "%vlocity_namespace%@vlocity.com",
+    "userProfile": "System Administrator",
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "GetListOfProducts": 1314,
+        "GetOffers": 302,
+        "Offers": 1575,
+        "OmniScriptSessionToken": "e6a7e333-9c54-4297-8c35-b41484db5fd3",
+        "PaymentMethod": 1717,
+        "RemoteAction4": 11466,
+        "Set Values 1": 15,
+        "Set Values 5": 122,
+        "Step7": 3227,
+        "Step8": 9561,
+        "coverages": 1533,
+        "getBuildingInfo": 235,
+        "intro": 3045,
+        "readPaymentMethods": 416,
+        "residence": 6870,
+        "setOptionalCoverages": 133
+    }
+}

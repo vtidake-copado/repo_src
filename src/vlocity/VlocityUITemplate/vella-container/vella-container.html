@@ -1,0 +1,29 @@
+<div class="vella-container-page-wrapper vella-page-wrapper" ng-class="{'vella-spinner-active': !$root.isLoaded}" ng-controller="vellaContainerController" ng-init="init()">
+    <div class="slds-spinner_container vella-spinner" ng-class="{'vella-spinner-active': !$root.isLoaded}">
+        <div role="status" class="slds-spinner slds-spinner--medium slds-spinner--inverse">
+            <span class="slds-assistive-text">Loading</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+    <div class="vella-container-page-main-wrapper">
+        <div class="vella-more-detail-top">
+            <div class="vella-more-detail-circle" ng-if="$root.cardData.Image">
+                <img ng-src="{{$root.cardData.Image}}" class="vella-more-detail-img"/>
+            </div>
+            <h2 class="vella-more-detail-name">{{$root.cardData.SpecName}} Coverage</h2>
+            <p class="vella-more-detail-description">{{$root.cardData.Description}}</p>
+            <button class="slds-button vella-more-detail-learn-more-btn" ng-if="currentType === 'Insurable'" ng-click="goToMoreDetail()">Learn More</button>
+        </div>
+        <div class="vella-more-detail-bottom">
+            <h3 class="vella-more-detail-bottom-title" ng-if="currentType === 'MoreDetail' && $root.coverages.coveragesMap.length">Coverages</h3>
+            <!-- <h3 class="vella-more-detail-bottom-title" ng-if="currentType === 'Insurable'">{{$root.cardData.SpecName}}s Covered (0)</h3> -->
+            <div class="vella-more-detail-coverages-accordion" ng-if="currentType === 'MoreDetail'" bs-collapse>
+                <vloc-card ng-repeat="card in cards" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="vella-container-card"></vloc-card>
+            </div>
+            <div class="vella-insurable-items" ng-if="currentType === 'Insurable'">
+                <vloc-card ng-repeat="card in cards" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="vella-swipe-item-card"></vloc-card>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Contribution Amount --></label>
+        <name>vlocity_ins__ContributionAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contribution Percent --></label>
+        <name>vlocity_ins__ContributionPercent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contribution Type --></label>
+        <name>vlocity_ins__ContributionType__c</name>
+        <picklistValues>
+            <masterLabel>Amount</masterLabel>
+            <translation><!-- Amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent</masterLabel>
+            <translation><!-- Percent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Group Class Contribution --></label>
+        <name>vlocity_ins__GroupClassContributionId__c</name>
+        <relationshipLabel><!-- Quote Group Class Contributions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Member Type --></label>
+        <name>vlocity_ins__MemberType__c</name>
+        <picklistValues>
+            <masterLabel>Dependent</masterLabel>
+            <translation><!-- Dependent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscriber</masterLabel>
+            <translation><!-- Subscriber --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Category --></label>
+        <name>vlocity_ins__ProductCategory__c</name>
+        <picklistValues>
+            <masterLabel>Dental</masterLabel>
+            <translation><!-- Dental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Life</masterLabel>
+            <translation><!-- Life --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical</masterLabel>
+            <translation><!-- Medical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vision</masterLabel>
+            <translation><!-- Vision --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quote --></label>
+        <name>vlocity_ins__QuoteId__c</name>
+        <relationshipLabel><!-- Quote Group Class Contributions --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

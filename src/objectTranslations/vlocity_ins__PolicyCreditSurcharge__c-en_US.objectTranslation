@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Amount --></label>
+        <name>vlocity_ins__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>vlocity_ins__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Factor --></label>
+        <name>vlocity_ins__Factor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy --></label>
+        <name>vlocity_ins__PolicyId__c</name>
+        <relationshipLabel><!-- Credits &amp; Surcharges --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__Type__c</name>
+        <picklistValues>
+            <masterLabel>Credit</masterLabel>
+            <translation><!-- Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discount</masterLabel>
+            <translation><!-- Discount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surcharge</masterLabel>
+            <translation><!-- Surcharge --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

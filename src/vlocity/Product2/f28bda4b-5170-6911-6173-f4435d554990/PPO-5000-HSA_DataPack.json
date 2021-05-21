@@ -1,0 +1,310 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "PPO-5000-HSA_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "SG_ProductName": "PPO 5000 (HSA)",
+        "SG_ProductSubtype": "QHP",
+        "SG_annualDed_INN": "$5,000/$10,000",
+        "SG_annualOOP_INN": "$7,500/$15,000",
+        "SG_coinsurance_INN": "20% After Ded",
+        "SG_primaryCare_INN": "20% Coins After Ded"
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "records": [
+            {
+                "Code__c": "SG_Medical",
+                "Name": "SG Medical",
+                "displaySequence": 2000,
+                "id": "a0B6A0000089LUpUAM",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzMUAQ",
+                            "cloneable": true,
+                            "code": "SG_annualDed_INN",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 0,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Deductible",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzOUAQ",
+                            "cloneable": true,
+                            "code": "SG_annualOOP_INN",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Out Of Pocket",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzQUAQ",
+                            "cloneable": true,
+                            "code": "SG_coinsurance_INN",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 2,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Coinsurance",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeGroupType": "In-Network",
+                            "attributeId": "a0C6A000006lqzsUAA",
+                            "cloneable": true,
+                            "code": "SG_primaryCare_INN",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 3,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Office Visit",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 4
+                }
+            },
+            {
+                "Code__c": "SG_ProductRating",
+                "Name": "SG Product Rating",
+                "displaySequence": 2150,
+                "id": "a0B6A0000089LVsUAM",
+                "productAttributes": {
+                    "records": [
+                        {
+                            "attributeId": "a0C6A000006lr6YUAQ",
+                            "cloneable": true,
+                            "code": "SG_ProductName",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 4,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Product Name",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0C6A000006lr6ZUAQ",
+                            "cloneable": true,
+                            "code": "SG_ProductSubtype",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 5,
+                            "filterable": false,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Product Subtype",
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 2
+                }
+            }
+        ],
+        "totalSize": 2
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__Availability__c": "",
+    "%vlocity_namespace%__CarrierId__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__CompiledAttributeOverride__c": "PPO-5000-HSA_CompiledAttributeOverrides.json",
+    "%vlocity_namespace%__CoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2019-01-01",
+    "%vlocity_namespace%__EligibilityCriteriaComments__c": "",
+    "%vlocity_namespace%__EligibilityCriteria__c": "",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__EnrollmentStatus__c": "",
+    "%vlocity_namespace%__FormularyId__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2019-01-01T08:00:00.000Z",
+    "%vlocity_namespace%__GlobalKey__c": "f28bda4b-5170-6911-6173-f4435d554990",
+    "%vlocity_namespace%__HasCustomAttributesProcess__c": false,
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__InstanceKeyFormula__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": true,
+    "%vlocity_namespace%__IsRecommended__c": false,
+    "%vlocity_namespace%__LastPublishDate__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "{\"options\":{\"mergeList\":true,\"rateType\":\"Age\",\"effectiveDate\":\"05/21/20\"},\"inputs\":{\"01t5w00000EgxmHAAR\":{\"a0A5w00000zupMtEAI\":{\"count\":2,\"attributeCode\":\"SG_ProductSubtype\",\"attributeLabel\":\"Product Subtype\",\"objectId\":\"01t5w00000EgxmHAAR\",\"ratingInput\":\"ProductSubtype\",\"attributeDataType\":\"Text\",\"categoryCode\":\"SG_ProductRating\",\"categoryName\":\"SG Product Rating\",\"attributeDefaultValue\":\"QHP\"},\"productName\":\"PPO 5000 (HSA)\",\"productRecordType\":\"Product\",\"productCode\":\"SG-PPO-5000-HSA\",\"isRoot\":true,\"a0A5w00000zupMoEAI\":{\"count\":1,\"attributeCode\":\"SG_ProductName\",\"attributeLabel\":\"Product Name\",\"objectId\":\"01t5w00000EgxmHAAR\",\"ratingInput\":\"ProductName\",\"attributeDataType\":\"Text\",\"categoryCode\":\"SG_ProductRating\",\"categoryName\":\"SG Product Rating\",\"attributeDefaultValue\":\"PPO 5000 (HSA)\"}},\"01t5w00000EZaXtAAL\":{\"a0A5w00000ztuZFEAY\":{\"count\":9,\"attributeCode\":\"SG_empChildCount\",\"attributeLabel\":\"Employee + Child Count\",\"objectId\":\"01t5w00000EZaXtAAL\",\"ratingInput\":\"empChildCount\",\"attributeDataType\":\"Number\",\"categoryCode\":\"SG_Census\",\"categoryName\":\"Census\",\"attributeDefaultValue\":\"4\"},\"productName\":\"Small Group Census\",\"productRecordType\":\"RatingFactSpec\",\"productCode\":\"SG-Census-RF\",\"isOptional\":false,\"pciId\":\"a2z5w000002TcN7AAK\",\"a0A5w00000ztuZEEAY\":{\"count\":8,\"attributeCode\":\"SG_empSpouseCount\",\"attributeLabel\":\"Employee + Spouse Count\",\"objectId\":\"01t5w00000EZaXtAAL\",\"ratingInput\":\"empSpouseCount\",\"attributeDataType\":\"Number\",\"categoryCode\":\"SG_Census\",\"categoryName\":\"Census\",\"attributeDefaultValue\":\"3\"},\"a0A5w00000ztuZDEAY\":{\"count\":7,\"attributeCode\":\"SG_empOnlyCount\",\"attributeLabel\":\"Employee Only Count\",\"objectId\":\"01t5w00000EZaXtAAL\",\"ratingInput\":\"empOnlyCount\",\"attributeDataType\":\"Number\",\"categoryCode\":\"SG_Census\",\"categoryName\":\"Census\",\"attributeDefaultValue\":\"2\"},\"a0A5w00000ztuZGEAY\":{\"count\":6,\"attributeCode\":\"SG_empFamilyCount\",\"attributeLabel\":\"Employee + Family Count\",\"objectId\":\"01t5w00000EZaXtAAL\",\"ratingInput\":\"empFamilyCount\",\"attributeDataType\":\"Number\",\"categoryCode\":\"SG_Census\",\"categoryName\":\"Census\",\"attributeDefaultValue\":\"1\"},\"a0A5w00000ztuZHEAY\":{\"count\":5,\"attributeCode\":\"SG_CM_Age\",\"attributeLabel\":\"Age\",\"objectId\":\"01t5w00000EZaXtAAL\",\"ratingInput\":\"Age\",\"attributeDataType\":\"Number\",\"categoryCode\":\"SG_CensusMember\",\"categoryName\":\"CensusMember\",\"attributeDefaultValue\":\"37\"},\"a0A5w00000ztuZIEAY\":{\"count\":4,\"attributeCode\":\"SG_CM_Gender\",\"attributeLabel\":\"Gender\",\"objectId\":\"01t5w00000EZaXtAAL\",\"ratingInput\":\"Gender\",\"attributeDataType\":\"Text\",\"categoryCode\":\"SG_CensusMember\",\"categoryName\":\"CensusMember\",\"attributeDefaultValue\":\"Female\"},\"a0A5w00000ztuZKEAY\":{\"count\":3,\"attributeCode\":\"SG_CM_IsPrimary\",\"attributeLabel\":\"IsPrimary\",\"objectId\":\"01t5w00000EZaXtAAL\",\"ratingInput\":\"IsPrimary\",\"attributeDataType\":\"Boolean\",\"categoryCode\":\"SG_CensusMember\",\"categoryName\":\"CensusMember\",\"attributeDefaultValue\":true},\"a0A5w00000ztuZMEAY\":{\"count\":2,\"attributeCode\":\"SG_CM_Smoker\",\"attributeLabel\":\"Smoker\",\"objectId\":\"01t5w00000EZaXtAAL\",\"ratingInput\":\"Smoker\",\"attributeDataType\":\"Boolean\",\"categoryCode\":\"SG_CensusMember\",\"categoryName\":\"CensusMember\",\"attributeDefaultValue\":false},\"a0A5w00000ztuZNEAY\":{\"count\":1,\"attributeCode\":\"SG_CM_IsSpouse\",\"attributeLabel\":\"IsSpouse\",\"objectId\":\"01t5w00000EZaXtAAL\",\"ratingInput\":\"IsSpouse\",\"attributeDataType\":\"Boolean\",\"categoryCode\":\"SG_CensusMember\",\"categoryName\":\"CensusMember\",\"attributeDefaultValue\":\"true\"}}}}",
+    "%vlocity_namespace%__LineOfBusiness__c": "Group Health",
+    "%vlocity_namespace%__MarketSegment__c": "Small Group",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__OverrideDefinition__c": "PPO-5000-HSA_OverrideDefinitions.json",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PricingFormula__c": "GroupPremium",
+    "%vlocity_namespace%__PricingSource__c": "",
+    "%vlocity_namespace%__ProductChildItem__c": "PPO-5000-HSA_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__ProviderNetworkId__c": "",
+    "%vlocity_namespace%__RateBandId__c": "",
+    "%vlocity_namespace%__RatingCalcProcedureName__c": "SmallGroup_VUMedical",
+    "%vlocity_namespace%__RatingProcedureType__c": "Integration Procedure",
+    "%vlocity_namespace%__RecordTypeName__c": "Product",
+    "%vlocity_namespace%__ReplacementProductId__c": "",
+    "%vlocity_namespace%__ReserveProcessingMode__c": "CoverageReserve",
+    "%vlocity_namespace%__Scope__c": "",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2019-01-01T08:00:00.000Z",
+    "%vlocity_namespace%__SpecificationType__c": "",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "HSA",
+    "%vlocity_namespace%__Term__c": "Annual",
+    "%vlocity_namespace%__Tier__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TotalCoverageCalculationFormula__c": "",
+    "%vlocity_namespace%__TotalInsuredFormula__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "Medical",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Other",
+    "Image__c": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "PPO 5000 (HSA)",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PricebookEntry": "PPO-5000-HSA_PricebookEntries.json",
+    "ProductCode": "SG-PPO-5000-HSA",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": "",
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "PPO 5000 (HSA)",
+            "Pricebook2.Name": "Standard Price Book",
+            "Pricebook2Id": {
+                "Name": "Standard Price Book",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standard Price Book",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "f28bda4b-5170-6911-6173-f4435d554990",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "f28bda4b-5170-6911-6173-f4435d554990",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/f28bda4b-5170-6911-6173-f4435d554990",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "SG-PPO-5000-HSA",
+            "UnitPrice": 1,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standard Price Book/Product2/f28bda4b-5170-6911-6173-f4435d554990"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/f28bda4b-5170-6911-6173-f4435d554990"
+}

@@ -1,0 +1,114 @@
+{
+    "AppDependentInformation": {
+        "Complete Dependent Info": {
+            "Dependent PCP Info": {
+                "DependentCurrentPatient": null,
+                "DependentPCPCity": null,
+                "DependentPCPName": null,
+                "DependentPCPNumber": null
+            },
+            "DependentDateOfBirth": null,
+            "DependentFirstName": null,
+            "DependentGender": null,
+            "DependentLastName": null,
+            "DependentRelationship": null,
+            "DependentSSN": null,
+            "DependentTobaccoUse": null
+        }
+    },
+    "Application": {
+        "Broker": null,
+        "CityTown": null,
+        "DateofBirthApplication": null,
+        "Email": null,
+        "FirstName": null,
+        "Gender": null,
+        "HomePhone": null,
+        "LastName": null,
+        "MiddleName": null,
+        "MobilePhone": null,
+        "PCP": {
+            "AppPCPNumber": null,
+            "PCPCity": null,
+            "PCPCurrentPatient": null,
+            "PCPName": null
+        },
+        "PaymentMethod": null,
+        "Prefix": null,
+        "SSN": null,
+        "StateApplication": null,
+        "StreetAddress": null,
+        "WorkTelephone": null,
+        "ZipCodeApplication": null
+    },
+    "CommunicationsPreferences": {
+        "ComFirstChoice": null,
+        "ComMail": null,
+        "ComPhone": null,
+        "ComSecondChoice": null,
+        "CommEmail": null,
+        "Text25": null
+    },
+    "ContextId": "",
+    "CustInfo": {
+        "coverageBlock": {
+            "coverageReason": "reason3",
+            "eventDate": null
+        },
+        "coverageStart": null,
+        "selfFamily": "Family",
+        "typeOfProducts": "Medical;Dental"
+    },
+    "Radio6tobaccoUser": "No",
+    "ReviewTerms": {
+        "Disclosure": false
+    },
+    "householdInfo": {
+        "dependentInfo": [
+            {
+                "dispDOB": "2005-10-10T05:00:00.000Z",
+                "dispName": "Name: Junior Bridges",
+                "dispRelationship": "Relationship: Child",
+                "famDateOfBirth": "2005-10-10",
+                "famFirstName": "Junior",
+                "famLastName": "Bridges",
+                "famRelationship": "Child",
+                "famTobaccoUser": null
+            },
+            {
+                "dispDOB": "2007-10-04T05:00:00.000Z",
+                "dispName": "Name: Sally Bridges",
+                "dispRelationship": "Relationship: Child",
+                "famDateOfBirth": "2007-10-04",
+                "famFirstName": "Sally",
+                "famLastName": "Bridges",
+                "famRelationship": "Child",
+                "famTobaccoUser": "No"
+            }
+        ],
+        "subscriberInfo": {
+            "DOBValid": true,
+            "Messaging1": true,
+            "Radio6tobaccoUser": "No",
+            "county": null,
+            "dateOfBirth": "1989-10-09",
+            "firstName": "Jonathan",
+            "lastName": "Bridges",
+            "zipCode": null
+        }
+    },
+    "id": "a2Cf2000003jjPiEAI",
+    "layout": "lightning",
+    "medical": {
+        "medicalPlans": null
+    },
+    "selfFamily": "Self",
+    "timeStamp": "2018-10-26T20:21:22.943Z",
+    "userCurrencyCode": "USD",
+    "userId": "005f2000009MmpJAAS",
+    "userName": "kriley@vlocity.com.ibo080418",
+    "userProfile": "System Administrator",
+    "userTimeZone": -420,
+    "vlcPersistentComponent": {
+    }
+}

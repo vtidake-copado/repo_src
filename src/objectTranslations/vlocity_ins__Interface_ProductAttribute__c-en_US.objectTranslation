@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Attribute Code --></label>
+        <name>vlocity_ins__AttributeCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Display Sequence --></label>
+        <name>vlocity_ins__AttributeDisplaySequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- AttributeFilterable --></label>
+        <name>vlocity_ins__AttributeFilterable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Name --></label>
+        <name>vlocity_ins__AttributeName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Applicable Sub Type --></label>
+        <name>vlocity_ins__CategoryApplicableSubType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Applicable Types --></label>
+        <name>vlocity_ins__CategoryApplicableTypes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Code --></label>
+        <name>vlocity_ins__CategoryCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Description --></label>
+        <name>vlocity_ins__CategoryDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Filterable --></label>
+        <name>vlocity_ins__CategoryDisplayFilter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Display Sequence --></label>
+        <name>vlocity_ins__CategoryDisplaySequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Name --></label>
+        <name>vlocity_ins__CategoryName__c</name>
+    </fields>
+    <fields>
+        <label><!-- DRBundleName --></label>
+        <name>vlocity_ins__DRBundleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- DR Error --></label>
+        <name>vlocity_ins__DRError__c</name>
+    </fields>
+    <fields>
+        <label><!-- DR Progress --></label>
+        <name>vlocity_ins__DRProgressData__c</name>
+    </fields>
+    <fields>
+        <label><!-- DR Status --></label>
+        <name>vlocity_ins__DRStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Approved On --></label>
+        <name>vlocity_ins__ProductApprovedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Attribute Object Type --></label>
+        <name>vlocity_ins__ProductAttributeObjectType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Attribute Value Data Type --></label>
+        <name>vlocity_ins__ProductAttributeValueDataType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Attribute Description --></label>
+        <name>vlocity_ins__ProductAttributeValueDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Attribute Value --></label>
+        <name>vlocity_ins__ProductAttributeValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Availability --></label>
+        <name>vlocity_ins__ProductAvailability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>vlocity_ins__ProductCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Effective Date --></label>
+        <name>vlocity_ins__ProductEffectiveDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product End Date --></label>
+        <name>vlocity_ins__ProductEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line of Business --></label>
+        <name>vlocity_ins__ProductLineOfBusiness__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Market Segment --></label>
+        <name>vlocity_ins__ProductMarketSegment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Standard Premium --></label>
+        <name>vlocity_ins__ProductStandardPremium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Status --></label>
+        <name>vlocity_ins__ProductStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Sub Type --></label>
+        <name>vlocity_ins__ProductSubType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>vlocity_ins__ProductType__c</name>
+    </fields>
+</CustomObjectTranslation>

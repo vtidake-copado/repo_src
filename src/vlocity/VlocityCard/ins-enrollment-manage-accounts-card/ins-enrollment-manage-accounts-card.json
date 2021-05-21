@@ -1,0 +1,60 @@
+{
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{\"records\": \n{\"title\": \"Manage Accounts\"}\n}",
+            "resultVar": "records"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "%vlocity_namespace%__InvokeClassName__c": "DROpenImplementationClass",
+                        "%vlocity_namespace%__InvokeMethodName__c": "CreateTasks",
+                        "collapse": true,
+                        "hasExtraParams": false,
+                        "id": "Create Tasks",
+                        "isCustomAction": false,
+                        "type": "Vlocity Action"
+                    },
+                    {
+                        "%vlocity_namespace%__InvokeClassName__c": "IntegrationProcedureService",
+                        "%vlocity_namespace%__InvokeMethodName__c": "Quote_Issue",
+                        "collapse": true,
+                        "hasExtraParams": false,
+                        "id": "Create Note",
+                        "isCustomAction": false,
+                        "type": "Vlocity Action"
+                    },
+                    {
+                        "collapse": true,
+                        "hasExtraParams": false,
+                        "id": "Edit Record",
+                        "isCustomAction": false,
+                        "type": "Vlocity Action"
+                    }
+                ]
+            },
+            "fields": [
+            ],
+            "name": "Manage Accounts",
+            "sObjectType": "Asset",
+            "templateUrl": "ins-enrollment-manage-accounts"
+        }
+    ],
+    "title": "Enrollment Manage Accounts"
+}

@@ -1,0 +1,82 @@
+{
+    "%vlocity_namespace%__ApplicableObject__c": "",
+    "%vlocity_namespace%__CalculationProcedureId__c": {
+        "Name": "simpleAuto",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/simpleAuto",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+    },
+    "%vlocity_namespace%__CalculationProcedureId__r.Name": "simpleAuto",
+    "%vlocity_namespace%__CalculationProcedureStep__c": "simpleAuto-V1_Steps.json",
+    "%vlocity_namespace%__CalculationProcedureVariable__c": "simpleAuto-V1_Variables.json",
+    "%vlocity_namespace%__Constants__c": [
+        {
+            "alias": "baseBIPD",
+            "dataType": "Currency",
+            "isEditable": false,
+            "name": "baseBIPD",
+            "precision": 2,
+            "userDefined": true,
+            "value": "322.00",
+            "valuePlaceHolder": "Enter a Value"
+        },
+        {
+            "alias": "baseUM",
+            "dataType": "Currency",
+            "isEditable": false,
+            "name": "baseUM",
+            "precision": 2,
+            "userDefined": true,
+            "value": "35.95",
+            "valuePlaceHolder": "Enter a Value"
+        },
+        {
+            "alias": "baseMED",
+            "dataType": "Currency",
+            "isEditable": false,
+            "name": "baseMED",
+            "precision": 2,
+            "userDefined": true,
+            "value": "49.50",
+            "valuePlaceHolder": "Enter a Value"
+        },
+        {
+            "alias": "baseCCD",
+            "dataType": "Currency",
+            "isEditable": false,
+            "name": "baseCCD",
+            "precision": 2,
+            "userDefined": true,
+            "value": "25.00",
+            "valuePlaceHolder": "Enter a Value"
+        },
+        {
+            "alias": "baseCOLL",
+            "dataType": "Currency",
+            "isEditable": false,
+            "name": "baseCOLL",
+            "precision": 2,
+            "userDefined": true,
+            "value": "150.00",
+            "valuePlaceHolder": "Enter a Value"
+        }
+    ],
+    "%vlocity_namespace%__CurrentStatus__c": "Active",
+    "%vlocity_namespace%__EnableLooping__c": false,
+    "%vlocity_namespace%__EndDateTime__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "simpleAuto V1",
+    "%vlocity_namespace%__InputBundleId__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "{\"carValue\":\"35000\",\"carYear\":\"2014\",\"carAltFuel\":\"true\",\"carStability\":\"true\",\"carTheft\":\"true\",\"carBrake\":\"true\",\"ratedDriver-UM\":\".95\",\"ratedDriver-COLL\":\"1.08\",\"ratedDriver-CCD\":\"1.35\",\"ratedDriver-MED\":\"1.35\",\"ratedDriver-BIPD\":\"1.08\",\"dedCCD\":\"500\",\"limitMED\":\"10000\",\"dedCOLL\":\"1000\",\"limitUM\":\"15/30\",\"limitPD\":\"100000\",\"limitBI\":\"1000/1000/100\"}",
+    "%vlocity_namespace%__LoopingSpecification__c": "",
+    "%vlocity_namespace%__OutputBundleId__c": "",
+    "%vlocity_namespace%__PostProcessorClass__c": "",
+    "%vlocity_namespace%__PreProcessorClass__c": "",
+    "%vlocity_namespace%__Priority__c": 1,
+    "%vlocity_namespace%__StartDateTime__c": "2018-07-27T06:32:58.000Z",
+    "%vlocity_namespace%__Variables__c": "",
+    "%vlocity_namespace%__VersionNumber__c": 1,
+    "Name": "simpleAuto V1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/simpleAuto"
+}

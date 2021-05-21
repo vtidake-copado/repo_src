@@ -1,0 +1,914 @@
+[
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "OriginalPastDue",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "OriginalPastDue",
+                "dataType": "Number",
+                "text": "OriginalPastDue",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "BillingAdjustment-Endorsements",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "BillingAdjustment-Endorsements",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "OriginalPastDue"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "NewPastDue",
+            "dataType": "Number",
+            "name": "NewPastDue"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"NewPastDue\":\"NewPastDue\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "DATEDIFF ( NewpolicyEffectiveDate , BillDueDate )",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "DATEDIFF",
+                "text": "DATEDIFF"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "NewpolicyEffectiveDate",
+                "dataType": "Number",
+                "text": "NewpolicyEffectiveDate",
+                "userDefined": true
+            },
+            {
+                "alias": ",",
+                "text": ","
+            },
+            {
+                "alias": "BillDueDate",
+                "dataType": "Date",
+                "text": "BillDueDate",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "BillingAdjustment-Endorsements",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "BillingAdjustment-Endorsements",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "NewpolicyEffectiveDate"
+            },
+            {
+                "dataType": "Date",
+                "name": "BillDueDate"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "NumofDaysnewpolicy",
+            "dataType": "Number",
+            "name": "NumofDaysnewpolicy"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"NumofDaysnewpolicy\":\"NumofDaysnewpolicy\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "DATEDIFF ( NewpolicyEffectiveDate , PreviousBilldate )",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "DATEDIFF",
+                "text": "DATEDIFF"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "NewpolicyEffectiveDate",
+                "dataType": "Number",
+                "text": "NewpolicyEffectiveDate",
+                "userDefined": true
+            },
+            {
+                "alias": ",",
+                "text": ","
+            },
+            {
+                "alias": "PreviousBilldate",
+                "dataType": "Date",
+                "text": "PreviousBilldate",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "BillingAdjustment-Endorsements",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "BillingAdjustment-Endorsements",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+            {
+                "alias": "isPreviousMode",
+                "dataType": "Number",
+                "text": "isPreviousMode",
+                "userDefined": true
+            },
+            {
+                "alias": "==",
+                "text": "=="
+            },
+            {
+                "alias": "1",
+                "dataType": "Number",
+                "text": "1"
+            }
+        ],
+        "%vlocity_namespace%__Conditions__c": "isPreviousMode == 1",
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "NewpolicyEffectiveDate"
+            },
+            {
+                "dataType": "Date",
+                "name": "PreviousBilldate"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": true,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "NumofDaysoldpolicy",
+            "dataType": "Number",
+            "name": "NumofDaysoldpolicy"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"NumofDaysoldpolicy\":\"NumofDaysoldpolicy\"}",
+        "%vlocity_namespace%__Sequence__c": 3,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "DATEDIFF ( PreviousBilldate , NewpolicyEffectiveDate )",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "DATEDIFF",
+                "text": "DATEDIFF"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "PreviousBilldate",
+                "dataType": "Date",
+                "text": "PreviousBilldate",
+                "userDefined": true
+            },
+            {
+                "alias": ",",
+                "text": ","
+            },
+            {
+                "alias": "NewpolicyEffectiveDate",
+                "dataType": "Number",
+                "text": "NewpolicyEffectiveDate",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "BillingAdjustment-Endorsements",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "BillingAdjustment-Endorsements",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+            {
+                "alias": "isPreviousMode",
+                "dataType": "Number",
+                "text": "isPreviousMode",
+                "userDefined": true
+            },
+            {
+                "alias": "==",
+                "text": "=="
+            },
+            {
+                "alias": "0",
+                "dataType": "Number",
+                "text": "0"
+            }
+        ],
+        "%vlocity_namespace%__Conditions__c": "isPreviousMode == 0",
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Date",
+                "name": "PreviousBilldate"
+            },
+            {
+                "dataType": "Number",
+                "name": "NewpolicyEffectiveDate"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": true,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "NumofDaysoldpolicy",
+            "dataType": "Number",
+            "name": "NumofDaysoldpolicy"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"NumofDaysoldpolicy\":\"NumofDaysoldpolicy\"}",
+        "%vlocity_namespace%__Sequence__c": 4,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "DATEDIFF ( PreviousBilldate , BillDueDate )",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "DATEDIFF",
+                "text": "DATEDIFF"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "PreviousBilldate",
+                "dataType": "Date",
+                "text": "PreviousBilldate",
+                "userDefined": true
+            },
+            {
+                "alias": ",",
+                "text": ","
+            },
+            {
+                "alias": "BillDueDate",
+                "dataType": "Date",
+                "text": "BillDueDate",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "BillingAdjustment-Endorsements",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "BillingAdjustment-Endorsements",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Date",
+                "name": "PreviousBilldate"
+            },
+            {
+                "dataType": "Date",
+                "name": "BillDueDate"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "NumofdaysMode",
+            "dataType": "Number",
+            "name": "NumofdaysMode"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"NumofdaysMode\":\"NumofdaysMode\"}",
+        "%vlocity_namespace%__Sequence__c": 5,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "( NewAnnualpremium / PaymentFrequency ) * ( NumofDaysnewpolicy / NumofdaysMode )",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "NewAnnualpremium",
+                "dataType": "Number",
+                "text": "NewAnnualpremium",
+                "userDefined": true
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "PaymentFrequency",
+                "dataType": "Number",
+                "text": "PaymentFrequency",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "NumofDaysnewpolicy",
+                "dataType": "Number",
+                "text": "NumofDaysnewpolicy",
+                "userDefined": true
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "NumofdaysMode",
+                "dataType": "Number",
+                "text": "NumofdaysMode",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "BillingAdjustment-Endorsements",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "BillingAdjustment-Endorsements",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "NewAnnualpremium"
+            },
+            {
+                "dataType": "Number",
+                "name": "PaymentFrequency"
+            },
+            {
+                "dataType": "Number",
+                "name": "NumofDaysnewpolicy"
+            },
+            {
+                "dataType": "Number",
+                "name": "NumofdaysMode"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "NewPolicyCharges",
+            "dataType": "Number",
+            "name": "NewPolicyCharges"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"NewPolicyCharges\":\"NewPolicyCharges\"}",
+        "%vlocity_namespace%__Sequence__c": 6,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "( OldAnnualPremium / PaymentFrequency ) * ( NumofDaysoldpolicy / NumofdaysMode )",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "OldAnnualPremium",
+                "dataType": "Number",
+                "text": "OldAnnualPremium",
+                "userDefined": true
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "PaymentFrequency",
+                "dataType": "Number",
+                "text": "PaymentFrequency",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "NumofDaysoldpolicy",
+                "dataType": "Number",
+                "text": "NumofDaysoldpolicy",
+                "userDefined": true
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "NumofdaysMode",
+                "dataType": "Number",
+                "text": "NumofdaysMode",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "BillingAdjustment-Endorsements",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "BillingAdjustment-Endorsements",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+            {
+                "alias": "isPreviousMode",
+                "dataType": "Number",
+                "text": "isPreviousMode",
+                "userDefined": true
+            },
+            {
+                "alias": "==",
+                "text": "=="
+            },
+            {
+                "alias": "0",
+                "dataType": "Number",
+                "text": "0"
+            }
+        ],
+        "%vlocity_namespace%__Conditions__c": "isPreviousMode == 0",
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "OldAnnualPremium"
+            },
+            {
+                "dataType": "Number",
+                "name": "PaymentFrequency"
+            },
+            {
+                "dataType": "Number",
+                "name": "NumofDaysoldpolicy"
+            },
+            {
+                "dataType": "Number",
+                "name": "NumofdaysMode"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": true,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "OldpolicyCharges",
+            "dataType": "Number",
+            "name": "OldpolicyCharges"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"OldpolicyCharges\":\"OldpolicyCharges\"}",
+        "%vlocity_namespace%__Sequence__c": 7,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "( OldAnnualPremium / PaymentFrequency ) * ( NumofDaysoldpolicy / NumofdaysMode )",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "OldAnnualPremium",
+                "dataType": "Number",
+                "text": "OldAnnualPremium",
+                "userDefined": true
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "PaymentFrequency",
+                "dataType": "Number",
+                "text": "PaymentFrequency",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "NumofDaysoldpolicy",
+                "dataType": "Number",
+                "text": "NumofDaysoldpolicy",
+                "userDefined": true
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "NumofdaysMode",
+                "dataType": "Number",
+                "text": "NumofdaysMode",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "BillingAdjustment-Endorsements",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "BillingAdjustment-Endorsements",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+            {
+                "alias": "isPreviousMode",
+                "dataType": "Number",
+                "text": "isPreviousMode",
+                "userDefined": true
+            },
+            {
+                "alias": "==",
+                "text": "=="
+            },
+            {
+                "alias": "1",
+                "dataType": "Number",
+                "text": "1"
+            }
+        ],
+        "%vlocity_namespace%__Conditions__c": "isPreviousMode == 1",
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "OldAnnualPremium"
+            },
+            {
+                "dataType": "Number",
+                "name": "PaymentFrequency"
+            },
+            {
+                "dataType": "Number",
+                "name": "NumofDaysoldpolicy"
+            },
+            {
+                "dataType": "Number",
+                "name": "NumofdaysMode"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": true,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "OldPolicyRefund",
+            "dataType": "Number",
+            "name": "OldPolicyRefund"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"OldPolicyRefund\":\"OldPolicyRefund\"}",
+        "%vlocity_namespace%__Sequence__c": 8,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "NewPolicyCharges + OldpolicyCharges + OriginalPastDue",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "NewPolicyCharges",
+                "dataType": "Number",
+                "text": "NewPolicyCharges",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "OldpolicyCharges",
+                "dataType": "Number",
+                "text": "OldpolicyCharges",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "OriginalPastDue",
+                "dataType": "Number",
+                "text": "OriginalPastDue",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "BillingAdjustment-Endorsements",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "BillingAdjustment-Endorsements",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+            {
+                "alias": "isPreviousMode",
+                "dataType": "Number",
+                "text": "isPreviousMode",
+                "userDefined": true
+            },
+            {
+                "alias": "==",
+                "text": "=="
+            },
+            {
+                "alias": "0",
+                "dataType": "Number",
+                "text": "0"
+            }
+        ],
+        "%vlocity_namespace%__Conditions__c": "isPreviousMode == 0",
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "NewPolicyCharges"
+            },
+            {
+                "dataType": "Number",
+                "name": "OldpolicyCharges"
+            },
+            {
+                "dataType": "Number",
+                "name": "OriginalPastDue"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": true,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "NewAmountdue",
+            "dataType": "Number",
+            "name": "NewAmountdue"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"NewAmountdue\":\"NewAmountdue\"}",
+        "%vlocity_namespace%__Sequence__c": 9,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "NewPolicyCharges - OldPolicyRefund + OriginalPastDue",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "NewPolicyCharges",
+                "dataType": "Number",
+                "text": "NewPolicyCharges",
+                "userDefined": true
+            },
+            {
+                "alias": "-",
+                "text": "-"
+            },
+            {
+                "alias": "OldPolicyRefund",
+                "dataType": "Number",
+                "text": "OldPolicyRefund",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "OriginalPastDue",
+                "dataType": "Number",
+                "text": "OriginalPastDue",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "BillingAdjustment-Endorsements",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "BillingAdjustment-Endorsements",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "NewPolicyCharges"
+            },
+            {
+                "dataType": "Number",
+                "name": "OldPolicyRefund"
+            },
+            {
+                "dataType": "Number",
+                "name": "OriginalPastDue"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "NewAmountdue",
+            "dataType": "Number",
+            "name": "NewAmountdue"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"NewAmountdue\":\"NewAmountdue\"}",
+        "%vlocity_namespace%__Sequence__c": 10,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "NewAnnualpremium / PaymentFrequency",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "NewAnnualpremium",
+                "dataType": "Number",
+                "text": "NewAnnualpremium",
+                "userDefined": true
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "PaymentFrequency",
+                "dataType": "Number",
+                "text": "PaymentFrequency",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "BillingAdjustment-Endorsements",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "BillingAdjustment-Endorsements",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/BillingAdjustment-Endorsements",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "NewAnnualpremium"
+            },
+            {
+                "dataType": "Number",
+                "name": "PaymentFrequency"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "NextPaymentDue",
+            "dataType": "Number",
+            "name": "NextPaymentDue"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"NextPaymentDue\":\"NextPaymentDue\"}",
+        "%vlocity_namespace%__Sequence__c": 11,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

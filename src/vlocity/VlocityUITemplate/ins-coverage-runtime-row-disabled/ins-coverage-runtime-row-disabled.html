@@ -1,0 +1,267 @@
+<div ng-init="productRecord = records; currencyCode = productRecord.childProducts.records[0].currencyCode"
+   class="slds-p-left_small slds-border_bottom slds-p-bottom_xx-small">
+   <div class="vloc-attr-row slds-row slds-grid slds-wrap" ng-class="{'slds-m-bottom_small' : record.showMore}"
+      data-card="card-{{cardIndex}}" data-popover-flyout="true"
+      ng-click="$root.config.show = true; importedScope.setAttr(record, cardIndex)">
+      <div class="slds-form-element__control slds-m-horizontal_x-small slds-p-top_large slds-is-absolute">
+         <span class="slds-checkbox" ng-init="record.remove = true">
+            <input ng-disabled="!record.isOptional" type="checkbox" name="add-attrs-{{$index}}"
+               id="add-qli-attrs-{{$index}}" ng-model="record.remove" ng-change="importedScope.removeQLI(record)" />
+            <label class="slds-checkbox__label slds-m-around_none" for="add-qli-attrs-{{$index}}">
+               <span class="slds-checkbox_faux vloc-check"></span>
+            </label>
+         </span>
+      </div>
+      <div class="slds-col slds-grid slds-wrap" ng-init="productRecord.showTaxesCol = (productRecord[$root.nsPrefix + 'TotalFeeAmount__c'] !== undefined ||
+      productRecord[$root.nsPrefix + 'TotalTaxAmount__c'] !== undefined)">
+         <div class=" slds-p-left_x-large slds-small-show vloc-attr-cell slds-size_1-of-3 slds-m-top_x-small"
+            ng-show="key != 'attributes'">
+            <div class="vloc-attr-title-cell slds-truncate slds-text-heading_label slds-m-top-x-small">
+               <div class="vloc-attrs-header-label slds-truncate">
+                   {{ ::importedScope.customLabels.Name }}
+               </div>
+            </div>
+            <div class="vloc-attr-data-cell slds-truncate slds-p-top_xx-small">
+               <span class="slds-truncate" title="{{productRecord.productRecord}}">{{productRecord.productName}}</span>
+            </div>
+         </div>
+         <div class="slds-small-show vloc-attr-cell slds-size_1-of-3 slds-m-top_x-small" ng-show="key != 'attributes'">
+            <div class="vloc-attr-title-cell slds-truncate slds-text-heading_label slds-m-top-x-small">
+               <div class="vloc-attrs-header-label slds-truncate">
+                  {{ ::importedScope.customLabels.InsCoveragesPremium }}
+               </div>
+            </div>
+            <div class="vloc-attr-data-cell slds-truncate slds-p-top_xx-small">
+                {{productRecord.Price | formatCurrency: currencyCode }}
+            </div>
+         </div>
+         <div class="vloc-attr-cell slds-m-top_x-small slds-grid slds-grid_wrap slds-size_1-of-3"
+            ng-show="key != 'attributes'" ng-if="productRecord.showTaxesCol">
+            <div class="slds-size_1-of-3" ng-if="productRecord[$root.nsPrefix + 'TotalTaxAmount__c']">
+               <div class="slds-text-heading_label vloc-attrs-header-label slds-truncate">
+                  {{::importedScope.customLabels.InsProductTax}}
+               </div>
+               <div class="vloc-attr-data-cell slds-truncate slds-p-top_xx-small">
+                  {{productRecord[$root.nsPrefix + 'TotalTaxAmount__c'] | formatCurrency: currencyCode}}
+               </div>
+            </div>
+            <div class="slds-size_1-of-3" ng-if="productRecord[$root.nsPrefix + 'TotalFeeAmount__c']">
+               <div class="slds-text-heading_label vloc-attrs-header-label slds-truncate">
+                  {{::importedScope.customLabels.InsProductFee}}
+               </div>
+               <div class="vloc-attr-data-cell slds-truncate slds-p-top_xx-small">
+                  {{productRecord[$root.nsPrefix + 'TotalFeeAmount__c'] | formatCurrency:  currencyCode}}
+               </div>
+            </div>
+            <div class="slds-size_1-of-3" ng-if="productRecord.showTaxesCol && (productRecord[$root.nsPrefix + 'TotalFeeAmount__c'] || productRecord[$root.nsPrefix + 'TotalTaxAmount__c'])">
+               <div class="slds-text-heading_label vloc-attrs-header-label slds-truncate">
+                  {{::importedScope.customLabels.InsProductTotalPrice}}
+               </div>
+               <div class="vloc-attr-data-cell slds-truncate slds-p-top_xx-small">
+                   {{productRecord[$root.nsPrefix + 'TotalAmount__c'] | formatCurrency: currencyCode}}
+               </div>
+            </div>
+         </div>
+         <div class="vloc-end-row"
+            ng-if="!productRecord.showMore && (productRecord[$root.nsPrefix + 'TotalTaxAmount__c'] === undefined && productRecord[$root.nsPrefix + 'TotalFeeAmount__c'] === undefined)"
+            ng-init="categories = productRecord.attributeCategories.records; showFirstAttr = true"
+            ng-include="'ins-attribute-display.tpl.html'"></div>
+         <div class="slds-no-flex vloc-attr-showmore"
+            ng-if="productRecord.attributeCategories.records[0].productAttributes.records.length > 1 || productRecord.attributeCategories.records.length > 1 ||
+            productRecord[$root.nsPrefix + 'TotalTaxAmount__c'] !== undefined || productRecord[$root.nsPrefix + 'TotalFeeAmount__c'] !== undefined">
+            <button class="slds-button slds-button_link vloc-attr-showmore-btn vloc-show-less"
+               ng-click="productRecord.showMore = !productRecord.showMore">
+               <span ng-if="!productRecord.showMore">{{ ::importedScope.customLabels.InsButtonMore }}</span>
+               <span ng-if="productRecord.showMore">{{ ::importedScope.customLabels.InsButtonLess }}</span></button>
+         </div>
+      </div>
+      <div ng-if="productRecord.showMore" class="vloc-attr-row slds-m-bottom_small slds-size_1-of-1 vloc-left-align"
+         ng-init="categories = productRecord.attributeCategories.records" ng-include="'ins-attribute-display.tpl.html'">
+      </div>
+   </div>
+</div>
+<ul class="slds-accordion" bs-collapse ng-init="importedScope.isOpen = records.childProducts.records[0].Id">
+   <li class="slds-accordion__list-item"
+      ng-repeat="productRecord in records.childProducts.records | orderBy : '-hasCoverages'"
+      ng-if="productRecord[$root.nsPrefix + 'RecordTypeName__c'] === 'CoverageSpec' || productRecord.hasCoverages">
+      <div ng-if="!productRecord.childProducts" class="slds-p-left_small" ng-init="record = productRecord">
+         <div class="vloc-attr-row slds-row" data-popover-flyout="true"
+            ng-click="$root.config.show = true; importedScope.setAttr(record, cardIndex)">
+            <div class="slds-col slds-grid slds-wrap">
+               <div class="slds-form-element__control slds-m-horizontal_x-small slds-p-top_large slds-is-absolute">
+                  <span class="slds-checkbox" ng-init="record.remove = true">
+                     <input ng-disabled="true" type="checkbox" name="add-attrs-{{$index}}" id="add-qli-attrs-{{$index}}"
+                        ng-model="record.remove" ng-change="importedScope.removeQLI(record)" />
+                     <label class="slds-checkbox__label slds-m-around_none" for="add-qli-attrs-{{$index}}">
+                        <span class="slds-checkbox_faux vloc-check"></span>
+                     </label>
+                  </span>
+               </div>
+               <div class="slds-small-show vloc-attr-cell slds-size_1-of-3 slds-m-top_x-small  slds-p-left_x-large"
+                  ng-show="key != 'attributes'">
+                  <div class="vloc-attr-title-cell slds-truncate slds-text-heading_label slds-m-top-x-small">
+                     <div class="vloc-attrs-header-label slds-truncate">
+                        {{ ::importedScope.customLabels.Name }}
+                     </div>
+                  </div>
+                  <div class="vloc-attr-data-cell slds-truncate slds-p-top_xx-small">
+                     {{productRecord.Name}}
+                  </div>
+               </div>
+               <div class="slds-small-show vloc-attr-cell slds-size_1-of-3 slds-m-top_x-small"
+                  ng-show="key != 'attributes'">
+                  <div class="vloc-attr-title-cell slds-truncate slds-text-heading_label slds-m-top-x-small">
+                     <div class="vloc-attrs-header-label slds-truncate">
+                        {{ ::importedScope.customLabels.InsCoveragesPremium }}
+                     </div>
+                  </div>
+                  <div class="vloc-attr-data-cell slds-truncate slds-p-top_xx-small">
+                      {{productRecord[$root.nsPrefix + 'PremiumAmount__c'] | formatCurrency: currencyCode}}
+                  </div>
+               </div>
+               <div class="slds-size_1-of-3 vloc-end-row" ng-if="!record.showMore"
+                  ng-init="categories = record.attributeCategories.records; showFirstAttr = true"
+                  ng-include="'ins-attribute-display.tpl.html'"></div>
+               <div class="slds-no-flex vloc-attr-showmore"
+                  ng-if="record.attributeCategories.records[0].productAttributes.records.length > 1 || record.attributeCategories.records.length > 1">
+                  <button class="slds-button slds-button_link vloc-attr-showmore-btn vloc-show-less"
+                     ng-click="record.showMore = !record.showMore"> <span
+                        ng-if="!record.showMore">{{ ::importedScope.customLabels.InsButtonMore }}</span>
+                     <span ng-if="record.showMore">{{ ::importedScope.customLabels.InsButtonLess }}</span></button>
+               </div>
+            </div>
+            <div ng-if="record.showMore" class="vloc-left-align vloc-attr-row slds-m-bottom_small"
+               ng-init="categories = record.attributeCategories.records" ng-include="'ins-attribute-display.tpl.html'">
+            </div>
+         </div>
+      </div>
+      <div ng-if="productRecord.childProducts">
+         <section class="slds-accordion__section vloc-accordion_section"
+            ng-class="{'slds-is-open' : productRecord.Id === importedScope.isOpen}">
+            <div
+               class="slds-grid slds-grid_wrap slds-accordion__summary vloc-accordion_summary slds-theme_shade slds-p-top_x-small slds-p-bottom_x-small"
+               ng-click="importedScope.isOpen === productRecord.Id ? importedScope.isOpen = null :importedScope.isOpen = productRecord.Id;"
+               bs-collapse-toggle>
+               <h3 class="slds-p-left_small slds-text-heading_small slds-accordion__summary-heading slds-size_1-of-3"
+                  ng-class="{'slds-p-left_medium' : !productRecord.childProducts.records}">
+                  <button aria-controls="accordion-details-01" aria-expanded="true"
+                     class="slds-button slds-button_reset slds-accordion__summary-action">
+                     <slds-button-svg-icon sprite="'utility'" icon="'chevrondown'"
+                        ng-if="productRecord.childProducts.records"
+                        extra-classes="'slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left'">
+                     </slds-button-svg-icon>
+                     <span ng-if="productRecord.lineRecordType !== 'CoverageSpec'" class="slds-truncate"
+                        title="{{productRecord['ItemName__c']}}">{{productRecord[$root.nsPrefix + 'ItemName__c']}}</span>{{productRecord.Name}}
+                     <span ng-if="productRecord.lineRecordType === 'CoverageSpec'" class="slds-truncate"
+                        title="{{productRecord.productName}}">{{productRecord.productName}}</span>
+                  </button>
+               </h3>
+               <div class="slds-p-right_small slds-size_1-of-3">
+                  <div class="slds-text-heading_label">{{ ::importedScope.customLabels.InsCoveragesPremium }}</div>
+                  <div>
+                     {{productRecord[$root.nsPrefix + 'PremiumAmount__c'] | formatCurrency: currencyCode}}
+                  </div>
+               </div>
+               <div class="slds-m-right_small slds-size_1-of-3 slds-grid slds-grid_wrap">
+                  <div class="slds-size_1-of-3 slds-truncate"
+                     ng-if="productRecord[$root.nsPrefix + 'TaxAmount__c'] !== undefined">
+                     <div class="slds-text-heading_label">{{::importedScope.customLabels.InsProductTax}}</div>
+                     <div>{{productRecord[$root.nsPrefix + 'TaxAmount__c'] | formatCurrency:  currencyCode}}
+                     </div>
+                  </div>
+                  <div class="slds-size_1-of-3 slds-truncate"
+                     ng-if="productRecord[$root.nsPrefix + 'FeeAmount__c'] !== undefined">
+                     <div class="slds-text-heading_label">{{::importedScope.customLabels.InsProductFee}}</div>
+                     <div>{{ productRecord[$root.nsPrefix + 'FeeAmount__c'] | formatCurrency: currencyCode}}
+                     </div>
+                  </div>
+                  <div class="slds-m-right_small slds-size_1-of-3 slds-truncate"
+                     ng-if="productRecord[$root.nsPrefix + 'FeeAmount__c'] !== undefined || productRecord[$root.nsPrefix + 'TaxAmount__c'] !== undefined">
+                     <div class="slds-text-heading_label">{{::importedScope.customLabels.InsProductTotalPrice}}</div>
+                     <div>
+                         {{productRecord[$root.nsPrefix + 'FeeAmount__c'] + productRecord[$root.nsPrefix + 'TaxAmount__c'] + productRecord[$root.nsPrefix + 'PremiumAmount__c'] | formatCurrency:  currencyCode}}
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div aria-hidden="false" bs-collapse-target ins-collapse-calc-height class="slds-accordion__content" 
+               ng-class="{'overflow-unset': productRecord.Id === importedScope.isOpen}" id="accordion-details-$index"
+               ng-init="importedScope.setIndex(productRecord.childProducts.records); importedScope.quoteId = params.id">
+               <div class="vloc-attr-row slds-row"
+                  ng-class="{'slds-border_top' : $index !== 0, 'slds-m-bottom_small' : record.showMore}"
+                  data-card="card-{{cardIndex}}" data-popover-flyout="true"
+                  ng-click="$root.config.show = true; importedScope.setAttr(record, cardIndex)"
+                  ng-repeat="record in productRecord.childProducts.records" ins-rules-product="record"
+                  ng-if="record[$root.nsPrefix + 'RecordTypeName__c'] === 'CoverageSpec'">
+                  <div class="slds-col slds-grid slds-wrap">
+                     <div
+                        class="slds-form-element__control slds-m-horizontal_x-small slds-p-top_large slds-is-absolute">
+                        <span class="slds-checkbox" ng-init="record.remove = true">
+                           <input ng-disabled="true" type="checkbox" name="add-attrs-{{$index}}"
+                              id="add-qli-attrs-{{$index}}" ng-model="record.remove"
+                              ng-change="importedScope.removeQLI(record)" />
+                           <label class="slds-checkbox__label slds-m-around_none" for="add-qli-attrs-{{$index}}">
+                              <span class="slds-checkbox_faux vloc-check"></span>
+                           </label>
+                        </span>
+                     </div>
+                     <div class="slds-small-show vloc-attr-cell slds-size_1-of-3 slds-m-top_x-small"
+                        ng-repeat="field in data.fields" ng-show="key != 'attributes'"
+                        ng-class="{'slds-p-left_x-large' : $index === 0}">
+                        <div class="vloc-attr-title-cell slds-truncate slds-text-heading_label slds-m-top-x-small"
+                           title="{{field.label}}">
+                           <div class="vloc-attrs-header-label slds-truncate">
+                              <span ng-if="field.label === 'Name'">{{::importedScope.customLabels.Name}}</span>
+                              <span
+                                 ng-if="field.label === 'Premium'">{{::importedScope.customLabels.InsCoveragesPremium}}</span>
+                              <span ng-if="field.label !== 'Premium' && field.label !== 'Name'">{{field.label}}</span>
+                           </div>
+                        </div>
+                        <div class="vloc-attr-data-cell slds-truncate slds-p-top_xx-small">
+                           <span class="vloc-attr-index" ng-if="$index === 0"> {{record.index}} </span>
+                           <span ng-if="field.label !== 'Value' && field.type !== 'BOOLEAN' && field.type !== 'currency'">
+                              {{record | getter: field | picker: field.type }}
+                           </span>
+                           <span ng-if="field.type === 'currency'">
+                              {{record | getter: field | formatCurrency: currencyCode}}
+                           </span>
+                           <span ng-if="field.label === 'Value'">
+                              <span ng-if="record.valueType !== 'percent'">
+                                 {{record | getter: field | picker: record.valueType}}</span>
+                              <span ng-if="importedScope.row.valueType === 'percent'">
+                                 {{record[$root.nsPrefix + 'Value__c']}}<span
+                                    ng-if="importedScope.row[$root.nsPrefix + 'Value__c']">%</span></span>
+                           </span>
+                           <div class="slds-form-element__control slds-text-align_left slds-text-align_center"
+                              ng-if="field.type === 'BOOLEAN'">
+                              <span class="slds-checkbox">
+                                 <input type="checkbox" name="checkbox-attrs-{{$index}}" id="checkbox-attrs-{{$index}}"
+                                    ng-disabled="true" ng-model="record[field.name]" />
+                                 <label class="slds-checkbox__label slds-m-around_none" for="checkbox-attrs-{{$index}}">
+                                    <span class="slds-checkbox_faux vloc-check"></span>
+                                 </label>
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slds-size_1-of-3 vloc-end-row" ng-if="!record.showMore"
+                        ng-init="categories = record.attributeCategories.records; showFirstAttr = true"
+                        ng-include="'ins-attribute-display.tpl.html'"></div>
+                     <div class="slds-no-flex vloc-attr-showmore"
+                        ng-if="record.attributeCategories.records[0].productAttributes.records.length > 1 || record.attributeCategories.records.length > 1">
+                        <button class="slds-button slds-button_link vloc-attr-showmore-btn vloc-show-less"
+                           ng-click="record.showMore = !record.showMore"><span
+                              ng-if="!record.showMore">{{ ::importedScope.customLabels.InsButtonMore }}</span>
+                           <span
+                              ng-if="record.showMore">{{ ::importedScope.customLabels.InsButtonLess }}</span></button>
+                     </div>
+                  </div>
+                  <div ng-if="record.showMore" class="vloc-left-align vloc-attr-row slds-m-bottom_small"
+                     ng-init="categories = record.attributeCategories.records"
+                     ng-include="'ins-attribute-display.tpl.html'"></div>
+               </div>
+            </div>
+         </section>
+      </div>
+   </li>
+</ul>

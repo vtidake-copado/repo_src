@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <email>whassan@vlocity.com</email>
+    <name>Article Export</name>
+    <queueMembers>
+        <users>
+            <user>traininginscpq.bhliur6pk8ld.o2ggjnojmxvj@vlocityapps.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>KnowledgeArticleVersion</sobjectType>
+    </queueSobject>
+</Queue>

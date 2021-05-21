@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ApexSettings xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <enableAggregateCodeCoverageOnly>false</enableAggregateCodeCoverageOnly>
-    <enableApexAccessRightsPref>true</enableApexAccessRightsPref>
+    <enableApexAccessRightsPref>false</enableApexAccessRightsPref>
     <enableApexApprovalLockUnlock>false</enableApexApprovalLockUnlock>
     <enableApexCtrlImplicitWithSharingPref>false</enableApexCtrlImplicitWithSharingPref>
     <enableApexPropertyGetterPref>false</enableApexPropertyGetterPref>
@@ -13,7 +13,7 @@
     <enableDisableParallelApexTesting>false</enableDisableParallelApexTesting>
     <enableDoNotEmailDebugLog>false</enableDoNotEmailDebugLog>
     <enableGaplessTestAutoNum>true</enableGaplessTestAutoNum>
-    <enableMngdCtrlActionAccessPref>true</enableMngdCtrlActionAccessPref>
+    <enableMngdCtrlActionAccessPref>false</enableMngdCtrlActionAccessPref>
     <enableNonCertifiedApexMdCrud>false</enableNonCertifiedApexMdCrud>
     <enableSecureNoArgConstructorPref>false</enableSecureNoArgConstructorPref>
 </ApexSettings>

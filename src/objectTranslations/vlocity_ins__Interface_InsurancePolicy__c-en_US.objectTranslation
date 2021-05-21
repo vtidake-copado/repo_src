@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Accumulation Value --></label>
+        <name>vlocity_ins__AccumulationValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Premium --></label>
+        <name>vlocity_ins__AnnualPremium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Submit Date --></label>
+        <name>vlocity_ins__ApplicationSubmitDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Automatic Rebalancing --></label>
+        <name>vlocity_ins__AutomaticRebalancing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Method --></label>
+        <name>vlocity_ins__BillingMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Surrender Value --></label>
+        <name>vlocity_ins__CashSurrenderValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Value --></label>
+        <name>vlocity_ins__CashValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Death Benefit --></label>
+        <name>vlocity_ins__ContractDeathBenefit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Living Benefit --></label>
+        <name>vlocity_ins__ContractLivingBenefit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Basis --></label>
+        <name>vlocity_ins__CostBasis__c</name>
+    </fields>
+    <fields>
+        <label><!-- DRBundleName --></label>
+        <name>vlocity_ins__DRBundleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- DR Error --></label>
+        <name>vlocity_ins__DRError__c</name>
+    </fields>
+    <fields>
+        <label><!-- DR Progress --></label>
+        <name>vlocity_ins__DRProgressData__c</name>
+    </fields>
+    <fields>
+        <label><!-- DR Status --></label>
+        <name>vlocity_ins__DRStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Death Benefit --></label>
+        <name>vlocity_ins__DeathBenefit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>vlocity_ins__EffectiveDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>vlocity_ins__ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Face Amount --></label>
+        <name>vlocity_ins__FaceAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guaranteed Death Benefit --></label>
+        <name>vlocity_ins__GuaranteedDeathBenefit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inception Date --></label>
+        <name>vlocity_ins__InceptionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurer --></label>
+        <name>vlocity_ins__Insurer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Claim Count --></label>
+        <name>vlocity_ins__OpenClaimCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy Jurisdiction --></label>
+        <name>vlocity_ins__PolicyJurisdiction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy Number --></label>
+        <name>vlocity_ins__PolicyNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy Status --></label>
+        <name>vlocity_ins__PolicyStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy Type --></label>
+        <name>vlocity_ins__PolicyType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy Holder Account Id --></label>
+        <name>vlocity_ins__PolicyholderAccountId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Qualified Type --></label>
+        <name>vlocity_ins__QualifiedType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type --></label>
+        <name>vlocity_ins__RecordType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Party Beneficiary Percentage --></label>
+        <name>vlocity_ins__RelatedPartyBeneficiaryPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Party Commission Percentage --></label>
+        <name>vlocity_ins__RelatedPartyCommissionPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Party Id --></label>
+        <name>vlocity_ins__RelatedPartyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Party Name --></label>
+        <name>vlocity_ins__RelatedPartyName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Party Percentage --></label>
+        <name>vlocity_ins__RelatedPartyPercentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Party Relationship To Insured --></label>
+        <name>vlocity_ins__RelatedPartyRelationshipToInsured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Party Role --></label>
+        <name>vlocity_ins__RelatedPartyRole__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term --></label>
+        <name>vlocity_ins__Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Premium For Term --></label>
+        <name>vlocity_ins__TotalPremiumForTerm__c</name>
+    </fields>
+</CustomObjectTranslation>

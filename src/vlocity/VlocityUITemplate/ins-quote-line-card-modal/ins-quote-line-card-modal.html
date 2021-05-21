@@ -1,0 +1,35 @@
+<div class="slds-size_1-of-1 slds-grid slds-wrap slds-border_bottom">
+ <div class="slds-truncate slds-size_1-of-8 slds-border_right slds-text-align_center slds-p-vertical_x-small slds-text-title_caps vloc-card-checkbox-container" data-label="Is Selected">
+        <div class="slds-truncate" title="Cloudhub">
+            Selected
+        </div>
+    </div>
+     <div class="slds-size_3-of-8 slds-text-align_center  slds-border_right slds-p-vertical_x-small slds-text-title_caps">
+        Class Name
+     </div>
+     <div class="slds-size_3-of-8 slds-text-align_center  slds-p-vertical_x-small slds-text-title_caps">
+        Class Code
+     </div>
+</div>
+<div class="slds-size_1-of-1 slds-grid slds-wrap slds-border_bottom vloc-card-modal-row" ng-repeat="record in records.records | orderBy : '-isSelected'" ng-class="{'slds-theme_shade':record.isSelected}">
+    <div class="slds-truncate slds-size_1-of-8 slds-border_right slds-p-vertical_xx-small vloc-card-checkbox-container" data-label="Is Selected">
+        <div class="slds-truncate" title="Cloudhub">
+           <span class="slds-checkbox vloc-checkbox slds-m-top_x-small">
+        <input type="checkbox" name="opt-{{$index}}" id="opt-{{$index}}" ng-model="record.isSelected" value="{{record.isSelected}}"/>
+    <label class="slds-checkbox__label slds-m-around_none" for="opt-{{$index}}">
+        <span class="slds-checkbox_faux vloc-check"></span>
+    </label>
+        </span>
+        </div>
+    </div>
+     <div class="slds-size_3-of-8 slds-p-left_small slds-border_right slds-p-vertical_xx-small" data-label="Close Date">
+        <div class="slds-truncate vloc-class-name" title="{{record.Name}}">
+            {{record.Name}}
+        </div>
+     </div>
+     <div class="slds-size_3-of-8 slds-p-left_small slds-p-vertical_xx-small">
+          <div class="slds-truncate vloc-class-name" title="{{record[$root.nsPrefix + 'ClassCode__c']}}">
+            {{record[$root.nsPrefix + 'ClassCode__c']}}
+        </div>
+     </div>
+</div>

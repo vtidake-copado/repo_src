@@ -146,7 +146,7 @@
     <listViews>
         <fullName>All_AuthorizationFormDataUses</fullName>
         <filterScope>Everything</filterScope>
-        <label>Todos los Usos de datos de formularios de autorización</label>
+        <label>All Authorization Form Data Uses</label>
     </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>AuthorizationForm</customTabListAdditionalFields>

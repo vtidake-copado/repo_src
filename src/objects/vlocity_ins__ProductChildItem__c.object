@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Represents relationships between parent insurance products (such as plan types and policy types) and its child component specifications including coverages, insured parties and insured items. When insurance products are quoted, the child items are automatically added to the cart. Child object of Product (Product2).</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>vlocity_ins__GetPolicyDetailsFields</fullName>
+        <description>For Policy details JSON</description>
+        <displayedFields>
+            <field>Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__ChildProductId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__PricingFormula__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__PricingSource__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__ParentProductId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>vlocity_ins__SubParentSpecId__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>GetPolicyDetailsFields</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>vlocity_ins__ProductStructure</fullName>
+        <description>Product Structure page</description>
+        <displayedFields>
+            <field>vlocity_ins__MinMaxDefaultQty__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Product Structure</label>
+    </fieldSets>
+    <fields>
+        <fullName>vlocity_ins__AllowIndependentLifeCycle__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Identifies child items and its hierarchy (if any) whose asset lifecycle can be managed independently from the root level offer.</description>
+        <externalId>false</externalId>
+        <label>Allow Independent Life Cycle</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ChildLineNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sequence</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ChildProductId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Child Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Product Child Items (Child)</relationshipLabel>
+        <relationshipName>ProductChildItemsChild</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ChildRecordType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>vlocity_ins__ChildProductId__r.RecordType.DeveloperName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Child Record Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__CollapseHierarchy__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field will be used to identify if the child products below this level should be collapsed or expanded.</description>
+        <externalId>false</externalId>
+        <label>Collapse Hierarchy</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__CoverageCalculationFormula__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Coverage Calculation Formula</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DefaultSelectedCriteriaComments__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Default Selected Criteria Comments</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DefaultSelectedCriteria__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Default Selected Criteria</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__EligibilityCriteriaComments__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Eligibility Criteria Comments</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__EligibilityCriteria__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>EligibilityCriteria</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__GlobalKey__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The globally unique identifier of this Product Child Item. Used to identify the Product Child Item across Salesforce instances and potentially within other systems. Vlocity uses a UUID as described in http://en.wikipedia.org/wiki/Universally_unique_identifier, but when migrated from other initiating systems, any globally unique Product Child Item identifier can be used.</description>
+        <externalId>true</externalId>
+        <label>Global Key</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsOptional__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Optional</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsOverride__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Is Override</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsRootProductChildItem__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field will be used to identify the root product child item record.
+Only one will be allowed for each root product.</description>
+        <externalId>false</externalId>
+        <label>Is Root Product Child Item</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__IsVirtualItem__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Virtual Item</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__MaxQuantity__c</fullName>
+        <defaultValue>99999</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Maximum quantity for this product in the line item</description>
+        <externalId>false</externalId>
+        <label>Max Quantity</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__MaximumChildItemQuantity__c</fullName>
+        <defaultValue>99999</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Max Children Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__MinMaxDefaultQty__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>TEXT(vlocity_ins__MinQuantity__c) &amp; &quot;, &quot; &amp; TEXT(vlocity_ins__MaxQuantity__c) &amp; &quot;, &quot; &amp; TEXT(vlocity_ins__Quantity__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Min, Max, Default</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__MinQuantity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Minimum quantity for this product in the line item.</description>
+        <externalId>false</externalId>
+        <label>Min Quantity</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__MinimumChildItemQuantity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Min Children Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ParentProductId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Parent Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Product Child Items</relationshipLabel>
+        <relationshipName>ProductChildItems</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PricingFormula__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pricing Formula</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PricingSource__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pricing Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Quantity__c</fullName>
+        <defaultValue>1</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Default Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RelationshipType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>RelationshipType</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Child</fullName>
+                    <default>true</default>
+                    <label>Child</label>
+                </value>
+                <value>
+                    <fullName>Realization</fullName>
+                    <default>false</default>
+                    <label>Realization</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RequiredCriteriaComments__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Required Criteria Comments</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RequiredCriteria__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Required Criteria</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SelectValidationCriteria__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Select Validation Criteria</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SelectValidationMessage__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Select Validation Message</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SelectionMethodImplementation__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Selection Method Implementation</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SeqNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>VALUE(vlocity_ins__ChildLineNumber__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SeqNumber</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__SubParentSpecId__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sub Parent Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Product Child Items (Sub Parent Product)</relationshipLabel>
+        <relationshipName>ProductChildItems_subParent</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__TotalCoverageCalculationFormula__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Total Coverage Calculation Formula</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>Product Child Item</label>
+    <listViews>
+        <fullName>vlocity_ins__All</fullName>
+        <columns>NAME</columns>
+        <columns>vlocity_ins__ParentProductId__c</columns>
+        <columns>vlocity_ins__GlobalKey__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Product Child Items</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>vlocity_ins__ChildProductNonAssetizeRule</fullName>
+        <active>true</active>
+        <description>Non Assetizable Product can only have Non Assetizable children</description>
+        <errorConditionFormula>(vlocity_ins__ParentProductId__r.vlocity_ins__IsNotAssetizable__c &amp;&amp;  !vlocity_ins__ChildProductId__r.vlocity_ins__IsNotAssetizable__c )</errorConditionFormula>
+        <errorMessage>Cannot add Assetizable Child Product to a Non Assetizable Parent Product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>vlocity_ins__Default_greater_than_0</fullName>
+        <active>true</active>
+        <errorConditionFormula>vlocity_ins__Quantity__c  &lt;  0</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__Quantity__c</errorDisplayField>
+        <errorMessage>Default Quantity should be greater than or equal to 0</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>vlocity_ins__Default_greater_than_Min</fullName>
+        <active>true</active>
+        <errorConditionFormula>vlocity_ins__MinQuantity__c  &gt;  vlocity_ins__Quantity__c</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__Quantity__c</errorDisplayField>
+        <errorMessage>Default Quantity must be greater than or equal to Min Quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>vlocity_ins__Default_less_than_Max</fullName>
+        <active>true</active>
+        <errorConditionFormula>vlocity_ins__Quantity__c  &gt;  vlocity_ins__MaxQuantity__c</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__Quantity__c</errorDisplayField>
+        <errorMessage>Default Quantity must be less than or equal to Max Quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>vlocity_ins__Max_greater_than_0</fullName>
+        <active>true</active>
+        <errorConditionFormula>vlocity_ins__MaxQuantity__c  &lt;  0</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__MaxQuantity__c</errorDisplayField>
+        <errorMessage>Max Quantity should be greater than or equal to 0</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>vlocity_ins__Max_less_than_Min</fullName>
+        <active>true</active>
+        <errorConditionFormula>vlocity_ins__MaxQuantity__c  &lt;  vlocity_ins__MinQuantity__c</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__MaxQuantity__c</errorDisplayField>
+        <errorMessage>Max Quantity must be greater than or equal to Min Quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>vlocity_ins__Min_child_greater_than_Max_child_item</fullName>
+        <active>true</active>
+        <errorConditionFormula>vlocity_ins__MinimumChildItemQuantity__c &gt;  vlocity_ins__MaximumChildItemQuantity__c</errorConditionFormula>
+        <errorMessage>Min Children Quantity must be less than or equal to Max Children Quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>vlocity_ins__Min_greater_than_0</fullName>
+        <active>true</active>
+        <errorConditionFormula>vlocity_ins__MinQuantity__c  &lt;  0</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__MinQuantity__c</errorDisplayField>
+        <errorMessage>Min Quantity should be greater than or equal to 0</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>vlocity_ins__Min_greater_than_Max</fullName>
+        <active>true</active>
+        <errorConditionFormula>vlocity_ins__MinQuantity__c  &gt;  vlocity_ins__MaxQuantity__c</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__MinQuantity__c</errorDisplayField>
+        <errorMessage>Min Quantity must be less than or equal to Max Quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>vlocity_ins__ParentProduct_cannot_be_ChildProduct</fullName>
+        <active>true</active>
+        <errorConditionFormula>vlocity_ins__ParentProductId__c == vlocity_ins__ChildProductId__c</errorConditionFormula>
+        <errorDisplayField>vlocity_ins__ChildProductId__c</errorDisplayField>
+        <errorMessage>Parent Product cannot be added as Child Product</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

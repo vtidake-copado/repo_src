@@ -1,0 +1,69 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Vision",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Test Labs/Vision/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "Vision",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Test Labs/Vision/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "visionPage",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Test Labs/Vision/English/visionPage",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "visionPage",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "ins-os-small-group-plan-selection",
+        "accessibleInFutureSteps": false,
+        "dataJSON": true,
+        "disOnTplt": false,
+        "itemsKey": "recSet",
+        "label": null,
+        "maxCompareSize": 4,
+        "modalConfigurationSetting": {
+            "modalController": "ModalProductCtrl",
+            "modalHTMLTemplateId": "vlcProductConfig.html",
+            "modalSize": "lg"
+        },
+        "modalController": "ModalInstanceCtrl",
+        "modalHTMLTemplateId": "ins-os-plan-compare-modal",
+        "modalSize": "lg",
+        "postTransformBundle": "transformVisionPlans",
+        "preTransformBundle": "",
+        "remoteClass": "InsProductService",
+        "remoteMethod": "getRatedProducts",
+        "remoteOptions": {
+            "aggByKey": "ProductCode",
+            "censusId": "%censusId%",
+            "effectiveDate": "%effectiveDate%",
+            "filters": "%vlocity_namespace%__Type__c:Vision,%vlocity_namespace%__MarketSegment__c:Small Group,Family:Other",
+            "includeFilterAttrValues": true,
+            "includeRawCalculationResult": true,
+            "pageSize": 6,
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "productCategory": "Vision"
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "VisionPlans",
+        "responseJSONPath": "result",
+        "selectMode": "Multi",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Selectable Items",
+    "Name": "VisionPlans",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Test Labs/Vision/English/VisionPlans"
+}

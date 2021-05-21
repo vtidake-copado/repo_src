@@ -1,0 +1,57 @@
+{
+    "dataSource": {
+        "type": null,
+        "value": {
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "name": "Product Model Insured Item",
+            "placeholderExpand": true,
+            "placeholders": [
+                {
+                    "collapse": true,
+                    "editing": false,
+                    "label": "['LastModifiedDate']['fieldLabel']",
+                    "name": "LastModifiedDate",
+                    "type": "string",
+                    "value": "['LastModifiedDate']['fieldValue']"
+                },
+                {
+                    "collapse": true,
+                    "editing": false,
+                    "label": "Image",
+                    "name": "Image",
+                    "type": "string",
+                    "value": "['%vlocity_namespace%__Image__c']['fieldValue']"
+                },
+                {
+                    "collapse": true,
+                    "editing": false,
+                    "label": "Product Name",
+                    "name": "productName",
+                    "type": "string",
+                    "value": "['%vlocity_namespace%__ItemName__c']['fieldValue']"
+                }
+            ],
+            "templateUrl": "ins-product-model-insured-item"
+        }
+    ],
+    "title": "Product Model Insured Items"
+}

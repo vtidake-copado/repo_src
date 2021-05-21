@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Action Date --></label>
+        <name>vlocity_ins__ActionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency Identifier --></label>
+        <name>vlocity_ins__AgencyIdentifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>vlocity_ins__ContactId__c</name>
+        <relationshipLabel><!-- Contact Regulatory Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Entry Date --></label>
+        <name>vlocity_ins__EntryDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inception Code --></label>
+        <name>vlocity_ins__InceptionCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jurisdiction --></label>
+        <name>vlocity_ins__JurisdictionId__c</name>
+        <relationshipLabel><!-- Contact Regulatory Actions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Penalty Amount --></label>
+        <name>vlocity_ins__PenaltyAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period Duration --></label>
+        <name>vlocity_ins__PeriodDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period Start --></label>
+        <name>vlocity_ins__PeriodStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason Description --></label>
+        <name>vlocity_ins__ReasonDescription__c</name>
+    </fields>
+</CustomObjectTranslation>

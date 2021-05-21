@@ -1,0 +1,135 @@
+<div class="vloc-ins-selectable-item-outer-container" ng-if="control.vlcSI[control.itemsKey]">
+    <div ng-if="!control.vlcSI[control.itemsKey][0].$$hashKey || (!baseCtrl.$scope.insPsControlRef || !baseCtrl.$scope.insPsControlRef[control.name])" ng-init="baseCtrl.setSelectedProductSelectionProducts(control)"></div>
+    <div class="vloc-ins-selectable-item-container" ng-controller="insOsProductSelectionCtrl" ng-class="{'vloc-ins-enrollment-skin': enrollmentFlow}">
+        <p class="slds-size--1-of-1 slds-text-align--center nds-size--1-of-1 nds-text-align--center vloc-ins-selected-product vloc-mobile-show" ng-if="selectedProduct && !enrollmentFlow">
+            (Selected: <span class="vloc-ins-selected-product-strong">{{selectedProduct.Name}}</span>)
+        </p>
+        <div class="slds-box slds-grid slds-theme--shade slds-m-bottom--medium nds-box nds-grid nds-theme--shade nds-m-bottom--medium vloc-ins-selectable-item-pagination-container" ng-if="currentProducts.length && (pageSize < control.vlcSI[control.itemsKey].length) && usePagination">
+            <button class="slds-button slds-button--neutral slds-max-small-size--1-of-3 slds-size--1-of-8 nds-button nds-button--neutral nds-max-small-size--1-of-3 nds-size--1-of-8" ng-disabled="!showPageControl('prev')" ng-click="paginateItems('prev')" title="Previous {{pageSize}} Products">
+                <slds-button-svg-icon size="'small'" sprite="'utility'" icon="'back'" extra-classes="'slds-button__icon--left nds-button__icon--left'"></slds-button-svg-icon>
+            </button>
+            <p class="slds-text-align--center slds-max-small-size--1-of-3 nds-text-align--center nds-max-small-size--1-of-3 vloc-mobile-show vloc-mobile-page-count">{{currentProducts[0].originalIndex + 1}} of {{control.vlcSI[control.itemsKey].length}}</p>
+            <p class="slds-size--6-of-8 slds-text-align--center nds-size--6-of-8 nds-text-align--center vloc-ins-selected-product vloc-mobile-hide">
+                <span class="slds-m-right--small nds-m-right--small"><span class="vloc-ins-selected-product-strong">{{control.vlcSI[control.itemsKey].length}}</span> Total Products</span>
+                <span ng-if="selectedProduct">(Selected: <span class="vloc-ins-selected-product-strong">{{selectedProduct.Name}})</span></span>
+            </p>
+            <button class="slds-button slds-button--neutral slds-max-small-size--1-of-3 slds-size--1-of-8 nds-button nds-button--neutral nds-max-small-size--1-of-3 nds-size--1-of-8" ng-disabled="!showPageControl('next')" ng-click="paginateItems('next')" title="Next Products">
+                <slds-button-svg-icon size="'small'" sprite="'utility'" icon="'forward'" extra-classes="'slds-button__icon--right nds-button__icon--right'"></slds-button-svg-icon>
+            </button>
+        </div>
+        <div class="slds-text-align--center slds-p-bottom--small nds-text-align--center nds-p-bottom--small vloc-ins-selectable-item-enrollment-top" ng-if="enrollmentFlow">
+            <div class="slds-grid slds-m-bottom--small nds-grid nds-m-bottom--small" ng-if="enrollmentRateBands.selectValues.length">
+                <label class="slds-size--1-of-2 slds-text-align--right slds-p-right--small nds-size--1-of-2 nds-text-align--right nds-p-right--small vloc-ins-selectable-item-enrollment-top-label" for="include-coverage-select">Include coverage for: </label>
+                <div class="slds-form-element slds-size--1-of-2 slds-p-right--large nds-form-element nds-size--1-of-2 nds-p-right--large vloc-ins-selectable-item-enrollment-top-form-element">
+                    <div class="slds-form-element__control nds-form-element__control">
+                        <div class="slds-select_container nds-select_container">
+                            <select id="include-coverage-select" class="slds-select nds-select" ng-model="enrollmentRateBands.chosen" ng-options="value.value as value.label for value in enrollmentRateBands.selectValues | orderBy: 'sequence'" ng-change="changeRateBand()"></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-grid nds-grid vloc-ins-selectable-item-inner-container" ng-class="{'has-similar-flag': enrollmentFlow}">
+            <div ng-class="getSelectableItemClass(product, $index)" class="slds-col nds-col vloc-ins-selectable-item" ng-click="addSelectedProduct($event, control, product)" vloc-slds-added="{{control.vlcSI[control.itemsKey][product.originalIndex].vlcSelected}}" vloc-slds-prod-desc="{{control.vlcSI[control.itemsKey][product.originalIndex].Description}}" ng-repeat="product in currentProducts track by $index" ins-rules-evaluate ins-rules-product="product" ng-if="currentProducts.length">
+                <div class="vloc-ins-selectable-item-inner-wrapper">
+                    <div class="vloc-ins-selectable-item-selected" ng-class="{'active': control.vlcSI[control.itemsKey][product.originalIndex].vlcSelected}" ng-if="!enrollmentFlow">
+                        <slds-svg-icon sprite="'utility'" icon="'check'" size="'small'"></slds-svg-icon>
+                    </div>
+                    <div class="vloc-ins-selectable-item-similar-plan-container" ng-if="product.similarToLastYear">
+                        <div class="vloc-ins-selectable-item-similar-plan">
+                            <span class="vloc-ins-selectable-item-similar-plan-label">Similar to last year's plan</span>
+                            <div class="vloc-ins-selectable-item-similar-plan-triangle-pointing-down"></div>
+                        </div>
+                    </div>
+                    <div class="vloc-ins-selectable-item-image" ng-if="enrollmentFlow" ng-class="{'is-custom-image': product.ImageId}">
+                        <img ng-src="{{instanceHost + product.ImageId}}" class="vloc-ins-selectable-custom-image" ng-if="product.ImageId" />
+                        <span class="slds-icon_container nds-icon_container vloc-ins-selectable-item-image-fallback" ng-if="!product.ImageId">
+                            <slds-svg-icon sprite="'custom'" size="'large'" icon="'custom91'"></slds-svg-icon>
+                            <span class="slds-assistive-text nds-assistive-text">Default Icon</span>
+                        </span>
+                    </div>
+                    <div class="vloc-ins-selectable-item-top">
+                        <div class="vloc-ins-selectable-item-price" ng-if="!enrollmentFlow">{{product.Price | currency: currencyCode: 0}}</div>
+                        <h2 class="vloc-ins-selectable-item-name">{{product.Name}}</h2>
+                        <h4 class="slds-truncate nds-truncate vloc-ins-selectable-item-description" ng-if="enrollmentFlow">{{product.Description}}</h4>
+                    </div>
+                    <div class="slds-clearfix nds-clearfix vloc-ins-selectable-item-middle" ng-repeat="attribute in parentAttrs[product.ProductCode]" ng-if="attribute.label && attribute.valueLabel !== null && attribute.valueLabel !== undefined && !attribute.hiddenByRule && attribute.inputType !== 'equalizer'" ng-class="getParentAttributeClass(attribute, $index)" ng-hide="attribute.hidden">
+                        <span class="vloc-ins-selectable-item-parent-attribute-label" ng-if="!enrollmentFlow">{{attribute.label}}</span>
+                        <span class="vloc-ins-selectable-item-parent-attribute-value" ng-if="checkAttrValueLabel(attribute).showRegular && attribute.dataType !== 'currency' && attribute.dataType !== 'percentage' && !attribute.valueHiddenByRule">{{attribute.valueLabel}}</span>
+                        <span class="vloc-ins-selectable-item-parent-attribute-value" ng-if="checkAttrValueLabel(attribute).showRegular && attribute.dataType === 'currency' && !attribute.valueHiddenByRule">{{attribute.valueLabel | currency: currencyCode: 0}}</span>
+                        <span class="vloc-ins-selectable-item-parent-attribute-value" ng-if="checkAttrValueLabel(attribute).showRegular && attribute.dataType === 'percentage' && !attribute.valueHiddenByRule">{{attribute.valueLabel}}%</span>
+                        <span class="vloc-ins-selectable-item-parent-attribute-label" ng-if="enrollmentFlow">{{attribute.label}}</span>
+                        <span class="vloc-ins-selectable-item-parent-attribute-value vloc-ins-selectable-item-parent-attribute-value-icon" ng-if="checkAttrValueLabel(attribute).showCheck && !attribute.valueHiddenByRule">
+                            <slds-svg-icon sprite="'utility'" icon="'check'" size="'small'"></slds-svg-icon>
+                        </span>
+                        <span class="vloc-ins-selectable-item-parent-attribute-value vloc-ins-selectable-item-parent-attribute-value-icon" ng-if="checkAttrValueLabel(attribute).showX && !attribute.valueHiddenByRule">
+                            <slds-svg-icon sprite="'utility'" icon="'close'" size="'small'"></slds-svg-icon>
+                        </span>
+                    </div>
+                    <div class="vloc-ins-selectable-item-bottom" ng-if="enrollmentFlow" ng-class="{'disabled-by-rate-band': product.disabledByRateBand}">
+                        <div class="vloc-ins-enrollment-price-container" ng-hide="product.disabledByRateBand">
+                            <span class="vloc-ins-enrollment-price-price">{{product.Price | currency: currencyCode: 0}}<span class="vloc-ins-enrollment-price-period">/mo</span></span>
+                            <span class="vloc-ins-enrollment-price-label">You pay</span>
+                        </div>
+                        <div class="vloc-ins-enrollment-price-container" ng-show="product.disabledByRateBand">
+                            <span class="vloc-ins-enrollment-price-price">--</span>
+                            <span class="vloc-ins-enrollment-price-label">You pay</span>
+                        </div>
+                        <button class="vloc-ins-enrollment-select-plan-btn"><span ng-if="!product.vlcSelected">Select</span><span ng-if="product.vlcSelected">Selected</span></button>
+                        <div class="slds-form-element slds-m-bottom--small nds-form-element nds-m-bottom--small vloc-ins-selectable-item-compare-container" ng-if="currentProducts.length > 1">
+                            <div class="slds-form-element__control nds-form-element__control">
+                                <span class="slds-checkbox nds-checkbox">
+                                    <input type="checkbox" class="vloc-ins-selectable-item-compare-checkbox-input" name="checkbox-{{product.Id}}" id="checkbox-{{product.Id}}" ng-model="product.vlcCompSelected" ng-click="trackCompareChecks(product)">
+                                    <label class="slds-checkbox__label nds-checkbox__label vloc-ins-selectable-item-compare-checkbox-label-container" for="checkbox-{{product.Id}}">
+                                        <span class="slds-checkbox--faux nds-checkbox--faux vloc-ins-selectable-item-compare-checkbox-faux"></span>
+                                        <span class="slds-form-element__label nds-form-element__label vloc-ins-selectable-item-compare-checkbox-label">Compare</span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="slds-truncate nds-truncate vloc-ins-enrollment-plan-details" ng-click="viewPlanDetails($event, this, control, product)">View full plan details</a>
+                    </div>
+                    <div class="slds-m-top--x-large nds-m-top--x-large vloc-ins-selectable-item-bottom" ng-if="!enrollmentFlow">
+                        <ul class="vloc-ins-selectable-item-coverages">
+                            <li class="vloc-ins-selectable-item-coverage" ng-repeat="child in product.childProducts.records track by $index" ng-show="child.RecordTypeName__c === 'CoverageSpec' || child[baseCtrl.$scope.nsPrefix + 'RecordTypeName__c'] === 'CoverageSpec'" ins-rules-evaluate ins-rules-product="child">
+                                <div class="slds-m-bottom--small nds-m-bottom--small vloc-ins-selectable-item-optional-heading-container" ng-if="child.firstOptional">
+                                    <div class="slds-text-align--left nds-text-align--left vloc-ins-selectable-item-optional-heading">
+                                        <div class="slds-text-heading--small nds-text-heading--small vloc-ins-selectable-item-optional-heading-text">Optional</div>
+                                    </div>
+                                </div>
+                                <div class="slds-border--bottom slds-p-bottom--small slds-m-bottom--small nds-border--bottom nds-p-bottom--small nds-m-bottom--small vloc-ins-selectable-item-coverage-details">
+                                    <div class="slds-clearfix nds-clearfix vloc-ins-selectable-item-coverage-details-wrapper">
+                                        <span class="slds-float--left nds-float--left vloc-ins-selectable-item-coverage-details-limit-label">{{child.Name}}</span>
+                                        <span class="slds-float--right nds-float--right vloc-ins-selectable-item-coverage-details-limit-value" ng-init="getLimitValue(child)" ng-if="!limitValues[child.pciId].hidden && !limitValues[child.pciId].hiddenByRule && !limitValues[child.pciId].valueHiddenByRule" ins-rules-evaluate="limitValues[child.pciId]">
+                                            <span ng-if="limitValues[child.pciId].dataType === 'currency'">{{limitValues[child.pciId].userValues | currency: currencyCode: 0}}</span>
+                                            <span ng-if="limitValues[child.pciId].dataType === 'percent'">{{limitValues[child.pciId].userValues}}%</span>
+                                            <span ng-if="limitValues[child.pciId].dataType !== 'currency' && limitValues[child.pciId].dataType !== 'percent'">
+                                                <span ng-if="limitValues[child.pciId].labelAndValue">{{limitValues[child.pciId].labelAndValue.valueLabel}}</span>
+                                                <span ng-if="!limitValues[child.pciId].labelAndValue">{{limitValues[child.pciId].userValues}}</span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="vloc-ins-selectable-item-coverage-details-categories" ng-repeat="category in child.attributeCategories.records">
+                                        <div ng-repeat="attribute in category.productAttributes.records" ng-init="attribute.labelAndValue = getAttributeData(attribute)" ng-hide="attribute.hidden || attribute.inputType === 'equalizer'">
+                                            <div class="slds-border--top slds-m-left--large slds-m-top--x-small slds-p-top--x-small slds-p-bottom--xxx-small slds-clearfix nds-border--top nds-m-left--large nds-m-top--x-small nds-p-top--x-small nds-p-bottom--xxx-small nds-clearfix vloc-ins-selectable-item-coverage-details-attributes" ng-if="attribute.code.toLowerCase().indexOf('limit') < 0 && attribute.label && !attribute.hiddenByRule" ins-rules-evaluate="attribute">
+                                                <span class="slds-float--left nds-float--left vloc-ins-selectable-item-coverage-details-attributes-label">{{attribute.labelAndValue.label}}</span>
+                                                <span class="slds-float--right nds-float--right vloc-ins-selectable-item-coverage-details-attributes-value" ng-if="!attribute.labelAndValue.valueHiddenByRule">
+                                                    <span ng-if="attribute.dataType === 'currency'">{{attribute.labelAndValue.valueLabel | currency: currencyCode: 0}}</span>
+                                                    <span ng-if="attribute.dataType === 'percent'">{{attribute.labelAndValue.value}}%</span>
+                                                    <span ng-if="attribute.dataType !== 'currency' && attribute.dataType !== 'percent'">{{attribute.labelAndValue.valueLabel}}</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-text-align--center slds-p-top--medium nds-text-align--center nds-p-top--medium vloc-ins-selectable-item-enrollment-bottom" ng-if="enrollmentFlow">
+            <button class="slds-button slds-button--brand nds-button nds-button--brand vloc-ins-selectable-item-compare-btn" ng-click="insPsOpenModal(this, control)" ng-show="comparePlans.showBtn">Compare Plans</button>
+        </div>
+    </div>
+</div>

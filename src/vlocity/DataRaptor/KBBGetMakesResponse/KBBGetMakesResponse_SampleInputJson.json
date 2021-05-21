@@ -1,0 +1,255 @@
+{
+    "count": 62,
+    "href": "https://sandbox.api.kbb.com/idws/vehicle/makes?api_key=d51c688d57a241b58a9e44b5d&vehicleClass=UsedCar&ApplicationFilter=Consumer&yearId=&start=1&limit=70",
+    "items": [
+        {
+            "makeId": 2,
+            "makeName": "Acura"
+        },
+        {
+            "makeId": 3,
+            "makeName": "Alfa Romeo"
+        },
+        {
+            "makeId": 54,
+            "makeName": "Aston Martin"
+        },
+        {
+            "makeId": 4,
+            "makeName": "Audi"
+        },
+        {
+            "makeId": 57,
+            "makeName": "Bentley"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW"
+        },
+        {
+            "makeId": 7,
+            "makeName": "Buick"
+        },
+        {
+            "makeId": 8,
+            "makeName": "Cadillac"
+        },
+        {
+            "makeId": 9,
+            "makeName": "Chevrolet"
+        },
+        {
+            "makeId": 10,
+            "makeName": "Chrysler"
+        },
+        {
+            "makeId": 11,
+            "makeName": "Daewoo"
+        },
+        {
+            "makeId": 12,
+            "makeName": "Daihatsu"
+        },
+        {
+            "makeId": 13,
+            "makeName": "Dodge"
+        },
+        {
+            "makeId": 14,
+            "makeName": "Eagle"
+        },
+        {
+            "makeId": 397,
+            "makeName": "Ferrari"
+        },
+        {
+            "makeId": 430,
+            "makeName": "FIAT"
+        },
+        {
+            "makeId": 840,
+            "makeName": "Fisker"
+        },
+        {
+            "makeId": 15,
+            "makeName": "Ford"
+        },
+        {
+            "makeId": 867,
+            "makeName": "Freightliner"
+        },
+        {
+            "makeId": 897,
+            "makeName": "Genesis"
+        },
+        {
+            "makeId": 17,
+            "makeName": "Geo"
+        },
+        {
+            "makeId": 16,
+            "makeName": "GMC"
+        },
+        {
+            "makeId": 18,
+            "makeName": "Honda"
+        },
+        {
+            "makeId": 19,
+            "makeName": "HUMMER"
+        },
+        {
+            "makeId": 20,
+            "makeName": "Hyundai"
+        },
+        {
+            "makeId": 21,
+            "makeName": "INFINITI"
+        },
+        {
+            "makeId": 22,
+            "makeName": "Isuzu"
+        },
+        {
+            "makeId": 23,
+            "makeName": "Jaguar"
+        },
+        {
+            "makeId": 24,
+            "makeName": "Jeep"
+        },
+        {
+            "makeId": 25,
+            "makeName": "Kia"
+        },
+        {
+            "makeId": 59,
+            "makeName": "Lamborghini"
+        },
+        {
+            "makeId": 26,
+            "makeName": "Land Rover"
+        },
+        {
+            "makeId": 27,
+            "makeName": "Lexus"
+        },
+        {
+            "makeId": 28,
+            "makeName": "Lincoln"
+        },
+        {
+            "makeId": 55,
+            "makeName": "Lotus"
+        },
+        {
+            "makeId": 61,
+            "makeName": "Maserati"
+        },
+        {
+            "makeId": 56,
+            "makeName": "Maybach"
+        },
+        {
+            "makeId": 30,
+            "makeName": "MAZDA"
+        },
+        {
+            "makeId": 799,
+            "makeName": "McLaren"
+        },
+        {
+            "makeId": 31,
+            "makeName": "Mercedes-Benz"
+        },
+        {
+            "makeId": 32,
+            "makeName": "Mercury"
+        },
+        {
+            "makeId": 29,
+            "makeName": "MINI"
+        },
+        {
+            "makeId": 34,
+            "makeName": "Mitsubishi"
+        },
+        {
+            "makeId": 35,
+            "makeName": "Nissan"
+        },
+        {
+            "makeId": 36,
+            "makeName": "Oldsmobile"
+        },
+        {
+            "makeId": 60,
+            "makeName": "Panoz"
+        },
+        {
+            "makeId": 39,
+            "makeName": "Plymouth"
+        },
+        {
+            "makeId": 40,
+            "makeName": "Pontiac"
+        },
+        {
+            "makeId": 41,
+            "makeName": "Porsche"
+        },
+        {
+            "makeId": 783,
+            "makeName": "Ram"
+        },
+        {
+            "makeId": 58,
+            "makeName": "Rolls-Royce"
+        },
+        {
+            "makeId": 43,
+            "makeName": "Saab"
+        },
+        {
+            "makeId": 44,
+            "makeName": "Saturn"
+        },
+        {
+            "makeId": 45,
+            "makeName": "Scion"
+        },
+        {
+            "makeId": 507,
+            "makeName": "smart"
+        },
+        {
+            "makeId": 849,
+            "makeName": "SRT"
+        },
+        {
+            "makeId": 47,
+            "makeName": "Subaru"
+        },
+        {
+            "makeId": 48,
+            "makeName": "Suzuki"
+        },
+        {
+            "makeId": 834,
+            "makeName": "Tesla"
+        },
+        {
+            "makeId": 49,
+            "makeName": "Toyota"
+        },
+        {
+            "makeId": 50,
+            "makeName": "Volkswagen"
+        },
+        {
+            "makeId": 51,
+            "makeName": "Volvo"
+        }
+    ],
+    "limit": 70
+}

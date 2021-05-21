@@ -1,0 +1,60 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "MergeInsuredItems",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Auto/MergeInsuredItems-AddVehicle/Procedure",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__PropertySet__c": {
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "advancedMerge": true,
+        "advancedMergeMap": [
+            {
+                "listKey": "TransformDiscountAutoInput:autoVehicle",
+                "matchingPath": "instanceKey",
+                "normalizeKey": "1"
+            },
+            {
+                "listKey": "getInsuredItemsResult:autoVehicle",
+                "matchingPath": "instanceKey",
+                "normalizeKey": "1"
+            }
+        ],
+        "allowMergeNulls": true,
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "failOnStepError": true,
+        "failureResponse": {
+        },
+        "hasPrimary": false,
+        "label": "ListAction2",
+        "mergeFields": [
+        ],
+        "mergeListsOrder": [
+            "TransformDiscountAutoInput:autoVehicle",
+            "getInsuredItemsResult:autoVehicle"
+        ],
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "sortBy": [
+        ],
+        "sortInDescendingOrder": false,
+        "updateFieldValue": {
+        },
+        "useFormulas": true
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "List Merge Action",
+    "Name": "MergeAuto",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Auto/MergeInsuredItems-AddVehicle/Procedure/MergeAuto"
+}

@@ -1,0 +1,29 @@
+<div class="slds-grid slds-wrap" ng-init="$root.isLoaded = true; $root.config.attr = records.record">
+    <div class="slds-size_1-of-1 slds-border_bottom slds-p-bottom_small slds-grid">
+        <div class="slds-size_1-of-2">
+            <div class="slds-form-element">
+            <label class="slds-form-element__label slds-text-title_caps" for="select-01">{{records.customLabels.InsProductCategory || importedScope.customLabels.InsProductCategory}}</label>
+              <div class="slds-form-element_control" ng-if="records && records.record">
+                    {{records.record[$root.nsPrefix + 'CategoryName__c']}}
+              </div>
+              <div class="slds-form-element_control" ng-if="records && !records.record">
+                    {{records.categoryName}}
+              </div>
+            </div>
+        </div>
+        <div class="slds-size_1-of-2">
+             <div class="slds-form-element">
+              <label class="slds-form-element__label slds-text-title_caps" for="select-01">{{records.customLabels.Name || importedScope.customLabels.Name}}</label>
+              <div class="slds-form-element_control" ng-if="records && records.record">
+                    {{records.record[$root.nsPrefix + 'AttributeDisplayName__c']}}
+              </div>
+              <div class="slds-form-element_control" ng-if="records && !records.record">
+                    {{records.displayName}}
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="slds-size_1-of-1">
+      <ins-rules rules="records.rules" rules-options="records.rulesOptions" product-id="params.id" class="vloc-ins-attribute-rules-modal"></ins-rules>
+    </div>
+</div>

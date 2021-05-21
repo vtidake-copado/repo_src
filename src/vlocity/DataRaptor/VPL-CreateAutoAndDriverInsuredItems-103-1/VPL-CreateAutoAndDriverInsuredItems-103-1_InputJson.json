@@ -1,0 +1,16 @@
+{
+    "ContextId": null,
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "CreateAutoAndDriverInsuredItems": null,
+        "MergeAutoAndDiscounts": null,
+        "MergeDriverAndDiscounts": null,
+        "ResponseAction1": null
+    }
+}

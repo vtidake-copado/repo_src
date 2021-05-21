@@ -1,0 +1,50 @@
+<form name="productForm">
+    <div class="slds-grid slds-grid_vertical-align-center slds-grid_align-spread slds-p-horizontal_small slds-p-bottom_small slds-border_bottom" ng-init="importedScope.setProductFields(data.fields)">
+        <h2 class="slds-text-heading_small slds-p-right_small">{{ ::$root.customLabels.InsQuotesConfigurePlan }}</h2>
+        <button class="slds-button slds-button_brand" ng-click="importedScope.updateItem()" ng-disabled="productForm.$invalid">{{ ::$root.customLabels.Save }}</button>
+    </div>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-form-element slds-p-around_x-small slds-size_1-of-2" ng-repeat="field in importedScope.fields" ng-class="{'slds-has-error': $root.fieldList[field.formattedName].isNillable === false && $root.activeRow[field.formattedName] === undefined}">
+            <label class="slds-form-element__label" for="ins-field-{{$index}}">
+                <abbr ng-if="$root.fieldList[field.formattedName].isNillable === false" class="slds-required" title="required">* </abbr>{{$root.fieldList[field.formattedName].label || $root.fieldList[field.formattedName].fieldLabel}}</label>
+            <div ng-if="field.formattedName.indexOf('ProviderNetworkId__c') > -1 || field.formattedName.indexOf('FormularyId__c') > -1" id="ins-field-{{$index}}">
+                <div class="slds-form-element__control">
+                    <select ng-if="field.formattedName.indexOf('ProviderNetworkId__c') > -1" ng-options="network.Id as network.Name for network in $root.availableNetworks" ng-model="$root.activeRow[field.formattedName]" ng-disabled="$root.fieldList[field.formattedName].isUpdateable === false" class="slds-select slds-m-right_xx-small"></select>
+                    <select ng-if="field.formattedName.indexOf('FormularyId__c') > -1" ng-options="formulary.Id as formulary.Name for formulary in $root.availableFormularies" ng-model="$root.activeRow[field.formattedName]" ng-disabled="$root.fieldList[field.formattedName].isUpdateable === false" class="slds-select slds-m-right_xx-small"></select>
+                </div>
+            </div>
+            <div ng-if="field.formattedName.indexOf('ProviderNetworkId__c') === -1 && field.formattedName.indexOf('FormularyId__c') === -1" id="ins-field-{{$index}}">
+                <div ng-if="field.type === 'string'" class="slds-form-element__control">
+                    <input class="slds-input" type="text" ng-model="$root.activeRow[field.formattedName]" ng-model-options="{updateOn: 'blur'}" ng-disabled="field.formattedName.indexOf('Product2') > -1 || $root.fieldList[field.formattedName].isUpdateable === false" ng-required="$root.fieldList[field.formattedName].isNillable === false" />
+                </div>
+                <div ng-if="field.type === 'number'" class="slds-form-element__control">
+                    <input class="slds-input" type="number" step="any" ng-model="$root.activeRow[field.formattedName]" ng-model-options="{updateOn: 'blur'}" ng-disabled="field.formattedName.indexOf('Product2') > -1 || $root.fieldList[field.formattedName].isUpdateable === false" ng-required="$root.fieldList[field.formattedName].isNillable === false" />
+                </div>
+                <div ng-if="field.type === 'currency'" class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                    <span class="slds-icon slds-input__icon slds-input__icon_left slds-text-align_center" aria-hidden="true">$</span>
+                    <input class="slds-input" type="number" step="any" ng-model="$root.activeRow[field.formattedName]" ng-model-options="{updateOn: 'blur'}" ng-disabled="field.formattedName.indexOf('Product2') > -1 || $root.fieldList[field.formattedName].isUpdateable === false" ng-required="$root.fieldList[field.formattedName].isNillable === false" />
+                </div>
+                <div ng-if="field.type === 'percentage'" class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+                    <span class="slds-icon slds-input__icon slds-input__icon_right slds-text-align_center" aria-hidden="true">%</span>
+                    <input class="slds-input" type="number" step="1" ng-model="$root.activeRow[field.formattedName]" ng-model-options="{updateOn: 'blur'}" ng-disabled="field.formattedName.indexOf('Product2') > -1 || $root.fieldList[field.formattedName].isUpdateable === false" ng-required="$root.fieldList[field.formattedName].isNillable === false" />
+                </div>
+                <div ng-if="field.type === 'boolean'" class="slds-form-element__control">
+                    <div class="slds-checkbox">
+                        <input type="checkbox" id="ins-field-{{$index}}-checkbox" ng-model="$root.activeRow[field.formattedName]" ng-disabled="field.formattedName.indexOf('Product2') > -1 || $root.fieldList[field.formattedName].isUpdateable === false" ng-required="$root.fieldList[field.formattedName].isNillable === false" />
+                        <label class="slds-checkbox__label" for="ins-field-{{$index}}-checkbox">
+                            <span class="slds-checkbox_faux"></span>
+                        </label>
+                    </div>
+                </div>
+                <div ng-if="field.type === 'date' || field.type === 'datetime'" class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+                    <slds-svg-icon sprite="'utility'" icon="'event'" extra-classes="'slds-input__icon slds-input__icon_right'"></slds-svg-icon>
+                    <input class="slds-input" slds-date-picker ng-model="$root.activeRow[field.formattedName]" ng-disabled="field.formattedName.indexOf('Product2') > -1 || $root.fieldList[field.formattedName].isUpdateable === false" ng-required="$root.fieldList[field.formattedName].isNillable === false" />
+                </div>
+                <div ng-if="field.type === 'datetime'" class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+                    <slds-svg-icon sprite="'utility'" icon="'clock'" extra-classes="'slds-input__icon slds-input__icon_right'"></slds-svg-icon>
+                    <input class="slds-input" slds-time-picker ng-model="$root.activeRow[field.formattedName]" ng-disabled="field.formattedName.indexOf('Product2') > -1 || $root.fieldList[field.formattedName].isUpdateable === false" ng-required="$root.fieldList[field.formattedName].isNillable === false" />
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

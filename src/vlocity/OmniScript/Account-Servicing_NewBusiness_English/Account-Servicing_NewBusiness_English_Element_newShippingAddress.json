@@ -1,0 +1,77 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "New Business Account",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Account Servicing/NewBusiness/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "New Business Account",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Account Servicing/NewBusiness/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "newAccount",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Account Servicing/NewBusiness/English/newAccount",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "newAccount",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "callFrequency": 300,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "dataJsonPath": "",
+        "dataProcessorFunction": "",
+        "debounceValue": 0,
+        "editMode": false,
+        "enableGoogleMapsAutocomplete": true,
+        "enableLookup": false,
+        "googleAddressCountry": "all",
+        "googleMapsAPIKey": "AIzaSyDWLziF73XUtjB-WiMsIFqWx8-IuX8MbP8",
+        "googleTransformation": {
+            "administrative_area_level_1": "newShippingState",
+            "country": "newShippingCountry",
+            "locality": "newShippingCity",
+            "postal_code": "newShippingPostalCode",
+            "street": "newShippingStreet"
+        },
+        "help": false,
+        "helpText": "",
+        "hideEditButton": false,
+        "hideMap": true,
+        "inputWidth": 12,
+        "label": "Mailing Address",
+        "maxLength": 255,
+        "minLength": 0,
+        "newItemLabel": "New",
+        "readOnly": false,
+        "required": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "DifferentFromBilling"
+                    }
+                ]
+            }
+        },
+        "showInputWidth": true,
+        "typeAheadKey": "",
+        "useDataJson": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Type Ahead Block",
+    "Name": "newShippingAddress",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Account Servicing/NewBusiness/English/newShippingAddress"
+}

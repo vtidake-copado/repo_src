@@ -1,0 +1,14 @@
+{
+    "GetPolicyInfo": {
+        "ABC": "2018-09-19",
+        "AmountDue": 0,
+        "AnnualPremium": 1253.07,
+        "BillDueDate": "2018-09-25",
+        "GracePeriod": "30",
+        "NumofDays": 3,
+        "PaidToDate": "September 25, 2018",
+        "PastDue": "0",
+        "PaymentFrequency": 4,
+        "PolicyStatus": 1
+    }
+}

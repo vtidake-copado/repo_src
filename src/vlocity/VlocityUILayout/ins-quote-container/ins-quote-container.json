@@ -1,0 +1,14 @@
+{
+    "Cards": [
+    ],
+    "dataSource": {
+        "type": null,
+        "value": {
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-quote-container"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Pricing Variable Bindings --></label>
+        <name>vlocity_ins__PricingVariableBindings</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination Field API Name --></label>
+        <name>vlocity_ins__DestinationFieldApiName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination SObject Type --></label>
+        <name>vlocity_ins__DestinationSObjectType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Variable --></label>
+        <name>vlocity_ins__PricingVariableId__c</name>
+        <relationshipLabel><!-- Pricing Variable Bindings --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,35 @@
+{
+    "Cards": [
+        "ins-rating-fact-card"
+    ],
+    "bypassSave": true,
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "{{params.id}}",
+                "val": "01t6A000000VSAMQA4"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "body": "",
+            "inputMap": {
+                "productId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceProductAdminHandler"
+            },
+            "remoteClass": "InsuranceProductAdminHandler",
+            "remoteMethod": "getAssociatedRatingFacts",
+            "remoteNSPrefix": "%vlocity_namespace%"
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-insured-items-container"
+        }
+    },
+    "workspace": [
+        "ins-rating-fact-card/Vlocity/null/1519921308919"
+    ]
+}

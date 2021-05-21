@@ -1,0 +1,29 @@
+@import "ins-product-selection-variables";
+.via-slds{
+
+    .vloc-quote-modal-footer{
+        bottom: 0;
+        position: absolute;
+        width: 100%; 
+    }
+
+    .vloc-add-class-form-container {
+        margin-top: 1rem;
+    }
+    @media screen and (max-width: $bp-large) { // 64
+
+    }
+
+    @media screen and (max-width: $bp-phablet) { 
+    }
+
+    @media screen and (max-width: $bp-small) { 
+        .vloc-add-class-form-container{
+            margin: 0; 
+            padding-top: 1rem;
+            padding-left: 1rem; 
+            padding-right: 1rem;
+            text-align: left;
+        }
+    }
+}

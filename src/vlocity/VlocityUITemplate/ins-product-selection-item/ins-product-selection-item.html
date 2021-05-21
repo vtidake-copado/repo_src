@@ -1,0 +1,129 @@
+<div class="vloc-product-selection-plans-selection" ng-class="{'in-iframe': importedScope.vlocProdSelectItem.responsiveService.isIframe, 'in-omniscript': importedScope.vlocProdSelectItem.responsiveService.isOmniScript}" ng-init="importedScope.setRecords()" ins-mobile-lazy-load="importedScope">
+    <div class="slds-border_bottom slds-p-top_medium slds-p-bottom_xx-small slds-p-horizontal_large vloc-product-selection-filters-wrapper">
+        <div class="slds-is-relative">
+            <div class="slds-is-relative vloc-filters-relative-container" ng-class="{'is-mobile': importedScope.vlocProdSelectItem.responsiveService.mobileTabletDevice, 'active': importedScope.vlocProdSelectItem.mobileFilters}">
+                <div class="slds-p-horizontal_small slds-p-top_small vloc-page-header-filter-plans">
+                    <div class="slds-grid slds-is-relative">
+                        <div class="slds-size_3-of-4">
+                            <h1 class="slds-page-header__title bold vloc-title slds-m-bottom_small">Filter Plans</h1>
+                            <div class="vloc-title-border-container">
+                                <hr class="vloc-title-border" />
+                            </div>
+                        </div>
+                        <div class="slds-size_1-of-4 slds-text-align_right">
+                            <button class="slds-button" ng-click="importedScope.vlocProdSelectItem.mobileFilters = !importedScope.vlocProdSelectItem.mobileFilters">Cancel</button>
+                        </div>
+                    </div>
+                    <div ins-include="ins-product-selection-filter-results" ng-if="importedScope.vlocProdSelectItem.responsiveService.mobileTabletDevice() && importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(46.5)"></div>
+                </div>
+                <div class="slds-grid vloc-filters">
+                    <div class="slds-size_10-of-12 vloc-filters-dropdowns">
+                        <div class="slds-float_left vloc-filters-result-count" ng-if="!importedScope.vlocProdSelectItem.responsiveService.mobileTabletDevice() && !importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(46.5) && importedScope.vlocProdSelectItem.responsiveService.isOmniScript">{{$root.vlocInsProdSelectItem.totalRecords}} results</div>
+                        <div ng-repeat="(key, value) in $root.vlocInsProdSelectItem.filterAttrValues" class="slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open slds-m-right_x-small slds-m-bottom_x-small  vloc-filters-filter vloc-filters-filter-{{$index}}" aria-expanded="true" ng-class="{'slds-is-open': lineActions.show, 'vloc-filters-filter-value-selected': importedScope.vlocProdSelectItem.attributeFilters.values[key]}" ng-if="value.listOfValues.length">
+                            <button class="slds-button slds-button_neutral vloc-filters-filter-btn vloc-filters-filter-btn-{{$index}}" ins-dropdown-handler="lineActions.show = false" ng-click="lineActions.show = !lineActions.show">
+                                <span>{{value.displayAttributeName}}</span>
+                                <slds-button-svg-icon size="type === 'button-group' ? null : 'small'" sprite="'utility'" icon="'down'" extra-classes="'slds-button__icon_right'"></slds-button-svg-icon>
+                            </button>
+                            <div class="slds-dropdown slds-dropdown_right vloc-filters-filter-dropdown vloc-filters-filter-dropdown-{{$index}}" ng-class="{'active': lineActions.show === true}">
+                                <ul class="dropdown__list" role="menu">
+                                    <li class="slds-dropdown__item vloc-filters-filter-dropdown-item vloc-filters-filter-dropdown-item-{{$index}}" ng-repeat="filterValue in value.listOfValues | unique | orderBy" ng-class="{'vloc-filters-filter-dropdown-item-selected': importedScope.vlocProdSelectItem.checkFilterSelected(key, filterValue), 'vloc-filters-filter-dropdown-item-not-executed': importedScope.vlocProdSelectItem.attributeFilters.filtered[key][importedScope.vlocProdSelectItem.attributeFilters.values[key].indexOf(filterValue.toString())] === false}">
+                                        <a href="javascript:void(0)">
+                                            <div ng-click="importedScope.vlocProdSelectItem.addToFilter(key, filterValue)" class="vloc-filters-filter-dropdown-item-add">
+                                                <p ng-if="value.valueDataType.toLowerCase() !== 'currency' && value.valueDataType.toLowerCase() !== 'percent'">{{filterValue}}</p>
+                                                <p ng-if="value.valueDataType.toLowerCase() === 'currency'">{{filterValue | currency}}</p>
+                                                <p ng-if="value.valueDataType.toLowerCase() === 'percent'">{{filterValue}}%</p>
+                                            </div>
+                                            <div class="vloc-filters-filter-dropdown-item-delete">
+                                                <p class="slds-float_left" ng-if="value.valueDataType.toLowerCase() !== 'currency' && value.valueDataType.toLowerCase() !== 'percent'">{{filterValue}}</p>
+                                                <p class="slds-float_left" ng-if="value.valueDataType.toLowerCase() === 'currency'">{{filterValue | currency}}</p>
+                                                <p class="slds-float_left" ng-if="value.valueDataType.toLowerCase() === 'percent'">{{filterValue}}%</p>
+                                                <button class="slds-button slds-button_icon slds-float_right vloc-filters-filter-dropdown-btn-close" title="Close" ng-click="importedScope.vlocProdSelectItem.removeFilter(key, importedScope.vlocProdSelectItem.attributeFilters.values[key].indexOf(filterValue.toString()))">
+                                                    <slds-button-svg-icon size="'medium'" sprite="'utility'" icon="'close'"></slds-button-svg-icon>
+                                                    <span class="slds-assistive-text">Clear Filter</span>
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="vloc-filters-filtering-by-mobile slds-m-left_large slds-p-vertical_x-small" ng-if="importedScope.vlocProdSelectItem.responsiveService.mobileTabletDevice() && importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(46.5) && importedScope.vlocProdSelectItem.filtering[filter]">
+                                <span ng-repeat="filterItem in importedScope.vlocProdSelectItem.filtering[filter]">
+                                    <span ng-if="filterItem.dataType === 'currency'">{{filterItem.userValues | currency}}</span>
+                                    <span ng-if="filterItem.dataType === 'percentage'">{{filterItem.userValues}}%</span>
+                                    <span ng-if="filterItem.dataType !== 'currency' && filterItem.dataType !== 'percentage'">{{filterItem.userValues}}</span>
+                                    <button class="slds-button slds-button_icon vloc-filters-filtering-by-btn-close" title="Close" ng-click="importedScope.vlocProdSelectItem.removeFilter(filter, $index)">
+                                        <slds-button-svg-icon size="'medium'" sprite="'utility'" icon="'close'"></slds-button-svg-icon>
+                                        <span class="slds-assistive-text">Clear Filter</span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-size_2-of-12 vloc-filters-search-btn-container">
+                        <button class="slds-button slds-button_neutral slds-p-horizontal_small slds-float_right vloc-filters-search-btn" ng-click="importedScope.vlocProdSelectItem.searchActive = !importedScope.vlocProdSelectItem.searchActive" ins-focus="vloc-filters-search-input">
+                            <slds-button-svg-icon size="'large'" sprite="'utility'" icon="'search'" extra-classes="'slds-button__icon_left slds-m-right_none'"></slds-button-svg-icon>
+                            <!-- <span class="vloc-filters-search-btn-text">Search<span> Plans</span></span> -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid vloc-filters-search" ng-class="{'active': importedScope.vlocProdSelectItem.searchActive}">
+                <div class="slds-size_7-of-12 vloc-filters-search-spacer" ng-if="!importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(43)">&nbsp;</div>
+                <div class="vloc-filters-search-close" ng-class="{'slds-size_1-of-12': !importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(43), 'slds-size_1-of-6': importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(43)}">
+                    <button class="slds-button slds-button_icon vloc-filters-search-btn-close" title="Close Search">
+                        <slds-button-svg-icon size="'medium'" sprite="'utility'" icon="'close'"></slds-button-svg-icon>
+                        <span class="slds-assistive-text">Close Search</span>
+                    </button>
+                </div>
+                <form class="slds-form_inline vloc-filters-search-container" ng-submit="importedScope.vlocProdSelectItem.searchProducts()" ng-class="{'slds-size_4-of-12': !importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(43), 'slds-size_5-of-6': importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(43)}">
+                    <div class="slds-form-element slds-m-right_none vloc-filters-search-input-container">
+                        <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                            <slds-input-svg-icon size="'small'" sprite="'utility'" icon="'search'"></slds-input-svg-icon>
+                            <input type="text" id="vloc-filters-search-input" class="slds-input vloc-filters-search-input" placeholder="Search Plans" ng-model="importedScope.vlocProdSelectItem.searchInput" ins-dropdown-handler="importedScope.vlocProdSelectItem.searchActive = false" restrict-element="vloc-filters-search-submit"/>
+                        </div>
+                    </div>
+                    <div class="slds-form-element slds-m-right_none vloc-filters-search-submit-container">
+                        <button type="submit" class="slds-button slds-button_brand vloc-filters-search-submit vloc-filters-search-submit-text">Search</button>
+                        <button type="submit" class="slds-button slds-button_brand vloc-filters-search-submit vloc-filters-search-submit-icon">
+                            <slds-button-svg-icon size="'medium'" sprite="'utility'" icon="'search'" extra-classes="'slds-button__icon_left slds-m-right_none'"></slds-button-svg-icon>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="slds-size_1-of-1 slds-clearfix vloc-filters-search-btn-container-mobile">
+            <button class="slds-button slds-float_left vloc-filters-search-mobile-toggle" ng-click="importedScope.vlocProdSelectItem.mobileFilters = !importedScope.vlocProdSelectItem.mobileFilters">
+                <slds-button-svg-icon size="'small'" sprite="'utility'" icon="'filterList'" extra-classes="'slds-m-right_xx-small'" ng-class="{'adding': $root.isObjectEmpty(importedScope.vlocProdSelectItem.attributeFilters.values) && !importedScope.vlocProdSelectItem.searchedProducts}"></slds-button-svg-icon>
+                <span ng-hide="$root.isObjectEmpty(importedScope.vlocProdSelectItem.attributeFilters.values) && !importedScope.vlocProdSelectItem.searchedProducts" class="vloc-filters-search-mobile-edit">Edit Filters ({{importedScope.vlocProdSelectItem.filterCount}})</span>
+                <span ng-show="$root.isObjectEmpty(importedScope.vlocProdSelectItem.attributeFilters.values) && !importedScope.vlocProdSelectItem.searchedProducts" class="vloc-filters-search-mobile-add">Add Filters</span>
+            </button>
+            <button class="slds-button slds-float_left slds-button_brand vloc-compare-plans-modal-btn" ng-click="importedScope.vlocProdSelectItem.InsProductSelectionCompareService.launchCompareModal(importedScope)" ng-show="$root.vlocInsProdSelectItem.comparisonData.count > 1">
+                <slds-button-svg-icon size="'medium'" sprite="'utility'" icon="'matrix'" extra-classes="'slds-m-right_xx-small'"></slds-button-svg-icon>
+                Compare
+            </button>
+            <button class="slds-button slds-button_neutral slds-float_right vloc-filters-search-btn" ng-click="importedScope.vlocProdSelectItem.searchActive = !importedScope.vlocProdSelectItem.searchActive" ins-focus="vloc-filters-search-input">
+                <slds-button-svg-icon size="'medium'" sprite="'utility'" icon="'search'"></slds-button-svg-icon>
+            </button>
+            <div class="slds-float_right vloc-filters-result-count" ng-if="importedScope.vlocProdSelectItem.responsiveService.mobileTabletDevice() && importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(46.5) && importedScope.vlocProdSelectItem.responsiveService.isOmniScript">{{$root.vlocInsProdSelectItem.totalRecords}}</div>
+        </div>
+        <div ins-include="ins-product-selection-filter-results" ng-if="!importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(46.5)"></div>
+    </div>
+    <ul class="slds-clearfix vloc-product-selection-plan-container" ins-include="ins-product-selection-item-plan" ng-if="!importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(46.5) && !importedScope.vlocProdSelectItem.responsiveService.isIframe" infinite-scroll="importedScope.vlocProdSelectItem.InsProductSelectionGridService[$root.getProductsMethod](importedScope, importedScope.vlocProdSelectItem.searchInput, $root.vlocInsProdSelectItem.records.length)" infinite-scroll-distance="1"></ul>
+    <ul class="slds-clearfix vloc-product-selection-plan-container" ins-include="ins-product-selection-item-plan" ng-if="!importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(46.5) && importedScope.vlocProdSelectItem.responsiveService.isIframe"></ul>
+    <ul class="slds-clearfix vloc-carousel-container vloc-product-selection-plan-container" rn-carousel rn-carousel-index="importedScope.vlocProdSelectItem.carouselIndex" rn-carousel-controls ins-include="ins-product-selection-item-plan" ng-if="importedScope.vlocProdSelectItem.responsiveService.mobileTabletDevice() && importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(46.5) && $root.vlocInsProdSelectItem.records.length"></ul>
+    <div class="slds-size_1-of-1 slds-align_absolute-center slds-p-vertical_large" ng-if="($root.vlocInsProdSelectItem.records.length < $root.vlocInsProdSelectItem.totalRecords) && importedScope.vlocProdSelectItem.responsiveService.isIframe && !importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(46.5) && !$root.vlocInsProdSelectItem.getProductsCalled">
+        <button class="slds-button slds-button_brand" ng-click="importedScope.vlocProdSelectItem.InsProductSelectionGridService[$root.getProductsMethod](importedScope, importedScope.vlocProdSelectItem.searchInput, $root.vlocInsProdSelectItem.records.length)">Load More Products</button>
+    </div>
+    <div class="slds-size_1-of-1 slds-is-relative vloc-product-selection-plan-load-more" ng-show="$root.vlocInsProdSelectItem.getProductsCalled && ($root.vlocInsProdSelectItem.records.length < $root.vlocInsProdSelectItem.totalRecords) && !importedScope.vlocProdSelectItem.responsiveService.checkBreakpoint(46.5) && !importedScope.vlocProdSelectItem.responsiveService.mobileTabletDevice()">
+        <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand" style="top: {{importedScope.vlocProdSelectItem.loadMoreSpinnerPosition}}" ng-show="importedScope.vlocProdSelectItem.responsiveService.isIframe">
+            <span class="slds-assistive-text">Loading</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+        <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand" ng-show="!importedScope.vlocProdSelectItem.responsiveService.isIframe">
+            <span class="slds-assistive-text">Loading</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+</div>

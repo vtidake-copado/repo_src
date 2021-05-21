@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- A description of why the substituted drug can replace the primary drug. --></help>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The primary drug from the Drug object that is referenced for substitution. --></help>
+        <label><!-- Drug --></label>
+        <name>vlocity_ins__DrugId__c</name>
+        <relationshipLabel><!-- Drug Substitutes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Drug Name --></label>
+        <name>vlocity_ins__DrugName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective End Date --></label>
+        <name>vlocity_ins__EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Start Date --></label>
+        <name>vlocity_ins__EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Designates if the drug substitute is currently active. --></help>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <help><!-- The substituted drug from the Drug. --></help>
+        <label><!-- Substitute Drug --></label>
+        <name>vlocity_ins__SubstituteDrugId__c</name>
+        <relationshipLabel><!-- Drug Substitutes For --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Substitute Drug Name --></label>
+        <name>vlocity_ins__SubstituteDrugName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Substitution Order --></label>
+        <name>vlocity_ins__SubstitutionOrder__c</name>
+    </fields>
+</CustomObjectTranslation>

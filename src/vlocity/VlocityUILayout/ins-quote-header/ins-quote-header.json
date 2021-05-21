@@ -1,0 +1,10 @@
+{
+    "Cards": [
+        "ins-quote-header"
+    ],
+    "templates": {
+        "0": {
+            "templateUrl": "ins-quote-header"
+        }
+    }
+}

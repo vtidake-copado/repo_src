@@ -1,0 +1,15 @@
+{
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__Element__c": "Library_Save-Contact-Data_English_Element_Contact-DataRaptor-Post-Action.json",
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": false,
+    "%vlocity_namespace%__IsReusable__c": true,
+    "%vlocity_namespace%__Language__c": "English",
+    "%vlocity_namespace%__PropertySet__c": "Library_Save-Contact-Data_English_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "Save Contact Data",
+    "%vlocity_namespace%__Type__c": "Library",
+    "Name": "Save Contact Data",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Library/Save Contact Data/English"
+}

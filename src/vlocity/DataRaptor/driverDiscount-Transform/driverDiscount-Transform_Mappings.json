@@ -1,0 +1,16 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "discountDriver:driverDiscounts:discountDriverInstanceKey",
+        "%vlocity_namespace%__GlobalKey__c": "cf31bd37-63a9-f6bd-226e-bbda5848a681",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "drivers:driver:driverInstanceKey",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "driverDiscount-TransformCustom7079",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "driverDiscount-Transform",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

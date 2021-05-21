@@ -1,0 +1,11 @@
+{
+    "configuration": {
+        "vehicleId": "11945",
+        "vehicleOptionIds": [
+            0
+        ]
+    },
+    "mileage": "50000",
+    "valuationDate": "2019-06-17T13:22:46.876Z",
+    "zipCode": "75094"
+}

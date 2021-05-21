@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Plan --></label>
+        <name>vlocity_ins__ContractLineId__c</name>
+        <relationshipLabel><!-- Group Census Member Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Census Member --></label>
+        <name>vlocity_ins__GroupCensusMemberId__c</name>
+        <relationshipLabel><!-- Group Census Member Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plan Product --></label>
+        <name>vlocity_ins__PlanProductId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replacement Product --></label>
+        <name>vlocity_ins__ReplacementProductId__c</name>
+    </fields>
+</CustomObjectTranslation>

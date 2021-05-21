@@ -1,0 +1,329 @@
+<!-- Notification Toast -->
+<div class="slds-notify_container" ng-show="$root.notification.active">
+    <div class="slds-notify slds-notify_toast" role="alert" ng-class="{'slds-theme_success': $root.notification.type === 'success', 'slds-theme_error': $root.notification.type === 'error'}">
+        <button class="slds-button slds-button_icon-inverse slds-notify__close" ng-click="$root.notification.active = false">
+            <slds-button-svg-icon sprite="'utility'" icon="'close'"></slds-button-svg-icon>
+            <span class="slds-assistive-text">Close</span>
+        </button>
+        <span class="slds-assistive-text">Info</span>
+        <h2 ng-bind-html="$root.notification.message"></h2>
+    </div>
+</div>
+<div class="vloc-ins-large-group-csv" id="whole-window">
+    <div id="editable-table-table-app-id">
+        <div id="editable-table-table-app-controller-id" ng-controller="editableTableTableAppController" ng-init="setData(params.id, records)">
+            <div class="vlocity" ng-init="data = cards[0].states[0]">
+                <div class="slds-spinner_container vloc-spinner_container vloc-show-loader" ng-show="!$root.isLoaded || savingItems">
+                    <span class="vloc-ins-pending-save" ng-if="pendingSavePercentDisplay">{{ pendingSavePercentDisplay }}%</span>
+                    <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                    </div>
+                </div>
+                <div> <!-- PAge Header and Tool Bar: --> 
+                    <div class="slds-size_1-of-1 slds-grid slds-grid_wrap slds-m-top_large slds-m-horizontal_small">
+                        <h2 class="slds-text-heading_medium slds-size_9-of-12">Census Member Table</h2>
+                        <div class="vloc-ins-toolbar slds-size_3-of-12">
+                            <button class="vloc-icon_container--actions slds-icon_container slds-icon_container_circle slds-button_neutral" ng-click="addNew = !addNew">
+                                <slds-button-svg-icon sprite="'utility'" icon="'add'" extra-classes="'slds-button__icon_left vloc-icon'"></slds-button-svg-icon>
+                                <span class="slds-assistive-text nds-assistive-text">Add Data</span>
+                            </button>
+                            <button class="vloc-icon_container--actions slds-icon_container slds-icon_container_circle slds-button_neutral" ng-click="saveItems(true)" ng-class="{'slds-theme_warning' : $root.warnToSave}">
+                                <slds-button-svg-icon sprite="'utility'" icon="'save'" extra-classes="'slds-button__icon_left vloc-icon'"></slds-button-svg-icon>
+                                <span class="slds-assistive-text nds-assistive-text">Save Table</span>
+                            </button>
+                            <button class="vloc-icon_container--actions slds-icon_container slds-icon_container_circle slds-button_neutral"  ng-click="showModal(null, deleteAllData, 'Delete All Data')">
+                                <slds-button-svg-icon sprite="'action'" icon="'delete'" extra-classes="'slds-button__icon_left vloc-icon'"></slds-button-svg-icon>
+                                <span class="slds-assistive-text nds-assistive-text">Delete All Data</span>
+                            </button>
+                        <!-- EXPORT DATTA
+                            <button class="vloc-icon_container--actions slds-icon_container slds-icon_container_circle slds-button_neutral" ng-click="exportData()">
+                                <slds-button-svg-icon sprite="'utility'" icon="'attach'" extra-classes="'slds-button__icon_left vloc-icon'"></slds-button-svg-icon>
+                                <span class="slds-assistive-text nds-assistive-text">Save As Attachment</span>
+                            </button> -->
+                            <button class="vloc-icon_container--actions slds-icon_container slds-icon_container_circle slds-button_neutral" ng-click="showModal('ins-large-group-csv-upload-table', 'editTable', 'Table Settings')">
+                                <slds-button-svg-icon sprite="'utility'" icon="'settings'" extra-classes="'slds-button__icon_left vloc-icon'"></slds-button-svg-icon>
+                                <span class="slds-assistive-text nds-assistive-text">Table Settings</span>
+                            </button>
+                            <button ng-click="showModal('ins-large-group-csv-upload-modal', 'upload', 'Upload CSV', data.fields)" class="vloc-icon_container--actions slds-icon_container slds-icon_container_circle slds-button_neutral vloc-brand" ins-stop-propagation>
+                                <slds-button-svg-icon sprite="'utility'" icon="'upload'" extra-classes="'slds-button__icon_left vloc-icon'"></slds-button-svg-icon>
+                                <span class="slds-assistive-text nds-assistive-text">Upload CSV</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Table Header (column pagination tools using headerStart, headerEnd on array)--> 
+                    <div class="via-ins-table-container slds-m-around_small slds-border_right slds-border_left slds-border_bottom">
+                        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                            <thead>
+                                <tr class="slds-line-height_reset" ng-init="onSortBy(data.fields[0]);" >
+                                    <th class="vloc-button slds-border_top">
+                                        <slds-button-svg-icon sprite="'utility'" icon="'chevronleft'" extra-classes="'slds-button__icon_left'" ng-click="calcLeft()" ng-hide="$root.headerStart === 0"></slds-button-svg-icon>
+                                    </th>
+                                    <th class="slds-text-title_caps vloc-header-th slds-border_top" scope="col" ng-repeat="header in data.fields.slice($root.headerStart, $root.headerEnd)" ng-click="onSortBy(header);" ng-class="{'vloc-sorted-column' :  currentSort  === header.name, 'vloc-not-sorted-column': currentSort !==  header.name}">
+                                        <div class="slds-truncate">
+                                            {{header.label}}
+                                            <slds-button-svg-icon ng-if="currentSort === header.name && !sortReversed" sprite="'utility'" icon="'arrowup'"></slds-button-svg-icon>
+                                            <slds-button-svg-icon ng-if="currentSort === header.name && sortReversed" sprite="'utility'" icon="'arrowdown'"></slds-button-svg-icon>
+                                        </div>
+                                    </th>
+                                    <th class="vloc-button slds-border_top">
+                                        <slds-button-svg-icon ng-hide="$root.headerEnd >= data.fields.length || data.fields.length < $root.showColNum" sprite="'utility'" icon="'chevronright'" extra-classes="'slds-button__icon_right'" ng-click="calcRight()"></slds-button-svg-icon>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                       <!-- Table Body --> 
+                        <table class="vloc-data-body slds-table slds-table_cell-buffer slds-table_bordered">
+                            <tbody id="rows-t-body"> <!-- TO DO: Delete for single member -->
+                                <tr class="slds-line-height_reset" ng-class="{'delete-warning-active' : row.inDelete}"    dir-paginate="row in $root.tableData.rows | itemsPerPage: $root.itemsPerPage">
+                                    <td id="slider" class="slider slds-theme_alert-texture slds-border_right" ng-class="{'delete-in' : row.inDelete}">
+                                        <div class="slds-grid slds-grid_wrap slds-size_1-of-1">
+                                            <div class="slds-p-top_xx-small vloc-text">Sure you want to delete?</div>
+                                            <div class="slds-buttons">
+                                                <slds-button-svg-icon  sprite="'action'"  ng-click="removeRow($index)" ng-if="row.inDelete" icon="'check'" extra-classes="'vloc-ins-green'"></slds-button-svg-icon>
+                                                </button>
+                                                <slds-button-svg-icon  sprite="'action'"  ng-click="row.inDelete = false" ng-if="row.inDelete" icon="'close'" extra-classes="'vloc-ins-red'"></slds-button-svg-icon>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="vloc-button vloc-cell"  ng-class="{'delete-in' : row.inDelete}">
+                                        <button class="slds-button slds-button_icon" ng-hide="row.inDelete" ng-click="row.inDelete = true">
+                                            <slds-button-svg-icon  sprite="'action'" icon="'delete'" extra-classes="'slds-button__icon_left'"></slds-button-svg-icon>
+                                        </button>
+                                    </td>
+                                    <td class="vloc-input-group vloc-cell" ng-repeat="header in data.fields.slice($root.headerStart, $root.headerEnd)" ng-class="{'emptyCell' : !row[header.name].length, 'delete-in' : row.inDelete}">       
+                                        <!-- TO DO: Save for single member on ng-blur -->
+                                        <input class="slds-input vloc-ins-edit-cell" vlocity-navigate-up-or-down="true" ng-class="{'vloc-ins-edited-element' : editingCell[row.Id][header.name]}" ng-model="row[header.name]" ng-change="validateData(header, row); saveMember(row)"  ng-model-options="{ debounce: 1000 }" />
+                                    </td>
+                                    <td  ng-class="{'delete-in' : row.inDelete}" class="vloc-button vloc-cell" ng-hide="$root.headerEnd > fields.data.headers.length"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- Add to Table Body --> 
+                        <table class="slds-table slds-table_cell-buffer" ng-if="addNew">
+                            <tbody id="rowsTbody vloc-ins-add-new" >
+                                <tr class="slds-line-height_reset slds-theme_shade" ng-repeat="row in newRowData | filter: { deleted: false }" ng-init="rowIndex = $index" >
+                                    <td class="vloc-button">
+                                        <slds-button-svg-icon ng-if="$index === 0" sprite="'utility'" icon="'chevronleft'" extra-classes="'slds-button__icon_left'" ng-click="calcLeft()" ng-hide="$root.headerStart === 0"></slds-button-svg-icon>
+                                        <!-- TO DO: Save for single member -->
+                                        <button ng-if="($root.headerStart === 0 && $index === 0) || ($root.headerStart !== 0 && $index === 1)" class="vloc-icon_container--actions slds-icon_container slds-icon_container_circle slds-button_neutral" ng-click="saveItems(true)" ng-class="{'slds-theme_warning' : $root.warnToSave}">
+                                            <slds-button-svg-icon sprite="'utility'" icon="'save'" extra-classes="'slds-button__icon_left vloc-icon'"></slds-button-svg-icon>
+                                            <span class="slds-assistive-text nds-assistive-text">Save Table</span>
+                                        </button>
+                                        <slds-button-svg-icon ng-if="($root.headerStart === 0 && $index === 0) || ($root.headerStart !== 0 && $index === 1)" sprite="'utility'" icon="'save'" extra-classes="'slds-button__icon_left'" ng-click="saveItems(true)" ng-hide="$root.headerStart === 0"></slds-button-svg-icon>
+                                    </td>
+                                    <td class="input-group"  ng-repeat="header in data.fields.slice($root.headerStart, $root.headerEnd)">
+                                        <input class="slds-input" vlocity-navigate-up-or-down="true" ng-model="row[header.name]" ng-change="onEnterData(row, rowIndex);" ng-blur="validateData(header, row)"  ng-model-options="{ debounce: 1000 }"/>
+                                    </td>
+                                    <td class="vloc-button">
+                                        <slds-button-svg-icon ng-if="$index === 0" ng-hide="$root.headerEnd >= data.fields.length || data.fields.length < $root.showColNum" sprite="'utility'" icon="'chevronright'" extra-classes="'slds-button__icon_right'" ng-click="calcRight()"></slds-button-svg-icon>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <dir-pagination-controls ng-show="true" template-url="dirPaginationControls.html"></dir-pagination-controls>
+        </div>
+    </div>
+</div>
+
+<!-- Pagination Template -->
+<script type="text/ng-template" id="dirPaginationControls.html">
+    <ul class="pagination" ng-if="1 < pages.length">
+        <li ng-if="boundaryLinks" ng-class="{ disabled : pagination.current == 1 }">
+            <a href="javascript:void(0);" ng-click="setCurrent(1)">&laquo;</a>
+        </li>
+        <li ng-if="directionLinks" ng-class="{ disabled : pagination.current == 1 }">
+            <a href="javascript:void(0);" ng-click="setCurrent(pagination.current - 1)">&lsaquo;</a>
+        </li>
+        <li ng-repeat="pageNumber in pages track by $index" ng-class="{ active : pagination.current == pageNumber, disabled : pageNumber == '...' }">
+            <a href="javascript:void(0);" ng-click="setCurrent(pageNumber)">{{ pageNumber }}</a>
+        </li>
+    
+        <li ng-if="directionLinks" ng-class="{ disabled : pagination.current == pagination.last }">
+            <a href="javascript:void(0);"ng-click="setCurrent(pagination.current + 1)">&rsaquo;</a>
+        </li>
+        <li ng-if="boundaryLinks"  ng-class="{ disabled : pagination.current == pagination.last }">
+            <a href="javascript:void(0);" ng-click="setCurrent(pagination.last)">&raquo;</a>
+        </li>
+    </ul>
+</script>
+
+<!-- Modal Template -->
+<script type="text/ng-template" id="sldsModalTemplate.html">
+    <div class="slds-modal slds-fade-in-open slds-modal_medium vloc-modal vloc-modal-slds-slide-up {{vlocSlideCustomClass}}" ng-init="isModalLoaded = !isModalLoaded">
+    <div class="slds-modal__container vloc-modal-container {{vlocSlideCustomClass}}-container">
+        <button class="slds-button slds-button_icon-inverse slds-modal__close vloc-align-{{vlocSlideMobileClose}}" ng-click="$slideHide()" ng-if="!vlocSlideHeader">
+            <slds-button-svg-icon sprite="'action'" icon="'close'" size="'large'"></slds-button-svg-icon>
+            <span class="slds-assistive-text">Close</span>
+        </button>
+        <header class="slds-modal__header slds-is-relative" ng-show="vlocSlideHeader" ng-if="title">
+            <button class="slds-button slds-button_icon-inverse slds-modal__close vloc-align-{{vlocSlideMobileClose}}" ng-click="$slideHide()">
+                <slds-button-svg-icon sprite="'action'" icon="'close'" size="'large'"></slds-button-svg-icon>
+                <span class="slds-assistive-text">Close</span>
+            </button>
+            <h2  ng-show="title" class="slds-text-heading_medium slds-hyphenate" ng-bind="title"></h2>
+        </header>
+        <div class="slds-modal__content slds-p-around_medium vloc-modal-content slds-is-relative" ng-if="modalLayout" >
+            <vloc-layout records="records" layout-name="{{modalLayout}}"></vloc-layout>
+        </div>
+        <div class="slds-modal__content slds-p-around_medium slds-is-relative" ng-if="!modalLayout" >
+              <div class="slds-text-aign_center">Are you sure you want to delete all data? Delete is permanent. </div>
+        </div>
+        <footer class="slds-modal__footer slds-float_right slds-p-right_large" ng-if="!modalLayout">
+            <button class="slds-button slds-button_brand" ng-if="!records.Id" ng-click="deleteAllData(); $slideHide()">Delete</button>
+            <button class="slds-button slds-button_neutral" ng-click="$slideHide()">Cancel</button>
+        </footer>
+    </div>
+    </div>
+    <style type="text/css">
+    .vlocity.via-slds .vloc-modal.slds-modal {
+        top: -200%;
+        margin-bottom: 45px;
+        height: auto;
+        transition: top 250ms ease-in;
+        max-height: 700px;
+    }
+    
+    .vlocity.via-slds
+    .vloc-modal.slds-modal
+    .slds-modal__header {
+        border-radius: 0;
+    }
+    
+    .vlocity.via-slds
+    .vloc-modal.slds-modal
+    .slds-modal__footer {
+        border-radius: 0;
+    }
+    
+    .vlocity.via-slds .vloc-modal.slds-modal .slds-spinner_container {
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility 0ms linear 1250ms,
+                    opacity 500ms ease-in 750ms;
+    }
+    
+    .vlocity.via-slds .vloc-modal.slds-modal .slds-spinner_container.vloc-show-loader {
+        opacity: 1;
+        visibility: visible;
+        transition: visibility 0ms linear 0ms,
+                    opacity 500ms ease-in 0ms;
+    }
+    
+    .vlocity.via-slds .vloc-modal.slds-modal .slds-global-header_container {
+        opacity: 0;
+        transition: opacity 200ms ease-in 200ms;
+    }
+    
+    .vlocity.via-slds .vloc-modal.slds-modal.vloc-modal-shown {
+        top: 45px;
+    }
+    
+    .vlocity.via-slds
+    .vloc-modal.slds-modal.vloc-modal-shown
+    .slds-global-header_container {
+        opacity: 1;
+    }
+    
+    .vlocity.via-slds
+    .vloc-modal.slds-modal
+    .vloc-edit-insured-item-modal {
+        position: absolute;
+    }
+    
+    .vlocity.via-slds
+    .vloc-modal.slds-modal
+    .vloc-modal-container {
+        height: auto;
+        width: 90%;
+        min-width: 90%;
+        max-width: 90%;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    
+    .vlocity.via-slds
+    .vloc-modal.slds-modal
+    .vloc-modal-container
+    .vloc-modal-content {
+        min-height: 22rem;
+        max-height: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .vlocity.via-slds .vloc-modal.slds-modal {
+            height: calc(100% - 20px); // leaving room for iPhone notification bar
+        }
+    
+        .vlocity.via-slds.platform-android .vloc-modal.slds-modal {
+            height: 100%; // Android doesn't need the 20px of room like iPhone
+        }
+    
+        .vlocity.via-slds
+        .vloc-modal.slds-modal
+        .slds-modal__header {
+            border-radius: 0;
+        }
+    
+        .vlocity.via-slds
+        .vloc-modal.slds-modal
+        .slds-modal__close {
+            top: 0.5rem;
+            left: auto;
+            right: auto;
+            z-index: 999;
+            color: #00396B;
+        }
+    
+        .vlocity.via-slds
+        .vloc-modal.slds-modal
+        .slds-modal__close.vloc-align-left {
+            left: 0.5rem;
+        }
+    
+        .vlocity.via-slds
+        .vloc-modal.slds-modal
+        .slds-modal__close.vloc-align-right {
+            right: 0.5rem;
+        }
+    
+        .vlocity.via-slds
+        .vloc-modal.slds-modal
+        .vloc-modal-container {
+            width: 100%;
+            min-width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transform: none;
+            bottom: 0;
+            transition: bottom 250ms ease-in;
+        }
+    
+        .vlocity.via-slds
+        .vloc-modal.slds-modal
+        .vloc-modal-container
+        .vloc-modal-content {
+            height: 100%;
+            min-height: auto;
+            max-height: 100%;
+        }
+    
+        .vlocity.via-slds
+        .vloc-modal.slds-modal
+        .slds-modal__footer {
+            border-radius: 0;
+        }
+    }
+    </style>
+</script>

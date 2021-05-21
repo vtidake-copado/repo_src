@@ -1,0 +1,15 @@
+[
+    "CalculationMatrix/autoCarAltFuel",
+    "CalculationMatrix/autoCarBrakes",
+    "CalculationMatrix/autoCarStability",
+    "CalculationMatrix/autoCarSymbol",
+    "CalculationMatrix/autoCarTheft",
+    "CalculationMatrix/autoCarValue",
+    "CalculationMatrix/autoCarYear",
+    "CalculationMatrix/autoDeductCCD",
+    "CalculationMatrix/autoLimitBIPD",
+    "CalculationMatrix/autoLimitMED",
+    "CalculationMatrix/autoLimitUM",
+    "CalculationMatrix/deductCOLL",
+    "CalculationProcedure/autoRateVehicles"
+]

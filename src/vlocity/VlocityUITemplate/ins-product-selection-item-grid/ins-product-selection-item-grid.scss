@@ -1,0 +1,309 @@
+@import "ins-product-selection-variables";
+
+.via-slds {
+    height: 100%;
+
+    .vloc-product-selection-wrapper {
+        height: 100%;
+        min-height: 30rem;
+    }
+
+    ng-include {
+        display: block;
+        height: 100%;
+    }
+
+    .slds-spinner_container {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        transition: visibility 0ms linear 750ms,
+                    opacity 250ms ease-in 250ms;
+
+        .slds-spinner {
+            top: 16rem;
+        }
+
+        &.vloc-show-loader {
+            opacity: 1;
+            visibility: visible;
+            transition: visibility 0ms linear 0ms,
+                        opacity 250ms ease-in 0ms;
+        }
+    }
+
+    &.vlocity.in-omniscript {
+        .slds-modal {
+            top: 4.5rem;
+            bottom: auto;
+        }
+
+        .slds-backdrop {
+            background: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    .slds-modal_prompt {
+        .slds-modal__container {
+            justify-content: normal;
+            height: auto;
+            box-shadow: 0 0 35px 2px rgba(0, 0, 0, 0.25);
+            padding: 0;
+            margin: 5rem auto;
+
+            .slds-modal__footer {
+                box-shadow: nonw;
+            }
+        }
+    }
+
+    .vloc-plan-selection-modal.slds-modal {
+        bottom: -125%;
+        transition: bottom 250ms ease-in;
+
+        .slds-global-header_container {
+            opacity: 0;
+            transition: opacity 200ms ease-in 200ms;
+        }
+
+        &.vloc-plan-selection-modal-shown {
+            bottom: 0;
+
+            .slds-global-header_container {
+                opacity: 1;
+            }
+        }
+
+        .vloc-product-selection-details-modal {
+            position: absolute;
+        }
+
+        .vloc-plan-selection-modal-container {
+            height: auto;
+            width: 90%;
+            min-width: 90%;
+            max-width: 90%;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+
+            .vloc-plan-selection-modal-content {
+                min-height: 30rem;
+                padding: 0;
+                border-radius: 0;
+            }
+        }
+    }
+
+    .plan-selection-base-grid {
+        height: 100%;
+        padding: 0 0.25rem;
+
+        ng-include {
+            display: block;
+        }
+        .vloc-entity-filter {
+            border-radius: 0;
+            margin: 1rem auto;
+            padding: 1rem;
+            
+            .vloc-label{
+                text-transform: capitalize;
+            }
+            
+            &.broker-portal{
+                margin: 0;
+                padding: 0;
+            }
+        }
+        .vloc-product-selection {
+            height: 100%;
+
+            .vloc-product-selection-card {
+                height: 100%;
+            }
+
+            > .vloc-page-header {
+                background-color: $header-gray;
+            }
+
+            .vloc-title {
+                font-size: 1.55rem;
+
+                .vloc-filters-result-count {
+                    font-size: 13px;
+                    margin-left: 0.5rem;
+                    bottom: 1px;
+                    position: relative;
+                }
+            }
+
+            .vloc-title-border-container {
+                width:3rem; 
+
+                .vloc-title-border {
+                    fill: #FF6E0D;
+                    border-top: 2px solid #FF6E0D; 
+                    margin: 0;
+                }
+            }
+
+            .slds-text-heading_medium {
+                font-weight: 400; // changing from default 300
+            }
+        }
+
+        &.in-iframe  {
+            .vloc-product-selection-back {
+                margin-right: 0;
+            }
+
+            .vloc-product-selection {
+                > .vloc-page-header {
+                    background-color: white;
+                    padding: 1rem 0 0;
+                }
+            }
+        }
+    }
+
+    .broker-portal{
+        width: 100%;
+        border: 0;
+
+        .vloc-entity-filter-field{
+
+            input:-webkit-autofill{
+                background-color: white;
+            }
+            .slds-form-element__control{
+                text-align: center;
+
+                .vloc-label{
+                    color: $cards-border-gray;
+                    text-transform: uppercase;
+
+                    .slds-form-element__label {
+                         color: $cards-border-gray;
+                    }
+                }
+            }
+
+            .slds-input {
+                border-top: 0;
+                border-right: 0;
+                border-left: 0;
+                border-radius: 0;
+                //color: $cards-border-gray;
+    
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .vloc-footer{
+            .slds-button {
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: $bp-large) { // 64
+        .plan-selection-base-grid {
+            .vloc-product-selection {
+                > .vloc-page-header {
+                    padding-top: 0.75rem;
+                }
+
+                .vloc-title {
+                    margin-bottom: 0.25rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $bp-phablet) { // 46.5
+        overflow-x: hidden; // on .via-slds
+
+        .vloc-plan-selection-modal.slds-modal {
+            top: auto;
+            height: 100%;
+            bottom: -100%;
+
+            .slds-modal__close {
+                top: 0.5rem;
+                left: 0.5rem;
+                right: auto;
+                z-index: 999;
+                color: $primary-dark;
+            }
+            .vloc-plan-selection-modal-container {
+                width: 100%;
+                min-width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                transform: none;
+                bottom: 0;
+                transition: bottom 250ms ease-in;
+
+                .vloc-plan-selection-modal-content {
+                    height: 100%;
+                    min-height: auto;
+                }
+            }
+        }
+
+        .vloc-page-header {
+            padding: 0 1rem;
+            margin: 0;
+        }
+
+        .plan-selection-base-grid {
+            .vloc-product-selection {
+                .vloc-page-header {
+                    padding-bottom: 0.75rem;
+                }
+                .vloc-title {
+                    font-size: 1.45rem;
+                    margin-bottom: 0.25rem;
+                }
+            }
+            .vloc-entity-filter {
+                width: 90%;
+                margin: 5%;
+            }
+
+            &.in-omniscript {
+                .vloc-product-selection {
+                    > .vloc-page-header {
+                        background-color: white;
+                        padding: 0.5rem 1rem 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $bp-small) { // 30
+         &.in-omniscript {
+            .vloc-product-selection-wrapper {
+                overflow: hidden;
+            }
+        }
+        .vloc-product-selection-wrapper {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+        }
+    }
+}
+@media screen and (max-width: $bp-phablet) { // 46.5
+    html, body {
+        height: 100%;
+    }
+}

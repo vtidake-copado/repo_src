@@ -1,0 +1,345 @@
+<div ng-controller="InsCensusController" class="vloc-ins-census-container" ng-if="bpTree.asIndex === child.eleArray[0].rootIndex" ng-init="loadCensus(control)">
+    <div ng-if="resources.isLoaded">
+        <div class="nds-notify_container slds-notify_container vloc-ins-notify-container" ng-if="$root.notification.active">
+            <div class="nds-notify nds-notify_toast slds-notify slds-notify_toast slds-theme nds-theme_{{$root.notification.type}} slds-theme_{{$root.notification.type}}" role="alert">
+                <span class="nds-assistive-text slds-assistive-text">{{$root.notification.type}}</span>
+                <span class="nds-icon_container nds-icon-utility-{{$root.notification.type}} nds-m-right_small nds-no-flex nds-align-top 
+                        slds-icon_container slds-icon-utility-{{$root.notification.type}} slds-m-right_small slds-no-flex slds-align-top" title="{{$root.notification.type}}">
+                    <slds-svg-icon sprite="'utility'" size="'small'" icon="$root.notification.icon"></slds-svg-icon>
+                </span>
+                <div class="nds-notify__content slds-notify__content">
+                    <h2 class="nds-text-heading_small slds-text-heading_small">{{$root.notification.message}}</h2>
+                    <p>
+                        <button ng-if="$root.notification.action" ng-click="$root.notification.action.callback()" class="nds-button slds-button vloc-ins-toast-action">
+                            {{$root.notification.action.title}}
+                        </button>
+                    </p>
+                </div>
+                <div class="nds-notify__close slds-notify__close">
+                    <button class="nds-button nds-button_icon nds-button_icon-inverse slds-button slds-button_icon slds-button_icon-inverse vloc-ins-notify-close" title="Close" ng-click="$root.notification.active = false">
+                        <slds-svg-icon sprite="'utility'" icon="'close'"></slds-svg-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="nds-wrap nds-grid nds-gutters nds-box slds-wrap slds-grid slds-gutters slds-box vloc-ins-header-summary">
+            <div class="nds-col slds-col">
+                <span>{{::customLabels.InsOSCensusEmployeeTotalCount}}</span>
+                <div class="nds-text-heading_large slds-text-heading_large vloc-ins-header-summary-count">{{censusInfo.total}}</div>
+            </div>
+            <div class="nds-col slds-col">
+                <span>{{::customLabels.InsOSCensusEmployeeOnlyCount}}</span>
+                <div class="nds-text-heading_large slds-text-heading_large vloc-ins-header-summary-count">{{censusInfo.EmpCount}}</div>
+            </div>
+            <div class="nds-col slds-col">
+                <span>{{::customLabels.InsOSCensusEmployeeWithSpouseCount}}</span>
+                <div class="nds-text-heading_large slds-text-heading_large vloc-ins-header-summary-count">{{censusInfo.EmpSpCount}}</div>
+            </div>
+            <div class="nds-col slds-col">
+                <span>{{::customLabels.InsOSCensusEmployeeWithChildCount}}</span>
+                <div class="nds-text-heading_large slds-text-heading_large vloc-ins-header-summary-count">{{censusInfo.EmpChCount}}</div>
+            </div>
+            <div class="nds-col slds-col">
+                <span>{{::customLabels.InsOSCensusEmployeeWithFamilyCount}}</span>
+                <div class="nds-text-heading_large slds-text-heading_large vloc-ins-header-summary-count">{{censusInfo.EmpFaCount}}</div>
+            </div>
+        </div>
+        <div class="nds-wrap nds-grid nds-gutters_direct slds-wrap slds-grid slds-gutters_direct vloc-ins-control-bar" ng-if="isValidCensus">
+            <div class="nds-col slds-col">
+                <div class="nds-form-element slds-form-element">
+                    <label class="nds-form-element__label slds-form-element__label" for="search-input">{{::customLabels.InsOSCensusSearchName}}</label>
+                    <div class="nds-form-element__control nds-input-has-icon nds-input-has-icon_left-right slds-form-element__control slds-input-has-icon slds-input-has-icon_left-right">
+                        <slds-svg-icon sprite="'utility'" icon="'search'" size="'xx-small'" extra-classes="'nds-input__icon nds-input__icon_left nds-icon-text-default slds-input__icon slds-input__icon_left slds-icon-text-default'"></slds-svg-icon>
+                        <input type="text" id="search-input" placeholder="Search Name" class="nds-input slds-input" ng-model="search.keyword" ng-change="searchEmployee()"/>
+                        <button class="nds-button nds-button_icon nds-input__icon nds-input__icon_right slds-button slds-button_icon slds-input__icon slds-input__icon_right" title="Clear" ng-click="clearSearch()">
+                            <slds-svg-icon sprite="'utility'" icon="'clear'" size="'xx-small'" extra-classes="'nds-button__icon nds-icon-text-light slds-button__icon slds-icon-text-light'"></slds-svg-icon>
+                            <span class="nds-assistive-text slds-assistive-text">{{::customLabels.InsOSCensusEmployeeTotalCount}}</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="nds-col nds-wrap nds-grid nds-grid_align-end slds-col slds-wrap slds-grid slds-grid_align-end">                
+                <div class="nds-col slds-col">
+                    <button ng-click="downloadFile()" class="nds-button slds-button">{{::customLabels.InsOSCensusDownloadTemplate}}</button>
+                </div>
+                <div class="nds-col slds-col">
+                    <ins-file-upload-handler
+                        input-id="prime-census__import-file"
+                        class="nds-button nds-button_brand slds-button slds-button_brand"
+                        label-text="{{::customLabels.InsOSCensusUploadMembers}}"
+                        control="control"
+                        on-read="uploadCensus($event, control)"
+                        on-error="uploadError($event)"
+                        input-class="vloc-ins-hide-element"
+                        ng-model="censusFile">
+                    </ins-file-upload-handler>
+                </div>
+                <div class="nds-col slds-col">
+                    <button class="nds-button nds-button_brand slds-button slds-button_brand" ng-click="addNewMember()">{{::customLabels.InsOSCensusAddEmployee}}</button>
+                </div>
+                <div class="nds-col slds-col">
+                    <button class="nds-button nds-button_brand slds-button slds-button_brand" ng-click="deleteAllCensus(control)">{{::customLabels.InsOSCensusDeleteAllData}}</button>
+                </div>
+            </div>
+        </div>
+        <div class="vloc-ins-census-member-upload" ng-if="bpTree.asIndex === child.eleArray[0].rootIndex">
+            <div class="vloc-ins-census-table-container nds-grid slds-grid" ng-if="tableData.length"> 
+                <div class="vloc-ins-census-table-names nds-col slds-col">
+                    <table class="nds-table nds-table_bordered nds-no-row-hover slds-table slds-table_bordered slds-no-row-hover">
+                        <thead>
+                            <tr class="nds-line-height_reset slds-line-height_reset">
+                                <th>
+                                    <div class="nds-truncate nds-assistive-text slds-truncate slds-assistive-text" title="{{::customLabels.OmniScriptError}}">
+                                        {{::customLabels.OmniScriptError}}
+                                    </div>
+                                </th>
+                                <th scope="col">
+                                    <div class="nds-truncate slds-truncate" title="{{::lblLastName}}">
+                                        {{::lblLastName}}
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="censusDetail in tableData track by $index"
+                                ng-form="censusForm_{{$index}}"
+                                ng-show="!showErrorsOnly || (showErrorsOnly && censusForm_{{$index}}.$invalid) || loopform.$valid"
+                                ng-class="{'vloc-ins-no-border': (!censusDetail[nsPrefix + 'IsPrimaryMember__c']) }">  
+                                <td class="vloc-ins-col-data nds-cell-edit nds-cell-error slds-cell-edit slds-cell-error" ng-class="{'nds-has-focus slds-has-focus': censusDetail.isErrorDisplayed}" role="gridcell">
+                                    <button class="nds-button nds-button_icon nds-button_icon-error nds-m-horizontal_xxx-small slds-button slds-button_icon slds-button_icon-error slds-m-horizontal_xxx-small" 
+                                        tabindex="{{$index + 1}}" ng-if="censusDetail.error" ng-click="showError(censusDetail)">
+                                        <slds-svg-icon sprite="'utility'" icon="'warning'" size="'xx-small'" class="nds-button__icon slds-button__icon"></slds-svg-icon>
+                                        <span class="nds-assistive-text slds-assistive-text">{{::customLabels.OmniScriptError}}</span>
+                                    </button>
+                                    <div class="vloc-ins-err-tooltip nds-popover nds-popover_tooltip nds-nubbin_bottom-left nds-theme_error" ng-if="censusDetail.isErrorDisplayed" role="tooltip" id="error-tooltip-01">
+                                        <div class="nds-popover__body slds-popover__body vloc-ins-err-details">{{censusDetail.error}}</div>
+                                    </div>
+                                </td>   
+                                <td class="vloc-ins-col-data nds-cell-edit slds-cell-edit" data-label="{{::lblLastName}}" ng-class="{'nds-has-error slds-has-error': ((censusForm_{{$index}}.lastName.$touched || censusForm_{{$index}}.$submitted) && censusForm_{{$index}}.lastName.$invalid)}">
+                                    <div class="nds-form-element slds-form-element">
+                                        <input type="text" name="lastName" ng-change="updateCensusMember(censusDetail)" tabindex="{{$index + 1}}" ng-model-options="{allowInvalid: true}"
+                                            class="nds-input slds-input" ng-model="censusDetail[nsPrefix + 'LastName__c']" aria-describedby="error-message-lastname-{{index}}" required/>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="vloc-ins-census-table-fields nds-scrollable_x nds-col slds-scrollable_x slds-col" ins-scroll-handler>
+                    <table class="nds-table nds-table_bordered nds-no-row-hover slds-table slds-table_bordered slds-no-row-hover">
+                        <thead>
+                            <tr class="nds-line-height_reset slds-line-height_reset">
+                                <th  ng-repeat="header in headers" ng-if="(header.name !== nsPrefix + 'LastName__c') && (header.name !== nsPrefix + 'ContractLineId__c')" title="{{header.label}}">
+                                    {{header.label}}
+                                </th>
+                                <th ng-repeat="(type, plans) in mapTypeToPlans" ng-if="mapTypeToPlans">
+                                    {{type}}
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="censusDetail in tableData track by $index"
+                                ng-init="memberIndex = $index + 1"  
+                                ng-form="censusDetailForm_{{memberIndex}}"
+                                ng-show="!showErrorsOnly || (showErrorsOnly && censusDetailForm_{{memberIndex}}.$invalid) || loopform.$valid"
+                                ng-class="{'vloc-ins-no-border': (!censusDetail[nsPrefix + 'IsPrimaryMember__c']) }">
+                                <td class="vloc-ins-col-data nds-cell-edit slds-cell-edit" ng-repeat="header in headers" data-label="{header.name}" 
+                                    ng-if="(header.name !== nsPrefix + 'LastName__c') && (header.name !== nsPrefix +'ContractLineId__c')"
+                                    ng-class="{'nds-has-error slds-has-error': ((censusDetailForm_{{memberIndex}}.{{header.name}}.$touched || censusDetailForm_{{memberIndex}}.$submitted) && censusDetailForm_{{memberIndex}}.{{header.name}}.$invalid)}">
+                                    <input type="text" tabindex="{{memberIndex}}" ng-change="updateCensusMember(censusDetail)" 
+                                        ng-if="header.type === 'STRING' || header.type === 'MULTIPICKLIST' || header.type === 'ENCRYPTEDSTRING' || header.type === 'REFERENCE'" 
+                                        class="nds-input slds-input vloc-ins-field-text" ng-model="censusDetail[header.name]"/>
+                                    <input type="number" tabindex="{{memberIndex}}" ng-change="updateCensusMember(censusDetail)" 
+                                        ng-if="header.type === 'DOUBLE'" class="nds-input slds-input" ng-model="censusDetail[header.name]"/>
+                                    <input type="email" name="{{header.name}}" tabindex="{{memberIndex}}" ng-change="updateCensusMember(censusDetail)" 
+                                        ng-if="header.type === 'EMAIL'" class="nds-input slds-input vloc-ins-field-text" ng-model="censusDetail[header.name]"/>   
+                                    <div class="nds-form-element slds-form-element" ng-if="header.type === 'BOOLEAN'">
+                                        <div class="nds-form-element__control slds-form-element__control">
+                                            <div class="nds-checkbox slds-checkbox">
+                                                <input type="checkbox" tabindex="{{memberIndex}}" name="options" id="checkbox-{{header.name}}-{{memberIndex}}" ng-change="updateCensusMember(censusDetail)" ng-model="censusDetail[header.name]" />
+                                                <label class="nds-checkbox__label slds-checkbox__label" for="checkbox-{{header.name}}-{{memberIndex}}">
+                                                    <span class="nds-checkbox_faux slds-checkbox_faux"></span>
+                                                    <span class="nds-form-element__label slds-form-element__label"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nds-is-relative slds-is-relative nds-form-element slds-form-element" ng-if="header.type === 'DATE'" >
+                                        <input type="text" tabindex="{{memberIndex}}" 
+                                            name="{{header.name}}"
+                                            class="slds-input nds-input datatype-date vloc-ins-field-date"
+                                            ng-model="censusDetail[header.name]" ng-model-options="{debounce: 0, required: false}"
+                                            ng-change="updateCensusMember(censusDetail, header.name)"
+                                            slds-date-picker />
+                                    </div>
+                                    <div class="nds-form-element slds-form-element" ng-if="header.type === 'PICKLIST'" >
+                                        <div class="nds-form-element__control slds-form-element__control">
+                                            <div class="nds-select_container slds-select_container">
+                                            <select class="nds-select slds-select" tabindex="{{memberIndex}}" ng-model="censusDetail[header.name]" ng-change="updateCensusMember(censusDetail)">
+                                                <option value="">{{::customLabels.Select}}</option>
+                                                <option ng-repeat="option in header.options" value="{{option.value}}">{{option.label}}</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="vloc-ins-col-data" ng-repeat="(type, plans) in mapTypeToPlans" ng-if="mapTypeToPlans">
+                                    <span ng-repeat="productId in censusDetail[nsPrefix + 'ContractLineId__c'].split(';')" ng-if="mapIdToPlan[productId].type == type">
+                                        {{mapIdToPlan[productId].name}}
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="vloc-ins-census-table-actions nds-col slds-col">
+                    <table class="nds-table nds-table_bordered nds-no-row-hover slds-table slds-table_bordered slds-no-row-hover">
+                        <thead>
+                            <tr class="nds-line-height_reset slds-line-height_reset">
+                                <th scope="col">
+                                    <div class="nds-truncate slds-truncate" title="{{::customLabels.InsOSCensusRelationship}}">{{::customLabels.InsOSCensusRelationship}}</div>
+                                </th>
+                                <th scope="col">
+                                    <div class="nds-truncate slds-truncate" title="">
+                                        <button class="nds-button nds-button_icon nds-button_icon-small nds-float_right nds-popover__close slds-button slds-button_icon slds-button_icon-small slds-float_right slds-popover__close" 
+                                                ng-click="upsertTableData(control)" title="Save" >
+                                            <slds-svg-icon sprite="'utility'" icon="'save'" size="'small'" extra-classes="'nds-icon-text-default slds-icon-text-default'"></slds-svg-icon>
+                                        </button>
+
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="censusDetail in tableData track by $index"
+                                ng-form="censusForm_{{$index}}"
+                                ng-show="!showErrorsOnly || (showErrorsOnly && censusForm_{{$index}}.$invalid) || loopform.$valid"
+                                ng-class="{'vloc-ins-no-border': (!censusDetail[nsPrefix + 'IsPrimaryMember__c']) }">
+                                <td class="vloc-ins-col-data" data-label="Relationship">
+                                    <input tabindex="{{$index + 1}}" type="text" value="{{::customLabels.InsOSCensusRelationshipEmployee}}" class="nds-select slds-select" ng-if="censusDetail[nsPrefix + 'IsPrimaryMember__c']" disabled required></select>
+                                    <div class="nds-form-element slds-form-element" ng-if="!censusDetail[nsPrefix + 'IsPrimaryMember__c']"  >
+                                        <div class="nds-form-element__control slds-form-element__control">
+                                            <div class="nds-select_container slds-select_container" >
+                                                <select class="nds-select slds-select" 
+                                                    tabindex="{{$index + 1}}" 
+                                                    ng-model="censusDetail[nsPrefix + 'IsSpouse__c']" 
+                                                    ng-change="updateCensusMember(censusDetail, true)" 
+                                                    ng-options="(item?customLabels.InsOSCensusRelationshipSpouse:customLabels.InsOSCensusRelationshipChild) for item in [true, false]" required>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td> 
+                                <td class="vloc-ins-col-action">
+                                    <button class="nds-button nds-button_icon nds-button_icon-small nds-float_right nds-popover__close slds-button slds-button_icon slds-button_icon-small slds-float_right slds-popover__close" 
+                                        tabindex="{{$index + 1}}" ng-click="deleteCensus(control, censusDetail, censusDetail[nsPrefix + 'IsPrimaryMember__c'])" title="{{::customLabels.InsOSCensusDeleteMember}}" >
+                                        <slds-svg-icon sprite="'utility'" icon="'delete'" size="'small'" extra-classes="'nds-icon-text-default slds-icon-text-default'"></slds-svg-icon>
+                                    </button>
+                                    <button class="nds-button nds-button_icon nds-button_icon-small nds-float_right nds-popover__close slds-button slds-button_icon slds-button_icon-small slds-float_right slds-popover__close" 
+                                        ng-if="censusDetail[nsPrefix + 'IsPrimaryMember__c']" ng-click="addNewMember(censusDetail)" tabindex="{{$index + 1}}" title="{{::customLabels.InsOSCensusAddDependent}}" >
+                                        <slds-svg-icon sprite="'utility'" icon="'adduser'" size="'small'" extra-classes="'nds-icon-text-default slds-icon-text-default'"></slds-svg-icon>
+                                    </button>  
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <ul class="vloc-ins-pagination nds-text-heading_small slds-text-heading_small nds-align_absolute-center slds-align_absolute-center" ng-if="usePagination && totalNumberOfItems">
+            <li ng-if="showPageControl('prev')">
+                <button class="nds-button slds-button vloc-ins-nav" ng-click="navigateToPage(0)">
+                    &laquo;
+                </button>
+            </li>
+            <li ng-if="showPageControl('prev')">
+                <button class="nds-button slds-button vloc-ins-nav" ng-click="paginateItems('prev')">
+                    &lsaquo;
+                </button>
+            </li>
+            <li ng-repeat="pageNumber in pages track by $index" >
+                <button class="nds-button slds-button" ng-click="navigateToPage(pageNumber - 1)" ng-disabled="pageNumber === '...'">
+                    <span ng-class="{ 'vloc-ins-active' : currentPage === pageNumber  }">{{ pageNumber }}</span>
+                </button>
+            </li>
+            <li ng-if="showPageControl('next')">
+                <button class="nds-button slds-button vloc-ins-nav" ng-click="paginateItems('next')">
+                    &rsaquo;
+                </button>
+            </li>
+            <li ng-if="showPageControl('next')">
+                <button class="nds-button slds-button vloc-ins-nav" ng-click="navigateToPage(totalNumberOfPages)">
+                    &raquo;
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/ng-template" id="sldsModalTemplate.html">
+    <div class="vloc-ins-file-header-mapping-modal" >
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="nds-modal nds-fade-in-open nds-modal_large">
+            <div class="nds-modal__container slds-modal__container  vloc-ins-omni" >
+                <header class="nds-modal__header slds-modal__header">
+                    <button class="nds-button nds-button_icon nds-modal__close nds-button_icon-inverse slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" ng-click="$slideHide()">
+                        <slds-svg-icon sprite="'utility'" icon="'close'" size="'medium'" ></slds-svg-icon>
+                        <span class="nds-assistive-text slds-assistive-text">Close</span>
+                    </button>
+                    <h2 id="modal-heading-01" class="nds-text-heading_medium nds-hyphenate slds-text-heading_medium slds-hyphenate">{{title}}</h2>
+                </header>
+                <div class="nds-modal__content nds-p-around_medium slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <div class="nds-text-align_center slds-text-align_center panel panel-success" ng-if="uploadInfo.status === 'success'" >
+                        <div class="panel-heading">{{::customLabels.InsOSCensusUploadSucceeded}}</div>
+                        <div class="panel-body">{{ uploadInfo['csvDataCount'] }} {{::customLabels.InsOSCensusRecords}} </div>
+                    </div>
+                    <div class="nds-size_1-of-1 slds-size_1-of-1 vloc-ins-nds-underline--gradient nds-m-top_small nds-m-bottom_large nds-m-top_large 
+                        slds-m-top_small slds-m-bottom_large slds-m-top_large">
+                        <h1 class="vloc-ins-nds-page_header">{{::customLabels.InsOSCensusIdentifyFileMappings}}</h1>
+                    </div>
+                    <div class="nds-grid nds-wrap">
+                        <div class="nds-m-bottom_small nds-size_1-of-3 nds-grid nds-grid_align-center slds-m-bottom_small slds-size_1-of-3 slds-grid slds-grid_align-center" ng-repeat="columnHeader in csvColumnHeaders">
+                            <div class="nds-col nds-size_1-of-2 slds-col slds-size_1-of-2">
+                                <div class="vloc-ins-nds-inline-control__label nds-p-left_small slds-p-left_small">
+                                    {{columnHeader}}
+                                </div>
+                                <select ng-disabled="uploadInfo.status === 'mapped'"
+                                    ng-options="header.name as header.label for header in headers"
+                                    ng-model="cardFieldMap[columnHeader]" 
+                                    class=" nds-select slds-select vloc-attrs-select" 
+                                    id="select-{{$index}}-{{header.name}}">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="nds-modal__footer slds-modal__footer">
+                    <button class="nds-button nds-button_neutral slds-button slds-button_neutral" ng-click="$slideHide()">{{::customLabels.InsButtonCancel}}</button>
+                    <button class="nds-button nds-button_brand slds-button slds-button_brand" ng-click="setCensusMembers()">{{::customLabels.Save}}</button>
+                </footer>
+            </div>
+        </section>
+        <div class="nds-backdrop nds-backdrop_open slds-backdrop slds-backdrop_open"></div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="confirmationTemplate.html">
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="nds-modal nds-fade-in-open slds-modal slds-fade-in-open">
+        <div class="nds-modal__container slds-modal__container">
+            <header class="nds-modal__header slds-modal__header">
+                <button class="nds-button nds-button_icon nds-modal__close nds-button_icon-inverse slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" ng-click="$slideHide()">
+                    <slds-svg-icon sprite="'utility'" icon="'close'" size="'medium'" ></slds-svg-icon>
+                    <span class="nds-assistive-text slds-assistive-text">Close</span>
+                </button>
+                <h2 id="modal-heading-01" class="nds-modal__title nds-hyphenate slds-modal__title slds-hyphenate">{{title}}</h2>
+            </header>
+            <div class="nds-modal__content nds-p-around_medium slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                <p>{{message}}</p>
+            </div>
+            <footer class="nds-modal__footer slds-modal__footer">
+                <button class="nds-button nds-button_neutral slds-button slds-button_neutral" ng-click="$slideHide()">{{::customLabels.InsButtonCancel}}</button>
+                <button class="nds-button nds-button_brand slds-button slds-button_brand" ng-click="onSave()">{{::customLabels.OmniOK}}</button>
+            </footer>
+        </div>
+    </section>
+    <div class="nds-backdrop nds-backdrop_open slds-backdrop slds-backdrop_open"></div>
+</script>

@@ -1,0 +1,35 @@
+<div class="vella-swipe-container" ng-controller="vellaSwipeController" ng-init="init(obj, records)" ng-class="{'vella-swipe-insured-item': obj.Name.fieldValue}">
+    <ion-list show-delete="false" can-swipe="true" ng-if="obj">
+        <ion-item href="#" ng-if="obj.Name.fieldValue !== 'Personal Dwelling'">
+            <div class="slds-clearfix vella-swipe-item-container">
+                <div class="slds-float--left vella-swipe-item-left">
+                    <p class="vella-swipe-item-name">{{insurableItem.Name}}</p>
+                    <p class="vella-swipe-item-description vella-swipe-item-description-pet" ng-if="insurableItem.Breed">{{insurableItem.Breed}} <span>|</span> {{insurableItem.Age}} y/o</p>
+                    <p class="vella-swipe-item-description vella-swipe-item-description-valuable" ng-if="insurableItem.Value">Value ${{insurableItem.Value | currency}}</p>
+                </div>
+                <div class="slds-float--right vella-swipe-item-right" ng-hide="obj.Name.fieldValue">
+                    <p class="vella-swipe-item-price">${{insurableItem.Price}}/mo</p>
+                </div>
+                <div class="slds-float--right vella-swipe-item-right" ng-show="obj.Name.fieldValue">
+                    <slds-svg-icon size="'small'" sprite="'utility'" icon="'check'"></slds-svg-icon>
+                </div>
+            </div>
+            <ion-option-button class="button-light vella-swipe-btn" ng-if="!obj.Name.fieldValue" ng-click="createInsuredItemFromUnbound(obj)">
+                <div class="vella-swipe-btn-contents">
+                    <slds-svg-icon size="'small'" sprite="'utility'" icon="'check'"></slds-svg-icon>
+                    <div class="vella-swipe-btn-label">Add Coverage</div>
+                </div>
+            </ion-option-button>
+            <ion-option-button class="button-light vella-swipe-btn" ng-if="obj.Name.fieldValue" ng-click="deleteInsuredItem(obj)">
+                <div class="vella-swipe-btn-contents">
+                    <slds-svg-icon size="'small'" sprite="'utility'" icon="'close'"></slds-svg-icon>
+                    <div class="vella-swipe-btn-label">Remove Coverage</div>
+                </div>
+            </ion-option-button>
+        </ion-item>
+    </ion-list>
+    <button class="slds-button vella-policy-add-item" ng-if="!obj && data.cardName === 'vella-policy-add-insured-item' && currentType === 'Policy' && action.id === 'add_pet_item_from_policy' && $root.cardData.Type === 'Pet'" ng-repeat="action in data.actions" ng-click="performAction(action)">+ {{action.displayName}}</button>
+    <button class="slds-button vella-policy-add-item" ng-if="!obj && data.cardName === 'vella-policy-add-insured-item' && currentType === 'Policy' && action.id === 'add_valuable_item_from_policy' && $root.cardData.Type === 'Valuable'" ng-repeat="action in data.actions" ng-click="performAction(action)">+ {{action.displayName}}</button>
+    <button class="slds-button vella-policy-add-item" ng-if="!obj && data.cardName === 'vella-policy-add-insured-item' && currentType === 'Insurable' && action.id === 'add_pet_item_from_insurable' && $root.cardData.SpecName === 'Pet'" ng-repeat="action in data.actions" ng-click="performAction(action)">+ {{action.displayName}}</button>
+    <button class="slds-button vella-policy-add-item" ng-if="!obj && data.cardName === 'vella-policy-add-insured-item' && currentType === 'Insurable' && action.id === 'add_valuable_item_from_insurable' && $root.cardData.SpecName === 'Valuable'" ng-repeat="action in data.actions" ng-click="performAction(action)">+ {{action.displayName}}</button>
+</div>

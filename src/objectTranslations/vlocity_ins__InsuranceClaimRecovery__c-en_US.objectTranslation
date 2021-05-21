@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- ClaimRecoveryDetails --></label>
+        <name>vlocity_ins__ClaimRecoveryDetails</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>vlocity_ins__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assignment Date --></label>
+        <name>vlocity_ins__AssignmentDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim --></label>
+        <name>vlocity_ins__ClaimId__c</name>
+        <relationshipLabel><!-- Claim Recovery --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Collections Assignment Date --></label>
+        <name>vlocity_ins__CollectionsAssignmentDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Date --></label>
+        <name>vlocity_ins__StatusAsOfDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__Status__c</name>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation><!-- Received --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__Type__c</name>
+        <picklistValues>
+            <masterLabel>Arbitration</masterLabel>
+            <translation><!-- Arbitration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Litigation</masterLabel>
+            <translation><!-- Litigation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salvage</masterLabel>
+            <translation><!-- Salvage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subrogation</masterLabel>
+            <translation><!-- Subrogation --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

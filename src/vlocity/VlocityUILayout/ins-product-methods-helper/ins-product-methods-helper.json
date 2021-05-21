@@ -1,0 +1,30 @@
+{
+    "Cards": [
+    ],
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "01t6A000000Undh"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "inputMap": {
+                "methodName": "InsProductService.getRatedProducts",
+                "productId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceProductAdminHandler"
+            },
+            "remoteClass": "InsuranceProductAdminHandler",
+            "remoteMethod": "getMethodDetail",
+            "remoteNSPrefix": "%vlocity_namespace%"
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-product-methods-helper"
+        }
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{}"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankCardState": true,
+            "blankStateCheck": true,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'non-existent'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "description": "Check to see if your family is already covered.",
+                        "displayName": "Add Family",
+                        "hasExtraParams": false,
+                        "id": "add_family",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/"
+                    },
+                    {
+                        "collapse": true,
+                        "description": "Protect your financial assets from lawsuits and major claims.",
+                        "displayName": "Risk Assessment",
+                        "hasExtraParams": false,
+                        "id": "add_personLiab",
+                        "isCustomAction": true,
+                        "openUrlIn": "New Tab / Window",
+                        "type": "Custom",
+                        "url": "/apex/%vlocity_namespace%__OmniScriptUniversalPage?id=0014100000ruHw6&OmniScriptType=Assess&OmniScriptSubType=Personal%20Liability&OmniScriptLang=English&scriptMode=vertical&ContextId=0014100000ruHw6"
+                    },
+                    {
+                        "collapse": true,
+                        "description": "Guard against financial hardships of pet injuries and illness.",
+                        "displayName": "Add Pets",
+                        "hasExtraParams": false,
+                        "id": "add_pets",
+                        "isCustomAction": true,
+                        "openUrlIn": "New Tab / Window",
+                        "type": "Custom",
+                        "url": "/apex/%vlocity_namespace%__OmniScriptUniversalPage?id=0014100000ruHw6AAE&layout=lightning#/OmniScriptType/Vella_Pet/OmniScriptSubType/CreateInsurableItem/OmniScriptLang/English/ContextId/{0}/PrefillDataRaptorBundle//true"
+                    },
+                    {
+                        "collapse": true,
+                        "description": "Property and liability coverage for home-based businesses.",
+                        "displayName": "Add Business Pursuits",
+                        "hasExtraParams": false,
+                        "id": "add_BusPursuits",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/"
+                    },
+                    {
+                        "collapse": true,
+                        "description": "Protect yourself and your family while traveling.",
+                        "displayName": "Add Vacations",
+                        "hasExtraParams": false,
+                        "id": "add_vacations",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/"
+                    },
+                    {
+                        "collapse": true,
+                        "description": "Volunteer work may leave you open to lawsuits.",
+                        "displayName": "Add Volunteer Work",
+                        "hasExtraParams": false,
+                        "id": "add_volunteer_work",
+                        "isCustomAction": true,
+                        "type": "Custom",
+                        "url": "/apex/"
+                    }
+                ]
+            },
+            "fields": [
+            ],
+            "filter": "$scope.data.status === 'non-existent'",
+            "name": "vella-discovery-questions",
+            "sObjectType": null,
+            "templateUrl": "vella-discovery-questions"
+        }
+    ],
+    "title": "Vella Discovery Questions"
+}

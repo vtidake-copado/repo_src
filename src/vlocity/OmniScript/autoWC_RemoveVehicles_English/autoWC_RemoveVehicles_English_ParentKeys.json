@@ -1,0 +1,9 @@
+[
+    "DataRaptor/VPL-InForcePolicyVersion-104-1",
+    "DataRaptor/auto_ReadPolicyDetails_modifyCoveragesOS",
+    "DataRaptor/auto_TransfForVehicleSelect_removeVehiclesOS",
+    "DataRaptor/auto_TranstoCreatePolicyVersion_removeEndorsementOS",
+    "IntegrationProcedure/Auto_EndorsementBilling",
+    "VlocityUITemplate/ins-os-attribute-component",
+    "VlocityUITemplate/ins-os-coverage-component"
+]

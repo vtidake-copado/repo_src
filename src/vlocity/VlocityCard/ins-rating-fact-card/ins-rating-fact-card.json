@@ -1,0 +1,71 @@
+{
+    "dataSource": {
+        "type": null,
+        "value": {
+            "body": "{}",
+            "resultVar": ""
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankStateCheck": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Attribute Code",
+                    "name": "%vlocity_namespace%__AttributeUniqueCode__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Label",
+                    "name": "Name",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Rating",
+                    "name": "%vlocity_namespace%__IsRatingAttribute__c",
+                    "type": "BOOLEAN"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Rating Input",
+                    "name": "%vlocity_namespace%__RatingInput__c",
+                    "type": "string"
+                }
+            ],
+            "name": "Ins Rating Fact Card",
+            "templateUrl": "ins-rating-fact-card"
+        }
+    ],
+    "title": "Ins Rating Fact"
+}

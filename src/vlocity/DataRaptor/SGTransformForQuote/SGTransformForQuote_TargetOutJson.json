@@ -1,0 +1,11 @@
+{
+    "smallGroupQuoteJson": {
+        "accountId": "Text",
+        "censusId": "Text",
+        "opportunityId": "Text",
+        "productConfigurationDetail": {
+            "records": "Text"
+        },
+        "toBeDeletedQuoteLineItems": "Text"
+    }
+}

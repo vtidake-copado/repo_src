@@ -1,0 +1,22 @@
+{
+    "output": [
+        {
+            "aggregationResults": {
+            },
+            "calculationResults": [
+                {
+                    "BasePrice": "100000",
+                    "FullPrice": 982280,
+                    "ID": "input",
+                    "NumberOfEmployees": "800",
+                    "ProductCode": "SP1",
+                    "ProductDescription": "For Clients that need to see what Road Runner can do without several key features. The low willingness to pay option.",
+                    "ProductId": "01tf4000000SO4KAAW",
+                    "ProductImage": "015f4000000NFkI",
+                    "ProductName": "Limited Service Plan",
+                    "ZIP": "10044"
+                }
+            ]
+        }
+    ]
+}

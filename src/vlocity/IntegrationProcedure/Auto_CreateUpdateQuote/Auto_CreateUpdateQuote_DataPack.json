@@ -1,0 +1,24 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "Version 2 created by Arturo",
+    "%vlocity_namespace%__CustomJavaScript__c": "{}",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "Auto_CreateUpdateQuote_Element_transformtoCreateQuote.json",
+        "Auto_CreateUpdateQuote_Element_createUpdateQuote.json",
+        "Auto_CreateUpdateQuote_Element_referToUnderwriting.json",
+        "Auto_CreateUpdateQuote_Element_Response.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "Auto_CreateUpdateQuote",
+    "%vlocity_namespace%__PropertySet__c": "Auto_CreateUpdateQuote_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "CreateUpdateQuote",
+    "%vlocity_namespace%__Type__c": "Auto",
+    "Name": "Auto Create Quote",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Auto/CreateUpdateQuote/Procedure"
+}

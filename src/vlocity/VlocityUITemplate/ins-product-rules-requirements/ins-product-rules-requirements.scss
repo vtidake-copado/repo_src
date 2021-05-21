@@ -1,0 +1,209 @@
+body {
+    background-color: white;
+}
+.via-slds {
+    .slds-has-error {
+        .slds-select[disabled],
+        .slds-textarea[disabled] {
+            background-color: #ecebea;
+        }
+    }
+
+    .vloc-ins-product-rules-requirements-container {
+        .vloc-ins-product-rules-requirement {
+            padding-left: 3rem;
+            background-color: white;
+
+            .vloc-ins-product-rules-requirement-inner-wrapper {
+                position: relative;
+                z-index: 2;
+                left: 0;
+                background-color: white;
+                max-height: 32rem;
+                transition: left 250ms ease-in, // slide back from left first
+                            max-height 250ms ease-in 400ms, // 400ms delay includes slide in from left and 150ms background-color fade-in on the :before pseudo element
+                            padding 0ms linear 600ms; // padding needs to be removed, removing right before slide up finishes
+
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 10;
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    visibility: hidden;
+                    background-color: transparent;
+                    transition: background-color 150ms ease-in,
+                                visibility 0ms linear 150ms;
+                }
+
+                &.delete-warning-active {
+                    left: -80%;
+                }
+
+                &.delete-processing {
+                    max-height: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+
+                    &:before {
+                        visibility: visible;
+                        background-color: rgba(#54698d, 0.8);
+                    }
+                }
+
+                &.adding-new-rule {
+                    &:before {
+                        visibility: visible;
+                        background-color: rgba(#54698d, 0.8);
+                    }
+                }
+
+                .vloc-ins-product-rules-requirement-number {
+                    position: absolute;
+                    left: -2rem;
+                    font-size: 1rem;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    line-height: 1.5rem;
+                    border-radius: 50%;
+                    background-color: lighten(#54698d, 30%);
+                    text-align: center;
+                    color: white;
+                    top: 2.3rem;
+                    transition: background-color 150ms ease-in;
+
+                    &.rule-saved {
+                        background-color: rgba(#04844b, 0.7);
+                    }
+
+                    &.rule-unsaved {
+                        background-color: rgba(#ffb75d, 0.7);
+                    }
+
+                    &.rule-save-error {
+                        background-color: rgba(#c23934, 0.7);
+                    }
+                }
+
+                .vloc-ins-product-rules-requirement-element {
+                    min-height: 3.75rem;
+
+                    .slds-form-element__help {
+                        display: none;
+                    }
+
+                    &.slds-has-error {
+                        .slds-form-element__help {
+                            display: block;
+                            margin: 0.25rem 0 0.5rem 0;
+                        }
+                    }
+                }
+
+                .vloc-ins-product-rules-requirement-element-active {
+                    > .slds-form-element {
+                        position: absolute;
+                        bottom: 0.9rem;
+                        right: 0;
+
+                        .slds-form-element__label {
+                            margin-right: 0;
+                        }
+                    }
+                    
+                }
+
+                .vloc-ins-product-rules-requirement-element-delete {
+                    > .slds-button {
+                        position: absolute;
+                        bottom: 0.95rem;
+                        right: 0.75rem;
+                    }
+
+                    .slds-button__icon {
+                        width: 1rem;
+                        height: 1rem;
+                    }
+                }
+
+                .vloc-ins-rules-comments{
+                    position: relative; 
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+        
+                    &.vloc-ins-comments{
+                        .vloc-ins-icon{
+                            color: #0070D2;
+                            position: absolute;
+                            top: 1.5rem;
+                            right: 0;
+                        }
+                    }
+        
+                    &.vloc-ins-no-comments{
+                        .vloc-ins-icon{
+                            color: #c9c7c5;
+                            position: absolute;
+                            top: 1.5rem;
+                            right: 0;
+                        }
+                    }
+        
+                    .vloc-ins-rule-message-tooltip {
+                        top: 3.75rem;
+                        right: -1.3rem;
+                        height: 10rem; 
+                        width: 20rem;
+        
+                        .vloc-comment-text-area {
+                            height: 7.5rem; 
+                        }
+                    }
+                }
+            }
+
+            .vloc-ins-product-rules-requirement-delete-warning-wrapper {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 80%;
+                z-index: -1;
+                background-color: #f4f6f9;
+                transition: z-index 0ms linear 300ms;
+
+                .vloc-ins-product-rules-requirement-delete-warning-footer {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+
+                &.delete-warning-active {
+                    z-index: 1;
+                    transition: z-index 0ms linear 0ms;
+                }
+            }
+        }
+
+        .vloc-ins-product-rules-heading {
+            + .vloc-ins-product-rules-requirement {
+                .vloc-ins-product-rules-requirement-inner-wrapper {
+                    padding-top: 0;
+
+                    .vloc-ins-product-rules-requirement-number {
+                        top: 1.55rem;
+                    }
+                }
+            }
+        }
+
+        .vloc-ins-product-rules-requirements-add {
+            padding-left: 3.5rem;
+        }
+    }
+}

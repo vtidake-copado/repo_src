@@ -1,0 +1,160 @@
+{
+    "dataSource": {
+        "type": null,
+        "value": {
+            "resultVar": ""
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankStateCheck": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__Code__c']['label']",
+                    "name": "%vlocity_namespace%__Code__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__JurisdictionName__c']['label']",
+                    "name": "%vlocity_namespace%__JurisdictionName__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['Name']['label']",
+                    "name": "Name",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__EffectiveFromDate__c']['label']",
+                    "name": "%vlocity_namespace%__EffectiveFromDate__c",
+                    "type": "datetime"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__EffectiveUntilDate__c']['label']",
+                    "name": "%vlocity_namespace%__EffectiveUntilDate__c",
+                    "type": "datetime"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__Condition__c']['label']",
+                    "name": "%vlocity_namespace%__Condition__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__IsRefundable__c']['label']",
+                    "name": "%vlocity_namespace%__IsRefundable__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__RatingType__c']['label']",
+                    "name": "%vlocity_namespace%__RatingType__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__Type__c']['label']",
+                    "name": "%vlocity_namespace%__Type__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__Percent__c']['label']",
+                    "name": "%vlocity_namespace%__Percent__c",
+                    "type": "percentage"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__Amount__c']['label']",
+                    "name": "%vlocity_namespace%__Amount__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__ProcedureFormula__c']['label']",
+                    "name": "%vlocity_namespace%__ProcedureFormula__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__ProcedureName__c']['label']",
+                    "name": "%vlocity_namespace%__ProcedureName__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "['fieldMap']['%vlocity_namespace%__ProcedureSource__c']['label']",
+                    "name": "%vlocity_namespace%__ProcedureSource__c",
+                    "type": "string"
+                }
+            ],
+            "name": "Product-Attributes-Config",
+            "templateUrl": "ins-product-taxes-config"
+        }
+    ],
+    "title": "Product Taxes Configuration"
+}

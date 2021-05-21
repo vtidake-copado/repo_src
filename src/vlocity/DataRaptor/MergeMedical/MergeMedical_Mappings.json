@@ -1,0 +1,45 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "userInputs:pers-health.persBirthdate",
+        "%vlocity_namespace%__DomainObjectFieldType__c": "Date(MM/dd/YYYY)",
+        "%vlocity_namespace%__GlobalKey__c": "97635d53-eea4-a11a-5705-ae6a5a56c239",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "mergedlist:dateOfBirth",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "MergeMedicalCustoma19f200000386EzAAIItem0",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "MergeMedical",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "userInputs:pers-health.persFirstName",
+        "%vlocity_namespace%__GlobalKey__c": "087c3b5e-1e96-a802-c4d8-9194895d97b9",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "mergedlist:firstName",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "MergeMedicalCustoma19f200000386EzAAIItem1",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "MergeMedical",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "userInputs:pers-health.persLastName",
+        "%vlocity_namespace%__GlobalKey__c": "dd2f2791-5904-f22a-0c26-9852c6abe677",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "mergedlist:lastName",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "MergeMedicalCustoma19f200000386EzAAIItem2",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "MergeMedical",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

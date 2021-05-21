@@ -1,0 +1,102 @@
+{
+    "ContextId": "001f4000004fmFv",
+    "ServiceProduct": [
+        {
+            "ProductCode": "MIS-CoS",
+            "ProductDescription": "Custom service with new features tailored to client needs. This product guarantees a level of service per SLA contract specifications.",
+            "ProductId": "01tf4000000sCRGAA2",
+            "ProductImage": "015f4000000wzZl",
+            "ProductName": "Class of Service",
+            "ProductUnitPrice": 250000
+        },
+        {
+            "ProductCode": "SP1",
+            "ProductDescription": "For Clients that need to see what Road Runner can do without several key features. The low willingness to pay option.",
+            "ProductId": "01tf4000000OqCkAAK",
+            "ProductName": "Limited Service Plan",
+            "ProductUnitPrice": 100000
+        },
+        {
+            "ProductCode": "SP2",
+            "ProductDescription": "This is Roadrunner's signature service offering.",
+            "ProductId": "01tf4000000OqClAAK",
+            "ProductName": "Basic Service Plan",
+            "ProductUnitPrice": 120000
+        },
+        {
+            "ProductCode": "SP3",
+            "ProductDescription": "Road Runner's signature service plus one of our most popular added features.",
+            "ProductId": "01tf4000000OqCmAAK",
+            "ProductName": "Extended Service Plan",
+            "ProductUnitPrice": 150000
+        },
+        {
+            "ProductCode": "SP4",
+            "ProductDescription": "Road Runner's signature service plus our top three added features.",
+            "ProductId": "01tf4000000OqCnAAK",
+            "ProductName": "Platinum Service Plan",
+            "ProductUnitPrice": 175000
+        },
+        {
+            "ProductCode": "SP5",
+            "ProductDescription": "Everything Road Runner has to offer. Our signature service plus all our added features.",
+            "ProductId": "01tf4000000OqCoAAK",
+            "ProductName": "Premium Service Plan",
+            "ProductUnitPrice": 200000
+        }
+    ],
+    "StepNewAsset": {
+        "FormulaNewPrice": 701836.8
+    },
+    "StepPriceInputs": {
+        "ChkBxMinority": false,
+        "ChkBxVeteran": false,
+        "ChkBxWomen": true,
+        "NumberOfEmployees": 400,
+        "ZIP": "94063"
+    },
+    "StepProduct": {
+        "OldAsset": [
+            {
+                "FullPrice": 919475,
+                "Id": "02if40000004dfCAAQ",
+                "Name": "2016-2017 Class of Service",
+                "ProductCode": "MIS-CoS",
+                "ProductDescription": "Custom service with new features tailored to client needs. This product guarantees a level of service per SLA contract specifications.",
+                "ProductName": "Class of Service",
+                "vlcSelected": true
+            }
+        ],
+        "Product": [
+            {
+                "Discount": 14323.2,
+                "DiscountPrice": 701836.8,
+                "FullPrice": 716160,
+                "ProductCode": "SP5",
+                "ProductDescription": "Everything Road Runner has to offer. Our signature service plus all our added features.",
+                "ProductId": "01tf4000000OqCoAAK",
+                "ProductName": "Premium Service Plan",
+                "WageArea": "San Francisco-Redwood City-South San Francisco, CA Metropolitan Division",
+                "vlcSelected": true
+            }
+        ]
+    },
+    "error": "OK",
+    "id": "a0gf4000000ZgMaAAK",
+    "layout": "lightning",
+    "timeStamp": "2017-08-30T22:17:40.606Z",
+    "userId": "005f4000000ZLuFAAW",
+    "userName": "student744@ins.edu",
+    "userProfile": "System Administrator",
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "DRGetOldAssets": 538,
+        "DRServiceProducts": 848,
+        "OmniScriptSessionToken": "c4e1c269-ca15-42b7-b2e0-92833cdcae08",
+        "PriceCalculation": 1253,
+        "Set Values": 2,
+        "StepPriceInputs": 5755,
+        "StepProduct": 13832
+    }
+}

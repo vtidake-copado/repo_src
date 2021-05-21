@@ -1,0 +1,8 @@
+{
+    "userInputs": {
+        "SG-Census-Header-RF.SG_empChildCount": "Number",
+        "SG-Census-Header-RF.SG_empFamilyCount": "Number",
+        "SG-Census-Header-RF.SG_empOnlyCount": "Number",
+        "SG-Census-Header-RF.SG_empSpouseCount": "Number"
+    }
+}

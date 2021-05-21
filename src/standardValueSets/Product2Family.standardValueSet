@@ -2,8 +2,68 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
+        <fullName>Commercial Lines</fullName>
+        <default>false</default>
+        <label>Commercial Lines</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Personal Lines</fullName>
+        <default>false</default>
+        <label>Personal Lines</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Home Business</fullName>
+        <default>false</default>
+        <label>Home Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
         <fullName>None</fullName>
         <default>false</default>
         <label>None</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Individual Life</fullName>
+        <default>false</default>
+        <label>Individual Life</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Individual Annuity</fullName>
+        <default>false</default>
+        <label>Individual Annuity</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Disability</fullName>
+        <default>false</default>
+        <label>Disability</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Individual Health</fullName>
+        <default>false</default>
+        <label>Individual Health</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Group Health</fullName>
+        <default>false</default>
+        <label>Group Health</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Group Life</fullName>
+        <default>false</default>
+        <label>Group Life</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Individual AD&amp;D</fullName>
+        <default>false</default>
+        <label>Individual AD&amp;D</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Group AD&amp;D</fullName>
+        <default>false</default>
+        <label>Group AD&amp;D</label>
     </standardValue>
 </StandardValueSet>

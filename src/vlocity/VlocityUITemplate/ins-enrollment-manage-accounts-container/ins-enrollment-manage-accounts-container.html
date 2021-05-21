@@ -1,0 +1,7 @@
+<div>
+    <h1 class="vloc-title slds-m-bottom_small">Manage your accounts</h1>
+    <div class="vloc-section-header vloc-title-border-container">
+        <hr class="vloc-title-border"/>
+    </div>
+    <div vloc-card ng-repeat="card in cards | orderBy:order" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="slds-size_1-of-1 slds-p-top_small" use-existing-element-type>
+</div>

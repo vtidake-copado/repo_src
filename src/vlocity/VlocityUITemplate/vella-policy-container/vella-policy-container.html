@@ -1,0 +1,35 @@
+<div class="vella-policy-page-wrapper vella-page-wrapper" ng-class="{'vella-spinner-active': !$root.isLoaded}" ng-controller="vellaPolicyContainerController">
+    <div class="slds-spinner_container vella-spinner" ng-class="{'vella-spinner-active': !$root.isLoaded}">
+        <div role="status" class="slds-spinner slds-spinner--medium slds-spinner--inverse">
+            <span class="slds-assistive-text">Loading</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+    <div class="vella-policy-notification" ng-class="{'vella-policy-notification-active': ($root.vlocityMobileNotification && $root.cardData.Type === 'Auto') || ($root.vlocityMobileNotificationSensor.active && ($root.cardData.Type === 'Renters' || $root.cardData.Type === 'Homeowners' || $root.cardData.Type === 'Property'))}">
+        <span class="slds-icon_container slds-icon_container--circle slds-icon-action-announcement" title="Sensor Notification">
+            <slds-svg-icon sprite="'action'" icon="'announcement'" size="'small'"></slds-svg-icon>
+            <span class="slds-assistive-text">Sensor Notification</span>
+        </span>
+        <span ng-if="$root.cardData.Type === 'Auto'">You saved $40.75 on your bill last month by driving safely.</span>
+        <span ng-if="$root.cardData.Type === 'Renters' || $root.cardData.Type === 'Homeowners' || $root.cardData.Type === 'Property'">{{$root.vlocityMobileNotificationSensor.message}}</span>
+        <button class="slds-button slds-button--icon" title="close" ng-click="closeNotification($root.cardData.Type)">
+            <slds-button-svg-icon sprite="'utility'" icon="'close'" size="'medium'"></slds-button-svg-icon>
+        </button>
+    </div>
+    <div class="vella-policy-page-inner-wrapper">
+        <vloc-card ng-repeat="card in data.zones.policyDetail.cards" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="vella-policy-detail-card" ng-if="$index === 0"></vloc-card>
+        <div class="vella-policy-insured-insurable-items-wrapper" ng-if="$root.cardData.showSwipe">
+            <h3 class="vella-insured-items-title">{{$root.cardData.showSwipe}}s Covered ({{$root.cardData.insuredItemCount || 0}})</h3>
+            <vloc-card ng-repeat="card in data.zones.policyInsured.cards" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="vella-policy-middle-card"></vloc-card>
+            <vloc-card ng-repeat="card in data.zones.policyUnbound.cards" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="vella-policy-middle-card"></vloc-card>
+        </div>
+        <div class="vella-policy-auto-usage-data" ng-if="$root.cardData.Type === 'Auto'">
+            <vloc-card ng-repeat="card in data.zones.policyAutoSafety.cards" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="vella-policy-auto-usage-card" ng-if="$index === 0"></vloc-card>
+        </div>
+        <div class="vella-policy-home-protection" ng-if="$root.cardData.Type === 'Homeowners' || $root.cardData.Type === 'Property' || $root.cardData.Type === 'Renters' || $root.cardData.Type === 'Business Owners'">
+            <vloc-card ng-repeat="card in data.zones.policyHomeProtection.cards" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="vella-policy-home-protection-card" ng-if="card.obj.status !== 400"></vloc-card>
+        </div>
+        <vloc-card ng-repeat="card in data.zones.policyCoverages.cards" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="vella-policy-coverages-card"></vloc-card>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+{
+    "%vlocity_namespace%__ApplicableObject__c": "",
+    "%vlocity_namespace%__CalculationProcedureId__c": {
+        "Name": "SOLNmultiDriver",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+    },
+    "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+    "%vlocity_namespace%__CalculationProcedureStep__c": "multiDriver-V1_Steps.json",
+    "%vlocity_namespace%__CalculationProcedureVariable__c": "multiDriver-V1_Variables.json",
+    "%vlocity_namespace%__Constants__c": [
+    ],
+    "%vlocity_namespace%__CurrentStatus__c": "Active",
+    "%vlocity_namespace%__EnableLooping__c": false,
+    "%vlocity_namespace%__EndDateTime__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "multiDriver V1",
+    "%vlocity_namespace%__InputBundleId__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "{\"driverMaritalStatus\":\"S\",\"driverGender\":\"F\",\"driverGPA\":\"3.9\",\"driverMVRPoints\":\"0\",\"driverAgeLicensed\":\"16\",\"driverBirthdate\":\"1995-09-18\",\"driverAccidentPoints\":\"0\"}",
+    "%vlocity_namespace%__LoopingSpecification__c": "",
+    "%vlocity_namespace%__OutputBundleId__c": "",
+    "%vlocity_namespace%__PostProcessorClass__c": "",
+    "%vlocity_namespace%__PreProcessorClass__c": "",
+    "%vlocity_namespace%__Priority__c": 1,
+    "%vlocity_namespace%__StartDateTime__c": "2018-07-27T05:22:22.000Z",
+    "%vlocity_namespace%__Variables__c": "",
+    "%vlocity_namespace%__VersionNumber__c": 1,
+    "Name": "multiDriver V1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- City --></label>
+        <name>vlocity_ins__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>vlocity_ins__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>vlocity_ins__Geolocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operating Hours --></label>
+        <name>vlocity_ins__OperatingHoursId__c</name>
+        <relationshipLabel><!-- Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Organization --></label>
+        <name>vlocity_ins__OrganizationId__c</name>
+        <relationshipLabel><!-- Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>vlocity_ins__PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>vlocity_ins__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>vlocity_ins__StreetAddress__c</name>
+    </fields>
+</CustomObjectTranslation>

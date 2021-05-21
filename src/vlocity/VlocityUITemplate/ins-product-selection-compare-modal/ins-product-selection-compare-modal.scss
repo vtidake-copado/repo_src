@@ -1,0 +1,327 @@
+@import "ins-product-selection-variables";
+.via-slds {
+    .ins-product-selection-compare-modal {
+        height: 100%;
+
+        .vloc-compare-plans {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            position: relative; 
+            width: 100%;
+
+            .vloc-compare-plans-col {
+                .vloc-empty-cell{
+                    min-height: 2.25rem;
+                    border-bottom: 1px solid $cards-border-gray;
+                }
+
+                .vloc-compare-category{
+                    border-right: none;
+                    font-weight: bold;
+                }
+
+                .vloc-compare-plans-cell {
+                    width: 100%;
+                    overflow: hidden;
+                    height: 2.25rem;
+                    justify-content: space-between;
+                    border-bottom: 1px solid $cards-border-gray;
+                    line-height: 2.25rem;
+                    text-align: center;
+                    border-right: 1px solid $cards-border-gray;
+
+                    &.vloc-empty-cell{
+                        border-right: none;
+                    }
+
+                    &.vloc-compare-plans-cell-header {
+                        height: 12rem;
+                        line-height: 1.4;
+                        padding: 1rem;
+
+                        .slds-popover_tooltip {
+                            position: absolute; // overriding relative
+                            left: auto !important;
+                            top: auto !important; // overriding ngstrap auto-generated css that does not work
+                            bottom: 2.5rem;
+                            width: 100%;
+                        }
+
+                        .vloc-compare-plans-plan-name {
+                            font-weight: 400;
+                        }
+
+                        .vloc-compare-plans-plan-info {
+                            height: 100%;
+
+                            .vloc-compare-plans-plan-metadata-wrapper {
+                                position: absolute;
+                                bottom: 2rem;
+                                width: 100%;
+
+                                .vloc-compare-plans-plan-subtitle {
+                                    color: $neutral-dark;
+                                }
+                            }
+
+                            .vloc-compare-plan-select-btn {
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+
+                    &.vloc-compare-plans-cell-category {
+                        border-right: none;
+                        background-color: $cards-gray;
+                    }
+
+                    &.vloc-compare-plans-cell-strong {
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+
+                    .vloc-compare-plans-mobile {
+                        display: none;
+                    }
+                }
+
+                &:last-child {
+                    .vloc-compare-plans-cell {
+                        border-right: none;
+
+                        &.vloc-compare-plans-cell-category {
+                            border-right: 1px solid $cards-border-gray;
+                        }
+                    }
+                }
+            }
+
+            .vloc-compare-plans-left-col {
+                float: left;
+
+
+
+                &.vloc-compare-plans-col {
+                    flex: 1;
+
+                    .vloc-compare-plans-cell {
+                        text-align: left;
+                        padding-left: 1.75rem;
+                        padding-right: 1rem;
+                        color: $neutral-dark;
+                        border-right: 1px solid $cards-border-gray;
+                        &.category{
+                             border-right:none;
+                        }
+
+                        &.vloc-compare-plans-cell-header {
+                            padding: 1rem;
+                            font-weight: bold;
+                            span{
+                                width: 100%;
+                            }
+                        }
+
+                        &.vloc-compare-plans-cell-category {
+                            border-right: none;
+                            padding-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slds-global-header_container {
+            display: none;
+        }
+
+        @media screen and (max-width: $bp-large) { // 64
+            .vloc-compare-plans {
+                .vloc-compare-plans-plan-name {
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+                .vloc-compare-plans-plan-price {
+                    font-size: 0.8125rem;
+                }
+                .vloc-compare-plans-plan-subtitle {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: $bp-phablet) { // 46.5
+            .slds-global-header_container {
+                display: block;
+
+                .slds-global-header {
+                    padding: 0.75rem 0 0.75rem 2.5rem;
+                    background-color: $cards-gray;
+                    border-bottom: 1px solid $cards-border-gray;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+                    .slds-button.vloc-compare-plans-modal-btn {
+                        min-width: 5.5rem;
+                    }
+
+                    .slds-button.vloc-compare-plans-modal-icon-btn {
+                        display: none;
+                    }
+                }
+            }
+
+            .vloc-compare-plans {
+                background-color: $cards-gray;
+
+                .vloc-compare-plans-left-col {
+                    display: none;
+                }
+
+                .vloc-compare-plans-col {
+                    padding-top: 1rem;
+
+                    .vloc-compare-plans-cell {
+                        background-color: #fff;
+                        height: 3.25rem;
+                        position: relative;
+                        line-height: 1.4;
+
+                        .vloc-compare-plans-mobile {
+                            display: block;
+                        }
+
+                        &:not(.vloc-compare-plans-cell-header),
+                        &:not(.vloc-compare-plans-cell-category) {
+                            padding: 0 2.5rem;
+
+                            span {
+                                &.vloc-compare-plans-mobile-label {
+                                    text-align: left;
+                                    font-size: 13px;
+                                    line-height: 3.25rem;
+                                    margin: 0;
+                                    padding: 0;
+                                    display: inline-block;
+                                    width: 60%;
+                                    float: left;
+                                }
+
+                                &.vloc-compare-plans-value {
+                                    text-align: right;
+                                    display: inline-block;
+                                    width: 40%;
+                                    float: right;
+                                    line-height: 3.25rem;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+
+                        &:not(.vloc-compare-plans-cell-category) {
+                            .vloc-compare-plans-mobile {
+                                text-align: center;
+                                padding: 0 0.25rem;
+                                width: 100%;
+                                font-size: 10px;
+                                line-height: 1.4;
+                                margin: 0.6rem 0 0;
+                                color: $neutral-dark;
+                            }
+                        }
+
+                        &.vloc-compare-plans-cell-strong {
+                            span.vloc-compare-plans-mobile {
+                                font-weight: normal;
+                            }
+                        }
+
+                        &.vloc-compare-plans-cell-header {
+                            padding: 1.5rem 2.5rem;
+                            height: 10.5rem;
+                        }
+
+                        &.vloc-compare-plans-cell-category {
+                            border-left: none;
+                            border-right: none;
+                            height: 2.25rem;
+                            
+                            span.vloc-compare-plans-mobile {
+                                font-weight: bold;
+                                line-height: 2.25rem;
+                            }
+                        }
+                    }
+
+                    &:first-child {
+                        .vloc-compare-plans-cell:not(.vloc-compare-plans-cell-category) {
+                            border-left: 1px solid $cards-border-gray;
+                        }
+                    }
+
+                    &:last-child {
+                        .vloc-compare-plans-cell {
+                            border-right: 1px solid $cards-border-gray;
+
+                            &.vloc-compare-plans-cell-category {
+                                border-right: none;
+                            }
+                        }
+                    }
+                }
+
+                .vloc-compare-plans-plan-name {
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                    padding: 0 1.45rem;
+                }
+
+                .vloc-compare-plans-plan-price {
+                    font-size: 1rem;
+                }
+
+                .vloc-compare-plans-plan-subtitle {
+                    font-size: 0.8125rem;
+                }
+            }
+        }
+
+        @media screen and (max-width: $bp-small) { // 30
+            .vloc-compare-plans {
+                display: inline-table;
+                .vloc-compare-plans-col {
+                    .vloc-compare-plans-cell {
+                        &:not(.vloc-compare-plans-cell-header),
+                        &:not(.vloc-compare-plans-cell-category) {
+                            padding: 0 1.5rem 0 1rem;
+                        }
+
+                        &.vloc-compare-plans-cell-header {
+                            height: 12rem;
+                            padding: 2rem 1rem 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: $bp-xsmall) { // 25
+            .slds-global-header_container {
+                .slds-global-header {
+                    .slds-button.vloc-compare-plans-modal-btn {
+                        display: none;
+                    }
+
+                    .slds-button.vloc-compare-plans-modal-icon-btn {
+                        display: inline-block;
+                        min-width: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

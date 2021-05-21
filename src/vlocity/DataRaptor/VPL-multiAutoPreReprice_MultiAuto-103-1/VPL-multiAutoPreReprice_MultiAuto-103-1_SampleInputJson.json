@@ -1,0 +1,33 @@
+{
+    "ContextId": null,
+    "Step1": {
+        "Cars": {
+            "Make": null,
+            "Model": null,
+            "VIN": null,
+            "Year": null
+        },
+        "Drivers": {
+            "Age": null,
+            "FirstName": null,
+            "Gender": null,
+            "LastName": null
+        }
+    },
+    "configureItems": {
+        "ConfigureItems": null
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "DataRaptorTransformAction1": null,
+        "Step1": null,
+        "configureItems": null,
+        "getRatedProducts": null
+    }
+}

@@ -1,0 +1,34 @@
+<div class="slds-grid vloc-compare-plans vloc-carousel-container">
+    <div class="slds-col vloc-compare-plans-left-col vloc-compare-plans-col">
+        <div class="vloc-compare-plans-cell-strong vloc-compare-plans-cell ng-scope vloc-compare-plans-cell-header slds-text-title_caps">Product Overview</div>
+        <div class="slds-truncate" ng-repeat="cell in $root.vlocInsProdSelectItem.comparisonData.attrList | orderBy : 'displaySequence'">
+            <div class="vloc-compare-plans-cell category slds-text-title_caps slds-theme_shade vloc-compare-category">
+            {{cell.Name}}
+            </div>
+            <div class="vloc-compare-plans-cell vloc-compare-plans-attr" ng-repeat="attr in cell.attrs | orderBy : 'displaySequence'">{{attr.label}}
+            </div>
+        </div>
+    </div>
+    <ul class="slds-grid vloc-compare-plans vloc-carousel-container" ins-include="ins-product-selection-compare-modal-plans" ng-if="!importedScope.vlocProdSelect.responsiveService.checkBreakpoint(46.5)"></ul>
+    <ul class="slds-grid vloc-compare-plans vloc-carousel-container" rn-carousel rn-carousel-index="carouselIndexCompare" rn-carousel-controls ins-include="ins-product-selection-compare-modal-plans" ng-if="importedScope.vlocProdSelect.responsiveService.mobileTabletDevice() && importedScope.vlocProdSelect.responsiveService.checkBreakpoint(46.5)"></ul>
+</div>
+
+<header class="slds-global-header_container">
+    <div class="slds-global-header slds-grid slds-grid_align-spread">
+        <div class="slds-global-header__item">
+            <button type="button" class="slds-button slds-button_neutral vloc-compare-plans-modal-btn vloc-compare-plans-modal-btn-prev" ng-click="importedScope.vlocProdSelect.InsProductSelectionCompareService.prevSlide()" ng-disabled="carouselIndexCompare <= 0 || false">Previous</button>
+            <button class="slds-button slds-button_icon-border vloc-compare-plans-modal-icon-btn vloc-compare-plans-modal-icon-btn-prev" aria-live="assertive" title="Previous" ng-click="importedScope.vlocProdSelect.InsProductSelectionCompareService.prevSlide()" ng-disabled="carouselIndexCompare <= 0 || false">
+                <slds-button-svg-icon sprite="'utility'" icon="'back'"></slds-button-svg-icon>
+                <span class="slds-assistive-text">Previous</span>
+            </button>
+        </div>
+        <div class="slds-global-header__item">{{carouselIndexCompare+1}} of {{   $root.vlocInsProdSelectItem.comparisonData.count}}</div>
+        <div class="slds-global-header__item">
+            <button type="button" class="slds-button slds-button_neutral vloc-compare-plans-modal-btn vloc-compare-plans-modal-btn-prev" ng-click="importedScope.vlocProdSelect.InsProductSelectionCompareService.nextSlide()" ng-disabled="carouselIndexCompare >= ($root.vlocInsProdSelectItem.comparisonData.plans).length - 1 || false">Next</button>
+            <button class="slds-button slds-button_icon-border vloc-compare-plans-modal-icon-btn vloc-compare-plans-modal-icon-btn-next" aria-live="assertive" title="Next" ng-click="importedScope.vlocProdSelect.InsProductSelectionCompareService.nextSlide()" ng-disabled="carouselIndexCompare >= ($root.vlocInsProdSelectItem.comparisonData.plans).length - 1 || false">
+                <slds-button-svg-icon sprite="'utility'" icon="'forward'"></slds-button-svg-icon>
+                <span class="slds-assistive-text">Next</span>
+            </button>
+        </div>
+    </div>
+</header>

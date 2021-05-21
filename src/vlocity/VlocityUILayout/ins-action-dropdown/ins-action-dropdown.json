@@ -1,0 +1,17 @@
+{
+    "Cards": [
+        "ins-action-dropdown"
+    ],
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{\"totalSize\" : 1}",
+            "resultVar": ""
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-action-dropdown-container"
+        }
+    }
+}

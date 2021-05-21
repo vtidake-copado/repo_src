@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- ContextRules --></label>
+        <name>vlocity_ins__ContextRules</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Ad Hoc Expression --></label>
+        <name>vlocity_ins__AdHocExpression__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective From --></label>
+        <name>vlocity_ins__EffectiveFromDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Until --></label>
+        <name>vlocity_ins__EffectiveUntilDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expression --></label>
+        <name>vlocity_ins__Expression__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure Message --></label>
+        <name>vlocity_ins__FailureMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Key --></label>
+        <name>vlocity_ins__GlobalKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsFallBackRule --></label>
+        <name>vlocity_ins__IsFallBackRule__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsHeaderRule --></label>
+        <name>vlocity_ins__IsHeaderRule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not --></label>
+        <name>vlocity_ins__IsNegated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vlocity Object or Object Type --></label>
+        <name>vlocity_ins__ObjectTypeId__c</name>
+        <relationshipLabel><!-- Vlocity Context Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Context Ruleset --></label>
+        <name>vlocity_ins__Ruleset__c</name>
+        <relationshipLabel><!-- Vlocity Context Rules --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

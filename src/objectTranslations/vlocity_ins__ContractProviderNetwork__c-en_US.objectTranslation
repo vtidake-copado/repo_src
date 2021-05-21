@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Contract --></label>
+        <name>vlocity_ins__ContractId__c</name>
+        <relationshipLabel><!-- Contract Provider Network --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Effective End Date --></label>
+        <name>vlocity_ins__EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Start Date --></label>
+        <name>vlocity_ins__EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider Account --></label>
+        <name>vlocity_ins__ProviderAccountId__c</name>
+        <relationshipLabel><!-- Contract Provider Network --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Provider Fee Schedule --></label>
+        <name>vlocity_ins__ProviderFeeScheduleId__c</name>
+        <relationshipLabel><!-- Contract Provider Network --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Provider Network --></label>
+        <name>vlocity_ins__ProviderNetworkId__c</name>
+        <relationshipLabel><!-- Contract Provider Network --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

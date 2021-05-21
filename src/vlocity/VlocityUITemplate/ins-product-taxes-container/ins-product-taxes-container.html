@@ -1,0 +1,87 @@
+<div ng-controller="insProductTaxesContainerController">
+    <div class="slds-spinner_container vloc-spinner_container vloc-show-loader" ng-show="!$root.isLoaded">
+        <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+    <div class="slds-notify_container" hide-notification="true" ng-if="$root.notification.active">
+        <div class="slds-notify slds-notify_alert slds-theme_alert-texture" role="alert"
+            ng-class="{'slds-theme_success': $root.notification.type === 'success', 'slds-theme_error': $root.notification.type === 'error'}">
+            <button class="slds-button slds-button_icon-inverse slds-notify__close"
+                ng-click="$root.notification.active = false">
+                <slds-button-svg-icon sprite="'utility'" icon="'close'"></slds-button-svg-icon>
+                <span class="slds-assistive-text">{{::customLabels.Close}}</span>
+            </button>
+            <span class="slds-assistive-text">{{::customLabels.Info}}</span>
+            <h2 ng-bind-html="$root.notification.message"></h2>
+        </div>
+    </div>
+    <div class="slds-grid slds-wrap slds-size_1-of-1" ng-init="initData(params.id, records); $root.isLoaded = true" ng-if="customLabels">
+        <!--Attribute Table: -->
+        <div class="slds-grid slds-size_1-of-1 slds-m-vertical_small">
+            <div class="slds-col slds-col_padded slds-size_1-of-2">
+                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_left">
+                    <slds-svg-icon sprite="'utility'" icon="'search'" extra-classes="'slds-icon_small slds-input__icon'">
+                    </slds-svg-icon>
+                    <input ng-model="$root.searchTerm" class="slds-input" type="text"
+                        placeholder="{{::customLabels.InsProductSearch}}" />
+                </div>
+            </div>
+            <div class="slds-col slds-col_padded slds-size_1-of-2">
+                <button class="slds-button slds-button_neutral slds-is-absolute" style="right: 1rem"
+                    ng-click="launchAddModal()">{{::customLabels.Add}}</button>
+            </div>
+        </div>
+        <div class="slds-text-align_center slds-p-around_small slds-size_1-of-1" ng-if="!records.productTaxesAndFees.length">
+            {{::customLabels.InsProductNoItemsAssociated}}
+        </div>
+        <div class="vloc-attr-table slds-grid slds-grid_wrap slds-size_1-of-1 slds-p-top_small slds-p-right_large" ng-if="records.productTaxesAndFees.length">
+            <!--Table Header:-->
+            <div class="slds-grid vloc-taxes-rows slds-wrap slds-size_2-of-3 slds-border_left slds-m-left_small slds-border_top slds-border_bottom">
+                <div class="vloc-product-atttributes-container slds-size_1-of-1 vloc-attr-table-header slds-grid slds-wrap slds-border_bottom"
+                    ng-init="$root.orderAsc = false; $root.rowFields = data.Deck[0].states[0].fields; $root.orderTerm = $root.rowFields[0].name;">
+                    <div ng-repeat="field in $root.rowFields" class="slds-small-show vloc-attr-cell slds-size_1-of-{{$root.rowFields.length}}"
+                        ng-show="key != 'attributes'">
+                        <div ng-class="{'vloc-sorted-column' : $root.orderTerm === field.name, 'vloc-not-sorted-column': $root.orderTerm !== field.name}"
+                            class="vloc-attr-title-cell slds-truncate slds-text-heading_label slds-p-around_x-small slds-p-bottom_small"
+                            title="{{field.label}}" ng-click="setOrderTerm(field.name);">
+                            <div class="vloc-attrs-header-label slds-grid slds-wrap slds-size_1-of-1">
+                                <div class="slds-truncate" ng-class="{'slds-size_5-of-6' :  $root.orderTerm === field.name}">
+                                    <span ng-if="records.fieldsMap[field.name] && records.fieldsMap[field.name].label">{{records.fieldsMap[field.name].label}}</span>
+                                    <span ng-if="!records.fieldsMap[field.name] || !records.fieldsMap[field.name].label">{{field.label}}</span>
+                                </div>
+                                <slds-button-svg-icon ng-if="$root.orderTerm === field.name && $root.orderAsc"
+                                    extra-classes="'slds-button__icon_left'" size="x-small" sprite="'utility'" icon="'arrowup'">
+                                </slds-button-svg-icon>
+                                <slds-button-svg-icon ng-if="$root.orderTerm === field.name  && !$root.orderAsc"
+                                    extra-classes="'slds-button__icon_left'" size="x-small" sprite="'utility'" icon="'arrowdown'">
+                                </slds-button-svg-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Table Body: -->
+                <vloc-card class="slds-size--1-of-1" ng-repeat="card in [cards[0]]" ng-model="card" data="card"
+                    records="records.productTaxesAndFees" index="{{$index}}" session-id="{{sessionId}}">
+                </vloc-card>
+            </div>
+            <!--Attribute Configuration Panel: -->
+            <div class="vloc-product-atttributes-container vloc-attr-config-container slds-size_1-of-3 slds-p-top_small slds-m-right_small slds-border_right slds-border_top slds-border_bottom slds-is-relative"
+              ng-repeat="record in records.productTaxesAndFees" ng-if="record.Id === $root.config.taxAndFee.Id">
+                <div ng-if="$root.config.taxAndFee" class="vloc-attr-config-header slds-p-bottom_small slds-border_bottom slds-grid slds-grid_wrap slds-m-horizontal_small" ng-if="$root.config.taxAndFee">
+                    <div class="slds-text-heading_medium slds-size_1-of-2 slds-truncate slds-p-left_small">
+                        {{$root.config.taxAndFee.Name}}
+                    </div>
+                    <div class="vloc-attr-actions-container">
+                        <button class="slds-button slds-button_brand" ng-click="updateItem()">{{::customLabels.Update}}</button>
+                        <span class="vloc-attr-delete slds-m-left_x-small">
+                            <slds-button-svg-icon sprite="'utility'" icon="'delete'" no-hint="true" extra-classes="" ng-click="deleteItem()"></slds-button-svg-icon>
+                        </span>
+                    </div>
+                </div>
+                <vloc-layout records="records" layout-name="ins-product-taxes-config" ng-if="$root.config.taxAndFee"></vloc-layout>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Config --></label>
+        <name>vlocity_ins__Config__c</name>
+    </fields>
+    <fields>
+        <label><!-- DRBundleName --></label>
+        <name>vlocity_ins__DRBundleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- DRStatus --></label>
+        <name>vlocity_ins__DRStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data --></label>
+        <name>vlocity_ins__Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Json --></label>
+        <name>vlocity_ins__Json__c</name>
+    </fields>
+</CustomObjectTranslation>

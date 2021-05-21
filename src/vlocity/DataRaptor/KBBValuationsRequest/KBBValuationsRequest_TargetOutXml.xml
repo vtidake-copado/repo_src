@@ -1,0 +1,39 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:veh="http://www.kbb.com/2011/01/25/VehicleInformationService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:GetVehicleValuesByVehicleConfiguration>
+         <!--Optional:-->
+         <veh:AuthenticationKey>MzUyODk=</veh:AuthenticationKey>
+         <!--Optional:-->
+         <veh:VehicleConfiguration>
+            <veh:Id>11945</veh:Id>
+            <veh:VIN>123456789</veh:VIN>
+            <veh:Year>
+               <!--Optional:-->
+               <veh:Id>1992</veh:Id>
+            </veh:Year>
+            <veh:Make>
+               <!--Optional:-->
+               <veh:Id>15</veh:Id>
+            </veh:Make>
+            <veh:Model>
+               <!--Optional:-->
+               <veh:Id>104</veh:Id>
+            </veh:Model>
+            <veh:Trim>
+               <!--Optional:-->
+               <veh:Id>270655</veh:Id>
+            </veh:Trim>
+            <veh:Mileage>100000</veh:Mileage>
+            <veh:OptionalEquipment>
+               <!--Zero or more repetitions:-->
+               <veh:EquipmentOption>Text</veh:EquipmentOption>
+            </veh:OptionalEquipment>
+            <veh:ConfiguredDate>2018-01-01</veh:ConfiguredDate>
+         </veh:VehicleConfiguration>
+         <veh:ZipCode>75094</veh:ZipCode>
+         <!--Optional:-->
+         <veh:VersionDate>2018-01-01</veh:VersionDate>
+      </veh:GetVehicleValuesByVehicleConfiguration>
+   </soapenv:Body>
+</soapenv:Envelope>

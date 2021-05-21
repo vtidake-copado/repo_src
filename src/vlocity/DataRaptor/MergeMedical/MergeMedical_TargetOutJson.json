@@ -1,0 +1,8 @@
+{
+    "userInputs": {
+        "sub-01.instanceKey": "Text",
+        "sub-01.persBirthdate": "Date",
+        "sub-01.persFirstName": "Text",
+        "sub-01.persLastName": "Text"
+    }
+}

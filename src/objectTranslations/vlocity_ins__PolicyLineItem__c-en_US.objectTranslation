@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Animal --></label>
+        <name>vlocity_ins__Animal</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Business Operation --></label>
+        <name>vlocity_ins__BusinessOperation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Crop --></label>
+        <name>vlocity_ins__Crop</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ImageType --></label>
+        <name>vlocity_ins__ImageType</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Livestock --></label>
+        <name>vlocity_ins__Livestock</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- People --></label>
+        <name>vlocity_ins__People</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Property --></label>
+        <name>vlocity_ins__Property</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Vehicles --></label>
+        <name>vlocity_ins__Vehicles</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Watercraft --></label>
+        <name>vlocity_ins__Watercraft</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Street Address --></label>
+        <name>vlocity_ins__Address1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 2 --></label>
+        <name>vlocity_ins__Address2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age --></label>
+        <name>vlocity_ins__Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Breed --></label>
+        <name>vlocity_ins__Breed__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>vlocity_ins__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>vlocity_ins__Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Condition --></label>
+        <name>vlocity_ins__Condition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Construction Type --></label>
+        <name>vlocity_ins__ConstructionType__c</name>
+        <picklistValues>
+            <masterLabel>Concrete Block</masterLabel>
+            <translation><!-- Concrete Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metal Frame</masterLabel>
+            <translation><!-- Metal Frame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Noncombustible</masterLabel>
+            <translation><!-- Other Noncombustible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poured Concrete</masterLabel>
+            <translation><!-- Poured Concrete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wood Frame</masterLabel>
+            <translation><!-- Wood Frame --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>vlocity_ins__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- DeveloperName --></label>
+        <name>vlocity_ins__DeveloperName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exterior Construction --></label>
+        <name>vlocity_ins__ExteriorConstruction__c</name>
+        <picklistValues>
+            <masterLabel>Brick</masterLabel>
+            <translation><!-- Brick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Composite</masterLabel>
+            <translation><!-- Composite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concrete Block</masterLabel>
+            <translation><!-- Concrete Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stone</masterLabel>
+            <translation><!-- Stone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stucco</masterLabel>
+            <translation><!-- Stucco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vinyl Siding</masterLabel>
+            <translation><!-- Vinyl Siding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wood Shingle</masterLabel>
+            <translation><!-- Wood Shingle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wood Siding</masterLabel>
+            <translation><!-- Wood Siding --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>vlocity_ins__FormattedAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>vlocity_ins__Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Geolocation --></label>
+        <name>vlocity_ins__Geolocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Height --></label>
+        <name>vlocity_ins__Height__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hull ID --></label>
+        <name>vlocity_ins__HullId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hull Material --></label>
+        <name>vlocity_ins__HullMaterial__c</name>
+        <picklistValues>
+            <masterLabel>Aluminum</masterLabel>
+            <translation><!-- Aluminum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Composite</masterLabel>
+            <translation><!-- Composite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fiberglass</masterLabel>
+            <translation><!-- Fiberglass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steel</masterLabel>
+            <translation><!-- Steel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wood</masterLabel>
+            <translation><!-- Wood --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hull Type --></label>
+        <name>vlocity_ins__HullType__c</name>
+        <picklistValues>
+            <masterLabel>Chined</masterLabel>
+            <translation><!-- Chined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Displacement</masterLabel>
+            <translation><!-- Displacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flat</masterLabel>
+            <translation><!-- Flat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planing</masterLabel>
+            <translation><!-- Planing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smooth Curve</masterLabel>
+            <translation><!-- Smooth Curve --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Image Type --></label>
+        <name>vlocity_ins__ImageType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image --></label>
+        <name>vlocity_ins__Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insured Party --></label>
+        <name>vlocity_ins__InsuredParty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length --></label>
+        <name>vlocity_ins__Length__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Jurisdiction --></label>
+        <name>vlocity_ins__LicenseJurisdiction__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- License Number --></label>
+        <name>vlocity_ins__LicenseNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Make --></label>
+        <name>vlocity_ins__Make__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marital Status --></label>
+        <name>vlocity_ins__MaritalStatus__c</name>
+        <picklistValues>
+            <masterLabel>Divorced</masterLabel>
+            <translation><!-- Divorced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Domestic Partnership</masterLabel>
+            <translation><!-- Domestic Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Married</masterLabel>
+            <translation><!-- Married --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Widowed</masterLabel>
+            <translation><!-- Widowed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Market Value --></label>
+        <name>vlocity_ins__MarketValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Year --></label>
+        <name>vlocity_ins__ModelYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>vlocity_ins__Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Motors --></label>
+        <name>vlocity_ins__Motors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Neutered --></label>
+        <name>vlocity_ins__Neutered__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Stories --></label>
+        <name>vlocity_ins__NumberOfStories__c</name>
+    </fields>
+    <fields>
+        <label><!-- Policy --></label>
+        <name>vlocity_ins__PolicyId__c</name>
+        <relationshipLabel><!-- Insured Items &amp; People --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>vlocity_ins__PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating Classification --></label>
+        <name>vlocity_ins__RatingClassification__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>vlocity_ins__State__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Style --></label>
+        <name>vlocity_ins__Style__c</name>
+        <picklistValues>
+            <masterLabel>Airboat</masterLabel>
+            <translation><!-- Airboat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bass Boat</masterLabel>
+            <translation><!-- Bass Boat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cabin Cruiser</masterLabel>
+            <translation><!-- Cabin Cruiser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canoe</masterLabel>
+            <translation><!-- Canoe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cargo Truck</masterLabel>
+            <translation><!-- Cargo Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catamaran</masterLabel>
+            <translation><!-- Catamaran --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Convertible</masterLabel>
+            <translation><!-- Convertible --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farm Equipment</masterLabel>
+            <translation><!-- Farm Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hatchback</masterLabel>
+            <translation><!-- Hatchback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jet Boat</masterLabel>
+            <translation><!-- Jet Boat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jet Ski / Water Scooter</masterLabel>
+            <translation><!-- Jet Ski / Water Scooter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kayak</masterLabel>
+            <translation><!-- Kayak --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Light Truck</masterLabel>
+            <translation><!-- Light Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minivan</masterLabel>
+            <translation><!-- Minivan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motorcycle</masterLabel>
+            <translation><!-- Motorcycle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pontoon Boat</masterLabel>
+            <translation><!-- Pontoon Boat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RV</masterLabel>
+            <translation><!-- RV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Runabout</masterLabel>
+            <translation><!-- Runabout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SUV</masterLabel>
+            <translation><!-- SUV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sailboat</masterLabel>
+            <translation><!-- Sailboat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sedan</masterLabel>
+            <translation><!-- Sedan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi Tractor</masterLabel>
+            <translation><!-- Semi Tractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-Trailer</masterLabel>
+            <translation><!-- Semi-Trailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trailer</masterLabel>
+            <translation><!-- Trailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trawler</masterLabel>
+            <translation><!-- Trawler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Van</masterLabel>
+            <translation><!-- Van --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yacht</masterLabel>
+            <translation><!-- Yacht --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__Type__c</name>
+        <picklistValues>
+            <masterLabel>Antique/Classic Vehicle</masterLabel>
+            <translation><!-- Antique/Classic Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apartment</masterLabel>
+            <translation><!-- Apartment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Barley</masterLabel>
+            <translation><!-- Barley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beans</masterLabel>
+            <translation><!-- Beans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business - Leased</masterLabel>
+            <translation><!-- Business - Leased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business - Owned</masterLabel>
+            <translation><!-- Business - Owned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cat</masterLabel>
+            <translation><!-- Cat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicken</masterLabel>
+            <translation><!-- Chicken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial - Garage</masterLabel>
+            <translation><!-- Commercial - Garage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial - Office</masterLabel>
+            <translation><!-- Commercial - Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial - Storefront</masterLabel>
+            <translation><!-- Commercial - Storefront --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial - Warehouse</masterLabel>
+            <translation><!-- Commercial - Warehouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Vehicle</masterLabel>
+            <translation><!-- Commercial Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company</masterLabel>
+            <translation><!-- Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Condominium</masterLabel>
+            <translation><!-- Condominium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corn</masterLabel>
+            <translation><!-- Corn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dog</masterLabel>
+            <translation><!-- Dog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donkey</masterLabel>
+            <translation><!-- Donkey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Driver</masterLabel>
+            <translation><!-- Driver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duck</masterLabel>
+            <translation><!-- Duck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ewes</masterLabel>
+            <translation><!-- Ewes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farm Vehicle</masterLabel>
+            <translation><!-- Farm Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fishing Boat</masterLabel>
+            <translation><!-- Fishing Boat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fruit</masterLabel>
+            <translation><!-- Fruit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goat</masterLabel>
+            <translation><!-- Goat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Goose</masterLabel>
+            <translation><!-- Goose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grain</masterLabel>
+            <translation><!-- Grain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guinea</masterLabel>
+            <translation><!-- Guinea --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hay</masterLabel>
+            <translation><!-- Hay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hen</masterLabel>
+            <translation><!-- Hen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hog</masterLabel>
+            <translation><!-- Hog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Horses</masterLabel>
+            <translation><!-- Horses --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Houseboat</masterLabel>
+            <translation><!-- Houseboat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lamb</masterLabel>
+            <translation><!-- Lamb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile Home</masterLabel>
+            <translation><!-- Mobile Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Motorcycle</masterLabel>
+            <translation><!-- Motorcycle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mule</masterLabel>
+            <translation><!-- Mule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Family Home</masterLabel>
+            <translation><!-- Multi-Family Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nuts</masterLabel>
+            <translation><!-- Nuts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oats</masterLabel>
+            <translation><!-- Oats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbuilding</masterLabel>
+            <translation><!-- Outbuilding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal Vehicle</masterLabel>
+            <translation><!-- Personal Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pheasant</masterLabel>
+            <translation><!-- Pheasant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pleasure Boat</masterLabel>
+            <translation><!-- Pleasure Boat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pony</masterLabel>
+            <translation><!-- Pony --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quail</masterLabel>
+            <translation><!-- Quail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ram</masterLabel>
+            <translation><!-- Ram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreational Vehicle</masterLabel>
+            <translation><!-- Recreational Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scheduled Personal Property</masterLabel>
+            <translation><!-- Scheduled Personal Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sheep</masterLabel>
+            <translation><!-- Sheep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Family Home</masterLabel>
+            <translation><!-- Single Family Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sod</masterLabel>
+            <translation><!-- Sod --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sow</masterLabel>
+            <translation><!-- Sow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soybeans</masterLabel>
+            <translation><!-- Soybeans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Straw</masterLabel>
+            <translation><!-- Straw --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swine</masterLabel>
+            <translation><!-- Swine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tobacco</masterLabel>
+            <translation><!-- Tobacco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trailer</masterLabel>
+            <translation><!-- Trailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trees</masterLabel>
+            <translation><!-- Trees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turkey</masterLabel>
+            <translation><!-- Turkey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vegetables</masterLabel>
+            <translation><!-- Vegetables --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wheat</masterLabel>
+            <translation><!-- Wheat --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Use --></label>
+        <name>vlocity_ins__Use__c</name>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business - Leased</masterLabel>
+            <translation><!-- Business - Leased --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business - Owned</masterLabel>
+            <translation><!-- Business - Owned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farming</masterLabel>
+            <translation><!-- Farming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Property</masterLabel>
+            <translation><!-- Investment Property --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed Use</masterLabel>
+            <translation><!-- Mixed Use --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pleasure</masterLabel>
+            <translation><!-- Pleasure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Dwelling</masterLabel>
+            <translation><!-- Primary Dwelling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreational Use</masterLabel>
+            <translation><!-- Recreational Use --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second Home</masterLabel>
+            <translation><!-- Second Home --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VIN --></label>
+        <name>vlocity_ins__VIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weight --></label>
+        <name>vlocity_ins__Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Built/Manufactured --></label>
+        <name>vlocity_ins__YearBuilt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Purchased --></label>
+        <name>vlocity_ins__YearPurchased__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Animal --></label>
+        <name>vlocity_ins__Animal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Business Operation --></label>
+        <name>vlocity_ins__BusinessOperation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Crop --></label>
+        <name>vlocity_ins__Crop</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Livestock --></label>
+        <name>vlocity_ins__Livestock</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- People --></label>
+        <name>vlocity_ins__People</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Property --></label>
+        <name>vlocity_ins__Property</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vehicles --></label>
+        <name>vlocity_ins__Vehicles</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Watercraft --></label>
+        <name>vlocity_ins__Watercraft</name>
+    </recordTypes>
+</CustomObjectTranslation>

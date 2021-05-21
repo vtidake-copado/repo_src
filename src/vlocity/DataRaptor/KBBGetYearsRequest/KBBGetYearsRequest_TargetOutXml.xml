@@ -1,0 +1,12 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:veh="http://www.kbb.com/2011/01/25/VehicleInformationService">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:GetYears>
+         <!--Optional:-->
+         <veh:AuthenticationKey>MzI3MTA</veh:AuthenticationKey>
+         <!--Optional:-->
+         <veh:VehicleClass>UsedCar</veh:VehicleClass>
+         <veh:VersionDate>2018-01-01</veh:VersionDate>
+      </veh:GetYears>
+   </soapenv:Body>
+</soapenv:Envelope>

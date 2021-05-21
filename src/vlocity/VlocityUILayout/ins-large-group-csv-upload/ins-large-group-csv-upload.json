@@ -1,0 +1,31 @@
+{
+    "Cards": [
+        "ins-large-group-csv-upload-mapping-card"
+    ],
+    "dataSource": {
+        "type": "ApexRemote",
+        "value": {
+            "body": "{\"result\": 1}",
+            "inputMap": {
+                "contextId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.CensusMemberServiceHandler"
+            },
+            "remoteClass": "CensusMemberServiceHandler",
+            "remoteMethod": "getData",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": "",
+            "vlocityAsync": true
+        }
+    },
+    "previewType": "runTime",
+    "templates": {
+        "0": {
+            "templateUrl": "ins-large-group-csv-upload"
+        }
+    },
+    "workspace": [
+        "ins-large-group-csv-upload-mapping-card/Vlocity/1/1543425734816"
+    ]
+}

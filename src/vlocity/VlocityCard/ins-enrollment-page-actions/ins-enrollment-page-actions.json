@@ -1,0 +1,48 @@
+{
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{\"records\": {\"cards\" : \"enrollment\"}}",
+            "resultVar": "records"
+        }
+    },
+    "filter": {
+    },
+    "sessionVars": [
+        {
+            "name": "img",
+            "val": "https://hellowtomorrow.files.wordpress.com/2014/10/cropped-light-blue-sky-clouds-header.jpg"
+        }
+    ],
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "hasExtraParams": false,
+                        "id": "Edit Record",
+                        "isCustomAction": false,
+                        "type": "Vlocity Action"
+                    }
+                ]
+            },
+            "fields": [
+            ],
+            "name": "Enrollment Home Page Actions",
+            "sObjectType": "Account",
+            "templateUrl": "ins-enrollment-page-header-actions"
+        }
+    ],
+    "title": "Enrollment Home Page Actions"
+}

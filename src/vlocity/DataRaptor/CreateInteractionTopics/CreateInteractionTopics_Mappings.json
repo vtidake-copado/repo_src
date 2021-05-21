@@ -1,0 +1,67 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "%vlocity_namespace%__AccountId__c",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "CreateInteraction:%vlocity_namespace%__CustomerInteraction__c_1:%vlocity_namespace%__AccountId__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateInteractionTopicsCustom8188",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "CreateInteractionTopics",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "%vlocity_namespace%__AccountId__c",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "ExtractAssetBasedOnAccount:AssetAccountId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateInteractionTopicsCustom4380",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "CreateInteractionTopics",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "%vlocity_namespace%__AssetId__c",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "ExtractAssetBasedOnAccount:AssetId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateInteractionTopicsCustom5840",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "CreateInteractionTopics",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "%vlocity_namespace%__CustomerInteractionId__c",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "TransformNewInteraction:NewInteraction:Id",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateInteractionTopicsCustom6998",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "CreateInteractionTopics",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "%vlocity_namespace%__CustomerInteractionTopic__c",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Name",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "ExtractAssetBasedOnAccount:Name",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateInteractionTopicsCustom8708",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "CreateInteractionTopics",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

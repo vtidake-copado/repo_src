@@ -1,0 +1,74 @@
+@import 'vella-mixins-variables';
+
+.vella-policy-coverages-card {
+    background-color: white;
+    padding: 0.5rem 0;
+
+    .vella-policy-coverages-inner-wrapper {
+        padding: 0 1rem;
+
+        .vella-policy-coverages-container {
+            padding: 1rem 0.25rem 0.5rem 0.25rem;
+            margin: 0 0 0.5rem;
+            border-bottom: 1px solid $vella-gray-border;
+
+            &:last-child {
+                border-bottom: none;
+                margin: 0;
+                padding-bottom: 1.5rem;
+            }
+
+            h3 {
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 0.8125rem;
+                line-height: 1.2;
+                color: $vella-dark-gray;
+                margin-bottom: 1.25rem;
+            }
+
+            .vella-policy-coverages-inner-container {
+                .vella-policy-coverages-item {
+                    margin-bottom: 1.25rem;
+                    min-height: 4.75rem;
+
+                    .vella-policy-coverages-item-circle {
+                        position: relative;
+                        margin: 0 auto 0.5rem auto;
+                        width: 2.875rem;
+                        height: 2.875rem;
+                        border-radius: 50%;
+                        background-color: $vella-light-gray-bg;
+
+                        .vella-policy-coverages-item-img {
+                            height: 1.875rem;
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+                            line-height: 1;
+                            font-size: 0.625rem;
+                            color: white;
+                        }
+                    }
+
+                    .vella-policy-coverages-item-name {
+                        text-align: center;
+                        display: block;
+                        line-height: 1.1;
+                        color: $vella-dark-gray;
+                        font-size: 0.625rem;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .vella-policy-coverages-coverage-amounts-inner-container {
+                color: $vella-dark-gray;
+                font-weight: 300;
+                margin-bottom: 0.1875rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,2119 @@
+{
+    "records": [
+        {
+            "Id": "02i6A0000013iGfQAI",
+            "Name": "Multi Auto Insured - Jerry Rice",
+            "Price": 2239.84,
+            "PricingFormula__c": "SUM(premiumBIPD + premiumCOLL + premiumCCD + premiumMED + premiumUM)",
+            "ProductCode": "autoCollector",
+            "RecordTypeName__c": "Product",
+            "TotalPremiumForTerm__c": 0,
+            "accountId": "0016A00000W6JmWQAV",
+            "childProducts": {
+                "records": [
+                    {
+                        "CreatedById": "0056A000000JYu0QAG",
+                        "CreatedDate": "2018-08-02T12:49:00.000+0000",
+                        "Id": "a0E6A000005OZ7RUAW",
+                        "ImageId": "/servlet/servlet.FileDownload?file=00P6A000000Tw9jUAC",
+                        "IsDeleted": false,
+                        "LastModifiedById": "0056A000000JYu0QAG",
+                        "LastModifiedDate": "2018-08-02T12:49:00.000+0000",
+                        "LastReferencedDate": "2018-08-02T12:49:00.000+0000",
+                        "LastViewedDate": "2018-08-02T12:49:00.000+0000",
+                        "Name": "Uninsured Motorist",
+                        "Price": 0,
+                        "ProductCode": "autoUM",
+                        "ProductDescription__c": "Helps pay your medical expenses, lost wages and related damages if you're in an accident caused by a driver who doesn't have liability insurance.",
+                        "SystemModstamp": "2018-08-02T12:49:00.000+0000",
+                        "attributeCategories": {
+                            "records": [
+                                {
+                                    "Code__c": "terms",
+                                    "Name": "Policy Terms",
+                                    "displaySequence": 100,
+                                    "id": "a0O6A000000F2dyUAC",
+                                    "productAttributes": {
+                                        "records": [
+                                            {
+                                                "attributeId": "a0P6A000000XZ9RUAW",
+                                                "code": "limit2",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "dropdown",
+                                                "label": "2nd Limit",
+                                                "multiselect": false,
+                                                "readonly": false,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "0",
+                                                        "label": "$15,000 / $30,000",
+                                                        "readonly": false,
+                                                        "value": "15/30"
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "1",
+                                                        "label": "$25,000 / $50,000",
+                                                        "readonly": false,
+                                                        "value": "25/50"
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "2",
+                                                        "label": "$30,000 / $60,000",
+                                                        "readonly": false,
+                                                        "value": "30/60"
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "3",
+                                                        "label": "$50,000 / $100,000",
+                                                        "readonly": false,
+                                                        "value": "50/100"
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "4",
+                                                        "label": "$100,000 / $300,000",
+                                                        "readonly": false,
+                                                        "value": "100/300"
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "5",
+                                                        "label": "$250,000 / $500,000",
+                                                        "readonly": false,
+                                                        "value": "250/500"
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "6",
+                                                        "label": "$500,000 / $500,000",
+                                                        "readonly": false,
+                                                        "value": "500/500"
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "7",
+                                                        "label": "$500,000 / $1,000,000",
+                                                        "readonly": false,
+                                                        "value": "500/1000"
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "8",
+                                                        "label": "$1,000,000 / $1,000,000",
+                                                        "readonly": false,
+                                                        "value": "1000/1000"
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    }
+                                }
+                            ],
+                            "totalSize": 1
+                        },
+                        "displaySequence": -1,
+                        "isOptional": false,
+                        "isSelected": true,
+                        "pciId": "a2p6A000000Z8NLQA0",
+                        "productId": "01t6A0000008OMtQAM",
+                        "productName": "Uninsured Motorist",
+                        "vlocityins2__AggregateLimitAmount__c": 0,
+                        "vlocityins2__AttributeSelectedValues__c": "{\"LIMIT2\":\"50/100\"}",
+                        "vlocityins2__DeductibleAmount__c": 0,
+                        "vlocityins2__PolicyAssetId__c": "02i6A0000013iGfQAI",
+                        "vlocityins2__PremiumAmount__c": 0,
+                        "vlocityins2__PricingSource__c": "premiumUM",
+                        "vlocityins2__Product2Id__c": "01t6A0000008OMtQAM",
+                        "vlocityins2__RecordTypeName__c": "CoverageSpec"
+                    },
+                    {
+                        "CreatedById": "0056A000000JYu0QAG",
+                        "CreatedDate": "2018-08-02T12:49:00.000+0000",
+                        "Id": "a0E6A000005OZ7SUAW",
+                        "ImageId": "/servlet/servlet.FileDownload?file=00P6A000000Tw9oUAC",
+                        "IsDeleted": false,
+                        "LastModifiedById": "0056A000000JYu0QAG",
+                        "LastModifiedDate": "2018-08-02T12:49:00.000+0000",
+                        "LastReferencedDate": "2018-08-02T12:49:00.000+0000",
+                        "LastViewedDate": "2018-08-02T12:49:00.000+0000",
+                        "Name": "Medical Payments",
+                        "Price": 0,
+                        "ProductCode": "autoMED",
+                        "ProductDescription__c": "Covers medical costs after you are hurt in a car accident, regardless of who is found at fault for the accident, including coverage for your passengers.",
+                        "SystemModstamp": "2018-08-02T12:49:00.000+0000",
+                        "attributeCategories": {
+                            "records": [
+                                {
+                                    "Code__c": "terms",
+                                    "Name": "Policy Terms",
+                                    "displaySequence": 265,
+                                    "id": "a0O6A000000F2dyUAC",
+                                    "productAttributes": {
+                                        "records": [
+                                            {
+                                                "attributeId": "a0P6A000000XZ9RUAW",
+                                                "code": "LIMIT2",
+                                                "dataType": "currency",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "inputType": "dropdown",
+                                                "label": "Limit",
+                                                "readonly": false,
+                                                "required": false,
+                                                "userValues": 5000,
+                                                "values": [
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "0",
+                                                        "label": "$1,000",
+                                                        "readonly": false,
+                                                        "value": 1000
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "1",
+                                                        "label": "$2,000",
+                                                        "readonly": false,
+                                                        "value": 2000
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "2",
+                                                        "label": "$5,000",
+                                                        "readonly": false,
+                                                        "value": 5000
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "3",
+                                                        "label": "$10,000",
+                                                        "readonly": false,
+                                                        "value": 10000
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    }
+                                }
+                            ],
+                            "totalSize": 1
+                        },
+                        "displaySequence": -1,
+                        "isOptional": false,
+                        "isSelected": true,
+                        "pciId": "a2p6A000000Z8NZQA0",
+                        "productId": "01t6A0000008OMyQAM",
+                        "productName": "Medical Payments",
+                        "vlocityins2__AggregateLimitAmount__c": 0,
+                        "vlocityins2__AttributeSelectedValues__c": "{\"LIMIT2\":5000}",
+                        "vlocityins2__DeductibleAmount__c": 0,
+                        "vlocityins2__PolicyAssetId__c": "02i6A0000013iGfQAI",
+                        "vlocityins2__PremiumAmount__c": 0,
+                        "vlocityins2__PricingSource__c": "premiumMED",
+                        "vlocityins2__Product2Id__c": "01t6A0000008OMyQAM",
+                        "vlocityins2__RecordTypeName__c": "CoverageSpec"
+                    },
+                    {
+                        "CreatedById": "0056A000000JYu0QAG",
+                        "CreatedDate": "2018-08-02T12:49:00.000+0000",
+                        "Id": "a0E6A000005OZ7TUAW",
+                        "ImageId": "/servlet/servlet.FileDownload?file=00P6A000000Tw9tUAC",
+                        "IsDeleted": false,
+                        "LastModifiedById": "0056A000000JYu0QAG",
+                        "LastModifiedDate": "2018-08-02T12:49:00.000+0000",
+                        "LastReferencedDate": "2018-08-02T12:49:00.000+0000",
+                        "LastViewedDate": "2018-08-02T12:49:00.000+0000",
+                        "Name": "Comprehensive",
+                        "Price": 234.96,
+                        "ProductCode": "autoCOMP",
+                        "ProductDescription__c": "Covers damage caused by an event other than a collision, such as fire, theft or vandalism. If you hit an animal, or if your auto is flooded or stolen, Comprehensive coverage will apply.",
+                        "SystemModstamp": "2018-08-02T12:49:00.000+0000",
+                        "attributeCategories": {
+                            "records": [
+                                {
+                                    "Code__c": "terms",
+                                    "Name": "Policy Terms",
+                                    "displaySequence": 265,
+                                    "id": "a0O6A000000F2dyUAC",
+                                    "productAttributes": {
+                                        "records": [
+                                            {
+                                                "attributeId": "a0P6A000000XZ9OUAW",
+                                                "code": "covDeductible",
+                                                "dataType": "currency",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "inputType": "dropdown",
+                                                "label": "Deductible",
+                                                "readonly": false,
+                                                "required": false,
+                                                "userValues": 500,
+                                                "values": [
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "0",
+                                                        "label": "$100",
+                                                        "readonly": false,
+                                                        "value": 100
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "1",
+                                                        "label": "$250",
+                                                        "readonly": false,
+                                                        "value": 250
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "2",
+                                                        "label": "$500",
+                                                        "readonly": false,
+                                                        "value": 500
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "3",
+                                                        "label": "$750",
+                                                        "readonly": false,
+                                                        "value": 750
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "4",
+                                                        "label": "$1,000",
+                                                        "readonly": false,
+                                                        "value": 1000
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "5",
+                                                        "label": "$1,500",
+                                                        "readonly": false,
+                                                        "value": 1500
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "6",
+                                                        "label": "$2,500",
+                                                        "readonly": false,
+                                                        "value": 2500
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "7",
+                                                        "label": "$5,000",
+                                                        "readonly": false,
+                                                        "value": 5000
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    }
+                                }
+                            ],
+                            "totalSize": 1
+                        },
+                        "displaySequence": -1,
+                        "isOptional": false,
+                        "isSelected": true,
+                        "pciId": "a2p6A000000Z8NUQA0",
+                        "productId": "01t6A0000008OMeQAM",
+                        "productName": "Comprehensive",
+                        "vlocityins2__AggregateLimitAmount__c": 0,
+                        "vlocityins2__AttributeSelectedValues__c": "{\"covDeductible\":500}",
+                        "vlocityins2__DeductibleAmount__c": 0,
+                        "vlocityins2__PolicyAssetId__c": "02i6A0000013iGfQAI",
+                        "vlocityins2__PremiumAmount__c": 234.96,
+                        "vlocityins2__PricingSource__c": "premiumCCD",
+                        "vlocityins2__Product2Id__c": "01t6A0000008OMeQAM",
+                        "vlocityins2__RecordTypeName__c": "CoverageSpec"
+                    },
+                    {
+                        "CreatedById": "0056A000000JYu0QAG",
+                        "CreatedDate": "2018-08-02T12:49:00.000+0000",
+                        "Id": "a0E6A000005OZ7UUAW",
+                        "IsDeleted": false,
+                        "LastModifiedById": "0056A000000JYu0QAG",
+                        "LastModifiedDate": "2018-08-15T09:49:19.000+0000",
+                        "LastReferencedDate": "2018-08-15T09:49:20.000+0000",
+                        "LastViewedDate": "2018-08-15T09:49:20.000+0000",
+                        "Name": "Collision",
+                        "Price": 813.44,
+                        "SystemModstamp": "2018-08-15T09:49:19.000+0000",
+                        "displaySequence": -1,
+                        "vlocityins2__AggregateLimitAmount__c": 0,
+                        "vlocityins2__AttributeSelectedValues__c": "{\"covDeductible\":500}",
+                        "vlocityins2__DeductibleAmount__c": 0,
+                        "vlocityins2__PolicyAssetId__c": "02i6A0000013iGfQAI",
+                        "vlocityins2__PremiumAmount__c": 813.44,
+                        "vlocityins2__PricingSource__c": "collisionPremium__collisionPremium",
+                        "vlocityins2__Product2Id__c": "01t6A000000FtMuQAK",
+                        "vlocityins2__RecordTypeName__c": "CoverageSpec"
+                    },
+                    {
+                        "CreatedById": "0056A000000JYu0QAG",
+                        "CreatedDate": "2018-08-02T12:49:00.000+0000",
+                        "Id": "a0E6A000005OZ7VUAW",
+                        "ImageId": "/servlet/servlet.FileDownload?file=00P6A000000Tw9tUAC",
+                        "IsDeleted": false,
+                        "LastModifiedById": "0056A000000JYu0QAG",
+                        "LastModifiedDate": "2018-08-02T12:49:00.000+0000",
+                        "LastReferencedDate": "2018-08-02T12:49:00.000+0000",
+                        "LastViewedDate": "2018-08-02T12:49:00.000+0000",
+                        "Name": "Comprehensive",
+                        "Price": 261.8,
+                        "ProductCode": "autoCOMP",
+                        "ProductDescription__c": "Covers damage caused by an event other than a collision, such as fire, theft or vandalism. If you hit an animal, or if your auto is flooded or stolen, Comprehensive coverage will apply.",
+                        "SystemModstamp": "2018-08-02T12:49:00.000+0000",
+                        "attributeCategories": {
+                            "records": [
+                                {
+                                    "Code__c": "terms",
+                                    "Name": "Policy Terms",
+                                    "displaySequence": 265,
+                                    "id": "a0O6A000000F2dyUAC",
+                                    "productAttributes": {
+                                        "records": [
+                                            {
+                                                "attributeId": "a0P6A000000XZ9OUAW",
+                                                "code": "covDeductible",
+                                                "dataType": "currency",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "inputType": "dropdown",
+                                                "label": "Deductible",
+                                                "readonly": false,
+                                                "required": false,
+                                                "userValues": 500,
+                                                "values": [
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "0",
+                                                        "label": "$100",
+                                                        "readonly": false,
+                                                        "value": 100
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "1",
+                                                        "label": "$250",
+                                                        "readonly": false,
+                                                        "value": 250
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "2",
+                                                        "label": "$500",
+                                                        "readonly": false,
+                                                        "value": 500
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "3",
+                                                        "label": "$750",
+                                                        "readonly": false,
+                                                        "value": 750
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "4",
+                                                        "label": "$1,000",
+                                                        "readonly": false,
+                                                        "value": 1000
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "5",
+                                                        "label": "$1,500",
+                                                        "readonly": false,
+                                                        "value": 1500
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "6",
+                                                        "label": "$2,500",
+                                                        "readonly": false,
+                                                        "value": 2500
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "7",
+                                                        "label": "$5,000",
+                                                        "readonly": false,
+                                                        "value": 5000
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    }
+                                }
+                            ],
+                            "totalSize": 1
+                        },
+                        "displaySequence": -1,
+                        "isOptional": false,
+                        "isSelected": true,
+                        "pciId": "a2p6A000000Z8NUQA0",
+                        "productId": "01t6A0000008OMeQAM",
+                        "productName": "Comprehensive",
+                        "vlocityins2__AggregateLimitAmount__c": 0,
+                        "vlocityins2__AttributeSelectedValues__c": "{\"covDeductible\":500}",
+                        "vlocityins2__DeductibleAmount__c": 0,
+                        "vlocityins2__PolicyAssetId__c": "02i6A0000013iGfQAI",
+                        "vlocityins2__PremiumAmount__c": 261.8,
+                        "vlocityins2__PricingSource__c": "premiumCCD",
+                        "vlocityins2__Product2Id__c": "01t6A0000008OMeQAM",
+                        "vlocityins2__RecordTypeName__c": "CoverageSpec"
+                    },
+                    {
+                        "CreatedById": "0056A000000JYu0QAG",
+                        "CreatedDate": "2018-08-02T12:49:00.000+0000",
+                        "Id": "a0E6A000005OZ7WUAW",
+                        "ImageId": "/servlet/servlet.FileDownload?file=00P6A000000TwA3UAK",
+                        "IsDeleted": false,
+                        "LastModifiedById": "0056A000000JYu0QAG",
+                        "LastModifiedDate": "2018-08-02T12:49:00.000+0000",
+                        "LastReferencedDate": "2018-08-15T09:50:47.000+0000",
+                        "LastViewedDate": "2018-08-15T09:50:47.000+0000",
+                        "Name": "Collision",
+                        "Price": 929.64,
+                        "ProductCode": "autoCOLL",
+                        "ProductDescription__c": "Collision insurance is a coverage that helps pay to repair or replace your car if it's damaged in an accident with another vehicle or object, such as a fence or a tree",
+                        "SystemModstamp": "2018-08-02T12:49:00.000+0000",
+                        "attributeCategories": {
+                            "records": [
+                                {
+                                    "Code__c": "terms",
+                                    "Name": "Policy Terms",
+                                    "displaySequence": 100,
+                                    "id": "a0O6A000000F2dyUAC",
+                                    "productAttributes": {
+                                        "records": [
+                                            {
+                                                "attributeId": "a0P6A000000XZ9OUAW",
+                                                "code": "covDeductible",
+                                                "dataType": "currency",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "dropdown",
+                                                "label": "Deductible",
+                                                "readonly": false,
+                                                "required": false,
+                                                "userValues": 500,
+                                                "values": [
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "0",
+                                                        "label": "$250",
+                                                        "readonly": false,
+                                                        "value": 250
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "1",
+                                                        "label": "$500",
+                                                        "readonly": false,
+                                                        "value": 500
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "2",
+                                                        "label": "$750",
+                                                        "readonly": false,
+                                                        "value": 750
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "3",
+                                                        "label": "$1,000",
+                                                        "readonly": false,
+                                                        "value": 1000
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "4",
+                                                        "label": "$1,500",
+                                                        "readonly": false,
+                                                        "value": 1500
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "5",
+                                                        "label": "$2,500",
+                                                        "readonly": false,
+                                                        "value": 2500
+                                                    },
+                                                    {
+                                                        "disabled": false,
+                                                        "id": "6",
+                                                        "label": "$5,000",
+                                                        "readonly": false,
+                                                        "value": 5000
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    }
+                                }
+                            ],
+                            "totalSize": 1
+                        },
+                        "displaySequence": -1,
+                        "isOptional": false,
+                        "isSelected": true,
+                        "pciId": "a2p6A000000Z8NPQA0",
+                        "productId": "01t6A0000008OMjQAM",
+                        "productName": "Collision",
+                        "vlocityins2__AggregateLimitAmount__c": 0,
+                        "vlocityins2__AttributeSelectedValues__c": "{\"covDeductible\":500}",
+                        "vlocityins2__DeductibleAmount__c": 0,
+                        "vlocityins2__PolicyAssetId__c": "02i6A0000013iGfQAI",
+                        "vlocityins2__PremiumAmount__c": 929.64,
+                        "vlocityins2__PricingSource__c": "premiumCOLL",
+                        "vlocityins2__Product2Id__c": "01t6A0000008OMjQAM",
+                        "vlocityins2__RecordTypeName__c": "CoverageSpec"
+                    },
+                    {
+                        "CreatedById": "0056A000000JYu0QAG",
+                        "CreatedDate": "2018-08-02T12:49:00.000+0000",
+                        "Id": "a0F6A000001pDWdUAM",
+                        "IsDeleted": false,
+                        "LastModifiedById": "0056A000000JYu0QAG",
+                        "LastModifiedDate": "2018-08-02T12:49:00.000+0000",
+                        "Name": "Auto",
+                        "PricingFormula__c": "premiumBIPD + premiumCOLL + premiumCCD + premiumMED + premiumUM",
+                        "ProductCode": "AUTO",
+                        "SystemModstamp": "2018-08-02T12:49:00.000+0000",
+                        "attributeCategories": {
+                            "records": [
+                                {
+                                    "Code__c": "AUTO",
+                                    "Name": "Auto",
+                                    "displaySequence": 245,
+                                    "id": "a0O6A000000FC6wUAG",
+                                    "productAttributes": {
+                                        "records": [
+                                            {
+                                                "attributeId": "a0P6A000001dPjQUAU",
+                                                "code": "autoAltFuel",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Alternative Fuel",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": true,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmUUAU",
+                                                "code": "autoAntiTheft",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Anti-Thift",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": true,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmoUAE",
+                                                "code": "autoBrakes",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Brakes",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": true,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmKUAU",
+                                                "code": "autoFreq",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Claim Frequency",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmPUAU",
+                                                "code": "autoSev",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Claim Severity",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmGUAU",
+                                                "code": "autoLicNum",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "License Number",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmeUAE",
+                                                "code": "autoLicState",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "License State",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007SOdUAM",
+                                                "code": "autoMake",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Make",
+                                                "readonly": false,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": false,
+                                                        "readonly": false
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000001dPjLUAU",
+                                                "code": "autoModel",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Model",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007En8UAE",
+                                                "code": "ratedDriver-BIPD",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Rated Driver - BIPD",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007En3UAE",
+                                                "code": "ratedDriver-Comp",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Rated Driver - Comprehensive",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EnIUAU",
+                                                "code": "ratedDriver-MED",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Rated Driver - Medical Payments",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EnDUAU",
+                                                "code": "ratedDriver-UM",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Rated Driver - Uninsured Motorist",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmyUAE",
+                                                "code": "autoRatedDriver",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Rated Driver Name",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmtUAE",
+                                                "code": "autoRestraints",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Restraints",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EnNUAU",
+                                                "code": "autoStabilization",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Stablization",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": true,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmZUAU",
+                                                "code": "autoStyle",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Style",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000001dPjVUAU",
+                                                "code": "autoSymbol",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Symbol",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000001dPjfUAE",
+                                                "code": "autoValue",
+                                                "dataType": "currency",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Value",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": 35000,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmjUAE",
+                                                "code": "autoVIN",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "VIN",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000001dPjaUAE",
+                                                "code": "autoYear",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Year",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": "2014",
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A00000080G2UAI",
+                                                "code": "autoColor",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": 23,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Color",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000003JhwnUAC",
+                                                "code": "autoMileage",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": 24,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Annual Mileage",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": 12000,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A00000080G7UAI",
+                                                "code": "autoBodyType",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": 24,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Body Type",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000003Jhx2UAC",
+                                                "code": "autoGaragePostalCode",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": 25,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Garage Location (Postal Code)",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": "94016",
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000003KA3WUAW",
+                                                "code": "ratedDriver-COLLISION",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": 27,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Rated Driver - Collision",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "totalSize": 26
+                                    }
+                                }
+                            ],
+                            "totalSize": 1
+                        },
+                        "childProducts": {
+                            "records": [
+                                {
+                                    "Name": "Bodily Injury & Property Damage",
+                                    "ProductCode": "autoBIPD",
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "autoTerms",
+                                                "Name": "Auto Terms",
+                                                "displaySequence": 296,
+                                                "id": "a0O6A0000002V7fUAE",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                            "attributeId": "a0P6A0000007EnSUAU",
+                                                            "code": "limitBI",
+                                                            "dataType": "text",
+                                                            "disabled": false,
+                                                            "displaySequence": -1,
+                                                            "filterable": true,
+                                                            "hasRules": false,
+                                                            "hidden": false,
+                                                            "inputType": "dropdown",
+                                                            "label": "Limit - Bodily Injury",
+                                                            "multiselect": false,
+                                                            "readonly": false,
+                                                            "required": false,
+                                                            "userValues": "100/300/10",
+                                                            "values": [
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "0",
+                                                                    "label": "$15,000 / $30,000 / $10,000",
+                                                                    "readonly": false,
+                                                                    "value": "15/30/10"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "1",
+                                                                    "label": "$25,000 / $50,000 / $10,000",
+                                                                    "readonly": false,
+                                                                    "value": "25/50/10"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "2",
+                                                                    "label": "$50,000 / $100,000 / $10,000",
+                                                                    "readonly": false,
+                                                                    "value": "50/100/10"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "3",
+                                                                    "label": "$100,000 / $300,000 / $10,000",
+                                                                    "readonly": false,
+                                                                    "value": "100/300/10"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "4",
+                                                                    "label": "$250,000 / $500,000 / $10,000",
+                                                                    "readonly": false,
+                                                                    "value": "250/500/10"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "5",
+                                                                    "label": "$500,000 / $500,000 / $100,000",
+                                                                    "readonly": false,
+                                                                    "value": "500/500/100"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "6",
+                                                                    "label": "$500,000 / $1,000,000 / $100,000",
+                                                                    "readonly": false,
+                                                                    "value": "500/1000/100"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "7",
+                                                                    "label": "$1,000,000 / $1,000,000 / $100,000",
+                                                                    "readonly": false,
+                                                                    "value": "1000/1000/100"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "attributeId": "a0P6A0000007EnXUAU",
+                                                            "code": "limitPD",
+                                                            "dataType": "text",
+                                                            "disabled": false,
+                                                            "displaySequence": -1,
+                                                            "filterable": true,
+                                                            "hasRules": false,
+                                                            "hidden": false,
+                                                            "inputType": "dropdown",
+                                                            "label": "Limit - Property Damage",
+                                                            "multiselect": false,
+                                                            "readonly": false,
+                                                            "required": false,
+                                                            "userValues": "25000",
+                                                            "values": [
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "0",
+                                                                    "label": "$5,000",
+                                                                    "readonly": false,
+                                                                    "value": "5000"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "1",
+                                                                    "label": "$10,000",
+                                                                    "readonly": false,
+                                                                    "value": "10000"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "2",
+                                                                    "label": "$25,000",
+                                                                    "readonly": false,
+                                                                    "value": "25000"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "3",
+                                                                    "label": "$50,000",
+                                                                    "readonly": false,
+                                                                    "value": "50000"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "4",
+                                                                    "label": "$100,000",
+                                                                    "readonly": false,
+                                                                    "value": "100000"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "5",
+                                                                    "label": "$500,000",
+                                                                    "readonly": false,
+                                                                    "value": "500000"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "totalSize": 2
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    },
+                                    "displaySequence": -1,
+                                    "isOptional": true,
+                                    "isSelected": false,
+                                    "pciId": "a2p6A000000Z8NKQA0",
+                                    "productId": "01t6A0000008OMoQAM",
+                                    "productName": "Bodily Injury & Property Damage",
+                                    "vlocityins2__PricingSource__c": "premiumBIPD",
+                                    "vlocityins2__RecordTypeName__c": "CoverageSpec"
+                                }
+                            ],
+                            "totalSize": 1
+                        },
+                        "displaySequence": -1,
+                        "hasCoverages": false,
+                        "instanceKey": "Auto",
+                        "maxCount": 10,
+                        "minCount": 1,
+                        "pciId": "a2p6A000000lKsJQAU",
+                        "productId": "01t6A0000008OMZQA2",
+                        "productName": "Auto",
+                        "vlocityins2__AttributeSelectedValues__c": "{\"autoStabilization\":true,\"autoBrakes\":true,\"autoAntiTheft\":true,\"autoAltFuel\":true,\"autoYear\":\"2014\",\"autoMake\":null,\"autoModel\":null,\"autoInstanceKey\":\"2014  \",\"autoTrim\":\"Sedan/Saloon\",\"autoVehicleType\":\"PASSENGER CAR\",\"autoMileage\":12000,\"autoCondition\":\"VeryGood\",\"autoGaragePostalCode\":\"94016\",\"autoValue\":35000,\"autoYearName\":\"2014\",\"autoMakeName\":[\"\"],\"autoModelName\":[\"\"],\"autoTrimName\":[\"Sedan/Saloon\"],\"discountAutoInstanceKey\":\"2014  \",\"typeAutoDiscount\":\"AltFuel;AntiLock;Stab;AntiTheft\",\"discAltFuel\":true,\"discAntiLock\":true,\"discStab\":true,\"discAntiTheft\":true,\"BodyClass\":\"Sedan/Saloon\",\"VehicleType\":\"PASSENGER CAR\",\"isPrimary\":true}",
+                        "vlocityins2__MarketValue__c": 0,
+                        "vlocityins2__PolicyAssetId__c": "02i6A0000013iGfQAI",
+                        "vlocityins2__Product2Id__c": "01t6A0000008OMZQA2",
+                        "vlocityins2__RecordTypeName__c": "InsuredItemSpec"
+                    },
+                    {
+                        "CreatedById": "0056A000000JYu0QAG",
+                        "CreatedDate": "2018-08-02T12:49:00.000+0000",
+                        "Id": "a0F6A000001pDWeUAM",
+                        "IsDeleted": false,
+                        "LastModifiedById": "0056A000000JYu0QAG",
+                        "LastModifiedDate": "2018-08-02T12:49:00.000+0000",
+                        "Name": "Auto",
+                        "PricingFormula__c": "premiumBIPD + premiumCOLL + premiumCCD + premiumMED + premiumUM",
+                        "ProductCode": "AUTO",
+                        "SystemModstamp": "2018-08-02T12:49:00.000+0000",
+                        "attributeCategories": {
+                            "records": [
+                                {
+                                    "Code__c": "AUTO",
+                                    "Name": "Auto",
+                                    "displaySequence": 245,
+                                    "id": "a0O6A000000FC6wUAG",
+                                    "productAttributes": {
+                                        "records": [
+                                            {
+                                                "attributeId": "a0P6A000001dPjQUAU",
+                                                "code": "autoAltFuel",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Alternative Fuel",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": true,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmUUAU",
+                                                "code": "autoAntiTheft",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Anti-Thift",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": true,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmoUAE",
+                                                "code": "autoBrakes",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Brakes",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": true,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmKUAU",
+                                                "code": "autoFreq",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Claim Frequency",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmPUAU",
+                                                "code": "autoSev",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Claim Severity",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmGUAU",
+                                                "code": "autoLicNum",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "License Number",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmeUAE",
+                                                "code": "autoLicState",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "License State",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007SOdUAM",
+                                                "code": "autoMake",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Make",
+                                                "readonly": false,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": false,
+                                                        "readonly": false
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000001dPjLUAU",
+                                                "code": "autoModel",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Model",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007En8UAE",
+                                                "code": "ratedDriver-BIPD",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Rated Driver - BIPD",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007En3UAE",
+                                                "code": "ratedDriver-Comp",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Rated Driver - Comprehensive",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EnIUAU",
+                                                "code": "ratedDriver-MED",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Rated Driver - Medical Payments",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EnDUAU",
+                                                "code": "ratedDriver-UM",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Rated Driver - Uninsured Motorist",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmyUAE",
+                                                "code": "autoRatedDriver",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Rated Driver Name",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmtUAE",
+                                                "code": "autoRestraints",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Restraints",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EnNUAU",
+                                                "code": "autoStabilization",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Stablization",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": true,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmZUAU",
+                                                "code": "autoStyle",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Style",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000001dPjVUAU",
+                                                "code": "autoSymbol",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Symbol",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000001dPjfUAE",
+                                                "code": "autoValue",
+                                                "dataType": "currency",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Value",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": 35000,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A0000007EmjUAE",
+                                                "code": "autoVIN",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "VIN",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000001dPjaUAE",
+                                                "code": "autoYear",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": -1,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Year",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": "2017",
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A00000080G2UAI",
+                                                "code": "autoColor",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": 23,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Color",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000003JhwnUAC",
+                                                "code": "autoMileage",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": 24,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Annual Mileage",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": 18000,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A00000080G7UAI",
+                                                "code": "autoBodyType",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": 24,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Body Type",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000003Jhx2UAC",
+                                                "code": "autoGaragePostalCode",
+                                                "dataType": "text",
+                                                "disabled": false,
+                                                "displaySequence": 25,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "text",
+                                                "label": "Garage Location (Postal Code)",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": "94016",
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "attributeId": "a0P6A000003KA3WUAW",
+                                                "code": "ratedDriver-COLLISION",
+                                                "dataType": "number",
+                                                "disabled": false,
+                                                "displaySequence": 27,
+                                                "filterable": true,
+                                                "hasRules": false,
+                                                "hidden": false,
+                                                "inputType": "number",
+                                                "label": "Rated Driver - Collision",
+                                                "readonly": true,
+                                                "required": false,
+                                                "userValues": null,
+                                                "values": [
+                                                    {
+                                                        "disabled": true,
+                                                        "readonly": true
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "totalSize": 26
+                                    }
+                                }
+                            ],
+                            "totalSize": 1
+                        },
+                        "childProducts": {
+                            "records": [
+                                {
+                                    "Name": "Bodily Injury & Property Damage",
+                                    "ProductCode": "autoBIPD",
+                                    "attributeCategories": {
+                                        "records": [
+                                            {
+                                                "Code__c": "autoTerms",
+                                                "Name": "Auto Terms",
+                                                "displaySequence": 296,
+                                                "id": "a0O6A0000002V7fUAE",
+                                                "productAttributes": {
+                                                    "records": [
+                                                        {
+                                                            "attributeId": "a0P6A0000007EnSUAU",
+                                                            "code": "limitBI",
+                                                            "dataType": "text",
+                                                            "disabled": false,
+                                                            "displaySequence": -1,
+                                                            "filterable": true,
+                                                            "hasRules": false,
+                                                            "hidden": false,
+                                                            "inputType": "dropdown",
+                                                            "label": "Limit - Bodily Injury",
+                                                            "multiselect": false,
+                                                            "readonly": false,
+                                                            "required": false,
+                                                            "userValues": "100/300/10",
+                                                            "values": [
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "0",
+                                                                    "label": "$15,000 / $30,000 / $10,000",
+                                                                    "readonly": false,
+                                                                    "value": "15/30/10"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "1",
+                                                                    "label": "$25,000 / $50,000 / $10,000",
+                                                                    "readonly": false,
+                                                                    "value": "25/50/10"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "2",
+                                                                    "label": "$50,000 / $100,000 / $10,000",
+                                                                    "readonly": false,
+                                                                    "value": "50/100/10"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "3",
+                                                                    "label": "$100,000 / $300,000 / $10,000",
+                                                                    "readonly": false,
+                                                                    "value": "100/300/10"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "4",
+                                                                    "label": "$250,000 / $500,000 / $10,000",
+                                                                    "readonly": false,
+                                                                    "value": "250/500/10"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "5",
+                                                                    "label": "$500,000 / $500,000 / $100,000",
+                                                                    "readonly": false,
+                                                                    "value": "500/500/100"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "6",
+                                                                    "label": "$500,000 / $1,000,000 / $100,000",
+                                                                    "readonly": false,
+                                                                    "value": "500/1000/100"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "7",
+                                                                    "label": "$1,000,000 / $1,000,000 / $100,000",
+                                                                    "readonly": false,
+                                                                    "value": "1000/1000/100"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "attributeId": "a0P6A0000007EnXUAU",
+                                                            "code": "limitPD",
+                                                            "dataType": "text",
+                                                            "disabled": false,
+                                                            "displaySequence": -1,
+                                                            "filterable": true,
+                                                            "hasRules": false,
+                                                            "hidden": false,
+                                                            "inputType": "dropdown",
+                                                            "label": "Limit - Property Damage",
+                                                            "multiselect": false,
+                                                            "readonly": false,
+                                                            "required": false,
+                                                            "userValues": "25000",
+                                                            "values": [
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "0",
+                                                                    "label": "$5,000",
+                                                                    "readonly": false,
+                                                                    "value": "5000"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "1",
+                                                                    "label": "$10,000",
+                                                                    "readonly": false,
+                                                                    "value": "10000"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "2",
+                                                                    "label": "$25,000",
+                                                                    "readonly": false,
+                                                                    "value": "25000"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "3",
+                                                                    "label": "$50,000",
+                                                                    "readonly": false,
+                                                                    "value": "50000"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "4",
+                                                                    "label": "$100,000",
+                                                                    "readonly": false,
+                                                                    "value": "100000"
+                                                                },
+                                                                {
+                                                                    "disabled": false,
+                                                                    "id": "5",
+                                                                    "label": "$500,000",
+                                                                    "readonly": false,
+                                                                    "value": "500000"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "totalSize": 2
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    },
+                                    "displaySequence": -1,
+                                    "isOptional": true,
+                                    "isSelected": false,
+                                    "pciId": "a2p6A000000Z8NKQA0",
+                                    "productId": "01t6A0000008OMoQAM",
+                                    "productName": "Bodily Injury & Property Damage",
+                                    "vlocityins2__PricingSource__c": "premiumBIPD",
+                                    "vlocityins2__RecordTypeName__c": "CoverageSpec"
+                                }
+                            ],
+                            "totalSize": 1
+                        },
+                        "displaySequence": -1,
+                        "hasCoverages": false,
+                        "instanceKey": "Auto",
+                        "maxCount": 10,
+                        "minCount": 1,
+                        "pciId": "a2p6A000000lKsJQAU",
+                        "productId": "01t6A0000008OMZQA2",
+                        "productName": "Auto",
+                        "vlocityins2__AttributeSelectedValues__c": "{\"autoStabilization\":true,\"autoBrakes\":true,\"autoAntiTheft\":true,\"autoAltFuel\":true,\"autoYear\":\"2017\",\"autoMake\":null,\"autoModel\":null,\"autoInstanceKey\":\"2017  \",\"autoTrim\":\"Sedan/Saloon\",\"autoVehicleType\":\"PASSENGER CAR\",\"autoMileage\":18000,\"autoCondition\":\"Excellent\",\"autoGaragePostalCode\":\"94016\",\"autoValue\":35000,\"autoYearName\":\"2017\",\"autoMakeName\":[\"\"],\"autoModelName\":[\"\"],\"autoTrimName\":[\"Sedan/Saloon\"],\"discountAutoInstanceKey\":\"2017  \",\"typeAutoDiscount\":\"AltFuel;AntiLock;Stab;AntiTheft\",\"discAltFuel\":true,\"discAntiLock\":true,\"discStab\":true,\"discAntiTheft\":true,\"BodyClass\":\"Sedan/Saloon\",\"VehicleType\":\"PASSENGER CAR\",\"isPrimary\":true}",
+                        "vlocityins2__MarketValue__c": 0,
+                        "vlocityins2__PolicyAssetId__c": "02i6A0000013iGfQAI",
+                        "vlocityins2__Product2Id__c": "01t6A0000008OMZQA2",
+                        "vlocityins2__RecordTypeName__c": "InsuredItemSpec"
+                    }
+                ],
+                "totalSize": 8
+            },
+            "displaySequence": -1,
+            "policyNumber": "Auto-1234",
+            "productId": "01t6A000002qvMWQAY",
+            "productName": "Collectors Auto"
+        }
+    ],
+    "totalSize": 0
+}

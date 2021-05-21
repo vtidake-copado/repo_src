@@ -1,0 +1,1493 @@
+[
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "autoCarValue",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/autoCarValue",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "89c615",
+                "dataType": "Number Range",
+                "label": null,
+                "listValues": "0,1801,2201,3001,4001,5001,6001,7001,8001,9001,10001,11001,12001,13001,14001,15001,16001,17001,18001,20001,22001,24001,26001,28001,30001,35001,40001,45001,50001,55001,60001,65001,70001,75001,80001,85001,90001,95001",
+                "name": "carValue"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "57ac03",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "carSymbol"
+            },
+            {
+                "columnKey": "948f1f",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carValueCCD"
+            },
+            {
+                "columnKey": "1db1f4",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carValueCOLL"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"carSymbol\":\"carValue__carSymbol\",\"carValueCCD\":\"carValue__carValueCCD\",\"carValueCOLL\":\"carValue__carValueCOLL\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "autoCarSymbol",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/autoCarSymbol",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "dcf99e",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "carSymbol"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "4b43fe",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carSymbolBIPD"
+            },
+            {
+                "columnKey": "d6db05",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carSymbolMED"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"carSymbolBIPD\":\"carSymbol__carSymbolBIPD\",\"carSymbolMED\":\"carSymbol__carSymbolMED\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "autoCarYear",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/autoCarYear",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "5bb11f",
+                "dataType": "Number Range",
+                "label": null,
+                "listValues": "0,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017",
+                "name": "carYear"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "a6f447",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carYearBIPD"
+            },
+            {
+                "columnKey": "bcd926",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carYearUM"
+            },
+            {
+                "columnKey": "282f4c",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carYearMED"
+            },
+            {
+                "columnKey": "3c672e",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carYearCCD"
+            },
+            {
+                "columnKey": "723141",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carYearCOLL"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"carYearBIPD\":\"carYear__carYearBIPD\",\"carYearUM\":\"carYear__carYearUM\",\"carYearMED\":\"carYear__carYearMED\",\"carYearCCD\":\"carYear__carYearCCD\",\"carYearCOLL\":\"carYear__carYearCOLL\"}",
+        "%vlocity_namespace%__Sequence__c": 3,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "autoCarAltFuel",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/autoCarAltFuel",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "31c0d0",
+                "dataType": "Boolean",
+                "label": null,
+                "listValues": null,
+                "name": "carAltFuel"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "2a6837",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carAltFuelBIPD"
+            },
+            {
+                "columnKey": "2a3eea",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carAltFuelUM"
+            },
+            {
+                "columnKey": "e6d22d",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carAltFuelCOLL"
+            },
+            {
+                "columnKey": "d19d39",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carAltFuelCCD"
+            },
+            {
+                "columnKey": "96e170",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carAltFuelMED"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"carAltFuelBIPD\":\"carAltFuel__carAltFuelBIPD\",\"carAltFuelUM\":\"carAltFuel__carAltFuelUM\",\"carAltFuelCOLL\":\"carAltFuel__carAltFuelCOLL\",\"carAltFuelCCD\":\"carAltFuel__carAltFuelCCD\",\"carAltFuelMED\":\"carAltFuel__carAltFuelMED\"}",
+        "%vlocity_namespace%__Sequence__c": 4,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "autoCarStability",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/autoCarStability",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "a1d11c",
+                "dataType": "Boolean",
+                "label": null,
+                "listValues": null,
+                "name": "carStability"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "b73456",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carStabCOLL"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"carStabCOLL\":\"carStability__carStabCOLL\"}",
+        "%vlocity_namespace%__Sequence__c": 5,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "autoCarTheft",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/autoCarTheft",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "1e51d",
+                "dataType": "Boolean",
+                "label": null,
+                "listValues": null,
+                "name": "carTheft"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "5c1da0",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carTheftCCD"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"carTheftCCD\":\"carTheft__carTheftCCD\"}",
+        "%vlocity_namespace%__Sequence__c": 6,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "autoCarBrakes",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/autoCarBrakes",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "1b556d",
+                "dataType": "Boolean",
+                "label": null,
+                "listValues": null,
+                "name": "carBrake"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "712d93",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carBrakeBIPD"
+            },
+            {
+                "columnKey": "4de17",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carBrakeCOLL"
+            },
+            {
+                "columnKey": "a76f6d",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "carBrakeMED"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"carBrakeBIPD\":\"carBrakes__carBrakeBIPD\",\"carBrakeCOLL\":\"carBrakes__carBrakeCOLL\",\"carBrakeMED\":\"carBrakes__carBrakeMED\"}",
+        "%vlocity_namespace%__Sequence__c": 7,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "carSymbol__carSymbolBIPD * carYear__carYearBIPD * carYear__carYearBIPD * carAltFuel__carAltFuelBIPD * carBrakes__carBrakeBIPD",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "carSymbol__carSymbolBIPD",
+                "dataType": "Number",
+                "text": "carSymbolBIPD ( carSymbol )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carYear__carYearBIPD",
+                "dataType": "Number",
+                "text": "carYearBIPD ( carYear )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carYear__carYearBIPD",
+                "dataType": "Number",
+                "text": "carYearBIPD ( carYear )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carAltFuel__carAltFuelBIPD",
+                "dataType": "Number",
+                "text": "carAltFuelBIPD ( carAltFuel )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carBrakes__carBrakeBIPD",
+                "dataType": "Number",
+                "text": "carBrakeBIPD ( carBrakes )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "autoBIPD",
+            "dataType": "Number",
+            "name": "autoBIPD"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"autoBIPD\":\"autoBIPD\"}",
+        "%vlocity_namespace%__Sequence__c": 8,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "carYear__carYearUM * carAltFuel__carAltFuelUM * ratedDriver-UM",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "carYear__carYearUM",
+                "dataType": "Number",
+                "text": "carYearUM ( carYear )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carAltFuel__carAltFuelUM",
+                "dataType": "Number",
+                "text": "carAltFuelUM ( carAltFuel )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "ratedDriver-UM",
+                "dataType": "Number",
+                "text": "ratedDriver-UM",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "ratedDriver-UM"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "autoUM",
+            "dataType": "Number",
+            "name": "autoUM"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"autoUM\":\"autoUM\"}",
+        "%vlocity_namespace%__Sequence__c": 9,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "carSymbol__carSymbolMED * carYear__carYearMED * carAltFuel__carAltFuelMED * carBrakes__carBrakeMED",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "carSymbol__carSymbolMED",
+                "dataType": "Number",
+                "text": "carSymbolMED ( carSymbol )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carYear__carYearMED",
+                "dataType": "Number",
+                "text": "carYearMED ( carYear )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carAltFuel__carAltFuelMED",
+                "dataType": "Number",
+                "text": "carAltFuelMED ( carAltFuel )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carBrakes__carBrakeMED",
+                "dataType": "Number",
+                "text": "carBrakeMED ( carBrakes )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "autoMED",
+            "dataType": "Number",
+            "name": "autoMED"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"autoMED\":\"autoMED\"}",
+        "%vlocity_namespace%__Sequence__c": 10,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "carValue__carValueCCD * carYear__carYearCCD * carAltFuel__carAltFuelCCD * carTheft__carTheftCCD",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "carValue__carValueCCD",
+                "dataType": "Number",
+                "text": "carValueCCD ( carValue )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carYear__carYearCCD",
+                "dataType": "Number",
+                "text": "carYearCCD ( carYear )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carAltFuel__carAltFuelCCD",
+                "dataType": "Number",
+                "text": "carAltFuelCCD ( carAltFuel )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carTheft__carTheftCCD",
+                "dataType": "Number",
+                "text": "carTheftCCD ( carTheft )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "autoCCD",
+            "dataType": "Number",
+            "name": "autoCCD"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"autoCCD\":\"autoCCD\"}",
+        "%vlocity_namespace%__Sequence__c": 11,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "carValue__carValueCOLL * carYear__carYearCOLL * carAltFuel__carAltFuelCOLL * carStability__carStabCOLL * carBrakes__carBrakeCOLL",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "carValue__carValueCOLL",
+                "dataType": "Number",
+                "text": "carValueCOLL ( carValue )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carYear__carYearCOLL",
+                "dataType": "Number",
+                "text": "carYearCOLL ( carYear )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carAltFuel__carAltFuelCOLL",
+                "dataType": "Number",
+                "text": "carAltFuelCOLL ( carAltFuel )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carStability__carStabCOLL",
+                "dataType": "Number",
+                "text": "carStabCOLL ( carStability )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "carBrakes__carBrakeCOLL",
+                "dataType": "Number",
+                "text": "carBrakeCOLL ( carBrakes )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "autoCOLL",
+            "dataType": "Number",
+            "name": "autoCOLL"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"autoCOLL\":\"autoCOLL\"}",
+        "%vlocity_namespace%__Sequence__c": 12,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "deductCOLL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/deductCOLL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "68b77f",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "dedCOLL"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "6c41c8",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "dedCOLL-Ded"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"dedCOLL-Ded\":\"deductCOLL__dedCOLL-Ded\"}",
+        "%vlocity_namespace%__Sequence__c": 13,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "autoLimitUM",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/autoLimitUM",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "47e2e8",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "limitUM"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "f671be",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "factorLimitUM"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"factorLimitUM\":\"limitUM__factorLimitUM\"}",
+        "%vlocity_namespace%__Sequence__c": 14,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "autoLimitMED",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/autoLimitMED",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "b5d0fa",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "limitMED"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "bdc28a",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "factorLimitMED"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"factorLimitMED\":\"limitMED__factorLimitMED\"}",
+        "%vlocity_namespace%__Sequence__c": 15,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "autoLimitBIPD",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/autoLimitBIPD",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "6b27b6",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "limitPerPerson"
+            },
+            {
+                "columnKey": "983aba",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "limitPerAcc"
+            },
+            {
+                "columnKey": "cb7f79",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "PDlimit"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "417427",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "factorBIPD"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"factorBIPD\":\"autoLimitBIPD__factorBIPD\"}",
+        "%vlocity_namespace%__Sequence__c": 16,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "autoDeductCCD",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/autoDeductCCD",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "34ff8",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "dedCCD"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__MatrixRecordType__c": "Standard",
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "5337bb",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "dedCCD-Ded"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"dedCCD-Ded\":\"deductCCD__dedCCD-Ded\"}",
+        "%vlocity_namespace%__Sequence__c": 17,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "baseBIPD * ratedDriver-BIPD * autoBIPD * autoLimitBIPD__factorBIPD",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "baseBIPD",
+                "text": "baseBIPD"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "ratedDriver-BIPD",
+                "dataType": "Number",
+                "text": "ratedDriver-BIPD",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "autoBIPD",
+                "dataType": "Number",
+                "text": "autoBIPD",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "autoLimitBIPD__factorBIPD",
+                "dataType": "Number",
+                "text": "factorBIPD ( autoLimitBIPD )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "ratedDriver-BIPD"
+            },
+            {
+                "dataType": "Number",
+                "name": "autoBIPD"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "premiumBIPD",
+            "dataType": "Currency",
+            "name": "premiumBIPD"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"premiumBIPD\":\"premiumBIPD\"}",
+        "%vlocity_namespace%__Sequence__c": 18,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "baseUM * ratedDriver-UM * limitUM__factorLimitUM * autoUM",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "baseUM",
+                "text": "baseUM"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "ratedDriver-UM",
+                "dataType": "Number",
+                "text": "ratedDriver-UM",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "limitUM__factorLimitUM",
+                "dataType": "Number",
+                "text": "factorLimitUM ( limitUM )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "autoUM",
+                "dataType": "Number",
+                "text": "autoUM",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "ratedDriver-UM"
+            },
+            {
+                "dataType": "Number",
+                "name": "autoUM"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "premiumUM",
+            "dataType": "Currency",
+            "name": "premiumUM"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"premiumUM\":\"premiumUM\"}",
+        "%vlocity_namespace%__Sequence__c": 19,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "baseMED * ratedDriver-MED * autoMED * limitMED__factorLimitMED",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "baseMED",
+                "text": "baseMED"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "ratedDriver-MED",
+                "dataType": "Number",
+                "text": "ratedDriver-MED",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "autoMED",
+                "dataType": "Number",
+                "text": "autoMED",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "limitMED__factorLimitMED",
+                "dataType": "Number",
+                "text": "factorLimitMED ( limitMED )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "ratedDriver-MED"
+            },
+            {
+                "dataType": "Number",
+                "name": "autoMED"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "premiumMED",
+            "dataType": "Currency",
+            "name": "premiumMED"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"premiumMED\":\"premiumMED\"}",
+        "%vlocity_namespace%__Sequence__c": 20,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "baseCCD * ratedDriver-CCD * autoCCD * deductCCD__dedCCD-Ded",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "baseCCD",
+                "text": "baseCCD"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "ratedDriver-CCD",
+                "dataType": "Number",
+                "text": "ratedDriver-CCD",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "autoCCD",
+                "dataType": "Number",
+                "text": "autoCCD",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "deductCCD__dedCCD-Ded",
+                "dataType": "Number",
+                "text": "dedCCD-Ded ( deductCCD )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "ratedDriver-CCD"
+            },
+            {
+                "dataType": "Number",
+                "name": "autoCCD"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "premiumCCD",
+            "dataType": "Currency",
+            "name": "premiumCCD"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"premiumCCD\":\"premiumCCD\"}",
+        "%vlocity_namespace%__Sequence__c": 21,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "baseCOLL * ratedDriver-COLL * autoCOLL * deductCOLL__dedCOLL-Ded",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "baseCOLL",
+                "text": "baseCOLL"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "ratedDriver-COLL",
+                "dataType": "Number",
+                "text": "ratedDriver-COLL",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "autoCOLL",
+                "dataType": "Number",
+                "text": "autoCOLL",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "deductCOLL__dedCOLL-Ded",
+                "dataType": "Number",
+                "text": "dedCOLL-Ded ( deductCOLL )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "ratedDriver-COLL"
+            },
+            {
+                "dataType": "Number",
+                "name": "autoCOLL"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "premiumCOLL",
+            "dataType": "Currency",
+            "name": "premiumCOLL"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"premiumCOLL\":\"premiumCOLL\"}",
+        "%vlocity_namespace%__Sequence__c": 22,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "RentalDefault",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "RentalDefault",
+                "dataType": "Currency",
+                "text": "RentalDefault"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "autoRateVehicles",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "autoRateVehicles",
+            "%vlocity_namespace%__VersionNumber__c": 2,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/2/%vlocity_namespace%__CalculationProcedure__c/autoRateVehicles",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+            {
+                "alias": "limitRental",
+                "dataType": "Number",
+                "text": "limitRental",
+                "userDefined": true
+            },
+            {
+                "alias": ">",
+                "text": ">"
+            },
+            {
+                "alias": "Zero",
+                "dataType": "Number",
+                "text": "Zero"
+            }
+        ],
+        "%vlocity_namespace%__Conditions__c": "limitRental > Zero",
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": true,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "premiumRental",
+            "dataType": "Currency",
+            "name": "premiumRental"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"premiumRental\":\"premiumRental\"}",
+        "%vlocity_namespace%__Sequence__c": 23,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

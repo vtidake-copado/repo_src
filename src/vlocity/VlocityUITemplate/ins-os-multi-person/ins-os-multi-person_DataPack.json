@@ -1,0 +1,18 @@
+{
+    "%vlocity_namespace%__Author__c": "Vlocity",
+    "%vlocity_namespace%__CustomJavascript__c": "ins-os-multi-person.js",
+    "%vlocity_namespace%__Definition__c": "",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__DisplayOn__c": "",
+    "%vlocity_namespace%__ExternalID__c": "ins-os-multi-person/1/Vlocity/1530653922405",
+    "%vlocity_namespace%__HTML__c": "ins-os-multi-person.html",
+    "%vlocity_namespace%__ParentID__c": "",
+    "%vlocity_namespace%__SampleJson__c": "ins-os-multi-person_Sample.json",
+    "%vlocity_namespace%__Sass__c": "ins-os-multi-person.scss",
+    "%vlocity_namespace%__Type__c": "OmniScript Selectable Items",
+    "%vlocity_namespace%__Version__c": 1,
+    "Name": "ins-os-multi-person",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUITemplate__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUITemplate__c/ins-os-multi-person"
+}

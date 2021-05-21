@@ -91,13 +91,4 @@
         <probability>0</probability>
         <won>false</won>
     </standardValue>
-    <standardValue>
-        <fullName>New Stage</fullName>
-        <default>false</default>
-        <label>New Stage</label>
-        <closed>false</closed>
-        <forecastCategory>Pipeline</forecastCategory>
-        <probability>10</probability>
-        <won>false</won>
-    </standardValue>
 </StandardValueSet>

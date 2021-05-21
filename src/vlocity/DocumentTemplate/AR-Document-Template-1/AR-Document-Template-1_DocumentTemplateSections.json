@@ -1,0 +1,44 @@
+[
+    {
+        "%vlocity_namespace%__AutoAddSectionKey__c": false,
+        "%vlocity_namespace%__ConditionalExpression__c": "",
+        "%vlocity_namespace%__CountOfSectionConditions__c": 0,
+        "%vlocity_namespace%__CustomClassName__c": "",
+        "%vlocity_namespace%__DisplayHeaderInline__c": false,
+        "%vlocity_namespace%__DisplaySectionName__c": false,
+        "%vlocity_namespace%__DocumentClauseId__c": {
+            "%vlocity_namespace%__ShortName__c": null,
+            "Name": "Document Clause",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__DocumentClause__c/Document Clause",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentClause__c"
+        },
+        "%vlocity_namespace%__DocumentTemplateId__c": {
+            "%vlocity_namespace%__ExternalID__c": "AR Document Template 1/1/Copado Solutions/1613131457705",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__DocumentTemplate__c/AR Document Template 1",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplate__c"
+        },
+        "%vlocity_namespace%__EmbeddedTemplateId__c": "",
+        "%vlocity_namespace%__IsBatchProcessed__c": false,
+        "%vlocity_namespace%__IsInNewPage__c": false,
+        "%vlocity_namespace%__IsRestricted__c": false,
+        "%vlocity_namespace%__IsWordTableHeaderRepeated__c": false,
+        "%vlocity_namespace%__ItemSectionDisplayStyle__c": "",
+        "%vlocity_namespace%__ItemSectionFontStyle__c": "",
+        "%vlocity_namespace%__Level__c": "",
+        "%vlocity_namespace%__NeedAutoSectionNumber__c": false,
+        "%vlocity_namespace%__ParentSectionId__c": "",
+        "%vlocity_namespace%__ResetAutoNumber__c": false,
+        "%vlocity_namespace%__SectionContent__c": "",
+        "%vlocity_namespace%__SectionKey__c": "",
+        "%vlocity_namespace%__Sequence__c": "",
+        "%vlocity_namespace%__SignatureTokens__c": "",
+        "%vlocity_namespace%__Tokens__c": "",
+        "%vlocity_namespace%__Type__c": "Item",
+        "Name": "Template Section",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DocumentTemplateSection__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DocumentTemplateSection__c/Generated366512219"
+    }
+]

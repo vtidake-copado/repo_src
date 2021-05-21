@@ -1,0 +1,97 @@
+{
+    "BusinessInfo": {
+        "busLegalForm": null,
+        "busName": null,
+        "busRevAnnual": null,
+        "busType": null,
+        "effectiveDate": null,
+        "quoteEffectiveDate": null
+    },
+    "ConfirmQuote": {
+        "quoteConfirm": null
+    },
+    "ContextId": null,
+    "configure": {
+        "configureProduct": null
+    },
+    "newAccount": {
+        "BankAccountNumber": null,
+        "BankAccountRoutingNumber": null,
+        "BankAccountType": null,
+        "CardCCV": null,
+        "CardExpirationMonth": null,
+        "CardExpirationYear": null,
+        "CardNumber": null,
+        "CardType": null,
+        "DifferentFromBilling": null,
+        "MethodHolderName": null,
+        "MethodName": null,
+        "MethodType": null,
+        "authorizedContact": {
+            "authEmail": null,
+            "authFirstName": null,
+            "authLastName": null,
+            "authMobilePhone": null,
+            "authOfficePhone": null,
+            "authSalutation": null,
+            "authTitle": null
+        },
+        "billDelivery": null,
+        "billMethod": null,
+        "billingContact": {
+            "billingEmail": null,
+            "billingFirstName": null,
+            "billingLastName": null,
+            "billingMobile": null,
+            "billingPhone": null,
+            "billingSalutation": null,
+            "billingTitle": null
+        },
+        "broker": null,
+        "newAccountName": null,
+        "newAccountSite": null,
+        "newBillingAddress-Block": {
+            "newBillingAddress": null,
+            "newBillingCity": null,
+            "newBillingCountry": null,
+            "newBillingPostalCode": null,
+            "newBillingState": null,
+            "newBillingStreet": null
+        },
+        "newMainFax": null,
+        "newMainPhone": null,
+        "newShippingAddress-Block": {
+            "newShippingAddress": null,
+            "newShippingCity": null,
+            "newShippingCountry": null,
+            "newShippingPostalCode": null,
+            "newShippingState": null,
+            "newShippingStreet": null
+        },
+        "newTaxId": null,
+        "newWebSite": null,
+        "statementFrequency": null
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "BusinessInfo": null,
+        "ConfirmQuote": null,
+        "CreateOppty": null,
+        "CreateQuote": null,
+        "SameAsBilling": null,
+        "SetAccountId": null,
+        "configure": null,
+        "getBrokerId": null,
+        "getRatedProducts": null,
+        "newAccount": null,
+        "postNewBusinessAccount": null,
+        "readQuoteConfirmation": null,
+        "transformToQuote": null
+    }
+}

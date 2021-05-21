@@ -1,0 +1,13 @@
+{
+    "auto": {
+        "autoBodyClass": "Sedan/Saloon",
+        "autoInstanceKey": "2015 Lexus LX250",
+        "autoLicNum": "XYZ24N3",
+        "autoMake": "Lexus",
+        "autoModel": "LX250",
+        "autoVIN": "JTHBF1D25F5074100",
+        "autoVehicleType": "PASSENGER CAR",
+        "autoYear": 2015,
+        "effectiveDate": null
+    }
+}

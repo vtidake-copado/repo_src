@@ -1,0 +1,46 @@
+<article class="slds-card vloc-card" ng-init="importedScope.initData(params.id); importedScope.locale = importedScope.checkLocaleFormat($root.vlocity.userAnLocale);">
+   <div class="slds-card__header slds-grid">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+         <div class="slds-media__figure">
+            <span class="slds-icon_container slds-icon-standard-product" title="account">
+               <slds-button-svg-icon extra-classes="'slds-button__icon vloc-icon'" sprite="'standard'" icon="'product'"></slds-button-svg-icon>
+               <span class="slds-assistive-text">{{ ::importedScope.customLabels.InsAssetRevenueSchedule }}</span>
+            </span>
+         </div>
+         <div class="slds-media__body">
+            <h2 class="slds-card__header-title">
+               <button class="slds-button slds-button_link slds-card__header-link slds-truncate" title="Accounts">
+               <span class="slds-text-heading_small">{{ ::importedScope.customLabels.InsAssetRevenueSchedule }} ({{importedScope.assetRevenueSchedule.length}})</span>
+               </button>
+            </h2>
+         </div>
+      </header>
+   </div>
+   <div class="slds-grid slds-grid_wrap slds-size_1-of-1 slds-border_top  slds-border_bottom  slds-text-heading_x-small" ng-init="importedScope.orderTerm = importedScope.exposeFields[0]; importedScope.orderAsc = true">
+         <div class="slds-size_1-of-{{importedScope.exposeFields.length}} slds-p-left_x-small slds-text-title_caps slds-p-top_x-small slds-p-bottom_x-small" ng-class="{'vloc-sorted-column' : importedScope.orderTerm === field.fieldName, 'vloc-not-sorted-column': importedScope.orderTerm !==  field.fieldName}" ng-click="importedScope.setOrderTerm(field.fieldName)" ng-repeat="field in importedScope.records.result.fieldList" ng-if="importedScope.exposeFields.indexOf(field.fieldName) > -1">
+             {{field.label}}
+             <slds-button-svg-icon ng-if="importedScope.orderTerm === field.fieldName && !importedScope.orderAsc"  extra-classes="'slds-button__icon_left'" sprite="'utility'" icon="'arrowup'"></slds-button-svg-icon>
+             <slds-button-svg-icon ng-if="importedScope.orderTerm === field.fieldName  && importedScope.orderAsc"  extra-classes="'slds-button__icon_left'" sprite="'utility'" icon="'arrowdown'"></slds-button-svg-icon>
+         </div>
+   </div>
+   <div class="vloc-product-grid slds-size_1-of-1 slds-grid slds-wrap" ng-repeat="policy in importedScope.assetRevenueSchedule  | orderBy: importedScope.orderTerm : importedScope.orderAsc track by $index">
+      <div class="vloc-product slds-grid slds-wrap slds-size_1-of-1 slds-p-vertical_small" ng-class="{'slds-border_bottom ' : $index < importedScope.records.result.assetRevenueSchedule.length - 1}">
+          <div class="slds-size_1-of-{{importedScope.exposeFields.length}}" ng-repeat="field in importedScope.records.result.fieldList" ng-if="importedScope.exposeFields.indexOf(field.fieldName) > -1">
+            <label class="slds-p-left_x-small" ng-if="field.dataType !== 'BOOLEAN' &&
+            field.dataType !== 'CURRENCY' &&  field.dataType !== 'DATETIME' &&  field.dataType !== 'DATE' && field.dataType !== 'REFERENCE'">{{policy[field.fieldName]}}</label>
+            <label class="slds-p-left_x-small" ng-if="field.dataType === 'CURRENCY'">{{policy[field.fieldName] | localizeCurrency: importedScope.locale: policy.currencyCode}}</label>
+            <a class="slds-p-left_x-small" ng-if="field.dataType === 'REFERENCE'" ng-click="importedScope.navigateTo(policy[field.fieldName])">{{policy[field.fieldName]}}</a>
+            <label class="slds-p-left_x-small" ng-if="field.dataType === 'DATETIME'">{{policy[field.fieldName] | datetime}}</label>
+            <label class="slds-p-left_x-small" ng-if="field.dataType === 'DATE'">{{policy[field.fieldName] | localizeDate: importedScope.locale}}</label>
+            <div class="slds-form-element__control slds-text-align_left" ng-if="field.dataType === 'BOOLEAN'">
+               <span class="slds-checkbox vloc-checkbox">
+               <input type="checkbox" name="attrs-{{$index}}" id="attrs-{{$index}}" ng-model="policy[field.fieldName]" ng-disabled="true"/>
+               <label class="slds-checkbox__label slds-m-around_none" for="attrs-{{$index}}">
+               <span class="slds-checkbox_faux vloc-check"></span>
+               </label>
+               </span>
+            </div>
+          </div>
+      </div>
+   </div>
+</article>

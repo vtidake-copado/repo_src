@@ -1,0 +1,297 @@
+.census-table {
+    margin-top: 30px;
+}
+
+.census-table tr th {
+    padding: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.census-table tr td {
+    padding: 8px;
+}
+
+@media screen and (min-width: 991px) {
+    .census-table tr td {
+        width: 16%;
+    }
+}
+
+.census-table tr td input {
+    height: 30px !important;
+    min-height: 30px !important;
+    border-radius: 3px !important;
+    max-width: 100px;
+    min-width: 100px !important;
+    font-size: 12px;
+    border: 1px solid #cfd7e6;
+    outline: none;
+    padding: 0px 5px;
+}
+
+.census-table tr td .slds-checkbox--faux {
+    border: 1px solid #cfd7e6 !important;
+}
+
+.census-table tr td input::-webkit-inner-spin-button, .census-table tr td input::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.census-table tr td select {
+    height: 30px !important;
+    padding: 0px 5px;
+    max-width: 100px;
+    min-width: 100px !important;
+    font-size: 12px;
+    border: 1px solid #d8dde6;
+    outline: none;
+    border-radius: 3px;
+}
+
+.census-table .delete-census {
+    margin-right: 9px;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    path {
+        fill:  #1564bf; //dark grey #8a97ae; //light gray #d8dde6;   //red #ec5252;
+    }
+}
+
+// .census-table tr td input.delete-census {
+//     background-color: #ff4d4d;
+//     color: #fff;
+//     border-radius: 3px;
+//     padding: 5px 10px;
+//     outline: none;
+//     border: none;
+// }
+
+@media screen and (min-width: 991px) {
+    // .census-table tr td input.delete-census {
+    //     font-size: 13px;
+    //     min-width: auto !important;
+    // }
+
+    .census-table tr.grid-start {
+        border-top: 1px solid #c8d1e2;
+    }
+}
+
+.census-table tr td input[type="date"] {
+    padding-right: 0px;
+    padding-left: 8px;
+    text-overflow: unset;
+}
+
+.census-table tr td input.btn-primary {
+    background-color: #1662bf;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px !important;
+}
+
+.census-table tr td button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.census-table tr td button i {
+    font-size: 24px;
+    color: #009bc6;
+    text-align: center;
+}
+
+table.census-table thead {
+    border: 1px solid #c8d1e2;
+    border-right: none;
+    border-left: none;
+}
+
+.census-info ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border: 1px solid #ebeff5;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 925px) {
+    .census-info ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.census-info ul li p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.census-info ul li h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1663bf;
+    margin: 3px 0px 0px;
+}
+
+.census-control {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1410px) {
+    .census-control {
+        flex-direction: column-reverse;
+    }
+}
+
+.census-control input[type=button], .census-control input[type=button]:focus, .census-control input[type=button] :hover {
+    border: none;
+    color: #fff;
+    background-color: #1663bf;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 9px 20px;
+    font-weight: 200;
+    margin: 0px 12px;
+}
+
+.census-container {
+    width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    input[type=button].add-census {
+        margin: 10px 0;
+    }
+    input[type=button].delete-census {
+        margin: 10px 0;
+    }
+}
+
+.sheet-js-import {
+    border: none;
+    color: #fff;
+    background-color: #1663bf;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 7px 0px;
+    font-weight: 200;
+    margin: 0px 12px 0px 25px;
+    width: 144px;
+}
+
+@media screen and (max-width: 960px) {
+    .sheet-js-import {
+        margin: 10px 0 10px 0;
+    }
+}
+
+.sheet-js-import-label {
+    padding: 10px 17px;
+    cursor: pointer;
+}
+
+.sheet-js-import-label:hover {
+    color: #fff;
+}
+
+.sheet-js-import-label:hover {
+    box-shadow: none;
+}
+
+.hide-element {
+    display: none;
+}
+
+.search-employee {
+    display: flex;
+}
+
+@media screen and (max-width: 1410px) {
+    .search-employee {
+        margin-top: 30px;
+    }
+}
+
+.search-employee input {
+    background-color: #fff;
+    border-radius: 3px;
+    color: #16325c;
+    font-size: 14px;
+    padding: 0px 10px;
+    margin: 0 0 0 12px;
+    border: 1px solid #c8d1e2;
+    height: 35px;
+}
+
+.search-employee span {
+    align-self: center;
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+    .control-buttons {
+        flex-flow: column;
+    }
+}
+
+.control-buttons input:last-child {
+    margin-right: 0;
+}
+
+.nds-form-element__control-help {
+    margin-bottom: 100px;
+}
+
+
+.census-error-wrapper {
+    padding-bottom: 0px !important;
+    /*background-color: #f39c12 !important;*/
+}
+
+.census-error {
+    margin-top: 30px !important;
+    background-color: #ff0000 !important;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;  
+}
+
+td.error_dob input {
+    border: 1px solid red !important;
+}
+
+.nds-header__desktop.hideCommonNav,
+.nds-header__mobile-only.hideCommonNav {
+    display: none;
+}
+
+.nds-size_1-of-1.nds-header__mobile-only.census-navigation {
+    display: block;
+}
+
+.nds-size_1-of-1.nds-header__desktop.census-navigation {
+    display: block;
+    margin-bottom: -180px;
+    margin-top: 150px;
+    color: #556a8c;
+    font-size: .75rem;
+    font-weight: 300;
+}

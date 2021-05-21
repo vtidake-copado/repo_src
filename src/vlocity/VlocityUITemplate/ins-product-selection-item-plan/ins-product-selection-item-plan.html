@@ -1,0 +1,59 @@
+<!-- This code is re-used for both desktop and mobile. It is added to .vloc-product-selection-plan-container in the 'ins-product-selection-item' template. All styles are located in 'ins-product-selection-item' as well -->
+<li class="slds-float_left slds-size_1-of-2 slds-medium-size_1-of-2 slds-large-size_1-of-3 slds-m-bottom_medium vloc-carousel-item vloc-product-selection-plan vloc-product-selection-plan-{{$index}}" ng-repeat="record in $root.vlocInsProdSelectItem.records track by $index" ng-class="{'is-selected': record.isSelected}" ins-rules-evaluate ins-rules-product="record" one-product="true" only-on-load="true">
+    <div class="vloc-box_product slds-theme_shade slds-p-horizontal_large slds-p-top_small" ng-class="{'gold': record.Tier__c === 'Gold', 'silver' : record.Tier__c === 'Silver', 'bronze' : record.Tier__c === 'Bronze', 'replace' : record.isReplace}">
+        <div class="vloc-product-selection-plan-interior-container">
+            <!--LOADER: -->
+            <div class="slds-spinner_container" ng-show="!importedScope.vlocProdSelectItem.isLoaded">
+                <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>
+            <!--Title-->
+            <div class="slds-grid vloc-flag-compare-container" ng-class="{'not-recommended': !record.IsRecommended__c}">
+                <div class="slds-size_2-of-3 vloc-flag-container">
+                    <div class="vloc-flag" ng-show="record.IsRecommended__c">
+                        <div class="vloc-flag-label">Recommended</div>
+                    </div>
+                </div>
+                <div class="slds-size_1-of-3 vloc-compare-checkbox slds-text-title_caps">
+                    <div class="slds-form-element__control slds-text-align_right">
+                        <span class="slds-checkbox">
+                            <label for="compare-{{$index}}" class="slds-text-body_small slds-m-right_none vloc-checbox-label">Compare</label>
+                            <input type="checkbox" name="compare-{{$index}}" id="compare-{{$index}}" ng-click="importedScope.vlocProdSelectItem.comparePlan(record, record.checked)" ng-model="record.checked" />
+                            <label class="slds-checkbox__label slds-m-around_none" for="compare-{{$index}}">
+                                <span class="slds-checkbox_faux vloc-check"></span>
+                            </label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid vloc-sub-text slds-m-top_small" ng-class="{'not-recommended': !record.IsRecommended__c}">
+                <div class="slds-size_2-of-3">
+                    <h1 class="vloc-product-title slds-text-heading_medium slds-m-bottom_xx-small slds-p-right_x-small slds-truncate" title="{{importedScope.vlocProdSelectItem.record.Name}}" bs-tooltip="record.Name">{{record.Name}}</h1>
+                    <h1 class="slds-m-bottom_xx-small">{{record.Price | currency}}</h1>
+                </div>
+            </div>
+            <h1 class="slds-border_bottom slds-p-bottom_small">{{record.Description}}</h1>
+            <!--Attributes--> 
+            <div class="vloc-attrs-container slds-m-top_small">
+                <div ng-repeat="(key, value) in $root.vlocInsProdSelectItem.filterAttrValues" class="slds-p-bottom_xx-small slds-grid slds-m-bottom_xx-small vloc-attrs-plan-attr" ng-if="record[value.displayAttributeName] && value.onCard" ins-rules-evaluate="value.attributeByProductCode[record.ProductCode]" one-product="true" only-on-load="true" ng-hide="value.attributeByProductCode[record.ProductCode].hiddenByRule">
+                    <div class="slds-size_2-of-3">{{value.displayAttributeName}}</div>
+                    <div class="slds-size_1-of-3 slds-text-align_right slds-p-left_x-small">{{record[value.displayAttributeName]}}</div>
+                </div>
+            </div>  
+            <!--Footer-->
+            <div class="vloc-box_footer slds-size_1-of-1 slds-m-bottom_small">
+                <button ng-disabled="record.isReplace" class="slds-button slds-button_brand slds-size_1-of-1 slds-p-around_x-small slds-m-vertical_small slds-text-title_caps vloc-button_select" ng-click="$root.vlocInsProdSelectItem.addItem(record)">
+                    <slds-button-svg-icon sprite="'utility'" size="'small'" icon="'check'" extra-classes="'slds-button__icon_left'" ng-show="record.isSelected"></slds-button-svg-icon>
+                    <span ng-show="!record.isSelected">Select</span>
+                    <span ng-show="record.isSelected">Selected</span>
+                </button>
+                <div class="slds-grid">
+                    <div class="slds-size_1-of-1 slds-text-align_center slds-text-link vloc-footer-link" ng-click="importedScope.vlocProdSelectItem.openDetailModal($index)">Details </div>
+                    <div class="vloc-footer-divider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>

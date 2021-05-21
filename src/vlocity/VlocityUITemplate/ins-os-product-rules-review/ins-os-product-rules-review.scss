@@ -1,0 +1,53 @@
+.via-slds {
+    .ins-os-product-rules-review-wrapper {
+        p {
+            margin-bottom: 1rem;
+            
+            a {
+                color: #16325C;
+            }
+        }
+        
+        .ins-os-product-rules-review-card {
+            border: 1px solid #0070D2;
+            background-color: #F8FBFE;
+            color: #16325C;
+            border-radius: 0.25rem;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+
+            .ins-os-product-rules-review-rule {
+                font-size: 0.8125rem;
+                display: flex;
+
+                .ins-os-product-rules-review-rule-number {
+                    span {
+                        width: 1.75rem;
+                        height: 1.75rem;
+                        display: block;
+                        background-color: #0070D2;
+                        border-radius: 50%;
+                        color: white;
+                        text-align: center;
+                        line-height: 1.75rem;
+                        margin-right: .5rem;
+                    }
+                }
+                .ins-os-product-rules-review-rule-details {
+                    h4 {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .ins-os-product-rules-review-wrapper {
+            .ins-os-product-rules-review-card {
+                
+            }
+        }
+    }
+}

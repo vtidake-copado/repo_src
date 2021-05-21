@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Column Header Label --></label>
+        <name>vlocity_ins__ColumnHeaderLabel__c</name>
+        <picklistValues>
+            <masterLabel>Self</masterLabel>
+            <translation><!-- Self --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self + Child</masterLabel>
+            <translation><!-- Self + Child --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self + Family</masterLabel>
+            <translation><!-- Self + Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self + Spouse</masterLabel>
+            <translation><!-- Self + Spouse --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Multiplier --></label>
+        <name>vlocity_ins__Multilplier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Band --></label>
+        <name>vlocity_ins__RateBandId__c</name>
+        <relationshipLabel><!-- Rate Band Tiers --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

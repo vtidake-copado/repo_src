@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>vlocity_ins__AccountId__c</name>
+        <relationshipLabel><!-- Loss History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>vlocity_ins__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Loss --></label>
+        <name>vlocity_ins__DateOfLoss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Held Product --></label>
+        <name>vlocity_ins__NonHeldProductId__c</name>
+        <relationshipLabel><!-- Loss History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type of Loss --></label>
+        <name>vlocity_ins__TypeOfLoss__c</name>
+        <picklistValues>
+            <masterLabel>Natural Disasters</masterLabel>
+            <translation><!-- Natural Disasters --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

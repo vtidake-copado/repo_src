@@ -1,0 +1,55 @@
+<table class="slds-table slds-table_bordered slds-table_fixed-layout" role="grid">
+    <thead>
+        <tr class="slds-line-height_reset">
+            <th class="slds-text-align_right vloc-checkbox-cell" scope="col">
+                <span id="column-group-header" class="slds-assistive-text">{{ ::$root.customLabels.InsQuotesChooseRow }}</span>
+                <div class="slds-th__action slds-th__action_form">
+                    <div class="slds-checkbox">
+                        <input type="checkbox" name="options" id="checkbox-all" tabindex="-1" aria-labelledby="check-select-all-label column-group-header" ng-model="$root.checkAllGroups" ng-change="importedScope.toggleSelectAllGroups(records)" />
+                        <label class="slds-checkbox__label" for="checkbox-all" id="check-select-all-label">
+                            <span class="slds-checkbox_faux"></span>
+                            <span class="slds-form-element__label slds-assistive-text">{{ ::$root.customLabels.InsQuotesSelectAll }}</span>
+                        </label>
+                    </div>
+                </div>
+            </th> 
+            <th aria-label="Group" scope="col">
+                <span class="slds-truncate" title="Group">{{ ::$root.customLabels.InsQuotesGroup }}</span>
+            </th>
+            <th aria-label="Class" scope="col">
+                <span class="slds-truncate" title="Class">{{ ::$root.customLabels.InsQuotesClass }}</span>
+            </th>
+            <th aria-label="Group Code" scope="col">
+                <span class="slds-truncate" title="Group Code">{{ ::$root.customLabels.InsQuotesGroupCode }} </span>
+            </th>
+            <th aria-label="Class Code" scope="col">
+                <span class="slds-truncate" title="Class Code">{{ ::$root.customLabels.InsQuotesClassCode }}</span>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="group in records">
+            <td class="slds-text-align_right" role="gridcell">
+                <div class="slds-checkbox">
+                    <input type="checkbox" name="options" id="checkbox-{{group.Id}}" tabindex="-1" ng-model="$root.selectedGroups[group.Id]" />
+                    <label class="slds-checkbox__label" for="checkbox-{{group.Id}}" id="check-button-label-{{group.Id}}">
+                        <span class="slds-checkbox_faux"></span>
+                        <span class="slds-form-element__label slds-assistive-text">{{ ::$root.customLabels.InsQuotesSelectGroupId }} {{group.Id}}</span>
+                    </label>
+                </div>
+            </td>
+            <td role="gridcell">
+                <div class="slds-truncate" title="{{group.formattedValues.groupName}}">{{group.formattedValues.groupName}}</div>
+            </td>
+            <td role="gridcell">
+                <div class="slds-truncate" title="{{group.formattedValues.className}}">{{group.formattedValues.className}}</div>
+            </td>
+            <td role="gridcell">
+                <div class="slds-truncate" title="{{group.formattedValues.groupCode}}">{{group.formattedValues.groupCode}}</div>
+            </td>
+            <td role="gridcell">
+                <div class="slds-truncate" title="{{group.formattedValues.classCode}}">{{group.formattedValues.classCode}}</div>
+            </td>
+        </tr>
+    </tbody>
+</table>

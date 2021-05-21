@@ -1,0 +1,32 @@
+<apex:page id="ManualQueue" standardController="vlocity_ins__ManualQueue__c" extensions="vlocity_ins.XOMMQMutliSelectLookUpController">
+
+    <style type="text/css">
+
+.customPopupStyle{ background-color: white; border-style: solid; border-width: 2px; left:20%; height: 120px;  padding:10px; position: absolute; overflow: scroll; width: 200px; top:20%;} .disabledTextBoxStyle{ background-color: white; border: 1px solid; color: black; cursor: default; width: 90px; display: table; overflow: scroll;padding: 2px 1px; text-align: right;}.closeButtonStyle{ float: right;}
+
+</style>
+
+    <apex:form >
+        <apex:pageBlock id="counter">
+            <apex:inputtextarea value="{!lookUp}" label="User"/>
+            <apex:commandButton disabled="{!If(isUserListExist,false, true)}" value="Add Value" reRender="out" action="{!add}"/>
+            <apex:outputPanel id="out">
+                <apex:outputPanel styleClass="customPopupStyle" rendered="{!bool}">
+                    <apex:commandButton value="X" title="Close the popup" action="{!closePopup}"
+                                        styleClass="closeButtonStyle" rerender="out"/>
+                    <apex:pageBlockTable value="{!show}" var="e" title="show">
+                        <apex:column >
+                            <apex:inputCheckbox value="{!e.check}"/>
+                            <apex:actionSupport event="onclick" action="{!init}"/>
+                        </apex:column>
+                        <apex:column >
+                            <apex:commandLink value="{!e.usr.Name}"/>
+                        </apex:column>
+                    </apex:pageBlockTable>
+                </apex:outputPanel>
+            </apex:outputPanel>
+            <apex:commandButton disabled="{!If(isUserListExist,false, true)}" value="Save" action="{!mySave}"/>
+        </apex:pageBlock>
+    </apex:form>
+
+</apex:page>

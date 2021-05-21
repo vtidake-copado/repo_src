@@ -1,0 +1,184 @@
+$light-blue: #F8FBFE;
+$royal-blue: #0070D2;
+$orange: #F06E2F;
+$bronze: #B2720C;
+$silver: #C1CCDF;
+$gold: #F8C300;
+
+.via-nds {
+    .vloc-small-group-plan-selection {
+        width: 100%;
+
+        .vloc-cart-plans-button {
+            max-height: 2.5rem;
+        }
+
+        .vloc-ins-selectable-item-icon {
+          position: absolute;
+          top: 1rem;
+          width: 100%;
+          left: 50%;
+          margin-left: -50%;
+        }
+
+        .vloc-plan-box {
+            position: relative;
+            height: 25rem;
+            text-align: center;
+            padding: 0;
+            background-color: $light-blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            animation: fadeIn 2s;
+        }
+
+        .vloc-plan-box-header {
+            height: 46%;
+            display: flex;
+            flex-direction: column;
+
+            .vloc-link {
+                color: black;
+            }
+        }
+
+        .vloc-plan-image {
+            max-width: 3rem;
+            max-height: 3rem;
+            padding: 0.5rem;
+        }
+
+        .vloc-plan-icon {
+            .slds-icon {
+                fill: $orange;
+            }
+
+            &.gold .slds-icon {
+                fill: $gold;
+            }
+
+            &.silver .slds-icon {
+                fill: $silver;
+            }
+
+            &.bronze .slds-icon {
+                fill: $bronze;
+            }
+        }
+
+        .vloc-plan-header-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1 1 auto;
+        }
+
+        .vloc-plan-box-body {
+            height: 54%;
+            padding: 0 1rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .vloc-plan-table {
+            margin: 0 auto;
+
+            td {
+                width: 50%;
+                max-width: 0;
+                padding-bottom: 0.25rem;
+            }
+        }
+
+        .vloc-plan-footer {
+            width: 100%;
+        }
+
+        .vloc-link {
+            &:hover {
+                text-decoration: underline;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .vloc-plan-select-button {
+            width: 60%;
+        }
+
+        .vloc-renewal-header {
+            background-color: rgba($royal-blue, .3);
+            color: white;
+            position: relative;
+            z-index: 1;
+            font-size: 0.8rem;
+            font-weight: 100;
+            height: 2.4rem;
+
+            .vloc-link {
+                color: white;
+                line-height: 1;
+                text-decoration: underline;
+            }
+        }
+
+        .vloc-renewal-header-svg {
+            display: block;
+            fill: rgba($royal-blue, .3);;
+        }
+
+        .vloc-renewal-flag-hidden {
+            opacity: 0;
+        }
+
+        .vloc-selected-plan {
+            border-color: $royal-blue;
+            box-shadow: -1px 0 0 1px $royal-blue, inset -1px 0 0 1px $royal-blue;
+            background-color: darken($light-blue, 3%);
+
+            .vloc-renewal-header {
+                background-color: $royal-blue;
+            }
+
+            .vloc-renewal-header-svg {
+                fill: $royal-blue;
+            }
+        }
+
+        .vloc-cart-plans-collapse {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+
+            &.in {
+                max-height: 50rem;
+            }
+        }
+
+        .vloc-cart-plans-collapse-toggle {
+            text-align: center;
+
+            .nds-icon {
+                fill: $royal-blue;
+            }
+
+            .vloc-toggle-closed .nds-icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

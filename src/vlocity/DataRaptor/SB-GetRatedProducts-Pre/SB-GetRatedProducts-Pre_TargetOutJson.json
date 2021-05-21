@@ -1,0 +1,8 @@
+{
+    "userInputs": {
+        "SBBusinessProfile.SBbusLegalForm": "Text",
+        "SBBusinessProfile.SBbusRevAnnual": "Currency",
+        "SBBusinessProfile.SBbusType": "Text",
+        "SBBusinessProfile.instanceKey": "Text"
+    }
+}

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Upgrade Step</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Upgrade Steps</value>
+    </caseValues>
+    <fields>
+        <label><!-- Allow Custom Input --></label>
+        <name>AllowCustomInput__c</name>
+    </fields>
+    <fields>
+        <label><!-- Argument List --></label>
+        <name>ArgumentList__c</name>
+    </fields>
+    <fields>
+        <label><!-- CheckClassName --></label>
+        <name>CheckClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Method --></label>
+        <name>CheckMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Result Url --></label>
+        <name>CheckResultUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClassName --></label>
+        <name>ClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Input Label 2 --></label>
+        <name>CustomInputLabel2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Input Label --></label>
+        <name>CustomInputLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Input Value 2 --></label>
+        <name>CustomInputValue2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Input Value --></label>
+        <name>CustomInputValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Execution Method --></label>
+        <name>ExecutionMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>ExternalId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Instruction --></label>
+        <name>Instruction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Check Date Time --></label>
+        <name>LastCheckDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Check Status --></label>
+        <name>LastCheckStatus__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Check Method</masterLabel>
+            <translation><!-- No Check Method --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Complete</masterLabel>
+            <translation><!-- Not Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Execution Date Time --></label>
+        <name>LastExecutionDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Execution Status --></label>
+        <name>LastExecutionStatus__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Method --></label>
+        <name>Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Options --></label>
+        <name>Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Step --></label>
+        <name>ParentStepId__c</name>
+        <relationshipLabel><!-- UpgradeSteps --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parent Step Unique Id --></label>
+        <name>ParentStepUniqueId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Check Method --></label>
+        <name>PostCheckMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre Check Method --></label>
+        <name>PreCheckMethod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Precursor Step --></label>
+        <name>PrecursorStepId__c</name>
+        <relationshipLabel><!-- Upgrade Steps (PrecursorStep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Precursor Step Unique Id --></label>
+        <name>PrecursorStepUniqueId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>Critical</masterLabel>
+            <translation><!-- Critical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related Batch Job Id --></label>
+        <name>RelatedBatchJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Command --></label>
+        <name>StepCommand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Execution Order --></label>
+        <name>StepExecutionOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Frequency --></label>
+        <name>StepFrequency__c</name>
+        <picklistValues>
+            <masterLabel>Always</masterLabel>
+            <translation><!-- Always --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diagnostic</masterLabel>
+            <translation><!-- Diagnostic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Install</masterLabel>
+            <translation><!-- First Install --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade / First Install</masterLabel>
+            <translation><!-- Upgrade / First Install --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tags --></label>
+        <name>Tags__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation><!-- Auto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group</masterLabel>
+            <translation><!-- Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual</masterLabel>
+            <translation><!-- Manual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UniqueId --></label>
+        <name>UniqueId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upgrade Plan --></label>
+        <name>UpgradePlanId__c</name>
+        <relationshipLabel><!-- Upgrade Steps --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Version Introduced --></label>
+        <name>VersionIntroduced__c</name>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,63 @@
+<div class="slds-grid slds-wrap slds-p-horizontal_small" ng-init="$root.isLoaded = true; importedScope.initRelations();">
+   <div class="slds-size_1-of-1">
+      <div class="slds-p-bottom_x-small vloc-ins-rules-container" ng-if="importedScope.relationships.length">
+         <div class="slds-border_bottom vloc-ins-rule" ng-repeat="relationship in importedScope.relationships">
+            <div class="slds-grid slds-grid-wrap slds-p-top_x-small slds-p-left_x-small slds-p-right_medium vloc-ins-rule-inner-wrapper slds-p-bottom_medium" ng-class="{'delete-warning-active': relationship.inDelete, 'delete-processing': relationship.isDeleted, 'adding-new-rule': rule.newRule}" style="z-index: {{importedScope.relationships.length + 10 - $index}}">
+               <div class="slds-size_1-of-12 vloc-ins-rule-number" ng-class="{'slds-p-right_xx-small': containerWidth < smallWidthBP}"><span class="ng-binding">{{$index + 1}}</span></div>
+               <div class="slds-form-element slds-m-top_small slds-size_1-of-3 slds-p-right_large">
+                  <div class="slds-form-element__control">
+                     <div class="slds-select_container">
+                        <select ng-options="covprod1.covProdId as covprod1.covProdName for covprod1 in importedScope.optcoverags" ng-model="relationship.srcProdId" ng-change="importedScope.saveRelationship(relationship)" class="slds-select slds-m-right_xx-small" id="cov-select-01" >
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <div class="slds-form-element slds-m-top_small slds-size_1-of-3 slds-p-right_large">
+                  <div class="slds-form-element__control">
+                     <div class="slds-select_container">
+                        <select ng-options="rowRelationship.prodRelType as rowRelationship.prodRelLbl for rowRelationship in importedScope.relationshipTypes" ng-model="relationship.prodRelType" ng-change="importedScope.saveRelationship(relationship)" class="slds-select slds-m-right_xx-small" id="cov-select-02" >
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <div class="slds-form-element slds-m-top_small slds-size_1-of-3 slds-p-right_xx-large">
+                  <div class="slds-form-element__control">
+                     <div class="slds-select_container">
+                        <select ng-options="covprod2.covProdId as covprod2.covProdName for covprod2 in importedScope.optcoverags" ng-model="relationship.tgtProdId" ng-change="importedScope.saveRelationship(relationship)" class="slds-select slds-m-right_xx-small" id="cpv-select-03" >
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <div class="slds-text-align_right slds-is-relative vloc-ins-rule-delete-rule-container" ng-class="{'slds-size_1-of-5': containerWidth < smallWidthBP, 'slds-size_1-of-8': containerWidth >= smallWidthBP}">
+                  <button class="slds-button slds-button_icon" title="{{ ::importedScope.customLabels.Delete}}" ng-click="importedScope.deletePrompt(relationship)">
+                     <slds-button-svg-icon sprite="'utility'" icon="'delete'" size="'medium'" ng-if="!relationship.inDelete"></slds-button-svg-icon>
+                     <slds-button-svg-icon sprite="'utility'" icon="'close'" size="'medium'" ng-if="relationship.inDelete"></slds-button-svg-icon>
+                     <span class="slds-assistive-text">{{ ::importedScope.customLabels.InsProductDeleteRelationship}}</span>
+                  </button>
+               </div>
+            </div>
+            <div class="vloc-ins-rule-delete-warning-wrapper" ng-class="{'delete-warning-active': relationship.inDelete, 'delete-processing': relationship.isDeleted, 'adding-new-rule': rule.newRule}">
+               <div class="slds-p-vertical_x-small slds-p-horizontal_medium slds-text-align_right slds-notify slds-theme_alert-texture vloc-ins-rule-delete-warning-header">
+                  <h2 class="slds-text-heading_medium" id="ins-rules-delete-warning-{{$index + 1}}">{{ ::importedScope.customLabels.InsProductDeleteRelationship}}</h2>
+               </div>
+               <div class="slds-text-align_right vloc-ins-rule-delete-warning-content">
+                  <p> {{ ::importedScope.customLabels.InsProductDeleteRelationshipMessage}}</p>
+               </div>
+               <div class="slds-text-align_right vloc-ins-rule-delete-warning-footer">
+                  <button class="slds-button slds-button_neutral" ng-click="relationship.inDelete = !relationship.inDelete">{{ ::importedScope.customLabels.InsButtonCancel}}</button>
+                  <button class="slds-button slds-button_destructive" ng-click="importedScope.deleteProductRelationships(relationship, $index)">{{ ::importedScope.customLabels.InsProductConfirmDelete}}</button>
+               </div>
+            </div>
+         </div>
+         <div class="slds-grid">
+            <div class="slds-size_1-of-12" ng-class="{'slds-p-right_xx-small': containerWidth < smallWidthBP}"></div>
+            <div class="slds-size_11-of-12">
+               <button class="slds-button vloc-ins-rule-add" ng-click="importedScope.addRelationship()">{{ ::importedScope.customLabels.InsProductAddRelationship}}</button>
+            </div>
+         </div>
+      </div>
+      <div class="slds-p-around_small vloc-ins-no-rules-container" ng-if="!importedScope.relationships.length">
+         <p>{{ ::importedScope.customLabels.InsProductNoRelationshipMessage}} <a href="javascript:void(0)" ng-click="importedScope.addRelationship()">{{ ::importedScope.customLabels.InsProductAddRelationshipLink}}</a>.</p>
+      </div>
+   </div>
+</div>

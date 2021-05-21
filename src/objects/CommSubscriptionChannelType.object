@@ -153,7 +153,7 @@
     <listViews>
         <fullName>All_CommSubscriptionChannelTypes</fullName>
         <filterScope>Everything</filterScope>
-        <label>Todos los Tipos de canales de suscripciones de comunicación</label>
+        <label>All Communication Subscription Channel Types</label>
     </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>CommunicationSubscription</customTabListAdditionalFields>

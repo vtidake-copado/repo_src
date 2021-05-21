@@ -1,0 +1,167 @@
+<div class="census-container" ng-if="bpTree.asIndex === child.eleArray[0].rootIndex" ng-controller="insCensusOsCtrl">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group census-info">
+                                <ul>
+                                    <li>
+                                        <p>Total # of Members</p>
+                                        <h4>{{censusInfo.total}}</h4>
+                                    </li>
+                                    <li>
+                                        <p># Employee Only</p>
+                                        <h4>{{censusInfo.EmpCount}}</h4>
+                                    </li>
+                                    <li>
+                                        <p># Employee+Spouse</p>
+                                        <h4>{{censusInfo.EmpSpCount }}</h4>
+                                    </li>
+                                    <li>
+                                        <p># Employee+Child</p>
+                                        <h4>{{censusInfo.EmpChCount }}</h4>
+                                    </li>
+                                    <li>
+                                        <p># Employee+Family</p>
+                                        <h4>{{censusInfo.EmpFaCount }}</h4>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="form-group census-control">
+                                <div class="search-employee">
+                                    <span>Search Name: </span>
+                                    <input type="text" class="slds-input" ng-model="searchText" ng-change="searchEmployee()"/>
+                                </div>
+                                <div class="control-buttons">
+                                    <a ng-href="{{censusTemplateUrl}}" download class="nds-button">Download Template</a>
+                                    <ap-js-xls 
+                                        input-id="prime-census__import-file"
+                                        class="sheet-js-import"
+                                        label-text="Upload Members"
+                                        on-read="uploadCensus($event)"
+                                        on-error="uploadError($event)"
+                                        input-class="hide-element"
+                                        label-class="btn sheet-js-import-label"
+                                        ng-model="censusFile">
+                                    </ap-js-xls>
+                                    <input type="button" class="btn btn-primary add-census" value="Add Employee" ng-click="addNewMember(false)" />
+                                    <input type="button" class="btn btn-primary add-census" value="Delete All Data" ng-click="deleteAllCensus()"/>
+                                </div>
+                            </div>
+                            <table class="census-table" ng-if="filteredCensus.length"">
+                                <thead>
+                                    <tr> 
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Gender</th>
+                                        <th>Birth Date</th>
+                                        <th>Relationship</th>
+                                        <th></th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="censusDetail in filteredCensus track by $index" ng-class="{'grid-start': censusDetail.%vlocity_namespace%__IsPrimaryMember__c, 'dependent': !censusDetail.%vlocity_namespace%__IsPrimaryMember__c, 'grid-end': $last, 'dependent-end': filteredCensus[$index + 1].%vlocity_namespace%__IsPrimaryMember__c}">
+                                        <td data-label="First Name">
+                                            <input type="text" ng-change="onChange(censusDetail)" class="slds-input" ng-model="censusDetail.%vlocity_namespace%__FirstName__c" required/>
+                                        </td>
+                                        <td data-label="Last Name">
+                                            <input type="text" ng-change="onChange(censusDetail)" class="slds-input" ng-model="censusDetail.Name" required/>
+                                        </td>
+                                        <td data-label="Gender">
+                                            <select ng-change="onChange(censusDetail)" ng-model="censusDetail.%vlocity_namespace%__Gender__c" class="slds-select" ng-options="type for type in gender" required><option>Select</option></select>
+                                        </td>
+                                        <td data-label="Birth Date" ng-class="{'error_dob': errorDOBList.indexOf(censusDetail.Id) >= 0}">
+                                            <input ng-change="onChange(censusDetail)" type="date" class="form-control" ng-model="censusDetail.%vlocity_namespace%__Birthdate__c" ng-change="censusDetail.%vlocity_namespace%__Birthdate__c=censusDetail.%vlocity_namespace%__Birthdate__c.toISOString()" required>
+                                        </td>
+                                        <td data-label="Relationship">
+                                            <input type="text" value="Employee" class="slds-select" ng-if="censusDetail.%vlocity_namespace%__IsPrimaryMember__c" disabled required></select>
+                                            <select ng-change="onChange(censusDetail, true)" ng-model="censusDetail.%vlocity_namespace%__IsSpouse__c" class="slds-select" ng-if="!censusDetail.%vlocity_namespace%__IsPrimaryMember__c" ng-options="(item?'Spouse':'Child') for item in [true, false]" required>
+                                            </select>
+                                        </td> 
+                                        <td class="add-dependent">
+                                            <input type="button" class="btn btn-primary add-census" value="Add Dependent" ng-click="addNewMember(true, censusDetail)" ng-if="censusDetail.%vlocity_namespace%__IsPrimaryMember__c"/>
+                                        </td>
+                                        <td>
+                                            <button ng-click="deleteCensus(censusDetail, censusDetail.%vlocity_namespace%__IsPrimaryMember__c)" class="nds-button nds-button_icon nds-button_icon-small nds-float_right nds-popover__close delete-census" title="Delete Record">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="delete" width="100%" height="100%">
+                                                    <path d="M21 4.6h-5.8V2.8c0-1-.8-1.9-1.8-1.9h-2.8c-1 0-1.8.9-1.8 1.9v1.8H3c-.4 0-.7.3-.7.7v1.4c0 .4.3.7.7.7h18c.4 0 .7-.3.7-.7V5.3c0-.4-.3-.7-.7-.7zM10.6 3.2c0-.2.2-.4.5-.4h1.8c.3 0 .5.2.5.4v1.4h-2.8V3.2zm8.6 6H4.8c-.3 0-.6.4-.6.7v10.9c0 1.3 1 2.3 2.3 2.3h11c1.3 0 2.3-1 2.3-2.3V9.9c0-.3-.3-.7-.6-.7zm-8.6 10.2c0 .3-.2.4-.4.4h-1c-.2 0-.4-.1-.4-.4v-6.5c0-.3.2-.4.4-.4h1c.2 0 .4.1.4.4v6.5zm4.6 0c0 .3-.2.4-.4.4h-1c-.2 0-.4-.1-.4-.4v-6.5c0-.3.2-.4.4-.4h1c.2 0 .4.1.4.4v6.5z"></path>
+                                                </svg>
+                                            </button>
+                                            <!-- <input type="button" class="delete-census" value="Delete" ng-click="deleteCensus(censusDetail, censusDetail.%vlocity_namespace%__IsPrimaryMember__c)"/> -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <div class="nds-size_1-of-1 nds-header__desktop census-navigation" ng-if="!bpService.isMobileBrowser">
+                            <div class="nds-wrap">
+                                <div class="nds-align_absolute-center">
+                                    <button class="nds-button nds-button_brand nds-p-around_xx-small nds-size_1-of-1 nds-medium-size_{{::bpTree.children[bpTree.asIndex].propSetMap.nextWidth}}-of-12" type="button" ng-show="bpTree.children[bpTree.asIndex].bHasNext && bpTree.children[bpTree.asIndex].propSetMap.nextWidth > 0" id="censusPage_nextBtn" ng-click="saveCensus(bpTree.children[bpTree.asIndex].nextIndex, bpTree.children[bpTree.asIndex].indexInParent)" ng-disabled="checkValidity(this, bpTree.children[bpTree.asIndex].index, bpTree.children[bpTree.asIndex].indexInParent, 'Step', null, true)" vlc-animation-slider="test" aria-hidden="false">
+                                        {{::bpTree.children[bpTree.asIndex].propSetMap.nextLabel}}
+                                    </button>
+                                </div>
+                                <div class="nds-align_absolute-center nds-p-around_xx-small">
+                                    <button class="nds-button nds-button_neutral nds-p-around_xx-small nds-size_1-of-1 nds-medium-size_{{::bpTree.children[bpTree.asIndex].propSetMap.previousWidth}}-of-12" type="button" ng-if="bpTree.children[bpTree.asIndex].bHasPrevious && bpTree.children[bpTree.asIndex].propSetMap.previousWidth > 0" id="censusPage_prevBtn" ng-click="saveAndPrevious(this,bpTree.children[bpTree.asIndex])" vlc-animation-slider="test" reverse="true" ng-style="{'border':'none'}">
+                                        {{::bpTree.children[bpTree.asIndex].propSetMap.previousLabel}}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nds-size_1-of-1 nds-header__mobile-only census-navigation" ng-if="bpService.isMobileBrowser">
+                            <div class="nds-size_1-of-1 nds-grid">
+                                <div class="nds-step__prev-link" ng-style="!(bpTree.children[bpTree.asIndex].bHasPrevious && bpTree.children[bpTree.asIndex].propSetMap.previousWidth > 0) ? {'visibility' : 'hidden'}:''" id="censusPage_prevBtn" ng-click="saveAndPrevious(this,bpTree.children[bpTree.asIndex])" vlc-animation-slider="test" reverse="true" role="button" tabindex="0">
+                                    <svg aria-hidden="true" class="slds-icon slds-icon--small nds-icon nds-icon_small nds-button__icon" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" sprite="'utility'" icon="'chevronleft'" size="'small'" extra-classes="'nds-button__icon'" viewBox="0 0 52 52" alt="chevronleft">
+                                        <path fill="inherit" xmlns="http://www.w3.org/2000/svg" d="m34.2 47.7l-20.8-20.5c-0.6-0.6-0.6-1.6 0-2.2l20.8-20.5c0.6-0.6 1.6-0.6 2.2 0l2.2 2.2c0.6 0.6 0.6 1.6 0 2.2l-16.5 16.1c-0.6 0.6-0.6 1.6 0 2.2l16.3 16.1c0.6 0.6 0.6 1.6 0 2.2l-2.2 2.2c-0.5 0.5-1.4 0.5-2 0z"></path>
+                                    </svg>
+                                    <span class="nds-step__link-button ng-binding">{{::bpTree.children[bpTree.asIndex].propSetMap.previousLabel}}</span>
+                                </div>
+                                <div class="nds-align_absolute-center nds-progress__list-mobile">
+                                    <div class="nds-custom-step__progress">
+                                        <span class="nds-custom-step__progress-fill" ng-style="{'width': calculateProgressWidthMobile()}" style="width: 0%;"></span>
+                                    </div>
+                                </div>
+                                <div class="nds-step__next-link" ng-style="!(bpTree.children[bpTree.asIndex].bHasNext && bpTree.children[bpTree.asIndex].propSetMap.nextWidth > 0) ? {'visibility' : 'hidden'}:{'text-align' : 'right'}" id="censusPage_nextBtn" ng-click="saveCensus(bpTree.children[bpTree.asIndex].nextIndex, bpTree.children[bpTree.asIndex].indexInParent)" ng-disabled="checkValidity(this, bpTree.children[bpTree.asIndex].index, bpTree.children[bpTree.asIndex].indexInParent, 'Step', null, true)" vlc-animation-slider="test" role="button" tabindex="0" aria-disabled="false" style="text-align: right;">
+                                    <span class="nds-step__link-button ng-binding">{{::bpTree.children[bpTree.asIndex].propSetMap.nextLabel}}</span>
+                                    <svg aria-hidden="true" class="slds-icon slds-icon--small nds-icon nds-icon_small nds-button__icon" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" sprite="'utility'" icon="'chevronright'" size="'small'" extra-classes="'nds-button__icon'" viewBox="0 0 52 52" alt="chevronright">
+                                        <path fill="inherit" xmlns="http://www.w3.org/2000/svg" d="m17.9 4.4l20.7 20.5c0.6 0.6 0.6 1.6 0 2.2l-20.7 20.5c-0.6 0.6-1.6 0.6-2.2 0l-2.2-2.2c-0.6-0.6-0.6-1.6 0-2.2l16.3-16.1c0.6-0.6 0.6-1.6 0-2.2l-16.2-16.1c-0.6-0.6-0.6-1.6 0-2.2l2.2-2.2c0.6-0.5 1.5-0.5 2.1 0z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <ng-form class="slds-form-element vlc-flex vlc-slds-message ng-invalid ng-invalid-vlc-val-error ng-dirty census-error-wrapper">
+                                <div class="slds-form-element__control">
+                                    <div class="vlc-control-wrapper">
+                                        <div class="message description census-error" msg=Requirement ng-if="showCensusError()">
+                                                {{censusErrorMsg}}
+                                        </div>
+                                        <div class="message description census-error" msg=Requirement ng-if="censusAgeErrorMsg">
+                                                {{censusAgeErrorMsg}}
+                                        </div>
+                                    </div>
+                                </div>
+                        </ng-form>
+                    </div>
+                </div>
+            </div>
+            <div class="mask vlc-slds-mask" ng-show="censusLoading" aria-hidden="false">
+                <div class="nds-spinner_container">
+                    <div class="nds-spinner_brand nds-spinner" aria-hidden="false" role="alert">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <circle cx="6" cy="50">
+                                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 15 ; 0 -15; 0 15" repeatCount="indefinite" begin="0.1"></animateTransform> 
+                            </circle> 
+                            <circle cy="50"> 
+                                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 10 ; 0 -10; 0 10" repeatCount="indefinite" begin="0.2"></animateTransform> 
+                            </circle> 
+                            <circle cy="50">  
+                                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 5 ; 0 -5; 0 5" repeatCount="indefinite" begin="0.3"></animateTransform> 
+                            </circle>  
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>

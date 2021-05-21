@@ -1,0 +1,7 @@
+[
+    "DataRaptor/Ins_ExtrQuoteDetails_IssueOS",
+    "DataRaptor/UpdateQuoteStatus",
+    "DataRaptor/readPolicyLwc",
+    "IntegrationProcedure/Insurance_CreatePolicy",
+    "IntegrationProcedure/Insurance_IssuePayment"
+]

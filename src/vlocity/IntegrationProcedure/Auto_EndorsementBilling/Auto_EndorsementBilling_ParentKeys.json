@@ -1,0 +1,8 @@
+[
+    "CalculationProcedure/BillingAdjustment-Endorsements",
+    "DataRaptor/Ins_PostBillingDetailsforNewPolicy_EndorsementBillingIP",
+    "DataRaptor/Ins_PostPreviousPolicyUpdates_EndorsementBillingIP",
+    "DataRaptor/Ins_ReadNewPolicyVersion_EndorsementBillingIP",
+    "DataRaptor/Ins_getPolicyBillingDetails_EndorsementBillingIP",
+    "DataRaptor/Insurance_TransForEndorsementBillingCalc_EndorsementBillingIP"
+]

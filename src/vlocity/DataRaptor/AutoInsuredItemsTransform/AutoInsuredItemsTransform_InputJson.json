@@ -1,0 +1,78 @@
+{
+    "AccountId": "0016A00000W6JmWQAV",
+    "ContextId": "",
+    "autos": {
+        "auto": [
+            {
+                "autoCondition": null,
+                "autoGaragePostalCode": null,
+                "autoInstanceKey": "2011 Lexus LX250 ",
+                "autoMake": "Lexus",
+                "autoMileage": null,
+                "autoModel": "LX250",
+                "autoTrim": null,
+                "autoYear": 2011
+            },
+            {
+                "autoCondition": null,
+                "autoGaragePostalCode": null,
+                "autoInstanceKey": "2006 Honday Odyssay ",
+                "autoMake": "Honday",
+                "autoMileage": null,
+                "autoModel": "Odyssay",
+                "autoTrim": null,
+                "autoYear": 2006
+            }
+        ]
+    },
+    "debugLog": true,
+    "discountDriver": {
+        "driverDiscounts": {
+            "discountDriverInstanceKey": "Roger    Moore",
+            "driverGPA": null,
+            "driverMilitaryID": null,
+            "driverMiltaryBranch": null,
+            "typeDriverDiscount": "student;military"
+        }
+    },
+    "drivers": {
+        "driver": {
+            "driverAge": 32,
+            "driverAgeLicensed": null,
+            "driverBirthdate": "1986-02-14T08:00:00.000Z",
+            "driverFirstName": "Roger",
+            "driverGender": null,
+            "driverInstanceKey": "Roger    Moore",
+            "driverLastName": "Moore",
+            "driverMaritalStatus": null,
+            "driverMiddleName": null
+        }
+    },
+    "id": "a2C6A000000Fn0IUAS",
+    "insured": {
+        "effectiveDate": null,
+        "insuredAge": 32,
+        "insuredAgeLicensed": null,
+        "insuredBirthdate": "1986-02-14T08:00:00.000Z",
+        "insuredCity": null,
+        "insuredFirstName": "Roger",
+        "insuredFullName": "Roger  Moore",
+        "insuredGender": "Male",
+        "insuredLastName": "Moore",
+        "insuredMaritalStatus": "Married",
+        "insuredMiddleName": null,
+        "insuredPostalCode": null,
+        "insuredState": null,
+        "insuredStreet": null
+    },
+    "layout": "lightning",
+    "opportunityId": "0066A000007jw4eQAA",
+    "timeStamp": "2018-07-31T01:20:57.016Z",
+    "userCurrencyCode": "USD",
+    "userId": "0056A000000taWIQAY",
+    "userName": "insdemo2@demo.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": -420,
+    "vlcPersistentComponent": {
+    }
+}

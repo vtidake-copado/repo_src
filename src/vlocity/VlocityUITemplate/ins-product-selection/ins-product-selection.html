@@ -1,0 +1,6 @@
+<div>
+    <vloc-card ng-repeat="card in cards |orderBy:order|filter: searchFunc(card)" 
+    	ctrl="PlanSelectionController" ng-model="card" data="card" records="records" 
+    	index="{{$index}}" session-id="{{sessionId}}" line-item-modal="true">
+    </vloc-card>
+</div>

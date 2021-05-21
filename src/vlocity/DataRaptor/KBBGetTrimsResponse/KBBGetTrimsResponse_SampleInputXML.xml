@@ -1,0 +1,41 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+   <s:Header>
+      <ActivityId CorrelationId="ff062748-1f89-4b9d-8fda-60f38c7a728c" xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">00000000-0000-0000-0000-000000000000</ActivityId>
+   </s:Header>
+   <s:Body>
+      <GetTrimsAndVehicleIdsByYearAndModelResponse xmlns="http://www.kbb.com/2011/01/25/VehicleInformationService">
+         <GetTrimsAndVehicleIdsByYearAndModelResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <VehicleTrim>
+               <AdditionalData/>
+               <BedLength>6 3/4 ft</BedLength>
+               <DefaultDrivetrain>4WD</DefaultDrivetrain>
+               <DefaultEngine>V8, Turbo Diesel, 7.3L</DefaultEngine>
+               <DefaultTransmission>Automatic</DefaultTransmission>
+               <DisplayName>Short Bed</DisplayName>
+               <Id>4228</Id>
+               <ManufacturerCode/>
+               <MarketName/>
+               <Name/>
+               <NumberOfDoors>4</NumberOfDoors>
+               <OEMBodyStyle>Pickup</OEMBodyStyle>
+               <VehicleId>4228</VehicleId>
+            </VehicleTrim>
+            <VehicleTrim>
+               <AdditionalData/>
+               <BedLength>8 ft</BedLength>
+               <DefaultDrivetrain>4WD</DefaultDrivetrain>
+               <DefaultEngine>V8, Turbo Diesel, 7.3L</DefaultEngine>
+               <DefaultTransmission>Automatic</DefaultTransmission>
+               <DisplayName>Long Bed</DisplayName>
+               <Id>4219</Id>
+               <ManufacturerCode/>
+               <MarketName/>
+               <Name/>
+               <NumberOfDoors>4</NumberOfDoors>
+               <OEMBodyStyle>Pickup</OEMBodyStyle>
+               <VehicleId>4219</VehicleId>
+            </VehicleTrim>
+         </GetTrimsAndVehicleIdsByYearAndModelResult>
+      </GetTrimsAndVehicleIdsByYearAndModelResponse>
+   </s:Body>
+</s:Envelope>

@@ -1,0 +1,605 @@
+/**
+ ** Reusing product attributes variables because it is in the InsProductModel datapack
+ ** and don't want to be redundant
+ **/
+@import "ins-product-attributes-variables";
+
+.via-slds {
+    .slds-theme_info {
+        background-color: $notify-default;
+    }
+    [ins-dropzone] {
+        .dz-preview {
+            display: none;
+        }
+    }
+    .slds-tree {
+        .slds-button {
+            margin-top: 0;
+        }
+    }
+    .vloc-req-doc-container {
+        .vloc-req-doc-separator {
+            color: $cards-border-gray;
+        }
+
+        .slds-tree {
+            [aria-level="1"] {
+                .vloc-req-doc-tree-item {
+                    padding-left: 0;
+                }
+            }
+
+            [role=treeitem] {
+                > [role=group] {
+                    display: block;
+                }
+            }
+
+            .slds-tree__item {
+                &:hover {
+                    background: white;
+                }
+            }
+
+            .slds-button {
+                text-align: left;
+            }
+        }
+
+        .vloc-req-doc-placeholder-wrapper {
+            background-color: white;
+            transition: background-color 150ms ease-in;
+            border-bottom: 1px solid $cards-border-gray;
+
+            .vloc-req-doc-tree-item {
+                border-bottom: 1px solid transparent;
+                transition: border-color 250ms ease-in;
+            }
+
+            &.vloc-req-doc-placeholder-selected {
+                background-color: rgba($cards-gray, .35);
+
+                .vloc-req-doc-tree-item {
+                    background-color: $neutral-lightest;
+                    border-color: $cards-border-gray;
+                }
+            }
+        }
+
+        .vloc-req-doc-folder-icon {
+            border: none;
+            background: transparent;
+
+            .vloc-req-doc-button-icon {
+                fill: $notify-default;
+                position: relative;
+                top: -1px;
+
+                &.vloc-req-doc-button-icon-opened {
+                    fill: $primary-medium;
+                }
+            }
+        }
+
+        .vloc-req-doc-category-container {
+            width: 100%;
+
+            .vloc-req-doc-category-inner-container {
+                width: 100%;
+
+                > div {
+                    line-height: 2.1rem;
+                }
+
+                .vloc-req-doc-category {
+                    font-size: 0.875rem;
+                    color: $primary-slds-navy;
+                }
+            }
+
+            .vloc-req-doc-category-info {
+                .vloc-req-doc-requirements-count:not(.vloc-req-doc-requirements-count-0) {
+                    color: $notify-danger;
+                }
+                .vloc-req-doc-category-upload-btn-container {
+                    display: inline-block;
+
+                    .vloc-req-doc-file-spinner-container {
+                        display: none;
+                        background-color: inherit;
+                    }
+
+                    .vloc-req-doc-category-upload-btn {
+                        position: relative;
+                        top: -1px;
+
+                        .slds-button__icon {
+                            position: relative;
+                            top: -1px;
+                        }
+                    }
+
+                    &.vloc-req-doc-file-uploading {
+                        min-width: 6.4618rem;
+                        top: -0.25rem;
+
+                        .vloc-req-doc-file-spinner-container {
+                            display: block;
+                        }
+
+                        .vloc-req-doc-category-upload-btn {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .vloc-req-doc-subtree-items-container {
+            transition: height 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
+            overflow: hidden;
+
+            &:not(.in) {
+                height: 0 !important;
+            }
+
+            &.in {
+                height: auto;
+            }
+
+            &.overflow-unset {
+                overflow: unset;
+            }
+
+            .vloc-req-doc-subtree-item-container {
+                background-color: rgba($cards-gray, .15);
+
+                .vloc-req-doc-placeholder-spinner-container {
+                    display: none;
+                    z-index: 999;
+                }
+
+                .vloc-req-doc-placeholder-heading {
+                    padding-left: 5.375rem;
+                    padding-right: 1.5rem;
+                    background-color: rgba($neutral-lightest, .35);
+
+                    .vloc-req-doc-placeholder-heading-name {
+                        color: darken($neutral-medium, 25%);
+                    }
+
+                    .vloc-req-doc-placeholder-heading-status {
+                        color: $neutral-medium;
+                    }
+                }
+
+                .vloc-req-doc-placeholder-edit-container {
+                    color: $neutral-dark;
+                    cursor: pointer;
+                    display: inline-block;
+
+                    .vloc-req-doc-placeholder-edit {
+                        color: $neutral-medium;
+                    }
+
+                    .vloc-req-doc-icon-container {
+                        margin-left: 0.25rem;
+                        position: relative;
+                        top: -1px;
+
+                        .slds-icon.vloc-req-doc-icon {
+                            fill: $neutral-light;
+                            width: 0.75rem;
+                            height: 0.75rem;
+                            transition: fill 150ms ease-in;
+                        }
+                    }
+
+                    &:hover {
+                        .vloc-req-doc-placeholder-edit {
+                            color: $neutral-dark;
+                        }
+                        .vloc-req-doc-icon-container {
+                            .slds-icon.vloc-req-doc-icon {
+                                fill: $neutral-medium;
+                            }
+                        }
+                    }
+                }
+
+                .vloc-req-doc-placeholder-delete-container {
+                    .vloc-req-doc-placeholder-delete-btn {
+                        height: 100%;
+                        width: 2rem;
+                        border: none;
+                        margin-right: 1px;
+
+                        .vloc-req-doc-button-icon-delete {
+                            position: relative;
+                            top: -1px;
+                            transition: fill 150ms ease-in;
+                            fill: $neutral-light;
+                        }
+
+                        &:hover {
+                            .vloc-req-doc-button-icon-delete {
+                                fill: $neutral-medium;
+                            }
+                        }
+                    }
+                }
+
+                .vloc-req-doc-file-tree-item, {
+                    padding-left: 0;
+                    border-bottom: 1px solid $cards-border-gray;
+
+                    &:hover {
+                        cursor: default;
+                    }
+
+                    .vloc-req-doc-file-info-container {
+                        position: relative;
+                        width: 100%;
+                        color: $primary-dark;
+                        border: 1px solid transparent;
+                        border-bottom: 1px solid rgba($cards-border-gray, .5);
+                        padding-left: 5.875rem;
+                        padding-right: 1.5rem;
+                        background-color: white;
+                        transition: background-color 500ms ease-in,
+                                    border-style 100ms ease-in;
+
+                        &:last-child {
+                            border-bottom-color: transparent;
+                        }
+
+                        &.dz-drag-hover {
+                            border: 1px dashed $primary-light;
+                            background-color: $neutral-lightest;
+                        }
+
+                        &.vloc-req-doc-new-file {
+                            background-color: $neutral-light;
+                        }
+
+                        .vloc-req-doc-file-spinner-container {
+                            background-color: white;
+                            z-index: 999;
+                            display: none;
+
+                            .vloc-req-doc-file-spinner {
+                                transform: translate(-99%,-50%) rotate(90deg);
+                            }
+                        }
+
+                        &.dz-started,
+                        &.vloc-req-doc-delete-started {
+                            .vloc-req-doc-file-spinner-container {
+                                display: block;
+                            }
+                        }
+
+                        .vloc-req-doc-file-info {
+                            line-height: 1.3;
+
+                            .vloc-req-doc-file-name {
+                                font-size: 0.875rem;
+                            }
+
+                            .vloc-req-doc-file-meta {
+                                font-style: italic;
+                                color: lighten($notify-default, 25%);
+                            }
+                        }
+
+                        .vloc-req-doc-file-info-status-wrapper {
+                            color: $neutral-dark;
+                            cursor: pointer;
+                            display: inline-block;
+
+                            .vloc-req-doc-icon-container {
+                                margin-left: 0.25rem;
+                                position: relative;
+                                top: -1px;
+
+                                .vloc-req-doc-icon {
+                                    fill: $neutral-light;
+                                    width: 0.75rem;
+                                    height: 0.75rem;
+                                    transition: fill 150ms ease-in;
+                                }
+                            }
+
+                            .vloc-req-doc-file-info-status {
+                                display: inline-block;
+                            }
+
+                            &:hover {
+                                .vloc-req-doc-icon-container {
+                                    .vloc-req-doc-icon {
+                                        fill: $neutral-medium;
+                                    }
+                                }
+                            }
+                        }
+
+                        .vloc-req-doc-file-info-status-picklist {
+                            .vloc-req-doc-select-element {
+                                display: inline-block;
+                            }
+                        }
+
+                        .vloc-req-doc-uploadedFile-actions-container {
+                            .vloc-req-doc-uploadedFile-actions-delete-btn {
+                                height: 100%;
+                                width: 2rem;
+                                border: none;
+
+                                .vloc-req-doc-button-icon-delete {
+                                    position: relative;
+                                    top: -1px;
+                                    transition: fill 150ms ease-in;
+                                    fill: $neutral-medium;
+                                }
+
+                                &:hover {
+                                    .vloc-req-doc-button-icon-delete {
+                                        fill: $neutral-dark;
+                                    }
+                                }
+                            }
+                        }
+
+                        .dz-default {
+                            display: none;
+                        }
+                    }
+                }
+
+                .vloc-req-doc-child-dropzone-tree-item {
+                    padding-left: 5.375rem;
+                    cursor: default;
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+
+                    .vloc-req-doc-dropzone-info-container {
+                        width: 100%;
+                        border: 1px dashed $neutral-medium;
+                        background-color: white;
+                        border-radius: 0.25rem;
+                        transition: border-color 100ms ease-in,
+                                    background-color 100ms ease-in;
+
+                        &.dz-drag-hover {
+                            border-color: $primary-light;
+                            background-color: $neutral-lightest;
+                        }
+
+                        .vloc-req-doc-file-spinner-container {
+                            background-color: white;
+                            display: none;
+
+                            .vloc-req-doc-file-spinner {
+                                transform: translate(-99%,-50%) rotate(90deg);
+                            }
+                        }
+
+                        &.dz-started {
+                            .vloc-req-doc-file-spinner-container {
+                                display: block;
+                            }
+                        }
+
+                        .dz-default {
+                            display: none;
+                        }
+
+                        .slds-icon {
+                            fill: $notify-warning;
+                            position: relative;
+                            top: -2px;
+
+                            &.vloc-req-doc-file-icon {
+                                fill: $neutral-medium;
+                                top: -1px;
+                            }
+                        }
+
+                        .vloc-req-doc-upload-helper-text {
+                            position: relative;
+                            display: inline-block;
+                            top: 1px;
+                        }
+
+                        .vloc-req-doc-upload-helper-text-upload-link {
+                            color: $primary-light;
+                        }
+
+                        .vloc-req-doc-info {
+                            line-height: 1.3;
+                        }
+
+                        .vloc-req-doc-document-placeholder-name {
+                            font-size: 1rem;
+
+                            em {
+                                font-size: 0.75rem;
+                            }
+                        }
+
+                        .vloc-req-doc-document-placeholder-meta {
+                            font-style: italic;
+                            color: lighten($notify-default, 25%);
+                        }
+
+                        .slds-icon_container_circle {
+                            width: 2rem;
+                            height: 2rem;
+                            line-height: 1;
+                            background-color: #95aec5;
+
+                            .slds-icon {
+                                fill: white;
+                                width: 1rem;
+                                height: 1rem;
+                                top: -1px;
+                            }
+                        }
+                    }
+
+                    &.vloc-req-doc-child-dropzone-tree-item-category-upload {
+                        .vloc-req-doc-dropzone-info-container {
+                            border-color: $neutral-light;
+                        }
+                    }
+                }
+
+                &.vloc-req-doc-subtree-item-container-file {
+                    background: white;
+
+                    + .vloc-req-doc-subtree-item-container-placeholder {
+                        .vloc-req-doc-placeholder-info-container {
+                            margin-top: 1.25rem;
+                        }
+                    }
+
+                    .vloc-req-doc-subtree-item-container-placeholder {
+                        margin-right: 0.75rem;
+                    }
+
+                    &:last-child {
+                        .vloc-req-doc-file-tree-item {
+                            border-bottom: none;
+                        }
+                    }
+                }
+
+                &:not(.vloc-req-doc-subtree-item-container-file) {
+                    &:last-child {
+                        padding-bottom: 1.5rem;
+                    }
+                }
+
+                &.editing-or-deleting-placeholder {
+                    .vloc-req-doc-placeholder-spinner-container {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .vloc-modal {
+        &:focus {
+            outline: none;
+        }
+
+        .vlocity-dynamic-form {
+            .slds-form-element {
+                margin-bottom: 0.75rem;
+
+                .slds-form-element__control {
+                    > div.slds-p-around--x-small {
+                        padding: 0 0.5rem;
+
+                        .slds-input {
+                            padding: 0 1rem 0 0.75rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $bp-large) {
+        .vloc-req-doc-container {
+            .vloc-req-doc-subtree-items-container {
+                .vloc-req-doc-subtree-item-container {
+                    .vloc-req-doc-info {
+                        padding-left: 0.75rem;
+                        padding-right: 0.75rem;
+                    }
+
+                    .vloc-req-doc-child-dropzone-tree-item{
+                        &.vloc-req-doc-child-dropzone-tree-item-category-upload {
+                            .vloc-req-doc-dropzone-info-container {
+                                .vloc-req-doc-document-placeholder-name {
+                                    em {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+  // if screen width is more than 900px, hide `No requirements` span
+  // show `No Requirements Remaining` span
+    @media screen and (min-width: 900px) {
+        .vloc-req-doc-container {
+            .vloc-req-doc-category-container {
+                .vloc-req-doc-category-info {
+                    .vloc-req-doc-files-count {
+                        .vloc-req-doc-no-files {
+                            display: none;
+                        }
+                    }
+                    .vloc-req-doc-requirements-count {
+                      
+                        .vloc-req-doc-requirements {
+                            display: none;
+                        }
+
+                        .vloc-req-doc-no-requirements {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // if screen width is 900px or less, hide `No Requirements Remaining` span
+    // show `No Requirements` span
+    @media screen and (max-width: 900px) {
+        .vloc-req-doc-container {
+            .vloc-req-doc-category-container {
+                .vloc-req-doc-category-info {
+                    .vloc-req-doc-files-count {
+                        .vloc-req-doc-no-files-yet {
+                            display: none;
+                        }
+                    }
+                    .vloc-req-doc-requirements-count {
+
+                        .vloc-req-doc-requirements-remaining {
+                            display: none;
+                        }
+
+                        .vloc-req-doc-no-requirements-remaining {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .vloc-req-doc-subtree-items-container {
+                .vloc-req-doc-subtree-item-container {
+                    .vloc-req-doc-child-dropzone-tree-item {
+                        .vloc-req-doc-dropzone-info-container {
+                            .vloc-req-doc-document-placeholder-name {
+                                font-size: 0.875rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,651 @@
+[
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AnnualPremium / PaymentFrequency",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AnnualPremium",
+                "dataType": "Number",
+                "text": "AnnualPremium",
+                "userDefined": true
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "PaymentFrequency",
+                "dataType": "Number",
+                "text": "PaymentFrequency",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneTimePayment",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneTimePayment",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "AnnualPremium"
+            },
+            {
+                "dataType": "Number",
+                "name": "PaymentFrequency"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "ModalPremium",
+            "dataType": "Number",
+            "name": "ModalPremium"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"ModalPremium\":\"ModalPremium\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "ModalPremium",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "ModalPremium",
+                "dataType": "Number",
+                "text": "ModalPremium",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneTimePayment",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneTimePayment",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "ModalPremium"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "AmountRequired",
+            "dataType": "Number",
+            "name": "AmountRequired"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"AmountRequired\":\"AmountRequired\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "ROUND ( ( PaymentAmount / AmountRequired ) , 0 )",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "ROUND",
+                "text": "ROUND"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "PaymentAmount",
+                "dataType": "Number",
+                "text": "PaymentAmount",
+                "userDefined": true
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "AmountRequired",
+                "dataType": "Number",
+                "text": "AmountRequired",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            },
+            {
+                "alias": ",",
+                "text": ","
+            },
+            {
+                "alias": "0",
+                "text": "0"
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneTimePayment",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneTimePayment",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "PaymentAmount"
+            },
+            {
+                "dataType": "Number",
+                "name": "AmountRequired"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "NumberofModes",
+            "dataType": "Number",
+            "name": "NumberofModes"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"NumberofModes\":\"NumberofModes\"}",
+        "%vlocity_namespace%__Sequence__c": 3,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "ADDMONTH ( BeginPaidtoDate , ( NumofDays * NumberofModes )",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "ADDMONTH",
+                "text": "ADDMONTH"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "BeginPaidtoDate",
+                "dataType": "Date",
+                "text": "BeginPaidtoDate",
+                "userDefined": true
+            },
+            {
+                "alias": ",",
+                "text": ","
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "NumofDays",
+                "dataType": "Number",
+                "text": "NumofDays",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "NumberofModes",
+                "dataType": "Number",
+                "text": "NumberofModes",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneTimePayment",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneTimePayment",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "BeginPolicyStatus",
+                "dataType": "Text",
+                "text": "BeginPolicyStatus",
+                "userDefined": true
+            },
+            {
+                "alias": "==",
+                "text": "=="
+            },
+            {
+                "alias": "2",
+                "text": "2"
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            },
+            {
+                "alias": "AND",
+                "text": "AND"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "PaymentAmount",
+                "dataType": "Number",
+                "text": "PaymentAmount",
+                "userDefined": true
+            },
+            {
+                "alias": ">=",
+                "text": ">="
+            },
+            {
+                "alias": "AmountRequiredtoActivate",
+                "dataType": "Number",
+                "text": "AmountRequiredtoActivate",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            },
+            {
+                "alias": "AND",
+                "text": "AND"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "PaymentAmount",
+                "dataType": "Number",
+                "text": "PaymentAmount",
+                "userDefined": true
+            },
+            {
+                "alias": "<=",
+                "text": "<="
+            },
+            {
+                "alias": "AmountDue",
+                "dataType": "Number",
+                "text": "AmountDue",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__Conditions__c": "( BeginPolicyStatus == 2 ) AND ( PaymentAmount >= AmountRequiredtoActivate ) AND ( PaymentAmount <= AmountDue )",
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Date",
+                "name": "BeginPaidtoDate"
+            },
+            {
+                "dataType": "Number",
+                "name": "NumofDays"
+            },
+            {
+                "dataType": "Number",
+                "name": "NumberofModes"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "PaidtoDate",
+            "dataType": "Date",
+            "name": "PaidtoDate"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"PaidtoDate\":\"PaidtoDate\"}",
+        "%vlocity_namespace%__Sequence__c": 4,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "ADDDAY ( PaidtoDate , 1 )",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "ADDDAY",
+                "text": "ADDDAY"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "PaidtoDate",
+                "dataType": "Date",
+                "text": "PaidtoDate",
+                "userDefined": true
+            },
+            {
+                "alias": ",",
+                "text": ","
+            },
+            {
+                "alias": "1",
+                "text": "1"
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneTimePayment",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneTimePayment",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Date",
+                "name": "PaidtoDate"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "InitiateGracePeriodDate",
+            "dataType": "Date",
+            "name": "InitiateGracePeriodDate"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"InitiateGracePeriodDate\":\"InitiateGracePeriodDate\"}",
+        "%vlocity_namespace%__Sequence__c": 5,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "ADDDAY ( InitiateGracePeriodDate , GracePeriod )",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "ADDDAY",
+                "text": "ADDDAY"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "InitiateGracePeriodDate",
+                "dataType": "Date",
+                "text": "InitiateGracePeriodDate",
+                "userDefined": true
+            },
+            {
+                "alias": ",",
+                "text": ","
+            },
+            {
+                "alias": "GracePeriod",
+                "dataType": "Number",
+                "text": "GracePeriod",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneTimePayment",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneTimePayment",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Date",
+                "name": "InitiateGracePeriodDate"
+            },
+            {
+                "dataType": "Number",
+                "name": "GracePeriod"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "EndofGraceperiodDate",
+            "dataType": "Date",
+            "name": "EndofGraceperiodDate"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"EndofGraceperiodDate\":\"EndofGraceperiodDate\"}",
+        "%vlocity_namespace%__Sequence__c": 6,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "0",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "0",
+                "text": "0"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneTimePayment",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneTimePayment",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "PaymentAmount",
+                "dataType": "Number",
+                "text": "PaymentAmount",
+                "userDefined": true
+            },
+            {
+                "alias": ">=",
+                "text": ">="
+            },
+            {
+                "alias": "AmountRequiredtoActivate",
+                "dataType": "Number",
+                "text": "AmountRequiredtoActivate",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__Conditions__c": "( PaymentAmount >= AmountRequiredtoActivate )",
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "PastDue",
+            "dataType": "Number",
+            "name": "PastDue"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"PastDue\":\"PastDue\"}",
+        "%vlocity_namespace%__Sequence__c": 7,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "1",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "1",
+                "dataType": "Number",
+                "text": "1"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneTimePayment",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneTimePayment",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "PolicyStatus",
+            "dataType": "Text",
+            "name": "PolicyStatus"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"PolicyStatus\":\"PolicyStatus\"}",
+        "%vlocity_namespace%__Sequence__c": 8,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "PaymentAmount - AmountRequired",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "PaymentAmount",
+                "dataType": "Number",
+                "text": "PaymentAmount",
+                "userDefined": true
+            },
+            {
+                "alias": "-",
+                "text": "-"
+            },
+            {
+                "alias": "AmountRequired",
+                "dataType": "Number",
+                "text": "AmountRequired",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "OneTimePayment",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "OneTimePayment",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/OneTimePayment",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "PaymentAmount"
+            },
+            {
+                "dataType": "Number",
+                "name": "AmountRequired"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "FinalAmountDue",
+            "dataType": "Number",
+            "name": "FinalAmountDue"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"FinalAmountDue\":\"FinalAmountDue\"}",
+        "%vlocity_namespace%__Sequence__c": 9,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

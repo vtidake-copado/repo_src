@@ -1,0 +1,181 @@
+{
+    "count": 29,
+    "href": "https://sandbox.api.kbb.com/idws/vehicle/models?api_key=d51c688d57a241b58a9e44b5d&vehicleClass=usedcar&ApplicationFilter=Consumer&makeid=5&yearid=&start=1&limit=50",
+    "items": [
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 15030,
+            "modelName": "1 Series"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 32913,
+            "modelName": "2 Series"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 12,
+            "modelName": "3 Series"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 32481,
+            "modelName": "4 Series"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 14,
+            "modelName": "5 Series"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 15,
+            "modelName": "6 Series"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 16,
+            "modelName": "7 Series"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 485,
+            "modelName": "8 Series"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 12543,
+            "modelName": "Alpina B7"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 32487,
+            "modelName": "i3"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 32701,
+            "modelName": "i8"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 18,
+            "modelName": "M"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 37080,
+            "modelName": "M2"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 17,
+            "modelName": "M3"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 32931,
+            "modelName": "M4"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 20,
+            "modelName": "M5"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 951,
+            "modelName": "M6"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 30203,
+            "modelName": "X1"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 39116,
+            "modelName": "X2"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 22,
+            "modelName": "X3"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 33599,
+            "modelName": "X4"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 21,
+            "modelName": "X5"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 30205,
+            "modelName": "X5 M"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 17704,
+            "modelName": "X6"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 30204,
+            "modelName": "X6 M"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 366,
+            "modelName": "Z3"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 19,
+            "modelName": "Z4"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 17701,
+            "modelName": "Z4 M"
+        },
+        {
+            "makeId": 5,
+            "makeName": "BMW",
+            "modelId": 325,
+            "modelName": "Z8"
+        }
+    ],
+    "limit": 50
+}

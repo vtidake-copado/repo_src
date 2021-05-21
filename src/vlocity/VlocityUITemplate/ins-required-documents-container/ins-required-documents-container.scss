@@ -1,0 +1,144 @@
+/** 
+ ** Reusing product attributes variables because it is in the InsProductModel datapack
+ ** and don't want to be redundant
+ **/
+ @import "ins-product-attributes-variables";
+
+.via-slds {
+    .vloc-req-doc-container {
+        max-width: 100%;
+
+        .vloc-req-doc-visibility-hidden {
+            visibility: hidden;
+        }
+
+        .vloc-req-doc-notification-container {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 250ms ease-in,
+                        visibility 0ms linear 250ms;
+
+            &.vloc-req-doc-show-notification {
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 250ms ease-in,
+                            visibility 0ms linear 0ms;
+            }
+        }
+
+        .vloc-req-doc-no-data-container {
+            width: 40%;
+            margin: 2rem auto;
+
+            .vloc-req-doc-create-category-btn {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+
+        .vloc-req-doc-communities-category-requirements-count {
+            position: absolute;
+            top: 0.25rem;
+            right: 0;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 1.25rem;
+            color: white;
+            font-size: 0.75rem;
+            background-color: $notify-danger;
+        }
+
+        .vloc-req-doc-communities-category-container {
+            .vloc-req-doc-communities-category-tab-item {
+                position: relative;
+
+                &.has-requirements-left {
+                    padding-right: 1.5rem;
+                }
+            }
+            .vloc-req-doc-communities-placeholder-wrapper {
+                display: none;
+
+                &.vloc-req-doc-communities-placeholder-wrapper-show {
+                    display: block;
+                }
+            }
+
+            .vloc-req-doc-communities-overflow-categories-container {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+
+                .vloc-req-doc-communities-category-requirements-count {
+                    position: relative;
+                    top: -0.35rem;
+                    margin-left: 0.1rem;
+                    display: inline-block;
+                }
+
+                .vloc-req-doc-communities-overflow-item {
+                    .vloc-req-doc-communities-category-requirements-count {
+                        margin-left: 0.25rem;
+                        top: auto;
+                    }
+
+                    &.vloc-is-active {
+                        a {
+                            font-weight: bold;
+                            background-color: #f3f2f2;
+                        }
+                    }
+                }
+            }
+
+            .vloc-req-doc-communities-category-mobile-select {
+                display: none;
+                max-width: 33.33%;
+                margin-left: 0.5rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .via-slds {
+        .vloc-req-doc-container {
+            .vloc-req-doc-communities-category-container-list {
+                display: none;
+            }
+            .vloc-req-doc-communities-category-container {
+                .vloc-req-doc-communities-category-mobile-select {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .via-slds {
+        .vloc-req-doc-container {
+            .vloc-req-doc-communities-category-container {
+                .vloc-req-doc-communities-category-mobile-select {
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .via-slds {
+        .vloc-req-doc-container {
+            .vloc-req-doc-communities-category-container {
+                .vloc-req-doc-communities-category-mobile-select {
+                    max-width: 100%;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+}

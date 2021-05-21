@@ -1,0 +1,55 @@
+<div class="vloc-ins-enr-sum-outer-container" ng-if="control.vlcSI[control.itemsKey]">
+    <div ng-if="!control.vlcSI[control.itemsKey][0].$$hashKey" ng-init="baseCtrl.setInsEnrSumData(control)"></div>
+    <div class="vloc-ins-enr-sum-container" ng-controller="insOsEnrolleeSummaryCtrl">
+        <div class="slds-clearfix nds-clearfix vloc-ins-enr-sum-product-container" ng-repeat="product in enrolledProducts" ng-init="onSelectItem(control, product, $index, this)" ng-class="{'vloc-ins-enr-sum-product-data-expanded': product.expandAttrs, 'more-than-three-attributes': summaryParentAttrs[product.ProductCode].length > 3}">
+            <div class="slds-clearfix nds-clearfix vloc-ins-enr-sum-product-left">
+                <div class="vloc-ins-enr-sum-product-image" ng-class="{'is-custom-image': product.ImageId}">
+                    <img ng-src="../resource/{{baseCtrl.$scope.nsPrefix}}InsResource/{{getImageNameFromType(product.Type__c)}}.svg" class="vloc-ins-enr-sum-product-custom-image" />
+                </div>
+                <h3 class="vloc-ins-enr-sum-mobile-show vloc-ins-enr-sum-product-type">{{product.Type__c}}</h3>
+            </div>
+            <div class="vloc-ins-enr-sum-product-right">
+                <div class="vloc-ins-enr-sum-product-top">
+                    <h3 class="vloc-ins-enr-sum-mobile-hide vloc-ins-enr-sum-product-type">{{product.Type__c}}</h3>
+                    <h2 class="vloc-ins-enr-sum-product-name">{{product.Name}}</h2>
+                    <h2 class="slds-truncate nds-truncate vloc-ins-enr-sum-product-description">{{product.Description}}</h2>
+                    <a href="javascript:void(0)" class="vloc-ins-enr-sum-product-show-more-details" ng-click="product.expandAttrs = !product.expandAttrs" ng-if="summaryParentAttrs[product.ProductCode].length >= 5">
+                        <span ng-if="!product.expandAttrs">Show all plan details</span>
+                        <span ng-if="product.expandAttrs">Show less plan details</span>
+                    </a>
+                </div>
+                <div class="vloc-ins-enr-sum-product-data-container" ng-class="{'vloc-ins-enr-sum-product-data-expanded': product.expandAttrs}" ins-summary-calc-height>
+                    <div class="slds-grid nds-grid vloc-ins-enr-sum-product-data vloc-ins-enr-sum-product-data-whos-covered">
+                        <div class="slds-size--2-of-5 slds-truncate slds-p-right--x-small nds-size--2-of-5 nds-truncate nds-p-right--x-small vloc-ins-enr-sum-product-attr-label">
+                            <span class="vloc-ins-enr-sum-premium-label">Who's Covered</span>
+                        </div>
+                        <div class="slds-size--3-of-5 nds-size--3-of-5 vloc-ins-enr-sum-product-attr-value">
+                            <span class="vloc-ins-enr-sum-premium-value">{{getWhosCovered(product)}}</span>
+                        </div>
+                    </div>
+                    <div class="slds-grid nds-grid vloc-ins-enr-sum-product-data">
+                        <div class="slds-size--2-of-5 slds-truncate slds-p-right--x-small nds-size--2-of-5 nds-truncate nds-p-right--x-small vloc-ins-enr-sum-product-attr-label">
+                            <span class="vloc-ins-enr-sum-premium-label">Monthly Premium</span>
+                        </div>
+                        <div class="slds-size--3-of-5 nds-size--3-of-5 vloc-ins-enr-sum-product-attr-value">
+                            <span class="vloc-ins-enr-sum-premium-value">{{product.Price | currency: currencyCode: 0}}</span>
+                        </div>
+                    </div>
+                    <div class="slds-grid nds-grid vloc-ins-enr-sum-product-data" ng-repeat="attribute in summaryParentAttrs[product.ProductCode]" ng-if="attribute.label && !attribute.hiddenByRule && attribute.inputType !== 'equalizer'" ng-hide="attribute.hidden">
+                        <div class="slds-size--2-of-5 slds-truncate slds-p-right--x-small nds-size--2-of-5 nds-truncate nds-p-right--x-small vloc-ins-enr-sum-product-attr-label">
+                            <span title="{{attribute.label}}">{{attribute.label}}</span>
+                        </div>
+                        <div class="slds-size--3-of-5 nds-size--3-of-5 vloc-ins-enr-sum-product-attr-value">
+                            <span ng-if="attribute.dataType === 'currency'">{{attribute.valueLabel | currency: currencyCode: 0}}</span>
+                            <span ng-if="attribute.dataType === 'percentage'">{{attribute.valueLabel}}%</span>
+                            <span ng-if="attribute.dataType !== 'currency' && attribute.dataType !== 'percentage'">{{attribute.valueLabel}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="vloc-ins-enr-sum-product-bottom vloc-ins-enr-sum-product-data-container">
+                    <a href="javascript:void(0)" class="vloc-ins-enr-sum-view-change-link ng-hide" ng-click="">View/change</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

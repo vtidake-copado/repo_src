@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Attribute Metadata --></label>
+        <name>vlocity_ins__AttributeMetadata</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Contract Term Admin --></label>
+        <name>vlocity_ins__ContractTermAdmin</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Insurance Product Admin --></label>
+        <name>vlocity_ins__InsuranceProductAdmin</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- ProductJsonAttribute --></label>
+        <name>vlocity_ins__ProductJsonAttribute</name>
+    </fieldSets>
+    <fields>
+        <label><!-- ACORD Element --></label>
+        <name>vlocity_ins__AcordElement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Added --></label>
+        <name>vlocity_ins__AddDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjustment Comments --></label>
+        <name>vlocity_ins__AttributeAdjustmentComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Adjustment Units --></label>
+        <name>vlocity_ins__AttributeAdjustmentUnits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Category Code --></label>
+        <name>vlocity_ins__AttributeCategoryCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Category --></label>
+        <name>vlocity_ins__AttributeCategoryId__c</name>
+        <relationshipLabel><!-- Attribute Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attribute Category Sub Type --></label>
+        <name>vlocity_ins__AttributeCategorySubType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Category --></label>
+        <name>vlocity_ins__AttributeCategory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Cloneable --></label>
+        <name>vlocity_ins__AttributeCloneable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Code --></label>
+        <name>vlocity_ins__AttributeCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Configurable --></label>
+        <name>vlocity_ins__AttributeConfigurable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Name Override --></label>
+        <name>vlocity_ins__AttributeDisplayNameOverride__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Display Name --></label>
+        <name>vlocity_ins__AttributeDisplayName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Display Sequence --></label>
+        <name>vlocity_ins__AttributeDisplaySequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Filterable --></label>
+        <name>vlocity_ins__AttributeFilterable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Group Type --></label>
+        <name>vlocity_ins__AttributeGroupType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute --></label>
+        <name>vlocity_ins__AttributeId__c</name>
+        <relationshipLabel><!-- Attribute Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attribute Name --></label>
+        <name>vlocity_ins__AttributeName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Code --></label>
+        <name>vlocity_ins__AttributeUniqueCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Category Code --></label>
+        <name>vlocity_ins__CategoryCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category Display Sequence --></label>
+        <name>vlocity_ins__CategoryDisplaySequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Category Name --></label>
+        <name>vlocity_ins__CategoryName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Configuration Detail --></label>
+        <name>vlocity_ins__ConfigurationDetail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Configuration Stages --></label>
+        <name>vlocity_ins__ConfigurationStages__c</name>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Custom Config UI Template --></label>
+        <name>vlocity_ins__CustomConfigUiTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data --></label>
+        <name>vlocity_ins__Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Picklist Value --></label>
+        <name>vlocity_ins__DefaultPicklistValueId__c</name>
+        <relationshipLabel><!-- Attribute Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category Display Sequence --></label>
+        <name>vlocity_ins__DisplaySequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Removed During --></label>
+        <name>vlocity_ins__EndStory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excluded Picklist Values --></label>
+        <name>vlocity_ins__ExcludedPicklistValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Format Mask --></label>
+        <name>vlocity_ins__FormatMask__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Key --></label>
+        <name>vlocity_ins__GlobalKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Rule --></label>
+        <name>vlocity_ins__HasRule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Help Text --></label>
+        <name>vlocity_ins__HelpText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__IsActiveAssignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Is Active --></label>
+        <name>vlocity_ins__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Configurable --></label>
+        <name>vlocity_ins__IsConfigurable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Dynamic --></label>
+        <name>vlocity_ins__IsDynamic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Eligibility Attribute --></label>
+        <name>vlocity_ins__IsEligibilityAttribute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Encrypted --></label>
+        <name>vlocity_ins__IsEncrypted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Hidden --></label>
+        <name>vlocity_ins__IsHidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Not Assetizable --></label>
+        <name>vlocity_ins__IsNotAssetizable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Not Translatable --></label>
+        <name>vlocity_ins__IsNotTranslatable__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsOverride --></label>
+        <name>vlocity_ins__IsOverride__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Driven --></label>
+        <name>vlocity_ins__IsQueryDriven__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating --></label>
+        <name>vlocity_ins__IsRatingAttribute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Read Only --></label>
+        <name>vlocity_ins__IsReadOnly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required --></label>
+        <name>vlocity_ins__IsRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax and Fee Rating Attribute --></label>
+        <name>vlocity_ins__IsTaxAndFeeRatingAttribute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lookup Filter --></label>
+        <name>vlocity_ins__LookupFilter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lookup Object --></label>
+        <name>vlocity_ins__LookupObjectId__c</name>
+        <relationshipLabel><!-- Attribute Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lookup Object Type --></label>
+        <name>vlocity_ins__LookupObjectTypeId__c</name>
+        <relationshipLabel><!-- Attribute Assignments (Lookup Object Type) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assigned To Object Id --></label>
+        <name>vlocity_ins__ObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned To Object --></label>
+        <name>vlocity_ins__ObjectLink__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned To Object Name --></label>
+        <name>vlocity_ins__ObjectType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Picklist --></label>
+        <name>vlocity_ins__PicklistId__c</name>
+        <relationshipLabel><!-- Attribute Assignments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Query Code --></label>
+        <name>vlocity_ins__QueryCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Label --></label>
+        <name>vlocity_ins__QueryLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Band Tier --></label>
+        <name>vlocity_ins__RateBandTier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating Input Mapping --></label>
+        <name>vlocity_ins__RatingInput__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating Output Mapping --></label>
+        <name>vlocity_ins__RatingOutput__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating Attributes Use --></label>
+        <name>vlocity_ins__RatingType__c</name>
+        <picklistValues>
+            <masterLabel>Input</masterLabel>
+            <translation><!-- Input --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Output</masterLabel>
+            <translation><!-- Output --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Removed --></label>
+        <name>vlocity_ins__RemoveDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Has Been Removed --></label>
+        <name>vlocity_ins__RemovedFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule --></label>
+        <name>vlocity_ins__RuleData__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Message --></label>
+        <name>vlocity_ins__RuleMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Added During --></label>
+        <name>vlocity_ins__StartStory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax and Fee Rating Input Mapping --></label>
+        <name>vlocity_ins__TaxAndFeeRatingInput__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax and Fee Rating Output Mapping --></label>
+        <name>vlocity_ins__TaxAndFeeRatingOutput__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax and Fee Rating Attributes Use --></label>
+        <name>vlocity_ins__TaxAndFeeRatingType__c</name>
+        <picklistValues>
+            <masterLabel>Input</masterLabel>
+            <translation><!-- Input --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Output</masterLabel>
+            <translation><!-- Output --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UI Display Type --></label>
+        <name>vlocity_ins__UIDisplayType__c</name>
+    </fields>
+    <fields>
+        <label><!-- UI Widget --></label>
+        <name>vlocity_ins__UIWidgetId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid Values Data --></label>
+        <name>vlocity_ins__ValidValuesData__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valid Values --></label>
+        <name>vlocity_ins__ValidValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Data Type --></label>
+        <name>vlocity_ins__ValueDataType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Decoder --></label>
+        <name>vlocity_ins__ValueDecoder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Description --></label>
+        <name>vlocity_ins__ValueDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Numeric Value --></label>
+        <name>vlocity_ins__ValueInNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value --></label>
+        <name>vlocity_ins__Value__c</name>
+    </fields>
+</CustomObjectTranslation>

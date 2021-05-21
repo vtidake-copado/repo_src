@@ -4,12 +4,12 @@
     <baseObject>FlowInterviewLog</baseObject>
     <category>other</category>
     <deployed>true</deployed>
-    <description>Determine qué flujos se ejecutan y cuánto emplean los usuarios para completar cada pantalla de flujo.</description>
+    <description>Find out which flows get executed and how long users take to complete each flow screen.</description>
     <join>
         <outerJoin>false</outerJoin>
         <relationship>FlowInterviewLogs</relationship>
     </join>
-    <label>Flujos de pantalla</label>
+    <label>Screen Flows</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
@@ -76,7 +76,7 @@
             <field>FlowNamespace</field>
             <table>FlowInterviewLog</table>
         </columns>
-        <masterLabel>Registros de entrevistas de flujo</masterLabel>
+        <masterLabel>Flow Interview Logs</masterLabel>
     </sections>
     <sections>
         <columns>
@@ -129,6 +129,6 @@
             <field>ElementDurationInMinutes</field>
             <table>FlowInterviewLog.FlowInterviewLogs</table>
         </columns>
-        <masterLabel>Entradas de registro de entrevistas de flujo</masterLabel>
+        <masterLabel>Flow Interview Log Entries</masterLabel>
     </sections>
 </ReportType>

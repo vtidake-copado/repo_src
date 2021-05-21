@@ -1,0 +1,48 @@
+<li class="slds-col slds-max-small-size_1-of-1 slds-has-flexi-truncate vloc-compare-plans-col vloc-compare-plans-plan-col vloc-carousel-item" ng-repeat="plan in $root.vlocInsProdSelectItem.comparisonData.plans" ng-if="plan.checked">
+    <div ng-class="{'vloc-compare-plans-cell-strong': plan.format === 1, 'vloc-compare-plans-cell-normal': planData.format === 2, 'vloc-compare-plans-cell-header': plan.Name, 'vloc-compare-plans-cell-category': planData.cellType === 'category', 'vloc-compare-plans-cell-attribute': planData.cellType === 'attribute'}">
+        <div class="vloc-compare-plans-cell vloc-compare-plans-cell-header">
+            <div ng-if="plan.Name" class="vloc-compare-plans-plan-info slds-is-relative">
+                <p class="slds-text-heading_medium slds-m-bottom_small vloc-compare-plans-plan-name">{{plan.Name}}</p>
+                <div class="vloc-compare-plans-plan-metadata-wrapper">
+                    <p class="slds-text-heading_small slds-m-bottom_xx-small vloc-compare-plans-plan-price">
+                        {{plan.Price | currency}}
+                    </p>
+                    <p class="slds-m-bottom_small slds-truncate vloc-compare-plans-plan-subtitle ng-scope ng-binding" data-animation="am-fade-and-scale"
+                        bs-tooltip="plan.Description">{{plan.Description}}</p>
+                </div>
+                <button class="vloc-compare-plan-select-btn vloc-compare-plan-select-btn-{{$index}} slds-button slds-button_brand slds-size_1-of-1"
+                    ng-disabled="plan.isReplace" ng-click="$root.vlocInsProdSelectItem.addItem(plan)">
+                    <span ng-if="!plan.isReplace">Select</span>
+                    <span ng-if="plan.isReplace">Currently Selected Plan</span>
+                </button>
+            </div>
+        </div>
+        <div ng-repeat="cell in $root.vlocInsProdSelectItem.comparisonData.attrList | orderBy : 'displaySequence'">
+            <div class="vloc-compare-plans-cell ng-scope vloc-compare-plans-cell-strong vloc-compare-plans-cell-category slds-text-title_caps">
+                <span class="vloc-compare-plans-mobile vloc-compare-plans-mobile-label slds-truncate">{{cell.Name}}</span>
+            </div>
+            <span class="vloc-compare-plans-mobile vloc-compare-plans-mobile-label slds-truncate">{{attr.label}}</span>
+            <div class="vloc-compare-plans-cell attribute vloc-compare-plans-cell-strong" ng-repeat="attr in cell.attrs | orderBy : 'displaySequence'">
+                <span class="vloc-compare-plans-value vloc-compare-plans-value-text" ng-hide="plan.allAttrs[cell.Name + ': ' + attr.label].ishidden || plan.allAttrs[cell.Name + ': ' + attr.label].hidden || plan.allAttrs[cell.Name + ': ' + attr.label].hiddenByRule">
+                    <span ng-if="plan.allAttrs[cell.Name + ': ' + attr.label].dataType === 'currency'">
+                        {{plan.allAttrs[cell.Name + ': ' + attr.label].userValues | currency}}
+                    </span>
+                    <span ng-if="plan.allAttrs[cell.Name + ': ' + attr.label].dataType === 'datetime'">
+                        {{plan.allAttrs[cell.Name + ': ' + attr.label].userValues | date:'MM/dd/yyyy @ h:mma'}}
+                    </span>
+                    <span ng-if="plan.allAttrs[cell.Name + ': ' + attr.label].dataType === 'percentage'">
+                        {{plan.allAttrs[cell.Name + ': ' + attr.label].userValues}}%
+                    </span>
+                    <span ng-if="plan.allAttrs[cell.Name + ': ' + attr.label].dataType === 'date'">
+                        {{plan.allAttrs[cell.Name + ': ' + attr.label].userValues | date:'MM/dd/yyyy'}}
+                    </span>
+                    <span ng-if="plan.allAttrs[cell.Name + ': ' + attr.label].dataType  !== 'datetime' && plan.allAttrs[cell.Name + ': ' + attr.label].dataType !== 'currency' && plan.allAttrs[cell.Name + ': ' + attr.label].dataType  !== 'date' && plan.allAttrs[cell.Name + ': ' + attr.label].dataType  !== 'percentage'">
+                        {{plan.allAttrs[cell.Name + ': ' + attr.label].userValues}}
+                    </span>
+                </span>
+                <span class="vloc-compare-plans-value vloc-compare-plans-value-text" ng-show="plan.allAttrs[cell.Name + ': ' + attr.label].ishidden || plan.allAttrs[cell.Name + ': ' + attr.label].hidden || plan.allAttrs[cell.Name + ': ' + attr.label].hiddenByRule">--</span>
+                <span class="vloc-compare-plans-value vloc-compare-plans-value-text" ng-if="!plan.allAttrs[cell.Name + ': ' + attr.label].userValues && plan.allAttrs[cell.Name + ': ' + attr.label].userValues !== 0">--</span>
+            </div>
+        </div>
+    </div>
+</li>

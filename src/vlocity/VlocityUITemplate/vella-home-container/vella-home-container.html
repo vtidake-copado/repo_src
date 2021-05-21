@@ -1,0 +1,49 @@
+<div class="vella-main-wrapper vella-page-wrapper" ng-class="{'vella-spinner-active': !$root.isLoaded}" ng-controller="vellaHomeController">
+    <div class="slds-spinner_container vella-spinner" ng-class="{'vella-spinner-active': !$root.isLoaded}">
+        <div role="status" class="slds-spinner slds-spinner--medium slds-spinner--inverse">
+            <span class="slds-assistive-text">Loading</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+    <div class="slds-notify_container vella-notification" ng-class="{'vella-notification-visible': $root.notification.active}">
+        <div class="slds-notify slds-notify--toast" role="alert" ng-class="{'slds-theme--success': $root.notification.type === 'Success', 'slds-theme--warning': $root.notification.type === 'Warning', 'slds-theme--error': $root.notification.type === 'Error'}">
+            <span class="slds-assistive-text">{{$root.notification.type}}</span>
+            <button class="slds-button slds-notify__close slds-button--icon-inverse" title="Close">
+                <slds-button-svg-icon size="'large'" sprite="'utility'" icon="'close'"></slds-button-svg-icon>
+                <span class="slds-assistive-text">Close</span>
+            </button>
+            <div class="slds-notify__content slds-grid">
+                <slds-svg-icon size="'small'" sprite="'utility'" icon="'warning'" extra-classes="'slds-m-right--small slds-col slds-no-flex'" ng-if="$root.notification.type === 'Error'"></slds-svg-icon>
+                <slds-svg-icon size="'small'" sprite="'utility'" icon="'notification'" extra-classes="'slds-m-right--small slds-col slds-no-flex'" ng-if="$root.notification.type === 'Success'"></slds-svg-icon>
+                <div class="slds-col slds-align-middle">
+                    <h2 class="slds-text-heading--small">{{$root.notification.message}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="vella-name">vella</h1>
+    <form class="vella-intelligence-help-form" ng-submit="launchVellaIntelligence(vellaIntelligenceHelp)">
+        <input type="text" class="vella-intelligence-help-input" placeholder="What can I help you with?" ng-model="vellaIntelligenceHelp"></input>
+        <button type="button" class="vella-intelligence-help-clear slds-input__icon slds-input__icon--right slds-button slds-button--icon" ng-class="{'vella-intelligence-help-clear-active': vellaIntelligenceHelp}" ng-click="vellaIntelligenceHelp = ''">
+            <slds-button-svg-icon size="'large'" sprite="'utility'" icon="'clear'"></slds-button-svg-icon>
+            <span class="slds-assistive-text">Clear</span>
+        </button>
+    </form>
+    <div class="vella-inner-block-container">
+        <h2 class="vella-welcome">Hi {{$root.accountFirstName}}, here's what's covered:</h2>
+        <div class="slds-grid slds-wrap vella-zone-top vella-home-circle-main-wrapper vella-in-force-policies-main-wrapper">
+            <vloc-card ng-repeat="card in data.zones.top.cards" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="slds-size--1-of-2 vella-home-circle-card vella-in-force-policy-card" ng-hide="!card.obj.Type || card.obj.Type === 'Device'">
+            </vloc-card>
+        </div>
+        <div class="vella-zone-middle vella-home-circle-main-wrapper">
+            <h3 class="vella-whats-not-covered">Here is what is not covered:</h3>
+            <vloc-card ng-repeat="card in data.zones.middle.cards" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="vella-home-circle-card vella-insurable-items-card">
+            </vloc-card>
+        </div>
+        <div class="vella-zone-bottom vella-discovery-questions-main-wrapper slds-grid slds-wrap" ng-if="$root.accountId">
+            <vloc-card ng-repeat="card in data.zones.bottom.cards" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="slds-size--1-of-2 vella-discovery-questions-card">
+            </vloc-card>
+        </div>
+    </div>
+</div>

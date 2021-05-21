@@ -1,0 +1,44 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "endDate",
+        "%vlocity_namespace%__GlobalKey__c": "cff48538-6a9a-e808-8b1a-ff94e49e8234",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "records:EffectiveEnd",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "Ins_TransforPolicyDetails_CancelPolicyOSCustom220",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "Ins_TransforPolicyDetails_CancelPolicyOS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "originalPremium",
+        "%vlocity_namespace%__GlobalKey__c": "ae0a6755-b76b-496f-2484-e67f29ff1dbd",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "records:%vlocity_namespace%__TotalAmount__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "Ins_TransforPolicyDetails_CancelPolicyOSCustom6135",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "Ins_TransforPolicyDetails_CancelPolicyOS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "startDate",
+        "%vlocity_namespace%__GlobalKey__c": "5082ac94-fea3-d048-e5d5-95e9d7fabdba",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "records:EffectiveStart",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "Ins_TransforPolicyDetails_CancelPolicyOSCustom4314",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "Ins_TransforPolicyDetails_CancelPolicyOS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

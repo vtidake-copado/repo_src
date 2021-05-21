@@ -1,0 +1,218 @@
+// Variables:
+$royal-blue: #0070D2;
+$light-blue-bg: #F8FBFE;
+$text-navy: #00396b;
+$dark-navy: #19355E;
+$attr-label: #16325C;
+$border-color: #d8dde6;
+
+.via-nds {
+    .nds-select{
+        padding-right: 1.75rem;
+    }
+    .vloc-ins-attribute-component-container {
+        min-height: 2.25rem;
+        margin: 0 2rem 0 4.5rem;
+
+        .vloc-ins-attribute-component {
+            position: relative;
+
+            .vloc-ins-attribute-component-name {
+                line-height: 2rem;
+                font-size: 1rem;
+                padding-right: 0.5rem;
+                color: $text-navy;
+            }
+
+            .vloc-ins-attribute-component-messages-message {
+                font-size: 0.75rem;
+                white-space: normal;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 1rem;
+                }
+
+                &.vloc-ins-attribute-component-messages-message-warn {
+                    color: #ffb75d;
+                }
+
+                &.vloc-ins-attribute-component-messages-message-error {
+                    color: #c23934;
+                }
+
+                &.vloc-ins-attribute-component-messages-message-recommendation {
+                    color: #1589ee;
+                }
+            }
+        }
+
+        .vloc-ins-attribute-component-limit {
+            .vloc-ins-coverages-attribute-readonly {
+                line-height: 2rem;
+                color: $text-navy;
+            }
+        }
+
+        .vloc-ins-attribute-component-limit,
+        .vloc-ins-attribute-component-premium {
+            > div:not(.nds-dropdown):not(.nds-form-element) {
+                width: 100%;
+                height: 100%;
+                padding: 0.125rem 0;
+
+                &.nds-picklist {
+                    z-index: 999;
+                }
+
+                &.vloc-ins-attribute-component-limit-multiselect-checkbox {
+                    padding-bottom: 0.5rem;
+                }
+            }
+
+            .nds-dropdown.vloc-ins-attribute-component-dropdown-items:not(.nds-datepicker):not(.nds-timepicker) {
+                height: auto;
+                max-width: 15rem;
+                min-width: 3rem;
+                width: 100%;
+
+                .vloc-ins-attribute-component-dropdown-items-item {
+                    > .vloc-ins-attribute-component-dropdown-items-link {
+                        &.not-checked {
+                            .nds-icon {
+                                opacity: 0;
+                            }
+                        }
+                    }
+
+                    &.ins-rule-set-value {
+                        background-color: #ecebea;
+
+                        > .vloc-ins-attribute-component-dropdown-items-link {
+                            background-color: #ecebea;
+                            cursor: not-allowed;
+
+                            &:hover {
+                                background-color: #ecebea;
+                            }
+
+                            .nds-icon {
+                                fill: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .vloc-ins-attribute-component-limit-input {
+            .vloc-ins-attribute-component-limit {
+                .nds-form-element {
+                    .nds-form-element__control {
+                        &.nds-picklist__input {
+                            width: auto;
+                        }
+
+                        &.nds-input-has-icon--right {
+                            .nds-button {
+                                right: 0.5rem;
+
+                                .nds-button__icon {
+                                    right: 0;
+                                    fill: $attr-label;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .nds-form-element__addon {
+                height: 2rem;
+                line-height: 2rem;
+                border: 1px solid #cfd7e6;
+                min-width: 2rem;
+                max-width: 3.5rem;
+                padding: 0 0.25rem;
+                margin: 0;
+                text-align: center;
+                border-right: none;
+                border-top-left-radius: 0.25rem;
+                border-bottom-left-radius: 0.25rem;
+                font-size: .75rem;
+
+                &.vloc-ins-attribute-component-datatype-percentage {
+                    border: 1px solid #cfd7e6;
+                    border-left: none;
+                    border-radius: 0;
+                    border-top-right-radius: 0.25rem;
+                    border-bottom-right-radius: 0.25rem;
+                }
+
+                &.disabled {
+                    background-color: #e0e5ee;
+                    border-color: transparent;
+                }
+            }
+            input[type=text].ng-dirty.ng-valid.ng-not-empty {
+                border-color: #cfd7e6;
+            }
+            .layout-newport {
+                .nds-form-element__addon {
+                    &.nds-form-element__addon {
+                        padding-bottom: 1.9rem;
+                        border-bottom: 1px solid #dddbda;
+                        border-radius: 0;
+                        top: 0;
+                        left: 0;
+                        border: none;
+                        height: calc(2rem - 2px);
+                        line-height: 1.88rem;
+                    }
+
+                    &.vloc-ins-attribute-component-datatype-percentage {
+                        &.nds-form-element__addon {
+                            left: auto;
+                            right: 0;
+                            border: none;
+                        }
+                    }
+                }
+                .nds-input {
+                    padding-left: 2rem;
+                }
+            }
+            .vloc-ins-attribute-component-input-currency {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+            .vloc-ins-attribute-component-input-percentage {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            input[type=text].ng-dirty.ng-valid.ng-not-empty {
+                border-color: #cfd7e6;
+            }
+        }
+
+        .vloc-ins-attribute-component-limit-range-slider {
+            > div:not(.nds-dropdown) {
+                padding-top: 0.25rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .via-nds{
+        .vloc-ins-attribute-component-container {
+            margin: 0;
+            .vloc-ins-attribute-component {
+                .vloc-ins-attribute-component-name {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "%vlocity_namespace%__Author__c": "Justus",
+    "%vlocity_namespace%__CustomJavascript__c": "ins-os-coverage-component-DEMO.js",
+    "%vlocity_namespace%__Definition__c": "",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__DisplayOn__c": "",
+    "%vlocity_namespace%__ExternalID__c": "ins-os-coverage-component-DEMO/1/Justus/1534300576915",
+    "%vlocity_namespace%__HTML__c": "ins-os-coverage-component-DEMO.html",
+    "%vlocity_namespace%__ParentID__c": "ins-os-coverage-component/1/Vlocity/1529006927169",
+    "%vlocity_namespace%__SampleJson__c": "ins-os-coverage-component-DEMO_Sample.json",
+    "%vlocity_namespace%__Sass__c": "ins-os-coverage-component-DEMO.scss",
+    "%vlocity_namespace%__Type__c": "OmniScript Selectable Items",
+    "%vlocity_namespace%__Version__c": 1,
+    "Name": "ins-os-coverage-component-DEMO",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUITemplate__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUITemplate__c/ins-os-coverage-component-DEMO"
+}

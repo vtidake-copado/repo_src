@@ -1,0 +1,25 @@
+{
+    "%vlocity_namespace%__AdditionalInformation__c": "Given an Authentication Key, a VehicleId, a Year, a MakeId, a ModelId, a Trim Id, and a Mileage, this procedure will return a list of valuations by price type (base retail, retail, trade in, and used car fair price).",
+    "%vlocity_namespace%__CustomJavaScript__c": "KBB_GetValuationSummaries_SampleInput.json",
+    "%vlocity_namespace%__DisableMetadataCache__c": false,
+    "%vlocity_namespace%__ElementTypeToHTMLTemplateList__c": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "%vlocity_namespace%__Element__c": [
+        "KBB_GetValuationSummaries_Element_GetVehicleId.json",
+        "KBB_GetValuationSummaries_Element_CreateGetValuationsRequest.json",
+        "KBB_GetValuationSummaries_Element_GetVehicleValuations.json",
+        "KBB_GetValuationSummaries_Element_GetValuationsFromResponse.json",
+        "KBB_GetValuationSummaries_Element_ReturnListOfValuations.json"
+    ],
+    "%vlocity_namespace%__IsLwcEnabled__c": false,
+    "%vlocity_namespace%__IsProcedure__c": true,
+    "%vlocity_namespace%__IsReusable__c": false,
+    "%vlocity_namespace%__Language__c": "Procedure",
+    "%vlocity_namespace%__ProcedureKey__c": "KBB_GetValuationSummaries",
+    "%vlocity_namespace%__PropertySet__c": "KBB_GetValuationSummaries_PropertySet.json",
+    "%vlocity_namespace%__SubType__c": "GetValuationSummaries",
+    "%vlocity_namespace%__Type__c": "KBB",
+    "Name": "KBBGetValuationSummaries",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OmniScript__c/KBB/GetValuationSummaries/Procedure"
+}

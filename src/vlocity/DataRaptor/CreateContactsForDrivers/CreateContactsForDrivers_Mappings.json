@@ -1,0 +1,73 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Contact",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "%vlocity_namespace%__Gender__c",
+        "%vlocity_namespace%__GlobalKey__c": "8e9e9ae9-9e6a-2533-f315-848793f55b8b",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "insuredItems:Driver:GENDER",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateContactsForDriversCustom4741",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "CreateContactsForDrivers",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Contact",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "AccountId",
+        "%vlocity_namespace%__GlobalKey__c": "fd4bf3a1-6ae5-2810-dba2-fbb835a12b87",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Step2:SelectableItems1:accountId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateContactsForDriversCustom1772",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "CreateContactsForDrivers",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Contact",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "FirstName",
+        "%vlocity_namespace%__GlobalKey__c": "f0324486-72ad-b68c-b55e-0db25aeec2b0",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "insuredItems:Driver:FN",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateContactsForDriversCustom1574",
+        "%vlocity_namespace%__UpsertKey__c": true,
+        "Name": "CreateContactsForDrivers",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__ConfigurationValue__c": "FAKEMAPPING",
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Contact",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Id",
+        "%vlocity_namespace%__FilterOperator__c": "=",
+        "%vlocity_namespace%__GlobalKey__c": "86febd3d-3978-f527-19be-87970127b8fb",
+        "%vlocity_namespace%__IsDisabled__c": true,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateContactsForDriversCustom7043",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "CreateContactsForDrivers",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "Contact",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "LastName",
+        "%vlocity_namespace%__GlobalKey__c": "755e9a78-5ea5-4334-8172-a8403aa01eaf",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "insuredItems:Driver:LN",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "CreateContactsForDriversCustom8274",
+        "%vlocity_namespace%__UpsertKey__c": true,
+        "Name": "CreateContactsForDrivers",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

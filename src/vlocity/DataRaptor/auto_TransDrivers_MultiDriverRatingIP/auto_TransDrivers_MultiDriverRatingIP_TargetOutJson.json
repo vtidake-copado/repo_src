@@ -1,0 +1,24 @@
+{
+    "AUTO": {
+        "AUTO.instanceKey": "Text",
+        "carAltFuel": "Text",
+        "carBrake": "Text",
+        "carStability": "Text",
+        "carTheft": "Text",
+        "carValue": "Text",
+        "carYear": "Text",
+        "dedCCD": "Text",
+        "dedCOLL": "Text",
+        "limitBI": "Text",
+        "limitMED": "Text",
+        "limitPD": "Text",
+        "limitUM": "Text",
+        "parentProdKey": "Text",
+        "productKey": "Text",
+        "rateDriver-UM": "Text",
+        "ratedDriver-BIPD": "Text",
+        "ratedDriver-CCD": "Text",
+        "ratedDriver-COLL": "Text",
+        "ratedDriver-MED": "Text"
+    }
+}

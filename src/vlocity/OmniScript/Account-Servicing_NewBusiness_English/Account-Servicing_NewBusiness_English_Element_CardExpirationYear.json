@@ -1,0 +1,92 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "New Business Account",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Account Servicing/NewBusiness/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "New Business Account",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Account Servicing/NewBusiness/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "newAccount",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Account Servicing/NewBusiness/English/newAccount",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "newAccount",
+    "%vlocity_namespace%__ParentElementType__c": "Step",
+    "%vlocity_namespace%__PropertySet__c": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 2,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "help": false,
+        "helpText": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Exp Year",
+        "optionSource": {
+            "source": "%vlocity_namespace%__PaymentMethod__c.%vlocity_namespace%__ExpirationMonth__c",
+            "type": ""
+        },
+        "options": [
+            {
+                "name": "2017",
+                "value": "2017"
+            },
+            {
+                "name": "2018",
+                "value": "2018"
+            },
+            {
+                "name": "2019",
+                "value": "2019"
+            },
+            {
+                "name": "2020",
+                "value": "2020"
+            },
+            {
+                "name": "2021",
+                "value": "2021"
+            },
+            {
+                "name": "2022",
+                "value": "2022"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "required": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Credit Card",
+                        "field": "MethodType"
+                    }
+                ]
+            }
+        },
+        "showInputWidth": true
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": true,
+    "%vlocity_namespace%__Type__c": "Select",
+    "Name": "CardExpirationYear",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Account Servicing/NewBusiness/English/CardExpirationYear"
+}

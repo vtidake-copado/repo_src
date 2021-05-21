@@ -1,0 +1,79 @@
+<div class="slds-tree_container slds-p-bottom_small vloc-req-doc-container" role="application" ng-init="importedScope.insReqDocInit(records)">
+    <div class="slds-notify_container slds-m-top_large vloc-req-doc-notification-container" ng-class="{'vloc-req-doc-show-notification': $root.insReqDocNotification.show}">
+        <div class="slds-notify slds-notify_toast slds-theme_{{$root.insReqDocNotification.theme}}" role="alert">
+            <span class="slds-assistive-text">{{$root.insReqDocNotification.type}}</span>
+            <span class="slds-icon_container slds-icon-utility-success slds-m-right_small slds-no-flex slds-align-top" title="{{$root.insReqDocNotification.type}}">
+                <slds-svg-icon sprite="'utility'" icon="$root.insReqDocNotification.type" size="'small'" extra-classes="'slds-m-right_small slds-no-flex slds-align-top'"></slds-svg-icon>
+            </span>
+            <div class="slds-notify__content">
+                <h2 class="slds-text-heading_small" ng-bind-html="$root.insReqDocNotification.message"></h2>
+            </div>
+            <button class="slds-button slds-button_icon slds-notify__close slds-button_icon-inverse" title="Close" ng-click="$root.insReqDocNotification.show = false">
+                <slds-button-svg-icon sprite="'utility'" icon="'close'" size="'large'"></slds-button-svg-icon>
+                <span class="slds-assistive-text">{{ ::importedScope.customLabels.Close }}</span>
+            </button>
+        </div>
+    </div>
+    <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert" ng-if="!records.records && importedScope.params.lightningExperience === 'true'">
+        <span class="slds-assistive-text">warning</span>
+        <h2>{{ ::importedScope.customLabels.InsAssetNoCategories }} </h2>
+    </div>
+    <form class="vloc-req-doc-no-data-container" ng-submit="importedScope.createDocumentPlaceholder()" ng-if="!records.records && importedScope.params.lightningExperience === 'true'" ng-init="importedScope.getTrailingDocPlaceholderFieldList()">
+        <div class="slds-form slds-form_compound">
+            <fieldset class="slds-form-element">
+                <div class="slds-form-element__group">
+                    <div class="slds-form-element__row">
+                        <div class="slds-form-element slds-size_3-of-4" ng-class="{'slds-has-error': importedScope.newCategoryNameError}">
+                            <label class="slds-form-element__label" for="input-new-category-name">{{ ::importedScope.customLabels.InsAssetCategoryName }}</label>
+                            <input type="text" id="input-new-category-name" class="slds-input" placeholder="{{ ::importedScope.customLabels.InsAssetEnterCategoryName }}" ng-model="importedScope.newCategoryName" aria-describedby="category-error-message">
+                            <div id="category-error-message" class="slds-form-element__help" ng-show="importedScope.newCategoryNameError">{{ ::importedScope.customLabels.InsAssetRequiredField }}</div>
+                        </div>
+                        <div class="slds-form-element slds-size_1-of-4 slds-is-relative">
+                            <label class="slds-form-element__label vloc-req-doc-visibility-hidden" for="input-new-category-name">CreateCategory</label>
+                            <button type="submit" class="slds-button slds-button_brand vloc-req-doc-create-category-btn">{{ ::importedScope.customLabels.Create }}</button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </form>
+    <ul class="slds-tree" role="tree" aria-labelledby="treeheading" ng-model="importedScope.placeholdersAccordion.activePlaceholders" data-allow-multiple="true" bs-collapse ng-if="records.records && importedScope.params.lightningExperience === 'true'">
+        <li vloc-card ng-model="card" data="card" records="records" index="{{$index}}" ctrl="insRequiredDocumentsCtrl" id="tree0-node{{$index}}" class="vloc-req-doc-placeholder-wrapper" role="treeitem" aria-level="1" aria-expanded="false" ng-repeat="card in cards | orderBy: 'displaySequence'" ng-class="{'vloc-req-doc-placeholder-selected': importedScope.placeholdersAccordion.activePlaceholders.indexOf($index) > -1}"></li>
+    </ul>
+    <div class="slds-tabs_default vloc-req-doc-communities-category-container" ng-if="records.records && (records.categoryMetadata.categories.length + records.categoryMetadata.overflowCategories.length) === records.totalSize && importedScope.params.lightningExperience === 'false'" ng-init="importedScope.communityTabs.currentId = records.categoryMetadata.categories[0].Id">
+        <ul class="slds-tabs_default__nav slds-is-relative vloc-req-doc-communities-category-container-list" role="tablist">
+            <li class="slds-tabs_default__item vloc-req-doc-communities-category-tab-item" title="Item One" role="presentation" ng-class="{'slds-is-active': importedScope.communityTabs.currentId === category.Id, 'has-requirements-left': category.requirementsCount}" ng-repeat="category in records.categoryMetadata.categories | orderBy: 'displaySequence'" ng-click="importedScope.communityTabs.currentId = category.Id; records.categoryMetadata.overflowItemSelected = false">
+                <a class="slds-tabs_default__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-{{$index + 1}}" id="tab-default-{{$index + 1}}__item">{{category.name}}</a>
+                <span class="vloc-req-doc-communities-category-requirements-count" ng-if="category.requirementsCount">{{category.requirementsCount}}</span>
+            </li>
+            <li class="slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open slds-tabs_default__item slds-tabs__item_overflow vloc-req-doc-communities-overflow-categories-container" title="More tabs" role="presentation" ng-if="records.categoryMetadata.overflowCategories.length" ng-class="{'slds-is-active': importedScope.communityTabs.overflowOpen || records.categoryMetadata.overflowItemSelected}" ins-dropdown-handler="importedScope.communityTabs.overflowOpen = !importedScope.communityTabs.overflowOpen">
+                <a class="slds-tabs_default__link" href="javascript:void(0);" aria-haspopup="true">
+                    <span class="slds-truncate" title="More tabs">More
+                        <span class="slds-assistive-text">tabs</span>
+                    </span>
+                    <span class="vloc-req-doc-communities-category-requirements-count" ng-if="records.categoryMetadata.overflowRequirements">{{records.categoryMetadata.overflowRequirements}}</span>
+                    <slds-button-svg-icon sprite="'utility'" icon="'down'" size="'x-small'" extra-classes="'slds-button__icon_x-small'"></slds-button-svg-icon>
+                </a>
+                <div class="slds-dropdown slds-dropdown_right" ng-show="importedScope.communityTabs.overflowOpen">
+                    <ul class="slds-dropdown__list slds-dropdown_length-with-icon-10 vloc-req-doc-communities-overflow-items-container" role="menu">
+                        <li class="slds-dropdown__item vloc-req-doc-communities-overflow-item" role="presentation" ng-repeat="overflowCategory in records.categoryMetadata.overflowCategories | orderBy: 'displaySequence'" ng-class="{'vloc-is-active': importedScope.communityTabs.currentId === overflowCategory.Id}" ng-click="importedScope.communityTabs.currentId = overflowCategory.Id; records.categoryMetadata.overflowItemSelected = true">
+                            <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                                <span class="slds-truncate">{{overflowCategory.name}}</span>
+                                <span class="vloc-req-doc-communities-category-requirements-count" ng-if="overflowCategory.requirementsCount">{{overflowCategory.requirementsCount}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div class="slds-form-element vloc-req-doc-communities-category-mobile-select">
+            <label class="slds-form-element__label" for="mobile-select-category">{{ ::importedScope.customLabels.InsAssetSelectCategory }}</label>
+            <div class="slds-form-element__control">
+                <div class="slds-select_container">
+                    <select class="slds-select" id="mobile-select-category" ng-model="importedScope.communityTabs.currentId" ng-options="value.Id as value.mobileName for value in records.categoryMetadata.allCategories"></select>
+                </div>
+            </div>
+        </div>
+        <vloc-card ng-model="card" data="card" records="records" index="{{$index}}" ctrl="insRequiredDocumentsCtrl" id="tab-default-{{$index + 1}}" class="slds-tabs_default__content vloc-req-doc-communities-placeholder-wrapper" role="tabpanel" aria-labelledby="tab-default-{{$index + 1}}__item" ng-repeat="card in cards | orderBy: 'displaySequence'" ng-class="{'vloc-req-doc-communities-placeholder-wrapper-show': importedScope.communityTabs.currentId === card.obj.Id}"></vloc-card>
+    </div>
+</div>

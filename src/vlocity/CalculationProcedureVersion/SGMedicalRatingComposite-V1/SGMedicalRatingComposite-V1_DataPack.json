@@ -1,0 +1,32 @@
+{
+    "%vlocity_namespace%__ApplicableObject__c": "",
+    "%vlocity_namespace%__CalculationProcedureId__c": {
+        "Name": "SGMedicalRatingComposite",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+    },
+    "%vlocity_namespace%__CalculationProcedureId__r.Name": "SGMedicalRatingComposite",
+    "%vlocity_namespace%__CalculationProcedureStep__c": "SGMedicalRatingComposite-V1_Steps.json",
+    "%vlocity_namespace%__CalculationProcedureVariable__c": "SGMedicalRatingComposite-V1_Variables.json",
+    "%vlocity_namespace%__Constants__c": [
+    ],
+    "%vlocity_namespace%__CurrentStatus__c": "Active",
+    "%vlocity_namespace%__EnableLooping__c": false,
+    "%vlocity_namespace%__EndDateTime__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "SGMedicalRatingComposite V1",
+    "%vlocity_namespace%__InputBundleId__c": "",
+    "%vlocity_namespace%__LastSimulationInput__c": "{\"groupPremiumAgeRated\":\"938\",\"empFamilyCount\":\"4\",\"empChildCount\":\"3\",\"empSpouseCount\":\"2\",\"empOnlyCount\":\"1\",\"ProductSubtype\":\"QHP\"}",
+    "%vlocity_namespace%__LoopingSpecification__c": "",
+    "%vlocity_namespace%__OutputBundleId__c": "",
+    "%vlocity_namespace%__PostProcessorClass__c": "",
+    "%vlocity_namespace%__PreProcessorClass__c": "",
+    "%vlocity_namespace%__Priority__c": 1,
+    "%vlocity_namespace%__StartDateTime__c": "2018-11-20T23:23:00.000Z",
+    "%vlocity_namespace%__Variables__c": "",
+    "%vlocity_namespace%__VersionNumber__c": 1,
+    "Name": "SGMedicalRatingComposite V1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SGMedicalRatingComposite"
+}

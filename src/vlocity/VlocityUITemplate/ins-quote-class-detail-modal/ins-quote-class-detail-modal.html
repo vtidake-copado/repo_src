@@ -1,0 +1,24 @@
+<div class="slds-modal__header">
+    <h2 class="slds-text-heading_medium">Edit Class</h2>
+</div>
+<div class="slds-notify slds-notify_alert slds-theme_alert-texture" ng-show="importedScope.notification.active" role="alert" ng-class="{'slds-theme_success': importedScope.notification.type === 'success', 'slds-theme_error': importedScope.notification.type === 'error'}">
+    <button class="slds-button slds-button_icon-inverse slds-notify__close" ng-click="importedScope.notification.active = false">
+        <slds-button-svg-icon sprite="'utility'" icon="'close'" ></slds-button-svg-icon>
+        <span class="slds-assistive-text">Close</span>
+    </button>
+    <span class="slds-assistive-text">Info</span>
+    <h2 ng-bind-html="importedScope.notification.message"></h2>
+</div>
+<div class="vloc-add-class-form-container slds-form_horizontal ng-scope slds-grid slds-wrap slds-m-around_large"> 
+    <div class="slds-form-element slds-size_1-of-1 slds-large-size_1-of-2 slds-small-size_1-of-1" ng-repeat="(key, value) in records" ng-if="key !== 'classId' && key !== 'messages'">
+        <label class="slds-form-element__label slds-size_1-of-1 slds-large-size_1-of-2" for="inputSample2">{{key}}</label>
+        <div class="slds-form-element__control">
+            <input id="text-input-01" class="slds-input slds-size_1-of-1 slds-large-size_1-of-2 slds-small-size_1-of-1 slds-m-right_small" type="text" placeholder="Please enter a {{record.fieldType}}"
+            ng-model="records[key]"/>
+        </div> 
+    </div>
+</div>
+<div class="slds-modal__footer vloc-quote-modal-footer">
+  <button class="slds-button slds-button_neutral">Cancel</button>
+  <button class="slds-button slds-button_brand" ng-click="importedScope.vlocQuote.addNewClass()">Save</button>
+</div>

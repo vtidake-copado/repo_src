@@ -1,0 +1,43 @@
+{
+    "Cards": [
+        "ins-attributes-product",
+        "ins-attributes-default",
+        "ins-attribute-claim-properties-spec",
+        "ins-attribute-claims-injuries-spec"
+    ],
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "01t6A000000WBXT"
+            }
+        ],
+        "type": "ApexRemote",
+        "value": {
+            "inputMap": {
+                "productId": "{{params.id}}"
+            },
+            "interval": null,
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.InsuranceProductAdminHandler"
+            },
+            "remoteClass": "InsuranceProductAdminHandler",
+            "remoteMethod": "getProductAttributes",
+            "remoteNSPrefix": "%vlocity_namespace%"
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-product-attributes-container"
+        }
+    },
+    "workspace": [
+        "ins-attributes-coverage/Vlocity/1510783334316",
+        "ins-attributes-insured/Vlocity/1510783334316",
+        "ins-attributes-product/Vlocity/1498678785034",
+        "ins-attributes-default/Vlocity/1510783334317",
+        "ins-attribute-claims/Vlocity/null/1517419324874",
+        "ins-attribute-claim-properties-spec/Vlocity/null/1517419491194",
+        "ins-attribute-claims-injuries-spec/Vlocity/null/1517419357785"
+    ]
+}

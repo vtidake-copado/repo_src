@@ -1,0 +1,35 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 0,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "Jurisdiction",
+        "%vlocity_namespace%__FilterGroup__c": 0,
+        "%vlocity_namespace%__FilterOperator__c": "=",
+        "%vlocity_namespace%__FilterValue__c": "State",
+        "%vlocity_namespace%__GlobalKey__c": "9381afe2-d41d-9520-7455-80f9850706c3",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Name",
+        "%vlocity_namespace%__InterfaceObjectLookupOrder__c": 1,
+        "%vlocity_namespace%__InterfaceObjectName__c": "%vlocity_namespace%__Jurisdiction__c",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "auto_ReadStateJurisdiction_ReusableAddDriversOS04314438578545787",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "auto_ReadStateJurisdiction_ReusableAddDriversOS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "JurisdictionId",
+        "%vlocity_namespace%__GlobalKey__c": "e278fd2e-b64b-8b1f-a7c4-9f134d7136cf",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "Jurisdiction:Id",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "auto_ReadStateJurisdiction_ReusableAddDriversOS3693485146253688",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "auto_ReadStateJurisdiction_ReusableAddDriversOS",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

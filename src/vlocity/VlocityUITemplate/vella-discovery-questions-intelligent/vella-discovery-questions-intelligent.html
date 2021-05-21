@@ -1,0 +1,8 @@
+<div class="vella-discovery-questions" ng-controller="vellaDiscoveryQuestionsController" ng-init="initData(obj)">
+    <div class="slds-clearfix vella-discovery-questions-actions">
+        <button class="vella-discovery-questions-action" ng-click="performAction(intelAction)">
+            <span class="vella-discovery-questions-action-display-name">+ {{obj.resource[$root.nsPrefix + 'Headline__c']}}</span>
+            <span class="vella-discovery-questions-action-description">{{obj.resource[$root.nsPrefix + 'SubTitle__c']}}</span>
+        </button>
+    </div>
+</div>

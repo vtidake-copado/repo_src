@@ -1,0 +1,24 @@
+{
+    "%vlocity_namespace%__CalculationMatrixId__c": {
+        "Name": "SmallGroupVision",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/SmallGroupVision",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+    },
+    "%vlocity_namespace%__CalculationMatrixId__r.Name": "SmallGroupVision",
+    "%vlocity_namespace%__CalculationMatrixRow__c": "SmallGroupVision_Rows.json",
+    "%vlocity_namespace%__CurrentStatus__c": "Active",
+    "%vlocity_namespace%__EndDateTime__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "SmallGroupVision",
+    "%vlocity_namespace%__GroupKeyValue__c": "",
+    "%vlocity_namespace%__MatrixUseLongOutput__c": false,
+    "%vlocity_namespace%__Priority__c": 1,
+    "%vlocity_namespace%__StartDateTime__c": "2018-12-31T16:28:00.000Z",
+    "%vlocity_namespace%__SubGroupKeyValue__c": "",
+    "%vlocity_namespace%__UseLongOutput__c": false,
+    "%vlocity_namespace%__VersionNumber__c": 1,
+    "Name": "SmallGroupVision",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrixVersion__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__CalculationMatrixVersion__c/1/%vlocity_namespace%__CalculationMatrix__c/SmallGroupVision"
+}

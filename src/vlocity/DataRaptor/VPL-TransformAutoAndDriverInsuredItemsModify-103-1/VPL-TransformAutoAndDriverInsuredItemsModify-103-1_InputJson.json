@@ -1,0 +1,158 @@
+{
+    "ContextId": "02i0b00000VaUyH",
+    "PolicyId": "02i0b00000VaUyH",
+    "configure": {
+        "EffectiveDate": "2018-09-18T18:30:00.000Z",
+        "configureCoverages": null,
+        "endDate": null,
+        "newAnnualPrice": null,
+        "originalPremium": null,
+        "policyTerm": null,
+        "startDate": null,
+        "timeFactor": null
+    },
+    "contextId": "02i0b00000VaUyH",
+    "debugLog": true,
+    "error": "OK",
+    "id": "a2C0b000006CCbKEAW",
+    "insuredItems": {
+        "AUTO": [
+            {
+                "BodyClass": "Sedan/Saloon",
+                "Id": "a0F0b00000Xx6bWEAR",
+                "VehicleType": "PASSENGER CAR",
+                "autoAltFuel": true,
+                "autoAntiTheft": true,
+                "autoBrakes": false,
+                "autoCondition": null,
+                "autoGaragePostalCode": null,
+                "autoInstanceKey": " Lexus LX250",
+                "autoMake": "Lexus",
+                "autoMakeName": [
+                    "Lexus"
+                ],
+                "autoMileage": 15000,
+                "autoModel": "LX250",
+                "autoModelName": [
+                    "LX250"
+                ],
+                "autoStabilization": false,
+                "autoTrim": "Sedan/Saloon",
+                "autoTrimName": [
+                    "Sedan/Saloon"
+                ],
+                "autoValue": 45000,
+                "autoValueNumber": 45000,
+                "autoVehicleType": "PASSENGER CAR",
+                "autoYear": null,
+                "autoYearName": null,
+                "discAltFuel": true,
+                "discAntiLock": false,
+                "discAntiTheft": true,
+                "discStab": false,
+                "discountAutoInstanceKey": " Lexus LX250",
+                "instanceKey": "Lexus LX250",
+                "isPrimary": true,
+                "typeAutoDiscount": "AltFuel;AntiTheft"
+            },
+            {
+                "BodyClass": "Minivan",
+                "Id": "a0F0b00000Xx6bXEAR",
+                "VehicleType": "MULTIPURPOSE PASSENGER VEHICLE (MPV)",
+                "autoAltFuel": true,
+                "autoAntiTheft": true,
+                "autoBrakes": false,
+                "autoCondition": "Good",
+                "autoGaragePostalCode": null,
+                "autoInstanceKey": " Honda Odyssey",
+                "autoMake": "Honda",
+                "autoMakeName": [
+                    "Honda"
+                ],
+                "autoMileage": 13000,
+                "autoModel": "Odyssey",
+                "autoModelName": [
+                    "Odyssey"
+                ],
+                "autoStabilization": true,
+                "autoTrim": "Minivan",
+                "autoTrimName": [
+                    "Minivan"
+                ],
+                "autoValue": 15000,
+                "autoValueNumber": 15000,
+                "autoVehicleType": "MULTIPURPOSE PASSENGER VEHICLE (MPV)",
+                "autoYear": null,
+                "autoYearName": null,
+                "discAltFuel": true,
+                "discAntiLock": false,
+                "discAntiTheft": true,
+                "discStab": true,
+                "discountAutoInstanceKey": " Honda Odyssey",
+                "instanceKey": "Honda Odyssey",
+                "isPrimary": true,
+                "typeAutoDiscount": "AltFuel;Stab;AntiTheft"
+            }
+        ],
+        "DRIVER": [
+            {
+                "Id": "a0G0b00000bXp3fEAC",
+                "discountDriverInstanceKey": "Jeeny Pearson",
+                "driverAge": 31,
+                "driverAgeLicensed": 21,
+                "driverBirthdate": "1987-09-05T18:30:00.000Z",
+                "driverFirstName": "Jeeny",
+                "driverGPA": null,
+                "driverGender": "F",
+                "driverInstanceKey": "Jeeny Pearson",
+                "driverLastName": "Pearson",
+                "driverMaritalStatus": "M",
+                "driverMiddleName": "M",
+                "driverMilitaryID": null,
+                "driverMiltaryBranch": null,
+                "instanceKey": "Jeeny Pearson",
+                "isPrimary": false,
+                "typeDriverDiscount": "student;military"
+            },
+            {
+                "Id": "a0G0b00000bXp3gEAC",
+                "discountDriverInstanceKey": "Sammy Pearson",
+                "driverAge": 27,
+                "driverAgeLicensed": null,
+                "driverBirthdate": "1990-09-29T18:30:00.000Z",
+                "driverFirstName": "Sammy",
+                "driverGPA": null,
+                "driverGender": "M",
+                "driverInstanceKey": "Sammy Pearson",
+                "driverLastName": "Pearson",
+                "driverMaritalStatus": "S",
+                "driverMiddleName": null,
+                "driverMilitaryID": null,
+                "driverMiltaryBranch": null,
+                "instanceKey": "Sammy Pearson",
+                "isPrimary": false,
+                "typeDriverDiscount": "student;military"
+            }
+        ],
+        "null": [
+            {
+                "Id": "a0G0b00000bXp3eEAC",
+                "instanceKey": "Policyholder"
+            },
+            {
+                "Id": "a0G0b00000bXp3jEAC",
+                "instanceKey": "Producer"
+            }
+        ]
+    },
+    "layout": "newport",
+    "testContextId": "02i0b00000VaUyH",
+    "timeStamp": "2018-09-19T07:01:41.481Z",
+    "userCurrencyCode": "USD",
+    "userId": "0050b0000036Pu5AAE",
+    "userName": "nsimick103-2@ins.ibo",
+    "userProfile": "System Administrator",
+    "userTimeZone": -420,
+    "vlcPersistentComponent": {
+    }
+}

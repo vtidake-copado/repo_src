@@ -1,0 +1,124 @@
+<div class="slds-grid nds-grid vloc-ins-attribute-component-container" ng-class="{'vloc-input-pending': coverage.pendingUpdates.indexOf(attribute.code) > -1}">
+    <div class="slds-size--8-of-12 slds-max-small-size--7-of-12 slds-p-right--xx-small slds-truncate nds-size--8-of-12 nds-max-small-size--7-of-12 nds-p-right--xx-small nds-truncate vloc-ins-attribute-component">
+        <label class="slds-text-heading--x-small nds-text-heading--x-small vloc-ins-attribute-component-name" for="{{formatId(['attribute', coverage.ProductCode, childProductIndex, attribute.code])}}">{{attribute.label}}<span ng-if="attribute.max"> ({{attribute.min}} - {{attribute.max}})</span></label>
+        <ul class="vloc-ins-attribute-component-messages-container" ng-if="attribute.rules.length">
+            <li class="slds-m-top--xx-small nds-m-top--xx-small vloc-ins-attribute-component-messages-message vloc-ins-attribute-component-messages-message-{{rule.messages[0].severity.toLowerCase()}}" ng-repeat="rule in attribute.rules" ng-if="rule.ruleType === 'Message' && rule.ruleEvaluation" ng-class="{'': rule.messages[0].severity}">{{rule.messages[0].message}}</li>
+        </ul>
+        <div class="vloc-ins-attribute-component-messages-container" ng-if="attribute.values.length && value.rules" ng-repeat="value in attribute.values">
+            <ul>
+                <li class="slds-m-top--xx-small nds-m-top--xx-small vloc-ins-attribute-component-messages-message vloc-ins-attribute-component-messages-message-{{rule.messages[0].severity.toLowerCase()}}" ng-repeat="rule in value.rules" ng-if="rule.ruleType === 'Message' && rule.ruleEvaluation">{{rule.messages[0].message}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="slds-size--4-of-12 slds-max-small-size--5-of-12 slds-is-relative nds-size--4-of-12 nds-max-small-size--5-of-12 nds-is-relative vloc-ins-attribute-component-limit">
+        <div class="slds-form-element nds-form-element vloc-ins-attribute-component-limit-input" ng-if="attribute.inputType !== 'dropdown' && !attribute.multiselect && attribute.inputType !== 'radio' && attribute.inputType !== 'range' && attribute.dataType !== 'date' && attribute.dataType !== 'datetime' && !attribute.readonly">
+            <div class="slds-form-element__control slds-is-relative nds-form-element__control nds-is-relative" ng-class="{'slds-input-has-fixed-addon nds-input-has-fixed-addon': attribute.dataType === 'currency' || attribute.dataType === 'percentage', 'layout-newport': baseCtrl.$scope.bpTree.response.layout.toLowerCase() === 'newport'}">
+                <span class="slds-form-element__addon nds-form-element__addon" ng-if="attribute.dataType === 'currency' && !attribute.readonly" ng-class="{'disabled': attribute.readonly}">{{currencyCode}}</span>
+                <input type="{{attribute.inputType}}" id="{{formatId(['attribute', coverage.ProductCode, childProductIndex, attribute.code])}}" class="slds-input nds-input" ng-class="{'vloc-ins-attribute-component-input-currency': attribute.dataType === 'currency', 'vloc-ins-attribute-component-input-percentage': attribute.dataType === 'percentage'}" ng-model="attribute.userValues" ng-if="!attribute.readonly && attribute.inputType !== 'checkbox'" ng-focus="currentTextValue = attribute.userValues" ng-blur="changeCoverage(bpTree.response, control, scpReference, coverage, attribute, currentTextValue)" ng-click="stopPropagation($event)" ng-disabled="attribute.ruleSetValue || coverage.isExcluded" />
+                <span class="slds-form-element__addon nds-form-element__addon vloc-ins-attribute-component-datatype-percentage" ng-if="attribute.dataType === 'percentage' && !attribute.readonly" ng-class="{'disabled': attribute.readonly}">%</span>
+                <span class="slds-checkbox slds-p-left--x-small nds-checkbox nds-p-left--x-small" ng-if="attribute.inputType === 'checkbox'">
+                    <input type="checkbox" name="{{formatId(['attribute', coverage.ProductCode, childProductIndex, attribute.code])}}" id="{{formatId(['attribute', coverage.ProductCode, childProductIndex, attribute.code])}}" ng-model="attribute.userValues" ng-disabled="attribute.ruleSetValue || coverage.isExcluded" />
+                    <label class="slds-checkbox__label nds-checkbox__label" for="{{formatId(['attribute', coverage.ProductCode, childProductIndex, attribute.code])}}">
+                        <span class="slds-checkbox--faux nds-checkbox--faux"></span>
+                    </label>
+                </span>
+            </div>
+        </div>
+        <div class="slds-form-element nds-form-element vloc-ins-attribute-component-limit-select" ng-if="attribute.inputType === 'dropdown' && attribute.inputType !== 'checkbox' && !attribute.multiselect && !attribute.readonly">
+            <div class="slds-form-element__control nds-form-element__control">
+                <div class="slds-select_container nds-select_container" ng-if="!attribute.readonly">
+                    <select id="{{formatId(['attribute', coverage.ProductCode, childProductIndex, attribute.code])}}" class="slds-select nds-select" ng-model="attribute.userValues" ng-options="value.value as value.label for value in attribute.values | filter: {hiddenByRule: '!true'}" ng-disabled="attribute.ruleSetValue || coverage.isExcluded">{{value.label}}</select>
+                </div>
+            </div>
+        </div>
+        <div class="vloc-ins-attribute-component-limit-multiselect-checkbox" ng-if="attribute.multiselect && attribute.inputType === 'checkbox'">
+            <div class="slds-p-left--x-small nds-p-left--x-small vloc-ins-attribute-component-uservalues">
+                <fieldset class="slds-form-element nds-form-element">
+                    <div class="slds-form-element__control nds-form-element__control">
+                        <span class="slds-checkbox nds-checkbox" ng-repeat="value in attribute.values" ng-if="!value.hiddenByRule">
+                            <input type="checkbox" id="{{formatId(['attr-ms-cb', product.ProductCode, childProductIndex, category.Code__c, attribute.attributeId, value.value])}}" checked="" ng-model="attribute.userValues[$index][value.value]" ng-disabled="($index === attribute.ruleSetValueIndex && attribute.ruleSetValue) || attribute.readonly" ng-click="toggleValue(attribute, value, $index, bpTree.response, control, this, coverage)" ng-disabled="attribute.ruleSetValue || coverage.isExcluded" />
+                            <label class="slds-checkbox__label nds-checkbox__label" for="{{formatId(['attr-ms-cb', product.ProductCode, childProductIndex, category.Code__c, attribute.attributeId, value.value])}}">
+                                <span class="slds-checkbox--faux nds-checkbox--faux"></span>
+                                <span class="nds-form-element__label">{{value.label}}</span>
+                            </label>
+                        </span>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div ng-init="$root.insOSCoveragesDropdowns[attribute.attributeId] = false; countSelected(attribute)" ng-style="{'z-index': (1000 - $parent.$parent.$index)}" ng-if="attribute.multiselect && attribute.inputType === 'dropdown' && !attribute.readonly" class="nds-form-element">
+            <div class="nds-form-element__control">
+                <div class="nds-combobox_container nds-dropdown-trigger nds-dropdown-trigger--click" ins-os-dropdown-handler="toggleDropdown(attribute)" ng-class="{'nds-is-open': $root.insOSCoveragesDropdowns[attribute.attributeId]}">
+                    <div class="nds-combobox__form-element nds-input-has-icon nds-input-has-icon_right" role="none">
+                        <input id="{{formatId(['attribute', coverage.ProductCode, childProductIndex, attribute.code])}}" class="nds-input nds-combobox__input" value="{{attribute.multiSelectCount}} Selected" type="text" autoComplete="off" role="textbox" readonly="" />
+                        <span class="nds-icon_container nds-icon-utility-down nds-input__icon nds-input__icon_right">
+                            <slds-button-svg-icon sprite="'utility'" icon="'down'"></slds-button-svg-icon>
+                        </span>
+                    </div>
+                    <div class="nds-dropdown nds-dropdown_fluid nds-dropdown--left vloc-ins-attribute-component-dropdown-items">
+                        <ul id="option-list-{{$parent.$index}}-{{$index}}" class="nds-listbox nds-listbox_vertical" role="menu">
+                            <li ng-repeat="value in attribute.values" ng-click="toggleValue(attribute, value, $index, bpTree.response, control, this, coverage)" ng-if="!value.hiddenByRule" class="nds-listbox__item" role="presentation">
+                                <div ng-class="{'nds-is-selected': attribute.userValues.indexOf(value.value) > -1, 'ins-rule-set-value': value.ruleSetValue}" class="nds-media nds-listbox__option nds-listbox__option_plain nds-media_small" role="option">
+                                    <span class="nds-media__figure nds-listbox__option-icon">
+                                        <slds-svg-icon sprite="'utility'" icon="'check'" size="'x-small'" extra-classes="'nds-listbox__icon-selected'"></slds-svg-icon>
+                                    </span>
+                                    <span class="nds-media__body">
+                                        <span class="nds-truncate" title="{{value.label}}">{{value.label}}</span>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vloc-ins-attribute-component-limit-radio-picklist" ng-if="attribute.dataType === 'text' && attribute.inputType === 'radio' && !attribute.readonly">
+            <div class="slds-p-left--x-small nds-p-left--x-small vloc-ins-attribute-component-uservalues">
+                <fieldset class="slds-form-element nds-form-element">
+                    <div class="slds-form-element__control nds-form-element__control">
+                        <span class="slds-radio nds-radio" ng-repeat="value in attribute.values" ng-if="!value.hiddenByRule">
+                            <input type="radio" id="{{formatId(['attr-radio-pl', product.ProductCode, childProductIndex, category.Code__c, attribute.attributeId, value.value])}}" ng-checked="value.value === attribute.userValues" ng-click="attribute.userValues = value.value; changeCoverage(bpTree.response, control, scpReference, coverage, attribute, null)" ng-disabled="attribute.ruleSetValue || coverage.isExcluded" />
+                            <label class="slds-radio__label nds-radio__label" for="{{formatId(['attr-radio-pl', product.ProductCode, childProductIndex, category.Code__c, attribute.attributeId, value.value])}}">
+                                <span class="slds-radio--faux nds-radio--faux"></span>
+                                <span class="nds-form-element__label">{{value.label}}</span>
+                            </label>
+                        </span>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="vloc-ins-attribute-component-limit-range-slider" ng-if="attribute.inputType === 'range' && !attribute.readonly">
+            <div class="slds-is-relative slds-form-element nds-is-relative nds-form-element vloc-ins-attribute-component-uservalues">
+                <div class="slds-form-element__control nds-form-element__control vloc-ins-attribute-component-range-slider-element-control">
+                    <div class="slds-slider nds-slider">
+                        <input type="range" id="{{formatId(['range-slider', product.ProductCode, childProductIndex, category.Code__c, attribute.attributeId])}}" min="{{attribute.min}}" max="{{attribute.max}}" class="slds-slider__range nds-slider__range" ng-model="attribute.rangeValue" ng-init="attribute.rangeValue = attribute.userValues" ng-disabled="attribute.ruleSetValue || coverage.isExcluded" ins-os-range-handler ins-os-range-change="attribute.userValues = attribute.rangeValue; changeCoverage(bpTree.response, control, scpReference, coverage, attribute, null)" />
+                        <span class="slds-slider__value slds-p-right--none nds-slider__value nds-p-right--none" aria-hidden="true">{{attribute.rangeValue}}<span ng-if="attribute.dataType === 'percentage'">%</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vloc-ins-attribute-component-limit-date-datetime" ng-if="(attribute.dataType === 'date' || attribute.dataType === 'datetime') && !attribute.readonly">
+            <div class="slds-is-relative nds-is-relative vloc-ins-attribute-component-date-container" ng-if="attribute.dataType === 'date'">
+                <input type="text" id="{{formatId(['text-input', product.ProductCode, childProductIndex, category.Code__c, attribute.attributeId])}}" class="slds-input nds-input datatype-{{attribute.dataType}}" ng-model="attribute.userValues" ng-model-options="{debounce: 0}" slds-date-picker data-placement="bottom-right"  ng-disabled="attribute.ruleSetValue || coverage.isExcluded" />
+            </div>
+            <div class="slds-grid nds-grid vloc-ins-attribute-component-datetime-container" ng-if="attribute.dataType === 'datetime'">
+                <div class="slds-is-relative slds-size--1-of-2 slds-p-right--xx-small nds-is-relative nds-size--1-of-2 nds-p-right--xx-small">
+                    <input type="text" id="{{formatId(['text-input', product.ProductCode, childProductIndex, category.Code__c, attribute.attributeId])}}" class="slds-input nds-input datatype-{{attribute.dataType}}" ng-model="attribute.userValues" ng-model-options="{debounce: 0}" slds-date-picker data-placement="bottom-right"  ng-disabled="attribute.ruleSetValue || coverage.isExcluded" />
+                </div>
+                <div class="slds-is-relative slds-size--1-of-2 slds-p-left--xx-small nds-is-relative nds-size--1-of-2 nds-p-left--xx-small">
+                    <input type="text" id="{{formatId(['datetime-text-input', product.ProductCode, childProductIndex, category.Code__c, attribute.attributeId])}}" class="slds-input nds-input datatype-{{attribute.dataType}}" ng-model="attribute.userValues" slds-time-picker data-placement="bottom-right" ng-disabled="attribute.ruleSetValue || coverage.isExcluded" />
+                </div>
+            </div>
+        </div>
+        <div class="vloc-ins-attribute-component-limit-readonly" ng-if="attribute.readonly">
+            <p class="vloc-ins-coverages-attribute-readonly" ng-if="attribute.dataType === 'currency'">{{attribute.userValues | currency: currencyCode: 0}}</p>
+            <p class="vloc-ins-coverages-attribute-readonly" ng-if="attribute.dataType === 'percentage'">{{attribute.userValues}}%</p>
+            <p class="vloc-ins-coverages-attribute-readonly" ng-if="attribute.dataType === 'date'">{{formatDate(attribute.userValues)}}</p>
+            <p class="vloc-ins-coverages-attribute-readonly" ng-if="attribute.dataType === 'datetime'">{{formatDate(attribute.userValues, true)}}</p>
+            <p class="vloc-ins-coverages-attribute-readonly" ng-if="attribute.dataType !== 'currency' && attribute.dataType !== 'percentage' && attribute.dataType !== 'date' && attribute.dataType !== 'datetime'">
+                <span ng-if="!attribute.labelAndValue">{{attribute.userValues}}</span>
+                <span ng-if="attribute.labelAndValue">{{attribute.labelAndValue.valueLabel}}</span>
+            </p>
+        </div>
+    </div>
+</div>

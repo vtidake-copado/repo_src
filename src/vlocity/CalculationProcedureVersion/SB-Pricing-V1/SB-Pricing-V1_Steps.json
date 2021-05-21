@@ -1,0 +1,426 @@
+[
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "SB - BusinessTypeFactors",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/SB - BusinessTypeFactors",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SB - Pricing",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SB - Pricing",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "c2982b",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "busType"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "510013",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "factorLiability"
+            },
+            {
+                "columnKey": "217bdb",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "factorProperty"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"factorLiability\":\"SB-BusinessTypeFactors__factorLiability\",\"factorProperty\":\"SB-BusinessTypeFactors__factorProperty\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "SB - Liability Factors",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/SB - Liability Factors",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SB - Pricing",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SB - Pricing",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "c5f3d",
+                "dataType": "Number Range",
+                "label": null,
+                "listValues": "0,250001,500001,1000001",
+                "name": "busRevAnnual"
+            },
+            {
+                "columnKey": "8c625b",
+                "dataType": "Currency",
+                "label": null,
+                "listValues": null,
+                "name": "limitLiability"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "67f429",
+                "dataType": "Currency",
+                "label": null,
+                "listValues": null,
+                "name": "rateLiability"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"rateLiability\":\"SB-LiabilityFactors__rateLiability\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "SB - DeductibleFactors",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/SB - DeductibleFactors",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SB - Pricing",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SB - Pricing",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "9f913e",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "Deductible"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "cfc716",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "deductLiability"
+            },
+            {
+                "columnKey": "b92c7f",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "deductProperty"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"deductLiability\":\"SB-DeductibleFactors__deductLiability\",\"deductProperty\":\"SB-DeductibleFactors__deductProperty\"}",
+        "%vlocity_namespace%__Sequence__c": 3,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "busRevAnnual / 1000",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "busRevAnnual",
+                "dataType": "Number Range",
+                "text": "busRevAnnual",
+                "userDefined": false
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "1000",
+                "dataType": "Number",
+                "text": "1000"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SB - Pricing",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SB - Pricing",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "busRevenue-000",
+            "dataType": "Currency",
+            "name": "busRevenue-000"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"busRevenue-000\":\"busRevenue-000\"}",
+        "%vlocity_namespace%__Sequence__c": 4,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "SB-LiabilityFactors__rateLiability * SB-BusinessTypeFactors__factorLiability * busRevenue-000 * SB-DeductibleFactors__deductLiability",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "SB-LiabilityFactors__rateLiability",
+                "dataType": "Currency",
+                "text": "rateLiability ( SB - Liability Factors )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SB-BusinessTypeFactors__factorLiability",
+                "dataType": "Number",
+                "text": "factorLiability ( SB - BusinessTypeFactors )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "busRevenue-000",
+                "dataType": "Currency",
+                "text": "busRevenue-000",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SB-DeductibleFactors__deductLiability",
+                "dataType": "Number",
+                "text": "deductLiability ( SB - DeductibleFactors )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SB - Pricing",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SB - Pricing",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "busRevenue-000"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "premiumLiability",
+            "dataType": "Currency",
+            "name": "premiumLiability"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"premiumLiability\":\"premiumLiability\"}",
+        "%vlocity_namespace%__Sequence__c": 5,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "rateProperty * SB-BusinessTypeFactors__factorProperty * limitProperty * SB-DeductibleFactors__deductProperty / 1000",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "rateProperty",
+                "dataType": "Currency",
+                "text": "rateProperty"
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SB-BusinessTypeFactors__factorProperty",
+                "dataType": "Number",
+                "text": "factorProperty ( SB - BusinessTypeFactors )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "limitProperty",
+                "dataType": "Currency",
+                "text": "limitProperty",
+                "userDefined": true
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "SB-DeductibleFactors__deductProperty",
+                "dataType": "Number",
+                "text": "deductProperty ( SB - DeductibleFactors )",
+                "userDefined": false
+            },
+            {
+                "alias": "/",
+                "text": "/"
+            },
+            {
+                "alias": "1000",
+                "dataType": "Number",
+                "text": "1000"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SB - Pricing",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SB - Pricing",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "limitProperty"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "premiumProperty",
+            "dataType": "Currency",
+            "name": "premiumProperty"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"premiumProperty\":\"premiumProperty\"}",
+        "%vlocity_namespace%__Sequence__c": 6,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "limitProperty + limitLiability",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "limitProperty",
+                "dataType": "Currency",
+                "text": "limitProperty",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "limitLiability",
+                "dataType": "Currency",
+                "text": "limitLiability",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SB - Pricing",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SB - Pricing",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SB - Pricing",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Currency",
+                "name": "limitProperty"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "totalLimit",
+            "dataType": "Currency",
+            "name": "totalLimit"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"totalLimit\":\"totalLimit\"}",
+        "%vlocity_namespace%__Sequence__c": 7,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

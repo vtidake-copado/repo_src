@@ -1,0 +1,129 @@
+<div class="vloc-attr-config-grid slds-grid slds-wrap slds-p-bottom_small slds-m-horizontal_small slds-p-horizontal_small">
+    <div class="vloc-attr-config-row slds-small-show slds-p-top_small"
+        ng-repeat="field in data.fields"
+        ng-class="{'slds-size_1-of-1' : $index === 2 || $index === 3 || $index === 4 || $index === 5 || $index === 6 || $index === 9 || $index === 10 || $index === 11 || $index === 12,
+        'slds-size_1-of-2' : $index !== 2 && $index !== 3 && $index !== 4 && $index !== 5 && $index !== 6 && $index !== 9 && $index !== 10 && $index !== 11 && $index !== 12}"
+        ng-show="key != 'attributes'" ng-if="records.fieldsMap[field.name]"
+        ng-hide="(field.name === $root.nsPrefix + 'Amount__c' && $root.config.taxAndFee[$root.nsPrefix + 'RatingType__c'] !== 'Amount') 
+        || (field.name === $root.nsPrefix + 'Percent__c' && $root.config.taxAndFee[$root.nsPrefix + 'RatingType__c'] !== 'Percent') 
+        ||  ((field.name === $root.nsPrefix + 'ProcedureFormula__c' || field.name === $root.nsPrefix + 'ProcedureName__c' || field.name === $root.nsPrefix + 'ProcedureSource__c')  
+            && $root.config.taxAndFee[$root.nsPrefix + 'RatingType__c'] !== 'Calculation Procedure'
+            && $root.config.taxAndFee[$root.nsPrefix + 'RatingType__c'] !== 'Integration Procedure')"> <!-- only show fields returned -->
+        <!--Values -->
+        <div class="vloc-attrs-value slds-size_1-of-1"
+            ng-class="{'slds-size_1-of-2' : importedScope.configurableTypeDict[$root.config.taxAndFee[field.name]].subType}">
+            <!--general input -->
+            <div class="vloc-attrs-value-general slds-m-right_xx-small" ng-if="field.name !== $root.nsPrefix + 'ProcedureFormula__c' && field.name !== $root.nsPrefix + 'Condition__c'">
+                <div class="vloc-attr-title-cell slds-truncate slds-form-element__label slds-size_1-of-1"
+                    title="{{field.label}}">
+                    <span
+                        ng-if="records.fieldsMap[field.name] && records.fieldsMap[field.name].label">{{records.fieldsMap[field.name].label}}</span>
+                    <span
+                        ng-if="!records.fieldsMap[field.name] || !records.fieldsMap[field.name].label">{{field.label}}</span>
+                </div>
+                <input ng-if="records.fieldsMap[field.name].dataType === 'STRING' || records.fieldsMap[field.name].dataType !== 'CURRENCY' && records.fieldsMap[field.name].dataType !== 'DATETIME' && records.fieldsMap[field.name] !== 'RANGE' && 
+                records.fieldsMap[field.name].dataType  !== 'BOOLEAN' &&  records.fieldsMap[field.name].dataType  !== 'PICKLIST' && records.fieldsMap[field.name].dataType  !== 'PERCENT' && records.fieldsMap[field.name].isUpdateable !== false" class="slds-input vloc-attrs-input"
+                    type="{{records.fieldsMap[field.name].dataType}}" ng-model="$root.config.taxAndFee[field.name]"
+                    ng-class="{'disabled': records.fieldsMap[field.name].isUpdateable === false}"
+                    placeholder="Insert Value" ng-disabled="records.fieldsMap[field.name].isUpdateable === false" />
+                <input ng-init="importedScope.toNumber($root.config.taxAndFee[field.name])"
+                    ng-if="records.fieldsMap[field.name].dataType === 'CURRENCY' || 
+                    records.fieldsMap[field.name].dataType  === 'PERCENT'" class="slds-input vloc-attrs-input"
+                    type="number" ng-model="$root.config.taxAndFee[field.name]"
+                    ng-class="{'disabled': records.fieldsMap[field.name].isUpdateable === false}"
+                    placeholder="Insert Value" ng-disabled="records.fieldsMap[field.name].isUpdateable === false" />
+
+                <!--picklist-->
+                <div class="slds-select_container slds-size_1-of-1" ng-if="records.fieldsMap[field.name].dataType === 'PICKLIST'">
+                    <select ng-disabled="records.fieldsMap[field.name].isUpdateable === false" 
+                        ng-options="options.value as options.label for options in records.fieldsMap[field.name].values"
+                        class="slds-select slds-m-right_small slds-truncate" id="select-output-{{index}}"
+                        ng-model="$root.config.taxAndFee[field.name]">
+                    </select>
+                </div>
+
+                <!--date picker-->
+                <div class="slds-form-element slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open"
+                    ng-if="records.fieldsMap[field.name].dataType === 'DATE'">
+                    <input class="slds-input slds-m-bottom_small" slds-date-picker
+                        ng-model="$root.config.taxAndFee[field.name]">
+                </div>
+
+                <!--datetime picker-->
+                <div class="slds-form-element slds-dropdown-trigger slds-dropdown-trigger_click slds-size_1-of-1 slds-grid slds-wrap"
+                    ng-if="records.fieldsMap[field.name].dataType === 'DATETIME'">
+                    <div class="slds-size_1-of-2 slds-p-right_medium">
+                        <input class="slds-input slds-m-bottom_small" slds-date-picker
+                        ng-model="$root.config.taxAndFee[field.name]"></div>
+                    <div class="slds-size_1-of-2">
+                        <input class="slds-input slds-m-bottom_small" slds-time-picker
+                        ng-model="$root.config.taxAndFee[field.name]">
+                    </div>
+                </div>
+
+                <!--slider -->
+                <div ng-if="records.fieldsMap[field.name].dataType === 'RANGE'"
+                    class="vloc-attrs-slider slds-grid slds-wrap slds-m-bottom_small"
+                    ng-init="importedScope.toNumber($root.config.taxAndFee[field.name])">
+
+                    <input class="slds-input vloc-attrs-input slds-size_1-of-3" type="number"
+                        ng-model="$root.config.taxAndFee[field.name].userValues.min" placeholder="{{::customLabels.InsProductEnterMin}}"/>
+
+                    <input class="slds-input vloc-attrs-input slds-size_1-of-3" type="number"
+                        ng-model="$root.config.taxAndFee.userValues[field.name].max" placeholder="{{::customLabels.InsProductEnterMax}}" />
+
+                    <input name="startValue" class="slds-input vloc-attrs-input slds-size_1-of-3" type="number"
+                        ng-model="$root.config.taxAndFee[field.name]"
+                        ng-min="$root.config.taxAndFee[$root.nsPrefix + 'ValidValuesData__c'].min"
+                        ng-max="$root.config.taxAndFee[$root.nsPrefix + 'ValidValuesData__c'].max"
+                        placeholder="{{::customLabels.InsProductEnterStartValue}}"
+                        ng-disabled="records.fieldsMap[field.name].isUpdateable === false"
+                        ng-class=" {'disabled': records.fieldsMap[field.name].isUpdateable === false}" />
+
+                    <div class="vloc-attrs-slider-label slds-form-element__label slds-size_1-of-3">Min</div>
+                    <div class="vloc-attrs-slider-label slds-form-element__label slds-size_1-of-3">Max</div>
+                    <div class="vloc-attrs-slider-label slds-form-element__label slds-size_1-of-3">Start Value</div>
+                </div>
+
+                <!--checkbox -->
+                <div class="slds-form-element__control slds-text-align_left  vloc-attrs-checkbox"
+                    ng-if="records.fieldsMap[field.name].dataType === 'BOOLEAN'">
+                    <span class="slds-checkbox">
+                        <input type="checkbox" name="checkbox-attrs-{{$index}}" id="checkbox-attrs-{{$index}}"
+                            ng-model="$root.config.taxAndFee[field.name]"
+                            ng-class="{'disabled': records.fieldsMap[field.name].isUpdateable === false}"
+                            ng-disabled="!records.fieldsMap[field.name].isUpdateable" />
+                        <label class="slds-checkbox__label slds-m-around_none" for="checkbox-attrs-{{$index}}">
+                            <span class="slds-checkbox_faux vloc-check"></span>
+                        </label>
+                    </span>
+                </div>
+            </div>
+            <div ng-if="(field.name === $root.nsPrefix + 'ProcedureFormula__c'  && 
+            ($root.config.taxAndFee[$root.nsPrefix + 'RatingType__c'] === 'Calculation Procedure' ||
+            $root.config.taxAndFee[$root.nsPrefix + 'RatingType__c'] === 'Integration Procedure')) || 
+            field.name === $root.nsPrefix + 'Condition__c'">
+                <div class="vloc-attr-title-cell slds-truncate slds-form-element__label slds-size_1-of-1"
+                    title="{{field.label}}">
+                    <span ng-if="records.fieldsMap[field.name] && records.fieldsMap[field.name].label">{{records.fieldsMap[field.name].label}}</span>
+                    <span ng-if="!records.fieldsMap[field.name] || !records.fieldsMap[field.name].label">{{field.label}}</span>
+                </div>
+                <div class="vloc-ins-product-rules-container-cards">
+                    <div class="slds-m-bottom_small slds-p-right_large vloc-ins-product-rules-eligibility-container slds-p-top_small">
+                        <div class="slds-size_1-of-1 vloc-ins-product-rules-eligibility-expression"
+                            ng-controller="vlocInsRulesContainerCtrl">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control slds-is-relative">
+                                    <monaco-editor id="eligibility-rule-expression"
+                                        class="slds-textarea" language="vlocity-formula" ng-model="$root.config.taxAndFee[field.name]"
+                                        ng-keydown="switchTypeAheadDataHelper()"
+                                        ng-keyup="markExpressionUnsaved($event)"></monaco-editor>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

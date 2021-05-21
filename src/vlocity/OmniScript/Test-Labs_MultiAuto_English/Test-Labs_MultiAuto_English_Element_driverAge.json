@@ -1,0 +1,42 @@
+{
+    "%vlocity_namespace%__Active__c": true,
+    "%vlocity_namespace%__OmniScriptId__c": {
+        "Name": "Test Configurations for MultiAuto",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Test Labs/MultiAuto/English",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+    },
+    "%vlocity_namespace%__ParentElementId__c": {
+        "%vlocity_namespace%__OmniScriptId__c": {
+            "Name": "Test Configurations for MultiAuto",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OmniScript__c/Test Labs/MultiAuto/English",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c"
+        },
+        "Name": "driver",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Test Labs/MultiAuto/English/driver",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c"
+    },
+    "%vlocity_namespace%__ParentElementName__c": "driver",
+    "%vlocity_namespace%__ParentElementType__c": "Edit Block",
+    "%vlocity_namespace%__PropertySet__c": {
+        "controlWidth": 3,
+        "dataType": "Number",
+        "dateFormat": "MM-dd-yyyy",
+        "disOnTplt": true,
+        "expression": "AGE(%driverBirthdate|n%)",
+        "hide": false,
+        "hideGroupSep": false,
+        "inputWidth": 12,
+        "label": "DriverAge",
+        "show": null,
+        "showInputWidth": false
+    },
+    "%vlocity_namespace%__ReusableOmniScript__c": false,
+    "%vlocity_namespace%__Type__c": "Formula",
+    "Name": "driverAge",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__Element__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/Test Labs/MultiAuto/English/driverAge"
+}

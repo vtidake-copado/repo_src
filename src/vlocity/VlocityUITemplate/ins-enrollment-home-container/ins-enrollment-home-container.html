@@ -1,0 +1,36 @@
+<div class="slds-spinner_container vloc-spinner_container vloc-show-loader" ng-show="!$root.isLoaded">
+    <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+        <div class="slds-spinner__dot-a"></div>
+        <div class="slds-spinner__dot-b"></div>
+    </div>
+</div>
+<div class="slds-notify_container" ng-show="$root.notification.active">
+    <div class="slds-notify slds-notify_alert slds-theme_alert-texture" role="alert" ng-class="{'slds-theme_success': $root.notification.type === 'success', 'slds-theme_error': $root.notification.type === 'error'}">
+        <button class="slds-button slds-button_icon-inverse slds-notify__close" ng-click="$root.notification.active = false">
+            <slds-button-svg-icon sprite="'utility'" icon="'close'" ></slds-button-svg-icon>
+            <span class="slds-assistive-text">Close</span>
+        </button>
+        <span class="slds-assistive-text">Info</span>
+        <h2 ng-bind-html="$root.notification.message"></h2>
+    </div>
+</div>
+<div class="slds-grid slds-wrap vloc-broker-wrapper" ng-class="{'plan-selection-view': $root.showProductSelection}">
+    <div class="vloc-broker-app-col slds-size_1-of-1 slds-p-around_small slds-p-right_xx-large">
+        <div class="vloc-broker-app-col-container"> 
+        <div>
+            <h1 class="vloc-title slds-m-bottom_small">Your policies</h1>
+            <div class="vloc-section-header vloc-title-border-container">
+                <hr class="vloc-title-border"/>
+            </div>
+        </div>
+        <div class="vloc-enrollment-tabs slds-float_right" ng-init="currentTab = 'current'">
+            <span class="slds-p-right_small current-tab" ng-click="currentTab = 'current'"  ng-class="{'vloc-selected-tabs' : currentTab === 'current'}"> Current </span> 
+            <span ng-click="currentTab = 'future'" class="future-tab" ng-class="{'vloc-selected-tabs' : currentTab === 'future'}"> 2018 </span>
+        </div>
+
+        <div>
+            <div vloc-card ng-if="card.sessionVars[0].val === currentTab" ng-repeat="card in cards | orderBy:order" ctrl="InsEnrollmentController" ng-model="card" data="card" records="records" index="{{$index}}" session-id="{{sessionId}}" class="slds-size_1-of-1 slds-p-top_small" use-existing-element-type>
+            </div>
+        </div>
+    </div>
+</div>

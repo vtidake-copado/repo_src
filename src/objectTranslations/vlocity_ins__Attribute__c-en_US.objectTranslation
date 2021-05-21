@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Console Admin Search --></label>
+        <name>vlocity_ins__ConsoleAdminSearch</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- List Attributes for Export --></label>
+        <name>vlocity_ins__ListAttributesForExport</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- New Attribute --></label>
+        <name>vlocity_ins__NewAttribute</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- VlocityAdmin --></label>
+        <name>vlocity_ins__VlocityAdmin</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Active --></label>
+        <name>vlocity_ins__ActiveFlg__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Category Code --></label>
+        <name>vlocity_ins__AttributeCategoryCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Category --></label>
+        <name>vlocity_ins__AttributeCategoryId__c</name>
+        <relationshipLabel><!-- Attributes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attribute Category Name --></label>
+        <name>vlocity_ins__AttributeCategoryName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attribute Group Type --></label>
+        <name>vlocity_ins__AttributeGroupType__c</name>
+        <picklistValues>
+            <masterLabel>In-Network</masterLabel>
+            <translation><!-- In-Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Link Group</masterLabel>
+            <translation><!-- Link Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out-Of-Network</masterLabel>
+            <translation><!-- Out-Of-Network --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Auto Code --></label>
+        <name>vlocity_ins__AutoCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Code --></label>
+        <name>vlocity_ins__Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Configurable --></label>
+        <name>vlocity_ins__Configurable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Config UI Template --></label>
+        <name>vlocity_ins__CustomConfigUiTemplate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display Sequence --></label>
+        <name>vlocity_ins__DisplaySequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effectivity Start Date --></label>
+        <name>vlocity_ins__EffectiveFromDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effectivity End Date --></label>
+        <name>vlocity_ins__EffectiveUntilDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filterable --></label>
+        <name>vlocity_ins__Filterable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Key --></label>
+        <name>vlocity_ins__GlobalKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Help Text --></label>
+        <name>vlocity_ins__HelpText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cloneable --></label>
+        <name>vlocity_ins__IsCloneable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypted --></label>
+        <name>vlocity_ins__IsEncrypted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not Assetizable --></label>
+        <name>vlocity_ins__IsNotAssetizable__c</name>
+    </fields>
+    <fields>
+        <help><!-- When unchecked, this private flag will allow attributes to be viewed and selected by end users when associated to objects. When checked, or private, this attribute will only be visible to the user who created through the user interface. --></help>
+        <label><!-- Private --></label>
+        <name>vlocity_ins__IsPrivate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>vlocity_ins__OwnerId__c</name>
+        <relationshipLabel><!-- Vlocity Attributes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Picklist --></label>
+        <name>vlocity_ins__PicklistId__c</name>
+        <relationshipLabel><!-- Vlocity Attributes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Unique Name --></label>
+        <name>vlocity_ins__UniqueNameField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Type --></label>
+        <name>vlocity_ins__ValueType__c</name>
+        <picklistValues>
+            <masterLabel>Checkbox</masterLabel>
+            <translation><!-- Checkbox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Number</masterLabel>
+            <translation><!-- Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Percent</masterLabel>
+            <translation><!-- Percent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation><!-- Text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Value --></label>
+        <name>vlocity_ins__Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hidden By Default --></label>
+        <name>vlocity_ins__isDefaultHidden__c</name>
+    </fields>
+    <webLinks>
+        <label><!-- Export --></label>
+        <name>vlocity_ins__Export</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge --></label>
+        <name>vlocity_ins__Merge</name>
+    </webLinks>
+</CustomObjectTranslation>

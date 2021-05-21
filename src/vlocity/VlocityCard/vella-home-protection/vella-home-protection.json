@@ -1,0 +1,68 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "02i1I000000sdGDQAY"
+            }
+        ],
+        "type": "Query",
+        "value": {
+            "body": "",
+            "interval": 5000,
+            "query": "SELECT Id, Name, Status, Device_State__c, Device_Message__c FROM Asset WHERE %vlocity_namespace%__PolicyAssetId__c = '{{params.id}}'"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankCardState": false,
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "filter": "$scope.data.status === 'active'",
+            "name": "Vella Home Protection",
+            "placeholderExpand": true,
+            "placeholders": [
+                {
+                    "collapse": true,
+                    "editing": false,
+                    "label": "",
+                    "name": "DeviceName",
+                    "type": "string",
+                    "value": "['Name']"
+                },
+                {
+                    "collapse": true,
+                    "editing": false,
+                    "label": "",
+                    "name": "DeviceState",
+                    "type": "string",
+                    "value": "['Device_State__c']"
+                },
+                {
+                    "collapse": true,
+                    "editing": false,
+                    "label": "",
+                    "name": "DeviceMessage",
+                    "type": "string",
+                    "value": "['Device_Message__c']"
+                }
+            ],
+            "templateUrl": "vella-home-protection"
+        }
+    ],
+    "title": "Vella Home Protection"
+}

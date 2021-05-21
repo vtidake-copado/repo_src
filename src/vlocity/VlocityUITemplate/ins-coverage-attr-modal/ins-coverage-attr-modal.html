@@ -1,0 +1,107 @@
+<div class="vloc-attr-container_modal" ng-init="$root.isLoaded = true; importedScope.orderMap(records.records); importedScope.locale = importedScope.checkLocaleFormat($root.vlocity.userAnLocale)">
+    <div class="slds-size_1-of-1 slds-m-top_small slds-grid slds-wrap">
+        <div id="modal-heading-01" class="slds-text-heading_medium slds-p-left_large slds-hyphenate slds-size_1-of-1 slds-p-vertical_xx-small">
+            <input autofocus="false" class="slds-text-body_regular slds-input slds-size_1-of-4" id="vloc-search-title" placeholder="{{::importedScope.customLabels.InsProductSearch}}" ng-model="searchTitle"/>
+            <span class="slds-text-heading_medium text-align_center slds-size_1-of-1" style="text-align: center;left: 0%;">
+            <span ng-if="records.type === 'coverages'">{{::importedScope.customLabels.InsProductAddCoverages}}</span>
+            <span ng-if="records.type === 'insuredItems'">{{::importedScope.customLabels.InsProductAddInsuredItems}}</span>
+            <span ng-if="records.type === 'claimInjuries'">{{::importedScope.customLabels.InsProductAddInvolvedInjuries}}</span>
+            <span ng-if="records.type === 'claimProperties'">{{::importedScope.customLabels.InsProductAddInvolvedProperties}}</span>
+            <span ng-if="records.type === 'ratingFacts'">{{::importedScope.customLabels.InsProductAddRatingFacts}}</span>
+            </span>
+        </div>
+        <button class="vloc-attr-container_select slds-button slds-button_brand" ng-click="importedScope.insFn.addItems(records.records, records.type)" ng-if="records.records">{{::importedScope.customLabels.Select}}</button>
+    </div>
+    <div class="slds-grid slds-wrap slds-p-top_small">
+        <div ng-if="!records.records" class="slds-text-heading_x-small vloc-text-align-center slds-size_1-of-1">{{::importedScope.customLabels.InsProductNoItemsAssociated}}</div>
+        <div class="slds-grid slds-grid_wrap slds-size_1-of-1 slds-border_top  slds-border_bottom  slds-text-heading_x-small" ng-init="importedScope.orderTerm = 'Name'; importedScope.orderAsc = false">
+            <div class="slds-size_1-of-5 slds-p-left_x-large slds-text-title_caps slds-p-top_x-small slds-p-bottom_x-small" ng-class="{'vloc-sorted-column' : importedScope.orderTerm === 'Name', 'vloc-not-sorted-column': importedScope.orderTerm !==  'Name'}" ng-click="importedScope.setOrderTerm('Name')">
+                {{::importedScope.customLabels.Name}}
+                <slds-button-svg-icon ng-if="importedScope.orderTerm === 'Name' && !importedScope.orderAsc"  extra-classes="'slds-button__icon_left'" sprite="'utility'" icon="'arrowup'"></slds-button-svg-icon>
+                <slds-button-svg-icon ng-if="importedScope.orderTerm === 'Name'  && importedScope.orderAsc"  extra-classes="'slds-button__icon_left'" sprite="'utility'" icon="'arrowdown'"></slds-button-svg-icon>
+            </div>
+            <div class="slds-size_1-of-5 slds-text-title_caps slds-p-around_x-small" ng-class="{'vloc-sorted-column' : importedScope.orderTerm ===  'ProductCode', 'vloc-not-sorted-column': importedScope.orderTerm !==  'ProductCode'}"  ng-click="importedScope.setOrderTerm('ProductCode')">
+                {{::importedScope.customLabels.InsProductCode}}
+
+                <slds-button-svg-icon ng-if="importedScope.orderTerm === 'ProductCode' && !importedScope.orderAsc"  extra-classes="'slds-button__icon_left'" sprite="'utility'" icon="'arrowup'"></slds-button-svg-icon>
+                <slds-button-svg-icon ng-if="importedScope.orderTerm === 'ProductCode'  && importedScope.orderAsc"  extra-classes="'slds-button__icon_left'" sprite="'utility'" icon="'arrowdown'"></slds-button-svg-icon>
+            </div>
+            <div class="slds-size_1-of-5 slds-text-title_caps slds-p-around_x-small" ng-class="{'vloc-sorted-column' : importedScope.orderTerm === 'CreatedBy', 'vloc-not-sorted-column': importedScope.orderTerm !==  'CreatedBy'}"  ng-click="importedScope.setOrderTerm('CreatedBy')">
+                {{::importedScope.customLabels.InsProductCreatedBy}}
+                <slds-button-svg-icon ng-if="importedScope.orderTerm === 'CreatedBy' && !importedScope.orderAsc"  extra-classes="'slds-button__icon_left'" sprite="'utility'" icon="'arrowup'"></slds-button-svg-icon>
+                <slds-button-svg-icon ng-if="importedScope.orderTerm === 'CreatedBy'  && importedScope.orderAsc"  extra-classes="'slds-button__icon_left'" sprite="'utility'" icon="'arrowdown'"></slds-button-svg-icon>
+            </div>
+            <div class="slds-size_1-of-5 slds-text-title_caps slds-p-around_x-small" ng-class="{'vloc-sorted-column' : importedScope.orderTerm === 'CreatedDate', 'vloc-not-sorted-column': importedScope.orderTerm !==  'CreatedDate'}" ng-click="importedScope.setOrderTerm('CreatedDate')">
+                {{::importedScope.customLabels.InsProductCreatedDate}}
+                <slds-button-svg-icon ng-if="importedScope.orderTerm === 'CreatedDate' && !importedScope.orderAsc"  extra-classes="'slds-button__icon_left'" sprite="'utility'" icon="'arrowup'"></slds-button-svg-icon>
+                <slds-button-svg-icon ng-if="importedScope.orderTerm === 'CreatedDate'  && importedScope.orderAsc"  extra-classes="'slds-button__icon_left'" sprite="'utility'" icon="'arrowdown'"></slds-button-svg-icon>
+            </div>
+        </div>
+        <div class="vloc-product-grid slds-size_1-of-1 slds-grid slds-wrap" ng-repeat="prod in importedScope.sortedList | orderBy: importedScope.orderTerm : importedScope.orderAsc track by $index" ng-if="importedScope.searchFilter(prod.Name, searchTitle)">
+            <div class="vloc-product slds-grid slds-wrap slds-size_1-of-1 slds-border_bottom slds-p-vertical_small">
+                <div class="slds-size_1-of-5 slds-p-left_x-small slds-truncate">
+                    <span class="slds-checkbox">
+                    <input type="checkbox" name="attrs-{{$index}}-{{prod.Id}}" id="attrs-{{$index}}-{{prod.Id}}"  ng-model="prod.isSelected"/>
+                    <label class="slds-checkbox__label slds-m-around_none" for="attrs-{{$index}}-{{prod.Id}}">
+                    <span class="slds-checkbox_faux vloc-check"></span>
+                    </label>
+                    </span>
+                    <label class="slds-m-left_x-small">{{prod.Name}}</label>
+                </div>
+                <div class="slds-size_1-of-5 slds-p-left_x-small">
+                    {{prod.ProductCode}}
+                </div>
+                <div class="slds-size_1-of-5 slds-p-left_x-small">
+                    {{prod.CreatedBy}}
+                </div>
+                <div class="slds-size_1-of-5 slds-p-left_x-small">
+                    {{prod.CreatedDate | formatDate}}
+                </div>
+                <div class="vloc-attr-show-more slds-size_1-of-5 slds-text-align_right slds-p-right_medium">
+                    <button class="vloc-attr-show-more_btn slds-button slds-button_link slds-text-align_right" ng-click="prod.show = !prod.show" ng-if="prod.AttributeAssignment.length > 0">
+                        <slds-button-svg-icon sprite="'utility'" icon="'chevronright'" ng-if="!prod.show" extra-classes="vloc-attrs-category-btn"></slds-button-svg-icon>
+                        <slds-button-svg-icon sprite="'utility'" icon="'chevrondown'" ng-if="prod.show" extra-classes="vloc-attrs-category-btn"></slds-button-svg-icon>
+                        <span class="slds-m-left_x-small" ng-if="!prod.show">{{::importedScope.customLabels.InsButtonShowMore}}</span>
+                        <span class="slds-m-left_x-small" ng-if="prod.show">{{::importedScope.customLabels.InsButtonShowLess}}</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="vloc-prod-attrs slds-size_1-of-1 slds-grid slds-wrap slds-theme_shade slds-p-bottom_small slds-border_bottom" ng-if="prod.show">
+                <div class="slds-grid slds-wrap slds-size_1-of-1 slds-border_bottom slds-p-vertical_x-small">
+                    <div class="slds-p-horizontal_small">
+                    </div>
+                    <div class="slds-size_1-of-5 slds-m-left_x-small slds-truncate">
+                        <span class="slds-text-title_caps" title="{{::importedScope.customLabels.Name}}">{{::importedScope.customLabels.Name}}</span>
+                    </div>
+                    <div class="slds-size_1-of-4 slds-truncate">
+                        <span class="slds-text-title_caps" title="{{::importedScope.customLabels.InsProductCategory}}">{{::importedScope.customLabels.InsProductCategory}}</span>
+                    </div>
+                    <div class="slds-size_1-of-4 slds-truncate">
+                        <span class="slds-text-title_caps" title="{{::importedScope.customLabels.InsProductDataType}}">{{::importedScope.customLabels.InsProductDataType}}</span>
+                    </div>
+                    <div class="slds-size_1-of-4 slds-truncate">
+                        <span class="slds-text-title_caps" title="{{::importedScope.customLabels.InsProductValueType}}">{{::importedScope.customLabels.InsProductValueType}}</span>
+                    </div>
+                </div>
+                <div class="slds-size_1-of-1 slds-grid slds-wrap slds-p-top_small" ng-repeat="attr in prod.AttributeAssignment | orderBy : $root.nsPrefix + 'CategoryName__c'">
+                    <div class="slds-p-horizontal_small">
+                        {{$index + 1}}
+                    </div>
+                    <div class="slds-size_1-of-5 slds-truncate slds-p-right_x-small">
+                        <span title="Name">{{attr[$root.nsPrefix + 'AttributeDisplayName__c']}}</span>
+                    </div>
+                    <div class="slds-size_1-of-4 slds-truncate slds-p-right_x-small">
+                        <span title="Label">{{attr[$root.nsPrefix + 'CategoryName__c']}}</span>
+                    </div>
+                    <div class="slds-size_1-of-4 slds-truncate slds-p-right_x-small">
+                        <span title="Control">{{ ::importedScope.getTranslatedDataType(attr[$root.nsPrefix + 'ValueDataType__c']) }}</span>
+                    </div>
+                    <div class="slds-size_1-of-4 slds-truncate">
+                        <span title="Value Type">{{attr[$root.nsPrefix + 'Value__c']}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

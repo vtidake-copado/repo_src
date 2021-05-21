@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ForecastingSettings xmlns="http://soap.sforce.com/2006/04/metadata">
     <defaultToPersonalCurrency>false</defaultToPersonalCurrency>
-    <enableForecasts>false</enableForecasts>
+    <enableForecasts>true</enableForecasts>
     <forecastingCategoryMappings>
         <forecastingItemCategoryApiName>commitonly</forecastingItemCategoryApiName>
         <weightedSourceCategories>
@@ -193,6 +193,10 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -217,6 +221,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -229,40 +237,40 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTO</field>
-            <label>Current Generator(s)</label>
+            <field>00N3t00000BFxly</field>
+            <label>Agency/Brokerage</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTP</field>
-            <label>Delivery/Installation Status</label>
+            <field>00N3t00000BFxRu</field>
+            <label>Follow Up To</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTQ</field>
-            <label>Main Competitor(s)</label>
+            <field>00N3t00000BFxlz</field>
+            <label>Frame Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTR</field>
-            <label>Order Number</label>
+            <field>00N3t00000BFxm1</field>
+            <label>Originating Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjG</field>
-            <label>Test Commit A</label>
+            <field>00N3t00000BFxAC</field>
+            <label>Price List</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjH</field>
-            <label>Test Commit B</label>
+            <field>00N3t00000BFy3n</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjI</field>
-            <label>Test Commit C</label>
+            <field>00N3t00000BFxRv</field>
+            <label>Referral Source</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTS</field>
+            <field>00N3t00000BFxm0</field>
+            <label>Require Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N3t00000BFxRw</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjJ</field>
-            <label>xyz SGUID Opp</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -289,24 +297,26 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N0Y00000IPUTO</field>
-            <field>00N0Y00000IPUTP</field>
-            <field>00N0Y00000IPUTQ</field>
-            <field>00N0Y00000IPUTR</field>
-            <field>00N0Y00000QYNjG</field>
-            <field>00N0Y00000QYNjH</field>
-            <field>00N0Y00000QYNjI</field>
-            <field>00N0Y00000IPUTS</field>
-            <field>00N0Y00000QYNjJ</field>
+            <field>00N3t00000BFxly</field>
+            <field>00N3t00000BFxRu</field>
+            <field>00N3t00000BFxlz</field>
+            <field>00N3t00000BFxm1</field>
+            <field>00N3t00000BFxAC</field>
+            <field>00N3t00000BFy3n</field>
+            <field>00N3t00000BFxRv</field>
+            <field>00N3t00000BFxm0</field>
+            <field>00N3t00000BFxRw</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -427,6 +437,10 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -451,6 +465,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -463,40 +481,40 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTO</field>
-            <label>Current Generator(s)</label>
+            <field>00N3t00000BFxly</field>
+            <label>Agency/Brokerage</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTP</field>
-            <label>Delivery/Installation Status</label>
+            <field>00N3t00000BFxRu</field>
+            <label>Follow Up To</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTQ</field>
-            <label>Main Competitor(s)</label>
+            <field>00N3t00000BFxlz</field>
+            <label>Frame Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTR</field>
-            <label>Order Number</label>
+            <field>00N3t00000BFxm1</field>
+            <label>Originating Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjG</field>
-            <label>Test Commit A</label>
+            <field>00N3t00000BFxAC</field>
+            <label>Price List</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjH</field>
-            <label>Test Commit B</label>
+            <field>00N3t00000BFy3n</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjI</field>
-            <label>Test Commit C</label>
+            <field>00N3t00000BFxRv</field>
+            <label>Referral Source</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTS</field>
+            <field>00N3t00000BFxm0</field>
+            <label>Require Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N3t00000BFxRw</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjJ</field>
-            <label>xyz SGUID Opp</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -523,24 +541,26 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N0Y00000IPUTO</field>
-            <field>00N0Y00000IPUTP</field>
-            <field>00N0Y00000IPUTQ</field>
-            <field>00N0Y00000IPUTR</field>
-            <field>00N0Y00000QYNjG</field>
-            <field>00N0Y00000QYNjH</field>
-            <field>00N0Y00000QYNjI</field>
-            <field>00N0Y00000IPUTS</field>
-            <field>00N0Y00000QYNjJ</field>
+            <field>00N3t00000BFxly</field>
+            <field>00N3t00000BFxRu</field>
+            <field>00N3t00000BFxlz</field>
+            <field>00N3t00000BFxm1</field>
+            <field>00N3t00000BFxAC</field>
+            <field>00N3t00000BFy3n</field>
+            <field>00N3t00000BFxRv</field>
+            <field>00N3t00000BFxm0</field>
+            <field>00N3t00000BFxRw</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -665,6 +685,10 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -689,6 +713,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -701,40 +729,40 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTO</field>
-            <label>Current Generator(s)</label>
+            <field>00N3t00000BFxly</field>
+            <label>Agency/Brokerage</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTP</field>
-            <label>Delivery/Installation Status</label>
+            <field>00N3t00000BFxRu</field>
+            <label>Follow Up To</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTQ</field>
-            <label>Main Competitor(s)</label>
+            <field>00N3t00000BFxlz</field>
+            <label>Frame Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTR</field>
-            <label>Order Number</label>
+            <field>00N3t00000BFxm1</field>
+            <label>Originating Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjG</field>
-            <label>Test Commit A</label>
+            <field>00N3t00000BFxAC</field>
+            <label>Price List</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjH</field>
-            <label>Test Commit B</label>
+            <field>00N3t00000BFy3n</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjI</field>
-            <label>Test Commit C</label>
+            <field>00N3t00000BFxRv</field>
+            <label>Referral Source</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTS</field>
+            <field>00N3t00000BFxm0</field>
+            <label>Require Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N3t00000BFxRw</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjJ</field>
-            <label>xyz SGUID Opp</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -762,24 +790,26 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N0Y00000IPUTO</field>
-            <field>00N0Y00000IPUTP</field>
-            <field>00N0Y00000IPUTQ</field>
-            <field>00N0Y00000IPUTR</field>
-            <field>00N0Y00000QYNjG</field>
-            <field>00N0Y00000QYNjH</field>
-            <field>00N0Y00000QYNjI</field>
-            <field>00N0Y00000IPUTS</field>
-            <field>00N0Y00000QYNjJ</field>
+            <field>00N3t00000BFxly</field>
+            <field>00N3t00000BFxRu</field>
+            <field>00N3t00000BFxlz</field>
+            <field>00N3t00000BFxm1</field>
+            <field>00N3t00000BFxAC</field>
+            <field>00N3t00000BFy3n</field>
+            <field>00N3t00000BFxRv</field>
+            <field>00N3t00000BFxm0</field>
+            <field>00N3t00000BFxRw</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -900,6 +930,10 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -924,6 +958,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -936,40 +974,40 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTO</field>
-            <label>Current Generator(s)</label>
+            <field>00N3t00000BFxly</field>
+            <label>Agency/Brokerage</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTP</field>
-            <label>Delivery/Installation Status</label>
+            <field>00N3t00000BFxRu</field>
+            <label>Follow Up To</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTQ</field>
-            <label>Main Competitor(s)</label>
+            <field>00N3t00000BFxlz</field>
+            <label>Frame Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTR</field>
-            <label>Order Number</label>
+            <field>00N3t00000BFxm1</field>
+            <label>Originating Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjG</field>
-            <label>Test Commit A</label>
+            <field>00N3t00000BFxAC</field>
+            <label>Price List</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjH</field>
-            <label>Test Commit B</label>
+            <field>00N3t00000BFy3n</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjI</field>
-            <label>Test Commit C</label>
+            <field>00N3t00000BFxRv</field>
+            <label>Referral Source</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTS</field>
+            <field>00N3t00000BFxm0</field>
+            <label>Require Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N3t00000BFxRw</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjJ</field>
-            <label>xyz SGUID Opp</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -996,24 +1034,26 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N0Y00000IPUTO</field>
-            <field>00N0Y00000IPUTP</field>
-            <field>00N0Y00000IPUTQ</field>
-            <field>00N0Y00000IPUTR</field>
-            <field>00N0Y00000QYNjG</field>
-            <field>00N0Y00000QYNjH</field>
-            <field>00N0Y00000QYNjI</field>
-            <field>00N0Y00000IPUTS</field>
-            <field>00N0Y00000QYNjJ</field>
+            <field>00N3t00000BFxly</field>
+            <field>00N3t00000BFxRu</field>
+            <field>00N3t00000BFxlz</field>
+            <field>00N3t00000BFxm1</field>
+            <field>00N3t00000BFxAC</field>
+            <field>00N3t00000BFy3n</field>
+            <field>00N3t00000BFxRv</field>
+            <field>00N3t00000BFxm0</field>
+            <field>00N3t00000BFxRw</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -1138,6 +1178,10 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -1162,6 +1206,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1174,40 +1222,40 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTO</field>
-            <label>Current Generator(s)</label>
+            <field>00N3t00000BFxly</field>
+            <label>Agency/Brokerage</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTP</field>
-            <label>Delivery/Installation Status</label>
+            <field>00N3t00000BFxRu</field>
+            <label>Follow Up To</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTQ</field>
-            <label>Main Competitor(s)</label>
+            <field>00N3t00000BFxlz</field>
+            <label>Frame Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTR</field>
-            <label>Order Number</label>
+            <field>00N3t00000BFxm1</field>
+            <label>Originating Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjG</field>
-            <label>Test Commit A</label>
+            <field>00N3t00000BFxAC</field>
+            <label>Price List</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjH</field>
-            <label>Test Commit B</label>
+            <field>00N3t00000BFy3n</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjI</field>
-            <label>Test Commit C</label>
+            <field>00N3t00000BFxRv</field>
+            <label>Referral Source</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTS</field>
+            <field>00N3t00000BFxm0</field>
+            <label>Require Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N3t00000BFxRw</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjJ</field>
-            <label>xyz SGUID Opp</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -1235,24 +1283,26 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N0Y00000IPUTO</field>
-            <field>00N0Y00000IPUTP</field>
-            <field>00N0Y00000IPUTQ</field>
-            <field>00N0Y00000IPUTR</field>
-            <field>00N0Y00000QYNjG</field>
-            <field>00N0Y00000QYNjH</field>
-            <field>00N0Y00000QYNjI</field>
-            <field>00N0Y00000IPUTS</field>
-            <field>00N0Y00000QYNjJ</field>
+            <field>00N3t00000BFxly</field>
+            <field>00N3t00000BFxRu</field>
+            <field>00N3t00000BFxlz</field>
+            <field>00N3t00000BFxm1</field>
+            <field>00N3t00000BFxAC</field>
+            <field>00N3t00000BFy3n</field>
+            <field>00N3t00000BFxRv</field>
+            <field>00N3t00000BFxm0</field>
+            <field>00N3t00000BFxRw</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -1373,6 +1423,10 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -1397,6 +1451,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1409,40 +1467,40 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTO</field>
-            <label>Current Generator(s)</label>
+            <field>00N3t00000BFxly</field>
+            <label>Agency/Brokerage</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTP</field>
-            <label>Delivery/Installation Status</label>
+            <field>00N3t00000BFxRu</field>
+            <label>Follow Up To</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTQ</field>
-            <label>Main Competitor(s)</label>
+            <field>00N3t00000BFxlz</field>
+            <label>Frame Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTR</field>
-            <label>Order Number</label>
+            <field>00N3t00000BFxm1</field>
+            <label>Originating Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjG</field>
-            <label>Test Commit A</label>
+            <field>00N3t00000BFxAC</field>
+            <label>Price List</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjH</field>
-            <label>Test Commit B</label>
+            <field>00N3t00000BFy3n</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjI</field>
-            <label>Test Commit C</label>
+            <field>00N3t00000BFxRv</field>
+            <label>Referral Source</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTS</field>
+            <field>00N3t00000BFxm0</field>
+            <label>Require Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N3t00000BFxRw</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjJ</field>
-            <label>xyz SGUID Opp</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -1469,24 +1527,26 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N0Y00000IPUTO</field>
-            <field>00N0Y00000IPUTP</field>
-            <field>00N0Y00000IPUTQ</field>
-            <field>00N0Y00000IPUTR</field>
-            <field>00N0Y00000QYNjG</field>
-            <field>00N0Y00000QYNjH</field>
-            <field>00N0Y00000QYNjI</field>
-            <field>00N0Y00000IPUTS</field>
-            <field>00N0Y00000QYNjJ</field>
+            <field>00N3t00000BFxly</field>
+            <field>00N3t00000BFxRu</field>
+            <field>00N3t00000BFxlz</field>
+            <field>00N3t00000BFxm1</field>
+            <field>00N3t00000BFxAC</field>
+            <field>00N3t00000BFy3n</field>
+            <field>00N3t00000BFxRv</field>
+            <field>00N3t00000BFxm0</field>
+            <field>00N3t00000BFxRw</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -1611,6 +1671,10 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -1635,6 +1699,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1647,40 +1715,40 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTO</field>
-            <label>Current Generator(s)</label>
+            <field>00N3t00000BFxly</field>
+            <label>Agency/Brokerage</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTP</field>
-            <label>Delivery/Installation Status</label>
+            <field>00N3t00000BFxRu</field>
+            <label>Follow Up To</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTQ</field>
-            <label>Main Competitor(s)</label>
+            <field>00N3t00000BFxlz</field>
+            <label>Frame Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTR</field>
-            <label>Order Number</label>
+            <field>00N3t00000BFxm1</field>
+            <label>Originating Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjG</field>
-            <label>Test Commit A</label>
+            <field>00N3t00000BFxAC</field>
+            <label>Price List</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjH</field>
-            <label>Test Commit B</label>
+            <field>00N3t00000BFy3n</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjI</field>
-            <label>Test Commit C</label>
+            <field>00N3t00000BFxRv</field>
+            <label>Referral Source</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTS</field>
+            <field>00N3t00000BFxm0</field>
+            <label>Require Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N3t00000BFxRw</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjJ</field>
-            <label>xyz SGUID Opp</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -1708,24 +1776,26 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N0Y00000IPUTO</field>
-            <field>00N0Y00000IPUTP</field>
-            <field>00N0Y00000IPUTQ</field>
-            <field>00N0Y00000IPUTR</field>
-            <field>00N0Y00000QYNjG</field>
-            <field>00N0Y00000QYNjH</field>
-            <field>00N0Y00000QYNjI</field>
-            <field>00N0Y00000IPUTS</field>
-            <field>00N0Y00000QYNjJ</field>
+            <field>00N3t00000BFxly</field>
+            <field>00N3t00000BFxRu</field>
+            <field>00N3t00000BFxlz</field>
+            <field>00N3t00000BFxm1</field>
+            <field>00N3t00000BFxAC</field>
+            <field>00N3t00000BFy3n</field>
+            <field>00N3t00000BFxRv</field>
+            <field>00N3t00000BFxm0</field>
+            <field>00N3t00000BFxRw</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -1846,6 +1916,10 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -1870,6 +1944,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1882,40 +1960,40 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTO</field>
-            <label>Current Generator(s)</label>
+            <field>00N3t00000BFxly</field>
+            <label>Agency/Brokerage</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTP</field>
-            <label>Delivery/Installation Status</label>
+            <field>00N3t00000BFxRu</field>
+            <label>Follow Up To</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTQ</field>
-            <label>Main Competitor(s)</label>
+            <field>00N3t00000BFxlz</field>
+            <label>Frame Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTR</field>
-            <label>Order Number</label>
+            <field>00N3t00000BFxm1</field>
+            <label>Originating Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjG</field>
-            <label>Test Commit A</label>
+            <field>00N3t00000BFxAC</field>
+            <label>Price List</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjH</field>
-            <label>Test Commit B</label>
+            <field>00N3t00000BFy3n</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjI</field>
-            <label>Test Commit C</label>
+            <field>00N3t00000BFxRv</field>
+            <label>Referral Source</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTS</field>
+            <field>00N3t00000BFxm0</field>
+            <label>Require Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N3t00000BFxRw</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjJ</field>
-            <label>xyz SGUID Opp</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -1942,24 +2020,26 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N0Y00000IPUTO</field>
-            <field>00N0Y00000IPUTP</field>
-            <field>00N0Y00000IPUTQ</field>
-            <field>00N0Y00000IPUTR</field>
-            <field>00N0Y00000QYNjG</field>
-            <field>00N0Y00000QYNjH</field>
-            <field>00N0Y00000QYNjI</field>
-            <field>00N0Y00000IPUTS</field>
-            <field>00N0Y00000QYNjJ</field>
+            <field>00N3t00000BFxly</field>
+            <field>00N3t00000BFxRu</field>
+            <field>00N3t00000BFxlz</field>
+            <field>00N3t00000BFxm1</field>
+            <field>00N3t00000BFxAC</field>
+            <field>00N3t00000BFy3n</field>
+            <field>00N3t00000BFxRv</field>
+            <field>00N3t00000BFxm0</field>
+            <field>00N3t00000BFxRw</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -1987,7 +2067,7 @@
         <forecastingDateType>ScheduleDate</forecastingDateType>
         <hasProductFamily>false</hasProductFamily>
         <isAmount>true</isAmount>
-        <isAvailable>false</isAvailable>
+        <isAvailable>true</isAvailable>
         <isQuantity>false</isQuantity>
         <masterLabel>Opportunity Revenue Schedule Date</masterLabel>
         <name>OpportunityRevenueScheduleDate</name>
@@ -2084,6 +2164,10 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -2108,6 +2192,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -2120,40 +2208,40 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTO</field>
-            <label>Current Generator(s)</label>
+            <field>00N3t00000BFxly</field>
+            <label>Agency/Brokerage</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTP</field>
-            <label>Delivery/Installation Status</label>
+            <field>00N3t00000BFxRu</field>
+            <label>Follow Up To</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTQ</field>
-            <label>Main Competitor(s)</label>
+            <field>00N3t00000BFxlz</field>
+            <label>Frame Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTR</field>
-            <label>Order Number</label>
+            <field>00N3t00000BFxm1</field>
+            <label>Originating Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjG</field>
-            <label>Test Commit A</label>
+            <field>00N3t00000BFxAC</field>
+            <label>Price List</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjH</field>
-            <label>Test Commit B</label>
+            <field>00N3t00000BFy3n</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjI</field>
-            <label>Test Commit C</label>
+            <field>00N3t00000BFxRv</field>
+            <label>Referral Source</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTS</field>
+            <field>00N3t00000BFxm0</field>
+            <label>Require Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N3t00000BFxRw</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjJ</field>
-            <label>xyz SGUID Opp</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -2181,24 +2269,26 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N0Y00000IPUTO</field>
-            <field>00N0Y00000IPUTP</field>
-            <field>00N0Y00000IPUTQ</field>
-            <field>00N0Y00000IPUTR</field>
-            <field>00N0Y00000QYNjG</field>
-            <field>00N0Y00000QYNjH</field>
-            <field>00N0Y00000QYNjI</field>
-            <field>00N0Y00000IPUTS</field>
-            <field>00N0Y00000QYNjJ</field>
+            <field>00N3t00000BFxly</field>
+            <field>00N3t00000BFxRu</field>
+            <field>00N3t00000BFxlz</field>
+            <field>00N3t00000BFxm1</field>
+            <field>00N3t00000BFxAC</field>
+            <field>00N3t00000BFy3n</field>
+            <field>00N3t00000BFxRv</field>
+            <field>00N3t00000BFxm0</field>
+            <field>00N3t00000BFxRw</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -2226,7 +2316,7 @@
         <forecastingDateType>ScheduleDate</forecastingDateType>
         <hasProductFamily>false</hasProductFamily>
         <isAmount>false</isAmount>
-        <isAvailable>false</isAvailable>
+        <isAvailable>true</isAvailable>
         <isQuantity>true</isQuantity>
         <masterLabel>Opportunity Quantity Schedule Date</masterLabel>
         <name>OpportunityQuantityScheduleDate</name>
@@ -2319,6 +2409,10 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -2343,6 +2437,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -2355,40 +2453,40 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTO</field>
-            <label>Current Generator(s)</label>
+            <field>00N3t00000BFxly</field>
+            <label>Agency/Brokerage</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTP</field>
-            <label>Delivery/Installation Status</label>
+            <field>00N3t00000BFxRu</field>
+            <label>Follow Up To</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTQ</field>
-            <label>Main Competitor(s)</label>
+            <field>00N3t00000BFxlz</field>
+            <label>Frame Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTR</field>
-            <label>Order Number</label>
+            <field>00N3t00000BFxm1</field>
+            <label>Originating Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjG</field>
-            <label>Test Commit A</label>
+            <field>00N3t00000BFxAC</field>
+            <label>Price List</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjH</field>
-            <label>Test Commit B</label>
+            <field>00N3t00000BFy3n</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjI</field>
-            <label>Test Commit C</label>
+            <field>00N3t00000BFxRv</field>
+            <label>Referral Source</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTS</field>
+            <field>00N3t00000BFxm0</field>
+            <label>Require Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N3t00000BFxRw</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjJ</field>
-            <label>xyz SGUID Opp</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -2415,24 +2513,26 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N0Y00000IPUTO</field>
-            <field>00N0Y00000IPUTP</field>
-            <field>00N0Y00000IPUTQ</field>
-            <field>00N0Y00000IPUTR</field>
-            <field>00N0Y00000QYNjG</field>
-            <field>00N0Y00000QYNjH</field>
-            <field>00N0Y00000QYNjI</field>
-            <field>00N0Y00000IPUTS</field>
-            <field>00N0Y00000QYNjJ</field>
+            <field>00N3t00000BFxly</field>
+            <field>00N3t00000BFxRu</field>
+            <field>00N3t00000BFxlz</field>
+            <field>00N3t00000BFxm1</field>
+            <field>00N3t00000BFxAC</field>
+            <field>00N3t00000BFy3n</field>
+            <field>00N3t00000BFxRv</field>
+            <field>00N3t00000BFxm0</field>
+            <field>00N3t00000BFxRw</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -2460,7 +2560,7 @@
         <forecastingDateType>ScheduleDate</forecastingDateType>
         <hasProductFamily>true</hasProductFamily>
         <isAmount>true</isAmount>
-        <isAvailable>false</isAvailable>
+        <isAvailable>true</isAvailable>
         <isQuantity>false</isQuantity>
         <masterLabel>Line Item Revenue Schedule Date</masterLabel>
         <name>LineItemRevenueScheduleDate</name>
@@ -2557,6 +2657,10 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -2581,6 +2685,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -2593,40 +2701,40 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTO</field>
-            <label>Current Generator(s)</label>
+            <field>00N3t00000BFxly</field>
+            <label>Agency/Brokerage</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTP</field>
-            <label>Delivery/Installation Status</label>
+            <field>00N3t00000BFxRu</field>
+            <label>Follow Up To</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTQ</field>
-            <label>Main Competitor(s)</label>
+            <field>00N3t00000BFxlz</field>
+            <label>Frame Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTR</field>
-            <label>Order Number</label>
+            <field>00N3t00000BFxm1</field>
+            <label>Originating Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjG</field>
-            <label>Test Commit A</label>
+            <field>00N3t00000BFxAC</field>
+            <label>Price List</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjH</field>
-            <label>Test Commit B</label>
+            <field>00N3t00000BFy3n</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjI</field>
-            <label>Test Commit C</label>
+            <field>00N3t00000BFxRv</field>
+            <label>Referral Source</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTS</field>
+            <field>00N3t00000BFxm0</field>
+            <label>Require Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N3t00000BFxRw</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjJ</field>
-            <label>xyz SGUID Opp</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -2654,24 +2762,26 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N0Y00000IPUTO</field>
-            <field>00N0Y00000IPUTP</field>
-            <field>00N0Y00000IPUTQ</field>
-            <field>00N0Y00000IPUTR</field>
-            <field>00N0Y00000QYNjG</field>
-            <field>00N0Y00000QYNjH</field>
-            <field>00N0Y00000QYNjI</field>
-            <field>00N0Y00000IPUTS</field>
-            <field>00N0Y00000QYNjJ</field>
+            <field>00N3t00000BFxly</field>
+            <field>00N3t00000BFxRu</field>
+            <field>00N3t00000BFxlz</field>
+            <field>00N3t00000BFxm1</field>
+            <field>00N3t00000BFxAC</field>
+            <field>00N3t00000BFy3n</field>
+            <field>00N3t00000BFxRv</field>
+            <field>00N3t00000BFxm0</field>
+            <field>00N3t00000BFxRw</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>
@@ -2699,7 +2809,7 @@
         <forecastingDateType>ScheduleDate</forecastingDateType>
         <hasProductFamily>true</hasProductFamily>
         <isAmount>false</isAmount>
-        <isAvailable>false</isAvailable>
+        <isAvailable>true</isAvailable>
         <isQuantity>true</isQuantity>
         <masterLabel>Line Item Quantity Schedule Date</masterLabel>
         <name>LineItemQuantityScheduleDate</name>
@@ -2792,6 +2902,10 @@
             <label>Created By Alias</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>SYNCEDQUOTE.NAME</field>
+            <label>Synced Quote</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.CLOSED</field>
             <label>Closed</label>
         </opportunityListFieldsLabelMappings>
@@ -2816,6 +2930,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -2828,40 +2946,40 @@
             <label>Last Modified Date</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTO</field>
-            <label>Current Generator(s)</label>
+            <field>00N3t00000BFxly</field>
+            <label>Agency/Brokerage</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTP</field>
-            <label>Delivery/Installation Status</label>
+            <field>00N3t00000BFxRu</field>
+            <label>Follow Up To</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTQ</field>
-            <label>Main Competitor(s)</label>
+            <field>00N3t00000BFxlz</field>
+            <label>Frame Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTR</field>
-            <label>Order Number</label>
+            <field>00N3t00000BFxm1</field>
+            <label>Originating Contract</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjG</field>
-            <label>Test Commit A</label>
+            <field>00N3t00000BFxAC</field>
+            <label>Price List</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjH</field>
-            <label>Test Commit B</label>
+            <field>00N3t00000BFy3n</field>
+            <label>Primary Producer</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjI</field>
-            <label>Test Commit C</label>
+            <field>00N3t00000BFxRv</field>
+            <label>Referral Source</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000IPUTS</field>
+            <field>00N3t00000BFxm0</field>
+            <label>Require Contract</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N3t00000BFxRw</field>
             <label>Tracking Number</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N0Y00000QYNjJ</field>
-            <label>xyz SGUID Opp</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsSelectedSettings>
             <field>OPPORTUNITY.NAME</field>
@@ -2888,24 +3006,26 @@
             <field>OPPORTUNITY.TYPE</field>
             <field>UPDATEDBY_USER.ALIAS</field>
             <field>CREATEDBY_USER.ALIAS</field>
+            <field>SYNCEDQUOTE.NAME</field>
             <field>OPPORTUNITY.CLOSED</field>
             <field>OPPORTUNITY.WON</field>
             <field>ACCOUNT.SITE</field>
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
-            <field>00N0Y00000IPUTO</field>
-            <field>00N0Y00000IPUTP</field>
-            <field>00N0Y00000IPUTQ</field>
-            <field>00N0Y00000IPUTR</field>
-            <field>00N0Y00000QYNjG</field>
-            <field>00N0Y00000QYNjH</field>
-            <field>00N0Y00000QYNjI</field>
-            <field>00N0Y00000IPUTS</field>
-            <field>00N0Y00000QYNjJ</field>
+            <field>00N3t00000BFxly</field>
+            <field>00N3t00000BFxRu</field>
+            <field>00N3t00000BFxlz</field>
+            <field>00N3t00000BFxm1</field>
+            <field>00N3t00000BFxAC</field>
+            <field>00N3t00000BFy3n</field>
+            <field>00N3t00000BFxRv</field>
+            <field>00N3t00000BFxm0</field>
+            <field>00N3t00000BFxRw</field>
         </opportunityListFieldsUnselectedSettings>
         <quotasSettings>
             <showQuotas>false</showQuotas>

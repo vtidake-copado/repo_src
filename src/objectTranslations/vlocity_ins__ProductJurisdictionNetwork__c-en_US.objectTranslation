@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Jurisdiction --></label>
+        <name>vlocity_ins__JurisdictionId__c</name>
+        <relationshipLabel><!-- ProductJurisdictionNetworks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>vlocity_ins__Product2Id__c</name>
+        <relationshipLabel><!-- Jurisdiction Networks --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Provider Network --></label>
+        <name>vlocity_ins__ProviderNetworkId__c</name>
+        <relationshipLabel><!-- NetworksProductJurisdictions --></relationshipLabel>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Product Id should not be blank. --></errorMessage>
+        <name>vlocity_ins__ProductId</name>
+    </validationRules>
+</CustomObjectTranslation>

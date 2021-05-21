@@ -1,0 +1,63 @@
+html[ng-app="insProductModel"] {
+    .via-slds {
+        min-height: 40rem;
+        padding-bottom: 2rem;
+    }
+}
+.via-slds {
+    .vloc-ins-coverage-card-body-container {
+        background-color: #fff;
+        margin: 0;
+        border-bottom-left-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+
+        .vloc-ins-coverage-image-container {
+            .vloc-ins-coverage-image {
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                position: relative;
+                overflow: hidden;
+                margin: 0 auto;
+
+                .vloc-ins-coverage-image-src {
+                    position: absolute;
+                    width: 5rem;
+                    top: 50%;
+                    left: 50%;
+                    z-index: 0;
+                    transform: translateX(-50%) translateY(-50%);
+                }
+            }
+        }
+
+        .vloc-ins-coverage-attributes {
+            .vloc-ins-attribute-category-repeater {
+                .vloc-ins-product-attribute-repeater {
+                    width: 50%;
+                    padding: 0 0.25rem 1rem 0.25rem;
+                    float: left;
+
+                    .vloc-ins-attribute-container {
+                        .vloc-ins-attribute-label {
+                            line-height: 1.5rem;
+                        }
+
+                        .vloc-ins-attribute-value {
+                            font-size: 0.9375rem;
+                            line-height: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .vloc-ins-coverage-card {
+        background: #f4f6f9;
+        
+        .vloc-ins-coverage-card-body-container {
+            background: white;
+        }
+    }
+}

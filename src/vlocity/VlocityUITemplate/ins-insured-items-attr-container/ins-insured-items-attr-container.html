@@ -1,0 +1,9 @@
+<vloc-card ng-repeat="card in cards |orderBy:order|filter: searchFunc(card)"
+    	ng-model="card" 
+    	data="card" 
+    	records="attrs" 
+    	index="{{$index}}" 
+    	session-id="{{sessionId}}" 
+        attribute-categories="{{attrs.attributeCategories}}"
+        ctrl="{{ctrl}}">
+ </vloc-card>

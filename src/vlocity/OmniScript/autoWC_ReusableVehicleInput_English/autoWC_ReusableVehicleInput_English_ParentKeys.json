@@ -1,0 +1,7 @@
+[
+    "IntegrationProcedure/KBB_GetMakes",
+    "IntegrationProcedure/KBB_GetModelsByYearAndMake",
+    "IntegrationProcedure/KBB_GetTrimsAndVehicleIdsByYearAndModel",
+    "IntegrationProcedure/KBB_GetValuationSummaries",
+    "IntegrationProcedure/KBB_GetYears"
+]

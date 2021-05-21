@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- transactionComponent --></label>
+        <name>vlocity_ins__transactionComponent</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>vlocity_ins__Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim Coverage --></label>
+        <name>vlocity_ins__ClaimCoverageId__c</name>
+        <relationshipLabel><!-- Reserve Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Involved Party --></label>
+        <name>vlocity_ins__ClaimInvolvedPartyId__c</name>
+        <relationshipLabel><!-- Reserve Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Involved Property --></label>
+        <name>vlocity_ins__ClaimInvolvedPropertyId__c</name>
+        <relationshipLabel><!-- Reserve Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Claim Line Item --></label>
+        <name>vlocity_ins__ClaimLineItemId__c</name>
+        <relationshipLabel><!-- Reserve Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Claim Payment --></label>
+        <name>vlocity_ins__ClaimPaymentId__c</name>
+        <relationshipLabel><!-- Reserve Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Claim Recovery --></label>
+        <name>vlocity_ins__ClaimRecoveryId__c</name>
+        <relationshipLabel><!-- Recovery Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>vlocity_ins__Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coverage --></label>
+        <name>vlocity_ins__Coverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Claim --></label>
+        <name>vlocity_ins__InsuranceClaimId__c</name>
+        <relationshipLabel><!-- Reserve Transactions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Item --></label>
+        <name>vlocity_ins__InvolvedPartyOrItem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payee Account --></label>
+        <name>vlocity_ins__PayeeAccountId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payee Contact --></label>
+        <name>vlocity_ins__PayeeContactId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payee Party --></label>
+        <name>vlocity_ins__PayeePartyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Date --></label>
+        <name>vlocity_ins__PostDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Date --></label>
+        <name>vlocity_ins__TransactionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Number --></label>
+        <name>vlocity_ins__TransactionNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__Type__c</name>
+        <picklistValues>
+            <masterLabel>Adjustor Review</masterLabel>
+            <translation><!-- Adjustor Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Close</masterLabel>
+            <translation><!-- Close --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FNOL</masterLabel>
+            <translation><!-- FNOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment</masterLabel>
+            <translation><!-- Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subrogation</masterLabel>
+            <translation><!-- Subrogation --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Payment --></label>
+        <name>vlocity_ins__Payment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Recovery --></label>
+        <name>vlocity_ins__Recovery</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Reserve Adjustment --></label>
+        <name>vlocity_ins__ReserveAdjustment</name>
+    </recordTypes>
+</CustomObjectTranslation>

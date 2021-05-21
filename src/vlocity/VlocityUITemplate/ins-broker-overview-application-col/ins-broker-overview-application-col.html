@@ -1,0 +1,50 @@
+<div class="slds-spinner_container vloc-spinner_container vloc-show-loader" ng-show="!$root.isLoaded">
+    <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+        <div class="slds-spinner__dot-a"></div>
+        <div class="slds-spinner__dot-b"></div>
+    </div>
+</div>
+<div class="slds-notify_container" ng-show="$root.notification.active">
+    <div class="slds-notify slds-notify_alert slds-theme_alert-texture" role="alert" ng-class="{'slds-theme_success': $root.notification.type === 'success', 'slds-theme_error': $root.notification.type === 'error'}">
+        <button class="slds-button slds-button_icon-inverse slds-notify__close" ng-click="$root.notification.active = false">
+            <slds-button-svg-icon sprite="'utility'" icon="'close'" ></slds-button-svg-icon>
+            <span class="slds-assistive-text">Close</span>
+        </button>
+        <span class="slds-assistive-text">Info</span>
+        <h2 ng-bind-html="$root.notification.message"></h2>
+    </div>
+</div>
+<div class="slds-grid slds-wrap vloc-broker-wrapper" ng-class="{'plan-selection-view': $root.showProductSelection}">
+    <vloc-layout ng-if="$root.showQuoteOverview" layout-name="ins-quote-container" params-id="{{$root.showQuoteOverview}}" style="width: 100%;"></vloc-layout>
+    <div ng-if="!$root.showQuoteOverview" class="vloc-broker-app-col slds-size_1-of-1 slds-p-around_small slds-p-right_xx-large">
+        <div class="vloc-broker-app-col-container" ng-init="importedScope.vlocBroker.setRecords(records, cards)"> 
+        <h1 class="vloc-title slds-m-bottom_small">Applications</h1>
+        <div class="vloc-section-header vloc-title-border-container">
+            <hr class="vloc-title-border"/>
+        </div>
+        <div class="vloc-broker-tabs-container slds-grid slds-wrap slds-m-vertical_medium">
+            <div ng-repeat="tab in importedScope.vlocBroker.tabs" class="slds-border_top slds-border_bottom slds-border_left slds-p-horizontal_small slds-p-vertical_xx-small  vloc-broker-tabs" ng-class="{'active-tab' : tab.isActive}" ng-click="importedScope.vlocBroker.switchTab($index);">
+                <slds-button-svg-icon size="type === 'button-group' ? null : 'large'" sprite="tab.sprite" icon="tab.icon" extra-classes="'vloc-broker-tabs-icon'"></slds-button-svg-icon> 
+                <div class="vloc-broker-tabs-no" ng-class="{'wide' : $root.tabCount[tab.label] > 99, 'x-wide' : $root.tabCount[tab.label] > 999}">{{$root.tabCount[tab.label]}}</div>
+                <span class="slds-text-body_small vloc-broker-tabs-label"> {{tab.label}} </span>
+            </div>
+        </div>
+        <div>
+        <ul class="vloc-broker-app-policies slds-m-top_small">
+            <vloc-card ng-repeat="card in cards | orderBy: 'card.obj.Name' | filter: searchFunc(card)"
+                ng-model="card" 
+                data="card" 
+                records="records" 
+                index="{{$index}}" 
+                session-id="{{sessionId}}"
+                class="vloc-broker-app-policy"
+                active-tab="{{importedScope.vlocBroker.activeTab}}"
+                ctrl="InsBrokerController">
+            </vloc-card>
+        </ul>
+        <div ng-if="importedScope.vlocBroker.activeTabNo < 1" class="slds-theme_warning slds-p-around_small slds-text-align_center warning-text">
+           There Are No Records
+        </div>
+        </div>
+    </div>
+</div>

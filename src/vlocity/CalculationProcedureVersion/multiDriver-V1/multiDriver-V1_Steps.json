@@ -1,0 +1,1101 @@
+[
+    {
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AVG",
+                "text": "AVG"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "driverBIPD",
+                "dataType": "Number",
+                "text": "driverBIPD",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationFormula__c": "AVG ( driverBIPD )",
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__Function__c": "Aggregation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "driverBIPD"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "ratedDriver-BIPD",
+            "dataType": "Number",
+            "name": "ratedDriver-BIPD"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"ratedDriver-BIPD\":\"ratedDriver-BIPD\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "%vlocity_namespace%__TaskType__c": "Aggregation",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AVG",
+                "text": "AVG"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "driverUM",
+                "dataType": "Number",
+                "text": "driverUM",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationFormula__c": "AVG ( driverUM )",
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__Function__c": "Aggregation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "driverUM"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "ratedDriver-UM",
+            "dataType": "Number",
+            "name": "ratedDriver-UM"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"ratedDriver-UM\":\"ratedDriver-UM\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "%vlocity_namespace%__TaskType__c": "Aggregation",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AVG",
+                "text": "AVG"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "driverMED",
+                "dataType": "Number",
+                "text": "driverMED",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationFormula__c": "AVG ( driverMED )",
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__Function__c": "Aggregation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "driverMED"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "ratedDriver-MED",
+            "dataType": "Number",
+            "name": "ratedDriver-MED"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"ratedDriver-MED\":\"ratedDriver-MED\"}",
+        "%vlocity_namespace%__Sequence__c": 3,
+        "%vlocity_namespace%__TaskType__c": "Aggregation",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AVG",
+                "text": "AVG"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "driverCCD",
+                "dataType": "Number",
+                "text": "driverCCD",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationFormula__c": "AVG ( driverCCD )",
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__Function__c": "Aggregation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "driverCCD"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "ratedDriver-CCD",
+            "dataType": "Number",
+            "name": "ratedDriver-CCD"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"ratedDriver-CCD\":\"ratedDriver-CCD\"}",
+        "%vlocity_namespace%__Sequence__c": 4,
+        "%vlocity_namespace%__TaskType__c": "Aggregation",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AVG",
+                "text": "AVG"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "driverCOLL",
+                "dataType": "Number",
+                "text": "driverCOLL",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationFormula__c": "AVG ( driverCOLL )",
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__Function__c": "Aggregation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "driverCOLL"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "ratedDriver-COLL",
+            "dataType": "Number",
+            "name": "ratedDriver-COLL"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"ratedDriver-COLL\":\"ratedDriver-COLL\"}",
+        "%vlocity_namespace%__Sequence__c": 5,
+        "%vlocity_namespace%__TaskType__c": "Aggregation",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "AGE ( driverBirthdate )",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "AGE",
+                "text": "AGE"
+            },
+            {
+                "alias": "(",
+                "text": "("
+            },
+            {
+                "alias": "driverBirthdate",
+                "dataType": "Date",
+                "text": "driverBirthdate",
+                "userDefined": true
+            },
+            {
+                "alias": ")",
+                "text": ")"
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Date",
+                "name": "driverBirthdate"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "driverAge",
+            "dataType": "Number",
+            "name": "driverAge"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"driverAge\":\"driverAge\"}",
+        "%vlocity_namespace%__Sequence__c": 1,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "driverAge - driverAgeLicensed",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "driverAge",
+                "dataType": "Number",
+                "text": "driverAge",
+                "userDefined": true
+            },
+            {
+                "alias": "-",
+                "text": "-"
+            },
+            {
+                "alias": "driverAgeLicensed",
+                "dataType": "Number",
+                "text": "driverAgeLicensed",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "driverAge"
+            },
+            {
+                "dataType": "Number",
+                "name": "driverAgeLicensed"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "driverYrsExp",
+            "dataType": "Number",
+            "name": "driverYrsExp"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"driverYrsExp\":\"driverYrsExp\"}",
+        "%vlocity_namespace%__Sequence__c": 2,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "driverMVRPoints + driverAccidentPoints",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "driverMVRPoints",
+                "dataType": "Number",
+                "text": "driverMVRPoints",
+                "userDefined": true
+            },
+            {
+                "alias": "+",
+                "text": "+"
+            },
+            {
+                "alias": "driverAccidentPoints",
+                "dataType": "Number",
+                "text": "driverAccidentPoints",
+                "userDefined": true
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "dataType": "Number",
+                "name": "driverMVRPoints"
+            },
+            {
+                "dataType": "Number",
+                "name": "driverAccidentPoints"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": true,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "driverPoints",
+            "dataType": "Number",
+            "name": "driverPoints"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"driverPoints\":\"driverPoints\"}",
+        "%vlocity_namespace%__Sequence__c": 3,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "driverGoodStudent",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/driverGoodStudent",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "10216b",
+                "dataType": "Number Range",
+                "label": null,
+                "listValues": "0,3.4",
+                "name": "driverGPA"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "11fac6",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "driverGoodStudent"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"driverGoodStudent\":\"driverGoodStudent__driverGoodStudent\"}",
+        "%vlocity_namespace%__Sequence__c": 4,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "autoSafeDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/autoSafeDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "18cc21",
+                "dataType": "Number Range",
+                "label": null,
+                "listValues": "0,1,2",
+                "name": "driverPoints"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "77927",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "driverSafe"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"driverSafe\":\"autoSafeDriver__driverSafe\"}",
+        "%vlocity_namespace%__Sequence__c": 5,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "driverClass",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/driverClass",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "69bf31",
+                "dataType": "Number Range",
+                "label": null,
+                "listValues": "0,1,2,3,4,6,9,14,19,24,29,34,39,44,49,54,59,64",
+                "name": "driverYrsExp"
+            },
+            {
+                "columnKey": "da68ce",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "driverGender"
+            },
+            {
+                "columnKey": "f39fe5",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "driverMaritalStatus"
+            },
+            {
+                "columnKey": "b82068",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "driverGoodStudent"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "415588",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverClass"
+            },
+            {
+                "columnKey": "d173b1",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverClassBIPD"
+            },
+            {
+                "columnKey": "6060d6",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverClassUM"
+            },
+            {
+                "columnKey": "c53c69",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverClassMED"
+            },
+            {
+                "columnKey": "b25dab",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverClassCCD"
+            },
+            {
+                "columnKey": "961536",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverClassCOLL"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"driverClass\":\"driverClass__driverClass\",\"driverClassBIPD\":\"driverClass__driverClassBIPD\",\"driverClassUM\":\"driverClass__driverClassUM\",\"driverClassMED\":\"driverClass__driverClassMED\",\"driverClassCCD\":\"driverClass__driverClassCCD\",\"driverClassCOLL\":\"driverClass__driverClassCOLL\"}",
+        "%vlocity_namespace%__Sequence__c": 6,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "driverPoints",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/driverPoints",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "42340b",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "driverPoints"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "1d1a52",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverPtsBIPD"
+            },
+            {
+                "columnKey": "3a98dd",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverPtsUM"
+            },
+            {
+                "columnKey": "afd6fe",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverPtsCOLL"
+            },
+            {
+                "columnKey": "3065c5",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverPtsCCD"
+            },
+            {
+                "columnKey": "8751a9",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverPtsMED"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"driverPtsBIPD\":\"driverPoints__driverPtsBIPD\",\"driverPtsUM\":\"driverPoints__driverPtsUM\",\"driverPtsCOLL\":\"driverPoints__driverPtsCOLL\",\"driverPtsCCD\":\"driverPoints__driverPtsCCD\",\"driverPtsMED\":\"driverPoints__driverPtsMED\"}",
+        "%vlocity_namespace%__Sequence__c": 7,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationMatrixId__c": {
+            "Name": "driverSafe",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationMatrix__c/driverSafe",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationMatrix__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Matrix Lookup",
+        "%vlocity_namespace%__Input__c": [
+            {
+                "columnKey": "cb49d3",
+                "dataType": "Text",
+                "label": null,
+                "listValues": null,
+                "name": "driverSafe"
+            }
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": false,
+        "%vlocity_namespace%__OutputJSON__c": [
+            {
+                "columnKey": "c709c1",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverSafeBIPD"
+            },
+            {
+                "columnKey": "cbe8dc",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverSafeUM"
+            },
+            {
+                "columnKey": "68fce8",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverSafeCOLL"
+            },
+            {
+                "columnKey": "5e99ba",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverSafeCCD"
+            },
+            {
+                "columnKey": "dcb321",
+                "dataType": "Number",
+                "label": null,
+                "listValues": null,
+                "name": "driverSafeMED"
+            }
+        ],
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"driverSafeBIPD\":\"driverSafe__driverSafeBIPD\",\"driverSafeUM\":\"driverSafe__driverSafeUM\",\"driverSafeCOLL\":\"driverSafe__driverSafeCOLL\",\"driverSafeCCD\":\"driverSafe__driverSafeCCD\",\"driverSafeMED\":\"driverSafe__driverSafeMED\"}",
+        "%vlocity_namespace%__Sequence__c": 8,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "driverSafe__driverSafeBIPD * driverPoints__driverPtsBIPD * driverClass__driverClassBIPD",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "driverSafe__driverSafeBIPD",
+                "dataType": "Number",
+                "text": "driverSafeBIPD ( driverSafe )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "driverPoints__driverPtsBIPD",
+                "dataType": "Number",
+                "text": "driverPtsBIPD ( driverPoints )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "driverClass__driverClassBIPD",
+                "dataType": "Number",
+                "text": "driverClassBIPD ( driverClass )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "driverBIPD",
+            "dataType": "Number",
+            "name": "driverBIPD"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"driverBIPD\":\"driverBIPD\"}",
+        "%vlocity_namespace%__Sequence__c": 9,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "driverSafe__driverSafeUM * driverPoints__driverPtsUM * driverClass__driverClassUM",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "driverSafe__driverSafeUM",
+                "dataType": "Number",
+                "text": "driverSafeUM ( driverSafe )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "driverPoints__driverPtsUM",
+                "dataType": "Number",
+                "text": "driverPtsUM ( driverPoints )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "driverClass__driverClassUM",
+                "dataType": "Number",
+                "text": "driverClassUM ( driverClass )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "driverUM",
+            "dataType": "Number",
+            "name": "driverUM"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"driverUM\":\"driverUM\"}",
+        "%vlocity_namespace%__Sequence__c": 10,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "driverSafe__driverSafeMED * driverPoints__driverPtsMED * driverClass__driverClassMED",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "driverSafe__driverSafeMED",
+                "dataType": "Number",
+                "text": "driverSafeMED ( driverSafe )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "driverPoints__driverPtsMED",
+                "dataType": "Number",
+                "text": "driverPtsMED ( driverPoints )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "driverClass__driverClassMED",
+                "dataType": "Number",
+                "text": "driverClassMED ( driverClass )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "driverMED",
+            "dataType": "Number",
+            "name": "driverMED"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"driverMED\":\"driverMED\"}",
+        "%vlocity_namespace%__Sequence__c": 11,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "driverSafe__driverSafeCCD * driverPoints__driverPtsCCD * driverClass__driverClassCCD",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "driverSafe__driverSafeCCD",
+                "dataType": "Number",
+                "text": "driverSafeCCD ( driverSafe )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "driverPoints__driverPtsCCD",
+                "dataType": "Number",
+                "text": "driverPtsCCD ( driverPoints )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "driverClass__driverClassCCD",
+                "dataType": "Number",
+                "text": "driverClassCCD ( driverClass )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "driverCCD",
+            "dataType": "Number",
+            "name": "driverCCD"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"driverCCD\":\"driverCCD\"}",
+        "%vlocity_namespace%__Sequence__c": 12,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    },
+    {
+        "%vlocity_namespace%__CalculationFormulaLong__c": "driverSafe__driverSafeCOLL * driverPoints__driverPtsCOLL * driverClass__driverClassCOLL",
+        "%vlocity_namespace%__CalculationFormulaTags__c": [
+            {
+                "alias": "driverSafe__driverSafeCOLL",
+                "dataType": "Number",
+                "text": "driverSafeCOLL ( driverSafe )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "driverPoints__driverPtsCOLL",
+                "dataType": "Number",
+                "text": "driverPtsCOLL ( driverPoints )",
+                "userDefined": false
+            },
+            {
+                "alias": "*",
+                "text": "*"
+            },
+            {
+                "alias": "driverClass__driverClassCOLL",
+                "dataType": "Number",
+                "text": "driverClassCOLL ( driverClass )",
+                "userDefined": false
+            }
+        ],
+        "%vlocity_namespace%__CalculationProcedureId__c": {
+            "Name": "SOLNmultiDriver",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedure__c"
+        },
+        "%vlocity_namespace%__CalculationProcedureVersionId__c": {
+            "%vlocity_namespace%__CalculationProcedureId__r.Name": "SOLNmultiDriver",
+            "%vlocity_namespace%__VersionNumber__c": 1,
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CalculationProcedureVersion__c/1/%vlocity_namespace%__CalculationProcedure__c/SOLNmultiDriver",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureVersion__c"
+        },
+        "%vlocity_namespace%__ConditionalInputDisplayData__c": [
+        ],
+        "%vlocity_namespace%__Function__c": "Calculation",
+        "%vlocity_namespace%__Input__c": [
+        ],
+        "%vlocity_namespace%__IsConditionalStep__c": false,
+        "%vlocity_namespace%__IsIncludedInResult__c": true,
+        "%vlocity_namespace%__OutputJSON__c": {
+            "alias": "driverCOLL",
+            "dataType": "Number",
+            "name": "driverCOLL"
+        },
+        "%vlocity_namespace%__OutputMappingJSON__c": "{\"driverCOLL\":\"driverCOLL\"}",
+        "%vlocity_namespace%__Sequence__c": 13,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CalculationProcedureStep__c"
+    }
+]

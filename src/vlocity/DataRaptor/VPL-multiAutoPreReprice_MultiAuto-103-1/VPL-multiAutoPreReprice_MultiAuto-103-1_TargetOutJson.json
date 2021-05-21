@@ -1,0 +1,17 @@
+{
+    "selectedProduct:records": "JSONResult",
+    "userInputs": {
+        "BU.typeBusinessUse": "Text",
+        "DRIVER.BDAY": "Date",
+        "DRIVER.DAGE": "Number",
+        "DRIVER.DFirstName": "Text",
+        "DRIVER.GENDER": "Text",
+        "DRIVER.LastName": "Text",
+        "DRIVER.instanceKey": "Text",
+        "VEHICLE.MAKE": "Text",
+        "VEHICLE.MODEL": "Text",
+        "VEHICLE.VIN": "Text",
+        "VEHICLE.YEAR": "Number",
+        "VEHICLE.instanceKey": "Text"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "quoteJson": {
+        "Id": null,
+        "additionalFields": {
+        },
+        "effectiveDate": null,
+        "endDate": null,
+        "insuredItems": {
+            "Auto": [
+                {
+                    "additionalFields": {
+                    },
+                    "autoAntiTheft": false,
+                    "autoFreq": null,
+                    "autoLicNum": null,
+                    "autoModel": null,
+                    "autoYear": null,
+                    "productId": "01tf4000000gNi4AAE",
+                    "productName": "Auto"
+                }
+            ],
+            "Driver": [
+                {
+                    "AGE": null,
+                    "FN": null,
+                    "GENDER": null,
+                    "LN": null,
+                    "additionalFields": {
+                    },
+                    "productId": "01tf4000000gNhuAAE",
+                    "productName": "Driver"
+                }
+            ]
+        },
+        "opportunityId": null,
+        "productConfigurationDetail:records": "JSONResult Object",
+        "rootItemId": null,
+        "term": null
+    }
+}

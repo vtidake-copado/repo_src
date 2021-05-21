@@ -1,0 +1,33 @@
+{
+    "ContextId": null,
+    "configure": {
+        "EffectiveDate": null,
+        "configureCoverages": null,
+        "endDate": null,
+        "newAnnualPrice": null,
+        "originalPremium": null,
+        "policyTerm": null,
+        "startDate": null,
+        "timeFactor": null
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "CreatePolicyVersion": null,
+        "Done": null,
+        "GetInsuredItems": null,
+        "GetPolicyCoverages": null,
+        "IntegrationProcedureAction1": null,
+        "PrefillDateInformation": null,
+        "SetPolicyId": null,
+        "Transform": null,
+        "cancelOriginalPolicy": null,
+        "configure": null,
+        "inForceNewPolicyVersion": null
+    }
+}

@@ -1,0 +1,5 @@
+<div ng-if="control.vlcSI[control.itemsKey]" class="vloc-health-ins-product-selection-wrapper" ng-init="baseCtrl.setHealthControl(control)" style="height: {{baseCtrl.$scope.iframeHeightStyle}}">
+    <div class="vloc-health-ins-product-selection-container" ng-controller="healthInsOsProductSelection">
+        <iframe ng-src="{{baseCtrl.healthSelectionIframeUrl}}" scrolling="no" id="vloc-health-ins-product-selection-iframe" user-inputs="{{baseCtrl.$scope.insUserInputs}}" product-classes="{{baseCtrl.$scope.bpTree.response.productClasses}}" attribute-filters="{{baseCtrl.$scope.insAttributeFilters}}" select-mode="{{baseCtrl.$scope.copiedControl.propSetMap.selectMode}}"></iframe>
+    </div>
+</div>

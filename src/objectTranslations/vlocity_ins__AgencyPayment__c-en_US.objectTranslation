@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Agency/Brokerage --></label>
+        <name>vlocity_ins__AgencyBrokerageId__c</name>
+        <relationshipLabel><!-- Payments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>vlocity_ins__PaymentAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>vlocity_ins__PaymentDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Source --></label>
+        <name>vlocity_ins__PaymentSource__c</name>
+        <picklistValues>
+            <masterLabel>Agency</masterLabel>
+            <translation><!-- Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brokerage</masterLabel>
+            <translation><!-- Brokerage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carrier</masterLabel>
+            <translation><!-- Carrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed Unpaid</masterLabel>
+            <translation><!-- Closed Unpaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Paid</masterLabel>
+            <translation><!-- Not Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid Not Sent</masterLabel>
+            <translation><!-- Paid Not Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid Sent</masterLabel>
+            <translation><!-- Paid Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>vlocity_ins__Type__c</name>
+        <picklistValues>
+            <masterLabel>Adjustment</masterLabel>
+            <translation><!-- Adjustment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commission</masterLabel>
+            <translation><!-- Commission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fee</masterLabel>
+            <translation><!-- Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

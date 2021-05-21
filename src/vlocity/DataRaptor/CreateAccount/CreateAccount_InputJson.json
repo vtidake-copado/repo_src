@@ -1,0 +1,17 @@
+{
+    "ContextId": null,
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "CreateAccount": null,
+        "CreatePolicy": null,
+        "GetProductsInformation": null,
+        "GetSelectedValues": null,
+        "ProductPretransform": null,
+        "ResponseAction": null
+    }
+}

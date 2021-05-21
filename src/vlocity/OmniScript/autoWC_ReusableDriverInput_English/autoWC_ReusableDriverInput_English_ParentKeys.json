@@ -1,0 +1,7 @@
+[
+    "DataRaptor/auto_PostAcctOppty_ReusableDriverInputOS",
+    "DataRaptor/auto_PostOppty_QuoteOS",
+    "DataRaptor/auto_ReadStateJurisdiction_ReusableAddDriversOS",
+    "DataRaptor/auto_TransDriverUserInputs_ReusableDriverInputOS",
+    "DataRaptor/auto_TransDriversforDiscounts_ReusableDriverInputOS"
+]

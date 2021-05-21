@@ -1,0 +1,83 @@
+@import "ins-product-attributes-variables";
+.via-slds .vloc-no-set-value-rules {
+    padding-top: 5rem;
+    font-size: 0.9rem;
+}
+.via-slds .vloc-ins-rules-table-container {
+    thead tr {
+        height: 3.5rem;
+        th.vloc-attrs-table-col .slds-truncate{
+            font-weight: 700;
+        }
+    }
+
+    .vloc-textbox-inactive {
+        z-index: 0;
+    }
+
+    .vloc-product-data-col {
+        width: 15%;
+    }
+    .vloc-rule-data-col {
+        width: 25%;
+    }
+
+    .vloc-ins-rule {
+        position: relative;
+    }
+
+    monaco-editor  {
+        canvas.decorationsOverviewRuler {
+            visibility: hidden;
+            display: none;
+        }
+        &.vloc-formula-builder {
+            height: 5rem;
+            position: relative;
+            display: block;
+            width: 50%;
+            >.monaco-editor {
+                border-radius: 0.25rem;
+                top: -0.5rem;
+                right: 0.75rem;
+                >.overflow-guard {
+                    border-radius: 0.25rem;
+                    padding: 0.25rem 0;
+                }
+                >.monaco-scrollable-element>.monaco-editor-background {
+                    height: 500% !important;
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
+    .vloc-rule-container  {
+        margin-bottom: 0.2rem;
+        overflow: visible;
+    }
+
+    .vloc-monaco-editor-container monaco-editor.slds-textarea {
+        width: 90%;
+    }
+
+    .vloc-instructions-container {
+        .vloc-instructions-header {
+            color:#d47500;
+            font-weight: 600;
+        }
+        .vloc-instructions-text {
+            background-color: $hover-gray;
+            border: 1px solid #f2f2f2;
+            border-left-color: #d47500;
+            font-size: 0.9rem;
+            padding: 1rem;
+        }
+        .vloc-invalid-methods {
+            padding: 10px 0 10px 0;
+            p.vloc-invalid-methods-header {
+                font-weight: 800;
+            }
+        }
+    }
+}

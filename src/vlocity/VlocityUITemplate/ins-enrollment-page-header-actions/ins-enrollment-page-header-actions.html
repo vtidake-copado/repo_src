@@ -1,0 +1,13 @@
+<div class="vloc-action-container slds-grid slds-wrap slds-text-align_center" ng-if="data.actions.length > 0 && !$root.displayIframe">
+    <div ng-repeat="action in data.actions | limitTo: (data.limitActionLinksTo?data.limitActionLinksTo:5)">   
+        <button ng-if="action[$root.nsPrefix + 'Url__c'] && action[$root.nsPrefix + 'OpenUrlMode__c'] !== 'New Tab / Window'" class="slds-button slds-button_brand" ng-click="$root.displayIframe = true; $root.iframeURL = action[$root.nsPrefix + 'Url__c']">
+            {{action.displayName}} 
+        </button>
+        <a class="slds-button slds-button_brand" ng-if="action[$root.nsPrefix + 'Url__c'] && action[$root.nsPrefix + 'OpenUrlMode__c'] === 'New Tab / Window'" href="{{action[$root.nsPrefix + 'Url__c']}}" target="_blank">  {{action.displayName}} </a>
+        <button ng-if="action.url && action.openUrlIn !== 'New Tab / Window'" class="slds-button slds-button_brand" ng-click="$root.displayIframe = true; $root.iframeURL = action.url">
+            {{action.displayName}} 
+        </button>
+        <a class="slds-button slds-button_brand" ng-if="action.url && action.openUrlIn === 'New Tab / Window'" href="{{action[$root.nsPrefix + 'Url__c']}}" target="_blank">  {{action.displayName}} </a>
+        <button class="slds-button slds-button--brand" ng-if="action.visualForce" ng-click="performAction(action)" hotkey-card-action>{{action.displayName}}</button>
+    </div>
+</div>

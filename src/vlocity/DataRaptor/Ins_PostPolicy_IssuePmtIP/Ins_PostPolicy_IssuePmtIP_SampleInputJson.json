@@ -1,0 +1,29 @@
+{
+    "ApplyOneTimePremium": {
+        "output": [
+            {
+                "calculationResults": [
+                    {
+                        "AmountDue": 325.33,
+                        "AnnualPremium": 1301.32,
+                        "BeginPaidtoDate": "09/25/2018",
+                        "BeginPolicyStatus": 3,
+                        "EndofGraceperiodDate": "2019-01-25",
+                        "FinalAmountDue": 0,
+                        "GracePeriod": 30,
+                        "ID": "02i6A000000mRODQA2",
+                        "InitiateGracePeriodDate": "2018-12-26",
+                        "ModalPremium": 325.33,
+                        "NumofDays": 3,
+                        "PaidtoDate": "2018-12-25",
+                        "PastDue": 0,
+                        "PaymentAmount": 325.33,
+                        "PaymentFrequency": 4,
+                        "PolicyStatus": 1,
+                        "nextPayAmount": 325.33
+                    }
+                ]
+            }
+        ]
+    }
+}

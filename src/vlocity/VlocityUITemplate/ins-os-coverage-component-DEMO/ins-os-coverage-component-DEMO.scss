@@ -1,0 +1,853 @@
+// Variables:
+$royal-blue: #0070D2;
+$light-blue-bg: #F8FBFE;
+$text-navy: #00396b;
+$dark-navy: #19355E;
+$attr-label: #16325C;
+$border-color: #d8dde6;
+
+// Mixins
+@mixin changeColor($newColor) {
+    &.optional-coverage {
+        .vloc-ins-coverages-card-inner-wrapper {
+            background-color: lighten($newColor, 72%);
+            transition: background-color 150ms ease-in,
+                        border-color 150ms ease-in;
+
+            &.optional-coverage {
+                background-color: lighten($newColor, 72%);
+
+                &:hover {
+                    border-color: $newColor;
+                }
+            }
+
+            .vloc-ins-coverages-header {
+                .vloc-ins-coverages-optional-checkbox {
+                    .nds-checkbox {
+                        [type=checkbox] {
+                            &[disabled] {
+                                + .nds-checkbox__label {
+                                    .nds-checkbox--faux {
+                                        border-color: $newColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .vloc-ins-coverages-child-name {
+                    color: $attr-label;
+                }
+
+                .vloc-ins-coverages-child-description {
+                    color: #6187C0;
+                }
+            }
+
+            .vloc-product-attribute-category-container {
+                .vloc-ins-coverages-collapse-toggle {
+                    &:hover {
+                        background-color: darken($light-blue-bg, 3%);
+                    }
+                }
+            }
+        }
+
+        .vloc-product-attribute-category {
+            .vloc-ins-coverages-coverage-row-container {
+                .vloc-product-attribute-category-name {
+                    &.accordion-toggle {
+                        color: #49739c;
+
+                        .nds-icon {
+                            fill: #49739c;
+                        }
+
+                        &:hover {
+                            color: darken(#49739c, 10%);
+
+                            .nds-icon {
+                                fill: darken(#49739c, 10%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.parent-product {
+            .vloc-ins-coverages-card-inner-wrapper {
+                .vloc-ins-coverages-header {
+                    .vloc-ins-coverages-child-description {
+                        color: $attr-label;
+                    }
+                }
+            }
+        }
+
+        &.added-optional-coverage {
+            .vloc-ins-coverages-card-inner-wrapper {
+                .vloc-ins-coverages-header-container {
+                    .vloc-ins-coverages-optional-checkbox {
+                        .nds-checkbox {
+                            [type=checkbox][disabled] {
+                                + .nds-checkbox__label {
+                                    .nds-checkbox--faux {
+                                        background-color: $newColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.via-nds {
+    .vloc-ins-multi-item-child-customize-container {
+        .vloc-ins-multi-item-toggle-plan-details {
+            position: absolute;
+            z-index: 6;
+            top: 2.8rem;
+            left: 4rem;
+            border: none;
+            margin: 0;
+            padding: 0 0.25rem;
+            text-align: left;
+            line-height: 1.8;
+            font-size: 0.875rem;
+            width: auto;
+
+            &.menu-open {
+                z-index: 4;
+            }
+        }
+        .vloc-ins-multi-item-child-customize {
+            transition: height 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+
+            &:not(.in) {
+                height: 0 !important;
+            }
+
+            &.in {
+                height: auto;
+            }
+        }
+    }
+
+    .vloc-ins-coverages-container {
+        width: 100%;
+        margin: 0;
+
+        .vloc-ins-product-name {
+            font-size: 1.25rem;
+            font-weight: 400;
+            padding: 0 0.65rem 0.75rem;
+        }
+
+        .vloc-ins-coverages-card {
+            background-color: $light-blue-bg;
+            position: relative;
+
+            .vloc-ins-coverages-heading {
+                padding-left: 0.625rem;
+            }
+            
+            .vloc-ins-coverage-custom-image {
+                width: 2rem;
+                height: auto;
+            }
+
+            input {
+                min-height: 0;
+                max-height: 2rem;
+                height: auto;
+            }
+
+            .nds-checkbox__label {
+                .nds-form-element__label {
+                    display: inline-block;
+                }
+            }
+
+            .vloc-ins-coverage-main-heading {
+                h2 {
+                    font-weight: 400;
+                }
+            }
+
+            .vloc-ins-coverages-card-inner-wrapper {
+                transition: background-color 150ms ease-in,
+                            border-color 150ms ease-in;
+
+                .vloc-ins-coverages-total {
+                    font-size: 1.25rem;
+                    display: flex;
+                    align-items: flex-end;
+                }
+
+                .vloc-ins-coverages-header-container {
+                    .vloc-ins-coverages-header {
+                        .vloc-ins-coverages-optional-checkbox {
+                            .nds-checkbox {
+                                [type=checkbox] {
+                                    &[disabled] {
+                                        + .nds-checkbox__label {
+                                            .nds-checkbox--faux {
+                                                background-color: #fff;
+                                                border-color: $royal-blue;
+                                                margin: 0;
+                                                width: 1.75rem;
+                                                height: 1.75rem;
+
+                                                &:after {
+                                                    border-color: #1589ee;
+                                                    height: 0.65rem;
+                                                    width: 1.2rem;
+                                                    top: 43%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .nds-media__figure {
+                            .nds-icon_container {
+                                background: transparent;
+
+                                .nds-icon {
+                                    fill: $royal-blue;
+                                    margin: -0.5rem;
+                                }
+                            }
+                        }
+                        .vloc-ins-coverage-child-name-description-container {
+                            padding-bottom: 0.25rem;
+
+                            .nds-text-body--regular {
+                                line-height: 1.4;
+                                font-size: 1rem;
+                                font-weight: 100;
+                            }
+                        }
+
+                        .vloc-ins-coverages-child-name {
+                            font-weight: bold;
+                            font-size: 1.4rem;
+                            color: $attr-label;
+                        }
+
+                        .vloc-ins-coverages-child-description {
+                            font-style: italic;
+                            color: #6187C0;
+                        }
+                    }
+
+                    &.has-price {
+                        margin-bottom: 0.5rem;
+
+                        .vloc-ins-coverage-child-name-description-container {
+                            border-bottom: 1px solid darken(#f8fbfe, 4%);
+                        }
+                    }
+                }
+
+                .vloc-product-attribute-category-container {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 250ms cubic-bezier(0.65, 0.05, 0.36, 1),
+                                padding 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
+                    border-bottom: 1px solid $border-color;
+
+                    .vloc-product-attribute-category {
+                        margin-bottom: 0;
+                        position: relative;
+
+                        &.last {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+
+                    .vloc-ins-coverages-collapse-toggle {
+                        position: absolute;
+                        height: 2rem;
+                        width: 100%;
+                        bottom: 0;
+                        left: 0;
+                        text-align: center;
+                        font-size: 0.75rem;
+                        line-height: 2rem;
+                        user-select: none;
+                        cursor: pointer;
+                        background-color: transparent;
+                        transition: background-color 150ms ease-in;
+
+                        &:hover {
+                            background-color: darken($light-blue-bg, 3%);
+                        }
+
+                        .toggle-label {
+                            .toggle-show {
+                                display: inline;
+                            }
+
+                            .toggle-hide {
+                                display: none;
+                            }
+                        }
+
+                        .nds-icon {
+                            transition: transform 150ms ease-in;
+                            position: relative;
+                            top: -1px;
+                        }
+                    }
+
+                    &.in {
+                        max-height: 150rem;
+                        padding: 0 0 0.25rem 0;
+                        overflow: visible;
+
+                        &.in-add-active {
+                            overflow: hidden;
+                        }
+
+                        .vloc-ins-coverages-collapse-toggle {
+                            .toggle-label {
+                                .toggle-show {
+                                    display: none;
+                                }
+
+                                .toggle-hide {
+                                    display: inline;
+                                }
+                            }
+
+                            .nds-icon {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+
+                    &.accordion-toggle-active {
+                        .vloc-product-attribute-category {
+                            &.last {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+
+                &.accordion-active {
+                    position: relative;
+                    padding-bottom: 2rem;
+
+                    .vloc-product-attribute-category-container {
+                        border-bottom: none;
+
+                        .vloc-ins-coverages-collapse-toggle {
+                            border-bottom: 1px solid $border-color;
+                        }
+                    }
+                }
+
+                &.optional-coverage {
+                    background-color: transparent;
+                    border-color: transparent;
+                    border-radius: 0.25rem;
+                    background-color: $light-blue-bg;
+
+                    &:hover {
+                        border-color: darken($royal-blue, 10%);
+                    }
+                    
+                    &.accordion-active {
+                        .vloc-product-attribute-category-container {
+                            border-bottom: none;
+
+                            .vloc-ins-coverages-collapse-toggle {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+
+                    .vloc-ins-coverages-optional-checkbox {
+                        .vloc-ins-coverages-optional-checkbox-label {
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                &.optional-coverage-selected {
+                    cursor: pointer;
+
+                    &.accordion-active {
+                        .vloc-product-attribute-category-container {
+                            .vloc-ins-coverages-collapse-toggle {
+                                border-bottom: 1px solid $border-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .vloc-product-attribute-category {
+                .vloc-ins-coverages-coverage-row-container {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 250ms cubic-bezier(0.65, 0.05, 0.36, 1);
+
+                    &.toggle-categories {
+                        position: relative;
+                        padding-top: 1.25rem;
+                    }
+
+                    .vloc-product-attribute-category-name {
+                        font-weight: 400;
+                        font-size: 0.9375rem;
+
+                        &.accordion-toggle {
+                            cursor: pointer;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            color: #49739c;
+                            transition: color 150ms ease-in;
+
+                            .nds-icon {
+                                transition: transform 150ms ease-in;
+                                position: relative;
+                                fill: #49739c;
+                                transition: fill 150ms ease-in;
+                                top: -1px;
+                            }
+
+                            &:hover {
+                                color: darken(#49739c, 10%);
+
+                                .nds-icon {
+                                    fill: darken(#49739c, 10%);
+                                }
+                            }
+                        }
+                    }
+
+                    &.in {
+                        max-height: 100rem;
+                        overflow: visible;
+
+                        &.in-add-active {
+                            overflow: hidden;
+                        }
+
+                        .vloc-product-attribute-category-name {
+                            &.accordion-toggle {
+                                .nds-icon {
+                                    transform: rotate(90deg);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.category-accordion {
+                    border-bottom: 1px solid rgba(223, 230, 237, 1);
+                    margin: 0 9.5rem 0.75rem 5rem;
+                    padding: 0.75rem 0 0.5rem;
+
+                    &.last {
+                        padding-bottom: 0;
+                        border-bottom: none;
+                    }
+
+                    .vloc-ins-coverages-coverage-row {
+                        margin: 0 0.5rem 0 1.5rem;
+                    }
+                }
+            }
+
+            &.optional-coverage {
+                padding-bottom: 0.75rem;
+                background-color: transparent;
+                border: none;
+
+                .vloc-ins-coverages-heading {
+                    padding-top: 0.75rem;
+                }
+
+                .vloc-ins-coverages-card-inner-wrapper {
+                    .vloc-product-attribute-category-container {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.added-optional-coverage {
+                background-color: $light-blue-bg;
+                padding: 0;
+
+                &.optional-coverage {
+                    .vloc-ins-coverages-card-inner-wrapper {
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+
+                        .vloc-ins-coverages-header-container {
+                            .vloc-ins-coverages-optional-checkbox {
+                                .nds-checkbox {
+                                    [type=checkbox][disabled] {
+                                        + .nds-checkbox__label {
+                                            .nds-checkbox--faux {
+                                                background-color: $royal-blue;
+
+                                                &:after {
+                                                    border-color: white;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.last-non-optional {
+                background-color: $light-blue-bg;
+                padding-bottom: 0;
+                margin-bottom: 0.75rem;
+
+                .vloc-ins-coverages-card-inner-wrapper {
+                    .vloc-product-attribute-category-container {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.parent-product {
+                .vloc-ins-coverages-card-inner-wrapper {
+                    border: none;
+                    border-bottom: 1px solid rgba($royal-blue, 0.5);
+                    padding-bottom: 0.25rem;
+
+                    .vloc-ins-coverages-header {
+                        .vloc-ins-coverages-child-name {
+                            font-size: 1.5rem;
+                        }
+                        .vloc-ins-coverages-child-description {
+                            color: $attr-label;
+                        }
+                    }
+
+                    .vloc-product-attribute-category-container {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &.only-root {
+                border-bottom: 1px solid $royal-blue;
+                border-radius: 0.25rem;
+                margin-bottom: 1rem;
+
+                &.parent-product {
+                    .vloc-ins-coverages-card-inner-wrapper {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &:hover {
+                @include changeColor($dark-navy);
+            }
+        }
+
+        .vloc-ins-coverages-total {
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .vloc-ins-coverages-container {
+            .vloc-ins-coverages-card {
+                .vloc-product-attribute-category, .vloc-product-attribute-category.category-accordion {
+                    margin: 0 4.5rem 0.75rem 5rem;
+
+                    .vloc-ins-coverages-coverage-row {
+                        margin: 0;
+                    }
+
+                    .vloc-ins-coverages-coverage-limit {
+                        .nds-select {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .vloc-ins-coverages-container {
+            .vloc-ins-coverages-card {
+                .vloc-product-attribute-category, .vloc-product-attribute-category.category-accordion {
+                    margin: 0 1rem 0.75rem 1.5rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .vloc-ins-coverages-container {
+            .vloc-ins-coverages-card {
+                .vloc-ins-coverage-main-heading {
+                    h2 {
+                        font-size: 24px;
+                    }
+                }
+                .vloc-ins-coverages-total {
+                    font-size: 20px;
+                }
+                .vloc-ins-coverages-card-inner-wrapper {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .vloc-ins-coverages-container {
+            .vloc-ins-coverages-card {
+                .vloc-ins-coverages-card-inner-wrapper {
+                    .vloc-ins-coverages-header-container {
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        position: relative;
+                        padding-bottom: 2rem;
+
+                        .vloc-ins-coverages-header {
+                            .nds-media__figure {
+                                margin-right: 0.75rem;
+                            }
+                            .vloc-ins-coverage-custom-image {
+                                width: 1.5rem;
+                            }
+                            .vloc-ins-coverages-child-name {
+                                font-size: 16px;
+                            }
+                            .vloc-ins-coverages-child-description {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    .vloc-ins-coverages-total {
+                        font-size: 14px;
+                    }
+                }
+
+                .vloc-ins-coverages-coverage-limit {
+                    .nds-select {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+        .vloc-ins-coverages-container {
+            .vloc-ins-coverages-card {
+                .vloc-ins-coverages-card-inner-wrapper {
+                    .vloc-ins-coverages-header-container {
+                        padding-left: 0.75rem;
+                        padding-right: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Upgraded SLDS Styles for Slider not available in OS
+.via-slds {
+    .slds-slider {
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        font-size: 0.8125rem;
+    }
+
+    input[type=range].slds-slider__range {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 100%;
+        margin: 0.5rem 0;
+        background: transparent;
+        border-radius: 0.125rem;
+        padding: 0;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: #1589ee;
+            border: 0;
+            box-shadow: rgba(0, 0, 0, 0.16) 0 2px 3px;
+            cursor: pointer;
+            transition: background 0.15s ease-in-out;
+            margin-top: 2px;
+
+            &:hover {
+                background-color: #0070d2;
+            }
+        }
+
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: #ecebea;
+            border-radius: 0.125rem;
+        }
+
+        &::-moz-range-thumb {
+            -moz-appearance: none;
+            appearance: none;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: #1589ee;
+            border: 0;
+            box-shadow: rgba(0, 0, 0, 0.16) 0 2px 3px;
+            cursor: pointer;
+            transition: background 0.15s ease-in-out;
+
+            &:hover {
+                background-color: #0070d2;
+            }
+        }
+
+        &::-moz-range-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: #ecebea;
+            border-radius: 0.125rem;
+        }
+
+        &::-ms-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: #ecebea;
+            border-radius: 0.125rem;
+            width: 100%;
+            background: transparent;
+            border-color: transparent;
+            color: transparent;
+            cursor: pointer;
+        }
+
+        &::-ms-thumb {
+            appearance: none;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: #1589ee;
+            border: 0;
+            box-shadow: rgba(0, 0, 0, 0.16) 0 2px 3px;
+            cursor: pointer;
+            transition: background 0.15s ease-in-out;
+
+            &:hover {
+                background-color: #0070d2;
+            }
+        }
+
+        &:focus {
+            &::-webkit-slider-thumb,
+            &::-moz-range-thumb {
+                background-color: #0070d2;
+                box-shadow: 0 0 3px #0070D2;
+            }
+        }
+
+        &:active {
+            &::-webkit-slider-thumb,
+            &::-moz-range-thumb {
+                background-color: #0070d2;
+            }
+        }
+
+        &[disabled] {
+            &::-webkit-slider-thumb {
+                background-color: #ecebea;
+                cursor: default;
+            }
+            &::-webkit-slider-runnable-track {
+                background-color: #ecebea;
+                cursor: default;
+            }
+            &::-moz-range-thumb {
+                background-color: #ecebea;
+                cursor: default;
+            }
+            &::-moz-range-track {
+                background-color: #ecebea;
+                cursor: default;
+            }
+            &::-ms-thumb {
+                background-color: #ecebea;
+                cursor: default;
+            }
+            &::-ms-track {
+                background-color: #ecebea;
+                cursor: default;
+            }
+        }
+    }
+
+    .slds-slider__value {
+        padding: 0 0.5rem;
+    }
+
+    .slds-slider-label__label {
+        display: block;
+    }
+
+    .slds-slider_vertical {
+        height: 13.875rem;
+
+        .slds-slider__range {
+            width: 12rem;
+            height: 1rem;
+            transform: rotate(-90deg);
+            transform-origin: 6rem 6rem;
+        }
+
+        .slds-slider__value {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 0;
+        }
+    }
+}

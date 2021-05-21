@@ -1,0 +1,31 @@
+<div ng-if="control.vlcSI[control.itemsKey]" class="vloc-ins-coverages-container-wrapper">
+    <div ng-if="baseCtrl.vlocOSInsConfigProductSet && baseCtrl.vlocOSInsConfigProductSet.timestamp !== control.vlcSI[control.itemsKey][0].timestamp" ng-init="baseCtrl.setSelectedProducts(control)"></div>
+    <div class="vloc-ins-coverages-container-inner-wrapper" ng-controller="insCoveragesOsCtrl" ng-init="createData(control.vlcSI[control.itemsKey], baseCtrl.$scope.bpTree.response)">
+        <div class="slds-p-bottom--xx-small nds-p-bottom--xx-small vloc-ins-coverages-container" ng-repeat="(childProductIndex, childProduct) in productsList track by $index" ng-if="$index === 0" ng-init="setSelectedOption(control, childProduct, option, this)">
+            <h3 class="vloc-ins-product-name" ng-if="!insCoveragesConfig.showParentProduct">{{childProduct.Name}}</h3>
+            <div ins-os-include-template="{{customTemplates.CoveragesDisplayTemplate}}"></div>
+            <div class="vloc-ins-os-amount-container slds-size--1-of-1 slds-p-horizontal--medium slds-text-heading--medium slds-text-align--center nds-size--1-of-1 nds-p-horizontal--medium nds-text-heading--medium nds-text-align--center">
+                <div ng-if="childProduct.Price && childProduct.totalTaxFeeAmount" class="vloc-ins-coverages-premium ins-coverages-os-amount-item-container">
+                    Premium<span class="slds-m-left--large nds-m-left--large">{{childProduct.Price | currency: currencyCode}}</span>
+                </div>
+                <div ng-if="childProduct.totalTaxFeeAmount" class="vloc-ins-coverages-tax-and-fee ins-coverages-os-amount-item-container">
+                    Tax &amp; Fee
+                    <span class="slds-m-left--large nds-m-left--large">{{childProduct.totalTaxFeeAmount | currency: currencyCode}}</span>
+                </div>
+                <div ng-if="childProduct.Price || childProduct.totalTaxFeeAmount" class="vloc-ins-coverages-total ins-coverages-os-amount-item-container ">
+                    Total <span class="slds-m-left--large nds-m-left--large">{{childProduct.Price + childProduct.totalTaxFeeAmount | currency: currencyCode }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="slds-size--1-of-1 slds-text-align--right nds-size--1-of-1 nds-text-align--right" ng-hide="!calcConfig.disableAutoCalculate">
+            <button class="slds-button slds-button--brand slds-m-top--small nds-button nds-button--brand nds-m-top--small" ng-click="calcConfig.triggerCalculate = true; changeCoverage(bpTree.response, control, scpReference);">
+                <slds-button-svg-icon sprite="'utility'" icon="'filterList'" extra-classes="'slds-button__icon--left nds-button__icon--left'"></slds-button-svg-icon>
+                <span>Calculate Price</span>
+            </button>
+        </div>
+        <div class="slds-notify slds-notify--alert slds-theme--alert-texture slds-theme--warning slds-m-top--medium nds-notify nds-notify--alert nds-theme--alert-texture nds-theme--warning nds-m-top--medium" role="alert" ng-show="!calcConfig.calculationDone">
+            <span class="slds-assistive-text nds-assistive-text">warning</span>
+            <h2>Please recalculate the price before moving forward.</h2>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+{
+    "Cards": [
+        "ins-broker-quote"
+    ],
+    "dataSource": {
+        "type": "Query",
+        "value": {
+            "jsonMap": "{\"$root.vlocity.userContactId\":\"{{$root.vlocity.userContactId}}\"}",
+            "resultVar": ""
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-broker-overview-application-col"
+        }
+    },
+    "workspace": [
+        "ins-broker-quote/Vlocity/null/1525105144731"
+    ]
+}

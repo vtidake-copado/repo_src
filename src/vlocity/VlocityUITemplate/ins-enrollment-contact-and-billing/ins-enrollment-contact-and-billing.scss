@@ -1,0 +1,19 @@
+@import "ins-product-attributes-variables";
+
+.via-slds{
+        .vloc-title {
+        font-size: 1.55rem;
+    }
+            .vloc-section-header {
+            &.vloc-title-border-container {
+                width:3rem; 
+
+                .vloc-title-border {
+                    fill: $primary-orange;
+                    border-top: 2px solid $primary-orange; 
+                    margin: 0;
+                }
+            }
+        }
+
+}

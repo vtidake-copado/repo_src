@@ -1,0 +1,94 @@
+{
+    "count": 29,
+    "href": "https://sandbox.api.kbb.com/idws/vehicle/years?api_key=d51c688d57a241b58a9e44b5d&start=1&limit=100",
+    "items": [
+        {
+            "yearId": 1992
+        },
+        {
+            "yearId": 1993
+        },
+        {
+            "yearId": 1994
+        },
+        {
+            "yearId": 1995
+        },
+        {
+            "yearId": 1996
+        },
+        {
+            "yearId": 1997
+        },
+        {
+            "yearId": 1998
+        },
+        {
+            "yearId": 1999
+        },
+        {
+            "yearId": 2000
+        },
+        {
+            "yearId": 2001
+        },
+        {
+            "yearId": 2002
+        },
+        {
+            "yearId": 2003
+        },
+        {
+            "yearId": 2004
+        },
+        {
+            "yearId": 2005
+        },
+        {
+            "yearId": 2006
+        },
+        {
+            "yearId": 2007
+        },
+        {
+            "yearId": 2008
+        },
+        {
+            "yearId": 2009
+        },
+        {
+            "yearId": 2010
+        },
+        {
+            "yearId": 2011
+        },
+        {
+            "yearId": 2012
+        },
+        {
+            "yearId": 2013
+        },
+        {
+            "yearId": 2014
+        },
+        {
+            "yearId": 2015
+        },
+        {
+            "yearId": 2016
+        },
+        {
+            "yearId": 2017
+        },
+        {
+            "yearId": 2018
+        },
+        {
+            "yearId": 2019
+        },
+        {
+            "yearId": 2020
+        }
+    ],
+    "limit": 100
+}

@@ -1,0 +1,127 @@
+{
+    "Account": {
+        "AnnualRevenue": 100000000,
+        "Id": "00136000007zjwVAAQ",
+        "Name": "Acme",
+        "SLA": "Platinum",
+        "Type": "Customer"
+    },
+    "AccountId": "00136000007zjwVAAQ",
+    "AccountName": "Acme",
+    "Application Id": "a0536000002Dg50AAC",
+    "Authorized": false,
+    "Case": [
+        {
+            "AccountId": "00136000007zjwVAAQ",
+            "ContactId": "00336000005eIagAAE",
+            "Description": "Customer has not received a recent invoice and is inquiring about their billing status.",
+            "LastModifiedDate": "2016-03-03T00:35:27.000Z",
+            "Number": "00001005",
+            "Priority": "Medium",
+            "Status": "New",
+            "Subject": "Billing status",
+            "Type": "Billing"
+        },
+        {
+            "AccountId": "00136000007zjwVAAQ",
+            "ContactId": "00336000005eIagAAE",
+            "Description": "Customer reports that he requested widgets #45665 and he received widgets of type #99483. Urgently needs a new shipment and recommends that the product instructions should be updated.",
+            "LastModifiedDate": "2016-03-03T00:35:27.000Z",
+            "Number": "00001001",
+            "Priority": "High",
+            "Status": "New",
+            "Subject": "Wrong size widgets",
+            "Type": "Product"
+        },
+        {
+            "AccountId": "00136000007zjwVAAQ",
+            "ContactId": "00336000005eIagAAE",
+            "Description": "Customer ran a trace with Fedex but can't track most recent order. Fedex tracking # 39908098430933434.",
+            "LastModifiedDate": "2016-03-03T00:35:27.000Z",
+            "Number": "00001002",
+            "Priority": "Low",
+            "Status": "On Hold",
+            "Subject": "Cannot track our order",
+            "Type": "Orders"
+        }
+    ],
+    "City": "New York City",
+    "CommunicationPreference": "Email;SMS",
+    "ContactStatus": "Satisfied",
+    "ContextId": "00136000007zjwV",
+    "DaysSinceLastContact": 0,
+    "FirstName": "Edward",
+    "Id": "00336000005eIagAAE",
+    "LastName": "Stamos",
+    "Name": "Edward Stamos",
+    "PhotoUrl": "/services/images/photo/00336000005eIagAAE",
+    "State": "NY",
+    "Step 1 Identify Caller": {
+        "Contact": "00336000005eIagAAE"
+    },
+    "Step 2 Verify Caller": {
+        "Customer Snapshot": {
+            "Age": 45,
+            "ContactStatus": "Satisfied",
+            "Email": "edward@acme.com",
+            "MobilePhone": "(212) 554-6398",
+            "Phone": "2123256897",
+            "TotalCases": 3
+        },
+        "MinorAlert": true,
+        "SLAAlert": true,
+        "Verification Block": {
+            "Birthdate": "1970-03-22T07:00:00.000Z",
+            "PostalCode": "31349",
+            "SSN": "768347854"
+        },
+        "Verified": true
+    },
+    "Step 4 Success BRANCH 2": {
+        "CommunicationPreference": "Email;SMS",
+        "EmailPreference": "Email",
+        "PhonePreference": "",
+        "SMSPreference": "SMS"
+    },
+    "Title": "President and CEO",
+    "error": "OK",
+    "timeStamp": "2016-03-07T20:53:43.738Z",
+    "userName": "student47@telco.edu",
+    "userProfile": "System Administrator",
+    "vlcKnowledge": {
+        "knowledgeItems": [
+        ]
+    },
+    "vlcPersistentComponent": {
+        "vlcKnowledge": {
+            "knowledgeItems": [
+                {
+                    "aType": "Knowledge",
+                    "articleId": "ka036000000QnXzAAK",
+                    "articleType": "Knowledge__kav",
+                    "displayType": "Knowledge",
+                    "lastPubDate": "3/5/2016 10:04 PM",
+                    "summary": "Message and Data Rates May Apply Text STOP to Opt Out",
+                    "title": "SMS Policy",
+                    "urlName": "SMS-Policy"
+                },
+                {
+                    "aType": "Knowledge",
+                    "articleId": "ka036000000QnXkAAK",
+                    "articleType": "Knowledge__kav",
+                    "displayType": "Knowledge",
+                    "lastPubDate": "3/5/2016 10:03 PM",
+                    "summary": "Remind the caller that any information we collect, including email addresses, is not shared with other organizations for commercial purposes.Ã'Â ",
+                    "title": "Email Policy",
+                    "urlName": "Email-Policy"
+                }
+            ]
+        }
+    },
+    "vlcTimeTracking": {
+        "Step 1 Identify Caller": 4152,
+        "Step 2 Verify Caller": 5990,
+        "Step 4 Success BRANCH 2": 1276,
+        "Step 5 End Call": 2222
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "ContextId": "",
+    "JurisdictionId": "a5B6A000000XnPfUAK",
+    "confirmQuote": {
+        "issuePolicy": null,
+        "quoteConfirm": null
+    },
+    "debugLog": true,
+    "discountAutos": {
+        "discountAuto": {
+            "discAltFuel": null,
+            "discAntiLock": null,
+            "discAntiTheft": null,
+            "discStab": null,
+            "discountAutoInstanceKey": null,
+            "typeAutoDiscount": null
+        }
+    },
+    "id": "a2C6A000000fkRBUAY",
+    "insured": {
+        "effectiveQuoteDate": "2019-07-03",
+        "insuredAge": 33,
+        "insuredAgeLicensed": 16,
+        "insuredBirthdate": "1986-02-13T18:30:00.000Z",
+        "insuredCity": "Grand Rapids",
+        "insuredEmail": "rmoore@mi6.uk",
+        "insuredFirstName": "Roger",
+        "insuredFullName": "Roger M Moore",
+        "insuredGender": "M",
+        "insuredLastName": "Moore",
+        "insuredMaritalStatus": "M",
+        "insuredMiddleName": "M",
+        "insuredOpptyName": "Auto: Moore, Roger M",
+        "insuredPhone": "555-555-5555",
+        "insuredPostalCode": "49503",
+        "insuredState": "MI",
+        "insuredStreet": "500 Maple Dr"
+    },
+    "layout": "newport",
+    "payment": {
+        "AutoRenew": false,
+        "billAmount": null,
+        "dueDate": null,
+        "paymentOptions": null
+    },
+    "policydetails": {
+        "BalanceDueAmt": null,
+        "Disclosure1": false,
+        "SetSubject": null,
+        "dueDate2": null,
+        "mobCC": {
+            "billingZIP": null,
+            "cardCCV": null,
+            "cardExpMonth": null,
+            "cardExpYear": null,
+            "cardHolder": null,
+            "cardNumber": null
+        },
+        "mopACH": null,
+        "payAmount2": null,
+        "payMethod": null,
+        "quoteNumber": null
+    },
+    "timeStamp": "2019-06-17T09:40:20.751Z",
+    "userCurrencyCode": "USD",
+    "userId": "0056A000000JYu0QAG",
+    "userName": "nsimick@ins.ibo",
+    "userProfile": "System Administrator",
+    "userTimeZone": 330,
+    "vlcPersistentComponent": {
+    }
+}

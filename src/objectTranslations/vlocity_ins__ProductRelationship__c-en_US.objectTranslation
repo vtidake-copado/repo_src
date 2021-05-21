@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Action Parameters --></label>
+        <name>vlocity_ins__ActionParameters__c</name>
+    </fields>
+    <fields>
+        <label><!-- AddMode --></label>
+        <name>vlocity_ins__AddMode__c</name>
+        <picklistValues>
+            <masterLabel>asChild</masterLabel>
+            <translation><!-- asChild --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>asRoot</masterLabel>
+            <translation><!-- asRoot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>asSibling</masterLabel>
+            <translation><!-- asSibling --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attribute Modification Context --></label>
+        <name>vlocity_ins__AttributeModificationContext__c</name>
+        <picklistValues>
+            <masterLabel>Bundle</masterLabel>
+            <translation><!-- Bundle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cart</masterLabel>
+            <translation><!-- Cart --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Context --></label>
+        <name>vlocity_ins__Context__c</name>
+        <picklistValues>
+            <masterLabel>Bundle</masterLabel>
+            <translation><!-- Bundle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cart</masterLabel>
+            <translation><!-- Cart --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Quantity --></label>
+        <name>vlocity_ins__DefaultQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Family --></label>
+        <name>vlocity_ins__Family__c</name>
+        <picklistValues>
+            <masterLabel>Installation</masterLabel>
+            <translation><!-- Installation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modem</masterLabel>
+            <translation><!-- Modem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power Supply</masterLabel>
+            <translation><!-- Power Supply --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repair Package</masterLabel>
+            <translation><!-- Repair Package --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Router</masterLabel>
+            <translation><!-- Router --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOIP</masterLabel>
+            <translation><!-- VOIP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Global Key --></label>
+        <name>vlocity_ins__GlobalKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Conditional --></label>
+        <name>vlocity_ins__IsConditional__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Quantity --></label>
+        <name>vlocity_ins__MaxQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Quantity --></label>
+        <name>vlocity_ins__MinQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Type --></label>
+        <name>vlocity_ins__ObjectTypeId__c</name>
+        <relationshipLabel><!-- Product Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>vlocity_ins__Product2Id__c</name>
+        <relationshipLabel><!-- Product Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Child Item --></label>
+        <name>vlocity_ins__ProductChildItemId__c</name>
+        <relationshipLabel><!-- Product Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Object Type --></label>
+        <name>vlocity_ins__RelatedObjectTypeId__c</name>
+        <relationshipLabel><!-- Product Relationships (Related) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Product Child Item --></label>
+        <name>vlocity_ins__RelatedProductChildItemId__c</name>
+        <relationshipLabel><!-- Product Relationships (Related Product Child Item) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Product Child Item Parent Id --></label>
+        <name>vlocity_ins__RelatedProductChildItemParentId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Product Qualifying Filter --></label>
+        <name>vlocity_ins__RelatedProductFilterId__c</name>
+        <relationshipLabel><!-- Product Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Product --></label>
+        <name>vlocity_ins__RelatedProductId__c</name>
+        <relationshipLabel><!-- Product Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Type --></label>
+        <name>vlocity_ins__RelationshipType__c</name>
+        <picklistValues>
+            <masterLabel>Excludes</masterLabel>
+            <translation><!-- Excludes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recommends</masterLabel>
+            <translation><!-- Recommends --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requires</masterLabel>
+            <translation><!-- Requires --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reverse Max Quantity --></label>
+        <name>vlocity_ins__ReverseMaxQuantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reverse Min Quantity --></label>
+        <name>vlocity_ins__ReverseMinQuantity__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Default quantity should not be zero --></errorMessage>
+        <name>vlocity_ins__Default_quntity_cannot_be_zero</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Min Quantity should be less than or equal to Max Quantity And Default Quantity should be in between Min &amp; Max Quantity --></errorMessage>
+        <name>vlocity_ins__Min_Max_should_build_a_valid_range</name>
+    </validationRules>
+</CustomObjectTranslation>

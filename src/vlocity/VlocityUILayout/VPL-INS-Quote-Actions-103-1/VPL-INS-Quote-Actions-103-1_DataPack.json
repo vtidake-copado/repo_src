@@ -1,0 +1,26 @@
+{
+    "%vlocity_namespace%__Author__c": "VlocityIBO",
+    "%vlocity_namespace%__Datasource__c": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "0Q06A0000001IG2SAM"
+            }
+        ],
+        "type": "Query",
+        "value": {
+            "query": "SELECT Id, Name FROM Quote WHERE Id = '{{params.id || params.Id}}'"
+        }
+    },
+    "%vlocity_namespace%__Definition__c": "VPL-INS-Quote-Actions-103-1.json",
+    "%vlocity_namespace%__Description__c": "",
+    "%vlocity_namespace%__GlobalKey__c": "VPL-INS-Quote-Actions-103-1/1/VlocityIBO/1534231798392",
+    "%vlocity_namespace%__ParentID__c": "INS-Quote-Actions/1/VlocityIBO/1518222413691",
+    "%vlocity_namespace%__RequiredPermission__c": "",
+    "%vlocity_namespace%__Type__c": "Layout",
+    "%vlocity_namespace%__Version__c": 1,
+    "Name": "VPL-INS-Quote-Actions-103-1",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityUILayout__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityUILayout__c/VPL-INS-Quote-Actions-103-1"
+}

@@ -1,0 +1,148 @@
+// COLORS
+// Non-Text Colors:
+$vella-royal: #0080F9;
+$vella-sky: #00CEFF;
+$vella-orange: #FF6D00;
+$vella-red: #FD5365;
+$vella-yellow: #FACB15;
+$vella-green: #02E889;
+$vella-extra-light-gray: #F9F9F9;
+$vella-sky-border: #37BDE3;
+$vella-gray-border: #EDEDED;
+$vella-light-gray-bg: #F5FBFF;
+$vella-insured-item-bg: #F3FBFF;
+$vella-insurable-item-bg: #FBFBFB;
+
+// Text Colors:
+$vella-dark-gray: #4C4C4C;
+$vella-light-gray: #C1C1C1;
+$vella-sky-text: #0090B9;
+
+// Mixins:
+// Reset UI to 100% height (only used once at the top of vella-home-container.scss)
+@mixin configureUI {
+    html {
+        font-size: 16px;
+        height: 100%;
+    }
+    body.via-slds {
+        height: 100%;
+
+        >span {
+            height: 100%;
+            display: block;
+        }
+
+        &.via-slds {
+            height: 100%;
+            font-family: "Brown", "Salesforce Sans", Arial, sans-serif;
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            th,
+            td {
+                font-family: "Brown", "Salesforce Sans", Arial, sans-serif;
+            }
+
+            vloc-mobile {
+                height: 100%;
+                display: block;
+
+                div[layout-name] {
+                    height: 100%;
+
+                    ng-include[src] {
+                        height: 100%;
+                        display: block;
+                    }
+                }
+            }
+
+            div[layout-id] {
+                height: 100%;
+
+                ng-include[src="'vella-home-container'"] {
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 410px) {
+        html {
+            font-size: 18px;
+        }
+    }
+}
+
+@mixin policyCircle($margin, $bgColor, $imgSelector) {
+    position: relative;
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: $margin;
+    background-color: $bgColor;
+    border-radius: 50%;
+    transform: translate3d(0, 0, 0);
+
+    #{$imgSelector} {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 55px;
+    }
+}
+
+// Sets visibility with a fade in/out transition (used for spinner and notification mainly)
+@mixin transitionVisibility($prefix, $opacity: 1, $absolute: false, $height: false) {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0ms linear 150ms,
+                position 0ms linear 150ms,
+                opacity 150ms ease-in;
+    @if $height {
+        height: calc(100vh - 44px);
+    }
+    @if $absolute {
+        position: absolute;
+    }
+
+    &.#{$prefix}-active {
+        opacity: $opacity;
+        visibility: visible;
+        transition: visibility 0ms linear 0ms,
+                    position 0ms linear 0ms,
+                    opacity 150ms ease-in;
+        @if $height {
+            height: calc(100vh + 44px);
+        }
+        @if $absolute {
+            position: relative;
+        }
+    }
+}
+
+@mixin pulseIndicator($color, $animationName) {
+    background-color: $color;
+    animation: #{$animationName} 1.5s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+}
+
+@mixin keyframes($name, $color) {
+    @keyframes #{$name} {
+        0% {
+            background-color: $color;
+        }
+
+        100% {
+            background-color: darken($color, 18%);
+        }
+    }
+}

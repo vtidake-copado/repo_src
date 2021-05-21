@@ -1,0 +1,180 @@
+[
+    {
+        "%vlocity_namespace%__AttributeDefaultValues__c": {
+            "limitBI": "100/300/10",
+            "limitPD": "25000"
+        },
+        "%vlocity_namespace%__AttributeMetadataChanges__c": "",
+        "%vlocity_namespace%__AttributeMetadata__c": {
+            "records": [
+                {
+                    "Code__c": "autoTerms",
+                    "Name": "Auto Terms",
+                    "displaySequence": 230,
+                    "id": "a0B6A0000062WreUAE",
+                    "productAttributes": {
+                        "records": [
+                            {
+                                "attributeId": "a0C6A0000057SkSUAU",
+                                "cloneable": true,
+                                "code": "limitBI",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 0,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Limit - Bodily Injury",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "$15,000 / $30,000 / $10,000",
+                                        "readonly": false,
+                                        "value": "15/30/10"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "id": "1",
+                                        "label": "$25,000 / $50,000 / $10,000",
+                                        "readonly": false,
+                                        "value": "25/50/10"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "id": "2",
+                                        "label": "$50,000 / $100,000 / $10,000",
+                                        "readonly": false,
+                                        "value": "50/100/10"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "id": "3",
+                                        "label": "$100,000 / $300,000 / $10,000",
+                                        "readonly": false,
+                                        "value": "100/300/10"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "id": "4",
+                                        "label": "$250,000 / $500,000 / $10,000",
+                                        "readonly": false,
+                                        "value": "250/500/10"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "id": "5",
+                                        "label": "$500,000 / $500,000 / $100,000",
+                                        "readonly": false,
+                                        "value": "500/500/100"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "id": "6",
+                                        "label": "$500,000 / $1,000,000 / $100,000",
+                                        "readonly": false,
+                                        "value": "500/1000/100"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "id": "7",
+                                        "label": "$1,000,000 / $1,000,000 / $100,000",
+                                        "readonly": false,
+                                        "value": "1000/1000/100"
+                                    }
+                                ]
+                            },
+                            {
+                                "attributeId": "a0C6A0000057SkTUAU",
+                                "cloneable": true,
+                                "code": "limitPD",
+                                "dataType": "text",
+                                "disabled": false,
+                                "displaySequence": 1,
+                                "filterable": true,
+                                "hasRules": false,
+                                "hidden": false,
+                                "inputType": "dropdown",
+                                "isNotTranslatable": false,
+                                "label": "Limit - Property Damage",
+                                "multiselect": false,
+                                "readonly": false,
+                                "required": false,
+                                "userValues": null,
+                                "values": [
+                                    {
+                                        "disabled": false,
+                                        "id": "0",
+                                        "label": "$5,000",
+                                        "readonly": false,
+                                        "value": "5000"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "id": "1",
+                                        "label": "$10,000",
+                                        "readonly": false,
+                                        "value": "10000"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "id": "2",
+                                        "label": "$25,000",
+                                        "readonly": false,
+                                        "value": "25000"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "id": "3",
+                                        "label": "$50,000",
+                                        "readonly": false,
+                                        "value": "50000"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "id": "4",
+                                        "label": "$100,000",
+                                        "readonly": false,
+                                        "value": "100000"
+                                    },
+                                    {
+                                        "disabled": false,
+                                        "id": "5",
+                                        "label": "$500,000",
+                                        "readonly": false,
+                                        "value": "500000"
+                                    }
+                                ]
+                            }
+                        ],
+                        "totalSize": 2
+                    }
+                }
+            ],
+            "totalSize": 1
+        },
+        "%vlocity_namespace%__AttributeRules__c": "",
+        "%vlocity_namespace%__JSONAttribute__c": "",
+        "%vlocity_namespace%__ProductChildItemId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "97d34afc-c726-6837-f789-5aa3cd40464e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__ProductChildItem__c/97d34afc-c726-6837-f789-5aa3cd40464e",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__ProductChildItem__c"
+        },
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c3fa6461-57e9-dc24-866c-ea4e473a1c78",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/c3fa6461-57e9-dc24-866c-ea4e473a1c78",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-233584407"
+    }
+]

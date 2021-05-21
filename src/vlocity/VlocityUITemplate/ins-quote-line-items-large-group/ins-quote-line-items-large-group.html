@@ -1,0 +1,93 @@
+<!--LOADER: -->
+<div class="slds-spinner_container" ng-show="!$root.isLoaded">
+    <div class="slds-spinner_brand slds-spinner slds-spinner_medium" aria-hidden="false" role="alert">
+        <div class="slds-spinner__dot-a"></div>
+        <div class="slds-spinner__dot-b"></div>
+    </div>
+</div>
+<div class="via-slds" ng-init="insQLILargeGroupInit(params)" ng-controller="insQLILargeGroupController">
+    <!-- Notify -->
+    <div class="slds-notify_container vloc-notify-container" ng-if="$root.notification.active">
+        <div class="slds-notify slds-notify_toast" role="alert" ng-class="{'slds-theme_success' : $root.notification.type === 'success', 'slds-theme_error' : $root.notification.type === 'error'}">
+            <span class="slds-assistive-text">{{ ::$root.customLabels.InsAssetInfo }}</span>
+            <button class="slds-button slds-notify__close vloc-notify-close" title="Close" ng-click="$root.notification.active = false">
+                <slds-svg-icon sprite="'utility'" icon="'close'" extra-classes="'slds-button__icon_left'"></slds-svg-icon>
+            </button>
+            <div class="slds-notify__content">
+                <h2 class="slds-text-heading_small">{{$root.notification.message}}</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Grid -->
+    <div ng-hide="true" ins-rules-evaluate ins-rules-product="records[0]">
+        <div ng-repeat="rootCatt in records[0].attributeCategories.records">
+            <div ng-repeat="rootAttr in rootCatt.productAttributes.records">
+                <div ins-rules-evaluate="rootAttr" ins-rules-coverage="product"></div>
+            </div>
+        </div>
+    </div><!--root attributes need to be triggered for rule directive-->
+    <div class="slds-grid slds-wrap cards-container slds-size_1-of-1" ng-init="coverages = records[0].childProducts.records">
+        <!-- header: 3 columns (should correspond to amt of attr subgroups) -->
+        <div class="slds-size_1-of-1 slds-grid vloc-refresh-container">
+            <button class="slds-button slds-m-top_xx-small slds-p-right_xx-small slds-is-absolute vloc-refresh-btn" ng-click="refreshPage()">
+                    <slds-button-svg-icon sprite="'utility'" icon="'refresh'" extra-classes="'slds-button__icon_right'"></slds-button-svg-icon>
+            </button>
+        </div>
+        <div class="slds-size_1-of-1 slds-grid">
+            <div class="slds-p-top_xx-small slds-size_1-of-{{subgroups.length}}">
+                <div class="slds-m-bottom_small via-ins-attributes-expand-collapse-categories slds-p-left_xx-small" ng-hide="hideControls" ng-class="{'slds-p-top_small' : hideHeader}">
+                    <a href="javascript:void(0)" ng-click="expandAll(coverages)"> {{ ::$root.customLabels.InsQuotesExpandAll }}</a>
+                    <span class="slds-m-horizontal_x-small ">|</span>
+                    <a href="javascript:void(0)" ng-click="collapseAll(coverages)">{{ ::$root.customLabels.InsQuotesCollapseAll }}</a>
+                </div>
+            </div>
+            <div class="slds-size_1-of-{{subgroups.length}} slds-p-top_xx-small slds-text-align_center">{{ ::$root.customLabels.InsQuotesInNetwork }}</div>
+            <div class="slds-size_1-of-{{subgroups.length}} slds-p-top_xx-small slds-text-align_center">{{ ::$root.customLabels.InsQuotesOutOfNetwork }}</div>
+        </div>
+        <!-- body: order list of coverages -->
+        <ul ng-model="coverageAccordion.activePanels" class="slds-accordion slds-border_bottom slds-size_1-of-1" bs-collapse data-start-collapsed="true" data-allow-multiple="true">
+            <li class="slds-accordion__list-item" ng-repeat="productRecord in coverages | orderBy : 'displaySequence'" ng-if="productRecord.attributeCategories.records.length > 0" ng-init="showProduct(productRecord, coverages); checkProduct(productRecord)"  id="via-ins-attributes-product-{{productRecord.productId}}">
+                <section class="slds-accordion__section vloc-accordion_section" ng-class="{'slds-is-open': coverageAccordion.activePanels.indexOf($index) > -1}">
+                    <!-- toggle button -->
+                    <div aria-controls="" aria-expanded="false" class="slds-accordion__summary vloc-accordion_summary slds-theme_shade">
+                        <div class="slds-size_1-of-{{subgroups.length}} slds-p-left_small slds-text-heading_small slds-accordion__summary-heading vloc-accordion_header" ng-class="{'slds-p-left_medium' : !productRecord.childProducts.records}">
+                            <div class="slds-accordion__summary-action">
+                                <button ng-click="clickEventToChildAccordion(productRecord, $index)" class="slds-button slds-button_reset" bs-collapse-toggle="{{$index}}">
+                                    <slds-button-svg-icon sprite="'utility'" icon="'chevrondown'" extra-classes="'slds-accordion__summary-action-icon slds-button__icon slds-button__icon_left'"></slds-button-svg-icon>
+                                </button>
+                                <div class="slds-form-element__control slds-text-align_left slds-text-align_center slds-m-right_small slds-p-bottom_xx-small">
+                                    <span class="slds-checkbox">
+                                    <input type="checkbox" name="checkbox-attrs-{{$index}}" id="checkbox-optional-{{$index}}" ng-disabled="!productRecord.isOptional" ng-model="productRecord.isSelected" ng-change="addRemoveChildLine(productRecord)"/>
+                                    <label class="slds-checkbox__label slds-m-around_none" for="checkbox-optional-{{$index}}">
+                                    <span class="slds-checkbox_faux vloc-check"></span>
+                                    </label>
+                                    </span>
+                                </div>
+                                <button ng-click="clickEventToChildAccordion(productRecord, $index)" class="slds-button slds-button_reset" bs-collapse-toggle="{{$index}}">
+                                    <span ng-if="productRecord.lineRecordType !== 'CoverageSpec'" class="slds-truncate" title="{{productRecord[$root.nsPrefix + 'ItemName__c'].fieldValue}}">{{productRecord[$root.nsPrefix + 'ItemName__c'].fieldValue}}</span>
+                                    <span ng-if="(productRecord.lineRecordType === 'CoverageSpec' || !productRecord.lineRecordType )" class="slds-truncate" title="{{productRecord.productName}}">{{productRecord.productName}}</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="slds-size_1-of-{{subgroups.length}} slds-p-top_xx-small slds-text-align_center" ng-repeat="subgroup in subgroups" ng-if="$index !== 0">
+                            <div class="slds-form-element vloc-switch" ng-if="showSwitch[productRecord.productId]">
+                                <label class="slds-checkbox_toggle slds-grid">
+                                <input name="checkbox-toggle-{{$index}}" ng-change="setCovered(productRecord, subgroup)" type="checkbox" aria-describedby="checkbox-toggle-{{$index}}" value="checkbox-toggle-{{$index}}" ng-model="switchMap[productRecord.productId][subgroup]"/>
+                                <span id="checkbox-toggle-{{$index}}" class="slds-checkbox_faux_container" aria-live="assertive">
+                                <span class="slds-checkbox_faux"></span>
+                                <span class="slds-checkbox_on"> {{ ::$root.customLabels.InsQuotesCovered }}</span>
+                                <span class="slds-checkbox_off">{{ ::$root.customLabels.InsQuotesNotCovered }}</span>
+                                </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- attribute categories:-->
+                    <div ng-show="coverageAccordion.activePanels.indexOf($index) > -1" id="accordion-details-{{$index}}" ins-collapse-calc-height bs-collapse-target class="slds-accordion__content">
+                        <ins-rules-attributes subgroups="subgroups" hide-controls="true" hide-header="true" temp-url="ins-rules-attributes-template-subgroups.tpl.html" product-data="[productRecord]" one-product="true" update-method="updateQLI()"></ins-rules-attributes>
+                    </div>
+                </section>
+            </li>
+        </ul>
+    </div>
+</div>

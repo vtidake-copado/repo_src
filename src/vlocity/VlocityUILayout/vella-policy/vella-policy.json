@@ -1,0 +1,73 @@
+{
+    "Cards": [
+        "vella-policy-detail-card",
+        "vella-swipe-insured-items",
+        "vella-swipe-items-policy",
+        "vella-policy-add-insured-item",
+        "vella-auto-safety-use",
+        "vella-home-protection",
+        "vella-policy-coverages-card"
+    ],
+    "templates": {
+        "0": {
+            "templateUrl": "vella-policy-container"
+        }
+    },
+    "zones": {
+        "policyAutoSafety": {
+            "cardNames": [
+                "vella-auto-safety-use"
+            ],
+            "label": "Policy Auto Safety",
+            "layouts": [
+            ],
+            "name": "policyAutoSafety"
+        },
+        "policyCoverages": {
+            "cardNames": [
+                "vella-policy-coverages-card"
+            ],
+            "label": "Policy Coverages",
+            "layouts": [
+            ],
+            "name": "policyCoverages"
+        },
+        "policyDetail": {
+            "cardNames": [
+                "vella-policy-detail-card"
+            ],
+            "label": "Policy Detail",
+            "layouts": [
+            ],
+            "name": "policyDetail"
+        },
+        "policyHomeProtection": {
+            "cardNames": [
+                "vella-home-protection"
+            ],
+            "label": "Policy Home Protection",
+            "layouts": [
+            ],
+            "name": "policyHomeProtection"
+        },
+        "policyInsured": {
+            "cardNames": [
+                "vella-swipe-insured-items"
+            ],
+            "label": "Policy Insured Items",
+            "layouts": [
+            ],
+            "name": "policyInsured"
+        },
+        "policyUnbound": {
+            "cardNames": [
+                "vella-swipe-items-policy",
+                "vella-policy-add-insured-item"
+            ],
+            "label": "Policy Unbound Insurable Items",
+            "layouts": [
+            ],
+            "name": "policyUnbound"
+        }
+    }
+}

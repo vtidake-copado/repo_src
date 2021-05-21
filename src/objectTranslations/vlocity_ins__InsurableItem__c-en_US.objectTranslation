@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>vlocity_ins__AccountId__c</name>
+        <relationshipLabel><!-- Insurable Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attribute Selected Values --></label>
+        <name>vlocity_ins__AttributeSelectedValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>vlocity_ins__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>vlocity_ins__LeadId__c</name>
+        <relationshipLabel><!-- Insurable Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Spec Description --></label>
+        <name>vlocity_ins__SpecDescription__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spec Product Spec Pricing Source --></label>
+        <name>vlocity_ins__SpecPricingSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spec Product --></label>
+        <name>vlocity_ins__SpecProduct2Id__c</name>
+        <relationshipLabel><!-- Insurable Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Spec Product Name --></label>
+        <name>vlocity_ins__SpecProductName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spec Product Record Type --></label>
+        <name>vlocity_ins__SpecProductRecordType__c</name>
+    </fields>
+</CustomObjectTranslation>

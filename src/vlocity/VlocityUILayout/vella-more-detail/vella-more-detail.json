@@ -1,0 +1,14 @@
+{
+    "Cards": [
+        "vella-more-detail-card"
+    ],
+    "bypassSave": true,
+    "dataSource": {
+        "type": "Inherit"
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "vella-container"
+        }
+    }
+}

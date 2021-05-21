@@ -1,0 +1,138 @@
+.via-slds {
+    form[stepform].vloc-health-ins-product-selection-step {
+        width: 100%;
+        height: 100%;
+        padding: 0 1.25rem;
+
+        > div[class^="slds-col"],
+        > div[class*=" slds-col-"] {
+            width: 100%;
+            height: 100%;
+
+            &[class^="slds-m-"], &[class*=" slds-m-"] {
+                height: auto;
+            }
+
+            > .slds-grid {
+                width: 100%;
+                height: 100%;
+
+                > child {
+                    width: 100%;
+                    height: 100%;
+
+                    > div[class^="slds-col"],
+                    > div[class*=" slds-col-"] {
+                        width: 100%;
+                        height: 100%;
+
+                        > ng-form {
+                            width: 100%;
+                            height: 100%;
+                            padding: 0;
+
+                            > .slds-form-element__control {
+                                width: 100%;
+                                height: 100%;
+
+                                label {
+                                    display: none;
+                                }
+
+                                > ng-include {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.height-added {
+            > div[class^="slds-col"],
+            > div[class*=" slds-col-"] {
+                width: 100%;
+                height: auto;
+
+                &[class^="slds-m-"], &[class*=" slds-m-"] {
+                    height: auto;
+                }
+
+                > .slds-grid {
+                    width: 100%;
+                    height: auto;
+
+                    > child {
+                        width: 100%;
+                        height: auto;
+
+                        > div[class^="slds-col"],
+                        > div[class*=" slds-col-"] {
+                            width: 100%;
+                            height: auto;
+
+                            > ng-form {
+                                width: 100%;
+                                height: auto;
+                                padding: 0;
+
+                                > .slds-form-element__control {
+                                    width: 100%;
+                                    height: auto;
+
+                                    label {
+                                        display: none;
+                                    }
+
+                                    > ng-include {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .vloc-health-ins-product-selection-wrapper {
+        height: 100%;
+        width: 100%;
+        transition: height 100ms ease-in;
+
+        .vloc-health-ins-product-selection-container {
+            height: 100%;
+            width: 100%;
+        }
+
+        #vloc-health-ins-product-selection-iframe {
+            height: 100%;
+            width: 100%;
+            border: none;
+        }
+    }
+
+    .vlc-slds-remote-action--button .vlc-control-wrapper .slds-box p {
+        pointer-events: none;
+    }
+
+    @media screen and (max-width: 30em ) {
+        form[stepform].vloc-health-ins-product-selection-step {
+            padding: 0;
+
+            .vlc-slds-button--footer {
+                padding: 0 1rem;
+
+                .vlc-slds-small--size-column {
+                    .vlc-slds-remote-action--button {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

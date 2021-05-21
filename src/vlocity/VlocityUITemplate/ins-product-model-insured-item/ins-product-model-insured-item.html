@@ -1,0 +1,39 @@
+<article class="slds-card slds-m-bottom_small vloc-ins-coverage-card">
+    <div class="slds-card__header slds-grid vloc-ins-coverage-card-header-container">
+        <header class="slds-media slds-media_center slds-has-flexi-truncate vloc-ins-coverage-card-header">
+            <div class="slds-media__figure vloc-ins-coverage-icon-container">
+                <span class="slds-icon_container slds-icon-standard-contact">
+                    <slds-svg-icon sprite="'standard'" icon="'contact'"></slds-svg-icon>
+                </span>
+            </div>
+            <div class="slds-media__body vloc-ins-coverage-header-body">
+                <h1 class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate" title="{{obj.formattedName}}">{{obj.formattedName}}</h1>
+                <p class="slds-text-title_caps slds-line-height_reset">{{placeholder.productName.value}}<span ng-if="placeholder.productName.value"> | </span> {{placeholder.LastModifiedDate.label}}: {{ placeholder.LastModifiedDate.value | formatLastModifiedDate}}</p>
+
+            </div>
+        </header>
+        <div class="slds-no-flex" ng-if="obj.QuoteId">
+            <button class="slds-button slds-button_neutral" ng-click="importedScope.editInsuredItem(obj)">{{ ::importedScope.customLabels.Edit }}</button>
+        </div>
+    </div>
+    <div class="slds-card__body slds-grid slds-border_top slds-p-around_medium vloc-ins-coverage-card-body-container">
+        <div class="slds-size_1-of-6 vloc-ins-coverage-image-container" ng-if="placeholder.Image.value">
+            <div class="vloc-ins-coverage-image">
+                <img class="vloc-ins-coverage-image-src" ng-src="{{placeholder.Image.value}}"/>
+            </div>
+        </div>
+        <div class="vloc-ins-coverage-attributes" ng-class="{'slds-size_5-of-6 slds-m-left_medium': placeholder.Image.value, 'slds-size_1-of-1': !placeholder.Image.value}">
+            <div class="slds-clearfix vloc-ins-attribute-category-repeater" ng-repeat="category in obj.attributeCategories.records">
+                <div class="vloc-ins-product-attribute-repeater" ng-repeat="attribute in category.productAttributes.records" ng-if="attribute.userValues">
+                    <div class="slds-grid vloc-ins-attribute-container">
+                        <div class="slds-size_1-of-2 slds-text-title_caps vloc-ins-attribute-label">{{attribute.label}}</div>
+                        <div class="slds-size_1-of-2 slds-text-heading_small vloc-ins-attribute-value" ng-if="attribute.dataType !== 'date' && attribute.dataType !== 'currency' && attribute.inputType !== 'dropdown'">{{attribute.userValues}}</div>
+                        <div class="slds-size_1-of-2 slds-text-heading_small vloc-ins-attribute-value" ng-if="attribute.dataType !== 'date' && attribute.dataType !== 'currency' && attribute.inputType === 'dropdown'">{{attribute.userValues | displayValue : attribute.values}}</div>
+                        <div class="slds-size_1-of-2 slds-text-heading_small vloc-ins-attribute-value" ng-if="attribute.dataType === 'date'">{{attribute.userValues | formatDate}}</div>
+                        <div class="slds-size_1-of-2 slds-text-heading_small vloc-ins-attribute-value" ng-if="attribute.dataType === 'currency'">{{attribute.userValues | formatCurrency}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

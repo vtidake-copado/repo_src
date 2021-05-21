@@ -1,0 +1,16 @@
+<div class="vloc-enrollment-container" ng-init="importedScope.vlocQuote.setClasses(records.records); importedScope.vlocQuote.getClassFields(); importedScope.vlocQuote.setActions(cards[0].states[0].definedActions)">
+        <div class="slds-button slds-button_neutral vloc-add-class-button slds-float_right"  ng-click="importedScope.vlocQuote.newClass();">
+            <slds-svg-icon sprite="'utility'" icon="'add'" size="'small'" extra-classes="'slds-button_icon vloc-icon-add-class'"></slds-svg-icon>
+                <span class="vloc-add-class-label">Add Class</span>
+        </div>
+      <h1 class="vloc-title slds-m-bottom_small">Classes & Plans</h1>
+        <div class="vloc-section-header vloc-title-border-container">
+            <hr class="vloc-title-border"/>
+        </div>
+    <div class="vloc-qli-tab {{importedScope.toggleTabsClass}}" ng-hide="importedScope.responsiveHelper.bpXMedium" ng-init="importedScope.vlocQuote.calcWidth()">
+        <div class="member-log-actions-tabs" slds-tabs slds-active-pane="importedScope.sldsActivePane" template="SldsTabsScoped.tpl.html">
+            <div ng-repeat="record in importedScope.vlocQuote.classes" data-title="{{record['Name']}}" name="{{record['Name']}}" slds-pane class="slds-clearfix" records="record" ng-include="cards[0].states[0].templateUrl">
+            </div>
+        </div>
+     </div>
+</div>

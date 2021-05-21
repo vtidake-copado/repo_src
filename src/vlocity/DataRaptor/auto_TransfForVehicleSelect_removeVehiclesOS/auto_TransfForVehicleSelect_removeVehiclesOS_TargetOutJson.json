@@ -1,0 +1,10 @@
+{
+    "InsuredVehicle": {
+        "InsuredItemId": "Text",
+        "ManufacturedYear": "Text",
+        "Model": "Text",
+        "ModelYear": "Text",
+        "VIN": "Text",
+        "VehicleName": "Text"
+    }
+}

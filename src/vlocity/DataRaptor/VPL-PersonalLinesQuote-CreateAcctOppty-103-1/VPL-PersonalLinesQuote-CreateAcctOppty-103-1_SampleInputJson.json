@@ -1,0 +1,57 @@
+{
+    "BrokerId": "",
+    "ContextId": "",
+    "contextId": "",
+    "debugLog": true,
+    "discountAutos": {
+        "discountAuto": {
+            "discAltFuel": null,
+            "discAntiLock": null,
+            "discAntiTheft": null,
+            "discStab": null,
+            "discountAutoInstanceKey": null,
+            "typeAutoDiscount": null
+        }
+    },
+    "discountDriver": {
+        "driverDiscounts": {
+            "discountDriverInstanceKey": null,
+            "driverGPA": null,
+            "driverMilitaryID": null,
+            "driverMiltaryBranch": null,
+            "typeDriverDiscount": null
+        }
+    },
+    "id": "a0g6A000003b0HQQAY",
+    "insured": {
+        "effectiveDate": "2018-12-31",
+        "insuredAge": 30,
+        "insuredAgeLicensed": 16,
+        "insuredBirthdate": "1988-12-02T08:00:00.000Z",
+        "insuredCity": "San Francisco",
+        "insuredEmail": "bobby@bobby.com",
+        "insuredFirstName": "Bobby",
+        "insuredFullName": "Bobby Steven Balloon",
+        "insuredGender": "M",
+        "insuredLastName": "Balloon",
+        "insuredMaritalStatus": "S",
+        "insuredMiddleName": "Steven",
+        "insuredOpptyName": "Auto: Balloon, Bobby Steven",
+        "insuredPhone": "9256907101",
+        "insuredPostalCode": "94517",
+        "insuredState": "California",
+        "insuredStreet": "4803 Oak Dr"
+    },
+    "isdtp": "p1",
+    "layout": "newport",
+    "sfdcIFrameHost": "web",
+    "sfdcIFrameOrigin": "https://12345--vlocity-ins.na50.visual.force.com",
+    "timeStamp": "2018-12-06T21:55:08.912Z",
+    "userCurrencyCode": "USD",
+    "userId": "0056A00000110p4QAA",
+    "userName": "traininginscpq@ins.edu",
+    "userProfile": "System Administrator",
+    "userTimeZone": -480,
+    "vlcPersistentComponent": {
+    }
+}

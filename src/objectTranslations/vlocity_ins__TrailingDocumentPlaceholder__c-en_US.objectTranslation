@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>vlocity_ins__AccountId__c</name>
+        <relationshipLabel><!-- Trailing Document Placeholders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>vlocity_ins__ApplicationId__c</name>
+        <relationshipLabel><!-- Trailing Document Placeholders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>vlocity_ins__AssetId__c</name>
+        <relationshipLabel><!-- Trailing Document Placeholders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>vlocity_ins__CaseId__c</name>
+        <relationshipLabel><!-- Trailing Document Placeholders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Claim --></label>
+        <name>vlocity_ins__ClaimId__c</name>
+        <relationshipLabel><!-- Trailing Document Placeholders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Claim Line Item --></label>
+        <name>vlocity_ins__ClaimLineItemId__c</name>
+        <relationshipLabel><!-- Trailing Document Placeholders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>vlocity_ins__ContactId__c</name>
+        <relationshipLabel><!-- Trailing Document Placeholders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>vlocity_ins__ContractId__c</name>
+        <relationshipLabel><!-- Trailing Document Placeholders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>vlocity_ins__DueDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required --></label>
+        <name>vlocity_ins__IsRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>vlocity_ins__LeadId__c</name>
+        <relationshipLabel><!-- Trailing Document Placeholders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Trailing Document Category --></label>
+        <name>vlocity_ins__ParentPlaceholderId__c</name>
+        <relationshipLabel><!-- Trailing Document Placeholders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote --></label>
+        <name>vlocity_ins__QuoteId__c</name>
+        <relationshipLabel><!-- Trailing Document Placeholders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>vlocity_ins__Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alternate Format</masterLabel>
+            <translation><!-- Alternate Format --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deemed</masterLabel>
+            <translation><!-- Deemed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disapproved</masterLabel>
+            <translation><!-- Disapproved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Populated Template</masterLabel>
+            <translation><!-- Populated Template --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA/LIS</masterLabel>
+            <translation><!-- SA/LIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Withdrawn</masterLabel>
+            <translation><!-- Withdrawn --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

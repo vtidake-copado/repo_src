@@ -1,0 +1,30 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "makes:id",
+        "%vlocity_namespace%__GlobalKey__c": "c7524bef-45f2-6b9d-ed92-5b8221f863ce",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "items:makeId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBB-GET-MAKES-RESPONSECustom8548",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetMakesResponse",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "makes:value",
+        "%vlocity_namespace%__GlobalKey__c": "65250a27-b7dd-f136-6bfd-65391971e030",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "items:makeName",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBB-GET-MAKES-RESPONSECustom727",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetMakesResponse",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

@@ -1,0 +1,57 @@
+{
+    "dataSource": {
+        "type": null,
+        "value": {
+            "body": "",
+            "resultVar": ""
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                    {
+                        "collapse": true,
+                        "hasExtraParams": false,
+                        "id": "AcceptQuote",
+                        "isCustomAction": false,
+                        "type": "Vlocity Action"
+                    },
+                    {
+                        "collapse": true,
+                        "hasExtraParams": false,
+                        "id": "Edit Record",
+                        "isCustomAction": false,
+                        "type": "Vlocity Action"
+                    },
+                    {
+                        "collapse": true,
+                        "displayName": "Group Health",
+                        "hasExtraParams": false,
+                        "id": "Group Health",
+                        "isCustomAction": true,
+                        "openUrlIn": "_self",
+                        "type": "Custom",
+                        "url": "www.google.com"
+                    }
+                ]
+            },
+            "fields": [
+            ],
+            "name": "Actions",
+            "sObjectType": "Quote",
+            "templateUrl": "ins-action-dropdown"
+        }
+    ],
+    "title": "Get a Quote"
+}

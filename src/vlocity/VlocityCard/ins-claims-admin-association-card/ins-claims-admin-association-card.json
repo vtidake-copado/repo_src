@@ -1,0 +1,62 @@
+{
+    "dataSource": {
+        "type": null,
+        "value": {
+            "body": "{}",
+            "resultVar": ""
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankStateCheck": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Attribute Name (Unique-Value)",
+                    "name": "%vlocity_namespace%__AttributeDisplayName__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Code",
+                    "name": "%vlocity_namespace%__AttributeUniqueCode__c",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Label",
+                    "name": "Name",
+                    "type": "string"
+                }
+            ],
+            "name": "Claims Admin Card Association",
+            "templateUrl": "ins-claims-property-card"
+        }
+    ],
+    "title": "Claims Admin"
+}

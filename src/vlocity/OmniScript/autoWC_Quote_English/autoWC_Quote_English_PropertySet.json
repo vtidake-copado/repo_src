@@ -1,0 +1,77 @@
+{
+    "allowCancel": true,
+    "allowSaveForLater": true,
+    "autoFocus": false,
+    "autoSaveOnStepNext": false,
+    "bLK": false,
+    "cancelRedirectPageName": "OmniScriptCancelled",
+    "cancelRedirectTemplateUrl": "vlcCancelled.html",
+    "cancelSource": "%ContextId%",
+    "cancelType": "SObject",
+    "consoleTabIcon": "custom:custom18",
+    "consoleTabLabel": "New",
+    "consoleTabTitle": null,
+    "currencyCode": "",
+    "disableUnloadWarn": true,
+    "elementTypeToHTMLTemplateMapping": {
+        "AttributesDisplayTemplate": "ins-os-attribute-component",
+        "CoveragesDisplayTemplate": "ins-os-coverage-component"
+    },
+    "enableKnowledge": false,
+    "errorMessage": {
+        "custom": [
+        ]
+    },
+    "hideStepChart": false,
+    "knowledgeArticleTypeQueryFieldsMap": {
+    },
+    "lkObjName": null,
+    "message": {
+    },
+    "persistentComponent": [
+        {
+            "id": "vlcCart",
+            "itemsKey": "cartItems",
+            "label": "",
+            "modalConfigurationSetting": {
+                "modalController": "ModalProductCtrl",
+                "modalHTMLTemplateId": "vlcProductConfig.html",
+                "modalSize": "lg"
+            },
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "remoteClass": "",
+            "remoteMethod": "",
+            "remoteOptions": {
+            },
+            "remoteTimeout": null,
+            "render": false,
+            "responseJSONNode": "",
+            "responseJSONPath": "",
+            "sendJSONNode": "",
+            "sendJSONPath": ""
+        }
+    ],
+    "pubsub": false,
+    "rtpSeed": false,
+    "saveContentEncoded": false,
+    "saveExpireInDays": null,
+    "saveForLaterRedirectPageName": "sflRedirect",
+    "saveForLaterRedirectTemplateUrl": "vlcSaveForLaterAcknowledge.html",
+    "saveNameTemplate": null,
+    "saveObjectId": "%ContextId%",
+    "saveURLPatterns": {
+    },
+    "seedDataJSON": {
+    },
+    "showInputWidth": false,
+    "ssm": false,
+    "stepChartPlacement": "right",
+    "timeTracking": true,
+    "trackingCustomData": {
+    },
+    "visualforcePagesAvailableInPreview": {
+        "InsuranceRules": "InsuranceRulesOmniScriptUniversal?layout=newport&debugLog=true"
+    },
+    "wpm": false
+}

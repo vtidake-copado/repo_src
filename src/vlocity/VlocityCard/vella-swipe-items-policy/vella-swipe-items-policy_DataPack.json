@@ -1,0 +1,13 @@
+{
+    "%vlocity_namespace%__Author__c": "Vlocity",
+    "%vlocity_namespace%__Datasource__c": "",
+    "%vlocity_namespace%__Definition__c": "vella-swipe-items-policy.json",
+    "%vlocity_namespace%__GlobalKey__c": "vella-swipe-items-policy/Vlocity/1506366127608",
+    "%vlocity_namespace%__ParentID__c": "vella-swipe-items/Vlocity/1505404165292",
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__Version__c": "",
+    "Name": "vella-swipe-items-policy",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__VlocityCard__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__VlocityCard__c/vella-swipe-items-policy"
+}

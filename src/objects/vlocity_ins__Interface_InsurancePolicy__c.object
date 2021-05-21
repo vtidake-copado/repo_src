@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Interface Object: Used to stage inbound insurance policy data for input into the Vlocity Insurance data model.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>vlocity_ins__AccumulationValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Accumulation Value</description>
+        <externalId>false</externalId>
+        <label>Accumulation Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__AnnualPremium__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Annual Premium</description>
+        <externalId>false</externalId>
+        <label>Annual Premium</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ApplicationSubmitDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Application Submit Date</description>
+        <externalId>false</externalId>
+        <label>Application Submit Date</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__AutomaticRebalancing__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Automatic Rebalancing</description>
+        <externalId>false</externalId>
+        <label>Automatic Rebalancing</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__BillingMethod__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Billing Method</description>
+        <externalId>false</externalId>
+        <label>Billing Method</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__CashSurrenderValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Cash Surrender Value</description>
+        <externalId>false</externalId>
+        <label>Cash Surrender Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__CashValue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Cash Value</description>
+        <externalId>false</externalId>
+        <label>Cash Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ContractDeathBenefit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contract Death Benefit</description>
+        <externalId>false</externalId>
+        <label>Contract Death Benefit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ContractLivingBenefit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Contract Living Benefit</description>
+        <externalId>false</externalId>
+        <label>Contract Living Benefit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__CostBasis__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Cost Basis</description>
+        <externalId>false</externalId>
+        <label>Cost Basis</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DRBundleName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>DRBundleName</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DRError__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Full error when processing.</description>
+        <externalId>false</externalId>
+        <label>DR Error</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DRProgressData__c</fullName>
+        <deprecated>false</deprecated>
+        <description>JSON of current progress processing item if using bulk processing methods</description>
+        <externalId>false</externalId>
+        <label>DR Progress</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DRStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Status after processing DR map.</description>
+        <externalId>false</externalId>
+        <label>DR Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__DeathBenefit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Death Benefit</description>
+        <externalId>false</externalId>
+        <label>Death Benefit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__EffectiveDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Effective Date</description>
+        <externalId>false</externalId>
+        <label>Effective Date</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__ExpirationDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Expiration Date</description>
+        <externalId>false</externalId>
+        <label>Expiration Date</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__FaceAmount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Face Amount</description>
+        <externalId>false</externalId>
+        <label>Face Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__GuaranteedDeathBenefit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Guaranteed Death Benefit</description>
+        <externalId>false</externalId>
+        <label>Guaranteed Death Benefit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__InceptionDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Inception Date</description>
+        <externalId>false</externalId>
+        <label>Inception Date</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Insurer__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Insurer</description>
+        <externalId>false</externalId>
+        <label>Insurer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__OpenClaimCount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Open Claim Count</description>
+        <externalId>false</externalId>
+        <label>Open Claim Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PolicyJurisdiction__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Policy Jurisdiction</description>
+        <externalId>false</externalId>
+        <label>Policy Jurisdiction</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PolicyNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Policy Number</description>
+        <externalId>false</externalId>
+        <label>Policy Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PolicyStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Policy Status</description>
+        <externalId>false</externalId>
+        <label>Policy Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PolicyType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Policy Type</description>
+        <externalId>false</externalId>
+        <label>Policy Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__PolicyholderAccountId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Policy Holder Account Id</description>
+        <externalId>false</externalId>
+        <label>Policy Holder Account Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__QualifiedType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Qualified Type</description>
+        <externalId>false</externalId>
+        <label>Qualified Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RecordType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Record Type</description>
+        <externalId>false</externalId>
+        <label>Record Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RelatedPartyBeneficiaryPercentage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Related Party Beneficiary Percentage</description>
+        <externalId>false</externalId>
+        <label>Related Party Beneficiary Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RelatedPartyCommissionPercentage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Related Party Commission Percentage</description>
+        <externalId>false</externalId>
+        <label>Related Party Commission Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RelatedPartyId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Related Party Id</description>
+        <externalId>false</externalId>
+        <label>Related Party Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RelatedPartyName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Related Party Name</description>
+        <externalId>false</externalId>
+        <label>Related Party Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RelatedPartyPercentage__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Related Party Percentage</description>
+        <externalId>false</externalId>
+        <label>Related Party Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RelatedPartyRelationshipToInsured__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Related Party Relationship To Insured</description>
+        <externalId>false</externalId>
+        <label>Related Party Relationship To Insured</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__RelatedPartyRole__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Related Party Role</description>
+        <externalId>false</externalId>
+        <label>Related Party Role</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__Term__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Term</description>
+        <externalId>false</externalId>
+        <label>Term</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>vlocity_ins__TotalPremiumForTerm__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total Premium For Term</description>
+        <externalId>false</externalId>
+        <label>Total Premium For Term</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Interface Insurance Policy</label>
+    <listViews>
+        <fullName>vlocity_ins__All</fullName>
+        <columns>NAME</columns>
+        <columns>vlocity_ins__PolicyNumber__c</columns>
+        <columns>vlocity_ins__PolicyType__c</columns>
+        <columns>vlocity_ins__DRBundleName__c</columns>
+        <columns>vlocity_ins__DRStatus__c</columns>
+        <columns>vlocity_ins__DRProgressData__c</columns>
+        <columns>vlocity_ins__DRError__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>vlocity_ins__All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Interface Insurance Policy</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Interface Insurance Policy</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

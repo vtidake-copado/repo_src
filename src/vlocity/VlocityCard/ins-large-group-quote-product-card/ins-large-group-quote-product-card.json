@@ -1,0 +1,73 @@
+{
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{\"records\": \"1\"}",
+            "jsonMap": "{\"params.id\":\"{{params.id}}\",\"attrs.paramsId\":\"{{attrs.paramsId}}\"}"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "['%vlocity_namespace%__ItemName__c']",
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Item Name",
+                    "name": "['%vlocity_namespace%__ItemName__c']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['Product2.ProductCode']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Product Code",
+                    "name": "['Product2.ProductCode']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['%vlocity_namespace%__FormularyId__c']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Formulary",
+                    "name": "['%vlocity_namespace%__FormularyId__c']",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "['%vlocity_namespace%__ProviderNetworkId__c']",
+                    "editing": false,
+                    "fieldType": "standard",
+                    "group": "Custom Properties",
+                    "label": "Provider Network",
+                    "name": "['%vlocity_namespace%__ProviderNetworkId__c']",
+                    "type": "string"
+                }
+            ],
+            "name": "Product Configuration",
+            "templateUrl": "ins-large-group-quote-product-config"
+        }
+    ],
+    "title": "Configure Large Group Quote Product"
+}

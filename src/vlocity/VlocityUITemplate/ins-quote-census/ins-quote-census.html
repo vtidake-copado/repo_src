@@ -1,0 +1,46 @@
+<!--Tab Content-->
+<div class="vloc-quote-container slds-m-top_medium">
+    <div class="vloc-quote-tab-header slds-text-heading_small slds-m-verticle_large">Stats</div>
+    <div class="vloc-quote-header-grid slds-grid slds-wrap slds-m-top_small">
+        <div class="slds-grid slds-size_1-of-1 slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-float_left slds-m-top_small"
+            ng-repeat="field in cards[0].states[0].fields" ng-if="cards[0].states[0].fields.length > 0">
+            <div class="slds-size_1-of-2 slds-large-size_1-of-4 slds-medium-size_1-of-2 slds-text-title slds-truncate slds-m-bottom_xx-small"
+                title="Field 1">{{field.label}}:</div>
+            <div class="slds-size_1-of-2 slds-large-size_3-of-4 slds-medium-size_1-of-2 slds-float_left">
+                <span ng-if="field.label === 'Account'">
+                    <a class="slds-text-link" target="_blank">{{record | getter: field | picker: field.type}}
+                    </a>
+                </span>
+                <span ng-if="field.label !== 'Account' && field.label !== 'Account Executive'">
+                    <span class="slds-text-body_regular slds-truncate" title="">
+                        {{record | getter: field | picker: field.type}}
+                    </span>
+                    <span class="slds-text-align_center" ng-if="(record | getter: field | picker: field.type) === undefined || (record | getter: field | picker: field.type) === null"> -- </span>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="slds-text-body_regular slds-text-link slds-m-bottom_large slds-m-top_medium">
+        <a ng-click="importedScope.vlocQuote.edit(record, $parent.$index)">Edit</a>
+    </div>
+
+    <div class="slds-text-heading_small slds-m-bottom_large"> Selected Plans </div>
+
+    <!--QLIs-->
+    <div class="slds-clearfix vloc-quote-plan-container" ins-include="ins-quote-line-item"></div>
+
+    <!--Add Actions:-->
+    <div class="slds-grid slds-m-top_large vloc-plans-container vloc-add-plans-grid ng-scope slds-m-bottom_large">
+        <div class="slds-col slds-m-right_small slds-size_1-of-2 slds-large-size_1-of-5 slds-medium-size_1-of-4" ng-repeat="action in importedScope.vlocQuote.actions"
+            ng-if="action.show">
+            <div class="slds-box slds-box_small slds-theme_shade slds-text-align_center vloc-add-plans-box" ng-click="importedScope.vlocQuote.addQLI(action.extraParams.Filter, record, $parent.$parent.$index)">
+                <div class="data">
+                    <i ng-if="action.vlocityIcon" class="icon {{action.vlocityIcon}} vloc-icon"></i>
+                    <div class="vloc-plan-icon-label">{{action.displayName}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

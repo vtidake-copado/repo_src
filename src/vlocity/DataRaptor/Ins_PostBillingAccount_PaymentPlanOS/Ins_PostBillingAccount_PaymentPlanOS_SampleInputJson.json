@@ -1,0 +1,51 @@
+{
+    "AccountId": "0013k00002dXeT0AAK",
+    "AccountType": "Customer",
+    "ContextId": "0013k00002dXeT0AAK",
+    "Email": "rmoore@mi6.uk",
+    "Id": "0013k00002dXeT0AAK",
+    "Name": "Roger Moore",
+    "Phone": "555-555-5555",
+    "billMethod": {
+        "billAddress": null,
+        "billDeliveryMethod": "Mail",
+        "billingAccountName": null,
+        "billingCity": "Grand Rapids",
+        "billingPostalCode": "49503",
+        "billingState": "MI",
+        "billingStreet": "500 Maple Dr",
+        "useAccountAddress": true
+    },
+    "billingOptionsSetUp": {
+        "billingOptions": "autoPay"
+    },
+    "id": "a3F3k000007U653EAC",
+    "layout": "newport",
+    "setUpPaymentMethods": {
+        "bankAccount": null,
+        "creditCard": {
+            "cardCVV": null,
+            "cardExpMonth": null,
+            "cardExpYear": null,
+            "cardHolder": null,
+            "cardNumber": null,
+            "cardType": null
+        },
+        "paymentMethod": "CreditCard"
+    },
+    "setUpPaymentMode": {
+        "billingFee": null,
+        "modalPremium": null,
+        "paymentFrequency": null,
+        "policyPremium": null
+    },
+    "testContextId": "0013k00002dXeT0AAK",
+    "timeStamp": "2019-11-04T04:23:41.894Z",
+    "userCurrencyCode": "USD",
+    "userId": "0053k00000AV5BoAAL",
+    "userName": "asingh@ex1028.com",
+    "userProfile": "System Administrator",
+    "userTimeZone": -480,
+    "vlcPersistentComponent": {
+    }
+}

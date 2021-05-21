@@ -1,0 +1,49 @@
+<div class="ins-os-confirmation-wrapper" ng-if="control.vlcSI[control.itemsKey]">
+    <div class="ins-os-confirmation-container" ng-repeat="p in control.vlcSI[control.itemsKey]">
+        <p>Thank You for Submitting Your Information, and Completing the Quote Process.</p>
+        <div class="slds-grid slds-wrap ins-os-confirmation-card ins-os-confirmation-items">
+            <div class="slds-col">
+                <div class="slds-size--2-of-2 slds-m-bottom--x-small ins-os-confirmation-m-bottom--x-small">
+                    <span class="ins-os-confirmation-label">Quote Number</span>
+                    <span class="ins-os-confirmation-value">{{p.quoteConfirmQuoteNumber}}</span>
+                </div>
+                <div class="slds-max-small-size--1-of-1 slds-size--1-of-2 slds-m-bottom--x-small ins-os-confirmation-m-bottom--x-small">
+                    <h3>{{p.quoteConfirmProduct}}</h3>
+                </div>
+                <div class="slds-max-small-size--1-of-1 slds-size--3-of-4 slds-m-bottom--x-small ins-os-confirmation-m-bottom--x-small">
+                    <span class="ins-os-confirmation-label">Quote expires on</span>
+                    <span class="ins-os-confirmation-value">{{p.quoteConfirmExpirationDate}}</span>
+                    <span class="ins-os-confirmation-label">.</span>
+                </div>
+                <div class="slds-size--2-of-2">
+                    <span class="ins-os-confirmation-label">Your Representative: </span>
+                    <span class="ins-os-confirmation-value">{{p.quoteConfirmProducerName}}</span>
+                    <span class="ins-os-confirmation-label"> Phone:</span>
+                    <span class="ins-os-confirmation-value">{{p.quoteConfirmProducerPhone}}</span>
+                    <span class="ins-os-confirmation-label">  Email:</span>
+                    <span class="ins-os-confirmation-value">{{p.quoteConfirmProducerEmail}}</span>
+                </div>
+            </div>
+            <div class="slds-col ins-os-amount-container">
+                <div class="slds-max-small-size--1-of-1 slds-m-bottom--x-small slds-text-align--right ins-os-confirmation-m-bottom--x-small ins-os-confirmation-annual-premium">
+                    <span class="ins-os-confirmation-label">Total Annual</span>
+                    <span class="ins-os-confirmation-value">{{p.quoteConfirmTotalAmount}} </span>
+                </div>
+                <div ng-if="p.quoteConfirmTotalPremium" class="slds-max-small-size--1-of-1 slds-m-bottom--x-small slds-text-align--right ins-os-confirmation-m-bottom--x-small ins-os-confirmation-annual-premium">
+                    <span class="ins-os-confirmation-label">Annual Premium</span>
+                    <span class="ins-os-confirmation-value">{{p.quoteConfirmTotalPremium}}</span>
+                </div>
+                <div ng-if="p.quoteConfirmTotalTaxAmount" class="slds-max-small-size--1-of-1 slds-m-bottom--x-small slds-text-align--right ins-os-confirmation-m-bottom--x-small ins-os-confirmation-annual-premium">
+                    <span class="ins-os-confirmation-label">Taxes</span>
+                    <span class="ins-os-confirmation-value">{{p.quoteConfirmTotalTaxAmount}}</span>
+                </div>
+                <div ng-if="p.quoteConfirmTotalFeeAmount" class="slds-max-small-size--1-of-1 slds-m-bottom--x-small slds-text-align--right ins-os-confirmation-m-bottom--x-small ins-os-confirmation-annual-premium">
+                    <span class="ins-os-confirmation-label">Fees</span>
+                    <span class="ins-os-confirmation-value">{{p.quoteConfirmTotalFeeAmount}}</span>
+                </div>
+            </div>
+
+        </div>
+        <p>We look forward to serving you as your insurance needs evolve.  Please contact us at <a href="https://www.vlocity.com/" target="_blank"><strong>www.vlocity.com</strong></a>, via email at <a href="mailto:customerservice@vlocity.com"><strong>customerservice@vlocity.com</strong></a> or or via phone at <a href="tel:18448562489"><strong>888.Vlocity</strong></a> if we can be of assistance.</p>
+    </div>
+</div>

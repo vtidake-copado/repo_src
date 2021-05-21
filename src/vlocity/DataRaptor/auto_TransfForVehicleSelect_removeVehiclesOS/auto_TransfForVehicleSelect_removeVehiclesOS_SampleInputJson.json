@@ -1,0 +1,24 @@
+{
+    "ContextId": null,
+    "SelectVehicle": {
+        "InsuredVehicle": null,
+        "effectiveDate": null,
+        "insuredItemId": null
+    },
+    "Step2": {
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "SelectVehicle": null,
+        "Step2": null,
+        "TransformForVehicleSelect": null,
+        "getVehicles": null,
+        "removeInsuredItem": null
+    }
+}

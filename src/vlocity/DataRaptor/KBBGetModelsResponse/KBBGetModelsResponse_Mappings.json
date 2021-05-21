@@ -1,0 +1,30 @@
+[
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "models:id",
+        "%vlocity_namespace%__GlobalKey__c": "5610d998-6fb1-c8e9-a27a-91eaed49235f",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "items:modelId",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBB-GET-MODELS-RESULTCustom4967",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetModelsResponse",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    },
+    {
+        "%vlocity_namespace%__DomainObjectAPIName__c": "json",
+        "%vlocity_namespace%__DomainObjectCreationOrder__c": 1,
+        "%vlocity_namespace%__DomainObjectFieldAPIName__c": "models:value",
+        "%vlocity_namespace%__GlobalKey__c": "dfe1bab4-82b2-87a7-0150-07afbb239eaa",
+        "%vlocity_namespace%__InterfaceFieldAPIName__c": "items:modelName",
+        "%vlocity_namespace%__IsDisabled__c": false,
+        "%vlocity_namespace%__IsRequiredForUpsert__c": false,
+        "%vlocity_namespace%__MapId__c": "KBB-GET-MODELS-RESULTCustom3666",
+        "%vlocity_namespace%__UpsertKey__c": false,
+        "Name": "KBBGetModelsResponse",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DRMapItem__c"
+    }
+]

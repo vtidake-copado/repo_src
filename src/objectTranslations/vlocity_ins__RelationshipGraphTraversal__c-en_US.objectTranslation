@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Comment Field --></label>
+        <name>vlocity_ins__CommentField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Strength Value --></label>
+        <name>vlocity_ins__DefaultStrengthValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date Field --></label>
+        <name>vlocity_ins__EndDateField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field List --></label>
+        <name>vlocity_ins__FieldList__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Key --></label>
+        <name>vlocity_ins__GlobalKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Graph --></label>
+        <name>vlocity_ins__GraphId__c</name>
+        <relationshipLabel><!-- Relationship Graph Traversals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Influence Score Field --></label>
+        <name>vlocity_ins__InfluenceScoreField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Object --></label>
+        <name>vlocity_ins__RelationshipObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Type Field --></label>
+        <name>vlocity_ins__RelationshipTypeField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Type Value --></label>
+        <name>vlocity_ins__RelationshipTypeValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role Field --></label>
+        <name>vlocity_ins__RoleField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Label Field --></label>
+        <name>vlocity_ins__SourceLabelField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Label --></label>
+        <name>vlocity_ins__SourceLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Object API Name --></label>
+        <name>vlocity_ins__SourceObjectApiName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Object Field --></label>
+        <name>vlocity_ins__SourceObjectField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date Field --></label>
+        <name>vlocity_ins__StartDateField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strength Field --></label>
+        <name>vlocity_ins__StrengthField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Label Field --></label>
+        <name>vlocity_ins__TargetLabelField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Label --></label>
+        <name>vlocity_ins__TargetLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Object API Name --></label>
+        <name>vlocity_ins__TargetObjectApiName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Object Field --></label>
+        <name>vlocity_ins__TargetObjectField__c</name>
+    </fields>
+</CustomObjectTranslation>

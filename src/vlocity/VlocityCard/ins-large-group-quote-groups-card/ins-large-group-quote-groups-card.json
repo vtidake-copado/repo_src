@@ -1,0 +1,34 @@
+{
+    "dataSource": {
+        "type": "Custom",
+        "value": {
+            "body": "{\"records\": \"1\"}",
+            "jsonMap": "{\"params.id\":\"{{params.id}}\",\"attrs.paramsId\":\"{{attrs.paramsId}}\"}"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "name": "Groups Configuration",
+            "templateUrl": "ins-large-group-quote-groups-config"
+        }
+    ],
+    "title": "Configure Large Group Quote Groups"
+}

@@ -1,0 +1,82 @@
+{
+    "dataSource": {
+        "type": null,
+        "value": {
+            "body": "",
+            "query": "",
+            "resultVar": ""
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "conditions": [
+                {
+                    "field": "$scope.data.status",
+                    "operator": "===",
+                    "type": "system",
+                    "value": "'active'"
+                }
+            ],
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "In Network Individual",
+                    "name": "In Network Individual",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "In Network Family",
+                    "name": "In Network Family",
+                    "type": "percentage"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Out-of-Pocket Maximum",
+                    "name": "Out-of-Pocket Maximum",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "In Network",
+                    "name": "In Network",
+                    "type": "string"
+                },
+                {
+                    "collapse": true,
+                    "displayLabel": "<<Custom Field>>",
+                    "editing": false,
+                    "fieldType": "custom",
+                    "label": "Coverage",
+                    "name": "Coverage",
+                    "type": "string"
+                }
+            ],
+            "flyout": {
+                "data": "",
+                "layout": null
+            },
+            "name": "Product",
+            "templateUrl": "ins-product-selection-item"
+        }
+    ],
+    "title": "Ins-Product-Selection-Item"
+}

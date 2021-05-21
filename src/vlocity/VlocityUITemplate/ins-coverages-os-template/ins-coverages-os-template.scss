@@ -1,0 +1,56 @@
+// Variables:
+$royal-blue: #0070D2;
+$light-orange: #ffb75d;
+
+.via-nds {
+    .vloc-ins-coverages-container-wrapper {
+        width: 100%;
+        
+        .vloc-ins-coverages-container {
+            .vloc-ins-coverages-card {
+                border-left: 1px solid $royal-blue;
+                border-right: 1px solid $royal-blue;
+                
+                .vloc-ins-coverages-card-inner-wrapper.optional-coverage {
+                    border: 1px solid $royal-blue;
+                }
+                
+                &:first-of-type {
+                    border-top: 1px solid $royal-blue;
+                    border-top-left-radius: 0.25rem;
+                    border-top-right-radius: 0.25rem;
+                }
+
+                &.optional-coverage {
+                    border: none;
+                }
+                
+                &.last-non-optional {
+                    border-bottom: 1px solid $royal-blue;
+                    border-bottom-left-radius: 0.25rem;
+                    border-bottom-right-radius: 0.25rem;
+                }
+
+                &.added-optional-coverage {
+                    border-left: 1px solid $royal-blue;
+                    border-right: 1px solid $royal-blue;
+                }
+            }
+
+            .vloc-input-pending {
+                border-bottom: 2px solid $light-orange;
+            }
+
+            .vloc-ins-os-amount-container {
+                margin-top: 2rem;
+                font-size: 1.5rem;
+                .ins-coverages-os-amount-item-container {
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 30%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

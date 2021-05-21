@@ -1,0 +1,40 @@
+{
+    "dataSource": {
+        "contextVariables": [
+            {
+                "name": "params.id",
+                "val": "02i6A0000009XL6QAM"
+            }
+        ],
+        "type": "Query",
+        "value": {
+            "query": "SELECT Name, %vlocity_namespace%__Description__c FROM %vlocity_namespace%__AssetCoverage__c WHERE %vlocity_namespace%__PolicyAssetId__c = '{{params.id}}'"
+        }
+    },
+    "filter": {
+    },
+    "states": [
+        {
+            "blankStateCheck": false,
+            "conditions": {
+                "group": [
+                    {
+                        "field": "$scope.data.status",
+                        "operator": "===",
+                        "type": "system",
+                        "value": "'active'"
+                    }
+                ]
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "fields": [
+            ],
+            "name": "Vella More Detail Card",
+            "templateUrl": "vella-more-detail"
+        }
+    ],
+    "title": "Vella More Detail Card"
+}

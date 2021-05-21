@@ -1,0 +1,12 @@
+{
+    "Cards": [
+    ],
+    "dataSource": {
+        "type": null
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-insured-items-attr-container"
+        }
+    }
+}

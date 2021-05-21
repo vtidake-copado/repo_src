@@ -1,0 +1,34 @@
+{
+    "Cards": [
+        "ins-enrollment-card",
+        "ins-enrollment-future-card"
+    ],
+    "dataSource": {
+        "contextVariables": [
+        ],
+        "type": null,
+        "value": {
+            "body": "",
+            "inputMap": {
+                "contactId": "{{params.id}}"
+            },
+            "optionsMap": {
+                "vlcClass": "%vlocity_namespace%.EnrollmentHandler"
+            },
+            "query": "SELECT LastModifiedDate, Name, %vlocity_namespace%__MarketSegment__c  ,QuoteNumber, Status, TotalPrice, %vlocity_namespace%__RenewalSourceContractId__c  FROM Quote  ORDER BY Status DESC NULLS FIRST",
+            "remoteClass": "EnrollmentHandler",
+            "remoteMethod": "getCurrentPlans",
+            "remoteNSPrefix": "%vlocity_namespace%",
+            "resultVar": ""
+        }
+    },
+    "templates": {
+        "0": {
+            "templateUrl": "ins-enrollment-home-container"
+        }
+    },
+    "workspace": [
+        "ins-enrollment-card/Vlocity/null/1520271288024",
+        "ins-enrollment-future-card/Vlocity/null/1520890168761"
+    ]
+}

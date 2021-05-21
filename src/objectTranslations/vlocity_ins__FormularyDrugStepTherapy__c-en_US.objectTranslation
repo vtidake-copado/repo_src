@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Age Restriction --></label>
+        <name>vlocity_ins__AgeRestriction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coverage Duration --></label>
+        <name>vlocity_ins__CoverageDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Covered Usage --></label>
+        <name>vlocity_ins__CoveredUsage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drug Name --></label>
+        <name>vlocity_ins__DrugName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclusion Criteria --></label>
+        <name>vlocity_ins__ExclusionCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Formulary Drug --></label>
+        <name>vlocity_ins__FormularyDrugId__c</name>
+        <relationshipLabel><!-- Formulary Drug Step Therapy (Formulary Drug) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Medical Condition --></label>
+        <name>vlocity_ins__MedicalCondition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical Information --></label>
+        <name>vlocity_ins__MedicalInformation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Criteria --></label>
+        <name>vlocity_ins__OtherCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prescribe Restriction --></label>
+        <name>vlocity_ins__PrescribeRestriction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Authorization Criteria --></label>
+        <name>vlocity_ins__PriorAuthorizationCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Authorization Group --></label>
+        <name>vlocity_ins__PriorAuthorizationGroup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Formulary Drug --></label>
+        <name>vlocity_ins__StepFormularyDrugId__c</name>
+        <relationshipLabel><!-- Formulary Drug Step Therapy (Step Formulary Drug) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Step Order --></label>
+        <name>vlocity_ins__StepOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Therapy Criteria --></label>
+        <name>vlocity_ins__StepTherapyCriteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Therapy Group --></label>
+        <name>vlocity_ins__StepTherapyGroup__c</name>
+    </fields>
+</CustomObjectTranslation>

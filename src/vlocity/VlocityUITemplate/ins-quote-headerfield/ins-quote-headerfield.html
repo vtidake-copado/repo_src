@@ -1,0 +1,45 @@
+<button class="slds-button slds-button_neutral slds-float_right slds-m-right_small" ng-click="importedScope.navBack()">
+        Back
+        </button>
+<div class="vloc-title-header-container slds-m-horizontal_large slds-m-vertical_medium">
+    <div ng-init="importedScope.vlocQuoteHeader.setData(obj); $root.renewalId = obj[$root.nsPrefix + 'RenewalSourceContractId__c']">
+        <h1 class="slds-page-header__title vloc-title slds-m-bottom_small" title="this should match the Record Title">{{obj.Name}}</h1>
+        <div class="vloc-title-border-container">
+            <hr class="vloc-title-border" />
+        </div>
+    </div> 
+    <div class="vloc-header-quote-number slds-text-title_caps slds-m-top_large">Quote #: {{obj.QuoteNumber}}</div>
+    <div class="vloc-quote-header-grid slds-grid slds-wrap slds-m-top_small slds-size_1-of-1">
+        <div class="slds-grid slds-size_1-of-1 slds_small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 slds-float_left slds-m-top_small" ng-repeat="field in data.fields">
+            <div class="slds-size_1-of-2 slds-large-size_1-of-4 slds-medium-size_1-of-2 slds-text-title slds-truncate slds-m-bottom_xx-small" title="Field 1">{{field.label}}:</div>
+            <div class="slds-size_1-of-2 slds-large-size_3-of-4 slds-medium-size_1-of-2  slds-float_left">
+                <span ng-if="field.label === 'Account'">
+                    <a class="slds-text-link" target="_blank">{{obj | getter: field | picker: field.type}}
+                    </a>
+                </span>
+                <span ng-if="field.label !== 'Account' && field.label !== 'Account Executive'">
+                    <span class="slds-text-body_regular slds-truncate" title="">
+                        {{obj | getter: field | picker: field.type}} 
+                    </span>   
+                    <span class="slds-text-align_center" ng-if="!(obj | getter: field | picker: field.type)"> -- </span>
+              </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="slds-size_1-of-1 slds-p-top_small slds-p-top_medium slds-clearfix slds-border_bottom slds-p-bottom_x-large vloc-quote-header-footer">
+       <!-- <div class="vloc-quote-header-actions slds-float_left slds-grid slds-size_1-of-10 slds-wrap"> 
+            <a href="#" class="slds-size_1-of-1 slds-p-bottom_xx-small" ng-click="importedScope.vlocQuoteHeader.viewAllQuteDetail()">
+                 <span>View All</span>
+            </a>
+             <a href="#" class="slds-size_1-of-1" ng-click="importedScope.vlocQuoteHeader.editQuoteDetail()">
+                 <span>Edit</span>
+            </a>
+        </div> -->
+        <div class="vloc-quote-header-card-actions slds-size_9-of-10 slds-smalls-size_1-of-1" ng-repeat="action in data.actions">
+             <a href="#" class="slds-button slds-m-left_small slds-button_brand slds-float_right" ng-click="performAction(action)" hotkey-card-action>
+                 <span>{{action.displayName}}</span>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,159 @@
+@import 'vella-mixins-variables';
+
+.vella-policy-detail-card {
+    position: relative;
+    width: 100%;
+    min-height: 19.75rem;
+    background-color: $vella-sky;
+    padding: 1rem 1.25rem 4.5rem 1.25rem;
+
+    .vella-policy-detail-inner-wrapper {
+        .vella-policy-detail-top {
+            color: $vella-sky-text;
+            padding: 0;
+            margin: 0 auto 2rem;
+            width: 16rem;
+
+            .vella-policy-detail-circle {
+                @include policyCircle(0, white, img);
+            }
+
+            .vella-policy-detail-premium-container {
+                padding-top: 0.75rem;
+
+                .vella-policy-detail-premium {
+                    font-size: 2.25rem;
+                    line-height: 3rem;
+                }
+
+                .vella-policy-detail-premium-label {
+                    text-transform: uppercase;
+                    font-size: 0.625rem;
+                    padding-left: 0.5rem;
+                }
+            }
+        }
+        .vella-policy-detail-middle {
+            margin-bottom: 1rem;
+
+            .vella-policy-detail-name {
+                text-align: center;
+                font-size: 1.5rem;
+                line-height: 1.1;
+                color: white;
+                font-weight: bold;
+                margin-bottom: 0.25rem;
+            }
+
+            .vella-policy-detail-fields-container {
+                .vella-policy-detail-field {
+                    color: white;
+                    line-height: 1.25rem;
+                    text-align: center;
+                }
+            }
+
+            .vella-policy-detail-learn-more-btn {
+                display: block;
+                margin: 0.5rem auto;
+                color: white;
+            }
+        }
+        .vella-policy-detail-actions {
+            border-top: 1px solid $vella-sky-border;
+            padding: 1.25rem 0;
+            position: absolute;
+            bottom: 0;
+            left: 1rem;
+            right: 1rem;
+
+            .vella-policy-detail-action {
+                color: $vella-sky-text;
+                text-transform: uppercase;
+                border: none;
+                background-color: transparent;
+                padding: 0 1rem;
+                line-height: 1.2;
+            }
+        }
+    }
+}
+
+.via-slds {
+    .modal-backdrop {
+        .modal-backdrop-bg {
+            background-color: rgba(0,0,0,0.72);
+        }
+        .modal.vella-policy-id-card {
+            padding: 4rem 0.75rem 1rem;
+            background-color: transparent;
+
+            .bar.bar-header {
+                background-color: $vella-sky !important;
+                height: 4rem;
+                padding: 0.5rem 1rem;
+                position: static;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+
+                img {
+                    width: 141px;
+                    height: 34px;
+                    margin-top: 0.55rem;
+                }
+
+                h1.title {
+                    line-height: 2.3;
+                    height: auto;
+                    font-size: 1.5rem;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    width: 100%;
+                    left: auto !important;
+                    right: auto !important;
+                    position: static;
+                    margin-right: 0;
+                    margin-top: 0;
+                    text-align: right;
+                }
+
+                .buttons {
+                    top: auto;
+                    right: -0.5rem;
+                    bottom: 4.75rem;
+
+                    .button {
+                        .slds-button__icon {
+                            width: 2rem;
+                            height: 2rem;
+                            fill: white;
+                        }
+                    }
+                }
+            }
+
+            .modal-content {
+                min-height: 25rem;
+                height: auto;
+                display: block;
+                background-color: white;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                padding: 1.25rem;
+                position: relative;
+
+                .vella-policy-id-card-footer {
+                    position: absolute;
+                    bottom: 1rem;
+                    right: 1rem;
+
+                    img {
+                        width: 68px;
+                        height: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
