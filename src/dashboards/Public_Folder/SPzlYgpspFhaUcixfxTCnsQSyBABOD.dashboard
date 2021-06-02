@@ -40,6 +40,12 @@
                         <showTotal>false</showTotal>
                         <type>detail</type>
                     </flexTableColumn>
+                    <flexTableColumn>
+                        <reportColumn>DESCRIPTION</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>false</showTotal>
+                        <type>detail</type>
+                    </flexTableColumn>
                     <flexTableSortInfo>
                         <sortColumn>OWNER</sortColumn>
                         <sortOrder>1</sortOrder>
