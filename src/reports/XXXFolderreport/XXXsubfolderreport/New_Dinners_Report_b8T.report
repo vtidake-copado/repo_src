@@ -8,7 +8,7 @@
     <name>New Dinners Report</name>
     <params>
         <name>co</name>
-        <value>1</value>
+        <value>3</value>
     </params>
     <reportType>Dinners__c</reportType>
     <scope>user</scope>
