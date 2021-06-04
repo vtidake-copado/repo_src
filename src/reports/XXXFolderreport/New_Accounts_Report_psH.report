@@ -26,7 +26,7 @@
     <name>New Accounts Report</name>
     <params>
         <name>co</name>
-        <value>1</value>
+        <value>2</value>
     </params>
     <reportType>AccountList</reportType>
     <scope>user</scope>
