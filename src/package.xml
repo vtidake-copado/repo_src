@@ -7,6 +7,11 @@
         <name>Dashboard</name>
     </types>
     <types>
+        <members>XXXFolderdashboard</members>
+        <members>XXXFolderdashboard/PeLlfWVibFQaduUcqWYxAPNVXWKcxm</members>
+        <name>Dashboard</name>
+    </types>
+    <types>
         <members>XXX_folder_document</members>
         <members>XXX_folder_document/XXX_document.xml</members>
         <name>Document</name>
@@ -20,6 +25,11 @@
         <members>XXXFolderreport</members>
         <members>XXXFolderreport/XXXsubfolderreport</members>
         <members>XXXFolderreport/XXXsubfolderreport/New_Dinners_Report_b8T</members>
+        <name>Report</name>
+    </types>
+    <types>
+        <members>XXXFolderreport</members>
+        <members>XXXFolderreport/New_Accounts_Report_psH</members>
         <name>Report</name>
     </types>
     <version>51.0</version>
