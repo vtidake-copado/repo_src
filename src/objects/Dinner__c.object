@@ -5,7 +5,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Auto resolve test 1</label>
-        <trackFeedHistory>true</trackFeedHistory>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
