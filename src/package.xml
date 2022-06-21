@@ -1,36 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>XXXFolderdashboard</members>
-        <members>XXXFolderdashboard/XXXSubfolderdashboard</members>
-        <members>XXXFolderdashboard/XXXSubfolderdashboard/eQBgqhMWdssppgeBtGQyfhQUtMZcDc</members>
-        <name>Dashboard</name>
+        <members>Bug_Test__c.Bug_Field_1__c</members>
+        <name>CustomField</name>
     </types>
     <types>
-        <members>XXXFolderdashboard</members>
-        <members>XXXFolderdashboard/PeLlfWVibFQaduUcqWYxAPNVXWKcxm</members>
-        <name>Dashboard</name>
+        <members>Bug_Test__c</members>
+        <name>CustomObject</name>
     </types>
-    <types>
-        <members>XXX_folder_document</members>
-        <members>XXX_folder_document/XXX_document.xml</members>
-        <name>Document</name>
-    </types>
-    <types>
-        <members>XXX_Folder_email_classic</members>
-        <members>XXX_Folder_email_classic/XXX_email_classic</members>
-        <name>EmailTemplate</name>
-    </types>
-    <types>
-        <members>XXXFolderreport</members>
-        <members>XXXFolderreport/XXXsubfolderreport</members>
-        <members>XXXFolderreport/XXXsubfolderreport/New_Dinners_Report_b8T</members>
-        <name>Report</name>
-    </types>
-    <types>
-        <members>XXXFolderreport</members>
-        <members>XXXFolderreport/New_Accounts_Report_psH</members>
-        <name>Report</name>
-    </types>
-    <version>51.0</version>
+    <version>54.0</version>
 </Package>
