@@ -161,6 +161,17 @@
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
+    <fields>
+        <fullName>Bug_Field_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Bug Field 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
     <label>Bug Test</label>
     <nameField>
         <encryptionScheme>None</encryptionScheme>
