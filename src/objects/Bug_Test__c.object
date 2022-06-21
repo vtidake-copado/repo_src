@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
-        <actionName>Accept1</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>Accept</actionName>
         <formFactor>Large</formFactor>
         <type>Default</type>
@@ -12,6 +8,10 @@
     <actionOverrides>
         <actionName>Accept</actionName>
         <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept1</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -160,6 +160,17 @@
         <label>Bug Field 1</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Bug_Field_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Bug Field 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <label>Bug Test</label>
     <nameField>
