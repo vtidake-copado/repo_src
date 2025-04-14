@@ -1,0 +1,47 @@
+name: CodeScan Analysis on Master Branch
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sonarcloud-scan:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Debug Sonar Token
+        run: |
+          echo "Token Length: $(echo -n $SONAR_TOKEN | wc -c)"
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required for accurate branch analysis
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Verify Java Version
+        run: java -version
+
+      - name: Run SonarCloud Scan
+        uses: codescan-io/codescan-scanner-action@1.6
+        with: 
+          organization: '5acb36a4a33e56128a547379'
+          projectKey: 'a15fm000000DFdxAAG'
+          login: ${{ secrets.SONAR_TOKEN }}
+          failOnRedQualityGate: false
+          scanChangedFilesOnly: false
+          generateSarifFile: false
+          generateReportFile: false
+          args: 
+            sonar.verbose=true
+            sonar.scm.provider=git
+            sonar.scm.disabled=false
+            sonar.java.binaries=target
+            sonar.analysisCache.enabled=false
+            codescan.suppressUnitTestViolations=false
+            sonar.branch.name=master
