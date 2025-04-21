@@ -24,4 +24,16 @@ public class InsecureApexClass {
     public static void deleteAllAccounts() {
         delete [SELECT Id FROM Account]; // ❌ Deletes ALL Accounts without checks
     }
+
+    // ❌ Dynamic SOQL with user input (Security Risk)
+    public static void findContacts(String userInput) {
+        String query = 'SELECT Id FROM Contact WHERE LastName LIKE \'%' + userInput + '%\'';
+        List<Contact> result = Database.query(query); // Potential SOQL injection
+    }
+
+    // ❌ Sensitive data logged (Security Issue)
+    // comment in dev1
+    public static void logSensitiveInfo(String password) {
+        System.debug('Entered password: ' + password); // Logging sensitive info
+    }
 }
