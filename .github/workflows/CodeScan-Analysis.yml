@@ -2,6 +2,15 @@ name: CodeScan Analysis on Master Branch
 
 on:
   workflow_dispatch:
+    inputs:
+      organization:
+        description: 'Organization'     
+        required: true
+        default: '5acb36a4a33e56128a547379'
+      projectKey:
+        description: 'Project Key'     
+        required: true
+        default: 'a14J7000000Lsi3IAC'
 
 jobs:
   sonarcloud-scan:
@@ -30,8 +39,8 @@ jobs:
       - name: Run SonarCloud Scan
         uses: codescan-io/codescan-scanner-action@1.6
         with: 
-          organization: '5acb36a4a33e56128a547379'
-          projectKey: 'a14J7000000Lsi3IAC'
+          organization: '${{ github.event.inputs.organization }}'
+          projectKey: '${{ github.event.inputs.projectKey }}'
           login: ${{ secrets.SONAR_TOKEN }}
           failOnRedQualityGate: false
           scanChangedFilesOnly: false
