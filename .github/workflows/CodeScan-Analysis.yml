@@ -1,4 +1,4 @@
-name: CodeScan Analysis on Master Branch
+name: CodeScan Analysis on Master/Main Branch
 
 on:
   workflow_dispatch:
@@ -11,6 +11,10 @@ on:
         description: 'Project Key'     
         required: true
         default: 'a14J7000000Lsi3IAC'
+      branch:
+        description: 'Branch Name'     
+        required: true
+        default: 'main'
 
 jobs:
   sonarcloud-scan:
@@ -53,4 +57,4 @@ jobs:
             sonar.java.binaries=target
             sonar.analysisCache.enabled=false
             codescan.suppressUnitTestViolations=false
-            sonar.branch.name=master
+            sonar.branch.name=${{ github.event.inputs.branch }}
