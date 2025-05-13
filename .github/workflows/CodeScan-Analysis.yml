@@ -1,0 +1,60 @@
+name: CodeScan Analysis on Master/Main Branch
+
+on:
+  workflow_dispatch:
+    inputs:
+      organization:
+        description: 'Organization'     
+        required: true
+        default: 'vijay-tidake58080'
+      projectKey:
+        description: 'Project Key'     
+        required: true
+        default: 'a14J7000000Lsi3IAC'
+      branch:
+        description: 'Branch Name'     
+        required: true
+        default: 'main'
+
+jobs:
+  sonarcloud-scan:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Debug Sonar Token
+        run: |
+          echo "Token Length: $(echo -n $SONAR_TOKEN | wc -c)"
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required for accurate branch analysis
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Verify Java Version
+        run: java -version
+
+      - name: Run SonarCloud Scan
+        uses: codescan-io/codescan-scanner-action@1.6
+        with: 
+          organization: '${{ github.event.inputs.organization }}'
+          projectKey: '${{ github.event.inputs.projectKey }}'
+          login: ${{ secrets.SONAR_TOKEN }}
+          failOnRedQualityGate: false
+          scanChangedFilesOnly: false
+          generateSarifFile: false
+          generateReportFile: false
+          args: 
+            sonar.verbose=true
+            sonar.scm.provider=git
+            sonar.scm.disabled=false
+            sonar.java.binaries=target
+            sonar.analysisCache.enabled=false
+            codescan.suppressUnitTestViolations=false
+            sonar.branch.name=${{ github.event.inputs.branch }}
