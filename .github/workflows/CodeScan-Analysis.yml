@@ -41,7 +41,7 @@ jobs:
         run: java -version
 
       - name: Run SonarCloud Scan
-        uses: codescan-io/codescan-scanner-action@1.6
+        uses: codescan-io/codescan-scanner-action@cd6610
         with: 
           organization: '${{ github.event.inputs.organization }}'
           projectKey: '${{ github.event.inputs.projectKey }}'
